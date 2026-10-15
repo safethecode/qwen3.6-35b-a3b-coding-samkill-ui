@@ -1,0 +1,30 @@
+{
+  "checkedAtUtc": "2026-10-15T14:55:58.790Z",
+  "source": "https://registry.ollama.ai/v2/library/qwen3.6/manifests/35b-a3b",
+  "officialLayers": [
+    {
+      "mediaType": "application/vnd.ollama.image.model",
+      "digest": "sha256:d372de8e934898a59e6ccfabc3368474711384d8f1fd4d22d87a3f0a45400cdc",
+      "size": 21718480960
+    },
+    {
+      "mediaType": "application/vnd.ollama.image.projector",
+      "digest": "sha256:a62390d25b4b4a2d8afd7cc3c90021c11935c1fdd48d7cb0723ab71cd02a598e",
+      "size": 902821728
+    }
+  ],
+  "installedLayerDigestsFromLocalManifest": [
+    {
+      "mediaType": "application/vnd.ollama.image.model",
+      "digest": "sha256:d372de8e934898a59e6ccfabc3368474711384d8f1fd4d22d87a3f0a45400cdc",
+      "size": 21718480960
+    },
+    {
+      "mediaType": "application/vnd.ollama.image.projector",
+      "digest": "sha256:a62390d25b4b4a2d8afd7cc3c90021c11935c1fdd48d7cb0723ab71cd02a598e",
+      "size": 902821728
+    }
+  ],
+  "match": true,
+  "action": "Read metadata only;no model download/reinstall or alias update. Private manifest path omitted."
+}

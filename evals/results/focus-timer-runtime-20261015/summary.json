@@ -1,0 +1,60 @@
+{
+  "status": "CONTROL_DID_NOT_IMPROVE_STORE_SEMANTICS_NOT_A_UI_FIX",
+  "originalFocalInput": "../focus-timer-store-20261015/attempts/compact/request.json actual request,plus seed314159 and declared draft option",
+  "results": [
+    {
+      "draft": 2,
+      "index": 1,
+      "elapsedMs": 68176,
+      "promptTokens": 3103,
+      "outputTokens": 604,
+      "pass": 1,
+      "total": 11,
+      "status": "FAIL",
+      "moduleSha256": "46f128975c51ff136c8e2de7684b6ecd1f557be20f25ce02474d0308a160301e",
+      "responseSha256": "7981f03a46852daebe332d916e748b8fbb36cb7f175b0272bb8cf7b8b3456744"
+    },
+    {
+      "draft": 2,
+      "index": 2,
+      "elapsedMs": 22383,
+      "promptTokens": 3103,
+      "outputTokens": 604,
+      "pass": 1,
+      "total": 11,
+      "status": "FAIL",
+      "moduleSha256": "46f128975c51ff136c8e2de7684b6ecd1f557be20f25ce02474d0308a160301e",
+      "responseSha256": "e46ac6aa568068c9758d70c42898c20171504c7d9e875c678ec15adb57087745"
+    },
+    {
+      "draft": 0,
+      "index": 1,
+      "elapsedMs": 106570,
+      "promptTokens": 3103,
+      "outputTokens": 959,
+      "pass": 0,
+      "total": 11,
+      "status": "FAIL",
+      "moduleSha256": "1713ec06cf2f73fc0b0da60579bd505788774642499ee3471c867c5cfe970168",
+      "responseSha256": "4d9d9a92d5e7b9293aa8c8b467b63691eb0fbfe77eb288cb6884c4f435304fe2"
+    },
+    {
+      "draft": 0,
+      "index": 2,
+      "elapsedMs": 62808,
+      "promptTokens": 3103,
+      "outputTokens": 959,
+      "pass": 0,
+      "total": 11,
+      "status": "FAIL",
+      "moduleSha256": "1713ec06cf2f73fc0b0da60579bd505788774642499ee3471c867c5cfe970168",
+      "responseSha256": "9da2b3dc4ca7e5e172825ec1c1fc4af9b47fb4d1ee492efe02347b5af2106bc4"
+    }
+  ],
+  "finding": "With MTP2 both exact11-group store replays pass1/11;without MTP both0/11. Each config produced byte-identical content across cold and interposed-thinking predecessor under this one seed/prompt. No demonstratedMTPaccuracy improvement or history-dependence in this pilot. Keep hypothesis unconfirmed and do not change model defaults from this result.",
+  "hostFixtureCorrection": "The original driver used initial v2DESIGN when rebuilding declared v3input. Its hash error prevented semantic execution and is preserved in results.json;it is not a model failure. All four unchanged raw model responses were revalidated against independently materialized exact21file declared input,then original11store groups. Corrected source hashes/checks retained in revalidated-results.json and each revalidation.",
+  "software": "Ollama0.40.0;Qwen3.6coding35B-A3BQ4_K_M;CPU+CUDA16layers/ctx16384. Native runtime metadata proves draft2versusabsenceofdraft flags. Official registry model digestd372de8e... andprojectora62390d... matchinstalled bytes;no redownload or software upgrade performed.",
+  "externalHypothesis": "https://github.com/ggml-org/llama.cpp/issues/26425 is an unconfirmed report on other builds/backends;not proof about this PC.",
+  "limits": "One store prompt/one fixedseed/two focal responses per config. Functional failure comparisons,not representative model ranking,causal-runtime-bug certification or reference/commercialquality. Existing assisted accepted14model/11store modules and current timer source were not modified by this pilot.",
+  "registryEvidence": "registry-check.json"
+}

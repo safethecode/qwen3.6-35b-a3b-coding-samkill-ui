@@ -1,0 +1,18 @@
+{
+  "elapsedMs": 22383,
+  "model": "qwen3.6:35b-a3b-coding",
+  "created_at": "2026-10-15T14:47:13.9375972Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\"code\":\"import { validateRecord, transition } from './model.js';\\n\\nconst READ_FAILED = 'READ_FAILED';\\nconst WRITE_FAILED = 'WRITE_FAILED';\\nconst INVALID_RECORD = 'INVALID_RECORD';\\nconst INVALID_CLOCK = 'INVALID_CLOCK';\\nconst INVALID_TRANSITION = 'INVALID_TRANSITION';\\n\\nexport function createStore(storageProvider) {\\n  let readReady = false;\\n  let error = null;\\n  let record = null;\\n  const key = 'focus-session-v1';\\n\\n  function reload() {\\n    try {\\n      const raw = storageProvider.getItem(key);\\n      if (raw === null || raw === undefined) {\\n        readReady = false;\\n        error = null;\\n        record = null;\\n        return { ok: true };\\n      }\\n      const parsed = JSON.parse(raw);\\n      if (!validateRecord(parsed)) {\\n        readReady = false;\\n        error = INVALID_RECORD;\\n        record = null;\\n        return { ok: false, error: INVALID_RECORD };\\n      }\\n      readReady = true;\\n      error = null;\\n      record = parsed;\\n      return { ok: true };\\n    } catch (e) {\\n      readReady = false;\\n      error = READ_FAILED;\\n      record = null;\\n      return { ok: false, error: READ_FAILED };\\n    }\\n  }\\n\\n  function getState() {\\n    return {\\n      readReady,\\n      record: readReady ? { ...record } : null,\\n      error: error\\n    };\\n  }\\n\\n  function transact(event, now) {\\n    if (!readReady) {\\n      return { ok: false, error: READ_FAILED };\\n    }\\n\\n    let candidateRecord = record;\\n    let candidateEvent = event;\\n\\n    if (record === null) {\\n      candidateRecord = {\\n        version: 1,\\n        durationMinutes: 0,\\n        phase: 'ready',\\n        remainingMs: 0,\\n        runStartedAt: null,\\n        deadlineAt: null\\n      };\\n    }\\n\\n    const result = transition(candidateRecord, candidateEvent, now);\\n\\n    if (!result.ok) {\\n      return { ok: false, error: result.error };\\n    }\\n\\n    try {\\n      const serialized = JSON.stringify(result.record);\\n      storageProvider.setItem(key, serialized);\\n    } catch (e) {\\n      return { ok: false, error: WRITE_FAILED };\\n    }\\n\\n    record = result.record;\\n    return { ok: true };\\n  }\\n\\n  reload();\\n\\n  return { getState, reload, transact };\\n}\"}"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 22381149600,
+  "load_duration": 4059300,
+  "prompt_eval_count": 3103,
+  "prompt_eval_cached_count": 3099,
+  "prompt_eval_duration": 196400000,
+  "eval_count": 604,
+  "eval_duration": 22059568000
+}

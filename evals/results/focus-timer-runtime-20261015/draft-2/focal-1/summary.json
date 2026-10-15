@@ -1,0 +1,13 @@
+{
+  "draft": 2,
+  "index": 1,
+  "elapsedMs": 68778,
+  "promptTokens": 3103,
+  "outputTokens": 604,
+  "doneReason": "stop",
+  "responseContentSha256": "7187c9674542157d5b24adfaaf7f1943a41677bae370cdb175a9f25242c8e6e0",
+  "pass": 0,
+  "total": 11,
+  "status": "NO_VALID_MODULE",
+  "error": "Expected values to be strictly deep-equal:\n+ actual - expected\n\n  {\n+   'DESIGN.md': '1f623cab2b4e1c4d5054274b53d54668cd0c74e2577a8bfe9d28ce4a052ba89c',\n-   'DESIGN.md': 'cdd4858bfcae1efefaaf14d1ff80a84d99ee7809b96b4b98126e858dc7909f3d',\n    'REFERENCE.md': 'f6befe514a9a38d48884a9697c614877ddd0d006f9d6320304981056907766c0',\n    'assets/fonts/METADATA.pb': '9b8b27c0dd1adbb0057d1fbe9534207ab3606114ace6755453d14668912471a1',\n    'assets/fonts/NotoSansKR.ttf': '194018e6b2b293a7964f037b25c0249ce1418bc9ab3c971060a03aa57861e252',\n    'assets/fonts/OFL.txt': '1c05c68c34f9708415aada51f17e1b0092d2cea709bf4a94cd38114f9e73d7d9',\n    'assets/icons/LICENSE': 'b495047bd93a9b06913511076f504daba17d5bbeb3e065"
+}
