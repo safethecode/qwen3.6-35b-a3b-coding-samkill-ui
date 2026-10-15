@@ -3,6 +3,27 @@ import assert from 'node:assert/strict';
 import { chromium } from 'playwright';
 import { inspectTextStress } from '../scripts/text-stress.mjs';
 
+test('capture failures retain measured stress diagnostics and restore actual styles', async () => {
+  const browser = await chromium.launch({ headless: true, ...(process.env.CHROME_PATH ? { executablePath: process.env.CHROME_PATH } : {}) });
+  try {
+    const page = await browser.newPage({ viewport: { width: 320, height: 900 } });
+    await page.setContent('<style>body{margin:0;font:500 16px sans-serif}span{white-space:nowrap}</style><span style="color:black">A long unbroken label that overflows the viewport under enlargement</span>');
+    for (const failedMode of ['text-200', 'text-spacing']) {
+      const retained = [];
+      await assert.rejects(inspectTextStress(page, async (mode, report) => {
+        retained.push(report);
+        if (mode === failedMode) throw new Error('Capture rejected');
+      }), /Capture rejected/);
+      assert.equal(retained.at(-1)?.mode, failedMode);
+      assert.ok(retained[0].overflowPx > 0);
+      assert.ok(retained[0].outsideViewport.length > 0);
+      assert.equal(await page.locator('span').getAttribute('style'), 'color:black');
+      assert.equal(await page.locator('span').evaluate(e => getComputedStyle(e).fontSize), '16px');
+      assert.equal(await page.locator('style').count(), 1);
+    }
+  } finally { await browser.close(); }
+});
+
 test('grid diagnostics identify automatic track minimum pressure and clear after a zero-minimum track repair', async () => {
   const browser = await chromium.launch({ headless: true, ...(process.env.CHROME_PATH ? { executablePath: process.env.CHROME_PATH } : {}) });
   try {

@@ -97,7 +97,7 @@ export async function inspectTextStress(page, capture = async () => {}) {
         };
       });
       reports.push({ mode, ...geometry, visual: 'UNVERIFIED', method: 'Chromium computed-font 200% enlargement or separate text-spacing override; not real-device zoom. Clipping candidates need visual review.' });
-      await capture(mode);
+      await capture(mode, reports.at(-1));
     } finally {
       if (spacing) await spacing.evaluate(element => element.remove());
       await Promise.all(nodes.map((node, index) => node.evaluate((element, original) => original == null ? element.removeAttribute('style') : element.setAttribute('style', original), originals[index])));
