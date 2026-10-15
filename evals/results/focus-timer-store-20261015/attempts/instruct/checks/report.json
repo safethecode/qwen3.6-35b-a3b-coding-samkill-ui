@@ -1,0 +1,62 @@
+{
+  "status": "FAIL",
+  "moduleSha256": "30d9c2a9c4568ac0df8431be86b9f53fad9e461a5b4f20bfb5953508c1c7212d",
+  "checkerSha256": "b343b8f94f90c9e2df5b77b354c509615fd0a72165f1de939a54e56ecda08162",
+  "checks": [
+    {
+      "name": "confirmed absence is unpersisted ready25,not an automatic seed",
+      "status": "FAIL",
+      "detail": "Expected values to be strictly deep-equal:\n+ actual - expected\n\n  {\n+   error: 'READ_FAILED',\n+   readReady: false,\n+   record: null\n-   error: null,\n-   readReady: true,\n-   record: {\n-     deadlineAt: null,\n-     durationMinutes: 25,\n-     phase: 'ready',\n-     remainingMs: 1500000,\n-     runStartedAt: null,\n-     version: 1\n-   }\n  }\n"
+    },
+    {
+      "name": "existing expired running data remains verbatim on read",
+      "status": "FAIL",
+      "detail": "Expected values to be strictly deep-equal:\n+ actual - expected\n\n  {\n+   error: 'READ_FAILED',\n+   readReady: false,\n+   record: null\n-   error: null,\n-   readReady: true,\n-   record: {\n-     deadlineAt: 46000,\n-     durationMinutes: 1,\n-     phase: 'running',\n-     remainingMs: 45000,\n-     runStartedAt: 1000,\n-     version: 1\n-   }\n  }\n"
+    },
+    {
+      "name": "malformed and invalid saved data block mutation without overwriting raw",
+      "status": "PASS"
+    },
+    {
+      "name": "denied initial getItem requires explicit successful reload before mutation",
+      "status": "FAIL",
+      "detail": "Expected values to be strictly deep-equal:\n+ actual - expected\n\n  {\n+   error: 'READ_FAILED',\n+   ok: false\n-   ok: true\n  }\n"
+    },
+    {
+      "name": "provider property denial is caught inside the store and can recover",
+      "status": "FAIL",
+      "detail": "Expected values to be strictly equal:\n\n0 !== 1\n"
+    },
+    {
+      "name": "failed setItem preserves memory and raw with ordinary retry enabled",
+      "status": "FAIL",
+      "detail": "Expected values to be strictly deep-equal:\n+ actual - expected\n\n  {\n+   error: 'READ_FAILED',\n-   error: 'WRITE_FAILED',\n    ok: false\n  }\n"
+    },
+    {
+      "name": "new candidate is persisted before in-memory commit",
+      "status": "FAIL",
+      "detail": "Expected values to be strictly deep-equal:\n+ actual - expected\n\n  {\n+   error: 'READ_FAILED',\n+   ok: false\n-   ok: true\n  }\n"
+    },
+    {
+      "name": "provider denial during write does not revoke confirmed-read readiness",
+      "status": "FAIL",
+      "detail": "Expected values to be strictly deep-equal:\n+ actual - expected\n\n  {\n+   error: 'READ_FAILED',\n-   error: 'WRITE_FAILED',\n    ok: false\n  }\n"
+    },
+    {
+      "name": "returned state clones cannot mutate stored in-memory records",
+      "status": "FAIL",
+      "detail": "Cannot set properties of null (setting 'durationMinutes')"
+    },
+    {
+      "name": "invalid active configuration writes nothing and valid pause/resume/reset each write once",
+      "status": "FAIL",
+      "detail": "Expected values to be strictly deep-equal:\n+ actual - expected\n\n  {\n+   error: 'READ_FAILED',\n-   error: 'INVALID_TRANSITION',\n    ok: false\n  }\n"
+    },
+    {
+      "name": "failed reload becomes unknown and restored record is not silently replaced",
+      "status": "FAIL",
+      "detail": "Expected values to be strictly deep-equal:\n+ actual - expected\n\n  {\n+   error: 'READ_FAILED',\n+   ok: false\n-   ok: true\n  }\n"
+    }
+  ],
+  "limits": "Provider/getItem/schema/raw/write/clone integrity only;browser draft preservation and visual/reference quality require separate actual tests."
+}

@@ -1,0 +1,7 @@
+{
+  "status": "FAILED_STORE_METHOD",
+  "name": "getState",
+  "pid": 28252,
+  "updatedAtUtc": "2026-10-15T14:11:14.249Z",
+  "error": "'return' outside of function (1:0)"
+}

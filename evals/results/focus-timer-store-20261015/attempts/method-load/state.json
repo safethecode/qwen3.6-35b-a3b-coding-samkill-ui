@@ -1,0 +1,7 @@
+{
+  "status": "FAILED_STORE_METHOD",
+  "name": "load",
+  "pid": 9388,
+  "updatedAtUtc": "2026-10-15T14:09:01.831Z",
+  "error": "The expression evaluated to a falsy value:\n\n  assert.ok(typeof replacement==='string'&&replacement.trim().startsWith('{')&&replacement.trim().endsWith('}'))\n"
+}

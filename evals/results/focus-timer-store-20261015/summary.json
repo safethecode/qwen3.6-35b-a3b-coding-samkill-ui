@@ -1,0 +1,78 @@
+{
+  "status": "SCOPED_STORE_RECOVERY_NOT_COMPLETE_TIMER",
+  "model": "qwen3.6:35b-a3b-coding",
+  "backend": "Ollama0.40.0",
+  "sourceHashes": {
+    "index.html": "197ad40eeb6e605669ba203ddbec355e873ae1d5d260579e86746de9c98eafe7",
+    "styles.css": "23967c6e9a2679b40441ceb5c4859f79164da59394f8d9f7a7c8eb11a2963919",
+    "DESIGN.md": "cdd4858bfcae1efefaaf14d1ff80a84d99ee7809b96b4b98126e858dc7909f3d",
+    "REFERENCE.md": "f6befe514a9a38d48884a9697c614877ddd0d006f9d6320304981056907766c0",
+    "assets/fonts/METADATA.pb": "9b8b27c0dd1adbb0057d1fbe9534207ab3606114ace6755453d14668912471a1",
+    "assets/fonts/NotoSansKR.ttf": "194018e6b2b293a7964f037b25c0249ce1418bc9ab3c971060a03aa57861e252",
+    "assets/fonts/OFL.txt": "1c05c68c34f9708415aada51f17e1b0092d2cea709bf4a94cd38114f9e73d7d9",
+    "assets/icons/LICENSE": "b495047bd93a9b06913511076f504daba17d5bbeb3e0650f3bb53a4220329c57",
+    "assets/icons/Pause-light.svg": "709366e7faae5e637d9e4bbda6ab1156bcb8ac7d132bbd97a240fe142969db7a",
+    "assets/icons/Pause.svg": "f84f5fbe8f3bf37a4d4545ef8c0851e3d22a0b4de89cf6ec6561c2187705a777",
+    "assets/icons/Play-light.svg": "7da2c2f42f06511a84c2eef0cd760e054922d83f36438b1440e0ec12aee56deb",
+    "assets/icons/Play.svg": "6f226a46d36157e64ebb7eb72223efd8461212078bea69e663ecc1c794a8383b",
+    "assets/icons/manifest.json": "69b94327458ede12e4505e2315d628931c0f0f61fe2af14758ebcda1295edcd7",
+    "design/typography.json": "875fcd1503a54544e5341872e1ebaea879fbe45039b363ab469d6f31ed875d59",
+    "design/component-plan.json": "a809f5d991a4bf7920711e1b964bc67b80f22e09d6d98c91ec5bff33b5c25d86",
+    "design/layout-contract.json": "a0e28dcfebeecb71b95957bba3e6551af90aa139b502867ff76a67dba807169c",
+    "copy.js": "b71199531ddaf6aebde7b61d9baa9c86e053b1e6b1f060660307b3d352259d1d",
+    "model.js": "e2c419e8dd80ecf538a9f5b45c12eb406b09ed472eade261a1b30e6029942f20",
+    "sample-actions.html": "f9829ea91beb8f0d99c4667e630142ee3f791c9a3db90db11d77cd238d7d2b1d",
+    "sample-config.html": "a73ed0d53cd3aa200fd2e650264b2cf6a11965e960b26a5d458032644ecf7941",
+    "sample-timer.html": "31fbc66ab3be017bbf7149d87feece91e60d8ad60e4775f0ee8ae8cc05890caa",
+    "store.js": "fed7a105364f2354a12b77c89993dc64f3aa6b6cf63a3bdb75a1ffbf12973c92"
+  },
+  "moduleSha256": "fed7a105364f2354a12b77c89993dc64f3aa6b6cf63a3bdb75a1ffbf12973c92",
+  "initial": {
+    "elapsedMs": 364532,
+    "promptTokens": 9221,
+    "outputTokens": 4096,
+    "doneReason": "length",
+    "codeCharacters": 0,
+    "thinkingCharacters": 16042
+  },
+  "compact": {
+    "elapsedMs": 304828,
+    "promptTokens": 3101,
+    "outputTokens": 6144,
+    "doneReason": "length",
+    "semanticChecks": "Not executed;no code generated"
+  },
+  "assistedFinal": "Original instructed module passed1/11. Host added missing declared import only. Actual Qwen load/getState/transact repairs now pass11/11;load/getState returned valid full-function/bare-statement forms that receiver canonicalized without changing behavioral tokens. Raw strict-format rejections and exact recovery records retained.",
+  "changes": "Host retains original failed request/response. New request delivers full relevant state guide and exact local behavior/execution excerpts,typed accepted model API instead of full model implementation,and6144rather than4096total generation tokens. Same11store cases and model/source inputs. Multiple request factors changed;not isolated sampling/thinking A/B.",
+  "assistance": "Host contracts,tests,scope selection,missing declared import glue,and exactAST wrapper/body normalization. Qwen wrote behavioral statements. No host algorithm patch;raw whole-module success is NOT claimed.",
+  "limits": [
+    "Pure model14groups and store11groups do not establish browser recovery or UI/reference/commercial quality.",
+    "Renderer/controller,CSS and complete actual11state/fourwidth/three-mode comparison are not implemented by this stage.",
+    "Native mobile/background/AT and complete75/eightguide catalog remain unverified.",
+    "Browser checkers are predeclared future inputs;their presence is not an executed pass."
+  ],
+  "controlledModePair": {
+    "sameRequestExceptThink": true,
+    "sameInputSourceAndHarness": true,
+    "thinking": {
+      "elapsedMs": 304828,
+      "promptTokens": 3101,
+      "outputTokens": 6144,
+      "codeCharacters": 0
+    },
+    "instructed": {
+      "elapsedMs": 22178,
+      "promptTokens": 3103,
+      "outputTokens": 598,
+      "initialGroups": "1/11 before repairs"
+    },
+    "limits": "One paired observation at temperature0.6,no fixed seed;not a general mode ranking. Instructed response completed but failed semantics."
+  },
+  "final": {
+    "semanticGroups": 11,
+    "pass": 11,
+    "receipt": "attempts/accepted.json",
+    "moduleSha256": "fed7a105364f2354a12b77c89993dc64f3aa6b6cf63a3bdb75a1ffbf12973c92",
+    "assisted": true
+  }
+}

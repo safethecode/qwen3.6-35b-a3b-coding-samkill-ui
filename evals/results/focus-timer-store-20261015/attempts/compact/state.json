@@ -1,0 +1,7 @@
+{
+  "status": "FAILED_UNIT_REQUEST_OR_VALIDATION",
+  "unit": "store",
+  "pid": 42364,
+  "updatedAtUtc": "2026-10-15T14:03:14.123Z",
+  "error": "Truncated module response\n\n'length' !== 'stop'\n"
+}

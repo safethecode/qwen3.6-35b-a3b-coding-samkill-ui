@@ -1,0 +1,84 @@
+import { validateRecord, transition } from './model.js';
+export function createStore(storageProvider) {
+  const KEY = 'focus-session-v1';
+  let state = { readReady: false, record: null, error: null };
+
+  function parseRaw(raw) {
+    if (raw === null || raw === undefined) return null;
+    if (typeof raw !== 'string' || raw.trim() === '') return null;
+    return JSON.parse(raw);
+  }
+
+  function load() {
+    try {
+      const raw = storageProvider.getItem(KEY);
+      const parsed = parseRaw(raw);
+
+      if (parsed === null) {
+        state = { readReady: true, record: null, error: null };
+        return;
+      }
+
+      if (!validateRecord(parsed)) {
+        state = { readReady: false, record: null, error: 'INVALID_RECORD' };
+        return;
+      }
+
+      state = { readReady: true, record: parsed, error: null };
+    } catch (e) {
+      state = { readReady: false, record: null, error: 'READ_FAILED' };
+    }
+  }
+
+  load();
+
+  function getState() {
+    if (!state.readReady) {
+      return { readReady: false, record: null, error: state.error };
+    }
+    return {
+      readReady: true,
+      record: state.record ? { ...state.record } : null,
+      error: null
+    };
+  }
+
+  function reload() {
+    load();
+    if (state.readReady) {
+      return { ok: true };
+    } else {
+      return { ok: false, error: 'READ_FAILED' };
+    }
+  }
+
+  function transact(event, now) {
+    if (!state.readReady) {
+      return { ok: false, error: 'READ_FAILED' };
+    }
+
+    const currentRecord = state.record;
+    const result = transition(currentRecord, event, now);
+
+    if (!result.ok) {
+      return { ok: false, error: result.error };
+    }
+
+    const newRecord = result.record;
+
+    try {
+      const raw = JSON.stringify(newRecord);
+      storageProvider.setItem(KEY, raw);
+    } catch (e) {
+      return { ok: false, error: 'WRITE_FAILED' };
+    }
+
+    state.record = newRecord;
+    state.readReady = true;
+    state.error = null;
+
+    return { ok: true };
+  }
+
+  return { getState, reload, transact };
+}

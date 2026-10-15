@@ -1,0 +1,18 @@
+{
+  "elapsedMs": 7695,
+  "model": "qwen3.6:35b-a3b-coding",
+  "created_at": "2026-10-15T14:12:34.607214Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\n  \"code\": \"function transact(event, now) {\\n  if (!state.readReady) {\\n    return { ok: false, error: \\\"READ_FAILED\\\" };\\n  }\\n  const result = transition(state.record, event, now);\\n  if (!result.ok) {\\n    state.error = result.error;\\n    return { ok: false, error: result.error };\\n  }\\n  try {\\n    const provider = storageProvider();\\n    provider.setItem(KEY, JSON.stringify(result.record));\\n    state.record = result.record;\\n    state.error = null;\\n    return { ok: true };\\n  } catch (e) {\\n    state.error = \\\"WRITE_FAILED\\\";\\n    return { ok: false, error: \\\"WRITE_FAILED\\\" };\\n  }\\n}\"\n}"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 7689710600,
+  "load_duration": 7655700,
+  "prompt_eval_count": 1056,
+  "prompt_eval_cached_count": 831,
+  "prompt_eval_duration": 2752699000,
+  "eval_count": 180,
+  "eval_duration": 4921719000
+}

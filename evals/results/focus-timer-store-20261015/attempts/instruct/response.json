@@ -1,0 +1,18 @@
+{
+  "elapsedMs": 22178,
+  "model": "qwen3.6:35b-a3b-coding",
+  "created_at": "2026-10-15T14:05:29.9923559Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\"code\":\"export function createStore(storageProvider) {\\n  const KEY = 'focus-session-v1';\\n  let state = { readReady: false, record: null, error: null };\\n\\n  function parseRaw(raw) {\\n    if (raw === null || raw === undefined) return null;\\n    if (typeof raw !== 'string' || raw.trim() === '') return null;\\n    return JSON.parse(raw);\\n  }\\n\\n  function load() {\\n    try {\\n      const raw = storageProvider.getItem(KEY);\\n      const parsed = parseRaw(raw);\\n\\n      if (parsed === null) {\\n        state = { readReady: true, record: null, error: null };\\n        return;\\n      }\\n\\n      if (!validateRecord(parsed)) {\\n        state = { readReady: false, record: null, error: 'INVALID_RECORD' };\\n        return;\\n      }\\n\\n      state = { readReady: true, record: parsed, error: null };\\n    } catch (e) {\\n      state = { readReady: false, record: null, error: 'READ_FAILED' };\\n    }\\n  }\\n\\n  load();\\n\\n  function getState() {\\n    if (!state.readReady) {\\n      return { readReady: false, record: null, error: state.error };\\n    }\\n    return {\\n      readReady: true,\\n      record: state.record ? { ...state.record } : null,\\n      error: null\\n    };\\n  }\\n\\n  function reload() {\\n    load();\\n    if (state.readReady) {\\n      return { ok: true };\\n    } else {\\n      return { ok: false, error: 'READ_FAILED' };\\n    }\\n  }\\n\\n  function transact(event, now) {\\n    if (!state.readReady) {\\n      return { ok: false, error: 'READ_FAILED' };\\n    }\\n\\n    const currentRecord = state.record;\\n    const result = transition(currentRecord, event, now);\\n\\n    if (!result.ok) {\\n      return { ok: false, error: result.error };\\n    }\\n\\n    const newRecord = result.record;\\n\\n    try {\\n      const raw = JSON.stringify(newRecord);\\n      storageProvider.setItem(KEY, raw);\\n    } catch (e) {\\n      return { ok: false, error: 'WRITE_FAILED' };\\n    }\\n\\n    state.record = newRecord;\\n    state.readReady = true;\\n    state.error = null;\\n\\n    return { ok: true };\\n  }\\n\\n  return { getState, reload, transact };\\n}\"}"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 22172770500,
+  "load_duration": 8557900,
+  "prompt_eval_count": 3103,
+  "prompt_eval_cached_count": 3097,
+  "prompt_eval_duration": 378367000,
+  "eval_count": 598,
+  "eval_duration": 21535231000
+}
