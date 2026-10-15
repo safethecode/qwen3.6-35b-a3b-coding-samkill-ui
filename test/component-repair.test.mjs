@@ -4,6 +4,7 @@ import { mkdtemp, mkdir, writeFile, readFile } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { repairComponent } from '../scripts/repair-component.mjs';
+import { componentSkillContext } from '../scripts/skill-context.mjs';
 
 const component = { html: '<div data-ui-unit="A">Title</div>', css: '[data-ui-unit="A"]{font-size:12px}' };
 async function fixture() {
@@ -37,4 +38,16 @@ test('invalid scope and stale source are rejected before any repair writes', asy
     assert.equal(await readFile(join(target, 'styles.css'), 'utf8'), component.css);
     assert.equal(await readFile(join(target, 'index.html'), 'utf8'), component.html);
   }
+});
+
+test('component repairs deliver applicable guide text and preserve source hashes', async () => {
+  const { target, evidence } = await fixture();
+  const context = await componentSkillContext({ assets: [] });
+  await repairComponent(target, evidence, 'A', component, 'Fix undersized title', { fetcher: async (url, options) => {
+    const request = JSON.parse(options.body);
+    assert.ok(request.messages.some(message => message.content.includes(context.text)), 'Repair must receive actual applicable guide text');
+    return reply([{ field: 'css', oldString: component.css, newString: '[data-ui-unit="A"]{font-size:14px}' }]);
+  } });
+  const recorded = JSON.parse(await readFile(join(evidence, 'request.json'), 'utf8'));
+  assert.deepEqual(recorded.guideSources, context.sources);
 });

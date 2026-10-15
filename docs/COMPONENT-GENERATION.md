@@ -32,6 +32,8 @@ The runner checks that the fragment occurs exactly once in both assembly and sam
 
 This is a reusable repair primitive, not an automatic visual defect selector or approval loop. Run browser checks and direct reference comparison after every repair. Preserve failed candidates as evidence. The caller must serialize inference and decide which element and defect require repair; a successful application reports APPLIED_NOT_APPROVED.
 
+Repair requests also receive the complete applicable decomposition, typography, guardrail, mobile and spacing guides; SVG-bearing components receive icon guidance too. The request record retains their source hashes. This is the same guide routing as generation, not proof of compliance. Keep diagnosis and the writable region bounded even when the applicable guides are supplied.
+
 ## Long-running local inference
 
 Generation and component repair use a Node HTTP/HTTPS transport with an explicit total deadline instead of the implicit fetch response-header timeout. The default deadline is 600,000 milliseconds. Set `QWEN_REQUEST_TIMEOUT_MS` to an integer between 1,000 and 1,800,000 to override it. Existing smaller per-unit repair deadlines remain the default for the general repair runner. Component generation records its deadline in the input binding; changing it invalidates checkpoint reuse. Requests remain bounded and truncated model output is still rejected. A transport fix does not establish visual quality or guarantee that a model finishes within the chosen deadline.
