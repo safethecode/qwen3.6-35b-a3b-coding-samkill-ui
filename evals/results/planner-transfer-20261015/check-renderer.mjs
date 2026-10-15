@@ -16,13 +16,13 @@ try {
   const page = await browser.newPage({ viewport: { width: 390, height: 900 }, timezoneId: 'Asia/Seoul' });
   await page.goto(`http://127.0.0.1:${server.address().port}`);
   const fixture = { id: '4a725fc8-3214-4c94-b040-ce6e4cac9a58', title: '<img src=x onerror=alert(1)>', category: 'study', date: '2026-10-15', completed: true };
-  for (const [name, state] of [['empty', { tasks: [], selectedDate: fixture.date, error: null }], ['filled', { tasks: [fixture, { ...fixture, id: 'other', date: '2026-10-16' }], selectedDate: fixture.date, error: '저장하지 못했어요' }], ['clear', { tasks: [], selectedDate: fixture.date, error: null }]]) {
+  for (const [name, state] of [['empty', { tasks: [], selectedDate: fixture.date, error: null }], ['filled', { tasks: [fixture, { ...fixture, id: 'other', date: '2026-10-16' }], selectedDate: fixture.date, error: '저장하지 못했어요' }], ['clear', { tasks: [], selectedDate: fixture.date, error: null }], ['read-error', { tasks: [], selectedDate: fixture.date, error: '저장한 할 일을 불러오지 못했어요' }]]) {
     try {
       await page.evaluate(async state => { const { renderPlanner } = await import('./render.js'); renderPlanner(state); }, state);
       assert.equal(await page.locator('.day-button').count(), 7);
       assert.equal(await page.locator('.day-button[aria-pressed=true]').getAttribute('data-date'), fixture.date);
       assert.match(await page.locator('#selected-date').textContent(), /10.*15/);
-      assert.equal(await page.locator('#empty-state').evaluate(e => e.hidden), name === 'filled');
+      assert.equal(await page.locator('#empty-state').evaluate(e => e.hidden), name === 'filled' || Boolean(state.error));
       assert.equal(await page.locator('.task-row').count(), name === 'filled' ? 1 : 0);
       assert.equal(await page.locator('#page-error').textContent(), state.error || '');
       if (name === 'filled') {

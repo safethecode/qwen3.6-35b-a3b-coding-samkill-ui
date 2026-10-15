@@ -157,7 +157,7 @@ try {
       await page.locator('#week-days').evaluate(e => { e.scrollLeft = 0; });
       await page.evaluate(() => window.scrollTo(0, 0));
       await page.screenshot({ path: `${output}/${width}-filled.png`, fullPage: true });
-      const filled = { layout: await inspectLayoutContract(page, layout), typography: await inspectTypography(page), stress: await inspectTextStress(page, mode => page.screenshot({ path: `${output}/${width}-filled-${mode}.png`, fullPage: true })) };
+      const filled = { layout: await inspectLayoutContract(page, layout, { state: 'filled' }), typography: await inspectTypography(page), stress: await inspectTextStress(page, mode => page.screenshot({ path: `${output}/${width}-filled-${mode}.png`, fullPage: true })) };
       await add(page, '가'.repeat(120));
       const long = await inspectTextStress(page, mode => page.screenshot({ path: `${output}/${width}-long-${mode}.png`, fullPage: true }));
       await page.locator('[data-add-category=study]').click(); await page.locator('#task-name').fill('복습할 내용 정리하기');

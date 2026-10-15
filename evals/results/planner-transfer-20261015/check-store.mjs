@@ -45,6 +45,20 @@ export async function checkStore(filename) {
     assert.equal(store.tasks.length, 0);
     assert.ok(store.error);
   });
+  check('create after malformed initial read preserves unreadable data', () => {
+    const storage = memory('{'), store = createStore(storage);
+    assert.throws(() => store.add('보존할 입력', 'study', '2026-10-15'));
+    assert.equal(storage.raw, '{');
+    assert.equal(store.tasks.length, 0);
+    assert.ok(store.error);
+  });
+  check('create after failed initial read never writes', () => {
+    let writes = 0;
+    const store = createStore({ getItem() { throw Error('read denied'); }, setItem() { writes++; } });
+    assert.throws(() => store.add('보존할 입력', 'life', '2026-10-15'));
+    assert.equal(writes, 0);
+    assert.equal(store.tasks.length, 0);
+  });
   check('invalid input does not write', () => {
     const storage = memory(), store = createStore(storage);
     for (const args of [[' ', 'study', '2026-10-15'], ['a'.repeat(121), 'study', '2026-10-15'], ['제목', 'other', '2026-10-15'], ['제목', 'study', '2026-02-30'], ['제목', 'study', '2026-13-01']]) assert.throws(() => store.add(...args));
