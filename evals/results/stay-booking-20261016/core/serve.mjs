@@ -1,0 +1,5 @@
+import{createServer}from'node:http';
+import{readFile}from'node:fs/promises';
+import{fileURLToPath}from'node:url';
+import{resolve,dirname,sep,extname}from'node:path';
+const root=resolve(dirname(fileURLToPath(import.meta.url)),'source'),port=Number(process.env.PORT||0);if(!Number.isInteger(port)||port<0||port>65535)throw Error('Invalid PORT');const types={'.html':'text/html;charset=utf-8','.js':'text/javascript;charset=utf-8','.css':'text/css;charset=utf-8','.json':'application/json','.jpg':'image/jpeg','.svg':'image/svg+xml','.ttf':'font/ttf'},server=createServer(async(req,res)=>{try{const name=decodeURIComponent(new URL(req.url,'http://localhost').pathname),file=resolve(root,'.'+(name==='/'?'/index.html':name));if(!file.startsWith(root+sep))throw Error();res.setHeader('cache-control','no-store');res.setHeader('content-type',types[extname(file)]||'application/octet-stream');res.end(await readFile(file))}catch{res.writeHead(404).end()}});server.listen(port,'127.0.0.1',()=>console.log('http://127.0.0.1:'+server.address().port));

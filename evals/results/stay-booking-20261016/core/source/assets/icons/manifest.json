@@ -1,0 +1,104 @@
+{
+  "package": "lucide",
+  "version": "1.51.0",
+  "source": "https://github.com/lucide-icons/lucide",
+  "licenseSha256": "b495047bd93a9b06913511076f504daba17d5bbeb3e0650f3bb53a4220329c57",
+  "icons": [
+    {
+      "name": "Search",
+      "file": "Search.svg",
+      "sha256": "91afdeccb52714821640ad95dd03d1b66d3c678a1b08f5a53d706f9c28448b5d",
+      "geometrySha256": "7ef625bc9cd6f86bafe04b5b707937af56db855eeb74894d275f2b56b5d3c42e"
+    },
+    {
+      "name": "SlidersHorizontal",
+      "file": "SlidersHorizontal.svg",
+      "sha256": "042dbb407d9c877d79450ce7a920450813fbf1666835f16d8d7e3bbd459064d1",
+      "geometrySha256": "91d56f6b86718567e8fa0e702244aa3ea9767bd97736871d41f4176a98515731"
+    },
+    {
+      "name": "Heart",
+      "file": "Heart.svg",
+      "sha256": "26421e91f4de871a545ed11defec7f59d7e6caea37f8da7cd14d3e046c1f4468",
+      "geometrySha256": "e57139f3f414a5f31b91bd77c6ce038d23e1a2ad40987c6b0348fcfa3a122912"
+    },
+    {
+      "name": "CalendarDays",
+      "file": "CalendarDays.svg",
+      "sha256": "0602d1be0b8814686858660f26ece24e8403a97ffac66ae80725107efd97a93c",
+      "geometrySha256": "699b2ab786fc3fcbc93b32a2d24509f474707ba6d846c180c886053276ff0d7a"
+    },
+    {
+      "name": "Users",
+      "file": "Users.svg",
+      "sha256": "01824f8e3f0fd8152511dbcdcce74dd7818ffa7ad1f34bea0e1a2b052a51b9ec",
+      "geometrySha256": "d4b9ca064a90a332656039b9dab4968183dedb4bac326d31bd9a91f8851cc9c7"
+    },
+    {
+      "name": "ChevronLeft",
+      "file": "ChevronLeft.svg",
+      "sha256": "526ea8730c4ac9176a3df836141daf948df6edd8f2f35976a616f353fcc23081",
+      "geometrySha256": "94794b73e9d642ed29676ec1f3e4f2b43824f1ed14be22a9c7e2cf68eb369ffc"
+    },
+    {
+      "name": "ChevronRight",
+      "file": "ChevronRight.svg",
+      "sha256": "1db358b44dd0b76c26b8f0e81b3c36134a56bf2287acf197355c1c5419cbd75e",
+      "geometrySha256": "b387ceba6a952091d1f508996535301fdd96182f419295e1de03a83ff3ab1ed5"
+    },
+    {
+      "name": "X",
+      "file": "X.svg",
+      "sha256": "f27abfc353abc2497a1d9752e21e2e2e32eeeb4271401f2a067c4d1fcced7a23",
+      "geometrySha256": "7bf13b1e2e2ab7bb7226b828a7b6ded9a6482211bdeafc7a1e61ea450232d212"
+    },
+    {
+      "name": "BedDouble",
+      "file": "BedDouble.svg",
+      "sha256": "92e030f21feb28a69e5b40cd8835e8eddc9990aa1e7edf75f6f5bc496373f3fa",
+      "geometrySha256": "bb2d6e6cee9d5b0aa99fefbb2d9110919c3dc39f0aea256728a0796ef548e43f"
+    },
+    {
+      "name": "MapPin",
+      "file": "MapPin.svg",
+      "sha256": "006d6b63bfa711de039a1e1128ee4b7749241aa11bf8293d8ff63bc2229a83dc",
+      "geometrySha256": "2f1e6776538a10948d2015a8598883ec034a3a8536b091fc2e4e122edf5b756f"
+    },
+    {
+      "name": "Star",
+      "file": "Star.svg",
+      "sha256": "0da3143d6e4af43fec84ef03382242d03d0e7a6d7a1cf2a42b8597e497fb86d3",
+      "geometrySha256": "2580c0543a1b4ca9d9ac3b9e1b947aa7d9f76ab68176c057a0a354e861464c54"
+    },
+    {
+      "name": "Check",
+      "file": "Check.svg",
+      "sha256": "3a5b45878e79ab641ff6ac8dd83f9c8d711c297856aba532af3fc3db2dfd9c96",
+      "geometrySha256": "ab4347e7adf6b32287f8d623f659ef18e4686d9ef0a5d9f56b379024daf16f3e"
+    },
+    {
+      "name": "Minus",
+      "file": "Minus.svg",
+      "sha256": "30e89246d91856aed7f2edccf9b2d296e939a98bb948532c2c744d48cab3970d",
+      "geometrySha256": "97fd80fde2451118055c2ef4c9987b42d823085f89b7120d32530ad74899bc1f"
+    },
+    {
+      "name": "Plus",
+      "file": "Plus.svg",
+      "sha256": "3d4f93d0e5a8eb932e4d1f0d71122d01917e7624439adc35dddcd5352d7a228f",
+      "geometrySha256": "3ed1784e53a9252aa47f2392c529dc2078803a22e84522f68ec8165c23f05bb0"
+    },
+    {
+      "name": "ClipboardList",
+      "file": "ClipboardList.svg",
+      "sha256": "0e0ef2b7bdb17d1a93959e0f4341fcdf70e68ab89a812f17b98f7b2a0fe85331",
+      "geometrySha256": "08ab3f0f97a0596424d562c04040081e6e6b9ba9224c5cce6ffb8f2a4f8ada2f"
+    },
+    {
+      "name": "ChevronDown",
+      "file": "ChevronDown.svg",
+      "sha256": "eeddd7b0466147fae6f92fff1c5ca91ee737da38714572eb4ed53e9a01caf58a",
+      "geometrySha256": "e0d9c628e17cca6f0106162bcc5286c8fa44c6ba3691deb7880267ae26962fa6"
+    }
+  ]
+}

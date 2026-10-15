@@ -1,0 +1,206 @@
+{
+  "roles": [
+    {
+      "unit": "shared",
+      "selector": "body *",
+      "families": [
+        "Noto Sans KR Thin"
+      ],
+      "requireCustomFont": true
+    },
+    {
+      "unit": "search",
+      "selector": "#destination-summary",
+      "families": [
+        "Noto Sans KR Thin"
+      ],
+      "requireCustomFont": true,
+      "fontSizePx": 16,
+      "fontWeight": 600,
+      "lineHeightRatio": 1.5
+    },
+    {
+      "unit": "search",
+      "selector": "#trip-summary,#result-count",
+      "families": [
+        "Noto Sans KR Thin"
+      ],
+      "requireCustomFont": true,
+      "fontSizePx": 14,
+      "fontWeight": 500,
+      "lineHeightRatio": 1.5
+    },
+    {
+      "unit": "search",
+      "selector": "#sort",
+      "families": [
+        "Noto Sans KR Thin"
+      ],
+      "requireCustomFont": true,
+      "fontSizePx": 16,
+      "fontWeight": 500,
+      "lineHeightRatio": 1.5
+    },
+    {
+      "unit": "search",
+      "selector": ".sort-control label",
+      "families": [
+        "Noto Sans KR Thin"
+      ],
+      "requireCustomFont": true,
+      "fontSizePx": 14,
+      "fontWeight": 500,
+      "lineHeightRatio": 1.5
+    },
+    {
+      "unit": "search",
+      "selector": "#open-filters span",
+      "families": [
+        "Noto Sans KR Thin"
+      ],
+      "requireCustomFont": true,
+      "fontSizePx": 16,
+      "fontWeight": 600,
+      "lineHeightRatio": 1.5
+    },
+    {
+      "unit": "stays",
+      "selector": ".stay-card h2 a",
+      "families": [
+        "Noto Sans KR Thin"
+      ],
+      "requireCustomFont": true,
+      "fontSizePx": 18,
+      "fontWeight": 600,
+      "lineHeightRatio": 1.5
+    },
+    {
+      "unit": "stays",
+      "selector": ".stay-location,.stay-room,.stay-policy,.stay-total,.stay-unavailable",
+      "families": [
+        "Noto Sans KR Thin"
+      ],
+      "requireCustomFont": true,
+      "fontSizePx": 14,
+      "fontWeight": 500,
+      "lineHeightRatio": 1.5
+    },
+    {
+      "unit": "stays",
+      "selector": ".stay-price strong",
+      "families": [
+        "Noto Sans KR Thin"
+      ],
+      "requireCustomFont": true,
+      "fontSizePx": 18,
+      "fontWeight": 700,
+      "lineHeightRatio": 1.5
+    },
+    {
+      "unit": "stays",
+      "selector": ".stay-price > span",
+      "families": [
+        "Noto Sans KR Thin"
+      ],
+      "requireCustomFont": true,
+      "fontSizePx": 14,
+      "fontWeight": 500,
+      "lineHeightRatio": 1.5
+    },
+    {
+      "unit": "stays",
+      "selector": ".favorite span",
+      "families": [
+        "Noto Sans KR Thin"
+      ],
+      "requireCustomFont": true,
+      "fontSizePx": 14,
+      "fontWeight": 600,
+      "lineHeightRatio": 1.5
+    },
+    {
+      "unit": "navigation",
+      "selector": ".bottom-navigation a:not([aria-current]) span",
+      "families": [
+        "Noto Sans KR Thin"
+      ],
+      "requireCustomFont": true,
+      "fontSizePx": 14,
+      "fontWeight": 600,
+      "lineHeightRatio": 1.5
+    },
+    {
+      "unit": "shared",
+      "selector": ".sheet-heading h2",
+      "families": [
+        "Noto Sans KR Thin"
+      ],
+      "requireCustomFont": true,
+      "fontSizePx": 22,
+      "fontWeight": 700,
+      "lineHeightRatio": 1.5,
+      "states": [
+        "search",
+        "search-invalid",
+        "filter",
+        "filter-invalid"
+      ]
+    },
+    {
+      "unit": "shared",
+      "selector": "dialog label,dialog button,dialog legend",
+      "families": [
+        "Noto Sans KR Thin"
+      ],
+      "requireCustomFont": true,
+      "fontSizePx": 16,
+      "fontWeight": 600,
+      "lineHeightRatio": 1.5,
+      "states": [
+        "search",
+        "search-invalid",
+        "filter",
+        "filter-invalid"
+      ]
+    },
+    {
+      "unit": "shared",
+      "selector": "dialog input:not([type=checkbox]),dialog select",
+      "families": [
+        "Noto Sans KR Thin"
+      ],
+      "requireCustomFont": true,
+      "fontSizePx": 16,
+      "fontWeight": 500,
+      "lineHeightRatio": 1.5,
+      "states": [
+        "search",
+        "search-invalid",
+        "filter",
+        "filter-invalid"
+      ]
+    },
+    {
+      "unit": "navigation",
+      "selector": ".bottom-navigation a[aria-current=page] span",
+      "families": [
+        "Noto Sans KR Thin"
+      ],
+      "requireCustomFont": true,
+      "fontSizePx": 14,
+      "fontWeight": 700,
+      "lineHeightRatio": 1.5
+    }
+  ],
+  "cssFamily": "Noto Sans KR",
+  "localFont": {
+    "sha256": "194018e6b2b293a7964f037b25c0249ce1418bc9ab3c971060a03aa57861e252",
+    "weight": "100 900",
+    "source": "https://raw.githubusercontent.com/google/fonts/b38c5c93af322c45f633e17ac440ec1e6c94d489/ofl/notosanskr/NotoSansKR%5Bwght%5D.ttf",
+    "asset": "assets/fonts/NotoSansKR.ttf",
+    "family": "Noto Sans KR",
+    "license": "assets/fonts/OFL.txt"
+  },
+  "scope": "B1core normal/saved/error/search/filter first-style scopes only. Hidden/otherjourneys notapproved;fullproductstates andfonts remain mandatory.",
+  "exactRoleOrigin": "Chosen before first CSS generation,following actualphoto-ledreference hierarchy.20pxpageinset preserved. No exact reference CSS/font measurements claimed."
+}

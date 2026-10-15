@@ -1,0 +1,164 @@
+{
+  "rules": [
+    {
+      "id": "mobile-core",
+      "kind": "maxWidth",
+      "subject": "body",
+      "maximum": 390
+    },
+    {
+      "id": "mobile-navigation",
+      "kind": "maxWidth",
+      "subject": ".bottom-navigation",
+      "maximum": 390
+    },
+    {
+      "id": "price-separate-afternoon",
+      "kind": "below",
+      "subject": "#card-afternoon .stay-price",
+      "reference": "#card-afternoon .stay-room",
+      "minGap": 0,
+      "states": [
+        "initial"
+      ]
+    },
+    {
+      "id": "metadata-below-photo-afternoon",
+      "kind": "below",
+      "subject": "#card-afternoon .stay-facts",
+      "reference": "#card-afternoon .stay-media",
+      "minGap": 12,
+      "states": [
+        "initial"
+      ]
+    },
+    {
+      "id": "price-separate-walk",
+      "kind": "below",
+      "subject": "#card-walk .stay-price",
+      "reference": "#card-walk .stay-room",
+      "minGap": 0,
+      "states": [
+        "initial"
+      ]
+    },
+    {
+      "id": "metadata-below-photo-walk",
+      "kind": "below",
+      "subject": "#card-walk .stay-facts",
+      "reference": "#card-walk .stay-media",
+      "minGap": 12,
+      "states": [
+        "initial"
+      ]
+    },
+    {
+      "id": "price-separate-smallroom",
+      "kind": "below",
+      "subject": "#card-smallroom .stay-price",
+      "reference": "#card-smallroom .stay-room",
+      "minGap": 0,
+      "states": [
+        "initial"
+      ]
+    },
+    {
+      "id": "metadata-below-photo-smallroom",
+      "kind": "below",
+      "subject": "#card-smallroom .stay-facts",
+      "reference": "#card-smallroom .stay-media",
+      "minGap": 12,
+      "states": [
+        "initial"
+      ]
+    },
+    {
+      "id": "search-control",
+      "kind": "computedStyle",
+      "subject": "#open-search",
+      "properties": {
+        "border-radius": "24px",
+        "border-top-width": "0px",
+        "text-align": "start"
+      },
+      "states": [
+        "initial"
+      ]
+    },
+    {
+      "id": "filter-control",
+      "kind": "computedStyle",
+      "subject": "#open-filters",
+      "properties": {
+        "border-radius": "12px",
+        "border-top-width": "0px",
+        "text-align": "start"
+      },
+      "states": [
+        "initial"
+      ]
+    },
+    {
+      "id": "search-wrap",
+      "kind": "computedStyle",
+      "subject": ".search-entry",
+      "properties": {
+        "flex-wrap": "wrap"
+      },
+      "states": [
+        "initial"
+      ]
+    },
+    {
+      "id": "tools-wrap",
+      "kind": "computedStyle",
+      "subject": ".result-tools",
+      "properties": {
+        "flex-wrap": "wrap",
+        "gap": "8px"
+      },
+      "states": [
+        "initial"
+      ]
+    },
+    {
+      "id": "sort-field",
+      "kind": "computedStyle",
+      "subject": "#sort",
+      "properties": {
+        "appearance": "none",
+        "line-height": "24px",
+        "border-top-width": "0px"
+      },
+      "states": [
+        "initial"
+      ]
+    },
+    {
+      "id": "city-field",
+      "kind": "computedStyle",
+      "subject": "#city",
+      "properties": {
+        "appearance": "none",
+        "line-height": "24px",
+        "border-top-width": "0px"
+      },
+      "states": [
+        "search"
+      ]
+    },
+    {
+      "id": "type-field",
+      "kind": "computedStyle",
+      "subject": "#stay-type",
+      "properties": {
+        "appearance": "none",
+        "line-height": "24px",
+        "border-top-width": "0px"
+      },
+      "states": [
+        "filter"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "purpose": "Licensed product UI fixture photographs,not extracted UI Bowl screenshots. No photographer/property/brand endorsement claimed. Fictional evaluation catalog,not real lodging inventory.",
+  "license": "Pexels License",
+  "licenseUrl": "https://www.pexels.com/license/",
+  "licenseCheckedAtUtc": "2026-10-15T15:59:04.071Z",
+  "photos": [
+    {
+      "id": "room-warm",
+      "file": "room-warm.jpg",
+      "author": "Magda Ehlers",
+      "page": "https://www.pexels.com/photo/modern-and-simple-hotel-room-interior-15273732/",
+      "bytes": 69412,
+      "sha256": "f6cc627e9506037ca888eb7bddb59bcc2f1119d797d58ecd360f300d2020640c",
+      "acquiredAtUtc": "2026-10-15T15:59:03.395Z"
+    },
+    {
+      "id": "room-neutral",
+      "file": "room-neutral.jpg",
+      "author": "Max Vakhtbovych",
+      "page": "https://www.pexels.com/photo/interior-of-a-hotel-room-8082564/",
+      "bytes": 105074,
+      "sha256": "64cc4eff5cf6e123025b651ed5a14c8d1afebfccbc48286c1c77193a9468d7b3",
+      "acquiredAtUtc": "2026-10-15T15:59:04.071Z"
+    }
+  ]
+}
