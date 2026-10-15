@@ -1,0 +1,35 @@
+{
+  "status": "COVERAGE_UTILITY_VERIFIED_UI_UNFINISHED",
+  "sourceHashes": {
+    "scripts/layout-contract.mjs": "b1baa75b1e18f8d32ef84d3dcd5f4833489309b2ab7f767fbda3974a54fab856",
+    "scripts/layout-state-coverage.mjs": "83797fb18654129ea86baf413bf6465ba6ddf3723346fdfc5e1a031bd57b24f4",
+    "test/layout-contract.test.mjs": "0e1bdbb5e11a638d52470dfdac7a660d19fd5a16f8fa229f2789d246fc178748",
+    "test/layout-state-coverage.test.mjs": "06c13a611c10d9a6c5bca014c07b8c799a03f7f47e01597485d37f5a5e243909",
+    "skills/qwen-samkill-ui/references/decomposed-layout.md": "c6667c0d04cff2766bc6e8d87eaeba696b4dfed2d6d5dac8718fe275a4a5d47c"
+  },
+  "executed": {
+    "fullRepositoryTests": {
+      "passed": 123,
+      "failed": 0
+    },
+    "browserSuite": {
+      "passed": 44,
+      "failed": 0
+    },
+    "finalFocused": {
+      "passed": 18,
+      "failed": 0
+    }
+  },
+  "independentReview": {
+    "initialImportantFindings": 3,
+    "fixed": 3,
+    "recheck": "No remaining material findings within geometry/coverage scope"
+  },
+  "limits": [
+    "Receipt/source authentication",
+    "Actual DOM state and text-mode activation",
+    "Visual comparison and reference parity",
+    "Planner edit-mode implementation pending"
+  ]
+}
