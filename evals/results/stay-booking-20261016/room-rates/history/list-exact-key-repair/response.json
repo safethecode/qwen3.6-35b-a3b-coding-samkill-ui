@@ -1,0 +1,18 @@
+{
+  "elapsedMs": 10360,
+  "model": "qwen3.6:35b-a3b-coding",
+  "created_at": "2026-10-15T17:57:48.0880001Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\n\"guard\": \"only two if statements\"\n}"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 10354691400,
+  "load_duration": 8009000,
+  "prompt_eval_count": 863,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration": 9772800000,
+  "eval_count": 14,
+  "eval_duration": 469603000
+}

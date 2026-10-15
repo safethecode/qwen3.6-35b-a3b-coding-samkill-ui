@@ -1,0 +1,18 @@
+{
+  "elapsedMs": 12818,
+  "model": "qwen3.6:35b-a3b-coding",
+  "created_at": "2026-10-15T17:58:43.3779168Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\n  \"guard\": \"if (Object.keys(trip).length !== 3 || !tripKeys.has('start') || !tripKeys.has('end') || !tripKeys.has('guests')) return {ok:false,error:'INVALID_ROOM_QUERY'};\\nif (Object.keys(filters).length !== 2 || !('freeCancellation' in filters) || !('breakfast' in filters)) return {ok:false,error:'INVALID_ROOM_QUERY'};\"\n}"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 12810846100,
+  "load_duration": 10988800,
+  "prompt_eval_count": 898,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration": 9838078000,
+  "eval_count": 97,
+  "eval_duration": 2875509000
+}

@@ -1,0 +1,40 @@
+{
+  "status": "SCOPED_ROOM_RATE_DEPENDENCY_ONLY",
+  "moduleSha256": "a56f7bb987d632be03b1dafb16226320b2167a9858a5bde81b209c3583ba4740",
+  "checkerSha256": "b2da972c5ec0bf739ca639a84ac85f419d42407d6ecf690ce3f86990ebf5a7ee",
+  "checks": [
+    {
+      "name": "all owned rates preserved in room/rate order with exact totals",
+      "status": "PASS"
+    },
+    {
+      "name": "free cancellation and breakfast are genuine independent filters",
+      "status": "PASS"
+    },
+    {
+      "name": "capacity and closed nights do not erase other eligible rooms",
+      "status": "PASS"
+    },
+    {
+      "name": "valid no availability is confirmed empty",
+      "status": "PASS"
+    },
+    {
+      "name": "invalid shape types dates and explicit today never become empty",
+      "status": "PASS"
+    },
+    {
+      "name": "unknown property cannot fall back to first property",
+      "status": "PASS"
+    },
+    {
+      "name": "other properties keep genuine selected prices",
+      "status": "PASS"
+    },
+    {
+      "name": "fresh quotes immutable inputs and exact quote schema",
+      "status": "PASS"
+    }
+  ],
+  "limits": "No browser or reference-quality approval."
+}

@@ -1,0 +1,41 @@
+{
+  "status": "FAIL",
+  "moduleSha256": "43550d1205d79d3fd79f1e26afbb1963c274683fb282960494c3721b0fc86ece",
+  "checkerSha256": "b2da972c5ec0bf739ca639a84ac85f419d42407d6ecf690ce3f86990ebf5a7ee",
+  "checks": [
+    {
+      "name": "all owned rates preserved in room/rate order with exact totals",
+      "status": "PASS"
+    },
+    {
+      "name": "free cancellation and breakfast are genuine independent filters",
+      "status": "PASS"
+    },
+    {
+      "name": "capacity and closed nights do not erase other eligible rooms",
+      "status": "PASS"
+    },
+    {
+      "name": "valid no availability is confirmed empty",
+      "status": "PASS"
+    },
+    {
+      "name": "invalid shape types dates and explicit today never become empty",
+      "status": "FAIL",
+      "detail": "Expected values to be strictly deep-equal:\n+ actual - expected\n\n  {\n+   ok: true,\n+   quotes: [\n+     {\n+       breakfast: false,\n+       capacity: 2,\n+       cleaningFee: 20000,\n+       end: '2026-11-08',\n+       freeCancellation: false,\n+       guests: 2,\n+       nightly: 128000,\n+       nights: 2,\n+       rateId: 'afternoon-standard-basic',\n+       roomId: 'afternoon-standard',\n+       serviceFee: 12800,\n+       start: '2026-11-06',\n+       stayId: 'afternoon',\n+       total: 288800\n+     },\n+     {\n+       breakfast: false,\n+       capacity: 2,\n+       cleaningFee: 20000,\n+       end: '2026-11-08',\n+       freeCancellation: true,\n+       guests: 2,\n+       nightly: 148000,\n+       nights: 2,\n+       rateId: 'afternoon-standard-flex',\n+       roomId: 'afternoon-standard',\n+       serviceFee: 14800,\n+       start: '2026-11-06',\n+       stayId: 'afternoon',\n+       total: 330800\n+     },\n+     {\n+       breakfast: true,\n+       capacity: 4,\n+       cleaningFee: 30000,\n+       end: '2026-11-08',\n+       freeCancellation: true,\n+       guests: 2,\n+       nightly: 198000,\n+       nights: 2,\n+       rateId: 'afternoon-family-flex',\n+       roomId: 'afternoon-family',\n+       serviceFee: 19800,\n+       start: '2026-11-06',\n+       stayId: 'afternoon',\n+       total: 445800\n+     }\n+ "
+    },
+    {
+      "name": "unknown property cannot fall back to first property",
+      "status": "PASS"
+    },
+    {
+      "name": "other properties keep genuine selected prices",
+      "status": "PASS"
+    },
+    {
+      "name": "fresh quotes immutable inputs and exact quote schema",
+      "status": "PASS"
+    }
+  ],
+  "limits": "No browser or reference-quality approval."
+}

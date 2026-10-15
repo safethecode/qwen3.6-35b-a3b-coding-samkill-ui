@@ -1,0 +1,18 @@
+{
+  "elapsedMs": 69307,
+  "model": "qwen3.6:35b-a3b-coding",
+  "created_at": "2026-10-15T17:53:59.2277393Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\n\"code\": \"import { isBookableRange } from \\\"./dates.js\\\";\\nimport { buildQuote } from \\\"./quote.js\\\";\\n\\nexport function listStayRates(catalog, stayId, trip, today, filters) {\\n    if (!trip || typeof trip !== 'object' || !('start' in trip) || !('end' in trip) || !('guests' in trip)) {\\n        return { ok: false, error: 'INVALID_ROOM_QUERY' };\\n    }\\n    const { start, end, guests } = trip;\\n    if (typeof start !== 'string' || typeof end !== 'string') {\\n        return { ok: false, error: 'INVALID_ROOM_QUERY' };\\n    }\\n    if (!isBookableRange(start, end, today)) {\\n        return { ok: false, error: 'INVALID_ROOM_QUERY' };\\n    }\\n    if (typeof guests !== 'number' || !Number.isInteger(guests) || guests < 1 || guests > 8) {\\n        return { ok: false, error: 'INVALID_ROOM_QUERY' };\\n    }\\n\\n    let property = null;\\n    for (const p of catalog) {\\n        if (p.id === stayId) {\\n            property = p;\\n            break;\\n        }\\n    }\\n    if (!property) {\\n        return { ok: false, error: 'UNKNOWN_STAY' };\\n    }\\n\\n    const quotes = [];\\n    for (const room of property.rooms) {\\n        if (room.capacity < guests) continue;\\n\\n        for (const rate of room.rates) {\\n            if (filters.freeCancellation && !rate.freeCancellation) continue;\\n            if (filters.breakfast && !rate.breakfast) continue;\\n\\n            const selection = {\\n                stayId: stayId,\\n                roomId: room.id,\\n                rateId: rate.id,\\n                start: start,\\n                end: end,\\n                guests: guests\\n            };\\n\\n            const result = buildQuote(catalog, selection, today);\\n            if (result.ok && result.quote) {\\n                quotes.push(result.quote);\\n            }\\n        }\\n    }\\n\\n    return { ok: true, quotes: quotes };\\n}\"\n}"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 69300549300,
+  "load_duration": 17154451100,
+  "prompt_eval_count": 3114,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration": 33485489999,
+  "eval_count": 505,
+  "eval_duration": 18641378000
+}

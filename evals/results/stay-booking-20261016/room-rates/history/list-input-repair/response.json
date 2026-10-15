@@ -1,0 +1,18 @@
+{
+  "elapsedMs": 27569,
+  "model": "qwen3.6:35b-a3b-coding",
+  "created_at": "2026-10-15T17:56:40.5029758Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\"guard\":\"if (!Array.isArray(catalog)) return {ok:false,error:'INVALID_ROOM_QUERY'};\\nif (typeof stayId !== 'string' || stayId.length === 0) return {ok:false,error:'INVALID_ROOM_QUERY'};\\nif (!filters || typeof filters !== 'object' || !('freeCancellation' in filters) || !('breakfast' in filters) || typeof filters.freeCancellation !== 'boolean' || typeof filters.breakfast !== 'boolean') return {ok:false,error:'INVALID_ROOM_QUERY'};\\nconst tripKeys = new Set(['start','end','guests']);\\nif (typeof trip !== 'object' || trip === null || Array.isArray(trip)) return {ok:false,error:'INVALID_ROOM_QUERY'};\\nfor (const key of Object.keys(trip)) {\\n  if (!tripKeys.has(key)) return {ok:false,error:'INVALID_ROOM_QUERY'};\\n}\\nif (!tripKeys.has('start') || !tripKeys.has('end') || !tripKeys.has('guests')) return {ok:false,error:'INVALID_ROOM_QUERY'};\"}"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 27563302200,
+  "load_duration": 10735800,
+  "prompt_eval_count": 1853,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration": 19413907000,
+  "eval_count": 227,
+  "eval_duration": 7987808000
+}
