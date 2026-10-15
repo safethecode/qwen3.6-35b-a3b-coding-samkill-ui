@@ -1,0 +1,7 @@
+{
+  "status": "CORRECTED_GIT_LINE_ENDING_TRANSFER",
+  "originalCommit": "899ff02",
+  "observed": "Post-commit verification found that Git normalized archived CRLF log bytes while the published index and receipts described the original archive bytes. The original commit and private logs are preserved.",
+  "correction": "Scoped artifact attributes disable text line-ending conversion. Archived working bytes are restaged unchanged, preserving the original/published log receipts. The refreshed index is checked against actual staged and committed bytes.",
+  "scope": "Evidence-byte transport only. No test outcomes, assertions, requirements, UI source, local model inputs or source-guide bindings are changed. This is not a new test-suite run or UI quality improvement."
+}

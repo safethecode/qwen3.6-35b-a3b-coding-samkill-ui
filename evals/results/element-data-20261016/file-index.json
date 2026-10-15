@@ -3,6 +3,11 @@
   "scope": "Exact published bytes; index excludes itself. Functional evidence does not establish visual approval.",
   "files": [
     {
+      "path": ".gitattributes",
+      "bytes": 8,
+      "sha256": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da"
+    },
+    {
       "path": "data-context-red.log",
       "bytes": 3910,
       "sha256": "9ccd31f73a80ef051d9ba068067a4c6afd1fcdef2f32b06d853cbe89920fffc6"
@@ -31,6 +36,11 @@
       "path": "pointer-red.log",
       "bytes": 1434,
       "sha256": "b4928c36b8222d65ba3c3d185e82c11a50e19aa09b768a551b72a373a9a1410e"
+    },
+    {
+      "path": "publication-integrity.json",
+      "bytes": 773,
+      "sha256": "66493cff312d6fa89b6ef108362dbf56a6c8b0c6e0f66e93839fb50321da6c1c"
     },
     {
       "path": "README.md",
