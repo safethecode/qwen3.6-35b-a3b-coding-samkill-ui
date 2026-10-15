@@ -4,6 +4,33 @@ import { chromium } from 'playwright';
 import { inspectLayoutContract } from '../scripts/layout-contract.mjs';
 import { createServer } from 'node:http';
 
+test('first-line control contract rejects controls centered in a tall wrapped row', async () => {
+  const browser = await chromium.launch({ executablePath: process.env.CHROME_PATH || undefined, headless: true });
+  try {
+    const page = await browser.newPage();
+    await page.setContent('<style>body{font:16px sans-serif}*{box-sizing:border-box}.row{display:flex;gap:8px;align-items:center;width:240px}.label{display:flex;gap:12px;flex:1;min-width:0;padding:8px 0}.check{font:inherit;width:20px;height:20px;min-width:20px;margin:2px 0 0}.text{flex:1;min-width:0;line-height:1.6;overflow-wrap:anywhere}.delete{font:inherit;width:44px;height:44px;min-width:44px}</style><main id="tasks"><div class="row"><label class="label"><input class="check" type="checkbox"><span class="text">A long task title that wraps into multiple lines and keeps its complete content visible.</span></label><button class="delete">X</button></div></main>');
+    const contract = { rules: [{ id: 'task-actions', kind: 'firstLineControls', subject: '#tasks', rows: '.row', text: '.text', controls: ['.check', '.delete'], tolerance: 2 }] };
+    assert.equal((await inspectLayoutContract(page, contract)).results[0].status, 'FAIL');
+    await page.locator('.row').evaluate(e => { e.style.alignItems = 'flex-start'; });
+    await page.locator('.check').evaluate(e => { e.style.marginTop = 'calc(.8em - 10px)'; });
+    await page.locator('.delete').evaluate(e => { e.style.marginTop = 'max(0px, calc(.8em - 14px))'; });
+    assert.equal((await inspectLayoutContract(page, contract)).results[0].status, 'PASS');
+    await page.locator('body').evaluate(e => { e.style.fontSize = '32px'; });
+    assert.equal((await inspectLayoutContract(page, contract)).results[0].status, 'PASS');
+  } finally { await browser.close(); }
+});
+
+test('first-line control inspection cannot pass with no visible rows or unvisited states', async () => {
+  const browser = await chromium.launch({ executablePath: process.env.CHROME_PATH || undefined, headless: true });
+  try {
+    const page = await browser.newPage(); await page.setContent('<main id="tasks" style="height:100px"></main>');
+    const rule = { id: 'task-actions', kind: 'firstLineControls', subject: '#tasks', rows: '.row', text: '.text', controls: ['.delete'], tolerance: 2 };
+    assert.match((await inspectLayoutContract(page, { rules: [rule] })).results[0].detail, /visible row/);
+    const pending = await inspectLayoutContract(page, { rules: [{ ...rule, states: ['filled'] }] });
+    assert.equal(pending.results.length, 0); assert.equal(pending.pendingStates[0].status, 'UNVERIFIED');
+  } finally { await browser.close(); }
+});
+
 test('primary action must occupy the remainder of its two-control row', async () => {
   const browser = await chromium.launch({ executablePath: process.env.CHROME_PATH || undefined, headless: true });
   try {

@@ -43,7 +43,30 @@ export async function inspectLayoutContract(page, contract, options = {}) {
         if (observed.maximumInlineGroups > rule.maximum) throw new Error(`Too many semantic groups share a row: ${observed.maximumInlineGroups} > ${rule.maximum}`);
       } else {
         observed.subject = await box(rule.subject);
-        if (rule.kind === 'fillRemainder') {
+        if (rule.kind === 'firstLineControls') {
+          const tolerance = rule.tolerance ?? 2;
+          if (typeof rule.rows !== 'string' || !rule.rows.trim() || typeof rule.text !== 'string' || !rule.text.trim() || !Array.isArray(rule.controls) || !rule.controls.length || rule.controls.length > 4 || rule.controls.some(selector => typeof selector !== 'string' || !selector.trim()) || new Set(rule.controls).size !== rule.controls.length || !Number.isFinite(tolerance) || tolerance < 0 || tolerance > 4) throw new Error('First-line controls require row/text selectors, one to four unique control selectors and tolerance0–4px');
+          observed.rows = await page.locator(rule.subject).evaluate((root, rule) => {
+            const visible = element => element.checkVisibility({ checkOpacity: true, checkVisibilityCSS: true }) && element.getBoundingClientRect().width > 0;
+            const rows = [...root.querySelectorAll(rule.rows)].filter(visible);
+            if (!rows.length) throw new Error('First-line inspection requires at least one visible row in its declared state');
+            return rows.map((row, index) => {
+              const texts = row.querySelectorAll(rule.text);
+              if (texts.length !== 1 || !visible(texts[0])) throw new Error('Expected one visible first-line text subject per row');
+              const text = texts[0], lineHeight = parseFloat(getComputedStyle(text).lineHeight);
+              if (!Number.isFinite(lineHeight) || lineHeight <= 0) throw new Error('First-line alignment requires a resolved numeric line-height');
+              const firstLineCenter = text.getBoundingClientRect().top + lineHeight / 2, bounds = row.getBoundingClientRect();
+              const controls = rule.controls.map(selector => {
+                const elements = row.querySelectorAll(selector);
+                if (elements.length !== 1 || !visible(elements[0])) throw new Error('Expected one visible owned control per selector in each row');
+                const box = elements[0].getBoundingClientRect();
+                return { selector, centerOffset: box.top + box.height / 2 - firstLineCenter, contained: box.left >= bounds.left - .5 && box.right <= bounds.right + .5 && box.top >= bounds.top - .5 && box.bottom <= bounds.bottom + .5 };
+              });
+              return { index, firstLineCenter, lineHeight, controls };
+            });
+          }, rule);
+          if (observed.rows.some(row => row.controls.some(control => !control.contained || Math.abs(control.centerOffset) > tolerance))) throw new Error('Supporting controls drift from their owned first text line or escape the row');
+        } else if (rule.kind === 'fillRemainder') {
           observed.reference = await box(rule.reference);
           observed.container = await box(rule.container);
           observed.row = await page.locator(rule.container).evaluate((element, selectors) => {

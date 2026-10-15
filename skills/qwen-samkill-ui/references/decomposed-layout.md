@@ -40,6 +40,7 @@ Create `design/layout-contract.json` with a nonempty `rules` array. Each rule ne
 
 | Kind | Fields | Measured relationship |
 | --- | --- | --- |
+| firstLineControls | subject, rows, text, controls, tolerance | For explicitly declared variable-height rows, each owned control stays near the first text line center and inside its row. Relative selectors must resolve once per row; zero visible rows cannot pass. Use numeric line-height and visited filled/long states. |
 | contained | subject, container | DOM ownership and rendered containment |
 | absent | subject | No duplicated or forbidden content in a region |
 | below | subject, reference, minGap | Ordered regions with a minimum vertical gap |
