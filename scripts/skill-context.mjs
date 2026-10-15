@@ -8,7 +8,7 @@ const routes = {
   state: ['onboarding-flow/references/flow-contract.md'],
   behavior: ['reference-review/references/state-stress.md'],
   forms: ['onboarding-flow/references/flow-contract.md', 'reference-review/references/state-stress.md'],
-  layout: ['reference-to-ui/references/typography.md', 'reference-to-ui/references/design-guardrails.md'],
+  layout: ['reference-to-ui/references/typography.md', 'reference-to-ui/references/design-guardrails.md', 'reference-to-ui/references/spacing-audit.md'],
   responsive: ['reference-to-ui/references/mobile.md', 'reference-to-ui/references/icon-controls.md']
 };
 const digest = value => createHash('sha256').update(value).digest('hex');
