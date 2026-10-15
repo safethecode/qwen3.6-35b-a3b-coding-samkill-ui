@@ -24,6 +24,16 @@ Each CSS unit needs the actual rendered element structure, including JavaScript-
 
 For decorative illustrations, implement the frame's dimensions and positioning context first, then each shape variant using the exact rendered attribute value. Review the painted result as well as its box: a positive-size empty background is not a completed illustration, and absolute pseudo-elements can escape a zero-height owner. Test every variant in the assembled page. For forms, verify the actual font and weight of inputs, selects and placeholders separately from body text. A supplied font file alone does not establish control inheritance.
 
+## Behavior units and semantic acceptance
+
+For an interactive application, separate validation/date utilities, state persistence, DOM rendering and event wiring by their actual dependencies. Give a state-only request its API and record schema; unrelated page HTML and CSS make that responsibility harder to identify. Preserve stable IDs when rendering and wiring are separate. This is a decomposition option for work that does not complete reliably, not a requirement to split every small script.
+
+Syntax and export checks cannot approve behavior. Exercise a valid create/change/remove/reload sequence as well as malformed records and failed writes before accepting a state module. For synchronous local storage, derive the next array, persist that candidate and update in-memory records only after the write succeeds. Saving the old array or mutating memory before persistence breaks recovery. Validate actual calendar dates, identifiers and required text rather than accepting strings that only match a regular expression.
+
+When HTML interpolation is forbidden, specify the permitted operations concretely: replaceChildren to clear, createElement/append to construct controls, clone an existing template and assign user text through textContent. An HTML-escaping helper does not satisfy a no-innerHTML contract. Test the resulting interaction rather than accepting an absence-of-keyword check as proof.
+
+If a diagnosed repair repeats the same defect, reduce the writable unit to one function or explicit statement slots. Preserve the raw rejected outputs and accepted neighbors. Verify semantic behavior again: a validation patch can accidentally insert an unconditional return and disable valid creation. Record host-selected boundaries, export/assembly glue and model-generated logic separately. Keep thinking settings, token limits, elapsed time and completed output as experimental evidence; a single successful narrow repair does not establish a better default or general reliability.
+
 ## Executable layout contract
 
 Create `design/layout-contract.json` with a nonempty `rules` array. Each rule needs a unique `id` and `kind`. Selectors must identify exactly one visible element except `absent`, which requires no matching element. Optional `widths` and `states` restrict applicability and must not hide required coverage.
