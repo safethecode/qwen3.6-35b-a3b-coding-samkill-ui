@@ -9,7 +9,7 @@ const titleInput = document.getElementById('task-name');
 const catSelect = document.getElementById('task-category');
 const errorEl = document.getElementById('task-error');
 const pageError = document.getElementById('page-error');
-const emptyState = document.getElementById('empty-state');
+
 let lastFocused = null;
 
 function updateUI() {
@@ -17,7 +17,7 @@ function updateUI() {
   state.error = store.error;
   renderPlanner(state);
   if (pageError) pageError.textContent = store.error || '';
-  emptyState.hidden = state.tasks.some(t => t.date === state.selectedDate);
+
 }
 
 function openDialog(category) {

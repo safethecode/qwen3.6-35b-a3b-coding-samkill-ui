@@ -53,7 +53,7 @@ function renderTasks(state) {
   if (containerStudy) containerStudy.replaceChildren();
   if (containerLife) containerLife.replaceChildren();
 
-if (emptyState) emptyState.hidden = filteredTasks.length > 0;  const fragment = document.createDocumentFragment();
+if (emptyState) emptyState.hidden = Boolean(error) || filteredTasks.length > 0;  const fragment = document.createDocumentFragment();
 
   filteredTasks.forEach(task => {
     const clone = template.content.cloneNode(true);

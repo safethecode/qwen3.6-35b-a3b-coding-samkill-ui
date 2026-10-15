@@ -68,13 +68,13 @@ if (typeof r.title !== 'string' || r.title.trim().length < 1 || r.title.trim().l
       error = null;
     } catch (e) {
       tasks = [];
-      error = '저장소 로딩 중 오류가 발생했습니다.';
+      error = '저장한 할 일을 불러오지 못했어요.';
     }
   }
 
-  function commit(next) {
-    try {
-      storage.setItem(STORAGE_KEY, JSON.stringify(next));
+function commit(next) {
+    if (initialReadError) throw new Error('저장한 할 일을 불러오지 못했어요. 새로고침 후 다시 확인해주세요.');
+    try {      storage.setItem(STORAGE_KEY, JSON.stringify(next));
       tasks = next;
       error = null;
     } catch (e) {
@@ -84,6 +84,7 @@ if (typeof r.title !== 'string' || r.title.trim().length < 1 || r.title.trim().l
   }
 
   load();
+  const initialReadError = error;
 
   return {
     get tasks() {

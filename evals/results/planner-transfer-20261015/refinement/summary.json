@@ -3,8 +3,8 @@
   "sourceHashes": {
     "index.html": "aba6b6fc457f61e67f3a30b9aec3550be1832bba913e3c1b2b5b99bc79741369",
     "styles.css": "a6227a38ed9e94fe65b65b51f1cd02c1dc50528b3baa02d00e53afccbf6a4229",
-    "app.js": "311362d1fe3819ad012e20a789b1fe781f42f6c59ff06bee6474a0da39afc39a",
-    "DESIGN.md": "6ff437cc296e9a9c31a21222ec0a849aa4403c7e28ff9bb58a0295804fd1cc13",
+    "app.js": "2daa04f05fc76c4c901607e0a06dbfc45b9aba51a7734e8575e3f3fde15706de",
+    "DESIGN.md": "01554d209ba008b7b3c6182a4614e77359927c3811404acfad29ed9953aca78b",
     "REFERENCE.md": "9f04811d7f04c3d0ae81da3cf35c30457499108f6a3e7df93c9ab9b872a9078c",
     "assets/fonts/METADATA.pb": "9b8b27c0dd1adbb0057d1fbe9534207ab3606114ace6755453d14668912471a1",
     "assets/fonts/NotoSansKR.ttf": "194018e6b2b293a7964f037b25c0249ce1418bc9ab3c971060a03aa57861e252",
@@ -17,16 +17,17 @@
     "design/typography.json": "534c3deed77d20d1d9839d0eceda9925e0cdb26b2f632ba652d29bb5e1909cee",
     "design/component-plan.json": "294338b96eb371258a3b4213e99e914ca8f6546159ad7fb2e4e6c14ff27f2f19",
     "design/layout-contract.json": "9ee84432ec65ec95f593887fe8a7bd4479dde09a7e91df25b35199204420d3cc",
-    "render.js": "2b3c18eb0e2f44f5515881d886891fb861110f0d2a282abd13f918095f62a8d1",
+    "render.js": "c79a79d230aadde3e5e89bf8a3e5c4b55c1a10f19a259062802c65d3773c67e5",
     "sample-editor.html": "6986f9ac088f35c49edd8bce742b4fb33dd43c64d2f6bbe003e7b7e2edf117ef",
     "sample-tasks.html": "30e9ac90bd73754e82db4424df60366bb429d13c84c5af65a83df94cbbc272de",
     "sample-week.html": "bc2a5478593a394f124d388ae299191f89f0f7a1781e745f3de21567f2a6c3f8",
-    "store.js": "86ffb7f9fd370b5e7a774e108d5b31cd797a989621b0a862ddbeae2260627853"
+    "store.js": "2300e692f886294a8d328b7d3f72fdac9c72b57eac8c6d2c79d95fd9bd25f0ce"
   },
   "workflow": {
     "passed": 73,
     "failed": 0,
-    "checker": "check-planner.mjs state-aware v4"
+    "checker": "check-planner.mjs state-aware v4",
+    "evidence": "storage-recovery/verified-workflow/report.json"
   },
   "firstLine": {
     "baselineFailures": 16,
@@ -43,12 +44,14 @@
       "text-spacing"
     ],
     "tolerancePx": 2,
-    "categoryHeightPx": 44
+    "categoryHeightPx": 44,
+    "evidence": "storage-recovery/verified-firstline/report.json"
   },
   "assistance": [
     "Host official Trash2 asset/template/shared contract correction",
     "Actual local Qwen three CSS patches and two heading rules",
-    "Host adapter integration correction, measurements and direct review"
+    "Host adapter integration correction, measurements and direct review",
+    "Actual local Qwen initial-read guard and four bounded state/controller/renderer replacements; host AST adapter lookup corrected, original response reused"
   ],
   "visualInspected": [
     "390normal",
@@ -58,7 +61,18 @@
   "remaining": [
     "Full catalog/guide review",
     "Unfocused field boundary and natural error copy",
-    "Native popup,device/AT and representative independent repeated generation",
-    "New initial-read mutation/recovery regressions are recorded separately; this visual-stage snapshot does not satisfy them."
-  ]
+    "Native popup,device/AT and representative independent repeated generation"
+  ],
+  "store": {
+    "passed": 15,
+    "failed": 0
+  },
+  "renderer": {
+    "passed": 4,
+    "failed": 0
+  },
+  "initialReadRecovery": {
+    "passed": 2,
+    "failed": 0
+  }
 }

@@ -1,0 +1,7 @@
+# Initial-read recovery
+
+The new mutation probe exposed data loss: create after a malformed or denied initial read overwrote unreadable original data. The existing13-case check did not cover this transition. The expanded store check first failed13/15. Actual local Qwen added an initialization-read guard; it preserved disk and passed15 cases, but its location inside the write catch mislabeled the error and lost refresh guidance. Browser evidence also exposed a false confirmed-empty claim and duplicate controller ownership.
+
+A second local response moved the read guard before the write try, hid empty UI for unknown read data, and removed the controller duplicate and unused binding. The first host adapter failed because it assumed an inline exported function rather than a function plus named export; it made no source writes. After correcting AST lookup, the completed response was reused without another inference request. Original response and integration-error record are retained.
+
+Latest verified source:15/15 store cases,4/4 direct renderer states,2/2 browser read-recovery transitions,73/73 existing workflows and zero declared first-line/asset/capsule failures at296/320/390/1440. Browser replay preserves original raw data and submitted text, restores reads, explicitly reloads and successfully creates alongside the restored task. Ordinary write retries remain tested. Storage-property access-policy failures, real devices and assistive technology are outside this check. No visual/reference parity is inferred.

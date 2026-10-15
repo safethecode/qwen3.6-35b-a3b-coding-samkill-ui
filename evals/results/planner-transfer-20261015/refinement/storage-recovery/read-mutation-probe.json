@@ -1,0 +1,8 @@
+{
+  "status": "FAIL",
+  "initialError": "저장소 로딩 중 오류가 발생했습니다.",
+  "before": "{",
+  "after": "[{\"id\":\"96c70a6a-1110-4b7f-9d4a-8d8d8da087da\",\"title\":\"안전하게 보존할 입력\",\"category\":\"study\",\"date\":\"2026-10-15\",\"completed\":false}]",
+  "mutationError": null,
+  "problem": "A new create attempt after a failed/malformed initial read must not overwrite unreadable saved data"
+}

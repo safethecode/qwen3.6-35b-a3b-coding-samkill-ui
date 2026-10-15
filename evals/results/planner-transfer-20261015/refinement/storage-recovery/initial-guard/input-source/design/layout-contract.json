@@ -1,0 +1,33 @@
+{
+  "rules": [
+    {
+      "id": "mobile-width",
+      "kind": "maxWidth",
+      "subject": "body",
+      "maximum": 390
+    },
+    {
+      "id": "groups-after-week",
+      "kind": "below",
+      "subject": "[data-ui-unit=\"tasks\"]",
+      "reference": "[data-ui-unit=\"week\"]",
+      "minGap": 0
+    },
+    {
+      "id": "task-control-first-line",
+      "kind": "firstLineControls",
+      "subject": "[data-ui-unit=\"tasks\"]",
+      "rows": ".task-row",
+      "text": ".task-name",
+      "controls": [
+        ".task-check",
+        ".delete-task"
+      ],
+      "tolerance": 2,
+      "states": [
+        "filled",
+        "long"
+      ]
+    }
+  ]
+}
