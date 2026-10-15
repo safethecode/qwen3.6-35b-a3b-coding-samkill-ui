@@ -1,0 +1,28 @@
+{
+  "status": "NO_AUTOMATIC_QUALITY_APPROVAL",
+  "actualModel": "qwen3.6:35b-a3b-coding",
+  "requestUsedNativeImages": true,
+  "elapsedMs": 66802,
+  "observations": [
+    {
+      "region": "week",
+      "decision": "NOT_ACCEPTED_AS_A_FIX",
+      "reason": "Different native image widths; matched390px comparison does not establish significantly wider candidate columns. Do not shrink14px text or44px targets based on this claim."
+    },
+    {
+      "region": "category",
+      "decision": "PARTIALLY_SUPPORTED_CAUSE_REJECTED",
+      "reason": "Gray capsule is visibly heavier. Actual CSS has no category border, so the suggested border cause is false.52px capsule height includes44px target plus8px padding; preserving target while reducing excess capsule padding is a bounded hypothesis."
+    },
+    {
+      "region": "task actions",
+      "decision": "SEMANTIC_CLARITY_FIX_REQUIRED_NOT_REMOVAL",
+      "reason": "X is ambiguous between close/delete; deletion is required. Use official deletion semantics and preserve44px control plus actual edge-click behavior. Do not invent long-press menus or delete functionality to mimic reference."
+    }
+  ],
+  "additionalHostFinding": "Only host inspected296px/200% long title: delete is centered down a very tall row. The local model saw normal images only and did not discover this long-state failure.",
+  "notes": [
+    "Local OCR misread 풀기 as 풀가; never copy those literals as product facts.",
+    "Fresh isolated request uses same model as writer; not an independent-model or unattended parity evaluation."
+  ]
+}

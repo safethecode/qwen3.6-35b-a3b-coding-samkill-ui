@@ -1,0 +1,12 @@
+# Scoped direct review
+
+INCOMPLETE, below the requested reference/commercial target. Original main and candidate images were directly inspected at390px displayed width in comparison-1440.png; source image is294x640, candidate390x900, original CSS/DPR unknown. Source social/profile/ad/navigation areas are intentionally outside the standalone planner. These exclusions do not approve remaining style differences.
+
+Q1: Small dark selected-day circle and week above categories are preserved. The local image reviewer claims wider day spacing, but the source image and candidate have different native widths; that claim is not accepted without normalized measurement. Keep14px text and44px targets.
+Q2: Category label/plus capsule and open white list surface are preserved. Candidate capsules are52px high around44px add controls plus vertical padding. The gray mass is visibly stronger than the source after matching displayed width. A44px capsule that preserves the44px target is a bounded hypothesis, not a completed repair. The local reviewer speculated about a thicker border; actual category CSS has no border, so that diagnosis is rejected.
+Q3: The new product requires deletion. Visible X controls are ambiguous between close/delete; source reference has no corresponding row action. The local reviewer suggested removing/moving deletion, but that is not accepted because the product requires accessible deletion. Use an official deletion icon or explicit label, preserve44px hit area and test actual deletion.
+Q4: Under296px/200% text, a120-character row grows naturally without horizontal overflow, but its delete control stays halfway down the whole row instead of near the checkbox/first line. This is a confirmed action-ownership problem derived from the long-state screenshot; the local reviewer saw only the normal image and did not discover this defect.
+
+Actual checks:73 scoped browser assertions,13 store cases and three direct renderer states pass. Same current checker reports51/73 for retained pre-CSS source with exit1,73/73 for current source with exit0. Earlier61-case repaired report and60-case baseline use preserved checker versions. Counts do not establish visual quality or independent reproduction.
+
+Pending: full token use-site/role audit and catalog coverage, stronger unfocused input boundaries, natural Korean storage errors, native popup/real-device/screenreader checks, new representative unassisted repetitions. Onboarding/signup are outside this product. No unvisited state is approved.

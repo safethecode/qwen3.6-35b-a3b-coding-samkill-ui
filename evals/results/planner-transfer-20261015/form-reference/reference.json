@@ -1,0 +1,46 @@
+{
+  "recordedAtUtc": "2026-10-15T07:52:14.020Z",
+  "queries": [
+    {
+      "query": "할 일 추가",
+      "app_name": "투두메이트",
+      "limit": 2,
+      "result": "No matching screens"
+    },
+    {
+      "query": "생성하기",
+      "app_name": "투두메이트",
+      "limit": 2,
+      "returned": 2,
+      "total": 4,
+      "hasMore": true
+    }
+  ],
+  "images": [
+    {
+      "file": "reference-0.jpg",
+      "sha256": "d07b0cb81e6f02313c7717f2dc76942266f8043316e67c526ce67549b494ab93",
+      "screenId": null,
+      "unknown": "Screen identifiers were not returned; no inferred IDs",
+      "ui_url": "https://uibowl.io/name/%ED%88%AC%EB%91%90%EB%A9%94%EC%9D%B4%ED%8A%B8?patterns=%EC%83%9D%EC%84%B1%ED%95%98%EA%B8%B0&patternName=%EB%A3%A8%ED%8B%B4%EA%B4%80%EB%A6%AC"
+    },
+    {
+      "file": "reference-1.jpg",
+      "sha256": "4a52eaa4d92f92067062c503ff29d9ef949faf22950cee367fd8c26dfc07237e",
+      "screenId": null,
+      "unknown": "Screen identifiers were not returned; no inferred IDs",
+      "ui_url": "https://uibowl.io/name/%ED%88%AC%EB%91%90%EB%A9%94%EC%9D%B4%ED%8A%B8?patterns=%EC%83%9D%EC%84%B1%ED%95%98%EA%B8%B0&patternName=%EC%B9%B4%ED%85%8C%EA%B3%A0%EB%A6%AC%20%EB%93%B1%EB%A1%9D"
+    }
+  ],
+  "scope": "Two native representative images directly inspected; unreturned images not inspected. Auxiliary routine/category creation references, not an observed task-add modal.",
+  "observations": {
+    "routine": "Centered purpose heading, back/confirm actions, input line followed by quiet setting rows. Repeat/date/manual features outside current product.",
+    "category": "Centered purpose heading, focused input and nearby done action; native keyboard visible. Placeholder-only label is not adopted as a local label requirement."
+  },
+  "unknowns": [
+    "Actual task-add modal",
+    "Original fonts/CSS/DPR",
+    "Native keyboard behavior in our web app",
+    "Unseen source flows"
+  ]
+}

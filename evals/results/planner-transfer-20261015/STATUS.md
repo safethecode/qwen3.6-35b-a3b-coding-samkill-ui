@@ -9,3 +9,13 @@ A full thinking renderer used6144tokens/421424ms and truncated. Its same-size se
 [The pre-CSS complete application](before-css-source) has37/60 scoped browser checks passing under checker-v1: date isolation, normal create/toggle/delete and error preservation work, but actual form errors are hidden, long120-character titles overflow the document, enlarged date labels escape controls, and delayed dialog close steals new date focus. [Full report and screenshots](browser-before-css/report.json). The source hashes match this retained snapshot. An earlier app/renderer mismatch and interrupted smoke are preserved separately; no incomplete browser run is a pass.
 
 Three actual local CSS repairs are now running through the updated common repair route with applicable full guide text and hashes. The measured delayed-close focus defect needs a bounded local listener repair afterward. The host also corrected contradictory date-track and label contracts and the native dialog shell radius after preserving the original; these are post-generation corrections, not frozen original inputs. No reference/commercial quality approval. Full catalog, direct final comparison and repeated representative runs remain unfinished.
+
+## Current repaired candidate
+
+[Runnable current source](final/source/index.html) passes73 scoped browser assertions,13 store checks and3 renderer states. The same current checker reports51/73 on the retained pre-CSS source with exit1 and73/73 on the candidate with exit0. The first repaired61-case receipt is preserved. Current CLI now exits nonzero on a failure and includes measured layout/type findings in its checks.
+
+[Matched390px comparison](comparison.html), [current browser evidence](revalidation-current-checker/report.json), [formal catalog](final/catalog-check.json). Catalog remains UNVERIFIED:3 confirmed failures,37 unknown,30 scoped passes and14 not-applicable entries across75original+8guide+1project rules. Original check kinds are retained. No reference-level approval follows from functional passes.
+
+Actual local Qwen received original/candidate images directly and produced hypotheses in66802ms. [Human adjudication](local-vision/adjudication.json) rejects a nonexistent category-border diagnosis and unsupported spacing/removal advice. It supports clarifying row deletion while preserving the required function. [Additional fresh creation references](form-reference/reference.json) are routine/category screens, not the actual task-add modal.
+
+Next: official deletion semantics, first-line control ownership for wrapped rows, quieter category capsules, then new rendered comparisons and complete catalog/guide verification. Repeated independent representative generation parity remains unfinished.

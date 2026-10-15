@@ -164,6 +164,9 @@ try {
       await page.evaluate(() => window.scrollTo(0, 0));
       await page.screenshot({ path: `${output}/${width}-form.png`, fullPage: true });
       const form = { typography: await inspectTypography(page), stress: await inspectTextStress(page, mode => page.screenshot({ path: `${output}/${width}-form-${mode}.png`, fullPage: true })) };
+      await check(`${width}: declared mobile layout`, async () => assert.equal(filled.layout.issues.length, 0, JSON.stringify(filled.layout.issues)));
+      await check(`${width}: filled typography minimum`, async () => assert.equal(filled.typography.length, 0, JSON.stringify(filled.typography)));
+      await check(`${width}: form typography minimum`, async () => assert.equal(form.typography.length, 0, JSON.stringify(form.typography)));
       for (const [state, reports] of [['filled', filled.stress], ['long', long], ['form', form.stress]]) for (const report of reports) await check(`${width}: ${state} ${report.mode} containment`, async () => {
         assert.equal(report.overflowPx, 0, `Document overflow ${report.overflowPx}px`);
         assert.equal(report.clippedByAncestor.length, 0, JSON.stringify(report.clippedByAncestor));
@@ -187,6 +190,7 @@ try {
   const result = { status: checks.some(c => c.status === 'FAIL') ? 'FAIL' : 'SCOPED_CHECKS_ONLY', sourceHashes: binding, harnessHashes: harness, checkerSha256: createHash('sha256').update(await readFile(new URL(import.meta.url))).digest('hex'), checks, captures, limitations: ['Stress candidates require direct inspection; own week scroller is intentional', 'Native popup and real-device zoom/screenreader not verified', 'No full catalog or repeated unattended reference parity'] };
   await writeFile(`${output}/report.json`, JSON.stringify(result, null, 2));
   console.log(JSON.stringify({ status: result.status, checks: checks.map(c => ({ name: c.name, status: c.status, detail: c.detail })) }));
+  process.exitCode = checks.some(c => c.status === 'FAIL') ? 1 : 0;
 } catch (e) {
   await writeFile(`${output}/fatal-report.json`, JSON.stringify({ status: 'FAIL', sourceHashes: binding, harnessHashes: harness, checks, captures, error: e.message }, null, 2));
   throw e;
