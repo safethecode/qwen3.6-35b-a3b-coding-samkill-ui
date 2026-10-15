@@ -13,7 +13,7 @@ test('generation forwards predeclared font roles and refuses resume after typogr
   await mkdir(evidence);
   await writeFile(join(target, 'DESIGN.md'), 'Use the supplied font intent.');
   await writeFile(join(target, 'REFERENCE.md'), 'Original service, no reference font inference.');
-  const typography = { roles: [{ selector: 'h1,p,button', families: ['Example Font'] }] };
+  const typography = { roles: [{ selector: 'h1,p,button', families: ['Example Font'], fontSizePx: 22, fontWeight: 700, lineHeightRatio: 1.5 }] };
   await writeFile(join(target, 'design/typography.json'), JSON.stringify(typography));
   const calls = [];
   const fetcher = async (_url, options) => {
@@ -21,6 +21,7 @@ test('generation forwards predeclared font roles and refuses resume after typogr
     calls.push(request);
     assert.match(request.messages[1].content, /PREDECLARED TYPOGRAPHY INTENT/);
     assert.ok(request.messages[1].content.includes('Example Font'));
+    assert.ok(request.messages[1].content.includes('fontSizePx'));
     if (request.messages[1].content.includes('CURRENT UNIT: shell')) return { ok: true, json: async () => ({ done_reason: 'stop', message: { content: JSON.stringify({ code: '<html><body><h1>Example</h1></body></html>' }) } }) };
     throw new Error('Stop after shell');
   };
@@ -30,6 +31,17 @@ test('generation forwards predeclared font roles and refuses resume after typogr
   const count = calls.length;
   await assert.rejects(generateService(target, evidence, { fetcher, resume: true }), /does not match/);
   assert.equal(calls.length, count);
+});
+
+test('malformed role metrics are rejected before service inference', async () => {
+  const root = await mkdtemp(join(tmpdir(), 'qwen-font-metric-invalid-'));
+  await mkdir(join(root, 'design'));
+  await writeFile(join(root, 'DESIGN.md'), 'Declared role metrics.');
+  await writeFile(join(root, 'REFERENCE.md'), 'No inferred reference CSS.');
+  for (const metrics of [{ fontSizePx: null }, { fontSizePx: '22' }, { fontWeight: 0 }, { fontWeight: 1001 }, { lineHeightRatio: false }]) {
+    await writeFile(join(root, 'design/typography.json'), JSON.stringify({ roles: [{ selector: 'h1', families: ['Example'], ...metrics }] }));
+    await assert.rejects(generateService(root, root, { fetcher: () => assert.fail('Invalid metrics reached inference') }), /typography metric/);
+  }
 });
 
 test('invalid predeclared font roles fail before inference', async () => {

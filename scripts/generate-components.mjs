@@ -13,12 +13,14 @@ import { inferenceOptions } from './inference-options.mjs';
 import { samplingOptions } from './sampling.mjs';
 import { componentSkillContext } from './skill-context.mjs';
 import { readLayoutContract } from './layout-contract.mjs';
+import { validateTypographyMetrics } from './typography-metrics.mjs';
 
 export async function generateComponents(target, evidence, options = {}) {
   if (resolve(evidence) === resolve(target) || resolve(evidence).startsWith(resolve(target) + sep)) throw new Error('Component evidence must be outside the source target');
   if (await access(resolve(target, 'index.html')).then(() => true, () => false)) throw new Error('Component generation requires a fresh target');
   const plan = validateComponentPlan(JSON.parse(await readFile(resolve(target, 'design/component-plan.json'), 'utf8')));
   const typography = JSON.parse(await readFile(resolve(target, 'design/typography.json'), 'utf8'));
+  validateTypographyMetrics(typography.roles);
   const loader = await localFontCss(target, typography);
   const contract = await readFile(resolve(target, 'DESIGN.md'), 'utf8');
   const reference = await readFile(resolve(target, 'REFERENCE.md'), 'utf8');

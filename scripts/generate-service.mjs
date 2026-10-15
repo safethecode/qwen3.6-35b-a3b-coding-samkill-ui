@@ -14,6 +14,7 @@ import { removeComments } from './comments.mjs';
 import { validateAssetReferences } from './asset-references.mjs';
 import { localFontCss } from './local-font.mjs';
 import { normalizeTypography } from './typography.mjs';
+import { validateTypographyMetrics } from './typography-metrics.mjs';
 
 export async function generateService(target, evidence, options = {}) {
   const serviceStages = stagesForFlow(options.flow);
@@ -26,6 +27,7 @@ export async function generateService(target, evidence, options = {}) {
   if (typographyIntent) {
     const parsed = JSON.parse(typographyIntent);
     if (typographyIntent.length > 12000 || !Array.isArray(parsed.roles) || !parsed.roles.length || parsed.roles.some(role => !role || typeof role.selector !== 'string' || !role.selector.trim() || !Array.isArray(role.families) || !role.families.length || role.families.some(family => typeof family !== 'string' || !family.trim()))) throw new Error('Predeclared typography requires nonempty selectors and rendered font families within 12000 characters');
+    validateTypographyMetrics(parsed.roles);
   }
   const skill = `${await readFile(new URL('../skills/qwen-samkill-ui/SKILL.md', import.meta.url), 'utf8')}\n\nSERVICE IMPLEMENTATION GUIDE\n${await readFile(new URL('../skills/qwen-samkill-ui/references/service-contracts.md', import.meta.url), 'utf8')}`;
   const settings = { model: process.env.QWEN_GENERATE_MODEL || 'qwen3-coder:30b', think: process.env.QWEN_GENERATE_THINK === 'true', options: { num_ctx: 16384, ...samplingOptions(), ...inferenceOptions() } };

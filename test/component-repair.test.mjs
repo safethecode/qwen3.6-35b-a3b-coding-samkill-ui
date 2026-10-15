@@ -51,3 +51,16 @@ test('component repairs deliver applicable guide text and preserve source hashes
   const recorded = JSON.parse(await readFile(join(evidence, 'request.json'), 'utf8'));
   assert.deepEqual(recorded.guideSources, context.sources);
 });
+
+test('component repair forwards valid role metrics and rejects invalid intent before inference', async () => {
+  const { target, evidence } = await fixture();
+  const typography = { roles: [{ selector: '[data-ui-unit="A"]', families: ['Example'], fontSizePx: 14 }] };
+  await writeFile(join(target, 'design/typography.json'), JSON.stringify(typography));
+  await repairComponent(target, evidence, 'A', component, 'Preserve declared title role', { fetcher: async (_url, options) => {
+    assert.ok(JSON.parse(options.body).messages[1].content.includes(JSON.stringify(typography)));
+    return reply([{ field: 'css', oldString: component.css, newString: '[data-ui-unit="A"]{font-size:14px}' }]);
+  } });
+  typography.roles[0].fontSizePx = false;
+  await writeFile(join(target, 'design/typography.json'), JSON.stringify(typography));
+  await assert.rejects(repairComponent(target, evidence + '-invalid', 'A', { ...component, css: '[data-ui-unit="A"]{font-size:14px}' }, 'Invalid metric must not reach model', { fetcher: () => assert.fail('Invalid metric reached inference') }), /typography metric/);
+});

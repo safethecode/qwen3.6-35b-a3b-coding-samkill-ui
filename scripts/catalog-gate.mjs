@@ -6,6 +6,7 @@ import { readFile } from 'node:fs/promises';
 import { sourceBinding } from './source-binding.mjs';
 import { guideChecks } from './catalog-plan.mjs';
 import { unresolvedFindings } from './review-findings.mjs';
+import { validateTypographyMetrics } from './typography-metrics.mjs';
 
 export async function checkCatalogGate(target, options = {}) {
   try {
@@ -14,6 +15,7 @@ export async function checkCatalogGate(target, options = {}) {
     if (!files.includes('design/typography.json')) throw new Error('Missing role-specific typography contract: design/typography.json');
     const typography = JSON.parse(await readFile(resolve(target, 'design/typography.json'), 'utf8'));
     if (!Array.isArray(typography.roles) || !typography.roles.length || typography.roles.some(role => typeof role.selector !== 'string' || !role.selector.trim() || !Array.isArray(role.families) || !role.families.length || role.families.some(family => typeof family !== 'string' || !family.trim()))) throw new Error('Typography roles must declare intended rendered families and selectors');
+    validateTypographyMetrics(typography.roles);
     for (const file of files) if (!contract.targets?.some(target => file === target.replaceAll('\\', '/') || file.startsWith(target.replaceAll('\\', '/') + '/'))) throw new Error(`Catalog source scope omits ${file}`);
     for (const [guide, checks] of Object.entries(guideChecks)) {
       const rule = contract.rules?.find(rule => rule.id === `PROJECT-GUIDE-${guide}`);
