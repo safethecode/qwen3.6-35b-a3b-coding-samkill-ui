@@ -1,0 +1,41 @@
+{
+  "status": "NATIVE_IMAGE_INSPECTED_AUXILIARY_ONLY",
+  "retrievedAt": "2026-10-15T09:37:26Z",
+  "queries": [
+    {
+      "query": "할 일 편집",
+      "app_name": "투두메이트",
+      "platform": "MOBILE",
+      "returned_count": 0
+    },
+    {
+      "query": "메뉴",
+      "app_name": "투두메이트",
+      "platform": "MOBILE",
+      "returned_count": 1,
+      "total_count": 1,
+      "has_more": false
+    }
+  ],
+  "result": {
+    "app_name": "투두메이트",
+    "pattern": "메인",
+    "pattern_variant": "메뉴",
+    "ui_url": "https://uibowl.io/name/%ED%88%AC%EB%91%90%EB%A9%94%EC%9D%B4%ED%8A%B8?patterns=%EB%A9%94%EC%9D%B8&patternName=%EB%A9%94%EB%89%B4",
+    "screen_id": null,
+    "id": null,
+    "image": "reference.jpg",
+    "sha256": "767f7837db6d18b1ed6601879f94b15981c0ca83b0ecb142f01db40f35cf1b1b"
+  },
+  "observed": [
+    "Upper-right white overlay groups four management rows",
+    "Dimmed main remains visible behind it",
+    "Category registration/category management/routine management/reminder management labels"
+  ],
+  "unknown": [
+    "Actual task deletion/edit mode",
+    "Opener,close/focus behavior,persistence",
+    "CSS viewport,DPR,font and original CSS"
+  ],
+  "implementationStatus": "PLANNED_NOT_GENERATED"
+}
