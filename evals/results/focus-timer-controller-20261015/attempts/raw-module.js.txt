@@ -1,0 +1,296 @@
+import { parseDuration, snapshot } from './model.js';
+import { createStore } from './store.js';
+import { renderTimer } from './render.js';
+import { COPY } from './copy.js';
+
+const store = createStore(() => window.localStorage);
+
+let tickIntervalId = null;
+
+function startTick() {
+  stopTick();
+  tickIntervalId = setInterval(tick, 250);
+}
+
+function stopTick() {
+  if (tickIntervalId) {
+    clearInterval(tickIntervalId);
+    tickIntervalId = null;
+  }
+}
+
+function tick() {
+  const state = store.getState();
+  if (!state.readReady || !state.record) return;
+
+  const now = Date.now();
+  const viewSnapshot = snapshot(state.record, now);
+
+  if (viewSnapshot.phase === 'completed') {
+    stopTick();
+  }
+
+  renderTimer({
+    readReady: state.readReady,
+    session: viewSnapshot,
+    error: state.error,
+    fieldInvalid: false,
+    configOpen: false
+  });
+}
+
+function init() {
+  const state = store.getState();
+  const dialog = document.getElementById('duration-dialog');
+  const durationInput = document.getElementById('duration-input');
+  const primaryActionBtn = document.getElementById('primary-action');
+  const configureBtn = document.getElementById('configure-duration');
+  const resetBtn = document.getElementById('reset-session');
+  const cancelDurationBtn = document.getElementById('cancel-duration');
+  const durationForm = document.getElementById('duration-form');
+  const applyDurationBtn = document.getElementById('apply-duration');
+  const mainReloadBtn = document.getElementById('reload-session');
+  const configReloadBtn = document.getElementById('reload-config-session');
+
+  function getDraftMinutes() {
+    return durationInput.value ? parseInt(durationInput.value, 10) : null;
+  }
+
+  function focusPrimaryOrVisibleReload() {
+    if (primaryActionBtn.disabled === false && primaryActionBtn.offsetParent !== null) {
+      primaryActionBtn.focus();
+    } else if (resetBtn.hidden === false && resetBtn.offsetParent !== null) {
+      resetBtn.focus();
+    } else {
+      mainReloadBtn.focus();
+    }
+  }
+
+  function openConfig() {
+    const s = store.getState();
+    if (!s.readReady || !s.record) return;
+    if (s.record.phase !== 'ready') return;
+
+    dialog.showModal();
+    durationInput.value = s.record.durationMinutes;
+    durationInput.removeAttribute('aria-invalid');
+    applyDurationBtn.disabled = false;
+    renderTimer({
+      readReady: true,
+      session: snapshot(s.record, Date.now()),
+      error: null,
+      fieldInvalid: false,
+      configOpen: true
+    });
+    durationInput.focus();
+  }
+
+  function closeConfig() {
+    dialog.close();
+    renderTimer({
+      readReady: store.getState().readReady,
+      session: snapshot(store.getState().record, Date.now()),
+      error: null,
+      fieldInvalid: false,
+      configOpen: false
+    });
+  }
+
+  function handleConfigSubmit(e) {
+    e.preventDefault();
+    const raw = durationInput.value.trim();
+    const parsed = parseDuration(raw);
+
+    if (!parsed.ok) {
+      renderTimer({
+        readReady: store.getState().readReady,
+        session: snapshot(store.getState().record, Date.now()),
+        error: null,
+        fieldInvalid: true,
+        configOpen: true
+      });
+      durationInput.focus();
+      return;
+    }
+
+    const s = store.getState();
+    if (!s.readReady || !s.record) {
+      renderTimer({
+        readReady: false,
+        session: null,
+        error: 'READ_FAILED',
+        fieldInvalid: false,
+        configOpen: true
+      });
+      return;
+    }
+
+    const result = store.transact({ type: 'CONFIGURE', minutes: parsed.minutes }, Date.now());
+    if (!result.ok) {
+      renderTimer({
+        readReady: store.getState().readReady,
+        session: snapshot(store.getState().record, Date.now()),
+        error: result.error,
+        fieldInvalid: false,
+        configOpen: true
+      });
+      return;
+    }
+
+    closeConfig();
+    focusPrimaryOrVisibleReload();
+  }
+
+  function handlePrimaryAction() {
+    const s = store.getState();
+    if (!s.readReady || !s.record) return;
+
+    let event;
+    if (s.record.phase === 'ready') {
+      event = { type: 'START' };
+    } else if (s.record.phase === 'running') {
+      event = { type: 'PAUSE' };
+    } else if (s.record.phase === 'paused') {
+      event = { type: 'RESUME' };
+    } else if (s.record.phase === 'completed') {
+      event = { type: 'RESET' };
+    } else {
+      return;
+    }
+
+    const result = store.transact(event, Date.now());
+    if (!result.ok) {
+      renderTimer({
+        readReady: store.getState().readReady,
+        session: snapshot(store.getState().record, Date.now()),
+        error: result.error,
+        fieldInvalid: false,
+        configOpen: false
+      });
+      return;
+    }
+
+    const newState = store.getState();
+    if (newState.record.phase === 'running') {
+      startTick();
+    } else {
+      stopTick();
+    }
+
+    renderTimer({
+      readReady: newState.readReady,
+      session: snapshot(newState.record, Date.now()),
+      error: null,
+      fieldInvalid: false,
+      configOpen: false
+    });
+  }
+
+  function handleReset() {
+    const s = store.getState();
+    if (!s.readReady || !s.record) return;
+
+    const result = store.transact({ type: 'RESET' }, Date.now());
+    if (!result.ok) {
+      renderTimer({
+        readReady: store.getState().readReady,
+        session: snapshot(store.getState().record, Date.now()),
+        error: result.error,
+        fieldInvalid: false,
+        configOpen: false
+      });
+      return;
+    }
+
+    stopTick();
+    renderTimer({
+      readReady: store.getState().readReady,
+      session: snapshot(store.getState().record, Date.now()),
+      error: null,
+      fieldInvalid: false,
+      configOpen: false
+    });
+  }
+
+  function handleConfigCancel() {
+    closeConfig();
+    focusPrimaryOrVisibleReload();
+  }
+
+  function handleDurationInput() {
+    renderTimer({
+      readReady: store.getState().readReady,
+      session: snapshot(store.getState().record, Date.now()),
+      error: null,
+      fieldInvalid: false,
+      configOpen: true
+    });
+  }
+
+  function handleMainReload() {
+    const s = store.getState();
+    if (!s.readReady) return;
+    renderTimer({
+      readReady: s.readReady,
+      session: snapshot(s.record, Date.now()),
+      error: null,
+      fieldInvalid: false,
+      configOpen: false
+    });
+  }
+
+  function handleConfigReload() {
+    const s = store.getState();
+    if (!s.readReady) return;
+    renderTimer({
+      readReady: s.readReady,
+      session: snapshot(s.record, Date.now()),
+      error: null,
+      fieldInvalid: false,
+      configOpen: true
+    });
+  }
+
+  primaryActionBtn.addEventListener('click', handlePrimaryAction);
+  configureBtn.addEventListener('click', openConfig);
+  resetBtn.addEventListener('click', handleReset);
+  cancelDurationBtn.addEventListener('click', handleConfigCancel);
+  durationForm.addEventListener('submit', handleConfigSubmit);
+  applyDurationBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    handleConfigSubmit(e);
+  });
+  durationInput.addEventListener('input', handleDurationInput);
+  mainReloadBtn.addEventListener('click', handleMainReload);
+  configReloadBtn.addEventListener('click', handleConfigReload);
+
+  dialog.addEventListener('close', () => {
+    const s = store.getState();
+    if (s.readReady && s.record) {
+      renderTimer({
+        readReady: s.readReady,
+        session: snapshot(s.record, Date.now()),
+        error: null,
+        fieldInvalid: false,
+        configOpen: false
+      });
+    }
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && dialog.open) {
+      handleConfigCancel();
+    }
+  });
+
+  const initial = store.getState();
+  renderTimer({
+    readReady: initial.readReady,
+    session: initial.record ? snapshot(initial.record, Date.now()) : null,
+    error: initial.error,
+    fieldInvalid: false,
+    configOpen: false
+  });
+}
+
+init();

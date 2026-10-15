@@ -1,0 +1,7 @@
+{
+  "status": "FAILED_CONTROLLER_PART",
+  "id": "currentView",
+  "pid": 22644,
+  "updatedAtUtc": "2026-10-15T15:37:04.559Z",
+  "error": "Expected values to be strictly deep-equal:\n+ actual - expected\n\n  [\n+   'closeConfig',\n    'currentView',\n+   'inputConfig',\n+   'openConfig',\n+   'primaryAction',\n+   'refresh',\n+   'reloadSession',\n+   'resetSession',\n+   'returnFocus',\n+   'submitConfig'\n  ]\n"
+}

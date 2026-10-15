@@ -1,0 +1,35 @@
+{
+  "status": "HOST_BINDING_CORRECTION_NOT_UNASSISTED_QWEN",
+  "sources": {
+    "initial": "runs/focus-timer-transfer-20261015/unit-app/parts/view/initial/functions.js.txt",
+    "scopeEscaped": "runs/focus-timer-transfer-20261015/unit-app/function-repairs/currentView/initial/raw-functions.js.txt",
+    "thinking": "runs/focus-timer-transfer-20261015/unit-app/function-repairs/currentView/narrow-thinking/functions.js.txt"
+  },
+  "sourceHashes": {
+    "initial": "170d289968c026ba421985a9316194949180aa292f4e95dc17dbff203cef305b",
+    "scopeEscaped": "6347136ea79f8f73a5c915a50f7b7ce31084da717278688aa9b4de08c2b8a24c",
+    "thinking": "030e0c3e3dd720b0e055d904a7902431d0a1539e083588ac9f3430fa9262d2bf"
+  },
+  "extraction": "Unchanged same-name function declarations only. Unrelated scope-escaped output not applied.",
+  "changes": [
+    {
+      "start": 477,
+      "end": 487,
+      "before": "configOpen",
+      "after": "dialog.open"
+    },
+    {
+      "start": 364,
+      "end": 374,
+      "before": "configOpen",
+      "after": "dialog.open"
+    },
+    {
+      "start": 164,
+      "end": 174,
+      "before": "configOpen",
+      "after": "dialog.open"
+    }
+  ],
+  "reason": "Actual thinking-mode Qwen selected correct currentView algorithm but referenced an undeclared configOpen variable. Host maps those three return-value references to the predeclared actual dialog.open binding. This changes behavioral input wiring;not attributed to Qwen. Original raw/failed source retained. Complete13browser workflow gates unchanged."
+}

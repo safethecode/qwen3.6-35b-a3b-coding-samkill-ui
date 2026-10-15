@@ -1,0 +1,18 @@
+{
+  "elapsedMs": 29192,
+  "model": "qwen3.6:35b-a3b-coding",
+  "created_at": "2026-10-15T15:34:49.591201Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\"code\":\"function currentView() {\\n  try {\\n    const { record, error } = store.getState();\\n    if (!record) return { readReady: false, session: null, error: error || 'NO_RECORD', fieldInvalid: fieldInvalid, configOpen: dialog.open };\\n    const snapshot = snapshot(record, Date.now());\\n    return {\\n      readReady: true,\\n      session: snapshot,\\n      error: error || null,\\n      fieldInvalid: fieldInvalid,\\n      configOpen: dialog.open\\n    };\\n  } catch (e) {\\n    if (e.message === 'INVALID_CLOCK') {\\n      return { readReady: false, session: null, error: 'INVALID_CLOCK', fieldInvalid: fieldInvalid, configOpen: dialog.open };\\n    }\\n    throw e;\\n  }\\n}\\n\\nfunction refresh() {\\n  const view = currentView();\\n  renderTimer(view);\\n  return view;\\n}\\n\\nfunction returnFocus() {\\n  if (configure && configure.offsetParent !== null && !configure.disabled) {\\n    configure.focus();\\n    return;\\n  }\\n  if (primary && primary.offsetParent !== null && !primary.disabled) {\\n    primary.focus();\\n    return;\\n  }\\n  if (mainReload && mainReload.offsetParent !== null && !mainReload.disabled) {\\n    mainReload.focus();\\n    return;\\n  }\\n}\\n\\nfunction reloadSession(event) {\\n  const { ok, error } = store.reload();\\n  const view = refresh();\\n  if (ok) {\\n    if (dialog.open) {\\n      if (apply && apply.offsetParent !== null && !apply.disabled) {\\n        apply.focus();\\n      } else if (cancel && cancel.offsetParent !== null && !cancel.disabled) {\\n        cancel.focus();\\n      }\\n    } else {\\n      if (primary && primary.offsetParent !== null && !primary.disabled) {\\n        primary.focus();\\n      } else if (mainReload && mainReload.offsetParent !== null && !mainReload.disabled) {\\n        mainReload.focus();\\n      }\\n    }\\n  } else {\\n    returnFocus();\\n  }\\n}\"}"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 29186112200,
+  "load_duration": 5971100,
+  "prompt_eval_count": 1363,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration": 13044342000,
+  "eval_count": 491,
+  "eval_duration": 15917192000
+}

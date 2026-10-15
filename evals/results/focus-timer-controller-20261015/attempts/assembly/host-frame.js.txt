@@ -1,0 +1,27 @@
+import { parseDuration, snapshot } from './model.js';
+import { createStore } from './store.js';
+import { renderTimer } from './render.js';
+const store = createStore(() => window.localStorage);
+let fieldInvalid = false;
+const dialog = document.getElementById('duration-dialog');
+const input = document.getElementById('duration-input');
+const primary = document.getElementById('primary-action');
+const configure = document.getElementById('configure-duration');
+const reset = document.getElementById('reset-session');
+const cancel = document.getElementById('cancel-duration');
+const form = document.getElementById('duration-form');
+const apply = document.getElementById('apply-duration');
+const mainReload = document.getElementById('reload-session');
+const configReload = document.getElementById('reload-config-session');
+
+primary.addEventListener('click', primaryAction);
+configure.addEventListener('click', openConfig);
+reset.addEventListener('click', resetSession);
+cancel.addEventListener('click', closeConfig);
+form.addEventListener('submit', submitConfig);
+input.addEventListener('input', inputConfig);
+dialog.addEventListener('cancel', closeConfig);
+mainReload.addEventListener('click', reloadSession);
+configReload.addEventListener('click', reloadSession);
+refresh();
+setInterval(refresh, 250);

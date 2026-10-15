@@ -1,0 +1,7 @@
+function openConfig() { const view = currentView(); if (!view.readReady || !view.session) return; if (view.session.phase !== 'ready' && view.session.phase !== 'completed') return; fieldInvalid = false; if (input) input.value = String(view.session.durationMinutes); dialog.showModal(); refresh(); if (input) input.focus(); }
+
+function closeConfig(event) { if (event) event.preventDefault(); fieldInvalid = false; dialog.close(); refresh(); returnFocus(); }
+
+function submitConfig(event) { event.preventDefault(); const val = parseDuration(input.value); if (!val.ok) { fieldInvalid = true; refresh(); if (input) input.focus(); return; } fieldInvalid = false; const result = store.transact({ type: 'CONFIGURE', minutes: val.minutes }, Date.now()); if (result.ok) { closeConfig(); } else { refresh(); } }
+
+function inputConfig() { fieldInvalid = false; refresh(); }

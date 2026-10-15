@@ -1,0 +1,35 @@
+import{readFile,writeFile,mkdir}from'node:fs/promises';
+import{execFile}from'node:child_process';
+import{promisify}from'node:util';
+import{createHash}from'node:crypto';
+import{parse}from'acorn';
+import assert from'node:assert/strict';
+import{sourceBinding}from'../../scripts/source-binding.mjs';
+import{harnessBinding}from'../../scripts/harness-binding.mjs';
+const root='runs/focus-timer-transfer-20261015',target=root+'/source',out=root+'/unit-app/assembly',hash=x=>createHash('sha256').update(x).digest('hex');await mkdir(out);
+const inputHashes=await sourceBinding(target),harnessHashes=await harnessBinding();assert.equal(inputHashes['app.js'],undefined);
+const spec=JSON.parse(await readFile(root+'/controller-parts.json','utf8')),viewCheck=JSON.parse(await readFile(root+'/unit-app/view-assembly/checks/report.json','utf8'));assert.ok(viewCheck.checks.every(c=>c.status==='PASS'));
+const paths=[root+'/unit-app/view-assembly/functions.js.txt',root+'/unit-app/selected-existing-functions/configuration.js.txt',root+'/unit-app/selected-existing-functions/session.js.txt'],parts=[];for(const p of paths)parts.push(await readFile(p,'utf8'));
+const frame=`import { parseDuration, snapshot } from './model.js';
+import { createStore } from './store.js';
+import { renderTimer } from './render.js';
+const store = createStore(() => window.localStorage);
+let fieldInvalid = false;
+${Object.entries(spec.aliases).map(([alias,id])=>`const ${alias} = document.getElementById('${id}');`).join('\n')}
+`;
+const bootstrap=`
+primary.addEventListener('click', primaryAction);
+configure.addEventListener('click', openConfig);
+reset.addEventListener('click', resetSession);
+cancel.addEventListener('click', closeConfig);
+form.addEventListener('submit', submitConfig);
+input.addEventListener('input', inputConfig);
+dialog.addEventListener('cancel', closeConfig);
+mainReload.addEventListener('click', reloadSession);
+configReload.addEventListener('click', reloadSession);
+refresh();
+setInterval(refresh, 250);
+`;
+await writeFile(out+'/host-frame.js.txt',frame+bootstrap);const code=frame+parts.join('\n\n')+bootstrap,comments=[];parse(code,{ecmaVersion:'latest',sourceType:'module',onComment:comments});assert.equal(comments.length,0);await writeFile(out+'/assembled-app.js.txt',code);await writeFile(target+'/app.js',code,{flag:'wx'});
+let exitCode=0,stdout='',stderr='';try{const r=await promisify(execFile)(process.execPath,[root+'/check-behavior.mjs',target,out+'/checks'],{windowsHide:true,timeout:180000,env:{...process.env,CHROME_PATH:'C:/Program Files/Google/Chrome/Application/chrome.exe'}});stdout=r.stdout;stderr=r.stderr}catch(e){exitCode=e.code||1;stdout=e.stdout||'';stderr=e.stderr||''}await writeFile(out+'/check.log',stdout+'\n'+stderr);
+const after=await sourceBinding(target);for(const[p,h]of Object.entries(inputHashes))assert.equal(after[p],h);assert.deepEqual(await harnessBinding(),harnessHashes);const result={status:exitCode===0?'SCOPED_UNIT_ACCEPTED_NOT_PRODUCT_APPROVAL':'FAILED_CONTROLLER_PRESERVED_DO_NOT_ADVANCE',unit:'app',inputHashes,sourceHashes:after,harnessHashes,moduleSha256:hash(code),parts:Object.fromEntries(paths.map((p,i)=>[p,hash(parts[i])])),hostFrameSha256:hash(frame+bootstrap),assistance:spec.assistance+' Host additionally replaced3undeclared configOpen references with actualdialog.open in selected thinking-mode view function;unchanged method extraction from rejected10function response supplied reloadSession. Exact corrections and rejected raw preserved in view-assembly/assistance.json. Not successful unattended generation.',exitCode,limits:'Original13browser groups unchanged;CSS/reference/catalog/native device quality remain unfinished.'};await writeFile(out+'/result.json',JSON.stringify(result,null,2));if(exitCode===0)await writeFile(root+'/unit-app/result.json',JSON.stringify(result,null,2));console.log(stdout);process.exitCode=exitCode;

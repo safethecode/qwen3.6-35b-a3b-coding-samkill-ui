@@ -1,0 +1,23 @@
+import{readFile,writeFile,mkdir}from'node:fs/promises';
+import{resolve}from'node:path';
+import{pathToFileURL}from'node:url';
+import{runInNewContext}from'node:vm';
+import{createHash}from'node:crypto';
+import assert from'node:assert/strict';
+import{sourceBinding}from'../../scripts/source-binding.mjs';
+import{harnessBinding}from'../../scripts/harness-binding.mjs';
+const[file,out]=process.argv.slice(2),root='runs/focus-timer-transfer-20261015',target=root+'/source',code=await readFile(file,'utf8'),{snapshot}=await import(pathToFileURL(resolve(target+'/model.js'))),checks=[];
+await mkdir(out,{recursive:true});
+const ready={version:1,durationMinutes:25,phase:'ready',remainingMs:1500000,runStartedAt:null,deadlineAt:null};
+function fixture({record=ready,readReady=true,error=null,now=1000000,open=false,invalid=false,reloadOk=true}={}){let state={record,readReady,error},focus='input',rendered=null;const control=name=>({disabled:false,offsetParent:{},focus(){focus=name}}),ctx={store:{getState:()=>structuredClone(state),reload:()=>({ok:reloadOk})},snapshot,Date:{now:()=>now},fieldInvalid:invalid,dialog:{open},renderTimer:v=>{rendered=v},configure:control('configure'),primary:control('primary'),apply:control('apply'),cancel:control('cancel'),mainReload:control('mainReload')};runInNewContext(code+';globalThis.api={currentView,refresh,returnFocus,reloadSession}',ctx);return{ctx,api:ctx.api,focus:()=>focus,rendered:()=>rendered}}
+const check=(name,fn)=>{try{fn();checks.push({name,status:'PASS'})}catch(e){checks.push({name,status:'FAIL',detail:e.message.slice(0,1600)})}};
+check('ready view uses actual snapshot without shadowing imported function',()=>{const f=fixture(),v=f.api.currentView();assert.equal(v.session.minutes,25);assert.equal(v.session.phase,'ready');assert.deepEqual(Object.keys(v).sort(),['readReady','session','error','fieldInvalid','configOpen'].sort())});
+check('unknown initial read preserves exact error and no invented record',()=>{const v=fixture({readReady:false,record:null,error:'READ_FAILED'}).api.currentView();assert.equal(v.readReady,false);assert.equal(v.session,null);assert.equal(v.error,'READ_FAILED')});
+check('expired stored running derives completed',()=>{const v=fixture({record:{...ready,phase:'running',runStartedAt:0,deadlineAt:1500000},now:1500001}).api.currentView();assert.equal(v.session.phase,'completed');assert.equal(v.session.remainingMs,0)});
+check('invalid clock is a typed view error rather than uncaught failure',()=>{const v=fixture({now:NaN}).api.currentView();assert.equal(v.session,null);assert.equal(v.error,'INVALID_CLOCK')});
+check('refresh preserves config flags and store write error',()=>{const f=fixture({open:true,invalid:true,error:'WRITE_FAILED'});f.api.refresh();assert.equal(f.rendered().configOpen,true);assert.equal(f.rendered().fieldInvalid,true);assert.equal(f.rendered().error,'WRITE_FAILED');assert.equal(f.focus(),'input')});
+check('return path selects configure then primary then recovery,never reset',()=>{for(const [c,p,expected]of[[false,false,'configure'],[true,false,'primary'],[true,true,'mainReload']]){const f=fixture();f.ctx.configure.disabled=c;f.ctx.primary.disabled=p;f.api.returnFocus();assert.equal(f.focus(),expected)}});
+check('failed explicit reload preserves current input focus',()=>{const f=fixture({readReady:false,record:null,error:'READ_FAILED',open:true,reloadOk:false});f.api.reloadSession({currentTarget:{}});assert.equal(f.focus(),'input');assert.equal(f.rendered().error,'READ_FAILED')});
+check('successful modal reload returns enabled apply or conflict cancel',()=>{for(const disabled of[false,true]){const f=fixture({open:true});f.ctx.apply.disabled=disabled;f.api.reloadSession({currentTarget:{}});assert.equal(f.focus(),disabled?'cancel':'apply')}});
+check('successful main reload returns primary without changing configuration',()=>{const f=fixture();f.api.reloadSession({currentTarget:{}});assert.equal(f.focus(),'primary');assert.equal(f.ctx.dialog.open,false)});
+const report={status:checks.every(c=>c.status==='PASS')?'SCOPED_VIEW_FUNCTIONS_ONLY':'FAIL',codeSha256:createHash('sha256').update(code).digest('hex'),sourceHashes:await sourceBinding(target),harnessHashes:await harnessBinding(),checkerSha256:createHash('sha256').update(await readFile(new URL(import.meta.url))).digest('hex'),checks,limits:'Dependency-level semantic fixtures,not full browser/controller or visual approval. Original13whole-controller checks unchanged.'};await writeFile(out+'/report.json',JSON.stringify(report,null,2));console.log(JSON.stringify({pass:checks.filter(c=>c.status==='PASS').length,total:checks.length}));process.exitCode=report.status==='FAIL'?1:0;

@@ -1,0 +1,7 @@
+{
+  "status": "FAILED_CONTROLLER_PART",
+  "id": "configuration",
+  "pid": 39452,
+  "updatedAtUtc": "2026-10-15T15:41:56.353Z",
+  "error": "The expression evaluated to a falsy value:\n\n  assert.ok(!/\\b(?:document|window|localStorage|setInterval|setTimeout|fetch|eval|require|process|innerHTML)\\b/.test(code))\n"
+}

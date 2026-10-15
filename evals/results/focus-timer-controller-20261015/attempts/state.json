@@ -1,0 +1,7 @@
+{
+  "status": "FAILED_UNIT_REQUEST_OR_VALIDATION",
+  "unit": "app",
+  "pid": 38196,
+  "updatedAtUtc": "2026-10-15T15:29:42.249Z",
+  "error": "Renderer alone owns visible content/hidden state"
+}

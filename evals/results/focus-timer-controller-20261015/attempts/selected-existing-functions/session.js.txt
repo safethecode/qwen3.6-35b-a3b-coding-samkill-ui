@@ -1,0 +1,3 @@
+function primaryAction() { const view = currentView(); if (!view.readReady || !view.session) return; let type; if (view.session.phase === 'ready' || view.session.phase === 'completed') { type = 'START'; } else if (view.session.phase === 'running') { type = 'PAUSE'; } else if (view.session.phase === 'paused') { type = 'RESUME'; } else { return; } store.transact({ type: type }, Date.now()); refresh(); }
+
+function resetSession() { store.transact({ type: 'RESET' }, Date.now()); refresh(); }

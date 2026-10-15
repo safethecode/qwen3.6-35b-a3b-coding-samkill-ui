@@ -1,0 +1,18 @@
+{
+  "elapsedMs": 37165,
+  "model": "qwen3.6:35b-a3b-coding",
+  "created_at": "2026-10-15T15:37:04.548502Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\"code\":\"function currentView() { const state = store.getState(); if (!state.readReady || !state.record) { return { readReady: false, session: null, error: state.error, fieldInvalid: fieldInvalid, dialogOpen: dialog.open }; } try { const session = snapshot(state.record, Date.now()); return { readReady: true, session: session, error: null, fieldInvalid: fieldInvalid, dialogOpen: dialog.open }; } catch (e) { if (e === 'INVALID_CLOCK') { return { readReady: true, session: null, error: 'INVALID_CLOCK', fieldInvalid: fieldInvalid, dialogOpen: dialog.open }; } throw e; } }\\nfunction refresh() { const view = currentView(); renderTimer(view); return view; }\\nfunction returnFocus() { if (configure && configure.offsetParent !== null && !configure.disabled) { configure.focus(); } else if (primary && primary.offsetParent !== null && !primary.disabled) { primary.focus(); } else if (mainReload && mainReload.offsetParent !== null && !mainReload.disabled) { mainReload.focus(); } }\\nfunction reloadSession(event) { const result = store.reload(); refresh(); if (result.ok) { if (dialog.open) { if (apply && apply.offsetParent !== null && !apply.disabled) { apply.focus(); } else if (cancel && cancel.offsetParent !== null && !cancel.disabled) { cancel.focus(); } } else { if (primary && primary.offsetParent !== null && !primary.disabled) { primary.focus(); } else if (mainReload && mainReload.offsetParent !== null && !mainReload.disabled) { mainReload.focus(); } } } }\\nfunction openConfig() { const view = currentView(); if (!view.readReady || !view.session) return; if (view.session.phase !== 'ready' && view.session.phase !== 'completed') return; fieldInvalid = false; if (input) input.value = String(view.session.durationMinutes); dialog.showModal(); refresh(); if (input) input.focus(); }\\nfunction closeConfig(event) { if (event) event.preventDefault(); fieldInvalid = false; dialog.close(); refresh(); returnFocus(); }\\nfunction submitConfig(event) { event.preventDefault(); const val = parseDuration(input.value); if (!val.ok) { fieldInvalid = true; refresh(); if (input) input.focus(); return; } fieldInvalid = false; const result = store.transact({ type: 'CONFIGURE', minutes: val.minutes }, Date.now()); if (result.ok) { closeConfig(); } else { refresh(); } }\\nfunction inputConfig() { fieldInvalid = false; refresh(); }\\nfunction primaryAction() { const view = currentView(); if (!view.readReady || !view.session) return; let type; if (view.session.phase === 'ready' || view.session.phase === 'completed') { type = 'START'; } else if (view.session.phase === 'running') { type = 'PAUSE'; } else if (view.session.phase === 'paused') { type = 'RESUME'; } else { return; } store.transact({ type: type }, Date.now()); refresh(); }\\nfunction resetSession() { store.transact({ type: 'RESET' }, Date.now()); refresh(); }\"}"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 37158963000,
+  "load_duration": 7728400,
+  "prompt_eval_count": 1459,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration": 14174346000,
+  "eval_count": 677,
+  "eval_duration": 22869174000
+}

@@ -1,0 +1,44 @@
+{
+  "status": "UNCHANGED_DECLARATION_SELECTION_NOT_NEW_INFERENCE",
+  "path": "runs/focus-timer-transfer-20261015/unit-app/function-repairs/currentView/initial/raw-functions.js.txt",
+  "rawSha256": "6347136ea79f8f73a5c915a50f7b7ce31084da717278688aa9b4de08c2b8a24c",
+  "ranges": [
+    {
+      "part": "configuration",
+      "name": "openConfig",
+      "start": 1456,
+      "end": 1779
+    },
+    {
+      "part": "configuration",
+      "name": "closeConfig",
+      "start": 1780,
+      "end": 1910
+    },
+    {
+      "part": "configuration",
+      "name": "submitConfig",
+      "start": 1911,
+      "end": 2254
+    },
+    {
+      "part": "configuration",
+      "name": "inputConfig",
+      "start": 2255,
+      "end": 2314
+    },
+    {
+      "part": "session",
+      "name": "primaryAction",
+      "start": 2315,
+      "end": 2719
+    },
+    {
+      "part": "session",
+      "name": "resetSession",
+      "start": 2720,
+      "end": 2805
+    }
+  ],
+  "assistance": "Host selects exact same-name declarations from the earlier actual Qwen response that escaped the requested single-function scope. No selected behavioral token changed. This is one previous inference reused,not independent generation success or six successful scoped calls. Original scope rejection and subsequent bad configuration output remain preserved. Semantic acceptance depends on unchanged13browser groups."
+}
