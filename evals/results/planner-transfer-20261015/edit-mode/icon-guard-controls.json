@@ -1,0 +1,19 @@
+{
+  "status": "SCOPED_COUNTEREXAMPLES_REJECTED",
+  "base": "source",
+  "mutations": [
+    {
+      "name": "filter",
+      "file": "styles.css",
+      "append": "\n[data-ui-unit=\"tasks\"] .add-task img{filter:invert(1)}\n",
+      "outcome": "24add-paint checks remain UNVERIFIED; source sampling cannot approve CSS inversion"
+    },
+    {
+      "name": "opacity",
+      "file": "styles.css",
+      "append": "\n[data-ui-unit=\"tasks\"] .add-task img{opacity:0}\n",
+      "outcome": "24add-paint checks remain UNVERIFIED; invisible image cannot pass"
+    }
+  ],
+  "limitation": "Source raster is not CSS-composited paint; main checker guards unsupported ancestor/image effects and clipping. Baseline all48samples meet guarded assumptions and still104pass40fail."
+}

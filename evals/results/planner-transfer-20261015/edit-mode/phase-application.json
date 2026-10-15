@@ -1,0 +1,70 @@
+{
+  "status": "PARTIAL_GUIDE_APPLICATION_NOT_COMPLETION",
+  "recordedAtUtc": "2026-10-15T10:34:18.958Z",
+  "records": [
+    {
+      "phase": "research",
+      "guide": "skills/qwen-samkill-ui/references/upstream/uibowl-research/guide.md",
+      "guideSha256": "e69173ad106db14f3cdd9a319d9dfa5353db7065476e8a9c8503768b2220f209",
+      "actualReadPath": "skills/qwen-samkill-ui/references/upstream/uibowl-research/guide.md",
+      "status": "applied",
+      "evidence": [
+        "../edit-mode-research/reference.json",
+        "../edit-mode-research/reference.jpg"
+      ],
+      "limit": "Fresh native query/image inspected once in this bounded round; deletion and task-add flow remain unobserved."
+    },
+    {
+      "phase": "decomposition",
+      "guide": "skills/qwen-samkill-ui/references/upstream/reference-decompose/guide.md",
+      "guideSha256": "75b42c9d969e681167ee4bf1cdcc852da19901e4bd3005ea7d5a4ec6bb46fceb",
+      "actualReadPath": "skills/qwen-samkill-ui/references/upstream/reference-decompose/guide.md",
+      "status": "applied",
+      "evidence": [
+        "../edit-mode-research/PLAN.md",
+        "preparation.json",
+        "scaffold-source/design/layout-contract.json"
+      ],
+      "limit": "Host-selected explicit mode contracts are frozen separately from original inputs; not independent reference reproduction."
+    },
+    {
+      "phase": "implementation",
+      "guide": "skills/qwen-samkill-ui/references/upstream/reference-to-ui/guide.md",
+      "guideSha256": "567526f1bf26f8cb75907be57b2c4c4f3968923e3b497697caf5e7891f684c62",
+      "actualReadPath": "skills/qwen-samkill-ui/references/upstream/reference-to-ui/guide.md",
+      "status": "applied",
+      "evidence": [
+        "header-css/request.json",
+        "selector-repair/request.json",
+        "controller/request.json"
+      ],
+      "limit": "Applicable full styling guides reached the failed first CSS response; selector retry receives exact relevant paragraph and computed fixed-DOM context. Behavior has separate typed guide-bound units. Entry guide use is not whole-guide compliance."
+    },
+    {
+      "phase": "state verification",
+      "guide": "skills/qwen-samkill-ui/references/upstream/reference-review/references/state-stress.md",
+      "guideSha256": "5dbdc14b7e7d86a18f98a38f420ac5cf710575168f7b2668bed9db60908170b5",
+      "actualReadPath": "skills/qwen-samkill-ui/references/upstream/reference-review/references/state-stress.md",
+      "status": "applied",
+      "evidence": [
+        "focus-repair/request.json",
+        "final-mode-reviewed/report.json",
+        "final-recovery/report.json"
+      ],
+      "limit": "Whole state reference delivered to the local focus repair;actual sequences and stress are executed. Device/AT unavailable; original failure and negative replay retained."
+    },
+    {
+      "phase": "review",
+      "guide": "skills/qwen-samkill-ui/references/upstream/reference-review/guide.md",
+      "guideSha256": "6018495454ca3652463541feca21507c61a61c8d93407552f17866775dbfe900",
+      "actualReadPath": "skills/qwen-samkill-ui/references/upstream/reference-review/guide.md",
+      "status": "applied",
+      "evidence": [
+        "source/design/evidence/edit-review.md",
+        "catalog-check.json"
+      ],
+      "limit": "Actual primary/auxiliary reference and normal/enlarged candidate images inspected. Full85entry catalog retains24unknown and4failures; seven whole-guide assessments remain incomplete."
+    }
+  ],
+  "limitations": "Records summarize actual read/application, not proof that every linked reference was delivered or complied with. Full guide gate entries remain unknown."
+}

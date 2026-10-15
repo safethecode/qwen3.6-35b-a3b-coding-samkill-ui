@@ -1,0 +1,18 @@
+{
+  "elapsedMs": 154083,
+  "model": "qwen3.6:35b-a3b-coding",
+  "created_at": "2026-10-15T10:09:17.1949766Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\n  \"patches\": [\n    {\n      \"field\": \"css\",\n      \"oldString\": \"[data-ui-unit=\\\"week\\\"].planner-header h1 {\\n  font-size: 22px;\\n  font-weight: 700;\\n  line-height: 1.5;\\n  text-align: left;\\n  margin-bottom: 16px;\\n  color: var(--text);\\n  word-break: keep-all;\\n  overflow-wrap: anywhere;\\n}\",\n      \"newString\": \"[data-ui-unit=\\\"week\\\"].planner-heading {\\n  display: flex;\\n  align-items: center;\\n  gap: 12px;\\n  margin-bottom: 16px;\\n}\\n\\n[data-ui-unit=\\\"week\\\"].planner-header h1 {\\n  font-size: 22px;\\n  font-weight: 700;\\n  line-height: 1.5;\\n  text-align: left;\\n  margin-bottom: 0;\\n  color: var(--text);\\n  word-break: keep-all;\\n  overflow-wrap: anywhere;\\n  flex: 1;\\n  min-width: 0;\\n}\\n\\n#edit-tasks {\\n  font-size: 14px;\\n  font-weight: 600;\\n  line-height: 1.5;\\n  min-width: 44px;\\n  min-height: 44px;\\n  padding: 8px;\\n  background: transparent;\\n  border: none;\\n  color: var(--muted);\\n  white-space: normal;\\n}\"\n    }\n  ]\n}"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 152535214300,
+  "load_duration": 8580100,
+  "prompt_eval_count": 12515,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration": 129921003000,
+  "eval_count": 366,
+  "eval_duration": 22348796000
+}

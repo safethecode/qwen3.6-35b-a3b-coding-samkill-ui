@@ -1,0 +1,27 @@
+{
+  "status": "DIAGNOSTIC_RENDER_ONLY_NOT_APPROVAL",
+  "sourceHashes": {
+    "index.html": "81636d0aa35a601a408ad2a64857896275d2766b672f396abd553d2ac5637e72",
+    "styles.css": "3c775c15944cdf303800f5169c6998082406dc502c39b4e60df4630a300ea3ca",
+    "app.js": "84e4af53f4e244210620b9146c903f075c4fabcc9459e1ff7ac58ca5467ef857",
+    "DESIGN.md": "19a002f414b193dc70d257e0500914569632f408fa7ff6a7bc8e06aaf32c20a0",
+    "REFERENCE.md": "9f04811d7f04c3d0ae81da3cf35c30457499108f6a3e7df93c9ab9b872a9078c",
+    "assets/fonts/METADATA.pb": "9b8b27c0dd1adbb0057d1fbe9534207ab3606114ace6755453d14668912471a1",
+    "assets/fonts/NotoSansKR.ttf": "194018e6b2b293a7964f037b25c0249ce1418bc9ab3c971060a03aa57861e252",
+    "assets/fonts/OFL.txt": "1c05c68c34f9708415aada51f17e1b0092d2cea709bf4a94cd38114f9e73d7d9",
+    "assets/icons/LICENSE": "b495047bd93a9b06913511076f504daba17d5bbeb3e0650f3bb53a4220329c57",
+    "assets/icons/Plus.svg": "3d4f93d0e5a8eb932e4d1f0d71122d01917e7624439adc35dddcd5352d7a228f",
+    "assets/icons/Trash2-neutral.svg": "4e249e5c0f31edddd39895daffe23cf7bc80d405fb1a1f21749683d391de419a",
+    "assets/icons/X.svg": "f27abfc353abc2497a1d9752e21e2e2e32eeeb4271401f2a067c4d1fcced7a23",
+    "assets/icons/manifest.json": "9edbf06ed93bfae58ae18083d15f36a7bbada2a99e7fd8156667b865c7d42ee2",
+    "design/typography.json": "534c3deed77d20d1d9839d0eceda9925e0cdb26b2f632ba652d29bb5e1909cee",
+    "design/component-plan.json": "70138af923c7237eb10c61cafac6c019fff1b25ddde3c6bbffcb1a3ed24c5d79",
+    "design/layout-contract.json": "fbd778f2065fccb44ead85fba6b83361b25c7ad6a23eb38bec0f4ea13b55df2c",
+    "render.js": "7e5dc567bbb2130dc3df06820967ecbabbeb298a7a47fd2fe6a2f0e776a099e0",
+    "sample-editor.html": "6986f9ac088f35c49edd8bce742b4fb33dd43c64d2f6bbe003e7b7e2edf117ef",
+    "sample-tasks.html": "add7f4a1279c69a045355e0ffdbf30253dd8e48519e8db99a7e286de71cd563f",
+    "sample-week.html": "d3a9307e85b1b068ef6bbccf463c96cae7e348e6a4fccffa246bb2c093a2bd21",
+    "store.js": "2300e692f886294a8d328b7d3f72fdac9c72b57eac8c6d2c79d95fd9bd25f0ce"
+  },
+  "fixture": "Four realistic study/life tasks created through actual UI; one completed. Native edit toggle and create form. No product seeds or demo copy added."
+}

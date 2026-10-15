@@ -1,0 +1,18 @@
+{
+  "elapsedMs": 29410,
+  "model": "qwen3.6:35b-a3b-coding",
+  "created_at": "2026-10-15T10:17:55.6125964Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\n  \"wrapperSelector\": \"[data-ui-unit=\\\"week\\\"] .planner-heading\",\n  \"buttonSelector\": \"[data-ui-unit=\\\"week\\\"] #edit-tasks\"\n}"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 29403545600,
+  "load_duration": 16991358300,
+  "prompt_eval_count": 989,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration": 11358035000,
+  "eval_count": 40,
+  "eval_duration": 1045531999
+}

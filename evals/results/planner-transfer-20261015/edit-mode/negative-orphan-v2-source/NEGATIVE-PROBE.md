@@ -1,0 +1,1 @@
+Host mutation probe only: attach a day-like label outside all seven actual buttons after each render. This is intentionally invalid UI, not a local model output. The first probe inserted only on initial load and was erased by normal renderer updates; its passing checker result does not test this mutation.
