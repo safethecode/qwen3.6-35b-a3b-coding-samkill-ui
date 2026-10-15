@@ -1,0 +1,46 @@
+{
+  "algorithm": "sha256",
+  "scope": "Exact published bytes; index excludes itself. Functional evidence does not establish visual approval.",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 26,
+      "sha256": "155348a89d5e749f50d336f8f164a39bf8415179177b36e8b51766f3ab9a16d3"
+    },
+    {
+      "path": "focused-green.log",
+      "bytes": 1476,
+      "sha256": "3862b150a18f3abbe9689be9575bf6d93fdc31e8e6e7205243dd988be5f07767"
+    },
+    {
+      "path": "full-suite.log",
+      "bytes": 18878,
+      "sha256": "77f28c61c9cf678042c004f1ee0e5f220830e9cc3016f09068a808f3c624ea36"
+    },
+    {
+      "path": "installed-receipt.json",
+      "bytes": 9372,
+      "sha256": "59aa5ab4d1354d7a964db0eaf52fad4a293e2c65a8523bc2dbb3141aa4f0f273"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1155,
+      "sha256": "ca4b596d00d7989d413679c43e1fea630b8a672dcc52426288922c2b324bd048"
+    },
+    {
+      "path": "red.log",
+      "bytes": 1801,
+      "sha256": "8d2c72031507b82b5414f08394c07bc3ef6ef5bca63265167e1df33d6dfc26af"
+    },
+    {
+      "path": "redactions.json",
+      "bytes": 1686,
+      "sha256": "b6af4f1d36d385b71bb2628711a0a40eda32f99ba22ea005e482d1f9b109699d"
+    },
+    {
+      "path": "unconfigured-browser-attempt.log",
+      "bytes": 4748,
+      "sha256": "23c3bdc00edd86048c4c29e74172b6521aa4de0003447ce24c323c7373722a5e"
+    }
+  ]
+}

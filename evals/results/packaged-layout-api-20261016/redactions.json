@@ -1,0 +1,34 @@
+{
+  "files": [
+    {
+      "path": "red.log",
+      "originalSha256": "0bb6a75db323ab698e30a6122d65f2def225a50d2e7b5d671375c97c4a789643",
+      "publishedSha256": "8d2c72031507b82b5414f08394c07bc3ef6ef5bca63265167e1df33d6dfc26af",
+      "redaction": "Machine repository/home path forms replaced; raw originals retained privately"
+    },
+    {
+      "path": "focused-green.log",
+      "originalSha256": "3862b150a18f3abbe9689be9575bf6d93fdc31e8e6e7205243dd988be5f07767",
+      "publishedSha256": "3862b150a18f3abbe9689be9575bf6d93fdc31e8e6e7205243dd988be5f07767",
+      "redaction": "Machine repository/home path forms replaced; raw originals retained privately"
+    },
+    {
+      "path": "installed-receipt.json",
+      "originalSha256": "59aa5ab4d1354d7a964db0eaf52fad4a293e2c65a8523bc2dbb3141aa4f0f273",
+      "publishedSha256": "59aa5ab4d1354d7a964db0eaf52fad4a293e2c65a8523bc2dbb3141aa4f0f273",
+      "redaction": "Machine repository/home path forms replaced; raw originals retained privately"
+    },
+    {
+      "path": "full-suite.log",
+      "originalSha256": "77f28c61c9cf678042c004f1ee0e5f220830e9cc3016f09068a808f3c624ea36",
+      "publishedSha256": "77f28c61c9cf678042c004f1ee0e5f220830e9cc3016f09068a808f3c624ea36",
+      "redaction": "Machine repository/home path forms replaced; raw originals retained privately"
+    },
+    {
+      "path": "unconfigured-browser-attempt.log",
+      "originalSha256": "23c3bdc00edd86048c4c29e74172b6521aa4de0003447ce24c323c7373722a5e",
+      "publishedSha256": "23c3bdc00edd86048c4c29e74172b6521aa4de0003447ce24c323c7373722a5e",
+      "redaction": "Machine repository/home path forms replaced; raw originals retained privately"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+
+> qwen3-samkill-ui@0.1.0 test
+> node --test test/*.test.mjs
+
+✔ invented fonts and image data fail before dependent generation stages (31.982ms)
+✔ missing asset errors identify only unambiguous supplied filename matches (66.6173ms)
+✔ asset suggestions retain actual filename case and reject ambiguous case variants (17.5006ms)
+✔ catalog approval cannot omit actual styles or a bundled guide (108.0113ms)
+✔ full catalog plans preserve unknowns and existing observations rather than minting passes (234.2169ms)
+✔ embedded CSS comments are removed without changing compound selectors or strings (6.7665ms)
+✔ comment detection preserves comment-like text inside strings (7.2719ms)
+✔ comment removal preserves strings, tokens and JavaScript line breaks (2.8354ms)
+Generating component room, attempt 1
+✔ generation receives selected actual record fields and binds their source bytes (455.1231ms)
+✔ missing data pointer rejects generation before any inference instead of inventing a shape (34.4805ms)
+✔ array pointers accept only canonical indices while object keys retain their literal names (55.2502ms)
+✔ data context cannot read outside target or accept duplicate ownership IDs (59.2975ms)
+Generating component room, attempt 1
+✔ JSON pointer escaping retains literal field ownership (143.3671ms)
+Generating component room, attempt 1
+✔ a data file outside the default design inventory cannot change during inference unnoticed (45.1575ms)
+✔ mobile-only generation rejects unrequested desktop variants in shared and component CSS (5.4525ms)
+✔ semantic slots assemble exactly the same validated component source used by samples (9.0567ms)
+✔ component boundaries reject global style, hidden labels, scripts and undeclared media (2.1202ms)
+✔ host selector scoping preserves component roots and children without document escapes (3.7015ms)
+Generating component E1, attempt 1
+Generating component E2, attempt 1
+Generating component E2, attempt 2
+Generating component E2, attempt 1
+✔ component generation resumes fixed element outputs and rejects changed decomposition (620.7675ms)
+✔ bounded component repair reuses HTML across sample and assembly without touching behavior (444.1622ms)
+✔ invalid scope and stale source are rejected before any repair writes (609.12ms)
+✔ component repairs deliver applicable guide text and preserve source hashes (210.41ms)
+✔ component repair forwards valid role metrics and rejects invalid intent before inference (81.3013ms)
+✔ a CSS fragment boundary protects unchanged rules in the same semantic component (75.8597ms)
+✔ scope maps distinguish the attribute owner from actual descendant classes and IDs (4.9603ms)
+✔ unknown markup is explicit and a mismatched fixed owner is rejected (2.1674ms)
+✔ scope context accepts every valid component ID shape without narrowing plan compatibility (2.149ms)
+✔ the real generation and repair context carries grounded scope data alongside complete guide text (8.9592ms)
+✖ computed roles catch dropped custom properties and ignored declarations after real CSS parsing (33.6778ms)
+✖ computed contract rejects absent,ambiguous,hidden and invalid property evidence (9.408ms)
+✔ split JavaScript cannot silently render into nonexistent shell containers (10.9975ms)
+✔ message moves between contexts without simultaneous visible alerts (1.9364ms)
+✔ empty message hides both contexts and clears stale content (0.2996ms)
+✔ repeating a stable message produces no writes (0.2993ms)
+✔ invalid context, message or duplicate key cannot mutate existing state (7.609ms)
+✔ repair scheduling prioritizes broken execution and rotates away from stalled checks (1.9826ms)
+✔ rotating from stalled behavior to layout drops unrelated retry context and broad file scope (1.1716ms)
+✔ generated source must be complete, match its assigned file and parse before saving (7.5795ms)
+✔ browser runtime code joins the immutable execution binding (111.5128ms)
+✔ explicit icon paint variants preserve official geometry and reject tampered paint (53.5209ms)
+✔ official asset export verifies geometry and licensing and preserves existing directories (86.6515ms)
+✔ inference transport waits for delayed headers and the complete chunked JSON body (157.0415ms)
+✔ explicit timeout aborts both a waiting response and an incomplete body (118.5534ms)
+✔ HTTP failures, invalid JSON and disconnected responses cannot become success (38.0776ms)
+✔ inference transport requires a caller cancellation signal and HTTP protocol (0.7274ms)
+✔ inference deadlines default to ten minutes and overrides remain bounded (0.6072ms)
+✔ resource overrides are optional, explicit and bounded (2.384ms)

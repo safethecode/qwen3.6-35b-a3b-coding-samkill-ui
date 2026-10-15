@@ -1,0 +1,25 @@
+✔ mobile-only generation rejects unrequested desktop variants in shared and component CSS (2.7279ms)
+✔ semantic slots assemble exactly the same validated component source used by samples (4.6912ms)
+✔ component boundaries reject global style, hidden labels, scripts and undeclared media (1.1826ms)
+✔ host selector scoping preserves component roots and children without document escapes (1.3415ms)
+Generating component E1, attempt 1
+Generating component E2, attempt 1
+Generating component E2, attempt 2
+Generating component E2, attempt 1
+✔ component generation resumes fixed element outputs and rejects changed decomposition (89.6789ms)
+✔ installation preserves model, MCP and other agents and refuses duplicate replacement (164.852ms)
+✔ JSONC is left untouched (43.2283ms)
+✔ component styling receives complete applicable guides with source hashes (6.2188ms)
+✔ direct model stages receive the linked local decomposition guide as source-bound text (4.7419ms)
+✔ all active catalog rules remain available and stage prompts carry original font and icon rules (21.8744ms)
+✔ packaged layout API exactly mirrors its canonical contract section (4.2997ms)
+✔ installed decomposition guide resolves its contract link inside the skill package (78.1626ms)
+✔ source bindings include the packaged layout API bytes (24.8713ms)
+ℹ tests 13
+ℹ suites 0
+ℹ pass 13
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 494.2429
