@@ -22,6 +22,7 @@ try {
       await page.locator('#edit-tasks').click();
       await page.locator('.add-task img,.delete-task:visible img').evaluateAll(images => Promise.all(images.map(image => image.decode())));
       const capture = async (mode, stress) => {
+        const sample = async (state, index) => {
         const pairs = await page.locator('.add-task,.delete-task:visible').evaluateAll(buttons => buttons.map(button => {
           const image = button.querySelector('img'), label = button.querySelector(':scope > span'), ir = image.getBoundingClientRect(), lr = label.getBoundingClientRect(), s = getComputedStyle(label), c = document.createElement('canvas');
           c.width = Math.max(1, Math.ceil(ir.width)); c.height = Math.max(1, Math.ceil(ir.height)); const ctx = c.getContext('2d'); ctx.drawImage(image, 0, 0, c.width, c.height);
@@ -35,17 +36,28 @@ try {
             if (Number(style.opacity) !== 1 || style.filter !== 'none' || style.backdropFilter !== 'none' || style.mixBlendMode !== 'normal' || style.clipPath !== 'none' || style.maskImage !== 'none' || style.transform !== 'none') paintConstraints.push(`Unsupported CSS compositing on ${node.tagName}.${node.className}`);
             if (node !== image && ((/^(hidden|clip|auto|scroll)$/.test(style.overflowX) && (ir.left < bounds.left - 1 || ir.right > bounds.right + 1)) || (/^(hidden|clip|auto|scroll)$/.test(style.overflowY) && (ir.top < bounds.top - 1 || ir.bottom > bounds.bottom + 1)))) paintConstraints.push(`Image clipped by ${node.tagName}.${node.className}`);
           }
-          return { action: button.className, label: label.textContent, fontSize: parseFloat(s.fontSize), textColor: s.color, iconWidth: ir.width, iconHeight: ir.height, centerDifference: Math.abs(ir.top + ir.height / 2 - lr.top - lr.height / 2), paintedRgb: dominant?.[0] || null, sampledPixelCount: dominant?.[1] || 0, alphaFloor: 128, paintConstraints, asset: image.getAttribute('src') };
+          return { action: button.className, label: label.textContent, hovered: button.matches(':hover'), focused: button === document.activeElement, fontSize: parseFloat(s.fontSize), textColor: s.color, iconWidth: ir.width, iconHeight: ir.height, centerDifference: Math.abs(ir.top + ir.height / 2 - lr.top - lr.height / 2), paintedRgb: dominant?.[0] || null, sampledPixelCount: dominant?.[1] || 0, alphaFloor: 128, paintConstraints, asset: image.getAttribute('src') };
         }));
-        findings.push({ width, mode, pairs, stress });
-        await page.screenshot({ path: `${output}/${width}-${mode}.png`, fullPage: true });
-        for (const pair of pairs) for (const [name, pass] of [['proportional size', pair.iconWidth >= pair.fontSize + 2 && pair.iconWidth <= pair.fontSize + 4 && pair.iconHeight === pair.iconWidth], ['aligned centers', pair.centerDifference <= 2], ['matching actual paint', pair.sampledPixelCount > 0 && pair.textColor.replace(/rgba?\(|\)|\s/g, '') === pair.paintedRgb]]) checks.push({ width, mode, action: pair.action, name, status: name === 'matching actual paint' && pair.paintConstraints.length ? 'UNVERIFIED' : pass ? 'PASS' : 'FAIL' });
         assert.equal(pairs.length, 4);
+        const selected = index === undefined ? pairs : [pairs[index]];
+        findings.push({ width, mode, state, pairs: selected, stress });
+        if (state === 'hover') assert.equal(selected[0].hovered, true);
+        if (state === 'focus') assert.equal(selected[0].focused, true);
+        for (const pair of selected) for (const [name, pass] of [['proportional size', pair.iconWidth >= pair.fontSize + 2 && pair.iconWidth <= pair.fontSize + 4 && pair.iconHeight === pair.iconWidth], ['aligned centers', pair.centerDifference <= 2], ['matching actual paint', pair.sampledPixelCount > 0 && pair.textColor.replace(/rgba?\(|\)|\s/g, '') === pair.paintedRgb]]) checks.push({ width, mode, state, action: pair.action, name, status: name === 'matching actual paint' && pair.paintConstraints.length ? 'UNVERIFIED' : pass ? 'PASS' : 'FAIL' });
+        };
+        await page.mouse.move(0, 0); await page.locator('#edit-tasks').focus(); await sample('default');
+        await page.screenshot({ path: `${output}/${width}-${mode}.png`, fullPage: true });
+        for (let index = 0; index < 4; index++) {
+          const button = page.locator('.add-task,.delete-task:visible').nth(index);
+          await page.locator('#edit-tasks').focus(); await button.hover(); await sample('hover', index);
+          await page.mouse.move(0, 0); await button.focus(); await sample('focus', index);
+        }
+        await page.locator('#edit-tasks').focus();
       };
       await capture('normal'); await inspectTextStress(page, capture);
     } finally { await context.close(); }
   }
   assert.deepEqual(await sourceBinding(target), sourceHashes); assert.deepEqual(await harnessBinding(), harnessHashes);
-  const report = { status: checks.some(c => c.status === 'FAIL') ? 'FAIL' : checks.some(c => c.status === 'UNVERIFIED') ? 'UNVERIFIED' : 'SCOPED_ICON_PAIR_CHECKS_ONLY', sourceHashes, harnessHashes, checkerSha256: createHash('sha256').update(await readFile(new URL(import.meta.url))).digest('hex'), checks, findings, limits: ['Four actual add/delete pairs in explicit editing; normal/text200/spacing', 'Source-image raster sampling supports only visible,unclipped images and no CSS opacity/filter/mask/clip/transform/blend effects through ancestors; unsupported paint remains UNVERIFIED. Text color is browser-computed,not a composited screenshot sample', 'Hover/focus/disabled paint,optical centering,real devices and whole-catalog approval remain separate checks'] };
+  const report = { status: checks.some(c => c.status === 'FAIL') ? 'FAIL' : checks.some(c => c.status === 'UNVERIFIED') ? 'UNVERIFIED' : 'SCOPED_ICON_PAIR_CHECKS_ONLY', sourceHashes, harnessHashes, checkerSha256: createHash('sha256').update(await readFile(new URL(import.meta.url))).digest('hex'), checks, findings, limits: ['Four actual add/delete pairs in explicit editing; normal/text200/spacing; each action receives actual hover and focus independently', 'Source-image raster sampling supports only visible,unclipped images and no CSS opacity/filter/mask/clip/transform/blend effects through ancestors; unsupported paint remains UNVERIFIED. Text color is browser-computed,not a composited screenshot sample', 'Disabled add/delete states are not implemented; hidden reading deletion is covered by the mode checker. Optical centering,real devices and whole-catalog approval remain separate checks'] };
   await writeFile(`${output}/report.json`, JSON.stringify(report, null, 2)); console.log(JSON.stringify({ status: report.status, pass: checks.filter(c => c.status === 'PASS').length, fail: checks.filter(c => c.status === 'FAIL').length, unknown: checks.filter(c => c.status === 'UNVERIFIED').length })); process.exitCode = report.status === 'FAIL' ? 1 : report.status === 'UNVERIFIED' ? 2 : 0;
 } finally { await browser.close(); await new Promise(r => server.close(r)); }
