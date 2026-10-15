@@ -1,0 +1,33 @@
+{
+  "binding": "324f019e9fdf8a785a2d176a31b3c97442477917db5fff8378db35fbe07fe4c5",
+  "settings": {
+    "model": "qwen3.6:35b-a3b-coding",
+    "think": false,
+    "options": {
+      "num_ctx": 16384,
+      "temperature": 0.7,
+      "top_p": 0.8,
+      "top_k": 20,
+      "repeat_penalty": 1.05,
+      "num_gpu": 16,
+      "num_batch": 128,
+      "num_predict": 2048
+    }
+  },
+  "elapsedMs": 156549,
+  "model": "qwen3.6:35b-a3b-coding",
+  "created_at": "2026-10-15T06:03:20.5134677Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\n  \"css\": \"/* Identity surface content styles */\\n\\n.product-identity .eyebrow {\\n  font-size: 14px;\\n  font-weight: 500;\\n  color: var(--text-secondary);\\n  margin-bottom: var(--title-gap);\\n}\\n\\n.product-identity .title {\\n  font-size: 22px;\\n  font-weight: 700;\\n  line-height: 1.45;\\n  color: var(--text-primary);\\n  word-break: keep-all;\\n  overflow-wrap: break-word;\\n}\\n\\n.product-identity .price-row {\\n  margin-top: var(--price-gap);\\n}\\n\\n.product-identity .price {\\n  font-size: 24px;\\n  font-weight: 800;\\n  color: var(--text-primary);\\n}\\n\\n.product-identity .metadata {\\n  display: flex;\\n  flex-wrap: wrap;\\n  gap: var(--metadata-gap);\\n  margin-top: 24px;\\n}\\n\\n.product-identity .meta-item {\\n  display: flex;\\n  align-items: center;\\n  gap: var(--icon-label-gap);\\n}\\n\\n.product-identity .meta-item img {\\n  width: 20px;\\n  height: 20px;\\n  display: block;\\n  object-fit: contain;\\n  color: var(--text-secondary);\\n}\\n\\n.product-identity .meta-item span {\\n  font-size: 14px;\\n  font-weight: 500;\\n  color: var(--text-secondary);\\n  white-space: nowrap;\\n}\\n\\n.product-identity .description {\\n  font-size: 15px;\\n  font-weight: 500;\\n  line-height: 1.75;\\n  color: var(--text-primary);\\n  margin-top: var(--content-gap);\\n  word-break: keep-all;\\n  overflow-wrap: break-word;\\n}\"\n}"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 156546705800,
+  "load_duration": 11021100,
+  "prompt_eval_count": 12187,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration": 128020351000,
+  "eval_count": 446,
+  "eval_duration": 28452662000
+}

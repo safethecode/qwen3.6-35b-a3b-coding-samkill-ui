@@ -1,0 +1,1795 @@
+{
+  "sourceHashes": {
+    "index.html": "d15d270836c87ff31ceedba8c5d0bb0d3f3bb6193a9f740a27742276116a98ca",
+    "styles.css": "97fb2bedc3e1be9731395c19cf4e1ddc5962e072d0cf6b4c403c58e1b7d311a2",
+    "app.js": "c9fa861188862dce66abeb086de2881a98c4fc0eaf04c69544430f19db0ee83f",
+    "DESIGN.md": "a9eaca9640d676097d382833f52d63a6dba0e7498710f229cdb1ef2ed6d9b1e9",
+    "REFERENCE.md": "5b3671212efb1a28c2462ae70827d0b8bf6225aa058395d6f4b7fa89bcadbc10",
+    "assets/fonts/METADATA.pb": "9b8b27c0dd1adbb0057d1fbe9534207ab3606114ace6755453d14668912471a1",
+    "assets/fonts/NotoSansKR.ttf": "194018e6b2b293a7964f037b25c0249ce1418bc9ab3c971060a03aa57861e252",
+    "assets/fonts/OFL.txt": "1c05c68c34f9708415aada51f17e1b0092d2cea709bf4a94cd38114f9e73d7d9",
+    "assets/icons/ArrowLeft.svg": "4ce3ba67c4491a9a014c043f352fd56d865e586b1d019bf9d9e7c789797a3672",
+    "assets/icons/ChevronRight.svg": "1db358b44dd0b76c26b8f0e81b3c36134a56bf2287acf197355c1c5419cbd75e",
+    "assets/icons/Clock.svg": "358bae4968a53af728317f105d9ba274e6a86b5fb186e2cad86515c01b6942cd",
+    "assets/icons/Heart.svg": "26421e91f4de871a545ed11defec7f59d7e6caea37f8da7cd14d3e046c1f4468",
+    "assets/icons/LICENSE": "b495047bd93a9b06913511076f504daba17d5bbeb3e0650f3bb53a4220329c57",
+    "assets/icons/MapPin.svg": "006d6b63bfa711de039a1e1128ee4b7749241aa11bf8293d8ff63bc2229a83dc",
+    "assets/icons/Users.svg": "01824f8e3f0fd8152511dbcdcce74dd7818ffa7ad1f34bea0e1a2b052a51b9ec",
+    "assets/icons/manifest.json": "270c915a7c31e369be7fb959c6592f36b62114aecdb67469eaf16e0fd1b2836e",
+    "assets/photos/pottery.jpg": "c3d060b5b9e7c8a2f0ae940a3cc7765acdf9613e61aed97d276f01170ba947f0",
+    "assets/photos/provenance.json": "89cdf7b27f1137efa4f7763c663360391caa42202a1e19188bf305a902f16fdd",
+    "design/typography.json": "534c3deed77d20d1d9839d0eceda9925e0cdb26b2f632ba652d29bb5e1909cee",
+    "design/component-plan.json": "cb4c143476b31a07fa834ed8c43537e82fa6d22d409dd1e878a4e15b621fdbb8",
+    "design/layout-contract.json": "3d365409cb631e609814f53fb8df2fa23be46d7db3b90771d5fc911a5043e81e",
+    "classes.html": "d75fe6f4554dc14311e44890b8556b9ab333d2183487fac50882bead9576ffcc",
+    "sample-booking.html": "a1e37edb26107a99831abf44fa8bbdcdb9498903d5debb5719cdd4f829b2c989",
+    "sample-identity.html": "2b92c4b6a996ad1d2c72058f516d264f2188f705b897620258a319668a26a870",
+    "sample-media.html": "de07e7884f180fa58b46646c6da6ab43a91fb0835c3ff0adb486b163bd765ce3"
+  },
+  "contract": {
+    "roles": {
+      "body": "structural",
+      ".product": "structural",
+      ".product-media": "structural",
+      ".product-identity": "structural",
+      ".booking-host": "structural",
+      ".booking-surface": "structural",
+      "#booking-layout": "structural",
+      "#booking-actions": "internal",
+      ".section-label": "internal",
+      ".eyebrow": "internal",
+      ".price-row": "internal",
+      ".metadata": "structural",
+      ".meta-item": "icon-label",
+      ".description": "internal",
+      ".booking-host-subtitle": "internal",
+      ".booking-primary-btn": "internal",
+      ".booking-icon-btn": "internal",
+      ".booking-note": "internal",
+      "dialog": "structural",
+      ".dialog-heading": "structural",
+      ".booking-summary": "structural",
+      ".booking-class": "internal",
+      ".booking-price": "internal",
+      "#booking-form label": "internal",
+      "#booking-form input": "internal",
+      "#booking-form select": "internal",
+      ".confirm-booking": "internal",
+      "#confirmation-details": "internal",
+      "#cancel-booking": "internal",
+      "#cancel-error": "internal",
+      ".class-list": "structural",
+      ".class-copy": "structural"
+    }
+  },
+  "scope": "Every spacing declaration in the supplied CSS, including media/state declarations; not a complete DOM or rendered-distance audit",
+  "declarations": 54,
+  "selectors": 37,
+  "entries": [
+    {
+      "selector": "body",
+      "property": "margin",
+      "raw": "0",
+      "role": "structural",
+      "scope": [],
+      "values": [
+        {
+          "raw": "0",
+          "resolved": "0",
+          "value": 0,
+          "status": "ALIGNED",
+          "candidates": [],
+          "reason": "Within the declared role scale; not visual approval"
+        }
+      ]
+    },
+    {
+      "selector": "body",
+      "property": "margin",
+      "raw": "0 auto",
+      "role": "structural",
+      "scope": [],
+      "values": [
+        {
+          "raw": "0",
+          "resolved": "0",
+          "value": 0,
+          "status": "ALIGNED",
+          "candidates": [],
+          "reason": "Within the declared role scale; not visual approval"
+        },
+        {
+          "status": "UNVERIFIED",
+          "reason": "Content-dependent, relative or unresolved spacing requires rendered/context review",
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "selector": "p,h1,h2,h3",
+      "property": "margin",
+      "raw": "0",
+      "role": "UNVERIFIED",
+      "scope": [],
+      "values": [
+        {
+          "raw": "0",
+          "resolved": "0",
+          "value": 0,
+          "status": "UNVERIFIED",
+          "candidates": [],
+          "reason": "Spacing role not established"
+        }
+      ]
+    },
+    {
+      "selector": ".product",
+      "property": "margin",
+      "raw": "0",
+      "role": "structural",
+      "scope": [],
+      "values": [
+        {
+          "raw": "0",
+          "resolved": "0",
+          "value": 0,
+          "status": "ALIGNED",
+          "candidates": [],
+          "reason": "Within the declared role scale; not visual approval"
+        }
+      ]
+    },
+    {
+      "selector": ".product",
+      "property": "padding",
+      "raw": "0",
+      "role": "structural",
+      "scope": [],
+      "values": [
+        {
+          "raw": "0",
+          "resolved": "0",
+          "value": 0,
+          "status": "ALIGNED",
+          "candidates": [],
+          "reason": "Within the declared role scale; not visual approval"
+        }
+      ]
+    },
+    {
+      "selector": ".product-identity",
+      "property": "padding",
+      "raw": "28px",
+      "role": "structural",
+      "scope": [],
+      "values": [
+        {
+          "raw": "28px",
+          "resolved": "28px",
+          "value": 28,
+          "status": "REVIEW",
+          "candidates": [
+            24,
+            32
+          ],
+          "reason": "Structural eight-step or scale alignment review; not a hard product failure"
+        }
+      ]
+    },
+    {
+      "selector": "#booking-layout",
+      "property": "padding-top",
+      "raw": "12px",
+      "role": "structural",
+      "scope": [],
+      "values": [
+        {
+          "raw": "12px",
+          "resolved": "12px",
+          "value": 12,
+          "status": "REVIEW",
+          "candidates": [
+            8,
+            16
+          ],
+          "reason": "Structural eight-step or scale alignment review; not a hard product failure"
+        }
+      ]
+    },
+    {
+      "selector": ".booking-host,.booking-surface",
+      "property": "padding",
+      "raw": "24px 28px",
+      "role": "UNVERIFIED",
+      "scope": [],
+      "values": [
+        {
+          "raw": "24px",
+          "resolved": "24px",
+          "value": 24,
+          "status": "UNVERIFIED",
+          "candidates": [],
+          "reason": "Spacing role not established"
+        },
+        {
+          "raw": "28px",
+          "resolved": "28px",
+          "value": 28,
+          "status": "UNVERIFIED",
+          "candidates": [],
+          "reason": "Spacing role not established"
+        }
+      ]
+    },
+    {
+      "selector": ".booking-surface",
+      "property": "margin-top",
+      "raw": "12px",
+      "role": "structural",
+      "scope": [],
+      "values": [
+        {
+          "raw": "12px",
+          "resolved": "12px",
+          "value": 12,
+          "status": "REVIEW",
+          "candidates": [
+            8,
+            16
+          ],
+          "reason": "Structural eight-step or scale alignment review; not a hard product failure"
+        }
+      ]
+    },
+    {
+      "selector": "#booking-actions",
+      "property": "gap",
+      "raw": "12px",
+      "role": "internal",
+      "scope": [],
+      "values": [
+        {
+          "raw": "12px",
+          "resolved": "12px",
+          "value": 12,
+          "status": "ALIGNED",
+          "candidates": [],
+          "reason": "Within the declared role scale; not visual approval"
+        }
+      ]
+    },
+    {
+      "selector": ".section-label",
+      "property": "margin-bottom",
+      "raw": "8px",
+      "role": "internal",
+      "scope": [],
+      "values": [
+        {
+          "raw": "8px",
+          "resolved": "8px",
+          "value": 8,
+          "status": "ALIGNED",
+          "candidates": [],
+          "reason": "Within the declared role scale; not visual approval"
+        }
+      ]
+    },
+    {
+      "selector": ".product",
+      "property": "margin",
+      "raw": "0",
+      "role": "structural",
+      "scope": [
+        "@media (max-width:700px)"
+      ],
+      "values": [
+        {
+          "raw": "0",
+          "resolved": "0",
+          "value": 0,
+          "status": "ALIGNED",
+          "candidates": [],
+          "reason": "Within the declared role scale; not visual approval"
+        }
+      ]
+    },
+    {
+      "selector": ".product",
+      "property": "padding",
+      "raw": "0",
+      "role": "structural",
+      "scope": [
+        "@media (max-width:700px)"
+      ],
+      "values": [
+        {
+          "raw": "0",
+          "resolved": "0",
+          "value": 0,
+          "status": "ALIGNED",
+          "candidates": [],
+          "reason": "Within the declared role scale; not visual approval"
+        }
+      ]
+    },
+    {
+      "selector": ".details",
+      "property": "padding",
+      "raw": "0",
+      "role": "UNVERIFIED",
+      "scope": [
+        "@media (max-width:700px)"
+      ],
+      "values": [
+        {
+          "raw": "0",
+          "resolved": "0",
+          "value": 0,
+          "status": "UNVERIFIED",
+          "candidates": [],
+          "reason": "Spacing role not established"
+        }
+      ]
+    },
+    {
+      "selector": ".product-identity",
+      "property": "padding",
+      "raw": "24px 20px",
+      "role": "structural",
+      "scope": [
+        "@media (max-width:700px)"
+      ],
+      "values": [
+        {
+          "raw": "24px",
+          "resolved": "24px",
+          "value": 24,
+          "status": "ALIGNED",
+          "candidates": [],
+          "reason": "Within the declared role scale; not visual approval"
+        },
+        {
+          "raw": "20px",
+          "resolved": "20px",
+          "value": 20,
+          "status": "REVIEW",
+          "candidates": [
+            16,
+            24
+          ],
+          "reason": "Structural eight-step or scale alignment review; not a hard product failure"
+        }
+      ]
+    },
+    {
+      "selector": ".booking-host,.booking-surface",
+      "property": "padding",
+      "raw": "24px 20px",
+      "role": "UNVERIFIED",
+      "scope": [
+        "@media (max-width:700px)"
+      ],
+      "values": [
+        {
+          "raw": "24px",
+          "resolved": "24px",
+          "value": 24,
+          "status": "UNVERIFIED",
+          "candidates": [],
+          "reason": "Spacing role not established"
+        },
+        {
+          "raw": "20px",
+          "resolved": "20px",
+          "value": 20,
+          "status": "UNVERIFIED",
+          "candidates": [],
+          "reason": "Spacing role not established"
+        }
+      ]
+    },
+    {
+      "selector": "[data-ui-unit=\"media\"].product-media",
+      "property": "margin",
+      "raw": "0",
+      "role": "UNVERIFIED",
+      "scope": [],
+      "values": [
+        {
+          "raw": "0",
+          "resolved": "0",
+          "value": 0,
+          "status": "UNVERIFIED",
+          "candidates": [],
+          "reason": "Spacing role not established"
+        }
+      ]
+    },
+    {
+      "selector": "[data-ui-unit=\"identity\"].product-identity .eyebrow",
+      "property": "margin-bottom",
+      "raw": "8px",
+      "role": "internal",
+      "scope": [],
+      "values": [
+        {
+          "raw": "8px",
+          "resolved": "8px",
+          "value": 8,
+          "status": "ALIGNED",
+          "candidates": [],
+          "reason": "Within the declared role scale; not visual approval"
+        }
+      ]
+    },
+    {
+      "selector": "[data-ui-unit=\"identity\"].product-identity .price-row",
+      "property": "margin-top",
+      "raw": "12px",
+      "role": "internal",
+      "scope": [],
+      "values": [
+        {
+          "raw": "12px",
+          "resolved": "12px",
+          "value": 12,
+          "status": "ALIGNED",
+          "candidates": [],
+          "reason": "Within the declared role scale; not visual approval"
+        }
+      ]
+    },
+    {
+      "selector": "[data-ui-unit=\"identity\"].product-identity .metadata",
+      "property": "gap",
+      "raw": "16px",
+      "role": "structural",
+      "scope": [],
+      "values": [
+        {
+          "raw": "16px",
+          "resolved": "16px",
+          "value": 16,
+          "status": "ALIGNED",
+          "candidates": [],
+          "reason": "Within the declared role scale; not visual approval"
+        }
+      ]
+    },
+    {
+      "selector": "[data-ui-unit=\"identity\"].product-identity .metadata",
+      "property": "margin-top",
+      "raw": "24px",
+      "role": "structural",
+      "scope": [],
+      "values": [
+        {
+          "raw": "24px",
+          "resolved": "24px",
+          "value": 24,
+          "status": "ALIGNED",
+          "candidates": [],
+          "reason": "Within the declared role scale; not visual approval"
+        }
+      ]
+    },
+    {
+      "selector": "[data-ui-unit=\"identity\"].product-identity .meta-item",
+      "property": "gap",
+      "raw": "8px",
+      "role": "icon-label",
+      "scope": [],
+      "values": [
+        {
+          "raw": "8px",
+          "resolved": "8px",
+          "value": 8,
+          "status": "ALIGNED",
+          "candidates": [],
+          "reason": "Within the declared role scale; not visual approval"
+        }
+      ]
+    },
+    {
+      "selector": "[data-ui-unit=\"identity\"].product-identity .description",
+      "property": "margin-top",
+      "raw": "20px",
+      "role": "internal",
+      "scope": [],
+      "values": [
+        {
+          "raw": "20px",
+          "resolved": "20px",
+          "value": 20,
+          "status": "ALIGNED",
+          "candidates": [],
+          "reason": "Within the declared role scale; not visual approval"
+        }
+      ]
+    },
+    {
+      "selector": "[data-ui-unit=\"booking\"] .booking-host-subtitle",
+      "property": "margin-top",
+      "raw": "4px",
+      "role": "internal",
+      "scope": [],
+      "values": [
+        {
+          "raw": "4px",
+          "resolved": "4px",
+          "value": 4,
+          "status": "ALIGNED",
+          "candidates": [],
+          "reason": "Within the declared role scale; not visual approval"
+        }
+      ]
+    },
+    {
+      "selector": "[data-ui-unit=\"booking\"] .booking-icon-btn",
+      "property": "padding",
+      "raw": "0",
+      "role": "internal",
+      "scope": [],
+      "values": [
+        {
+          "raw": "0",
+          "resolved": "0",
+          "value": 0,
+          "status": "ALIGNED",
+          "candidates": [],
+          "reason": "Within the declared role scale; not visual approval"
+        }
+      ]
+    },
+    {
+      "selector": "[data-ui-unit=\"booking\"] .booking-primary-btn",
+      "property": "padding",
+      "raw": "12px 16px",
+      "role": "internal",
+      "scope": [],
+      "values": [
+        {
+          "raw": "12px",
+          "resolved": "12px",
+          "value": 12,
+          "status": "ALIGNED",
+          "candidates": [],
+          "reason": "Within the declared role scale; not visual approval"
+        },
+        {
+          "raw": "16px",
+          "resolved": "16px",
+          "value": 16,
+          "status": "ALIGNED",
+          "candidates": [],
+          "reason": "Within the declared role scale; not visual approval"
+        }
+      ]
+    },
+    {
+      "selector": "[data-ui-unit=\"booking\"] .booking-note",
+      "property": "margin-top",
+      "raw": "12px",
+      "role": "internal",
+      "scope": [],
+      "values": [
+        {
+          "raw": "12px",
+          "resolved": "12px",
+          "value": 12,
+          "status": "ALIGNED",
+          "candidates": [],
+          "reason": "Within the declared role scale; not visual approval"
+        }
+      ]
+    },
+    {
+      "selector": "dialog",
+      "property": "padding",
+      "raw": "28px",
+      "role": "structural",
+      "scope": [],
+      "values": [
+        {
+          "raw": "28px",
+          "resolved": "28px",
+          "value": 28,
+          "status": "REVIEW",
+          "candidates": [
+            24,
+            32
+          ],
+          "reason": "Structural eight-step or scale alignment review; not a hard product failure"
+        }
+      ]
+    },
+    {
+      "selector": ".dialog-heading",
+      "property": "gap",
+      "raw": "16px",
+      "role": "structural",
+      "scope": [],
+      "values": [
+        {
+          "raw": "16px",
+          "resolved": "16px",
+          "value": 16,
+          "status": "ALIGNED",
+          "candidates": [],
+          "reason": "Within the declared role scale; not visual approval"
+        }
+      ]
+    },
+    {
+      "selector": ".dialog-heading",
+      "property": "margin-bottom",
+      "raw": "20px",
+      "role": "structural",
+      "scope": [],
+      "values": [
+        {
+          "raw": "20px",
+          "resolved": "20px",
+          "value": 20,
+          "status": "REVIEW",
+          "candidates": [
+            16,
+            24
+          ],
+          "reason": "Structural eight-step or scale alignment review; not a hard product failure"
+        }
+      ]
+    },
+    {
+      "selector": ".dialog-heading button",
+      "property": "padding",
+      "raw": "10px",
+      "role": "UNVERIFIED",
+      "scope": [],
+      "values": [
+        {
+          "raw": "10px",
+          "resolved": "10px",
+          "value": 10,
+          "status": "UNVERIFIED",
+          "candidates": [],
+          "reason": "Spacing role not established"
+        }
+      ]
+    },
+    {
+      "selector": ".booking-price",
+      "property": "margin",
+      "raw": "8px 0 24px",
+      "role": "internal",
+      "scope": [],
+      "values": [
+        {
+          "raw": "8px",
+          "resolved": "8px",
+          "value": 8,
+          "status": "ALIGNED",
+          "candidates": [],
+          "reason": "Within the declared role scale; not visual approval"
+        },
+        {
+          "raw": "0",
+          "resolved": "0",
+          "value": 0,
+          "status": "ALIGNED",
+          "candidates": [],
+          "reason": "Within the declared role scale; not visual approval"
+        },
+        {
+          "raw": "24px",
+          "resolved": "24px",
+          "value": 24,
+          "status": "ALIGNED",
+          "candidates": [],
+          "reason": "Within the declared role scale; not visual approval"
+        }
+      ]
+    },
+    {
+      "selector": "#booking-form label",
+      "property": "margin",
+      "raw": "16px 0 8px",
+      "role": "internal",
+      "scope": [],
+      "values": [
+        {
+          "raw": "16px",
+          "resolved": "16px",
+          "value": 16,
+          "status": "ALIGNED",
+          "candidates": [],
+          "reason": "Within the declared role scale; not visual approval"
+        },
+        {
+          "raw": "0",
+          "resolved": "0",
+          "value": 0,
+          "status": "ALIGNED",
+          "candidates": [],
+          "reason": "Within the declared role scale; not visual approval"
+        },
+        {
+          "raw": "8px",
+          "resolved": "8px",
+          "value": 8,
+          "status": "ALIGNED",
+          "candidates": [],
+          "reason": "Within the declared role scale; not visual approval"
+        }
+      ]
+    },
+    {
+      "selector": "#booking-form input,#booking-form select",
+      "property": "padding",
+      "raw": "10px 12px",
+      "role": "UNVERIFIED",
+      "scope": [],
+      "values": [
+        {
+          "raw": "10px",
+          "resolved": "10px",
+          "value": 10,
+          "status": "UNVERIFIED",
+          "candidates": [],
+          "reason": "Spacing role not established"
+        },
+        {
+          "raw": "12px",
+          "resolved": "12px",
+          "value": 12,
+          "status": "UNVERIFIED",
+          "candidates": [],
+          "reason": "Spacing role not established"
+        }
+      ]
+    },
+    {
+      "selector": ".confirm-booking",
+      "property": "margin-top",
+      "raw": "24px",
+      "role": "internal",
+      "scope": [],
+      "values": [
+        {
+          "raw": "24px",
+          "resolved": "24px",
+          "value": 24,
+          "status": "ALIGNED",
+          "candidates": [],
+          "reason": "Within the declared role scale; not visual approval"
+        }
+      ]
+    },
+    {
+      "selector": "#confirmation h3",
+      "property": "margin-top",
+      "raw": "24px",
+      "role": "UNVERIFIED",
+      "scope": [],
+      "values": [
+        {
+          "raw": "24px",
+          "resolved": "24px",
+          "value": 24,
+          "status": "UNVERIFIED",
+          "candidates": [],
+          "reason": "Spacing role not established"
+        }
+      ]
+    },
+    {
+      "selector": "#confirmation-details",
+      "property": "margin",
+      "raw": "16px 0",
+      "role": "internal",
+      "scope": [],
+      "values": [
+        {
+          "raw": "16px",
+          "resolved": "16px",
+          "value": 16,
+          "status": "ALIGNED",
+          "candidates": [],
+          "reason": "Within the declared role scale; not visual approval"
+        },
+        {
+          "raw": "0",
+          "resolved": "0",
+          "value": 0,
+          "status": "ALIGNED",
+          "candidates": [],
+          "reason": "Within the declared role scale; not visual approval"
+        }
+      ]
+    },
+    {
+      "selector": "#cancel-booking",
+      "property": "padding",
+      "raw": "12px 16px",
+      "role": "internal",
+      "scope": [],
+      "values": [
+        {
+          "raw": "12px",
+          "resolved": "12px",
+          "value": 12,
+          "status": "ALIGNED",
+          "candidates": [],
+          "reason": "Within the declared role scale; not visual approval"
+        },
+        {
+          "raw": "16px",
+          "resolved": "16px",
+          "value": 16,
+          "status": "ALIGNED",
+          "candidates": [],
+          "reason": "Within the declared role scale; not visual approval"
+        }
+      ]
+    },
+    {
+      "selector": "dialog",
+      "property": "padding",
+      "raw": "20px",
+      "role": "structural",
+      "scope": [
+        "@media (max-width:360px)"
+      ],
+      "values": [
+        {
+          "raw": "20px",
+          "resolved": "20px",
+          "value": 20,
+          "status": "REVIEW",
+          "candidates": [
+            16,
+            24
+          ],
+          "reason": "Structural eight-step or scale alignment review; not a hard product failure"
+        }
+      ]
+    },
+    {
+      "selector": ".booking-summary",
+      "property": "padding",
+      "raw": "20px",
+      "role": "structural",
+      "scope": [],
+      "values": [
+        {
+          "raw": "20px",
+          "resolved": "20px",
+          "value": 20,
+          "status": "REVIEW",
+          "candidates": [
+            16,
+            24
+          ],
+          "reason": "Structural eight-step or scale alignment review; not a hard product failure"
+        }
+      ]
+    },
+    {
+      "selector": ".booking-summary",
+      "property": "margin",
+      "raw": "20px 0 24px",
+      "role": "structural",
+      "scope": [],
+      "values": [
+        {
+          "raw": "20px",
+          "resolved": "20px",
+          "value": 20,
+          "status": "REVIEW",
+          "candidates": [
+            16,
+            24
+          ],
+          "reason": "Structural eight-step or scale alignment review; not a hard product failure"
+        },
+        {
+          "raw": "0",
+          "resolved": "0",
+          "value": 0,
+          "status": "ALIGNED",
+          "candidates": [],
+          "reason": "Within the declared role scale; not visual approval"
+        },
+        {
+          "raw": "24px",
+          "resolved": "24px",
+          "value": 24,
+          "status": "ALIGNED",
+          "candidates": [],
+          "reason": "Within the declared role scale; not visual approval"
+        }
+      ]
+    },
+    {
+      "selector": ".dialog-heading",
+      "property": "margin-bottom",
+      "raw": "8px",
+      "role": "structural",
+      "scope": [],
+      "values": [
+        {
+          "raw": "8px",
+          "resolved": "8px",
+          "value": 8,
+          "status": "ALIGNED",
+          "candidates": [],
+          "reason": "Within the declared role scale; not visual approval"
+        }
+      ]
+    },
+    {
+      "selector": ".booking-price",
+      "property": "margin",
+      "raw": "8px 0 0",
+      "role": "internal",
+      "scope": [],
+      "values": [
+        {
+          "raw": "8px",
+          "resolved": "8px",
+          "value": 8,
+          "status": "ALIGNED",
+          "candidates": [],
+          "reason": "Within the declared role scale; not visual approval"
+        },
+        {
+          "raw": "0",
+          "resolved": "0",
+          "value": 0,
+          "status": "ALIGNED",
+          "candidates": [],
+          "reason": "Within the declared role scale; not visual approval"
+        },
+        {
+          "raw": "0",
+          "resolved": "0",
+          "value": 0,
+          "status": "ALIGNED",
+          "candidates": [],
+          "reason": "Within the declared role scale; not visual approval"
+        }
+      ]
+    },
+    {
+      "selector": "#confirmation-details",
+      "property": "margin",
+      "raw": "0",
+      "role": "internal",
+      "scope": [],
+      "values": [
+        {
+          "raw": "0",
+          "resolved": "0",
+          "value": 0,
+          "status": "ALIGNED",
+          "candidates": [],
+          "reason": "Within the declared role scale; not visual approval"
+        }
+      ]
+    },
+    {
+      "selector": "#cancel-error",
+      "property": "margin-bottom",
+      "raw": "12px",
+      "role": "internal",
+      "scope": [],
+      "values": [
+        {
+          "raw": "12px",
+          "resolved": "12px",
+          "value": 12,
+          "status": "ALIGNED",
+          "candidates": [],
+          "reason": "Within the declared role scale; not visual approval"
+        }
+      ]
+    },
+    {
+      "selector": ".confirm-booking",
+      "property": "padding",
+      "raw": "14px 16px",
+      "role": "internal",
+      "scope": [],
+      "values": [
+        {
+          "raw": "14px",
+          "resolved": "14px",
+          "value": 14,
+          "status": "OFF_GRID",
+          "candidates": [
+            12,
+            16
+          ],
+          "reason": "Non-preserved fixed spacing is not a multiple of four"
+        },
+        {
+          "raw": "16px",
+          "resolved": "16px",
+          "value": 16,
+          "status": "ALIGNED",
+          "candidates": [],
+          "reason": "Within the declared role scale; not visual approval"
+        }
+      ]
+    },
+    {
+      "selector": ".class-list",
+      "property": "margin",
+      "raw": "48px auto",
+      "role": "structural",
+      "scope": [],
+      "values": [
+        {
+          "raw": "48px",
+          "resolved": "48px",
+          "value": 48,
+          "status": "ALIGNED",
+          "candidates": [],
+          "reason": "Within the declared role scale; not visual approval"
+        },
+        {
+          "status": "UNVERIFIED",
+          "reason": "Content-dependent, relative or unresolved spacing requires rendered/context review",
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "selector": ".class-list",
+      "property": "padding",
+      "raw": "0 20px",
+      "role": "structural",
+      "scope": [],
+      "values": [
+        {
+          "raw": "0",
+          "resolved": "0",
+          "value": 0,
+          "status": "ALIGNED",
+          "candidates": [],
+          "reason": "Within the declared role scale; not visual approval"
+        },
+        {
+          "raw": "20px",
+          "resolved": "20px",
+          "value": 20,
+          "status": "REVIEW",
+          "candidates": [
+            16,
+            24
+          ],
+          "reason": "Structural eight-step or scale alignment review; not a hard product failure"
+        }
+      ]
+    },
+    {
+      "selector": ".class-list h1",
+      "property": "margin-bottom",
+      "raw": "24px",
+      "role": "UNVERIFIED",
+      "scope": [],
+      "values": [
+        {
+          "raw": "24px",
+          "resolved": "24px",
+          "value": 24,
+          "status": "UNVERIFIED",
+          "candidates": [],
+          "reason": "Spacing role not established"
+        }
+      ]
+    },
+    {
+      "selector": ".class-copy",
+      "property": "padding",
+      "raw": "24px",
+      "role": "structural",
+      "scope": [],
+      "values": [
+        {
+          "raw": "24px",
+          "resolved": "24px",
+          "value": 24,
+          "status": "ALIGNED",
+          "candidates": [],
+          "reason": "Within the declared role scale; not visual approval"
+        }
+      ]
+    },
+    {
+      "selector": ".class-copy h2",
+      "property": "margin",
+      "raw": "8px 0 16px",
+      "role": "UNVERIFIED",
+      "scope": [],
+      "values": [
+        {
+          "raw": "8px",
+          "resolved": "8px",
+          "value": 8,
+          "status": "UNVERIFIED",
+          "candidates": [],
+          "reason": "Spacing role not established"
+        },
+        {
+          "raw": "0",
+          "resolved": "0",
+          "value": 0,
+          "status": "UNVERIFIED",
+          "candidates": [],
+          "reason": "Spacing role not established"
+        },
+        {
+          "raw": "16px",
+          "resolved": "16px",
+          "value": 16,
+          "status": "UNVERIFIED",
+          "candidates": [],
+          "reason": "Spacing role not established"
+        }
+      ]
+    },
+    {
+      "selector": ".dialog-heading button",
+      "property": "margin-left",
+      "raw": "auto",
+      "role": "UNVERIFIED",
+      "scope": [],
+      "values": [
+        {
+          "status": "UNVERIFIED",
+          "reason": "Content-dependent, relative or unresolved spacing requires rendered/context review",
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "selector": ".product-identity,.booking-host,.booking-surface",
+      "property": "padding",
+      "raw": "24px 20px",
+      "role": "UNVERIFIED",
+      "scope": [],
+      "values": [
+        {
+          "raw": "24px",
+          "resolved": "24px",
+          "value": 24,
+          "status": "UNVERIFIED",
+          "candidates": [],
+          "reason": "Spacing role not established"
+        },
+        {
+          "raw": "20px",
+          "resolved": "20px",
+          "value": 20,
+          "status": "UNVERIFIED",
+          "candidates": [],
+          "reason": "Spacing role not established"
+        }
+      ]
+    },
+    {
+      "selector": ".class-list",
+      "property": "margin",
+      "raw": "24px auto",
+      "role": "structural",
+      "scope": [],
+      "values": [
+        {
+          "raw": "24px",
+          "resolved": "24px",
+          "value": 24,
+          "status": "ALIGNED",
+          "candidates": [],
+          "reason": "Within the declared role scale; not visual approval"
+        },
+        {
+          "status": "UNVERIFIED",
+          "reason": "Content-dependent, relative or unresolved spacing requires rendered/context review",
+          "candidates": []
+        }
+      ]
+    }
+  ],
+  "hardFindings": [
+    {
+      "selector": ".confirm-booking",
+      "property": "padding",
+      "raw": "14px 16px",
+      "role": "internal",
+      "scope": [],
+      "values": [
+        {
+          "raw": "14px",
+          "resolved": "14px",
+          "value": 14,
+          "status": "OFF_GRID",
+          "candidates": [
+            12,
+            16
+          ],
+          "reason": "Non-preserved fixed spacing is not a multiple of four"
+        },
+        {
+          "raw": "16px",
+          "resolved": "16px",
+          "value": 16,
+          "status": "ALIGNED",
+          "candidates": [],
+          "reason": "Within the declared role scale; not visual approval"
+        }
+      ]
+    }
+  ],
+  "reviewFindings": [
+    {
+      "selector": ".product-identity",
+      "property": "padding",
+      "raw": "28px",
+      "role": "structural",
+      "scope": [],
+      "values": [
+        {
+          "raw": "28px",
+          "resolved": "28px",
+          "value": 28,
+          "status": "REVIEW",
+          "candidates": [
+            24,
+            32
+          ],
+          "reason": "Structural eight-step or scale alignment review; not a hard product failure"
+        }
+      ]
+    },
+    {
+      "selector": "#booking-layout",
+      "property": "padding-top",
+      "raw": "12px",
+      "role": "structural",
+      "scope": [],
+      "values": [
+        {
+          "raw": "12px",
+          "resolved": "12px",
+          "value": 12,
+          "status": "REVIEW",
+          "candidates": [
+            8,
+            16
+          ],
+          "reason": "Structural eight-step or scale alignment review; not a hard product failure"
+        }
+      ]
+    },
+    {
+      "selector": ".booking-surface",
+      "property": "margin-top",
+      "raw": "12px",
+      "role": "structural",
+      "scope": [],
+      "values": [
+        {
+          "raw": "12px",
+          "resolved": "12px",
+          "value": 12,
+          "status": "REVIEW",
+          "candidates": [
+            8,
+            16
+          ],
+          "reason": "Structural eight-step or scale alignment review; not a hard product failure"
+        }
+      ]
+    },
+    {
+      "selector": ".product-identity",
+      "property": "padding",
+      "raw": "24px 20px",
+      "role": "structural",
+      "scope": [
+        "@media (max-width:700px)"
+      ],
+      "values": [
+        {
+          "raw": "24px",
+          "resolved": "24px",
+          "value": 24,
+          "status": "ALIGNED",
+          "candidates": [],
+          "reason": "Within the declared role scale; not visual approval"
+        },
+        {
+          "raw": "20px",
+          "resolved": "20px",
+          "value": 20,
+          "status": "REVIEW",
+          "candidates": [
+            16,
+            24
+          ],
+          "reason": "Structural eight-step or scale alignment review; not a hard product failure"
+        }
+      ]
+    },
+    {
+      "selector": "dialog",
+      "property": "padding",
+      "raw": "28px",
+      "role": "structural",
+      "scope": [],
+      "values": [
+        {
+          "raw": "28px",
+          "resolved": "28px",
+          "value": 28,
+          "status": "REVIEW",
+          "candidates": [
+            24,
+            32
+          ],
+          "reason": "Structural eight-step or scale alignment review; not a hard product failure"
+        }
+      ]
+    },
+    {
+      "selector": ".dialog-heading",
+      "property": "margin-bottom",
+      "raw": "20px",
+      "role": "structural",
+      "scope": [],
+      "values": [
+        {
+          "raw": "20px",
+          "resolved": "20px",
+          "value": 20,
+          "status": "REVIEW",
+          "candidates": [
+            16,
+            24
+          ],
+          "reason": "Structural eight-step or scale alignment review; not a hard product failure"
+        }
+      ]
+    },
+    {
+      "selector": "dialog",
+      "property": "padding",
+      "raw": "20px",
+      "role": "structural",
+      "scope": [
+        "@media (max-width:360px)"
+      ],
+      "values": [
+        {
+          "raw": "20px",
+          "resolved": "20px",
+          "value": 20,
+          "status": "REVIEW",
+          "candidates": [
+            16,
+            24
+          ],
+          "reason": "Structural eight-step or scale alignment review; not a hard product failure"
+        }
+      ]
+    },
+    {
+      "selector": ".booking-summary",
+      "property": "padding",
+      "raw": "20px",
+      "role": "structural",
+      "scope": [],
+      "values": [
+        {
+          "raw": "20px",
+          "resolved": "20px",
+          "value": 20,
+          "status": "REVIEW",
+          "candidates": [
+            16,
+            24
+          ],
+          "reason": "Structural eight-step or scale alignment review; not a hard product failure"
+        }
+      ]
+    },
+    {
+      "selector": ".booking-summary",
+      "property": "margin",
+      "raw": "20px 0 24px",
+      "role": "structural",
+      "scope": [],
+      "values": [
+        {
+          "raw": "20px",
+          "resolved": "20px",
+          "value": 20,
+          "status": "REVIEW",
+          "candidates": [
+            16,
+            24
+          ],
+          "reason": "Structural eight-step or scale alignment review; not a hard product failure"
+        },
+        {
+          "raw": "0",
+          "resolved": "0",
+          "value": 0,
+          "status": "ALIGNED",
+          "candidates": [],
+          "reason": "Within the declared role scale; not visual approval"
+        },
+        {
+          "raw": "24px",
+          "resolved": "24px",
+          "value": 24,
+          "status": "ALIGNED",
+          "candidates": [],
+          "reason": "Within the declared role scale; not visual approval"
+        }
+      ]
+    },
+    {
+      "selector": ".class-list",
+      "property": "padding",
+      "raw": "0 20px",
+      "role": "structural",
+      "scope": [],
+      "values": [
+        {
+          "raw": "0",
+          "resolved": "0",
+          "value": 0,
+          "status": "ALIGNED",
+          "candidates": [],
+          "reason": "Within the declared role scale; not visual approval"
+        },
+        {
+          "raw": "20px",
+          "resolved": "20px",
+          "value": 20,
+          "status": "REVIEW",
+          "candidates": [
+            16,
+            24
+          ],
+          "reason": "Structural eight-step or scale alignment review; not a hard product failure"
+        }
+      ]
+    }
+  ],
+  "unverified": [
+    {
+      "selector": "body",
+      "property": "margin",
+      "raw": "0 auto",
+      "role": "structural",
+      "scope": [],
+      "values": [
+        {
+          "raw": "0",
+          "resolved": "0",
+          "value": 0,
+          "status": "ALIGNED",
+          "candidates": [],
+          "reason": "Within the declared role scale; not visual approval"
+        },
+        {
+          "status": "UNVERIFIED",
+          "reason": "Content-dependent, relative or unresolved spacing requires rendered/context review",
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "selector": "p,h1,h2,h3",
+      "property": "margin",
+      "raw": "0",
+      "role": "UNVERIFIED",
+      "scope": [],
+      "values": [
+        {
+          "raw": "0",
+          "resolved": "0",
+          "value": 0,
+          "status": "UNVERIFIED",
+          "candidates": [],
+          "reason": "Spacing role not established"
+        }
+      ]
+    },
+    {
+      "selector": ".booking-host,.booking-surface",
+      "property": "padding",
+      "raw": "24px 28px",
+      "role": "UNVERIFIED",
+      "scope": [],
+      "values": [
+        {
+          "raw": "24px",
+          "resolved": "24px",
+          "value": 24,
+          "status": "UNVERIFIED",
+          "candidates": [],
+          "reason": "Spacing role not established"
+        },
+        {
+          "raw": "28px",
+          "resolved": "28px",
+          "value": 28,
+          "status": "UNVERIFIED",
+          "candidates": [],
+          "reason": "Spacing role not established"
+        }
+      ]
+    },
+    {
+      "selector": ".details",
+      "property": "padding",
+      "raw": "0",
+      "role": "UNVERIFIED",
+      "scope": [
+        "@media (max-width:700px)"
+      ],
+      "values": [
+        {
+          "raw": "0",
+          "resolved": "0",
+          "value": 0,
+          "status": "UNVERIFIED",
+          "candidates": [],
+          "reason": "Spacing role not established"
+        }
+      ]
+    },
+    {
+      "selector": ".booking-host,.booking-surface",
+      "property": "padding",
+      "raw": "24px 20px",
+      "role": "UNVERIFIED",
+      "scope": [
+        "@media (max-width:700px)"
+      ],
+      "values": [
+        {
+          "raw": "24px",
+          "resolved": "24px",
+          "value": 24,
+          "status": "UNVERIFIED",
+          "candidates": [],
+          "reason": "Spacing role not established"
+        },
+        {
+          "raw": "20px",
+          "resolved": "20px",
+          "value": 20,
+          "status": "UNVERIFIED",
+          "candidates": [],
+          "reason": "Spacing role not established"
+        }
+      ]
+    },
+    {
+      "selector": "[data-ui-unit=\"media\"].product-media",
+      "property": "margin",
+      "raw": "0",
+      "role": "UNVERIFIED",
+      "scope": [],
+      "values": [
+        {
+          "raw": "0",
+          "resolved": "0",
+          "value": 0,
+          "status": "UNVERIFIED",
+          "candidates": [],
+          "reason": "Spacing role not established"
+        }
+      ]
+    },
+    {
+      "selector": ".dialog-heading button",
+      "property": "padding",
+      "raw": "10px",
+      "role": "UNVERIFIED",
+      "scope": [],
+      "values": [
+        {
+          "raw": "10px",
+          "resolved": "10px",
+          "value": 10,
+          "status": "UNVERIFIED",
+          "candidates": [],
+          "reason": "Spacing role not established"
+        }
+      ]
+    },
+    {
+      "selector": "#booking-form input,#booking-form select",
+      "property": "padding",
+      "raw": "10px 12px",
+      "role": "UNVERIFIED",
+      "scope": [],
+      "values": [
+        {
+          "raw": "10px",
+          "resolved": "10px",
+          "value": 10,
+          "status": "UNVERIFIED",
+          "candidates": [],
+          "reason": "Spacing role not established"
+        },
+        {
+          "raw": "12px",
+          "resolved": "12px",
+          "value": 12,
+          "status": "UNVERIFIED",
+          "candidates": [],
+          "reason": "Spacing role not established"
+        }
+      ]
+    },
+    {
+      "selector": "#confirmation h3",
+      "property": "margin-top",
+      "raw": "24px",
+      "role": "UNVERIFIED",
+      "scope": [],
+      "values": [
+        {
+          "raw": "24px",
+          "resolved": "24px",
+          "value": 24,
+          "status": "UNVERIFIED",
+          "candidates": [],
+          "reason": "Spacing role not established"
+        }
+      ]
+    },
+    {
+      "selector": ".class-list",
+      "property": "margin",
+      "raw": "48px auto",
+      "role": "structural",
+      "scope": [],
+      "values": [
+        {
+          "raw": "48px",
+          "resolved": "48px",
+          "value": 48,
+          "status": "ALIGNED",
+          "candidates": [],
+          "reason": "Within the declared role scale; not visual approval"
+        },
+        {
+          "status": "UNVERIFIED",
+          "reason": "Content-dependent, relative or unresolved spacing requires rendered/context review",
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "selector": ".class-list h1",
+      "property": "margin-bottom",
+      "raw": "24px",
+      "role": "UNVERIFIED",
+      "scope": [],
+      "values": [
+        {
+          "raw": "24px",
+          "resolved": "24px",
+          "value": 24,
+          "status": "UNVERIFIED",
+          "candidates": [],
+          "reason": "Spacing role not established"
+        }
+      ]
+    },
+    {
+      "selector": ".class-copy h2",
+      "property": "margin",
+      "raw": "8px 0 16px",
+      "role": "UNVERIFIED",
+      "scope": [],
+      "values": [
+        {
+          "raw": "8px",
+          "resolved": "8px",
+          "value": 8,
+          "status": "UNVERIFIED",
+          "candidates": [],
+          "reason": "Spacing role not established"
+        },
+        {
+          "raw": "0",
+          "resolved": "0",
+          "value": 0,
+          "status": "UNVERIFIED",
+          "candidates": [],
+          "reason": "Spacing role not established"
+        },
+        {
+          "raw": "16px",
+          "resolved": "16px",
+          "value": 16,
+          "status": "UNVERIFIED",
+          "candidates": [],
+          "reason": "Spacing role not established"
+        }
+      ]
+    },
+    {
+      "selector": ".dialog-heading button",
+      "property": "margin-left",
+      "raw": "auto",
+      "role": "UNVERIFIED",
+      "scope": [],
+      "values": [
+        {
+          "status": "UNVERIFIED",
+          "reason": "Content-dependent, relative or unresolved spacing requires rendered/context review",
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "selector": ".product-identity,.booking-host,.booking-surface",
+      "property": "padding",
+      "raw": "24px 20px",
+      "role": "UNVERIFIED",
+      "scope": [],
+      "values": [
+        {
+          "raw": "24px",
+          "resolved": "24px",
+          "value": 24,
+          "status": "UNVERIFIED",
+          "candidates": [],
+          "reason": "Spacing role not established"
+        },
+        {
+          "raw": "20px",
+          "resolved": "20px",
+          "value": 20,
+          "status": "UNVERIFIED",
+          "candidates": [],
+          "reason": "Spacing role not established"
+        }
+      ]
+    },
+    {
+      "selector": ".class-list",
+      "property": "margin",
+      "raw": "24px auto",
+      "role": "structural",
+      "scope": [],
+      "values": [
+        {
+          "raw": "24px",
+          "resolved": "24px",
+          "value": 24,
+          "status": "ALIGNED",
+          "candidates": [],
+          "reason": "Within the declared role scale; not visual approval"
+        },
+        {
+          "status": "UNVERIFIED",
+          "reason": "Content-dependent, relative or unresolved spacing requires rendered/context review",
+          "candidates": []
+        }
+      ]
+    }
+  ],
+  "status": "AUDIT_NOT_VISUAL_APPROVAL"
+}

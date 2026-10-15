@@ -1,0 +1,33 @@
+{
+  "status": "INCOMPLETE_REFERENCE_PARITY",
+  "generation": [
+    {
+      "name": "booking-1792044377028-1-response.json",
+      "model": "qwen3.6:35b-a3b-coding",
+      "elapsedMs": 176506,
+      "promptTokens": 12240,
+      "outputTokens": 690,
+      "doneReason": "stop"
+    },
+    {
+      "name": "identity-1792044200514-1-response.json",
+      "model": "qwen3.6:35b-a3b-coding",
+      "elapsedMs": 156549,
+      "promptTokens": 12187,
+      "outputTokens": 446,
+      "doneReason": "stop"
+    },
+    {
+      "name": "media-1792044043960-1-response.json",
+      "model": "qwen3.6:35b-a3b-coding",
+      "elapsedMs": 171548,
+      "promptTokens": 10292,
+      "outputTokens": 95,
+      "doneReason": "stop"
+    }
+  ],
+  "totalGenerationMs": 504603,
+  "repairMs": 46254,
+  "observation": "Initial CTA width32px despite zero clipping; local model repair restores allocated196/220/290px. Four widths and three text modes measured separately.",
+  "attribution": "Host supplied markup/shared mobile layout and assets; actual local Qwen generated styles and bounded repair. Dialog experiment is separate. No independent creation or visual parity approval."
+}
