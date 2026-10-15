@@ -31,3 +31,9 @@ test('source audit covers responsive spacing and does not exempt newly named arb
   assert.ok(report.entries[2].scope[0].includes('320px'));
   assert.ok(report.unverified.length);
 });
+
+test('calculated spacing remains unresolved instead of treating a term as a fixed off-grid gap', () => {
+  const r = auditSpacingCss('.card{gap:calc(10% + 3px)}', { roles: { '.card': 'structural' } });
+  assert.equal(r.hardFindings.length, 0);
+  assert.equal(r.entries[0].values[0].status, 'UNVERIFIED');
+});

@@ -48,7 +48,8 @@ export function auditSpacingCss(source, contract = {}) {
       const number = /^(?:-?\d+(?:\.\d+)?px|0)$/.test(resolved || '') ? parseFloat(resolved) : NaN;
       const preserved = token && contract.existingTokens?.[token];
       const provenance = preserved && preserved.definition === resolved ? { token, ...preserved } : {};
-      return { raw: match[0], token, resolved, value: Number.isFinite(number) ? number : null, ...classifySpacing(number, role, provenance) };
+      const classification = /calc\(/.test(declaration.value) ? { status: 'UNVERIFIED', candidates: [], reason: 'A term inside calculated spacing is not the final fixed distance' } : classifySpacing(number, role, provenance);
+      return { raw: match[0], token, resolved, value: Number.isFinite(number) ? number : null, ...classification };
     });
     if (!tokens.length || /auto|calc\(|rem\b|%/.test(declaration.value)) values.push({ status: 'UNVERIFIED', reason: 'Content-dependent, relative or unresolved spacing requires rendered/context review', candidates: [] });
     entries.push({ selector, property: declaration.prop, raw: declaration.value, role: role || 'UNVERIFIED', scope, values });
