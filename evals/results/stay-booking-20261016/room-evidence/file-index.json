@@ -1,0 +1,1161 @@
+{
+  "algorithm": "sha256",
+  "scope": "Exact published bytes; index excludes itself. Functional evidence does not establish visual approval.",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 8,
+      "sha256": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da"
+    },
+    {
+      "path": "checks/selected-price-before-repair/report.json",
+      "bytes": 19735,
+      "sha256": "bd1decc53e46d7978bc1cd65e920992ccfafeec9c12d9ef7761b659b59324de7"
+    },
+    {
+      "path": "checks/workflows-after-css-v2/report.json",
+      "bytes": 20680,
+      "sha256": "7500698c043e384e2aca8a37bea53b0a00d83b8789d3bf242fe4ac64eafff89d"
+    },
+    {
+      "path": "checks/workflows-before-css/checker-v1.mjs.txt",
+      "bytes": 9614,
+      "sha256": "1c415ea7e9f138e4f4bb8460d39dc9f2bbd25c581b832d3fe00f717fbadf0f87"
+    },
+    {
+      "path": "checks/workflows-before-css/report.json",
+      "bytes": 21088,
+      "sha256": "6e837b160f2e5e17aa7cae40b5f90f6db1c6b70c86468f63923750dc577f3a86"
+    },
+    {
+      "path": "contracts/active-contract-integration.json",
+      "bytes": 518,
+      "sha256": "0548a1e79cf8c88f3a8ed3476e7292c950fb9efff5741743c85f767bda48df48"
+    },
+    {
+      "path": "contracts/active-document-reconciliation.json",
+      "bytes": 421,
+      "sha256": "853708a09bf6ec38317584db70f71dd651d54d98f81aba0a3b9d9d031f297516"
+    },
+    {
+      "path": "contracts/BOOKING-DOMAIN-PLAN.md",
+      "bytes": 4745,
+      "sha256": "6eeef9c44fd30f7e9a3317710275f101bc3967b3311ef613a5fef7323b3d5bf6"
+    },
+    {
+      "path": "contracts/component-plan-before-b2-integration.json",
+      "bytes": 17848,
+      "sha256": "4ed3b2ec7a9b9d4c6080fee71da6b5390a2aa81dc042481eeb8fb6ae722738ae"
+    },
+    {
+      "path": "contracts/contract-version-record.json",
+      "bytes": 656,
+      "sha256": "25c369228e8003b4cd46ba0bb4307fe7c9a78a73a09d376c3255200085ca5484"
+    },
+    {
+      "path": "contracts/core-runtime-before-native-return-fix.js.txt",
+      "bytes": 11300,
+      "sha256": "9ac28acc7919d8a761c4a7a3148ac60cd0a7d359b3ff82d71a5e22c5555ed5fe"
+    },
+    {
+      "path": "contracts/default-layout-before-b2-integration.json",
+      "bytes": 3472,
+      "sha256": "cf5ce66d0f9e7aef7b06dce1a0e8fdae60ccd203ba14d6889ee9ca42106b2046"
+    },
+    {
+      "path": "contracts/design-layout-contract-b2.json-before-visible-correction.txt",
+      "bytes": 1631,
+      "sha256": "3407e66549f127dd268657adc172bca4f52c43fc946aeeb3a690da2e43c511cb"
+    },
+    {
+      "path": "contracts/host-b2-corrections.json",
+      "bytes": 985,
+      "sha256": "ef5c9e421ab6c507322e658ac4135319589ddcd50fba668e327308a152a0e874"
+    },
+    {
+      "path": "contracts/layout-before-closed-dialog-rule.json",
+      "bytes": 1507,
+      "sha256": "b66f0e96ef872b71346065a9908dda3b5b2e88c6fdf2eb95ccee45de9de16807"
+    },
+    {
+      "path": "contracts/layout-before-final-visual-roles.json",
+      "bytes": 1639,
+      "sha256": "34ee2fc3d6c79bca94514649de6a90d5f960570b2f83078dad392fb5bd5d5fff"
+    },
+    {
+      "path": "contracts/layout-before-shortword-contract.json",
+      "bytes": 6088,
+      "sha256": "74a04ed10c586f491e005a445a9f62fef5f01414b93fff80a91b65a724de772d"
+    },
+    {
+      "path": "contracts/phase-record.json",
+      "bytes": 2048,
+      "sha256": "8f7ae2a52693fa3b3621e508ef460f2e645df4ebe880661614be7843389ccc3a"
+    },
+    {
+      "path": "contracts/pre-style-role-correction.json",
+      "bytes": 500,
+      "sha256": "1e2f3dd4683140056a668b58ab8e0f26fcb97a54c58cc46a05f1a75b56effffe"
+    },
+    {
+      "path": "contracts/preparation.json",
+      "bytes": 509,
+      "sha256": "479f2f529fd99cb8718361539a870e21a6562426abd1d86b24d13a18f24623a5"
+    },
+    {
+      "path": "contracts/RENDERER-CONTRACT.md",
+      "bytes": 2979,
+      "sha256": "e087de42d0d5db96c50501adaa0aaa9d81375fbf4cd4e7ebba0acb0c56897df6"
+    },
+    {
+      "path": "contracts/room-layout-contract.json-before-visible-correction.txt",
+      "bytes": 1631,
+      "sha256": "3407e66549f127dd268657adc172bca4f52c43fc946aeeb3a690da2e43c511cb"
+    },
+    {
+      "path": "contracts/ROOMS-CONTRACT.md",
+      "bytes": 5654,
+      "sha256": "59fa819e9731697ea04da281da3b97f17af773a869055b98a27d4bbc937520fb"
+    },
+    {
+      "path": "contracts/STYLE-CONTRACT.md",
+      "bytes": 5930,
+      "sha256": "2d80583cfa9bc24abff2db1aeccc7980f8f193d95b0f19ff0f8fd4616bdb2123"
+    },
+    {
+      "path": "contracts/typography-before-owner-correction.json",
+      "bytes": 10946,
+      "sha256": "ad7b7039fbf462d1d5fbf8a8c2d24026d7abe2dff95cfd14d04632f55b8c3bb8"
+    },
+    {
+      "path": "contracts/typography-before-review-role-correction.json",
+      "bytes": 10777,
+      "sha256": "2dd0b029d93ecff6c44ec4943e9fa1257089900853d62de0734180fc404c2077"
+    },
+    {
+      "path": "contracts/UI-DECISIONS.md",
+      "bytes": 1782,
+      "sha256": "396fff4872b7ac634a240681e08c23f3a81aeff6cc89372b387fce9e42812556"
+    },
+    {
+      "path": "contracts/workflow-checker-correction.json",
+      "bytes": 550,
+      "sha256": "4b6ee8c3e886784380d845b18492101af5b492db001859c22ebb501fea59b036"
+    },
+    {
+      "path": "doc-revalidation.json",
+      "bytes": 3325,
+      "sha256": "2a7af6c4d1419ff7ab337d68eb55191e7ac49400ae0889230986000fe5a535bf"
+    },
+    {
+      "path": "history/css-page-repair/candidate-without-comments.css",
+      "bytes": 2878,
+      "sha256": "31728697e3a07c796991b958a64d85827b32d59927916061d74d841c41e3a2de"
+    },
+    {
+      "path": "history/css-page-repair/fragment.css",
+      "bytes": 3639,
+      "sha256": "a5b30e553599a48e56d883d484c0759709259d110172fe007c87a0918c2dad64"
+    },
+    {
+      "path": "history/css-page-repair/request.json",
+      "bytes": 24990,
+      "sha256": "f776d6441ffb7788afcb5698acce111aa1ba5a416f71da3c2c7b9ddd716753f2"
+    },
+    {
+      "path": "history/css-page-repair/response.json",
+      "bytes": 1778,
+      "sha256": "9d5ec9d6a5d3f2c6a3b6f07a0d0ebc2d689786b8f43340b888bc2cb8aad5d154"
+    },
+    {
+      "path": "history/css-page-repair/result.json",
+      "bytes": 19312,
+      "sha256": "f48157e945bec220c9085d4b3efe238c107dede943cca7d1563aed5983f9ad2b"
+    },
+    {
+      "path": "history/css-page-repair/state.json",
+      "bytes": 126,
+      "sha256": "85963aada4cbe9b71bfc3ba138383801f850e1457d1b62c534b39dac62a6a651"
+    },
+    {
+      "path": "history/css-page/redactions.json",
+      "bytes": 427,
+      "sha256": "c55cc54edccd119f451e4087fa0df4187619a22431b2572c94efae91c2427f3e"
+    },
+    {
+      "path": "history/css-page/request.json",
+      "bytes": 65896,
+      "sha256": "447358cc93f2161b45f63ccb0133828d6a39736fbd26b1f1f4b055cf9d1f6d99"
+    },
+    {
+      "path": "history/css-page/response.json",
+      "bytes": 3790,
+      "sha256": "415876c4683eb283a71ac14a03c52d95d1cd527cdc488fa693302d751eb69897"
+    },
+    {
+      "path": "history/css-page/state.json",
+      "bytes": 216,
+      "sha256": "66aedab77666685367f304dd7e19a33acef8b10c8c0e8bf80730f6df6fb72e13"
+    },
+    {
+      "path": "history/css-secondary-repair/fragment.css",
+      "bytes": 3878,
+      "sha256": "3028d31f63bd09ecdf580063af3957013ad749f6ada2d7f02d0710417deac7db"
+    },
+    {
+      "path": "history/css-secondary-repair/request.json",
+      "bytes": 25772,
+      "sha256": "b8991dcfda36989dbefbe39616cc7f76adb2206cf012a69790ae4eef643f4434"
+    },
+    {
+      "path": "history/css-secondary-repair/response.json",
+      "bytes": 2317,
+      "sha256": "41bf8d5e0e13d5033bc843430bbbd17f3000f5e8f57150f543f47e0aaac9bdda"
+    },
+    {
+      "path": "history/css-secondary-repair/result.json",
+      "bytes": 19329,
+      "sha256": "c07ee5f1b150658c04130e92f8e903b7313bd415da322379ab4cb02026ff2b41"
+    },
+    {
+      "path": "history/css-secondary-repair/state.json",
+      "bytes": 131,
+      "sha256": "04835259dd4ca64ac256a1ea74226a1a24deddf71724950859012493ad4a0eb6"
+    },
+    {
+      "path": "history/css-secondary/raw-css.txt",
+      "bytes": 3805,
+      "sha256": "6f215aaae0a90ccb1c3d48e1738a4538c2b4676ce28e2dc393b0f2b943286d06"
+    },
+    {
+      "path": "history/css-secondary/request.json",
+      "bytes": 36191,
+      "sha256": "1a6ffdce75e0bdd09fb7187f380d930caf923508f06037a10261cb33c29e23ff"
+    },
+    {
+      "path": "history/css-secondary/response.json",
+      "bytes": 4330,
+      "sha256": "6ff228ab242307226d83732e8531d2e72bd87f50ecbc2b1b8e7b05a5945f35e5"
+    },
+    {
+      "path": "history/css-secondary/state.json",
+      "bytes": 107,
+      "sha256": "45f4e9f812f8d91661daae8ee42f75bfe53894a2917f77d7aab6b4efeac1f6f1"
+    },
+    {
+      "path": "history/focal-return-css-repair/before-rooms.css.txt",
+      "bytes": 7520,
+      "sha256": "db89def840b89ab58ed85239332ed39679418b40c0b77f4deba193c106db331d"
+    },
+    {
+      "path": "history/focal-return-css-repair/fragment.css",
+      "bytes": 147,
+      "sha256": "5f421aceb9dc38b33b6c6d778d80aba04116aa55446b12050900a2ed0e56fb10"
+    },
+    {
+      "path": "history/focal-return-css-repair/raw-css.txt",
+      "bytes": 147,
+      "sha256": "5f421aceb9dc38b33b6c6d778d80aba04116aa55446b12050900a2ed0e56fb10"
+    },
+    {
+      "path": "history/focal-return-css-repair/request.json",
+      "bytes": 21145,
+      "sha256": "6e975ffb83fa91b93ad8ada94798cef5df68b4c8c7f4eb14d87fcff1f62ae867"
+    },
+    {
+      "path": "history/focal-return-css-repair/response.json",
+      "bytes": 599,
+      "sha256": "dbe621ee878c4fb838d29a28b6f82c096e11fb781c9986cfea0238c070b6c9ea"
+    },
+    {
+      "path": "history/focal-return-css-repair/result.json",
+      "bytes": 19500,
+      "sha256": "7bd727497d1456acf0a2f1b6e1020f40dd496aeec56e7f86212508c4b38fbeb2"
+    },
+    {
+      "path": "history/focal-return-css-repair/state.json",
+      "bytes": 134,
+      "sha256": "401a4a72185cdb2faa7491fe0a611a57c762849779151c97d6440e80aa39dd28"
+    },
+    {
+      "path": "history/renderer-binding-repair/after-room-cards.js.txt",
+      "bytes": 2028,
+      "sha256": "f94aab06269458fe21e6bd03f442e7731a9429a58aea16f9886e25ce47d19b36"
+    },
+    {
+      "path": "history/renderer-binding-repair/after-room-rates-view.js.txt",
+      "bytes": 1192,
+      "sha256": "99c0f3e1451fa51c9b35d7c56b26cd5c142298f25bac41546f7788a4c7e86466"
+    },
+    {
+      "path": "history/renderer-binding-repair/before-room-cards.js.txt",
+      "bytes": 2032,
+      "sha256": "31e8ee681b5894b191877ecbe730af6b88e44a4f1c1a5c0a5163fc7763486e40"
+    },
+    {
+      "path": "history/renderer-binding-repair/before-room-rates-view.js.txt",
+      "bytes": 1217,
+      "sha256": "4e45ef937ed8238057452559eae3bbfbfac64b9ba6d0501dddfde1dc51566a34"
+    },
+    {
+      "path": "history/renderer-binding-repair/check.log",
+      "bytes": 21,
+      "sha256": "54b96a742c7714da9dc80dc2a16ca77f74640eeee6ff56eb7c2ecb95e1b72990"
+    },
+    {
+      "path": "history/renderer-binding-repair/checks/report.json",
+      "bytes": 19545,
+      "sha256": "7b0ed04c43e6a894e7881ae76df39d9c6b964b1aafe53fa589eeec2b82e29875"
+    },
+    {
+      "path": "history/renderer-binding-repair/request.json",
+      "bytes": 25163,
+      "sha256": "22edd7b783423f4d88172832642eb289b24f4df82a3e07835795fa08a24b8aef"
+    },
+    {
+      "path": "history/renderer-binding-repair/response.json",
+      "bytes": 1324,
+      "sha256": "6af02ea2eaab7c0e78b60d8442701f301ce94abd9632dacc83ecc57f5b79246f"
+    },
+    {
+      "path": "history/renderer-binding-repair/result.json",
+      "bytes": 19410,
+      "sha256": "8e584c632f40feded4f79908efc0a8e0609f0295622fcdeac38623ff2edf473e"
+    },
+    {
+      "path": "history/renderer-binding-repair/state.json",
+      "bytes": 131,
+      "sha256": "a43c1a307387bd7b681cda0d9dc728e1986229a9566a0bf4ec86085adc5086cb"
+    },
+    {
+      "path": "history/renderer-cards/raw-module.js.txt",
+      "bytes": 2032,
+      "sha256": "31e8ee681b5894b191877ecbe730af6b88e44a4f1c1a5c0a5163fc7763486e40"
+    },
+    {
+      "path": "history/renderer-cards/request.json",
+      "bytes": 23277,
+      "sha256": "2d64949987fd63f33d799f001d64c085875c5ea3216c902ff720cc54eaa55c4d"
+    },
+    {
+      "path": "history/renderer-cards/response.json",
+      "bytes": 2670,
+      "sha256": "434e1e48feb56389a09f51c865989ba4069f191a7908698f8aeedb148920a153"
+    },
+    {
+      "path": "history/renderer-cards/result.json",
+      "bytes": 19106,
+      "sha256": "d067bf379df30cea42e2a6b64272a7a66f3303470e85159b1abd70e3118e582e"
+    },
+    {
+      "path": "history/renderer-cards/state.json",
+      "bytes": 132,
+      "sha256": "6966ddfc21f54390567a613006eea5ca1a7fd69d8a864afa0bab18e932dd56f8"
+    },
+    {
+      "path": "history/renderer-generation/request.json",
+      "bytes": 27453,
+      "sha256": "4360f89c84fce8722f9436423eee17039cf6822aad8bd2576d6b85f9697cd67e"
+    },
+    {
+      "path": "history/renderer-generation/response.json",
+      "bytes": 3064,
+      "sha256": "acfab278921fe61130c729f6333924c847edc93a42992602b3c1c7055ca21076"
+    },
+    {
+      "path": "history/renderer-generation/state.json",
+      "bytes": 121,
+      "sha256": "8fdb1560daa803f40a4d0e7364448ef7ccce63a580244be65be8ccbedd167e21"
+    },
+    {
+      "path": "history/renderer-rates-v2/raw-module.js.txt",
+      "bytes": 1217,
+      "sha256": "4e45ef937ed8238057452559eae3bbfbfac64b9ba6d0501dddfde1dc51566a34"
+    },
+    {
+      "path": "history/renderer-rates-v2/request.json",
+      "bytes": 23192,
+      "sha256": "9f1cf404abc9c323c966f68987338ca15b6f6743cb66721a4be893aae13a5a31"
+    },
+    {
+      "path": "history/renderer-rates-v2/response.json",
+      "bytes": 1720,
+      "sha256": "bad344b20a84e6dca8e4520f8c5d9752b46ff81f9999b07a14345bf3b3c69f42"
+    },
+    {
+      "path": "history/renderer-rates-v2/result.json",
+      "bytes": 19210,
+      "sha256": "5b984f33f788dec990047820a3276e17c9ed8285c7a23a30a9780aa2b4901508"
+    },
+    {
+      "path": "history/renderer-rates-v2/state.json",
+      "bytes": 132,
+      "sha256": "1323a2418003fce1ff2cd4bbc2fab100bd507590d7ec8939aa4fcb01ec89436f"
+    },
+    {
+      "path": "history/renderer-rates/raw-module.js.txt",
+      "bytes": 2634,
+      "sha256": "5b38ad76af8eb30444e229c4b1c24c236f41831403bd9f0699ef475507d28ac5"
+    },
+    {
+      "path": "history/renderer-rates/request.json",
+      "bytes": 22451,
+      "sha256": "5de89d2585e2da3420699da04afec21423aceeca41e7cbdfcfc571dff0dbda63"
+    },
+    {
+      "path": "history/renderer-rates/response.json",
+      "bytes": 3208,
+      "sha256": "543d3628ae1fbd80c061907a04437fe5e14ac4b0309a4fcfd56dd305d304d2e9"
+    },
+    {
+      "path": "history/renderer-rates/state.json",
+      "bytes": 195,
+      "sha256": "0b6bee098d0fbf72dfd89201ba6625373be8910f8fad3f527eb330e7485ee556"
+    },
+    {
+      "path": "history/selected-price-repair/request.json",
+      "bytes": 23680,
+      "sha256": "de5118b03fb33157f1d28886abb1103d2b2077dc5eb25a2a29f7659a4ab9423e"
+    },
+    {
+      "path": "history/selected-price-repair/response.json",
+      "bytes": 2017,
+      "sha256": "783acebe77891a546e35bfef7acf6f956495822e8f162ebb6f321064a7326083"
+    },
+    {
+      "path": "history/selected-price-repair/state.json",
+      "bytes": 147,
+      "sha256": "f3caa26be470bcfcd67854a5543fdf03471383ee238f139eac8abe02dfdbdf74"
+    },
+    {
+      "path": "history/selected-price-slots/after.js.txt",
+      "bytes": 2100,
+      "sha256": "61635b1b285416c41ae616e33d9850a5ee8a9502c089961f51da06e7af4f88a1"
+    },
+    {
+      "path": "history/selected-price-slots/before.js.txt",
+      "bytes": 2028,
+      "sha256": "f94aab06269458fe21e6bd03f442e7731a9429a58aea16f9886e25ce47d19b36"
+    },
+    {
+      "path": "history/selected-price-slots/check.log",
+      "bytes": 575,
+      "sha256": "414f00a002d6c1bf6b59652e9a3e4810b427a70f51a1fcc93a30327d5c243633"
+    },
+    {
+      "path": "history/selected-price-slots/redactions.json",
+      "bytes": 424,
+      "sha256": "fee2c3ea716871cdac11e94f15b3c95a54f5d82da06671d0f808a2c3c65388ae"
+    },
+    {
+      "path": "history/selected-price-slots/request.json",
+      "bytes": 23447,
+      "sha256": "9c44d11eecf7c8e5adb7dc473370e6f06f8cc989acbc6c8d9b4fc6ce39ac4d2a"
+    },
+    {
+      "path": "history/selected-price-slots/response.json",
+      "bytes": 835,
+      "sha256": "2e1e6123db5b7d5be2cea73a10ff62a15cbfb1b7901cb998ff41826efe9117a2"
+    },
+    {
+      "path": "history/selected-price-slots/result.json",
+      "bytes": 19357,
+      "sha256": "6a9e77d31bd9d68b6a92be24513fd56252bf6c41da3acfeb3894413055de824f"
+    },
+    {
+      "path": "history/selected-price-slots/state.json",
+      "bytes": 120,
+      "sha256": "fcd857aaf10237c977809b1990f36383235551e30485aef49017d080c8e3810c"
+    },
+    {
+      "path": "history/sheet-heading-repair/before-rooms.css.txt",
+      "bytes": 7669,
+      "sha256": "02ddfe1e2b0920aae3828c3a056646573c393dcdb58e1b52ac0e43b9e96f543b"
+    },
+    {
+      "path": "history/sheet-heading-repair/fragment.css",
+      "bytes": 228,
+      "sha256": "e91a64aee472bc6e6c8b6cadfc224cb797b0c80085f2d406e63806786ad556e3"
+    },
+    {
+      "path": "history/sheet-heading-repair/raw-css.txt",
+      "bytes": 228,
+      "sha256": "e91a64aee472bc6e6c8b6cadfc224cb797b0c80085f2d406e63806786ad556e3"
+    },
+    {
+      "path": "history/sheet-heading-repair/request.json",
+      "bytes": 20902,
+      "sha256": "ffe97d3f1b89406de4ae311f5480edb7564014937f3b1de9822e4856dfff2ccc"
+    },
+    {
+      "path": "history/sheet-heading-repair/response.json",
+      "bytes": 679,
+      "sha256": "484f23ac7d7c8b49f044627966aeef5e9d636b94c954a6d9b733e2c291c7b1a7"
+    },
+    {
+      "path": "history/sheet-heading-repair/result.json",
+      "bytes": 19330,
+      "sha256": "ff387bfdffe9fc05bc549aea3b0305a28358d5a1c8345369f801cae33d2ee648"
+    },
+    {
+      "path": "history/sheet-heading-repair/state.json",
+      "bytes": 130,
+      "sha256": "ddcd123a95658b7a6c2eaf7a4db615516f902641cf7c9b826b80a151c1ae5fb1"
+    },
+    {
+      "path": "history/summary-expression-repair/after.js.txt",
+      "bytes": 2141,
+      "sha256": "f1a6b15bfe2980ed36616313fb010c24e7589d555950d6fc89dfee7adeb4ffb2"
+    },
+    {
+      "path": "history/summary-expression-repair/before.js.txt",
+      "bytes": 2100,
+      "sha256": "61635b1b285416c41ae616e33d9850a5ee8a9502c089961f51da06e7af4f88a1"
+    },
+    {
+      "path": "history/summary-expression-repair/check.log",
+      "bytes": 21,
+      "sha256": "54b96a742c7714da9dc80dc2a16ca77f74640eeee6ff56eb7c2ecb95e1b72990"
+    },
+    {
+      "path": "history/summary-expression-repair/checks/report.json",
+      "bytes": 19646,
+      "sha256": "4498215bbf9f3e9f4323e409ad93b9d2e4f1fedc45cc907b613e9b492bb87c5e"
+    },
+    {
+      "path": "history/summary-expression-repair/request.json",
+      "bytes": 20732,
+      "sha256": "b85c258e74f0ab43804607f5aab37492c8eab1360d95aa838867b13e78d0acb7"
+    },
+    {
+      "path": "history/summary-expression-repair/response.json",
+      "bytes": 498,
+      "sha256": "1650452ff20452f4e9cbe26ef25863b255f1ae9f4ce3cd1972c794428623e6d8"
+    },
+    {
+      "path": "history/summary-expression-repair/result.json",
+      "bytes": 19221,
+      "sha256": "8989019f96eba16aafa15bbda15c05e7de7aca480e579d6e69255d9e30d37dd1"
+    },
+    {
+      "path": "history/summary-expression-repair/state.json",
+      "bytes": 138,
+      "sha256": "799f7bcecac21709764c9958f586c84466a234e552691bf8eccdcd58b47f557f"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1529,
+      "sha256": "4ae4e09bcbd94678804c965779c1cf358b2a14a25fa2fb544f51c750776e9a02"
+    },
+    {
+      "path": "renders/current-doc-review/rate-selected-390.png",
+      "bytes": 74635,
+      "sha256": "c2b7748cd22b14fc5a741a0f18720f5b7a2606daa4c5fceb97bdb041787954d8"
+    },
+    {
+      "path": "renders/current-doc-review/rates-390.png",
+      "bytes": 74175,
+      "sha256": "5316289781e66279ec2af028f1919c8a2e520a12cf5fc0da1931099fba8dc917"
+    },
+    {
+      "path": "renders/current-doc-review/rates-text-200-390.png",
+      "bytes": 44178,
+      "sha256": "d90182f4ea7deba84f15d5caafc3ee11f6ecc760e574e593303ea947b9f55e69"
+    },
+    {
+      "path": "renders/current-doc-review/rates-text-spacing-390.png",
+      "bytes": 41312,
+      "sha256": "57125fe74f5ea9be4656c2b1cf29d561a01ce32b394607486db93c2d8191ab33"
+    },
+    {
+      "path": "renders/current-doc-review/report.json",
+      "bytes": 1236818,
+      "sha256": "7cd2a9e6f3895fdc15979990ba90306f2d37e6ff6d61ad3b03e54c126c18297a"
+    },
+    {
+      "path": "renders/current-doc-review/review-390.png",
+      "bytes": 52312,
+      "sha256": "d0f880efd9eb27c3fa17ce4475583c992b6aa15a99fb6cf0fd376abf2e632f0e"
+    },
+    {
+      "path": "renders/current-doc-review/review-text-200-390.png",
+      "bytes": 58128,
+      "sha256": "e2283aaee34025808c9febecf2da432e92b4c113cb44313ca3ca8fcf9f3cf522"
+    },
+    {
+      "path": "renders/current-doc-review/review-text-spacing-390.png",
+      "bytes": 52106,
+      "sha256": "5b3fc34b54340c2211766c68dcd0eb4e6db78da5f5476b5555577c336766c2ed"
+    },
+    {
+      "path": "renders/current-doc-review/room-filter-390.png",
+      "bytes": 113314,
+      "sha256": "f520630766a20ae97deefd5bc14750c458fb5b3523a81770e5aa6fd3908d65b4"
+    },
+    {
+      "path": "renders/current-doc-review/rooms-1440.png",
+      "bytes": 191129,
+      "sha256": "db367693a0b4b91ae1ffaa82a0b8cd552f94009733f3759d3e88111224948792"
+    },
+    {
+      "path": "renders/current-doc-review/rooms-296.png",
+      "bytes": 115377,
+      "sha256": "722b05e344fe93edc7255ddeade112bc89d738dd74df1205662f8c0dc30c6861"
+    },
+    {
+      "path": "renders/current-doc-review/rooms-320.png",
+      "bytes": 129453,
+      "sha256": "71a171b39e83935d366504327fea429b5e7d5663b282cac90eb517af322f57e7"
+    },
+    {
+      "path": "renders/current-doc-review/rooms-390.png",
+      "bytes": 173816,
+      "sha256": "9f18af26c1e2c12a636b5706254bcfcf43da3c1282e734a06e6b0665da2770d9"
+    },
+    {
+      "path": "renders/current-doc-review/rooms-full-390.png",
+      "bytes": 184320,
+      "sha256": "cfc75519fa1f743fce86004236b883eb836431e50dd5e0ede62c8c9d70c2542a"
+    },
+    {
+      "path": "renders/current-doc-review/rooms-text-200-296.png",
+      "bytes": 85585,
+      "sha256": "4ce764500957d00653ba5c472f51f4e75fcd99234d0a233d709c5d2690462bd8"
+    },
+    {
+      "path": "renders/current-doc-review/rooms-text-200-390.png",
+      "bytes": 132186,
+      "sha256": "192a8eedfbda54642eb422a4e1d548d9aba4ccc9e10260fad41d78a4f0460845"
+    },
+    {
+      "path": "renders/current-doc-review/rooms-text-spacing-296.png",
+      "bytes": 87223,
+      "sha256": "54fbc24ad87e6685fed72429d6956a3bc74d0b5c8f266974dc640d9d58ae5e12"
+    },
+    {
+      "path": "renders/current-doc-review/rooms-text-spacing-390.png",
+      "bytes": 130424,
+      "sha256": "7e4f5f8f1b3ec8c9c22ad959c7715817da1d4e9bf6a28293299151d02ef9bdd9"
+    },
+    {
+      "path": "renders/current-doc-review/selected-390.png",
+      "bytes": 136101,
+      "sha256": "95b3f00240c186e34a5155b46fd783202335721242b94fb2c5080228480e5010"
+    },
+    {
+      "path": "renders/current-doc-review/trip-390.png",
+      "bytes": 103263,
+      "sha256": "752acc321814b7ffeab13d42792cd7070c91cb6b0c56f44d2f484dc8f72e00ec"
+    },
+    {
+      "path": "renders/final-review/rate-selected-390.png",
+      "bytes": 74635,
+      "sha256": "c2b7748cd22b14fc5a741a0f18720f5b7a2606daa4c5fceb97bdb041787954d8"
+    },
+    {
+      "path": "renders/final-review/rates-390.png",
+      "bytes": 74175,
+      "sha256": "5316289781e66279ec2af028f1919c8a2e520a12cf5fc0da1931099fba8dc917"
+    },
+    {
+      "path": "renders/final-review/rates-text-200-390.png",
+      "bytes": 44198,
+      "sha256": "b7e310e71c53cf85ba0eb0841c12a4399d02566e1492998b8b4bde5277abbb48"
+    },
+    {
+      "path": "renders/final-review/rates-text-spacing-390.png",
+      "bytes": 41312,
+      "sha256": "57125fe74f5ea9be4656c2b1cf29d561a01ce32b394607486db93c2d8191ab33"
+    },
+    {
+      "path": "renders/final-review/report.json",
+      "bytes": 1224026,
+      "sha256": "da70a5c2d614011ec7d9f1bc4d037b165619a703725121828d8eff9f147f614c"
+    },
+    {
+      "path": "renders/final-review/review-390.png",
+      "bytes": 52312,
+      "sha256": "d0f880efd9eb27c3fa17ce4475583c992b6aa15a99fb6cf0fd376abf2e632f0e"
+    },
+    {
+      "path": "renders/final-review/review-text-200-390.png",
+      "bytes": 58128,
+      "sha256": "e2283aaee34025808c9febecf2da432e92b4c113cb44313ca3ca8fcf9f3cf522"
+    },
+    {
+      "path": "renders/final-review/review-text-spacing-390.png",
+      "bytes": 52106,
+      "sha256": "5b3fc34b54340c2211766c68dcd0eb4e6db78da5f5476b5555577c336766c2ed"
+    },
+    {
+      "path": "renders/final-review/room-filter-390.png",
+      "bytes": 113314,
+      "sha256": "f520630766a20ae97deefd5bc14750c458fb5b3523a81770e5aa6fd3908d65b4"
+    },
+    {
+      "path": "renders/final-review/rooms-1440.png",
+      "bytes": 191129,
+      "sha256": "db367693a0b4b91ae1ffaa82a0b8cd552f94009733f3759d3e88111224948792"
+    },
+    {
+      "path": "renders/final-review/rooms-296.png",
+      "bytes": 115377,
+      "sha256": "722b05e344fe93edc7255ddeade112bc89d738dd74df1205662f8c0dc30c6861"
+    },
+    {
+      "path": "renders/final-review/rooms-320.png",
+      "bytes": 129453,
+      "sha256": "71a171b39e83935d366504327fea429b5e7d5663b282cac90eb517af322f57e7"
+    },
+    {
+      "path": "renders/final-review/rooms-390.png",
+      "bytes": 173816,
+      "sha256": "9f18af26c1e2c12a636b5706254bcfcf43da3c1282e734a06e6b0665da2770d9"
+    },
+    {
+      "path": "renders/final-review/rooms-full-390.png",
+      "bytes": 184320,
+      "sha256": "cfc75519fa1f743fce86004236b883eb836431e50dd5e0ede62c8c9d70c2542a"
+    },
+    {
+      "path": "renders/final-review/rooms-text-200-296.png",
+      "bytes": 85585,
+      "sha256": "4ce764500957d00653ba5c472f51f4e75fcd99234d0a233d709c5d2690462bd8"
+    },
+    {
+      "path": "renders/final-review/rooms-text-200-390.png",
+      "bytes": 132186,
+      "sha256": "192a8eedfbda54642eb422a4e1d548d9aba4ccc9e10260fad41d78a4f0460845"
+    },
+    {
+      "path": "renders/final-review/rooms-text-spacing-296.png",
+      "bytes": 87223,
+      "sha256": "54fbc24ad87e6685fed72429d6956a3bc74d0b5c8f266974dc640d9d58ae5e12"
+    },
+    {
+      "path": "renders/final-review/rooms-text-spacing-390.png",
+      "bytes": 130424,
+      "sha256": "7e4f5f8f1b3ec8c9c22ad959c7715817da1d4e9bf6a28293299151d02ef9bdd9"
+    },
+    {
+      "path": "renders/final-review/selected-390.png",
+      "bytes": 136101,
+      "sha256": "95b3f00240c186e34a5155b46fd783202335721242b94fb2c5080228480e5010"
+    },
+    {
+      "path": "renders/final-review/trip-390.png",
+      "bytes": 103263,
+      "sha256": "752acc321814b7ffeab13d42792cd7070c91cb6b0c56f44d2f484dc8f72e00ec"
+    },
+    {
+      "path": "renders/first-core-comparison/296.png",
+      "bytes": 112027,
+      "sha256": "d398c25c833d273bed9e607e8b39979cc6a91335e32c04402778f0deff03cf97"
+    },
+    {
+      "path": "renders/first-core-comparison/390.png",
+      "bytes": 167914,
+      "sha256": "041fcd01dec709f187aab0585017b4005839928049bf02197f2e1b37ac028ecf"
+    },
+    {
+      "path": "renders/first-core-comparison/report.json",
+      "bytes": 20512,
+      "sha256": "70d70037cd33a1d318d2065b871e293d780af41db54157c36a6cf0b2c7a728d4"
+    },
+    {
+      "path": "renders/first-core-comparison/visual-review.md",
+      "bytes": 2297,
+      "sha256": "bd689a2a69f268153c05658ffca7c0608e97a18754fb17583fee95cdd62810da"
+    },
+    {
+      "path": "renders/full-first-review/rates-390.png",
+      "bytes": 70896,
+      "sha256": "f6ce3e2bbf03f4cca70a6415934568b32103d0b8afb936a52e0a0140afe5b396"
+    },
+    {
+      "path": "renders/full-first-review/rates-text-200-390.png",
+      "bytes": 44198,
+      "sha256": "b7e310e71c53cf85ba0eb0841c12a4399d02566e1492998b8b4bde5277abbb48"
+    },
+    {
+      "path": "renders/full-first-review/rates-text-spacing-390.png",
+      "bytes": 41312,
+      "sha256": "57125fe74f5ea9be4656c2b1cf29d561a01ce32b394607486db93c2d8191ab33"
+    },
+    {
+      "path": "renders/full-first-review/report.json",
+      "bytes": 1104918,
+      "sha256": "fa8d244b09b0bec137184cb001da2c2f30b44a8480b672f58108d93917ff1e9b"
+    },
+    {
+      "path": "renders/full-first-review/review-390.png",
+      "bytes": 52312,
+      "sha256": "9905ad4c1a47eb62417c59d3c45a791fb9dccbfb14138bd233bb81fb24c39208"
+    },
+    {
+      "path": "renders/full-first-review/review-text-200-390.png",
+      "bytes": 58127,
+      "sha256": "4f4ad5c19793053677889943ef79bd7a2c4efbeb82fce11caf517146fe125011"
+    },
+    {
+      "path": "renders/full-first-review/review-text-spacing-390.png",
+      "bytes": 52101,
+      "sha256": "debbe75a5e0fe62dffaebe1749479632e9deab07417680ec96f264ac0709aaac"
+    },
+    {
+      "path": "renders/full-first-review/room-filter-390.png",
+      "bytes": 108870,
+      "sha256": "02afe8135ed89f2148a7740c8d5dd1350a71e844c26937007280921432f3a99d"
+    },
+    {
+      "path": "renders/full-first-review/rooms-1440.png",
+      "bytes": 184891,
+      "sha256": "e494475e4e748d4dcae2fbb9ee4f35e1a2f26337ee5d291fc83ed1b05c7ac0c3"
+    },
+    {
+      "path": "renders/full-first-review/rooms-296.png",
+      "bytes": 112027,
+      "sha256": "d398c25c833d273bed9e607e8b39979cc6a91335e32c04402778f0deff03cf97"
+    },
+    {
+      "path": "renders/full-first-review/rooms-320.png",
+      "bytes": 125521,
+      "sha256": "26e97ccb79d424f6f2bf3af4e0ab81d09ec71a7af192b1ae9e52a9462e355350"
+    },
+    {
+      "path": "renders/full-first-review/rooms-390.png",
+      "bytes": 167914,
+      "sha256": "041fcd01dec709f187aab0585017b4005839928049bf02197f2e1b37ac028ecf"
+    },
+    {
+      "path": "renders/full-first-review/rooms-full-390.png",
+      "bytes": 178288,
+      "sha256": "ed07b50b5786b2173dc28eb2a778b6041f774a7bb5c700ad5112dbb0262656c8"
+    },
+    {
+      "path": "renders/full-first-review/rooms-text-200-296.png",
+      "bytes": 82285,
+      "sha256": "65258b26e21d31b919d13f9fdb314c29b868877a9df5552cb349b4175285b559"
+    },
+    {
+      "path": "renders/full-first-review/rooms-text-200-390.png",
+      "bytes": 126041,
+      "sha256": "fe27b7499e03eb60c0c0074943e2c05bd2a2f8f97007a3348fdedac6ce0ad786"
+    },
+    {
+      "path": "renders/full-first-review/rooms-text-spacing-296.png",
+      "bytes": 83845,
+      "sha256": "ef16f7c258ce39af6f6ef723f7edd304dfcc20be16226721535a6ca0d6263d50"
+    },
+    {
+      "path": "renders/full-first-review/rooms-text-spacing-390.png",
+      "bytes": 124168,
+      "sha256": "d06f27ec738bd8ab74a8cd40a1eb79a6909460b2c72eb3bb1de52e389cb25d64"
+    },
+    {
+      "path": "renders/full-first-review/selected-390.png",
+      "bytes": 130058,
+      "sha256": "8125eac8ae56f11b33bd69aa2c5a09544d5caa5d15490e51ac299e728d6c6f86"
+    },
+    {
+      "path": "renders/full-first-review/trip-390.png",
+      "bytes": 96658,
+      "sha256": "9a5c921d8daebc0120fe494fc7e40c704e19f93c23c97fa68b7a03edd3268c61"
+    },
+    {
+      "path": "renders/host-focal-and-closed-probe/before.png",
+      "bytes": 167914,
+      "sha256": "041fcd01dec709f187aab0585017b4005839928049bf02197f2e1b37ac028ecf"
+    },
+    {
+      "path": "renders/host-focal-and-closed-probe/focal-probe.png",
+      "bytes": 173816,
+      "sha256": "9f18af26c1e2c12a636b5706254bcfcf43da3c1282e734a06e6b0665da2770d9"
+    },
+    {
+      "path": "renders/host-focal-and-closed-probe/report.json",
+      "bytes": 7511,
+      "sha256": "5a08b1ca907da5894b7002d9ad8c9606fe16d9d97c7c18b89a46b1cd4d7250d1"
+    },
+    {
+      "path": "renders/publish-review/rate-selected-390.png",
+      "bytes": 74635,
+      "sha256": "c2b7748cd22b14fc5a741a0f18720f5b7a2606daa4c5fceb97bdb041787954d8"
+    },
+    {
+      "path": "renders/publish-review/rates-390.png",
+      "bytes": 74175,
+      "sha256": "5316289781e66279ec2af028f1919c8a2e520a12cf5fc0da1931099fba8dc917"
+    },
+    {
+      "path": "renders/publish-review/rates-text-200-390.png",
+      "bytes": 44178,
+      "sha256": "d90182f4ea7deba84f15d5caafc3ee11f6ecc760e574e593303ea947b9f55e69"
+    },
+    {
+      "path": "renders/publish-review/rates-text-spacing-390.png",
+      "bytes": 41312,
+      "sha256": "57125fe74f5ea9be4656c2b1cf29d561a01ce32b394607486db93c2d8191ab33"
+    },
+    {
+      "path": "renders/publish-review/report.json",
+      "bytes": 1236818,
+      "sha256": "571fad1c47bb841a8e7c377f87e937c2cc0ed70d7327e99191e3c31abc217581"
+    },
+    {
+      "path": "renders/publish-review/review-390.png",
+      "bytes": 52312,
+      "sha256": "d0f880efd9eb27c3fa17ce4475583c992b6aa15a99fb6cf0fd376abf2e632f0e"
+    },
+    {
+      "path": "renders/publish-review/review-text-200-390.png",
+      "bytes": 58128,
+      "sha256": "e2283aaee34025808c9febecf2da432e92b4c113cb44313ca3ca8fcf9f3cf522"
+    },
+    {
+      "path": "renders/publish-review/review-text-spacing-390.png",
+      "bytes": 52106,
+      "sha256": "5b3fc34b54340c2211766c68dcd0eb4e6db78da5f5476b5555577c336766c2ed"
+    },
+    {
+      "path": "renders/publish-review/room-filter-390.png",
+      "bytes": 113314,
+      "sha256": "f520630766a20ae97deefd5bc14750c458fb5b3523a81770e5aa6fd3908d65b4"
+    },
+    {
+      "path": "renders/publish-review/rooms-1440.png",
+      "bytes": 191129,
+      "sha256": "db367693a0b4b91ae1ffaa82a0b8cd552f94009733f3759d3e88111224948792"
+    },
+    {
+      "path": "renders/publish-review/rooms-296.png",
+      "bytes": 115377,
+      "sha256": "722b05e344fe93edc7255ddeade112bc89d738dd74df1205662f8c0dc30c6861"
+    },
+    {
+      "path": "renders/publish-review/rooms-320.png",
+      "bytes": 129453,
+      "sha256": "71a171b39e83935d366504327fea429b5e7d5663b282cac90eb517af322f57e7"
+    },
+    {
+      "path": "renders/publish-review/rooms-390.png",
+      "bytes": 173816,
+      "sha256": "9f18af26c1e2c12a636b5706254bcfcf43da3c1282e734a06e6b0665da2770d9"
+    },
+    {
+      "path": "renders/publish-review/rooms-full-390.png",
+      "bytes": 184320,
+      "sha256": "cfc75519fa1f743fce86004236b883eb836431e50dd5e0ede62c8c9d70c2542a"
+    },
+    {
+      "path": "renders/publish-review/rooms-text-200-296.png",
+      "bytes": 85585,
+      "sha256": "4ce764500957d00653ba5c472f51f4e75fcd99234d0a233d709c5d2690462bd8"
+    },
+    {
+      "path": "renders/publish-review/rooms-text-200-390.png",
+      "bytes": 132186,
+      "sha256": "192a8eedfbda54642eb422a4e1d548d9aba4ccc9e10260fad41d78a4f0460845"
+    },
+    {
+      "path": "renders/publish-review/rooms-text-spacing-296.png",
+      "bytes": 87223,
+      "sha256": "54fbc24ad87e6685fed72429d6956a3bc74d0b5c8f266974dc640d9d58ae5e12"
+    },
+    {
+      "path": "renders/publish-review/rooms-text-spacing-390.png",
+      "bytes": 130424,
+      "sha256": "7e4f5f8f1b3ec8c9c22ad959c7715817da1d4e9bf6a28293299151d02ef9bdd9"
+    },
+    {
+      "path": "renders/publish-review/selected-390.png",
+      "bytes": 136101,
+      "sha256": "95b3f00240c186e34a5155b46fd783202335721242b94fb2c5080228480e5010"
+    },
+    {
+      "path": "renders/publish-review/trip-390.png",
+      "bytes": 103263,
+      "sha256": "752acc321814b7ffeab13d42792cd7070c91cb6b0c56f44d2f484dc8f72e00ec"
+    },
+    {
+      "path": "research/hotel-pdp-20261016/image-index.json",
+      "bytes": 342,
+      "sha256": "455cacf66f7aebecc7f58bb70ecec08c1703aa8c5f931e867a538a0f73094e50"
+    },
+    {
+      "path": "research/hotel-pdp-20261016/receipt.json",
+      "bytes": 1124,
+      "sha256": "2da98a85e604924659e593993f892b24a5f377c0615af00d19974f96f732dcfb"
+    },
+    {
+      "path": "research/hotel-rooms-20261016/image-index.json",
+      "bytes": 342,
+      "sha256": "13011a824b4d87d0283d6fcdd0cc36cfaabd2bddd019f906a3d3612bd302dbaa"
+    },
+    {
+      "path": "research/hotel-rooms-20261016/receipt.json",
+      "bytes": 1166,
+      "sha256": "475e8b16a689a10392dead0f5ab670e565a5ad00febc4376ddd094d466a4c85d"
+    },
+    {
+      "path": "research/room-choice-unsupported/receipt.json",
+      "bytes": 2687,
+      "sha256": "bb67752e1f28b8dada514a32abfeb728509b2568e9bf90c39c4d4e6e9e78f8e5"
+    },
+    {
+      "path": "visual-review.md",
+      "bytes": 3897,
+      "sha256": "7c8dbad86132197969e62eb296a90459a0bed175bcc0eca4083702732646db75"
+    },
+    {
+      "path": "workers/capture-room-first-comparison.mjs.txt",
+      "bytes": 1973,
+      "sha256": "49856a3cc6a365e5f12d4c326580b10ca673f5e81dad40fd37b56a622c66f836"
+    },
+    {
+      "path": "workers/capture-room-review-v2.mjs.txt",
+      "bytes": 6764,
+      "sha256": "6b63f76fdc7d9a1eee67098965401980de20c850cd23cb531245a03b693362f4"
+    },
+    {
+      "path": "workers/capture-room-review-v3.mjs.txt",
+      "bytes": 6766,
+      "sha256": "fc3b497f7ce6a6d59768ac52b1e55b985c3ea059e74298092b08f1ec10c6d104"
+    },
+    {
+      "path": "workers/capture-room-review.mjs.txt",
+      "bytes": 6675,
+      "sha256": "69b16b5d65ee8bfbba3470b1979c48ea3aa926429683122696f988a31b3f9c51"
+    },
+    {
+      "path": "workers/check-room-renderer-v3.mjs.txt",
+      "bytes": 6219,
+      "sha256": "66aca70244a5b993557cfce37bc75f004e365d5d89ecc4329575bac3669046fe"
+    },
+    {
+      "path": "workers/check-room-renderer.mjs.txt",
+      "bytes": 5847,
+      "sha256": "a1133a9209c070770fa96b1d8a14b3d06580f9d0068e47f7451a48c4538d0e90"
+    },
+    {
+      "path": "workers/check-room-sheet-words.mjs.txt",
+      "bytes": 2347,
+      "sha256": "b0f0d14066b3f62882edd810ac731833d9361965d30197cfaed116684bc48920"
+    },
+    {
+      "path": "workers/check-room-workflows-v2.mjs.txt",
+      "bytes": 9682,
+      "sha256": "9de2d4e76c62bc41bc12d09fa9433d2b7d3cee1eafeb3c85db55a0201cefa4a5"
+    },
+    {
+      "path": "workers/check-room-workflows-v3.mjs.txt",
+      "bytes": 9933,
+      "sha256": "e84a83d02a7f7f9527af7cf779535dbb6061fbae79e334a776e0817220674705"
+    },
+    {
+      "path": "workers/check-room-workflows.mjs.txt",
+      "bytes": 9614,
+      "sha256": "1c415ea7e9f138e4f4bb8460d39dc9f2bbd25c581b832d3fe00f717fbadf0f87"
+    },
+    {
+      "path": "workers/correct-host-b2-bindings.mjs.txt",
+      "bytes": 3907,
+      "sha256": "e7f42038d33c67fa385c3604946628a5c7c6d8d7f39743e526b6343caf0e4a20"
+    },
+    {
+      "path": "workers/correct-pre-style-role-overlap.mjs.txt",
+      "bytes": 1193,
+      "sha256": "a9cd41b682a070ed4ef623f39beac16667c98ae8b1c69044ad30c364a5ea16cc"
+    },
+    {
+      "path": "workers/finalize-b2-state-contract.mjs.txt",
+      "bytes": 1616,
+      "sha256": "a045c1f2ba2b09f5a643ae09f23e00f3863da478a3febe9afed74b4cddd9327a"
+    },
+    {
+      "path": "workers/integrate-b2-contracts.mjs.txt",
+      "bytes": 5952,
+      "sha256": "9b3ab48c24a903c8223a295069781bdd8816780e92bb29fef1e56e42243555b0"
+    },
+    {
+      "path": "workers/local-stage.mjs.txt",
+      "bytes": 2979,
+      "sha256": "d8b74c67bf58bb1b402d5eca1401ad5f12aae7383d117abfb3c32742ed007329"
+    },
+    {
+      "path": "workers/prepare-style-evidence.mjs.txt",
+      "bytes": 5421,
+      "sha256": "75d80415e987b9de5e62a57aed9e77252d7e4eb51b68cf48feef1a30dc39fc11"
+    },
+    {
+      "path": "workers/reconcile-active-docs.mjs.txt",
+      "bytes": 5128,
+      "sha256": "08c7708d83c6011bf52bf222df8fee782e6cfb1a445fc8e6536ce1477a92a98a"
+    },
+    {
+      "path": "workers/repair-room-focal-return-css.mjs.txt",
+      "bytes": 2660,
+      "sha256": "66ec20d09c47e2cdd92e5a329b48d0f92ca31a313f49de87014120f0fb3762f2"
+    },
+    {
+      "path": "workers/repair-room-page-css.mjs.txt",
+      "bytes": 3817,
+      "sha256": "46c5b1ebb64a2e7f9a7f48bed73a511d813791706a18d3aaccbde67993a9351d"
+    },
+    {
+      "path": "workers/repair-room-renderer-bindings.mjs.txt",
+      "bytes": 3239,
+      "sha256": "455bd0638ebdc73386e257343ad25356b8a126dc67d6c5c3de4c1f3dccbc28c5"
+    },
+    {
+      "path": "workers/repair-room-secondary-css.mjs.txt",
+      "bytes": 3667,
+      "sha256": "a45fb193036c411d0047d1d269d6bcbb1f72391d1ee2abe63acbf6993f1be2de"
+    },
+    {
+      "path": "workers/repair-room-selected-price.mjs.txt",
+      "bytes": 2985,
+      "sha256": "f19bd4563bfa51cba492205e48ea3b66abe79d2015e3f439f6cfaab3ec613daf"
+    },
+    {
+      "path": "workers/repair-room-selected-slots.mjs.txt",
+      "bytes": 3223,
+      "sha256": "5f0f7a3b36897457fb64f643f276835b44142a5fe0b3cfe1fa5328bdc6feea45"
+    },
+    {
+      "path": "workers/repair-room-sheet-heading-css.mjs.txt",
+      "bytes": 2602,
+      "sha256": "bd1e68746933d3cc13b12f930de8e312589d1ff1760c7e66c5b8e0cf326e0f55"
+    },
+    {
+      "path": "workers/repair-room-summary-expression.mjs.txt",
+      "bytes": 2491,
+      "sha256": "7a8a9afb2a8d80ea0a853a2c53260387f5673c1a5af63965f2137b6010a2fa6f"
+    },
+    {
+      "path": "workers/run-room-css.mjs.txt",
+      "bytes": 4325,
+      "sha256": "709ea62ffb5785fa50b3185d2aed06a7b9e111c5d3bdbf2b1db58da3bfa86837"
+    },
+    {
+      "path": "workers/run-room-rate-view.mjs.txt",
+      "bytes": 3316,
+      "sha256": "bbff59f63adf91c9bb9d50e5fbf2f2c6b4aafde15cf64bf626905342d1552da7"
+    },
+    {
+      "path": "workers/run-room-renderer-unit.mjs.txt",
+      "bytes": 3077,
+      "sha256": "dc079bc3dbafd9d140238b966ec407b4306f110d0ed789d7fa2f9e8378242393"
+    },
+    {
+      "path": "workers/run-room-renderer.mjs.txt",
+      "bytes": 3722,
+      "sha256": "8d179a0e1fd80d26b6447e45b7ad41a7fdc5bdff48f1c9ffdf034f8cf666f7ad"
+    },
+    {
+      "path": "workers/run-room-secondary-css.mjs.txt",
+      "bytes": 4227,
+      "sha256": "78a4d029d7ac7416e621e33e237f454c287f06cb603e0f415da3a83aaf1369e7"
+    }
+  ]
+}

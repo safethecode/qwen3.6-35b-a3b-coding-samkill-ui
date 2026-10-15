@@ -1,0 +1,18 @@
+{
+  "elapsedMs": 22433,
+  "model": "qwen3.6:35b-a3b-coding",
+  "created_at": "2026-10-15T18:31:31.5315077Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\n    \"css\": \"#rate-dialog .sheet-heading > div { flex: 1; min-width: 0; } #rate-dialog .sheet-heading [data-cancel] { flex-shrink: 0; word-break: keep-all; } #rate-dialog .sheet-heading h2 { word-break: keep-all; overflow-wrap: break-word; }\"\n}"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 22423884500,
+  "load_duration": 17021643300,
+  "prompt_eval_count": 226,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration": 3173940000,
+  "eval_count": 78,
+  "eval_duration": 2222133000
+}

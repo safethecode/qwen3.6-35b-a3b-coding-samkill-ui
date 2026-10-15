@@ -1,0 +1,6 @@
+{
+  "status": "FAILED_STAGE",
+  "pid": 33672,
+  "at": "2026-10-15T18:03:04.142Z",
+  "error": "Expected values to be strictly equal:\n+ actual - expected\n\n+ undefined\n- 'renderRateChoices'\n"
+}

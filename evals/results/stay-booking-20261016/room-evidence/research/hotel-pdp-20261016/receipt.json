@@ -1,0 +1,35 @@
+{
+  "query": {
+    "query": "상세정보",
+    "app_name": "데일리호텔",
+    "category": "여행",
+    "platform": "MOBILE",
+    "limit": 3
+  },
+  "requestedAtUtc": "2026-10-15 17:36:56 UTC",
+  "archivedAtUtc": "2026-10-15 17:43:20 UTC",
+  "receivedAtUtc": null,
+  "returned_count": 1,
+  "total_count": 1,
+  "has_more": false,
+  "note": null,
+  "results": [
+    {
+      "app_name": "데일리호텔",
+      "platform": "MOBILE",
+      "category": "여행",
+      "pattern": "상세정보 (PDP)",
+      "pattern_variant": "국내숙소",
+      "components": [
+        "버튼",
+        "프로그레스 인디케이터"
+      ],
+      "ui_url": "https://uibowl.io/name/%EB%8D%B0%EC%9D%BC%EB%A6%AC%ED%98%B8%ED%85%94?patterns=%EC%83%81%EC%84%B8%EC%A0%95%EB%B3%B4%20%28PDP%29&patternName=%EA%B5%AD%EB%82%B4%EC%88%99%EC%86%8C",
+      "screenId": null,
+      "total_image_count": 7,
+      "shown_image_count": 7
+    }
+  ],
+  "nativeRepresentativeCount": 1,
+  "limits": "Only native attached representatives directly inspected. Other gallery images and transitions remain uninspected. No MAU or signed asset URL retained."
+}

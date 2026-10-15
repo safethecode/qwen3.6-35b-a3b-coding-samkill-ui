@@ -1,0 +1,14 @@
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+page.evaluate: ReferenceError: cheapestQuote is not defined
+    at http://127.0.0.1:58930/room-cards.js:9:75
+    at Array.forEach (<anonymous>)
+    at Module.renderRoomChoices (http://127.0.0.1:58930/room-cards.js:5:14)
+    at window.drawCards (eval at evaluate (:290:30), <anonymous>:1:387)
+    at eval (eval at evaluate (:290:30), <anonymous>:1:871)
+    at async <anonymous>:316:30
+    at REPOSITORY\runs\stay-booking-transfer-20261016\check-room-renderer-v3.mjs:6:462
+
+Node.js v24.19.0

@@ -1,0 +1,9 @@
+{
+  "at": "2026-10-15T18:09:52.876Z",
+  "scope": "Only URL predicate in private connected checker; production code unchanged",
+  "old": "Glob **/#route requires slash immediately before hash; navigate preserves ?q=encodedJSON before hash",
+  "replacement": "URL object .hash equality preserves query and verifies exact destination",
+  "status": "CORRECTED_CHECKER_PENDING_RERUN",
+  "previous": "workflows-before-css/report.json 9/12;all3fails timed out on incorrect URLglob",
+  "limits": "No passing verdict until execution; not attributed to Qwen"
+}

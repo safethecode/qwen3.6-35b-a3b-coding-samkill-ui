@@ -1,0 +1,64 @@
+// renderRateChoices function
+function renderRateChoices({ container, template, room, quotes, selectedRateId, onSelect }) {
+    const money = (n) => n.toLocaleString('ko-KR') + '원';
+    const catalog = window.rateCatalog || {};
+    
+    // Clear existing content if any
+    while (container.firstChild) {
+        container.removeChild(container.firstChild);
+    }
+
+    // Create a document fragment to minimize reflows
+    const fragment = document.createDocumentFragment();
+
+    quotes.forEach(quote => {
+        // Clone the template node
+        const clone = template.content.firstElementChild.cloneNode(true);
+        
+        // Get the input element inside the cloned label
+        const input = clone.querySelector('input');
+        
+        // Get the rate details from the catalog using the quote's rateId
+        const rateDetails = catalog[quote.rateId] || { name: 'Unknown Rate' };
+        
+        // Set input attributes
+        input.type = 'radio';
+        input.name = room.name + '-rate'; // Use room name for unique radio group name
+        input.value = quote.rateId;
+        input.checked = (quote.rateId === selectedRateId);
+        input.setAttribute('aria-label', `${room.name} ${rateDetails.name}`);
+        
+        // Attach change listener
+        input.addEventListener('change', () => {
+            if (input.checked) {
+                onSelect(quote); // Pass the exact quote object
+            }
+        });
+
+        // Update data attributes and text content for visible elements
+        const nameEl = clone.querySelector('[data-rate-name]');
+        nameEl.textContent = rateDetails.name;
+        nameEl.setAttribute('data-rate-name', rateDetails.name);
+
+        const policyEl = clone.querySelector('[data-rate-policy]');
+        policyEl.textContent = quote.breakfast ? '조식 포함' : '조식 미포함';
+        policyEl.setAttribute('data-rate-policy', quote.breakfast ? '조식 포함' : '조식 미포함');
+
+        const nightlyEl = clone.querySelector('[data-rate-nightly]');
+        nightlyEl.textContent = `${money(quote.nightly)} × ${quote.nights}박`;
+        nightlyEl.setAttribute('data-rate-nightly', `${money(quote.nightly)} × ${quote.nights}박`);
+
+        const totalEl = clone.querySelector('[data-rate-total]');
+        totalEl.textContent = `총 ${money(quote.total)}`;
+        totalEl.setAttribute('data-rate-total', `총 ${money(quote.total)}`);
+
+        // Append to fragment
+        fragment.appendChild(clone);
+    });
+
+    // Append fragment to container
+    container.appendChild(fragment);
+}
+
+// Export the function as an ES module
+export { renderRateChoices };

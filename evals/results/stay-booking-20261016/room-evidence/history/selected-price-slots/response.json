@@ -1,0 +1,18 @@
+{
+  "elapsedMs": 11787,
+  "model": "qwen3.6:35b-a3b-coding",
+  "created_at": "2026-10-15T18:24:01.8769994Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\n  \"summary\": \"const summaryQuote = roomQuotes.find(q => q.rateId === selectedRateId) || cheapestQuote;\",\n  \"nightly\": \"nightlySpan.textContent = money(summaryQuote.nightly);\",\n  \"total\": \"totalP.textContent = `${summaryQuote.nights}박 총 ${money(summaryQuote.total)} · 수수료 포함`; clone.querySelector('.room-price > p > span').textContent = isSelected ? ' /박' : ' /박부터';\"\n}"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 11778615400,
+  "load_duration": 10187700,
+  "prompt_eval_count": 718,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration": 8229860000,
+  "eval_count": 103,
+  "eval_duration": 3393477000
+}

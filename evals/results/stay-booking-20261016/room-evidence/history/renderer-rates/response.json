@@ -1,0 +1,18 @@
+{
+  "elapsedMs": 29125,
+  "model": "qwen3.6:35b-a3b-coding",
+  "created_at": "2026-10-15T18:03:04.0835841Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\n  \"code\": \"// renderRateChoices function\\nfunction renderRateChoices({ container, template, room, quotes, selectedRateId, onSelect }) {\\n    const money = (n) => n.toLocaleString('ko-KR') + '원';\\n    const catalog = window.rateCatalog || {};\\n    \\n    // Clear existing content if any\\n    while (container.firstChild) {\\n        container.removeChild(container.firstChild);\\n    }\\n\\n    // Create a document fragment to minimize reflows\\n    const fragment = document.createDocumentFragment();\\n\\n    quotes.forEach(quote => {\\n        // Clone the template node\\n        const clone = template.content.firstElementChild.cloneNode(true);\\n        \\n        // Get the input element inside the cloned label\\n        const input = clone.querySelector('input');\\n        \\n        // Get the rate details from the catalog using the quote's rateId\\n        const rateDetails = catalog[quote.rateId] || { name: 'Unknown Rate' };\\n        \\n        // Set input attributes\\n        input.type = 'radio';\\n        input.name = room.name + '-rate'; // Use room name for unique radio group name\\n        input.value = quote.rateId;\\n        input.checked = (quote.rateId === selectedRateId);\\n        input.setAttribute('aria-label', `${room.name} ${rateDetails.name}`);\\n        \\n        // Attach change listener\\n        input.addEventListener('change', () => {\\n            if (input.checked) {\\n                onSelect(quote); // Pass the exact quote object\\n            }\\n        });\\n\\n        // Update data attributes and text content for visible elements\\n        const nameEl = clone.querySelector('[data-rate-name]');\\n        nameEl.textContent = rateDetails.name;\\n        nameEl.setAttribute('data-rate-name', rateDetails.name);\\n\\n        const policyEl = clone.querySelector('[data-rate-policy]');\\n        policyEl.textContent = quote.breakfast ? '조식 포함' : '조식 미포함';\\n        policyEl.setAttribute('data-rate-policy', quote.breakfast ? '조식 포함' : '조식 미포함');\\n\\n        const nightlyEl = clone.querySelector('[data-rate-nightly]');\\n        nightlyEl.textContent = `${money(quote.nightly)} × ${quote.nights}박`;\\n        nightlyEl.setAttribute('data-rate-nightly', `${money(quote.nightly)} × ${quote.nights}박`);\\n\\n        const totalEl = clone.querySelector('[data-rate-total]');\\n        totalEl.textContent = `총 ${money(quote.total)}`;\\n        totalEl.setAttribute('data-rate-total', `총 ${money(quote.total)}`);\\n\\n        // Append to fragment\\n        fragment.appendChild(clone);\\n    });\\n\\n    // Append fragment to container\\n    container.appendChild(fragment);\\n}\\n\\n// Export the function as an ES module\\nexport { renderRateChoices };\"\n}"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 29119776300,
+  "load_duration": 9828800,
+  "prompt_eval_count": 548,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration": 6402373000,
+  "eval_count": 630,
+  "eval_duration": 22602806000
+}

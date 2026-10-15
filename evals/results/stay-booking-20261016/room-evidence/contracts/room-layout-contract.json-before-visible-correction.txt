@@ -1,0 +1,62 @@
+{
+  "rules": [
+    {
+      "id": "bounded-mobile",
+      "kind": "maxWidth",
+      "subject": "body",
+      "maximum": 390
+    },
+    {
+      "id": "wide-compact-first-room-photo",
+      "kind": "computedStyle",
+      "subject": ".room-card[data-room-id=\"afternoon-standard\"] .room-photo",
+      "properties": {
+        "aspect-ratio": "11 / 5",
+        "object-fit": "cover"
+      },
+      "states": [
+        "rooms",
+        "selected"
+      ]
+    },
+    {
+      "id": "room-metadata-below-photo",
+      "kind": "below",
+      "subject": ".room-card[data-room-id=\"afternoon-standard\"] .room-card-content",
+      "reference": ".room-card[data-room-id=\"afternoon-standard\"] .room-photo",
+      "minGap": 0,
+      "states": [
+        "rooms",
+        "selected"
+      ]
+    },
+    {
+      "id": "price-below-room-facts",
+      "kind": "below",
+      "subject": ".room-card[data-room-id=\"afternoon-standard\"] .room-price",
+      "reference": ".room-card[data-room-id=\"afternoon-standard\"] .room-facts",
+      "minGap": 16,
+      "states": [
+        "rooms",
+        "selected"
+      ]
+    },
+    {
+      "id": "separate-room-cards",
+      "kind": "below",
+      "subject": ".room-card[data-room-id=\"afternoon-family\"]",
+      "reference": ".room-card[data-room-id=\"afternoon-standard\"]",
+      "minGap": 24,
+      "states": [
+        "rooms",
+        "selected"
+      ]
+    },
+    {
+      "id": "closed-native-dialogs-stay-hidden",
+      "kind": "absent",
+      "subject": "dialog:not([open])"
+    }
+  ],
+  "scope": "Pre-style mechanical relationships only; samewidth direct positive-anchor review remains separate."
+}

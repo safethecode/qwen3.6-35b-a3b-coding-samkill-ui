@@ -1,0 +1,107 @@
+{
+  "at": "2026-10-15T18:48:18.917Z",
+  "scope": "Documentation-only active contract reconciliation,not a visual improvement",
+  "images": [
+    {
+      "name": "rate-selected-390.png",
+      "identical": true,
+      "sha256": "c2b7748cd22b14fc5a741a0f18720f5b7a2606daa4c5fceb97bdb041787954d8"
+    },
+    {
+      "name": "rates-390.png",
+      "identical": true,
+      "sha256": "5316289781e66279ec2af028f1919c8a2e520a12cf5fc0da1931099fba8dc917"
+    },
+    {
+      "name": "rates-text-200-390.png",
+      "identical": true,
+      "sha256": "d90182f4ea7deba84f15d5caafc3ee11f6ecc760e574e593303ea947b9f55e69"
+    },
+    {
+      "name": "rates-text-spacing-390.png",
+      "identical": true,
+      "sha256": "57125fe74f5ea9be4656c2b1cf29d561a01ce32b394607486db93c2d8191ab33"
+    },
+    {
+      "name": "review-390.png",
+      "identical": true,
+      "sha256": "d0f880efd9eb27c3fa17ce4475583c992b6aa15a99fb6cf0fd376abf2e632f0e"
+    },
+    {
+      "name": "review-text-200-390.png",
+      "identical": true,
+      "sha256": "e2283aaee34025808c9febecf2da432e92b4c113cb44313ca3ca8fcf9f3cf522"
+    },
+    {
+      "name": "review-text-spacing-390.png",
+      "identical": true,
+      "sha256": "5b3fc34b54340c2211766c68dcd0eb4e6db78da5f5476b5555577c336766c2ed"
+    },
+    {
+      "name": "room-filter-390.png",
+      "identical": true,
+      "sha256": "f520630766a20ae97deefd5bc14750c458fb5b3523a81770e5aa6fd3908d65b4"
+    },
+    {
+      "name": "rooms-1440.png",
+      "identical": true,
+      "sha256": "db367693a0b4b91ae1ffaa82a0b8cd552f94009733f3759d3e88111224948792"
+    },
+    {
+      "name": "rooms-296.png",
+      "identical": true,
+      "sha256": "722b05e344fe93edc7255ddeade112bc89d738dd74df1205662f8c0dc30c6861"
+    },
+    {
+      "name": "rooms-320.png",
+      "identical": true,
+      "sha256": "71a171b39e83935d366504327fea429b5e7d5663b282cac90eb517af322f57e7"
+    },
+    {
+      "name": "rooms-390.png",
+      "identical": true,
+      "sha256": "9f18af26c1e2c12a636b5706254bcfcf43da3c1282e734a06e6b0665da2770d9"
+    },
+    {
+      "name": "rooms-full-390.png",
+      "identical": true,
+      "sha256": "cfc75519fa1f743fce86004236b883eb836431e50dd5e0ede62c8c9d70c2542a"
+    },
+    {
+      "name": "rooms-text-200-296.png",
+      "identical": true,
+      "sha256": "4ce764500957d00653ba5c472f51f4e75fcd99234d0a233d709c5d2690462bd8"
+    },
+    {
+      "name": "rooms-text-200-390.png",
+      "identical": true,
+      "sha256": "192a8eedfbda54642eb422a4e1d548d9aba4ccc9e10260fad41d78a4f0460845"
+    },
+    {
+      "name": "rooms-text-spacing-296.png",
+      "identical": true,
+      "sha256": "54fbc24ad87e6685fed72429d6956a3bc74d0b5c8f266974dc640d9d58ae5e12"
+    },
+    {
+      "name": "rooms-text-spacing-390.png",
+      "identical": true,
+      "sha256": "7e4f5f8f1b3ec8c9c22ad959c7715817da1d4e9bf6a28293299151d02ef9bdd9"
+    },
+    {
+      "name": "selected-390.png",
+      "identical": true,
+      "sha256": "95b3f00240c186e34a5155b46fd783202335721242b94fb2c5080228480e5010"
+    },
+    {
+      "name": "side-by-side.png",
+      "identical": true,
+      "sha256": "a81537f61c55768bce4c4759230ff5d849889dc415f06fc6f5a31ed1fe90f555"
+    },
+    {
+      "name": "trip-390.png",
+      "identical": true,
+      "sha256": "752acc321814b7ffeab13d42792cd7070c91cb6b0c56f44d2f484dc8f72e00ec"
+    }
+  ],
+  "allIdentical": true
+}

@@ -1,0 +1,42 @@
+{
+  "at": "2026-10-15T18:06:40.186Z",
+  "status": "B2_RENDERER_SCOPED_PASS_CSS_NOT_YET_GENERATED",
+  "reference": {
+    "path": "references/hotel-rooms-20261016/reference-0.jpg",
+    "sha256": "0c52e495c4e93b1f92f09c5698ddab5040207fb03e81b303321648f1d2f4e489",
+    "nativeSize": [
+      296,
+      640
+    ],
+    "observed": "Return/title,trip/filter,widefirstphoto,roomidentity/facts/quietprice,nextcard",
+    "unknown": "CSS/DPR/font/originalruntime"
+  },
+  "guideApplication": [
+    {
+      "guide": "reference-decompose/guide.md",
+      "path": "skills/qwen-samkill-ui/references/upstream/reference-decompose/guide.md",
+      "status": "applied",
+      "evidence": "ROOMS-CONTRACT.md A1–A5,UI-DECISIONS.md,actualnativeimageinspected"
+    },
+    {
+      "guide": "design-md/guide.md",
+      "path": "skills/qwen-samkill-ui/references/upstream/design-md/guide.md",
+      "status": "applied",
+      "evidence": "DESIGNappend,STYLE-CONTRACT,numericroles/layoutbeforeCSS"
+    },
+    {
+      "guide": "reference-to-ui/guide.md",
+      "path": "skills/qwen-samkill-ui/references/upstream/reference-to-ui/guide.md",
+      "status": "applied-pending-render",
+      "evidence": "B1corefirstcomparisonretained beforeB2expansion;semanticDOM→behavior→CSSorder;renderer6of6only"
+    },
+    {
+      "guide": "spacing-audit.md",
+      "path": "skills/qwen-samkill-ui/references/upstream/reference-to-ui/references/spacing-audit.md",
+      "status": "planned-roles-read",
+      "evidence": "UI-DECISIONS fullnewroles/inheritedbindings beforeCSS;actualrenderedspacingnotyetverified"
+    }
+  ],
+  "inputCorrection": "Renderer firstinputs didnotexplicitlyshow catalogue rate.id vsquote.rateId. Laterrequest delivers actualroomobject. Hostsourcevalidator erroneously rejected valid export specifier syntax;corrected validator before acceptedrateview. Othercallback/currencydefects actuallocalQwenrepaired;4of6→6of6 DOMgroups,notappearance.",
+  "limits": "Not all75rules/eightguides or repeated commercial parity; connectedjourneyandCSSstillneedexecution."
+}

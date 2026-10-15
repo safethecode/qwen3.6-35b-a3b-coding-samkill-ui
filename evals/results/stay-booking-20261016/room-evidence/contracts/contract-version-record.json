@@ -1,0 +1,6 @@
+{
+  "at": "2026-10-15T18:20:04.181Z",
+  "layout": "room-layout-contract.json is explicit root JSON, so default sourceBinding discovers and hashes the exact used custom B2 contract. design/layout-contract-b2.json retained as authored pre-styleversion;never assume unregistered designfiles bound.",
+  "regressionChecker": "B1 source checker copied;sole product-expectation change validates room-selection tasktitle plus selectedpropertyidentity instead of former readonlypropertytitle. Original15casechecker preserved.",
+  "newGate": "closednative-dialogs absentwhennotopen;actualrejectedmodelCSSforcedcloseddisplayflex. Samegate runs every capturedstate."
+}

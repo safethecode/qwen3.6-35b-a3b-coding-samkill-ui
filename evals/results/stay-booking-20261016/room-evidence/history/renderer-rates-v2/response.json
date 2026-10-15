@@ -1,0 +1,18 @@
+{
+  "elapsedMs": 19070,
+  "model": "qwen3.6:35b-a3b-coding",
+  "created_at": "2026-10-15T18:04:05.127335Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\n  \"code\": \"export function renderRateChoices({ container, template, room, quotes, selectedRateId, onSelect }) {\\n  const money = (num) => num.toLocaleString('ko-KR');\\n  const fragment = document.createDocumentFragment();\\n\\n  quotes.forEach(quote => {\\n    const rate = room.rates.find(r => r.id === quote.rateId);\\n    const clone = template.content.cloneNode(true);\\n    const input = clone.querySelector('input');\\n    const label = clone.querySelector('label');\\n\\n    input.value = quote.rateId;\\n    input.checked = (selectedRateId === quote.rateId);\\n    input.name = 'room-rate';\\n    input.setAttribute('aria-label', `${room.name} ${rate.name}`);\\n\\n    if (input.checked) {\\n      input.addEventListener('change', () => { if (input.checked) onSelect(quote); });\\n    }\\n\\n    clone.querySelector('[data-rate-name]').textContent = rate.name;\\n    clone.querySelector('[data-rate-policy]').textContent = quote.breakfast ? '조식 포함' : '조식 미포함';\\n    clone.querySelector('[data-rate-nightly]').textContent = `${money(quote.nightly)} × ${quote.nights}박`;\\n    clone.querySelector('[data-rate-total]').textContent = `총 ${money(quote.total)}`;\\n\\n    fragment.appendChild(clone);\\n  });\\n\\n  container.replaceChildren(fragment);\\n}\"\n}"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 19064897200,
+  "load_duration": 7581600,
+  "prompt_eval_count": 756,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration": 8271898999,
+  "eval_count": 318,
+  "eval_duration": 10673076000
+}

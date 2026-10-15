@@ -1,0 +1,1 @@
+#rate-dialog .sheet-heading > div { flex: 1; min-width: 0; } #rate-dialog .sheet-heading [data-cancel] { flex-shrink: 0; word-break: keep-all; } #rate-dialog .sheet-heading h2 { word-break: keep-all; overflow-wrap: break-word; }

@@ -1,0 +1,13 @@
+{
+  "images": [
+    {
+      "file": "reference-0.jpg",
+      "sha256": "d68f33c51124797d1c90eddbc8cff5ac30272fd9ea911f4232f2aa9df4ba7673",
+      "bytes": 21373,
+      "mimeType": "image/jpeg",
+      "nativeRepresentative": true,
+      "inspected": true
+    }
+  ],
+  "limits": "Native supplied representative only;not all7or14galleryimages."
+}

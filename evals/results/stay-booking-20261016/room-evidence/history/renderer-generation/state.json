@@ -1,0 +1,6 @@
+{
+  "status": "FAILED_STAGE",
+  "pid": 43704,
+  "at": "2026-10-15T17:59:48.645Z",
+  "error": "Unexpected token (69:30)"
+}

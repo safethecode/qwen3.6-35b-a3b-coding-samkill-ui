@@ -1,0 +1,18 @@
+{
+  "elapsedMs": 21895,
+  "model": "qwen3.6:35b-a3b-coding",
+  "created_at": "2026-10-15T18:23:10.7332731Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\n  \"patches\": [\n    {\n      \"oldString\": \"    const cheapestQuote = roomQuotes.reduce((min, curr) => (curr.total < min.total ? curr : min));\",\n      \"newString\": \"    const summaryQuote = roomQuotes.find(q=>q.rateId===selectedRateId) || roomQuotes.reduce((min, curr) => (curr.total < min.total ? curr : min));\"\n    },\n    {\n      \"oldString\": \"    nightlySpan.textContent = money(cheapestQuote.nightly);\\n    totalP.textContent = cheapestQuote.nights + \\\"박 총 \\\" + money(cheapestQuote.total) + \\\" · 수수료 포함\\\";\",\n      \"newString\": \"    nightlySpan.textContent = money(summaryQuote.nightly);\\n    totalP.textContent = summaryQuote.nights + \\\"박 총 \\\" + money(summaryQuote.total) + \\\" · 수수료 포함\\\";\\n\\n    const priceSpan = clone.querySelector(\\\".room-price>p>span\\\");\\n    if (priceSpan) {\\n      priceSpan.textContent = isSelected ? \\\" /박\\\" : \\\" /박부터\\\";\\n    }\"\n    },\n    {\n      \"oldString\": \"    const cheapestQuote = roomQuotes.reduce((min, curr) => (curr.total < min.total ? curr : min));\\n    const isSelected = roomQuotes.some((q) => q.rateId === selectedRateId);\\n\\n    const clone = template.content.firstElementChild.cloneNode(true);\",\n      \"newString\": \"    const summaryQuote = roomQuotes.find(q=>q.rateId===selectedRateId) || roomQuotes.reduce((min, curr) => (curr.total < min.total ? curr : min));\\n    const isSelected = roomQuotes.some((q) => q.rateId === selectedRateId);\\n\\n    const clone = template.content.firstElementChild.cloneNode(true);\"\n    }\n  ]\n}"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 21887253800,
+  "load_duration": 10155200,
+  "prompt_eval_count": 742,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration": 8216397999,
+  "eval_count": 408,
+  "eval_duration": 13495402000
+}

@@ -1,0 +1,12 @@
+{
+  "at": "2026-10-15T17:52:47.681Z",
+  "status": "HOST_SCAFFOLD_PREPARED_BEFORE_B2_GENERATION",
+  "source": "B1 accepted 40-file core plus accepted Qwen quote dependency",
+  "contractSha256": "59fa819e9731697ea04da281da3b97f17af773a869055b98a27d4bbc937520fb",
+  "assistance": [
+    "Semantic source clone",
+    "Explicit photo fields and independently licensed assets",
+    "Contract and independent checker; not Qwen output"
+  ],
+  "limits": "No B2 UI generated/rendered yet; original public B1 preserved"
+}

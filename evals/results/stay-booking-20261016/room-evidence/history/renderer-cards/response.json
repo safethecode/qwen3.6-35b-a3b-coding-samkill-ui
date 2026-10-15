@@ -1,0 +1,18 @@
+{
+  "elapsedMs": 27009,
+  "model": "qwen3.6:35b-a3b-coding",
+  "created_at": "2026-10-15T18:01:53.2333389Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\n  \"code\": \"export function renderRoomChoices({ container, template, stay, quotes, selectedRateId, onOpen }) {\\n  const money = (n) => n.toLocaleString(\\\"ko-KR\\\") + \\\"원\\\";\\n  const fragment = document.createDocumentFragment();\\n\\n  stay.rooms.forEach((room) => {\\n    const roomQuotes = quotes.filter((q) => q.roomId === room.id);\\n    if (!roomQuotes.length) return;\\n\\n    const cheapestQuote = roomQuotes.reduce((min, curr) => (curr.total < min.total ? curr : min));\\n    const isSelected = roomQuotes.some((q) => q.rateId === selectedRateId);\\n\\n    const clone = template.content.firstElementChild.cloneNode(true);\\n    const article = clone;\\n    const titleBtn = clone.querySelector(\\\"[data-open-room]\\\");\\n    const nameSpan = clone.querySelector(\\\"[data-room-name]\\\");\\n    const photoImg = clone.querySelector(\\\"[data-room-photo]\\\");\\n    const bedSpan = clone.querySelector(\\\"[data-room-bed]\\\");\\n    const capSpan = clone.querySelector(\\\"[data-room-capacity]\\\");\\n    const nightlySpan = clone.querySelector(\\\"[data-room-nightly]\\\");\\n    const totalP = clone.querySelector(\\\"[data-room-total]\\\");\\n    const selectedP = clone.querySelector(\\\"[data-room-selected]\\\");\\n\\n    article.dataset.roomId = room.id;\\n    titleBtn.dataset.roomId = room.id;\\n    titleBtn.addEventListener(\\\"click\\\", () => onOpen(room.id));\\n\\n    nameSpan.textContent = room.name;\\n    photoImg.src = room.photo;\\n    photoImg.alt = room.photoAlt;\\n    bedSpan.textContent = room.bed;\\n    capSpan.textContent = \\\"최대 \\\" + room.capacity + \\\"명\\\";\\n\\n    nightlySpan.textContent = money(cheapestQuote.nightly);\\n    totalP.textContent = cheapestQuote.nights + \\\"박 총 \\\" + money(cheapestQuote.total) + \\\" · 수수료 포함\\\";\\n\\n    if (isSelected) {\\n      const matchedRate = stay.rooms.find((r) => r.id === room.id).rates.find((r) => r.rateId === selectedRateId);\\n      selectedP.textContent = \\\"선택한 요금 · \\\" + matchedRate.name;\\n      selectedP.hidden = false;\\n    } else {\\n      selectedP.hidden = true;\\n    }\\n\\n    fragment.append(article);\\n  });\\n\\n  container.replaceChildren(...fragment.childNodes);\\n}\"\n}"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 27003874200,
+  "load_duration": 9372000,
+  "prompt_eval_count": 795,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration": 8419875000,
+  "eval_count": 551,
+  "eval_duration": 18469297000
+}

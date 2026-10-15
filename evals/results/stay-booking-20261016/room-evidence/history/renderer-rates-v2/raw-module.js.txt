@@ -1,0 +1,29 @@
+export function renderRateChoices({ container, template, room, quotes, selectedRateId, onSelect }) {
+  const money = (num) => num.toLocaleString('ko-KR');
+  const fragment = document.createDocumentFragment();
+
+  quotes.forEach(quote => {
+    const rate = room.rates.find(r => r.id === quote.rateId);
+    const clone = template.content.cloneNode(true);
+    const input = clone.querySelector('input');
+    const label = clone.querySelector('label');
+
+    input.value = quote.rateId;
+    input.checked = (selectedRateId === quote.rateId);
+    input.name = 'room-rate';
+    input.setAttribute('aria-label', `${room.name} ${rate.name}`);
+
+    if (input.checked) {
+      input.addEventListener('change', () => { if (input.checked) onSelect(quote); });
+    }
+
+    clone.querySelector('[data-rate-name]').textContent = rate.name;
+    clone.querySelector('[data-rate-policy]').textContent = quote.breakfast ? '조식 포함' : '조식 미포함';
+    clone.querySelector('[data-rate-nightly]').textContent = `${money(quote.nightly)} × ${quote.nights}박`;
+    clone.querySelector('[data-rate-total]').textContent = `총 ${money(quote.total)}`;
+
+    fragment.appendChild(clone);
+  });
+
+  container.replaceChildren(fragment);
+}

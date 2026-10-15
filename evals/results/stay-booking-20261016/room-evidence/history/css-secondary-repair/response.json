@@ -1,0 +1,18 @@
+{
+  "elapsedMs": 44450,
+  "model": "qwen3.6:35b-a3b-coding",
+  "created_at": "2026-10-15T18:19:08.7599825Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\n  \"patches\": [\n    {\n      \"oldString\": \"#rate-dialog { display: flex; flex-direction: column; gap: 32px; padding-top: 16px; }\",\n      \"newString\": \"#rate-dialog[open] { display: flex; flex-direction: column; gap: 0; padding: 24px; }\"\n    },\n    {\n      \"oldString\": \".rate-trip { font-size: 14px; line-height: 1.5; color: var(--muted); margin-bottom: 16px; }\",\n      \"newString\": \"#rate-trip { font-size: 14px; line-height: 1.5; color: var(--muted); margin-bottom: 16px; }\"\n    },\n    {\n      \"oldString\": \".rate-option label { flex: 1; min-width: 0; font-size: 16px; line-height: 1.5; font-weight: 500; color: var(--text); }\",\n      \"newString\": \".rate-option { font-size: 16px; line-height: 1.5; font-weight: 500; color: var(--text); min-width: 0; }\"\n    },\n    {\n      \"oldString\": \".rate-option input:checked + label { background-color: #fff; box-shadow: inset 2px 0 0 var(--action); }\",\n      \"newString\": \".rate-option:has(input:checked) { background-color: var(--surface); box-shadow: inset 0 0 0 2px var(--text); }\"\n    },\n    {\n      \"oldString\": \"accent-color: var(--action)\",\n      \"newString\": \"accent-color: var(--text)\"\n    },\n    {\n      \"oldString\": \".review-total dt, .review-total dd { font-size: 18px; line-height: 1.5; font-weight: 700; color: var(--text); }\",\n      \"newString\": \"#review-view .review-total dt, #review-view .review-total dd { font-size: 18px; line-height: 1.5; font-weight: 700; color: var(--text); }\"\n    },\n    {\n      \"oldString\": \".review-policy p { font-size: 16px; line-height: 1.5; font-weight: 500; color: var(--text); margin: 0; gap: 8px; }\",\n      \"newString\": \".review-policy { display: flex; flex-direction: column; gap: 8px; }\\n.review-policy p { font-size: 16px; line-height: 1.5; font-weight: 500; color: var(--text); margin: 0; }\"\n    }\n  ]\n}"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 44443332600,
+  "load_duration": 8663500,
+  "prompt_eval_count": 1778,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration": 20756562000,
+  "eval_count": 647,
+  "eval_duration": 23461008000
+}

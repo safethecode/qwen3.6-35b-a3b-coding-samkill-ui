@@ -1,0 +1,41 @@
+{
+  "query": {
+    "query": "예약·결제",
+    "app_name": "데일리호텔",
+    "category": "여행",
+    "platform": "MOBILE",
+    "limit": 3
+  },
+  "requestedAtUtc": "2026-10-15 17:39:18 UTC",
+  "archivedAtUtc": "2026-10-15 17:43:20 UTC",
+  "receivedAtUtc": null,
+  "returned_count": 1,
+  "total_count": 1,
+  "has_more": false,
+  "note": null,
+  "results": [
+    {
+      "app_name": "데일리호텔",
+      "platform": "MOBILE",
+      "category": "여행",
+      "pattern": "예약·결제",
+      "pattern_variant": null,
+      "components": [
+        "라디오 버튼",
+        "로딩",
+        "리스트",
+        "바텀시트",
+        "배지",
+        "버튼",
+        "체크박스",
+        "카드"
+      ],
+      "ui_url": "https://uibowl.io/name/%EB%8D%B0%EC%9D%BC%EB%A6%AC%ED%98%B8%ED%85%94?patterns=%EC%98%88%EC%95%BD%C2%B7%EA%B2%B0%EC%A0%9C",
+      "screenId": null,
+      "total_image_count": 14,
+      "shown_image_count": 8
+    }
+  ],
+  "nativeRepresentativeCount": 1,
+  "limits": "Only native attached representatives directly inspected. Other gallery images and transitions remain uninspected. No MAU or signed asset URL retained."
+}
