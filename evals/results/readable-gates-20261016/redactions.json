@@ -1,0 +1,28 @@
+{
+  "redactions": [
+    {
+      "path": "layout-mode-red.log",
+      "originalSha256": "73de73c3045b0763f55fe09b45792220a7309cb0a2b776c6cc25ba255b0fcbe5",
+      "publishedSha256": "1fc1cef730a8b391c51eb209532b27fb3cc805468014d4e5fd90dfcdb635fc98",
+      "reason": "Native reference imagepayload and/or private hostpath removed; original private bytes preserved; sanitized file is not an exact replayable inference request"
+    },
+    {
+      "path": "readable-token-ancestor-red.log",
+      "originalSha256": "c64f364c80413eec1c953d54fc9dbd6abd494cd93419c6ef807039ce90a4a926",
+      "publishedSha256": "0df5ee5672477df53357813b83d2445b16cb38d938ef0965e16865124bc19241",
+      "reason": "Native reference imagepayload and/or private hostpath removed; original private bytes preserved; sanitized file is not an exact replayable inference request"
+    },
+    {
+      "path": "readable-token-red.log",
+      "originalSha256": "0853edec04a3988be0e01d96221ff7aea4ff4f09adbd08823545cc800db25291",
+      "publishedSha256": "f59126826bc72b2543290b09d912ffc9daaed1240b800c0826e9c15497f84984",
+      "reason": "Native reference imagepayload and/or private hostpath removed; original private bytes preserved; sanitized file is not an exact replayable inference request"
+    },
+    {
+      "path": "readable-token-review-red.log",
+      "originalSha256": "10e680957150096ac63624701be8d748322b4f58ff69f1bf63e55d2edaa82be0",
+      "publishedSha256": "412277c2701f2d76f6a1c3e94e9b599ef6f0dd185abec1f432e888762ba0d7ed",
+      "reason": "Native reference imagepayload and/or private hostpath removed; original private bytes preserved; sanitized file is not an exact replayable inference request"
+    }
+  ]
+}

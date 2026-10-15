@@ -1,0 +1,61 @@
+{
+  "algorithm": "sha256",
+  "scope": "Exact published bytes; index excludes itself. Functional evidence does not establish visual approval.",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 26,
+      "sha256": "155348a89d5e749f50d336f8f164a39bf8415179177b36e8b51766f3ab9a16d3"
+    },
+    {
+      "path": "installed-skill.json",
+      "bytes": 9086,
+      "sha256": "e557d9d7d82549a7ad4758b68b221df2d4099c0e2b09880f20e9ae4e3ea14106"
+    },
+    {
+      "path": "layout-mode-full-tests.log",
+      "bytes": 18244,
+      "sha256": "01e72b0212ce158dcd9c82b59bdbb78ccc1b6c35adaa3b3b02ad3bd5b5af7f84"
+    },
+    {
+      "path": "layout-mode-green.log",
+      "bytes": 533,
+      "sha256": "0321455d693bcb456759fbd357bcfb7edb9c06e92e7876379c1481b06eabfb39"
+    },
+    {
+      "path": "layout-mode-red.log",
+      "bytes": 2249,
+      "sha256": "1fc1cef730a8b391c51eb209532b27fb3cc805468014d4e5fd90dfcdb635fc98"
+    },
+    {
+      "path": "readable-token-ancestor-red.log",
+      "bytes": 1832,
+      "sha256": "0df5ee5672477df53357813b83d2445b16cb38d938ef0965e16865124bc19241"
+    },
+    {
+      "path": "readable-token-final-full-tests.log",
+      "bytes": 17818,
+      "sha256": "6ef4241c375fe0b9f78d1cec9043391a9a79d28b5fda0b24fbc2a2e786477d78"
+    },
+    {
+      "path": "readable-token-red.log",
+      "bytes": 2784,
+      "sha256": "f59126826bc72b2543290b09d912ffc9daaed1240b800c0826e9c15497f84984"
+    },
+    {
+      "path": "readable-token-review-red.log",
+      "bytes": 3031,
+      "sha256": "412277c2701f2d76f6a1c3e94e9b599ef6f0dd185abec1f432e888762ba0d7ed"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2255,
+      "sha256": "2ce51918ea51009997e1ce776dfddbf9383abfe0e4a23da90e28947e49347e51"
+    },
+    {
+      "path": "redactions.json",
+      "bytes": 1689,
+      "sha256": "13da244093eff157f70a3648fcd612b896a32d495fa8b42daf231e2706c020b4"
+    }
+  ]
+}

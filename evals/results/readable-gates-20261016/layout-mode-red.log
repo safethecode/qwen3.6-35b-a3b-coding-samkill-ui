@@ -1,0 +1,58 @@
+✖ normal relationship remains mandatory while enlarged mode can use its own content reflow (527.3031ms)
+✖ mode-scoped relation does not substitute for a missing requested capture or missing normal rule (0.6774ms)
+✔ mode scopes never discard failed observations and wider declared modes still need evidence (0.7799ms)
+✔ invalid or falsy rule modes are never interpreted as unscoped coverage (0.3306ms)
+ℹ tests 4
+ℹ suites 0
+ℹ pass 2
+ℹ fail 2
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 857.9878
+
+✖ failing tests:
+
+test at test\layout-mode-scope.test.mjs:11:1
+✖ normal relationship remains mandatory while enlarged mode can use its own content reflow (527.3031ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
+  + actual - expected
+  
+    [
+      'canvas',
+  +   'paired'
+    ]
+  
+      at TestContext.<anonymous> (file:///REPOSITORY/test/layout-mode-scope.test.mjs:18:12)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: [ 'canvas', 'paired' ],
+    expected: [ 'canvas' ],
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }
+
+test at test\layout-mode-scope.test.mjs:23:1
+✖ mode-scoped relation does not substitute for a missing requested capture or missing normal rule (0.6774ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  + actual - expected
+  
+  + 'UNVERIFIED'
+  - 'PASS'
+  
+      at TestContext.<anonymous> (file:///REPOSITORY/test/layout-mode-scope.test.mjs:24:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 'UNVERIFIED',
+    expected: 'PASS',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

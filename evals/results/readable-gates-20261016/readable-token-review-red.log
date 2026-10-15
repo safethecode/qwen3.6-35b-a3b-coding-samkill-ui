@@ -1,0 +1,74 @@
+✔ readable tokens reject overflow-free fragmentation and approve real repaired text (472.2842ms)
+✔ dynamic numeric units require one actual owned token without ambiguous matches (454.0788ms)
+✔ intrinsically wider tokens remain unverified and clipping never becomes unknown or pass (401.9816ms)
+✔ readable token checks reject false owners, transforms, zoom and hidden or ambiguous subjects (556.0749ms)
+✔ readable token inspection cannot approve cropped ancestors, missing text or unsupported mixed owners (472.0065ms)
+✔ token contract fields are bounded and never accept arbitrary regex patterns (402.8688ms)
+✖ paint clipping and unsupported effects can never receive token PASS (369.0905ms)
+✖ numeric token extraction cannot narrow an interrupted amount to its trailing digits (395.3941ms)
+✖ font adjustments and pseudo typography cannot fake intrinsic fit (431.4292ms)
+ℹ tests 9
+ℹ suites 0
+ℹ pass 6
+ℹ fail 3
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 4281.1404
+
+✖ failing tests:
+
+test at test\layout-readable-token.test.mjs:88:1
+✖ paint clipping and unsupported effects can never receive token PASS (369.0905ms)
+  AssertionError [ERR_ASSERTION]: clip-path:inset(0 99% 0 0)
+  + actual - expected
+  
+  + 'PASS'
+  - 'UNVERIFIED'
+  
+      at TestContext.<anonymous> (file:///REPOSITORY/test/layout-readable-token.test.mjs:94:14)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: 'PASS',
+    expected: 'UNVERIFIED',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at test\layout-readable-token.test.mjs:103:1
+✖ numeric token extraction cannot narrow an interrupted amount to its trailing digits (395.3941ms)
+  AssertionError [ERR_ASSERTION]: 330,​800원
+  
+  'PASS' !== 'FAIL'
+  
+      at TestContext.<anonymous> (file:///REPOSITORY/test/layout-readable-token.test.mjs:109:14)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: 'PASS',
+    expected: 'FAIL',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at test\layout-readable-token.test.mjs:114:1
+✖ font adjustments and pseudo typography cannot fake intrinsic fit (431.4292ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  + actual - expected
+  
+  + 'PASS'
+  - 'UNVERIFIED'
+  
+      at TestContext.<anonymous> (file:///REPOSITORY/test/layout-readable-token.test.mjs:119:12)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 'PASS',
+    expected: 'UNVERIFIED',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

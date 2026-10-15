@@ -1,0 +1,39 @@
+✔ readable tokens reject overflow-free fragmentation and approve real repaired text (489.9647ms)
+✔ dynamic numeric units require one actual owned token without ambiguous matches (510.3601ms)
+✔ intrinsically wider tokens remain unverified and clipping never becomes unknown or pass (401.9856ms)
+✔ readable token checks reject false owners, transforms, zoom and hidden or ambiguous subjects (447.2864ms)
+✔ readable token inspection cannot approve cropped ancestors, missing text or unsupported mixed owners (419.5233ms)
+✔ token contract fields are bounded and never accept arbitrary regex patterns (427.2614ms)
+✔ paint clipping and unsupported effects can never receive token PASS (485.16ms)
+✔ numeric token extraction cannot narrow an interrupted amount to its trailing digits (478.8602ms)
+✔ font adjustments and pseudo typography cannot fake intrinsic fit (455.1382ms)
+✖ ancestor pseudo paint cannot conceal part of an otherwise owned inline token (359.3136ms)
+ℹ tests 10
+ℹ suites 0
+ℹ pass 9
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 4804.4003
+
+✖ failing tests:
+
+test at test\layout-readable-token.test.mjs:127:1
+✖ ancestor pseudo paint cannot conceal part of an otherwise owned inline token (359.3136ms)
+  AssertionError [ERR_ASSERTION]: #ancestor::first-line{color:transparent}
+  + actual - expected
+  
+  + 'PASS'
+  - 'UNVERIFIED'
+  
+      at TestContext.<anonymous> (file:///REPOSITORY/test/layout-readable-token.test.mjs:133:14)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: 'PASS',
+    expected: 'UNVERIFIED',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

@@ -1,0 +1,69 @@
+✖ readable tokens reject overflow-free fragmentation and approve real repaired text (464.1822ms)
+✖ dynamic numeric units require one actual owned token without ambiguous matches (397.4023ms)
+✖ intrinsically wider tokens remain unverified and clipping never becomes unknown or pass (380.9094ms)
+✔ readable token checks reject false owners, transforms, zoom and hidden or ambiguous subjects (538.3198ms)
+✔ readable token inspection cannot approve cropped ancestors, missing text or unsupported mixed owners (458.5176ms)
+✔ token contract fields are bounded and never accept arbitrary regex patterns (442.1849ms)
+ℹ tests 6
+ℹ suites 0
+ℹ pass 3
+ℹ fail 3
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 3012.4981
+
+✖ failing tests:
+
+test at test\layout-readable-token.test.mjs:6:1
+✖ readable tokens reject overflow-free fragmentation and approve real repaired text (464.1822ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  'FAIL' !== 'PASS'
+  
+      at TestContext.<anonymous> (file:///REPOSITORY/test/layout-readable-token.test.mjs:15:12)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 'FAIL',
+    expected: 'PASS',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at test\layout-readable-token.test.mjs:23:1
+✖ dynamic numeric units require one actual owned token without ambiguous matches (397.4023ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  'FAIL' !== 'PASS'
+  
+      at TestContext.<anonymous> (file:///REPOSITORY/test/layout-readable-token.test.mjs:30:12)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 'FAIL',
+    expected: 'PASS',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at test\layout-readable-token.test.mjs:37:1
+✖ intrinsically wider tokens remain unverified and clipping never becomes unknown or pass (380.9094ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  + actual - expected
+  
+  + 'FAIL'
+  - 'UNVERIFIED'
+  
+      at TestContext.<anonymous> (file:///REPOSITORY/test/layout-readable-token.test.mjs:43:79)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 'FAIL',
+    expected: 'UNVERIFIED',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
