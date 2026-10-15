@@ -27,9 +27,9 @@
   "rules": [
     {
       "id": "ORC-F01",
-      "applicable": true,
-      "scope": "All requested screens and states; applicability review pending",
-      "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
+      "applicable": false,
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
+      "reason": "No sidebar: a single bounded mobile canvas and one native dialog.",
       "checks": [
         "code",
         "visual"
@@ -38,9 +38,9 @@
     },
     {
       "id": "ORC-F02",
-      "applicable": true,
-      "scope": "All requested screens and states; applicability review pending",
-      "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
+      "applicable": false,
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
+      "reason": "No sidebar or sidebar-only accent region.",
       "checks": [
         "code",
         "visual"
@@ -50,8 +50,8 @@
     {
       "id": "ORC-F03",
       "applicable": true,
-      "scope": "All requested screens and states; applicability review pending",
-      "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
+      "reason": "Dark primary action and selected day use white>=600 text; direct normal/form screenshots and CSS inspected.",
       "checks": [
         "code",
         "visual"
@@ -61,8 +61,8 @@
     {
       "id": "ORC-F04",
       "applicable": true,
-      "scope": "All requested screens and states; applicability review pending",
-      "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
+      "reason": "Each category has one scoped add opener, the dialog has one submit action; their targets/states differ.",
       "checks": [
         "code",
         "visual"
@@ -71,9 +71,9 @@
     },
     {
       "id": "ORC-F05",
-      "applicable": true,
-      "scope": "All requested screens and states; applicability review pending",
-      "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
+      "applicable": false,
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
+      "reason": "Simple title/completion checklists, no visual card grid or three-attribute tabular record view.",
       "checks": [
         "code",
         "visual"
@@ -83,8 +83,8 @@
     {
       "id": "ORC-F06",
       "applicable": true,
-      "scope": "All requested screens and states; applicability review pending",
-      "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
+      "reason": "Red appears only for errors; selected/completed states remain neutral.",
       "checks": [
         "code",
         "visual"
@@ -94,8 +94,8 @@
     {
       "id": "ORC-F07",
       "applicable": true,
-      "scope": "All requested screens and states; applicability review pending",
-      "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
+      "reason": "Main/form purpose headings22px, not landing-sized32–40px.",
       "checks": [
         "code",
         "visual"
@@ -105,7 +105,7 @@
     {
       "id": "ORC-F08",
       "applicable": true,
-      "scope": "All requested screens and states; applicability review pending",
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
       "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
       "checks": [
         "code",
@@ -116,9 +116,9 @@
     },
     {
       "id": "ORC-F09",
-      "applicable": true,
-      "scope": "All requested screens and states; applicability review pending",
-      "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
+      "applicable": false,
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
+      "reason": "No multi-column layout at any width; max390px vertical mobile scope.",
       "checks": [
         "code",
         "visual"
@@ -128,7 +128,7 @@
     {
       "id": "ORC-F10",
       "applicable": true,
-      "scope": "All requested screens and states; applicability review pending",
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
       "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
       "checks": [
         "code",
@@ -139,7 +139,7 @@
     {
       "id": "ORC-F11",
       "applicable": true,
-      "scope": "All requested screens and states; applicability review pending",
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
       "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
       "checks": [
         "code",
@@ -150,7 +150,7 @@
     {
       "id": "ORC-F12",
       "applicable": true,
-      "scope": "All requested screens and states; applicability review pending",
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
       "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
       "checks": [
         "code",
@@ -161,8 +161,8 @@
     {
       "id": "ORC-F13",
       "applicable": true,
-      "scope": "All requested screens and states; applicability review pending",
-      "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
+      "reason": "Native buttons and clickable labels use pointer styling; no clickable div substitutes.",
       "checks": [
         "code",
         "visual",
@@ -173,8 +173,8 @@
     {
       "id": "ORC-F14",
       "applicable": true,
-      "scope": "All requested screens and states; applicability review pending",
-      "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
+      "reason": "Semantic header/main/section/list/label/button/form/dialog; layout/focus wrappers have concrete roles.",
       "checks": [
         "code",
         "visual"
@@ -184,7 +184,7 @@
     {
       "id": "ORC-F16",
       "applicable": true,
-      "scope": "All requested screens and states; applicability review pending",
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
       "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
       "checks": [
         "code",
@@ -196,8 +196,8 @@
     {
       "id": "ORC-F15",
       "applicable": true,
-      "scope": "All requested screens and states; applicability review pending",
-      "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
+      "reason": "Repeated groups/controls remain neutral; no rainbow tags or avatar color assignment.",
       "checks": [
         "code",
         "visual"
@@ -207,8 +207,8 @@
     {
       "id": "ORC-G01",
       "applicable": true,
-      "scope": "All requested screens and states; applicability review pending",
-      "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
+      "reason": "No gradients; white background follows explicit current guide.",
       "checks": [
         "code",
         "visual"
@@ -218,8 +218,8 @@
     {
       "id": "ORC-G02",
       "applicable": true,
-      "scope": "All requested screens and states; applicability review pending",
-      "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
+      "reason": "Shadows serve focus indication only, with no hover depth.",
       "checks": [
         "code",
         "visual"
@@ -229,8 +229,8 @@
     {
       "id": "ORC-G03",
       "applicable": true,
-      "scope": "All requested screens and states; applicability review pending",
-      "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
+      "reason": "Fields6px/action8px/dialog8px; larger radii only scoped category pills/day circles.",
       "checks": [
         "code",
         "visual"
@@ -240,8 +240,8 @@
     {
       "id": "ORC-G04",
       "applicable": true,
-      "scope": "All requested screens and states; applicability review pending",
-      "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
+      "reason": "One semantic red error family, otherwise neutral.",
       "checks": [
         "code",
         "visual"
@@ -251,8 +251,8 @@
     {
       "id": "ORC-G05",
       "applicable": true,
-      "scope": "All requested screens and states; applicability review pending",
-      "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
+      "reason": "No transform/opacity/shadow hover effects introduced.",
       "checks": [
         "code",
         "visual",
@@ -263,8 +263,8 @@
     {
       "id": "ORC-G06",
       "applicable": true,
-      "scope": "All requested screens and states; applicability review pending",
-      "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
+      "reason": "Visited document states use14/16/22px; no fourth default size after label repair.",
       "checks": [
         "code",
         "visual"
@@ -274,7 +274,7 @@
     {
       "id": "ORC-G07",
       "applicable": true,
-      "scope": "All requested screens and states; applicability review pending",
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
       "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
       "checks": [
         "code",
@@ -285,7 +285,7 @@
     {
       "id": "ORC-G08",
       "applicable": true,
-      "scope": "All requested screens and states; applicability review pending",
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
       "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
       "checks": [
         "code",
@@ -296,8 +296,8 @@
     {
       "id": "ORC-G09",
       "applicable": true,
-      "scope": "All requested screens and states; applicability review pending",
-      "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
+      "reason": "No decorative hero, illustration, KPI, divider or brand filler.",
       "checks": [
         "code",
         "visual"
@@ -306,9 +306,9 @@
     },
     {
       "id": "ORC-G10",
-      "applicable": true,
-      "scope": "All requested screens and states; applicability review pending",
-      "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
+      "applicable": false,
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
+      "reason": "No sidebar/content mood split.",
       "checks": [
         "code",
         "visual"
@@ -318,8 +318,8 @@
     {
       "id": "ORC-G11",
       "applicable": true,
-      "scope": "All requested screens and states; applicability review pending",
-      "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
+      "reason": "Dark-control text is white and>=600 in inspected states.",
       "checks": [
         "code",
         "visual"
@@ -329,8 +329,8 @@
     {
       "id": "ORC-G12",
       "applicable": true,
-      "scope": "All requested screens and states; applicability review pending",
-      "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
+      "reason": "Same scoped-action inventory as ORC-F04.",
       "checks": [
         "code",
         "visual"
@@ -339,9 +339,9 @@
     },
     {
       "id": "ORC-G13",
-      "applicable": true,
-      "scope": "All requested screens and states; applicability review pending",
-      "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
+      "applicable": false,
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
+      "reason": "No card grid for tabular data.",
       "checks": [
         "code",
         "visual"
@@ -351,8 +351,8 @@
     {
       "id": "ORC-G14",
       "applicable": true,
-      "scope": "All requested screens and states; applicability review pending",
-      "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
+      "reason": "Errors red, ordinary controls/selection neutral.",
       "checks": [
         "code",
         "visual"
@@ -362,8 +362,8 @@
     {
       "id": "ORC-G15",
       "applicable": true,
-      "scope": "All requested screens and states; applicability review pending",
-      "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
+      "reason": "Page title22px, within24px maximum.",
       "checks": [
         "code",
         "visual"
@@ -373,7 +373,7 @@
     {
       "id": "ORC-G16",
       "applicable": true,
-      "scope": "All requested screens and states; applicability review pending",
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
       "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
       "checks": [
         "code",
@@ -384,9 +384,9 @@
     },
     {
       "id": "ORC-G17",
-      "applicable": true,
-      "scope": "All requested screens and states; applicability review pending",
-      "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
+      "applicable": false,
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
+      "reason": "No multi-column dashboard.",
       "checks": [
         "code",
         "visual"
@@ -396,7 +396,7 @@
     {
       "id": "ORC-G18",
       "applicable": true,
-      "scope": "All requested screens and states; applicability review pending",
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
       "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
       "checks": [
         "code",
@@ -407,7 +407,7 @@
     {
       "id": "ORC-G19",
       "applicable": true,
-      "scope": "All requested screens and states; applicability review pending",
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
       "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
       "checks": [
         "code",
@@ -418,7 +418,7 @@
     {
       "id": "ORC-G20",
       "applicable": true,
-      "scope": "All requested screens and states; applicability review pending",
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
       "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
       "checks": [
         "code",
@@ -429,8 +429,8 @@
     {
       "id": "ORC-G21",
       "applicable": true,
-      "scope": "All requested screens and states; applicability review pending",
-      "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
+      "reason": "Same native-control/pointer inventory as ORC-F13.",
       "checks": [
         "code",
         "visual",
@@ -441,8 +441,8 @@
     {
       "id": "ORC-G22",
       "applicable": true,
-      "scope": "All requested screens and states; applicability review pending",
-      "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
+      "reason": "No decorative status/entity color cycling.",
       "checks": [
         "code",
         "visual"
@@ -452,7 +452,7 @@
     {
       "id": "ORC-G23",
       "applicable": true,
-      "scope": "All requested screens and states; applicability review pending",
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
       "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
       "checks": [
         "code",
@@ -464,8 +464,8 @@
     {
       "id": "ORC-G24",
       "applicable": true,
-      "scope": "All requested screens and states; applicability review pending",
-      "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
+      "reason": "Concrete semantic markup; wrappers own layout and field focus, not div-only navigation.",
       "checks": [
         "code",
         "visual"
@@ -475,8 +475,8 @@
     {
       "id": "ORC-A01",
       "applicable": true,
-      "scope": "All requested screens and states; applicability review pending",
-      "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
+      "reason": "Radius roles vary: pills/circles versus6px fields/8px action/dialog.",
       "checks": [
         "code",
         "visual"
@@ -486,7 +486,7 @@
     {
       "id": "ORC-A02",
       "applicable": true,
-      "scope": "All requested screens and states; applicability review pending",
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
       "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
       "checks": [
         "code",
@@ -497,7 +497,7 @@
     {
       "id": "ORC-A03",
       "applicable": true,
-      "scope": "All requested screens and states; applicability review pending",
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
       "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
       "checks": [
         "code",
@@ -508,7 +508,7 @@
     {
       "id": "ORC-A04",
       "applicable": true,
-      "scope": "All requested screens and states; applicability review pending",
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
       "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
       "checks": [
         "code",
@@ -518,9 +518,9 @@
     },
     {
       "id": "ORC-A05",
-      "applicable": true,
-      "scope": "All requested screens and states; applicability review pending",
-      "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
+      "applicable": false,
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
+      "reason": "No hero/sidebar/footer composition; mobile task rows already use asymmetric checkbox/text/action roles.",
       "checks": [
         "code",
         "visual"
@@ -529,9 +529,9 @@
     },
     {
       "id": "ORC-A06",
-      "applicable": true,
-      "scope": "All requested screens and states; applicability review pending",
-      "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
+      "applicable": false,
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
+      "reason": "No Korean commerce catalogue price/rating/seller fields; actual task metadata is preserved and no filler is added.",
       "checks": [
         "code",
         "visual"
@@ -541,8 +541,8 @@
     {
       "id": "ORC-A07",
       "applicable": true,
-      "scope": "All requested screens and states; applicability review pending",
-      "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
+      "reason": "The row now uses official Trash2 rather than X, but add/delete still have no visible text labels. Accessible names and correct icons do not satisfy this catalog rule requiring visible labels. Keep FAIL; no exception or weakened check is declared.",
       "checks": [
         "code",
         "visual"
@@ -551,9 +551,9 @@
     },
     {
       "id": "ORC-A08",
-      "applicable": true,
-      "scope": "All requested screens and states; applicability review pending",
-      "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
+      "applicable": false,
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
+      "reason": "No photographic or illustration content required; only licensed local font and official functional icons.",
       "checks": [
         "code",
         "visual"
@@ -562,9 +562,9 @@
     },
     {
       "id": "ORC-A09",
-      "applicable": true,
-      "scope": "All requested screens and states; applicability review pending",
-      "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
+      "applicable": false,
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
+      "reason": "No card grid.",
       "checks": [
         "code",
         "visual"
@@ -574,7 +574,7 @@
     {
       "id": "ORC-A10",
       "applicable": true,
-      "scope": "All requested screens and states; applicability review pending",
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
       "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
       "checks": [
         "code",
@@ -586,7 +586,7 @@
     {
       "id": "RUI-01",
       "applicable": true,
-      "scope": "All requested screens and states; applicability review pending",
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
       "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
       "checks": [
         "spec"
@@ -596,7 +596,7 @@
     {
       "id": "RUI-02",
       "applicable": true,
-      "scope": "All requested screens and states; applicability review pending",
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
       "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
       "checks": [
         "code"
@@ -606,7 +606,7 @@
     {
       "id": "RUI-03",
       "applicable": true,
-      "scope": "All requested screens and states; applicability review pending",
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
       "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
       "checks": [
         "spec"
@@ -616,8 +616,8 @@
     {
       "id": "RUI-04",
       "applicable": true,
-      "scope": "All requested screens and states; applicability review pending",
-      "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
+      "reason": "73 actual workflow assertions plus15 store cases and2 browser read-recovery transitions pass. Failed initial reads preserve disk/input, do not show a confirmed-empty claim, and recover on explicit successful reload. Ordinary write retries remain exercised. Native storage-property access policies are outside this scoped result.",
       "checks": [
         "spec",
         "interaction"
@@ -627,7 +627,7 @@
     {
       "id": "RUI-05",
       "applicable": true,
-      "scope": "All requested screens and states; applicability review pending",
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
       "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
       "checks": [
         "spec",
@@ -638,7 +638,7 @@
     {
       "id": "RUI-06",
       "applicable": true,
-      "scope": "All requested screens and states; applicability review pending",
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
       "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
       "checks": [
         "code"
@@ -648,7 +648,7 @@
     {
       "id": "RUI-07",
       "applicable": true,
-      "scope": "All requested screens and states; applicability review pending",
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
       "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
       "checks": [
         "spec",
@@ -659,8 +659,8 @@
     {
       "id": "RUI-08",
       "applicable": true,
-      "scope": "All requested screens and states; applicability review pending",
-      "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
+      "reason": "No invented logo/wordmark/slogan; the date heading is functional.",
       "checks": [
         "spec",
         "code",
@@ -671,7 +671,7 @@
     {
       "id": "RUI-09",
       "applicable": true,
-      "scope": "All requested screens and states; applicability review pending",
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
       "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
       "checks": [
         "code",
@@ -682,8 +682,8 @@
     {
       "id": "RUI-10",
       "applicable": true,
-      "scope": "All requested screens and states; applicability review pending",
-      "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
+      "reason": "Category add controls and full-width form submission have distinct roles; no CTA styled as a filter.",
       "checks": [
         "spec",
         "visual"
@@ -693,8 +693,8 @@
     {
       "id": "RUI-11",
       "applicable": true,
-      "scope": "All requested screens and states; applicability review pending",
-      "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
+      "reason": "No demo notices, slogans or unrelated helper copy in product UI.",
       "checks": [
         "spec",
         "visual"
@@ -704,8 +704,8 @@
     {
       "id": "RUI-12",
       "applicable": true,
-      "scope": "All requested screens and states; applicability review pending",
-      "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
+      "reason": "Official Lucide Plus and Trash2-neutral source, geometry/license/manifest verified. Trash2 denotes actual removal, is visibly rendered at20px in a44px target, has a task-specific accessible name and passed actual edge deletion/focus/reload checks. Original X asset remains unused historical material.",
       "checks": [
         "code",
         "visual"
@@ -715,7 +715,7 @@
     {
       "id": "RUI-13",
       "applicable": true,
-      "scope": "All requested screens and states; applicability review pending",
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
       "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
       "checks": [
         "code",
@@ -727,8 +727,8 @@
     {
       "id": "RUI-14",
       "applicable": true,
-      "scope": "All requested screens and states; applicability review pending",
-      "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
+      "reason": "No section bars/tab underlines/hr; borders/rings only native fields and focus.",
       "checks": [
         "code",
         "visual"
@@ -737,9 +737,9 @@
     },
     {
       "id": "RUI-15",
-      "applicable": true,
-      "scope": "All requested screens and states; applicability review pending",
-      "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
+      "applicable": false,
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
+      "reason": "No chat/composer or competing list/chat tasks.",
       "checks": [
         "spec",
         "visual",
@@ -750,7 +750,7 @@
     {
       "id": "RUI-16",
       "applicable": true,
-      "scope": "All requested screens and states; applicability review pending",
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
       "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
       "checks": [
         "spec",
@@ -761,7 +761,7 @@
     {
       "id": "RUI-17",
       "applicable": true,
-      "scope": "All requested screens and states; applicability review pending",
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
       "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
       "checks": [
         "spec",
@@ -772,7 +772,7 @@
     {
       "id": "RUI-18",
       "applicable": true,
-      "scope": "All requested screens and states; applicability review pending",
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
       "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
       "checks": [
         "spec",
@@ -782,9 +782,9 @@
     },
     {
       "id": "RUI-19",
-      "applicable": true,
-      "scope": "All requested screens and states; applicability review pending",
-      "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
+      "applicable": false,
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
+      "reason": "No destination tabs; week buttons are date filtering, not page destinations.",
       "checks": [
         "spec",
         "code",
@@ -796,8 +796,8 @@
     {
       "id": "RUI-20",
       "applicable": true,
-      "scope": "All requested screens and states; applicability review pending",
-      "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
+      "reason": "Form purpose heading22/700 remains distinct from14px labels and16px values.",
       "checks": [
         "code",
         "visual"
@@ -807,7 +807,7 @@
     {
       "id": "RUI-21",
       "applicable": true,
-      "scope": "All requested screens and states; applicability review pending",
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
       "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
       "checks": [
         "code",
@@ -819,7 +819,7 @@
     {
       "id": "RUI-22",
       "applicable": true,
-      "scope": "All requested screens and states; applicability review pending",
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
       "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
       "checks": [
         "code",
@@ -830,7 +830,7 @@
     {
       "id": "RUI-23",
       "applicable": true,
-      "scope": "All requested screens and states; applicability review pending",
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
       "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
       "checks": [
         "spec",
@@ -842,8 +842,8 @@
     {
       "id": "RUI-24",
       "applicable": true,
-      "scope": "All requested screens and states; applicability review pending",
-      "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
+      "reason": "Heading sets selected-day context; date buttons select that context. No decorative duplicate badges/counts.",
       "checks": [
         "spec",
         "visual"
@@ -853,8 +853,8 @@
     {
       "id": "RUI-25",
       "applicable": true,
-      "scope": "All requested screens and states; applicability review pending",
-      "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
+      "reason": "Category titles/space and native modal distinguish tasks; no forced cardification of all regions.",
       "checks": [
         "spec",
         "visual"
@@ -864,7 +864,7 @@
     {
       "id": "PROJECT-GUIDE-design-md",
       "applicable": true,
-      "scope": "All requested screens and states; applicability review pending",
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
       "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
       "checks": [
         "spec"
@@ -873,9 +873,9 @@
     },
     {
       "id": "PROJECT-GUIDE-onboarding-flow",
-      "applicable": true,
-      "scope": "All requested screens and states; applicability review pending",
-      "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
+      "applicable": false,
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
+      "reason": "No signup/onboarding/consent flow is requested in this personal task planner.",
       "checks": [
         "spec",
         "interaction"
@@ -885,7 +885,7 @@
     {
       "id": "PROJECT-GUIDE-reference-decompose",
       "applicable": true,
-      "scope": "All requested screens and states; applicability review pending",
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
       "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
       "checks": [
         "spec",
@@ -896,7 +896,7 @@
     {
       "id": "PROJECT-GUIDE-reference-review",
       "applicable": true,
-      "scope": "All requested screens and states; applicability review pending",
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
       "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
       "checks": [
         "spec",
@@ -909,7 +909,7 @@
     {
       "id": "PROJECT-GUIDE-reference-to-ui",
       "applicable": true,
-      "scope": "All requested screens and states; applicability review pending",
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
       "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
       "checks": [
         "spec",
@@ -922,7 +922,7 @@
     {
       "id": "PROJECT-GUIDE-samkill-ui",
       "applicable": true,
-      "scope": "All requested screens and states; applicability review pending",
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
       "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
       "checks": [
         "spec",
@@ -935,7 +935,7 @@
     {
       "id": "PROJECT-GUIDE-uibowl-research",
       "applicable": true,
-      "scope": "All requested screens and states; applicability review pending",
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
       "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
       "checks": [
         "spec",
@@ -946,10 +946,35 @@
     {
       "id": "PROJECT-GUIDE-ux-copy",
       "applicable": true,
-      "scope": "All requested screens and states; applicability review pending",
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
       "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
       "checks": [
         "spec",
+        "visual",
+        "interaction"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "PROJECT-LONG-ACTION-OWNERSHIP",
+      "applicable": true,
+      "scope": "Wrapped task rows at296px/200% text",
+      "reason": "All visible short/120-character task rows keep checkbox and delete centered within2px of the first line at296/320/390/1440 in normal,200%text and separate text-spacing modes. Official44px delete target and44px capsule verified. Direct296px enlarged screenshot inspected.",
+      "checks": [
+        "spec",
+        "code",
+        "visual"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "PROJECT-INITIAL-READ-INTEGRITY",
+      "applicable": true,
+      "scope": "Planner malformed/denied initial reads, attempted create, read restored and explicit reload; ordinary write retries",
+      "reason": "Read failure is unknown data. A new create must not overwrite unreadable original storage or show confirmed empty UI.",
+      "checks": [
+        "spec",
+        "code",
         "visual",
         "interaction"
       ],

@@ -1,0 +1,9 @@
+{
+  "status": "INCOMPLETE_REFERENCE_PARITY",
+  "source": "refinement/source",
+  "summary": "refinement/summary.json",
+  "workflow": "refinement/storage-recovery/verified-workflow/report.json",
+  "catalog": "refinement/catalog-check.json",
+  "historicalSource": "final/source",
+  "assisted": true
+}

@@ -74,5 +74,20 @@
   "initialReadRecovery": {
     "passed": 2,
     "failed": 0
+  },
+  "catalog": {
+    "status": "UNVERIFIED",
+    "exitCode": 2,
+    "scopedPass": 33,
+    "notApplicable": 14,
+    "unknown": 37,
+    "fail": 1,
+    "failedIds": [
+      "ORC-A07"
+    ],
+    "entries": 85,
+    "originalRules": 75,
+    "guides": 8,
+    "projectRules": 2
   }
 }
