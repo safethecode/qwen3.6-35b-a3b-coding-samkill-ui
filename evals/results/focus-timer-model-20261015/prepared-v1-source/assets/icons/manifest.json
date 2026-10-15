@@ -1,0 +1,38 @@
+{
+  "package": "lucide",
+  "version": "1.51.0",
+  "source": "https://github.com/lucide-icons/lucide",
+  "licenseSha256": "b495047bd93a9b06913511076f504daba17d5bbeb3e0650f3bb53a4220329c57",
+  "icons": [
+    {
+      "name": "Play",
+      "file": "Play.svg",
+      "sha256": "6f226a46d36157e64ebb7eb72223efd8461212078bea69e663ecc1c794a8383b",
+      "geometrySha256": "10b9085906809cb4c344abce46267995a0cc682b396deffe35091ce99dbd3254"
+    },
+    {
+      "name": "Pause",
+      "file": "Pause.svg",
+      "sha256": "f84f5fbe8f3bf37a4d4545ef8c0851e3d22a0b4de89cf6ec6561c2187705a777",
+      "geometrySha256": "c54db0a28f0cdbe0136f109724e26c5d4880771fe6a0418799216d1c04187d7f"
+    },
+    {
+      "name": "Play",
+      "variant": "light",
+      "fill": "none",
+      "stroke": "#ffffff",
+      "file": "Play-light.svg",
+      "sha256": "7da2c2f42f06511a84c2eef0cd760e054922d83f36438b1440e0ec12aee56deb",
+      "geometrySha256": "10b9085906809cb4c344abce46267995a0cc682b396deffe35091ce99dbd3254"
+    },
+    {
+      "name": "Pause",
+      "variant": "light",
+      "fill": "none",
+      "stroke": "#ffffff",
+      "file": "Pause-light.svg",
+      "sha256": "709366e7faae5e637d9e4bbda6ab1156bcb8ac7d132bbd97a240fe142969db7a",
+      "geometrySha256": "c54db0a28f0cdbe0136f109724e26c5d4880771fe6a0418799216d1c04187d7f"
+    }
+  ]
+}

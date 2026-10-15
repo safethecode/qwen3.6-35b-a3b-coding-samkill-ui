@@ -1,0 +1,18 @@
+{
+  "elapsedMs": 46871,
+  "model": "qwen3.6:35b-a3b-coding",
+  "created_at": "2026-10-15T13:35:41.2410296Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\n  \"code\": \"const eventKeys = Object.keys(event); const type = event.type; if (event === null || typeof event !== 'object' || Object.getPrototypeOf(event) !== Object.prototype) return { ok: false, error: 'INVALID_TRANSITION' }; if (eventKeys.length === 0) return { ok: false, error: 'INVALID_TRANSITION' }; if (type === 'CONFIGURE') { if (eventKeys.length !== 2 || !eventKeys.includes('type') || !eventKeys.includes('minutes')) return { ok: false, error: 'INVALID_TRANSITION' }; const minutes = event.minutes; if (typeof minutes !== 'number' || !Number.isInteger(minutes) || minutes < 1 || minutes > 180) return { ok: false, error: 'INVALID_TRANSITION' }; const newRecord = { version: 1, durationMinutes: minutes, phase: 'ready', remainingMs: minutes * 60000, runStartedAt: null, deadlineAt: null }; return { ok: true, record: newRecord }; } if (type === 'START') { if (eventKeys.length !== 1) return { ok: false, error: 'INVALID_TRANSITION' }; if (record.phase !== 'ready') return { ok: false, error: 'INVALID_TRANSITION' }; const now = Date.now(); const newRecord = { version: record.version + 1, durationMinutes: record.durationMinutes, phase: 'running', remainingMs: record.remainingMs, runStartedAt: now, deadlineAt: now + record.remainingMs }; return { ok: true, record: newRecord }; } if (type === 'PAUSE') { if (eventKeys.length !== 1) return { ok: false, error: 'INVALID_TRANSITION' }; if (record.phase !== 'running') return { ok: false, error: 'INVALID_TRANSITION' }; const now = Date.now(); const newRemaining = Math.max(0, record.deadlineAt - now); if (newRemaining <= 0) return { ok: false, error: 'INVALID_TRANSITION' }; const newRecord = { version: record.version + 1, durationMinutes: record.durationMinutes, phase: 'paused', remainingMs: newRemaining, runStartedAt: null, deadlineAt: null }; return { ok: true, record: newRecord }; } if (type === 'RESUME') { if (eventKeys.length !== 1) return { ok: false, error: 'INVALID_TRANSITION' }; if (record.phase !== 'paused') return { ok: false, error: 'INVALID_TRANSITION' }; const now = Date.now(); const newRecord = { version: record.version + 1, durationMinutes: record.durationMinutes, phase: 'running', remainingMs: record.remainingMs, runStartedAt: now, deadlineAt: now + record.remainingMs }; return { ok: true, record: newRecord }; } if (type === 'RESET') { if (eventKeys.length !== 1) return { ok: false, error: 'INVALID_TRANSITION' }; const newRecord = { version: record.version + 1, durationMinutes: record.durationMinutes, phase: 'ready', remainingMs: record.durationMinutes * 60000, runStartedAt: null, deadlineAt: null }; return { ok: true, record: newRecord }; } return { ok: false, error: 'INVALID_TRANSITION' };\"\n}"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 46865645800,
+  "load_duration": 8754300,
+  "prompt_eval_count": 2214,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration": 22240821000,
+  "eval_count": 730,
+  "eval_duration": 24443983000
+}

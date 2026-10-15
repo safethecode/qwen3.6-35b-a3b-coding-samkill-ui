@@ -1,0 +1,179 @@
+{
+  "status": "SCOPED_MODEL_RECOVERY_ONLY_NOT_UI_APPROVAL",
+  "model": "qwen3.6:35b-a3b-coding",
+  "backend": "Ollama0.40.0",
+  "initial": {
+    "elapsedMs": 176309,
+    "think": false,
+    "promptTokens": 7649,
+    "outputTokens": 1800,
+    "pass": 6,
+    "total": 10
+  },
+  "stages": [
+    {
+      "stage": "event-conditions",
+      "status": "GUARDS_APPLIED_MODEL_FAILURES_REMAIN",
+      "think": false,
+      "elapsedMs": 5426,
+      "promptTokens": 311,
+      "outputTokens": 64,
+      "checks": {
+        "pass": 10,
+        "total": 14
+      }
+    },
+    {
+      "stage": "repair-snapshot",
+      "status": "REPAIR_APPLIED_OTHER_MODEL_FAILURES_REMAIN",
+      "think": false,
+      "elapsedMs": 30992,
+      "promptTokens": 2425,
+      "outputTokens": 225,
+      "checks": {
+        "pass": 9,
+        "total": 13
+      }
+    },
+    {
+      "stage": "repair-transition",
+      "status": "REPAIR_APPLIED_OTHER_MODEL_FAILURES_REMAIN",
+      "think": false,
+      "elapsedMs": 69106,
+      "promptTokens": 3273,
+      "outputTokens": 975,
+      "checks": {
+        "pass": 9,
+        "total": 13
+      }
+    },
+    {
+      "stage": "repair-validateRecord",
+      "status": "REPAIR_APPLIED_OTHER_MODEL_FAILURES_REMAIN",
+      "think": false,
+      "elapsedMs": 41474,
+      "promptTokens": 2593,
+      "outputTokens": 444,
+      "checks": {
+        "pass": 7,
+        "total": 10
+      }
+    },
+    {
+      "stage": "repair-validateRecord-bounds",
+      "status": "REPAIR_APPLIED_OTHER_MODEL_FAILURES_REMAIN",
+      "think": false,
+      "elapsedMs": 60073,
+      "promptTokens": 2663,
+      "outputTokens": 466,
+      "checks": {
+        "pass": 8,
+        "total": 13
+      }
+    },
+    {
+      "stage": "slot-CONFIGURE",
+      "status": "SLOT_APPLIED_MODEL_FAILURES_REMAIN",
+      "think": false,
+      "elapsedMs": 28227,
+      "promptTokens": 2268,
+      "outputTokens": 165,
+      "checks": {
+        "pass": 9,
+        "total": 14
+      }
+    },
+    {
+      "stage": "slot-CONFIGURE-thinking",
+      "status": "FAILED_STATEMENT_SLOT",
+      "think": true,
+      "elapsedMs": 86424,
+      "promptTokens": 2335,
+      "outputTokens": 1649,
+      "checks": null
+    },
+    {
+      "stage": "slot-event-validation",
+      "status": "FAILED_STATEMENT_SLOT",
+      "think": false,
+      "elapsedMs": 46871,
+      "promptTokens": 2214,
+      "outputTokens": 730,
+      "checks": null
+    },
+    {
+      "stage": "slot-START-block",
+      "status": "FAILED_STATEMENT_SLOT",
+      "think": true,
+      "elapsedMs": 100664,
+      "promptTokens": 2324,
+      "outputTokens": 2048,
+      "checks": null
+    },
+    {
+      "stage": "transition-expressions",
+      "status": "EXPRESSIONS_APPLIED_MODEL_FAILURES_REMAIN",
+      "think": false,
+      "elapsedMs": 5629,
+      "promptTokens": 286,
+      "outputTokens": 86,
+      "checks": {
+        "pass": 10,
+        "total": 14
+      }
+    },
+    {
+      "stage": "transition-expressions-budget",
+      "status": "SCOPED_UNIT_ACCEPTED_NOT_PRODUCT_APPROVAL",
+      "think": true,
+      "elapsedMs": 114992,
+      "promptTokens": 334,
+      "outputTokens": 3223,
+      "checks": {
+        "pass": 14,
+        "total": 14
+      }
+    },
+    {
+      "stage": "transition-expressions-thinking",
+      "status": "FAILED_EXPRESSION_REPAIR",
+      "think": true,
+      "elapsedMs": 56404,
+      "promptTokens": 334,
+      "outputTokens": 1536,
+      "checks": null
+    }
+  ],
+  "finalModuleSha256": "e2c419e8dd80ecf538a9f5b45c12eb406b09ed472eade261a1b30e6029942f20",
+  "finalReceipt": "unit-model/accepted.json",
+  "sourceHashes": {
+    "index.html": "197ad40eeb6e605669ba203ddbec355e873ae1d5d260579e86746de9c98eafe7",
+    "styles.css": "23967c6e9a2679b40441ceb5c4859f79164da59394f8d9f7a7c8eb11a2963919",
+    "DESIGN.md": "cdd4858bfcae1efefaaf14d1ff80a84d99ee7809b96b4b98126e858dc7909f3d",
+    "REFERENCE.md": "f6befe514a9a38d48884a9697c614877ddd0d006f9d6320304981056907766c0",
+    "assets/fonts/METADATA.pb": "9b8b27c0dd1adbb0057d1fbe9534207ab3606114ace6755453d14668912471a1",
+    "assets/fonts/NotoSansKR.ttf": "194018e6b2b293a7964f037b25c0249ce1418bc9ab3c971060a03aa57861e252",
+    "assets/fonts/OFL.txt": "1c05c68c34f9708415aada51f17e1b0092d2cea709bf4a94cd38114f9e73d7d9",
+    "assets/icons/LICENSE": "b495047bd93a9b06913511076f504daba17d5bbeb3e0650f3bb53a4220329c57",
+    "assets/icons/Pause-light.svg": "709366e7faae5e637d9e4bbda6ab1156bcb8ac7d132bbd97a240fe142969db7a",
+    "assets/icons/Pause.svg": "f84f5fbe8f3bf37a4d4545ef8c0851e3d22a0b4de89cf6ec6561c2187705a777",
+    "assets/icons/Play-light.svg": "7da2c2f42f06511a84c2eef0cd760e054922d83f36438b1440e0ec12aee56deb",
+    "assets/icons/Play.svg": "6f226a46d36157e64ebb7eb72223efd8461212078bea69e663ecc1c794a8383b",
+    "assets/icons/manifest.json": "69b94327458ede12e4505e2315d628931c0f0f61fe2af14758ebcda1295edcd7",
+    "design/typography.json": "875fcd1503a54544e5341872e1ebaea879fbe45039b363ab469d6f31ed875d59",
+    "design/component-plan.json": "a809f5d991a4bf7920711e1b964bc67b80f22e09d6d98c91ec5bff33b5c25d86",
+    "design/layout-contract.json": "a0e28dcfebeecb71b95957bba3e6551af90aa139b502867ff76a67dba807169c",
+    "copy.js": "b71199531ddaf6aebde7b61d9baa9c86e053b1e6b1f060660307b3d352259d1d",
+    "model.js": "e2c419e8dd80ecf538a9f5b45c12eb406b09ed472eade261a1b30e6029942f20",
+    "sample-actions.html": "f9829ea91beb8f0d99c4667e630142ee3f791c9a3db90db11d77cd238d7d2b1d",
+    "sample-config.html": "a73ed0d53cd3aa200fd2e650264b2cf6a11965e960b26a5d458032644ecf7941",
+    "sample-timer.html": "31fbc66ab3be017bbf7149d87feece91e60d8ad60e4775f0ee8ae8cc05890caa"
+  },
+  "assistance": "Host-fixed full semantic scaffold,contracts/copy/assets/tests,diagnosed errors,corrected contradictory count/unquoted branch example,AST function/statement/guard boundaries and one explicitly disclosed unmatched-delimiter trim. Actual local Qwen wrote all model logic. Not independent unattended generation or a controlled thinking A/B.",
+  "limits": [
+    "Strict JSON-shaped record/duration/clock/transitions covered by named cases;symbols,proxies,throwing accessors and adversarial prototype modification not certified.",
+    "Store,renderer,controller,componentCSS,complete renderedUI,direct referencequality,full75/eightguide catalog,native device/background/AT and representative parity remain unfinished.",
+    "Frozen source UI-STATUS says initial unimplemented;retained as exact input marker,not current project status. Model source added later;this README/receipts describe stage.",
+    "Research images include rejected irrelevant results;no timer behavior inferred from them. Main reference dark stopwatch to white countdown is a chosen adaptation."
+  ]
+}

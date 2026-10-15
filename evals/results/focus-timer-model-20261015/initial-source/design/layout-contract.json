@@ -1,0 +1,116 @@
+{
+  "rules": [
+    {
+      "id": "bounded-mobile",
+      "kind": "maxWidth",
+      "subject": ".focus-screen",
+      "maximum": 390
+    },
+    {
+      "id": "actions-after-timer",
+      "kind": "below",
+      "subject": "[data-ui-unit=\"actions\"]",
+      "reference": "[data-ui-unit=\"timer\"]",
+      "minGap": 32
+    },
+    {
+      "id": "minutes-owner",
+      "kind": "contained",
+      "subject": "#minutes",
+      "container": ".time-pair:first-child",
+      "states": [
+        "ready",
+        "running",
+        "paused",
+        "config",
+        "config-invalid",
+        "config-write-error",
+        "config-restored-running"
+      ]
+    },
+    {
+      "id": "seconds-owner",
+      "kind": "contained",
+      "subject": "#seconds",
+      "container": ".time-pair:last-child",
+      "states": [
+        "ready",
+        "running",
+        "paused",
+        "config",
+        "config-invalid",
+        "config-write-error",
+        "config-restored-running"
+      ]
+    },
+    {
+      "id": "single-completed-outcome",
+      "kind": "typeHierarchy",
+      "subject": "#completed-title",
+      "reference": "#completed-duration",
+      "minSizeDifference": 6,
+      "states": [
+        "completed",
+        "completed-config"
+      ]
+    },
+    {
+      "id": "config-input-owner",
+      "kind": "contained",
+      "subject": "#duration-input",
+      "container": "#duration-form",
+      "states": [
+        "config",
+        "config-invalid",
+        "config-write-error",
+        "config-read-error",
+        "config-restored-running",
+        "completed-config"
+      ]
+    },
+    {
+      "id": "config-apply-owner",
+      "kind": "contained",
+      "subject": "#apply-duration",
+      "container": "#duration-form",
+      "states": [
+        "config",
+        "config-invalid",
+        "config-write-error",
+        "config-read-error",
+        "config-restored-running",
+        "completed-config"
+      ]
+    },
+    {
+      "id": "config-form-after-heading",
+      "kind": "below",
+      "subject": "#duration-form",
+      "reference": ".config-heading",
+      "minGap": 24,
+      "states": [
+        "config",
+        "config-invalid",
+        "config-write-error",
+        "config-read-error",
+        "config-restored-running",
+        "completed-config"
+      ]
+    },
+    {
+      "id": "config-title-hierarchy",
+      "kind": "typeHierarchy",
+      "subject": "#duration-title",
+      "reference": "label[for=\"duration-input\"]",
+      "minSizeDifference": 6,
+      "states": [
+        "config",
+        "config-invalid",
+        "config-write-error",
+        "config-read-error",
+        "config-restored-running",
+        "completed-config"
+      ]
+    }
+  ]
+}

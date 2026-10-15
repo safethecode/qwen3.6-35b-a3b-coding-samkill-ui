@@ -1,0 +1,5 @@
+# Native reference scope
+
+R-FOCUS-A: ../reference-0.jpg and ../research.json;TodoMate dark stopwatch-like idle readout and compact primary start. Dominant data/quiet space/action ordering adopted;white canvas,two minute/second pairs and focus countdown are deliberate new-product choices. No inference that original uses a countdown or these interactions. Decorative rules,session title and unknown return destination not copied. Standalone root screen has no invented back link;configuration has real cancel/Escape/return focus.
+
+R-CONFIG-A/B: ../config-reference-0.jpg and ../config-reference-1.jpg,with ../config-research.json. Numeric/unit association and separate sheet confirmation hierarchy adopted. A native whole-minutes number field is chosen;workout/AM-PM/fasting controls are not copied. Original CSS/DPR/font/native expanded selection/pause/completion/storage remain unknown. Additional fresh focused query0then3unrelated screens rejected,not adopted: ../additional-research/research.json. Original brief/drafts retained outside source;this is new product/transfer input,not exact reproduction.

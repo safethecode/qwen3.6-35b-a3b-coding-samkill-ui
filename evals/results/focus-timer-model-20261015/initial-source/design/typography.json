@@ -1,0 +1,253 @@
+{
+  "roles": [
+    {
+      "selector": "body *",
+      "families": [
+        "Noto Sans KR Thin"
+      ],
+      "requireCustomFont": true
+    },
+    {
+      "selector": "#screen-title",
+      "families": [
+        "Noto Sans KR Thin"
+      ],
+      "requireCustomFont": true,
+      "fontSizePx": 22,
+      "fontWeight": 700,
+      "lineHeightRatio": 1.5,
+      "states": [
+        "ready",
+        "running",
+        "paused",
+        "read-error",
+        "config",
+        "config-invalid",
+        "config-write-error",
+        "config-read-error",
+        "config-restored-running"
+      ]
+    },
+    {
+      "selector": ".time-number",
+      "families": [
+        "Noto Sans KR Thin"
+      ],
+      "requireCustomFont": true,
+      "fontSizePx": 56,
+      "fontWeight": 700,
+      "lineHeightRatio": 1.2,
+      "states": [
+        "ready",
+        "running",
+        "paused",
+        "config",
+        "config-invalid",
+        "config-write-error",
+        "config-restored-running"
+      ]
+    },
+    {
+      "selector": ".time-unit",
+      "families": [
+        "Noto Sans KR Thin"
+      ],
+      "requireCustomFont": true,
+      "fontSizePx": 16,
+      "fontWeight": 500,
+      "lineHeightRatio": 1.5,
+      "states": [
+        "ready",
+        "running",
+        "paused",
+        "config",
+        "config-invalid",
+        "config-write-error",
+        "config-restored-running"
+      ]
+    },
+    {
+      "selector": "#primary-label",
+      "families": [
+        "Noto Sans KR Thin"
+      ],
+      "requireCustomFont": true,
+      "fontSizePx": 16,
+      "fontWeight": 600,
+      "lineHeightRatio": 1.5
+    },
+    {
+      "selector": "#configure-duration",
+      "families": [
+        "Noto Sans KR Thin"
+      ],
+      "requireCustomFont": true,
+      "fontSizePx": 16,
+      "fontWeight": 600,
+      "lineHeightRatio": 1.5,
+      "states": [
+        "ready",
+        "completed",
+        "read-error",
+        "config",
+        "config-invalid",
+        "config-write-error",
+        "config-read-error",
+        "completed-config"
+      ]
+    },
+    {
+      "selector": "#reset-session",
+      "families": [
+        "Noto Sans KR Thin"
+      ],
+      "requireCustomFont": true,
+      "fontSizePx": 16,
+      "fontWeight": 600,
+      "lineHeightRatio": 1.5,
+      "states": [
+        "running",
+        "paused",
+        "config-restored-running"
+      ]
+    },
+    {
+      "selector": "#completed-title",
+      "families": [
+        "Noto Sans KR Thin"
+      ],
+      "requireCustomFont": true,
+      "fontSizePx": 22,
+      "fontWeight": 700,
+      "lineHeightRatio": 1.5,
+      "states": [
+        "completed",
+        "completed-config"
+      ]
+    },
+    {
+      "selector": "#completed-duration",
+      "families": [
+        "Noto Sans KR Thin"
+      ],
+      "requireCustomFont": true,
+      "fontSizePx": 16,
+      "fontWeight": 500,
+      "lineHeightRatio": 1.5,
+      "states": [
+        "completed",
+        "completed-config"
+      ]
+    },
+    {
+      "selector": "#unknown-time",
+      "families": [
+        "Noto Sans KR Thin"
+      ],
+      "requireCustomFont": true,
+      "fontSizePx": 56,
+      "fontWeight": 700,
+      "lineHeightRatio": 1.2,
+      "states": [
+        "read-error",
+        "config-read-error"
+      ]
+    },
+    {
+      "selector": "#paused-status",
+      "families": [
+        "Noto Sans KR Thin"
+      ],
+      "requireCustomFont": true,
+      "fontSizePx": 16,
+      "fontWeight": 600,
+      "lineHeightRatio": 1.5,
+      "states": [
+        "paused"
+      ]
+    },
+    {
+      "selector": "#duration-title",
+      "families": [
+        "Noto Sans KR Thin"
+      ],
+      "requireCustomFont": true,
+      "fontSizePx": 22,
+      "fontWeight": 700,
+      "lineHeightRatio": 1.5,
+      "states": [
+        "config",
+        "config-invalid",
+        "config-write-error",
+        "config-read-error",
+        "config-restored-running",
+        "completed-config"
+      ]
+    },
+    {
+      "selector": "label[for=\"duration-input\"]",
+      "families": [
+        "Noto Sans KR Thin"
+      ],
+      "requireCustomFont": true,
+      "fontSizePx": 16,
+      "fontWeight": 600,
+      "lineHeightRatio": 1.5,
+      "states": [
+        "config",
+        "config-invalid",
+        "config-write-error",
+        "config-read-error",
+        "config-restored-running",
+        "completed-config"
+      ]
+    },
+    {
+      "selector": "#duration-input",
+      "families": [
+        "Noto Sans KR Thin"
+      ],
+      "requireCustomFont": true,
+      "fontSizePx": 16,
+      "fontWeight": 500,
+      "lineHeightRatio": 1.5,
+      "states": [
+        "config",
+        "config-invalid",
+        "config-write-error",
+        "config-read-error",
+        "config-restored-running",
+        "completed-config"
+      ]
+    },
+    {
+      "selector": "#cancel-duration,#apply-duration",
+      "families": [
+        "Noto Sans KR Thin"
+      ],
+      "requireCustomFont": true,
+      "fontSizePx": 16,
+      "fontWeight": 600,
+      "lineHeightRatio": 1.5,
+      "states": [
+        "config",
+        "config-invalid",
+        "config-write-error",
+        "config-read-error",
+        "config-restored-running",
+        "completed-config"
+      ]
+    }
+  ],
+  "cssFamily": "Noto Sans KR",
+  "localFont": {
+    "sha256": "194018e6b2b293a7964f037b25c0249ce1418bc9ab3c971060a03aa57861e252",
+    "weight": "100 900",
+    "source": "https://raw.githubusercontent.com/google/fonts/b38c5c93af322c45f633e17ac440ec1e6c94d489/ofl/notosanskr/NotoSansKR%5Bwght%5D.ttf",
+    "asset": "assets/fonts/NotoSansKR.ttf",
+    "family": "Noto Sans KR",
+    "license": "assets/fonts/OFL.txt"
+  },
+  "scope": "Every declared role is frozen before generation. Browser caller must filter by actual declared state and visit the complete matrix;hidden roles are not silently approved. Probe actual Korean/Latin/numeric/custom font. Error role metrics are tested in reachable actual error captures.",
+  "exactRoleOrigin": "New product chosen CSS sizes16/22/56 and documented weights/line heights before generation;not recovered reference CSS.16px secondary/unit/error/field text replaces14px draft without shrinking and keeps three default sizes."
+}

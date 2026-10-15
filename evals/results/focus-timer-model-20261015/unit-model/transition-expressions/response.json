@@ -1,0 +1,18 @@
+{
+  "elapsedMs": 5629,
+  "model": "qwen3.6:35b-a3b-coding",
+  "created_at": "2026-10-15T13:45:37.2376303Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\n  \"startInvalid\": \"record.phase !== 'ready' && record.phase !== 'completed'\",\n  \"startRemaining\": \"record.durationMinutes * 60 * 1000\",\n  \"pauseInvalid\": \"record.phase !== 'running'\",\n  \"pauseRemaining\": \"Math.min(now - record.startTime, record.durationMinutes * 60 * 1000)\"\n}"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 5623457700,
+  "load_duration": 7849900,
+  "prompt_eval_count": 286,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration": 3147808000,
+  "eval_count": 86,
+  "eval_duration": 2316087000
+}

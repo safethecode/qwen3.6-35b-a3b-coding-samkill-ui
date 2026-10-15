@@ -1,0 +1,64 @@
+{
+  "status": "SCOPED_PURE_MODEL_CHECKS_ONLY",
+  "moduleSha256": "e2c419e8dd80ecf538a9f5b45c12eb406b09ed472eade261a1b30e6029942f20",
+  "checkerSha256": "6d20555aee81fcc695428fd3211ace04938ac8d8c1b8c8ee86dc521709fc9355",
+  "checks": [
+    {
+      "name": "whole duration syntax and inclusive1..180 bounds",
+      "status": "PASS"
+    },
+    {
+      "name": "strict six-key schema and safe finite values",
+      "status": "PASS"
+    },
+    {
+      "name": "ready/paused snapshot preserves exact remaining and ceiling seconds",
+      "status": "PASS"
+    },
+    {
+      "name": "running deadline,completion and rollback clamp derive without mutation",
+      "status": "PASS"
+    },
+    {
+      "name": "START and restart use configured duration with new independent records",
+      "status": "PASS"
+    },
+    {
+      "name": "PAUSE preserves millisecond remainder and disallows completed pause",
+      "status": "PASS"
+    },
+    {
+      "name": "RESUME uses saved remainder rather than full duration",
+      "status": "PASS"
+    },
+    {
+      "name": "RESET returns known configured ready state from all valid phases",
+      "status": "PASS"
+    },
+    {
+      "name": "CONFIGURE requires ready/completed and preserves active/paused record",
+      "status": "PASS"
+    },
+    {
+      "name": "invalid events,record,clock and deadline overflow cannot mutate valid data",
+      "status": "PASS"
+    },
+    {
+      "name": "persisted segment cannot exceed configured duration in paused or running",
+      "status": "PASS"
+    },
+    {
+      "name": "event prototype must be a plain own-field record",
+      "status": "PASS"
+    },
+    {
+      "name": "successful transitions do not mutate unfrozen input records or events",
+      "status": "PASS"
+    },
+    {
+      "name": "PAUSE under backward clock clamps to saved segment",
+      "status": "PASS"
+    }
+  ],
+  "limits": "Pure timing/schema/transition checks only;not storage,browser,reference or commercial approval."
+}

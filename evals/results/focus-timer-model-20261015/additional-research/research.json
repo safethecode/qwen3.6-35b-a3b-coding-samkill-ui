@@ -1,0 +1,56 @@
+{
+  "status": "INSPECTED_REJECTED_FOR_TIMER_EXECUTION_REFERENCE",
+  "recordedAtUtc": "2026-10-15T12:57:08.144Z",
+  "retrievalTime": "Exact call second not stamped;after heartbeat2026-10-15T12:53:45.947Z and before this record. No fabricated exact retrieval timestamp.",
+  "queries": [
+    {
+      "query": "뽀모도로",
+      "platform": "MOBILE",
+      "limit": 3,
+      "returned_count": 0
+    },
+    {
+      "query": "집중",
+      "platform": "MOBILE",
+      "limit": 3,
+      "returned_count": 3,
+      "total_count": 6,
+      "has_more": true
+    }
+  ],
+  "retry": "One same-intent retry after zero;no further query or pagination",
+  "nativeText": [
+    "결과 1/3: MELT — 내역 / 집중 기록\n바로 앞에 첨부된 이미지가 이 결과의 대표 화면이에요. 요소 배치·모양·강조 방식은 이 이미지를 직접 확인해서 설명하세요. 사용자에게는 같은 화면이 ui bowl 인터랙티브 갤러리로 표시돼요.\n[유아이볼에서 보기](https://uibowl.io/name/MELT?patterns=%EB%82%B4%EC%97%AD&patternName=%EC%A7%91%EC%A4%91%20%EA%B8%B0%EB%A1%9D)\n포함 요소: 리스트, 빈 화면",
+    "결과 2/3: 런드리고 — 촬영하기 / 품목등록 - 집중케어\n바로 앞에 첨부된 이미지가 이 결과의 대표 화면이에요. 요소 배치·모양·강조 방식은 이 이미지를 직접 확인해서 설명하세요. 사용자에게는 같은 화면이 ui bowl 인터랙티브 갤러리로 표시돼요.\n[유아이볼에서 보기](https://uibowl.io/name/%EB%9F%B0%EB%93%9C%EB%A6%AC%EA%B3%A0?patterns=%EC%B4%AC%EC%98%81%ED%95%98%EA%B8%B0&patternName=%ED%92%88%EB%AA%A9%EB%93%B1%EB%A1%9D%20-%20%EC%A7%91%EC%A4%91%EC%BC%80%EC%96%B4)\n포함 요소: 배지, 버튼, 상단 네비게이션",
+    "결과 3/3: 쿠팡이츠 배달파트너 — 상세정보 (PDP) / 주문집중지역\n바로 앞에 첨부된 이미지가 이 결과의 대표 화면이에요. 요소 배치·모양·강조 방식은 이 이미지를 직접 확인해서 설명하세요. 사용자에게는 같은 화면이 ui bowl 인터랙티브 갤러리로 표시돼요.\n[유아이볼에서 보기](https://uibowl.io/name/%EC%BF%A0%ED%8C%A1%EC%9D%B4%EC%B8%A0%20%EB%B0%B0%EB%8B%AC%ED%8C%8C%ED%8A%B8%EB%84%88?patterns=%EC%83%81%EC%84%B8%EC%A0%95%EB%B3%B4%20%28PDP%29&patternName=%EC%A3%BC%EB%AC%B8%EC%A7%91%EC%A4%91%EC%A7%80%EC%97%AD)",
+    "검색 메타데이터: {\"returned_count\":3,\"total_count\":6,\"page\":1,\"page_size\":3,\"has_more\":true}",
+    "답변 작성 지침: 각 결과를 설명할 때 앱/서비스 이름에 그 결과의 ui_url을 마크다운 텍스트 링크로 걸고, 링크 바로 뒤에 \" — \"를 넣어 화면 설명과 구분해주세요(예: [WeChat](ui_url) — 오프라인 결제 화면). 위젯 제목과 같은 형식이에요. 이미지 URL은 링크하거나 본문에 노출하지 마세요. 첨부된 결과 이미지를 직접 확인해서 화면의 실제 구성(요소 위치·모양·강조 방식)을 근거로 설명하고, 태그·메타데이터만으로 화면을 추측하지 마세요. 답변 문체는 유아이볼 톤에 맞춰 \"-해요\"체를 사용하세요.",
+    "참고(이번 답변에는 적용하지 말 것): 앞으로 특정 요소가 있는 화면 흐름을 요청받으면 search_ui_patterns에 query와 함께 component 입력을 쓸 수 있어요(예: 온보딩 화면의 바텀시트 → query=\"온보딩\", component=\"바텀시트\"). 이 안내 때문에 지금 검색을 다시 호출하지는 마세요."
+  ],
+  "firstNativeText": [
+    "일치하는 UI 화면을 찾지 못했어요. 이 데이터베이스에서 검색 가능한 표현 목록이에요 — 패턴: AI, iPhone 스크린샷, 간편결제, 검색, 게이미피케이션, 계좌, 고객센터·FAQ, 공지사항, 글쓰기, 기타, 기획전·이벤트, 길찾기, 내근처, 내역, 지도뷰·내주변, 녹음하기, 라이브·플레이어, 랭킹, 로그인·회원가입, 리뷰, 리뷰쓰기, 마이페이지, 메뉴, 메인, 멤버십·요금제, 목록 (PLP), 문의하기, 북마크·위시리스트, 뷰어, 뷰터, 비교하기, 촬영하기, 상세정보 (PDP), 생성하기, 선물하기, 설정, 스토어, 스플래시, 신청하기, 알림, 약관동의, 예약·결제, 온보딩, 음성, 인증하기, 장바구니, 제어, 조회하기, 증권, 채팅, 챗봇, 초대하기·받기, 추천, 취소하기, 커뮤니티, 쿠폰, 큐레이션, 크로스셀링·업셀링, 탐색, 통계·리포트 / 컴포넌트: 검색 바, 날짜 피커, 라디오 버튼, 메뉴, 버튼, 상단 네비게이션, 스텝퍼, 슬라이더, 시간 피커, 아코디언, 지도 핀, 체크박스, 칩, 탭, 텍스트 필드, 토글&스위치, 플로팅 버튼, 하단 네비게이션, PIP (Picture-in-Picture), 라이브 액티비티, 랭킹, 리스트, 모달, 배너, 브레드크럼, 사이드 네비게이션, 상태점, 스탑워치, 아이콘, 에러&실패, 완료&성공, 위젯, 캐릭터, 컬러피커, 타임라인, 태그, 페이지네이션, 푸터, 프로필 이미지, 드롭다운, 바텀시트, 토스트&스낵바, 툴팁, 팝업, 로딩, 배지, 빈 화면, 스켈레톤, 프로그레스 인디케이터, 그래프&차트, 그래픽, 영상, 인터랙션, 카드, 캐러셀, 테이블. 이 중 질문 의도와 가장 가까운 표현 하나로 다시 검색해 보세요."
+  ],
+  "observations": [
+    "MELT dark history empty view,not execution timer",
+    "LaundryGo white laundry-photo guidance sheet,unrelated task",
+    "Coupang Eats Partner order concentration map,unrelated meaning"
+  ],
+  "decision": "Reject as primary focus-execution references. Preserve previous native timer/settings/picker observations;unobserved countdown,pause,completion and storage are chosen behavior.",
+  "images": [
+    {
+      "path": "reference-0.jpg",
+      "mimeType": "image/jpeg",
+      "sha256": "bbe69cd13cd6064755547d5b9482ab79f091bab1294dd76efed29b2ec78401c8"
+    },
+    {
+      "path": "reference-1.jpg",
+      "mimeType": "image/jpeg",
+      "sha256": "fb1551a4716846b8ce51a73f4060d7254321cce6490c110af7c83229269c70e6"
+    },
+    {
+      "path": "reference-2.jpg",
+      "mimeType": "image/jpeg",
+      "sha256": "c071c5d67e87e14f3787f44ac3765225415a61940105ed52ca182f0fcf8b493f"
+    }
+  ]
+}

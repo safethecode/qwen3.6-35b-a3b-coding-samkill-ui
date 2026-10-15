@@ -1,6 +1,6 @@
 # New representative focus service: research only
 
-No candidate generated and no quality pass. [Original pre-research brief](BRIEF.md), [observed main/settings screens](OBSERVATIONS.md), [specific picker evidence](config-research.json), [provisional product decomposition](DESIGN-DRAFT.md) and [phase-specific guide use](guide-application.json).
+No complete rendered candidate and no quality pass. A later [local pure-model recovery study](../focus-timer-model-20261015/README.md) preserves actual failed generation and bounded repairs;timer behavior/CSS/visual quality remain unfinished. [Original pre-research brief](BRIEF.md), [observed main/settings screens](OBSERVATIONS.md), [specific picker evidence](config-research.json), [provisional product decomposition](DESIGN-DRAFT.md) and [phase-specific guide use](guide-application.json).
 
 Five actual native UI Bowl representative images were inspected and preserved as returned. The dark stopwatch-like main,workout interval settings,light routine settings and two picker surfaces solve different tasks. The focus product cannot claim their unobserved countdown/pause/completion behaviors or copy their workout/AM-PM controls. White canvas and single mobile column are explicit chosen adaptations.
 

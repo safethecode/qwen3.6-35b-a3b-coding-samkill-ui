@@ -1,0 +1,8 @@
+{
+  "correctedAtUtc": "2026-10-15T13:21:55.327Z",
+  "original": "MODULE-CONTRACT-v2.md and unit-model/request.json",
+  "old": "Text incorrectly said seven own keys while listing6and all actual records/tests used6",
+  "new": "MODULE-CONTRACT-v3.md explicitly says6;key set/types/state semantics unchanged. No gate weakened and first6/10result remains preserved.",
+  "firstFailure": "Missing phase-specific remaining validation,rollback clamp and derived completed transition;these actual logic failures still require local repairs.",
+  "checkerRecovery": "check-model-v1.mjs preserves exact original checker bytes;current checker name corrected prospectively."
+}

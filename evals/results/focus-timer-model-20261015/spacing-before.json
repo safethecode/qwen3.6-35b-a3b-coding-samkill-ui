@@ -1,0 +1,457 @@
+{
+  "recordedAtUtc": "2026-10-15T13:32:07.003Z",
+  "sourceSha256": "23967c6e9a2679b40441ceb5c4859f79164da59394f8d9f7a7c8eb11a2963919",
+  "sourceAudit": {
+    "scope": "Every spacing declaration in the supplied CSS, including media/state declarations; not a complete DOM or rendered-distance audit",
+    "declarations": 9,
+    "selectors": 7,
+    "entries": [
+      {
+        "selector": "body",
+        "property": "margin",
+        "raw": "0 auto",
+        "role": "structural",
+        "scope": [],
+        "values": [
+          {
+            "raw": "0",
+            "resolved": "0",
+            "value": 0,
+            "status": "ALIGNED",
+            "candidates": [],
+            "reason": "Within the declared role scale; not visual approval"
+          },
+          {
+            "status": "UNVERIFIED",
+            "reason": "Content-dependent, relative or unresolved spacing requires rendered/context review",
+            "candidates": []
+          }
+        ]
+      },
+      {
+        "selector": "p,h1,h2",
+        "property": "margin",
+        "raw": "0",
+        "role": "internal",
+        "scope": [],
+        "values": [
+          {
+            "raw": "0",
+            "resolved": "0",
+            "value": 0,
+            "status": "ALIGNED",
+            "candidates": [],
+            "reason": "Within the declared role scale; not visual approval"
+          }
+        ]
+      },
+      {
+        "selector": ".focus-screen",
+        "property": "gap",
+        "raw": "var(--space-section)",
+        "role": "structural",
+        "scope": [],
+        "values": [
+          {
+            "raw": "var(--space-section)",
+            "token": "--space-section",
+            "resolved": "32px",
+            "value": 32,
+            "status": "ALIGNED",
+            "candidates": [],
+            "reason": "Within the declared role scale; not visual approval"
+          }
+        ]
+      },
+      {
+        "selector": ".focus-screen",
+        "property": "padding",
+        "raw": "var(--space-inset)",
+        "role": "structural",
+        "scope": [],
+        "values": [
+          {
+            "raw": "var(--space-inset)",
+            "token": "--space-inset",
+            "resolved": "24px",
+            "value": 24,
+            "status": "ALIGNED",
+            "candidates": [],
+            "reason": "Within the declared role scale; not visual approval"
+          }
+        ]
+      },
+      {
+        "selector": ".focus-session",
+        "property": "gap",
+        "raw": "var(--space-section)",
+        "role": "structural",
+        "scope": [],
+        "values": [
+          {
+            "raw": "var(--space-section)",
+            "token": "--space-section",
+            "resolved": "32px",
+            "value": 32,
+            "status": "ALIGNED",
+            "candidates": [],
+            "reason": "Within the declared role scale; not visual approval"
+          }
+        ]
+      },
+      {
+        "selector": ".text-action",
+        "property": "padding",
+        "raw": "8px",
+        "role": "internal",
+        "scope": [],
+        "values": [
+          {
+            "raw": "8px",
+            "resolved": "8px",
+            "value": 8,
+            "status": "ALIGNED",
+            "candidates": [],
+            "reason": "Within the declared role scale; not visual approval"
+          }
+        ]
+      },
+      {
+        "selector": "dialog",
+        "property": "margin",
+        "raw": "auto auto 0",
+        "role": "structural",
+        "scope": [],
+        "values": [
+          {
+            "raw": "0",
+            "resolved": "0",
+            "value": 0,
+            "status": "ALIGNED",
+            "candidates": [],
+            "reason": "Within the declared role scale; not visual approval"
+          },
+          {
+            "status": "UNVERIFIED",
+            "reason": "Content-dependent, relative or unresolved spacing requires rendered/context review",
+            "candidates": []
+          }
+        ]
+      },
+      {
+        "selector": "dialog",
+        "property": "padding",
+        "raw": "0",
+        "role": "structural",
+        "scope": [],
+        "values": [
+          {
+            "raw": "0",
+            "resolved": "0",
+            "value": 0,
+            "status": "ALIGNED",
+            "candidates": [],
+            "reason": "Within the declared role scale; not visual approval"
+          }
+        ]
+      },
+      {
+        "selector": ".config-sample",
+        "property": "margin",
+        "raw": "0 auto",
+        "role": "structural",
+        "scope": [],
+        "values": [
+          {
+            "raw": "0",
+            "resolved": "0",
+            "value": 0,
+            "status": "ALIGNED",
+            "candidates": [],
+            "reason": "Within the declared role scale; not visual approval"
+          },
+          {
+            "status": "UNVERIFIED",
+            "reason": "Content-dependent, relative or unresolved spacing requires rendered/context review",
+            "candidates": []
+          }
+        ]
+      }
+    ],
+    "hardFindings": [],
+    "reviewFindings": [],
+    "unverified": [
+      {
+        "selector": "body",
+        "property": "margin",
+        "raw": "0 auto",
+        "role": "structural",
+        "scope": [],
+        "values": [
+          {
+            "raw": "0",
+            "resolved": "0",
+            "value": 0,
+            "status": "ALIGNED",
+            "candidates": [],
+            "reason": "Within the declared role scale; not visual approval"
+          },
+          {
+            "status": "UNVERIFIED",
+            "reason": "Content-dependent, relative or unresolved spacing requires rendered/context review",
+            "candidates": []
+          }
+        ]
+      },
+      {
+        "selector": "dialog",
+        "property": "margin",
+        "raw": "auto auto 0",
+        "role": "structural",
+        "scope": [],
+        "values": [
+          {
+            "raw": "0",
+            "resolved": "0",
+            "value": 0,
+            "status": "ALIGNED",
+            "candidates": [],
+            "reason": "Within the declared role scale; not visual approval"
+          },
+          {
+            "status": "UNVERIFIED",
+            "reason": "Content-dependent, relative or unresolved spacing requires rendered/context review",
+            "candidates": []
+          }
+        ]
+      },
+      {
+        "selector": ".config-sample",
+        "property": "margin",
+        "raw": "0 auto",
+        "role": "structural",
+        "scope": [],
+        "values": [
+          {
+            "raw": "0",
+            "resolved": "0",
+            "value": 0,
+            "status": "ALIGNED",
+            "candidates": [],
+            "reason": "Within the declared role scale; not visual approval"
+          },
+          {
+            "status": "UNVERIFIED",
+            "reason": "Content-dependent, relative or unresolved spacing requires rendered/context review",
+            "candidates": []
+          }
+        ]
+      }
+    ],
+    "status": "AUDIT_NOT_VISUAL_APPROVAL"
+  },
+  "intended": [
+    {
+      "selector": ".stage-content",
+      "property": "gap",
+      "unit": "CSS px",
+      "value": 24,
+      "role": "structural",
+      "purpose": "time/settings group",
+      "origin": "Pre-generation host-chosen contract;not screenshot measurement or preexisting-system exception",
+      "current": "Component CSS not yet generated",
+      "proposed": 24,
+      "status": "ALIGNED_INTENT_NOT_RENDERED"
+    },
+    {
+      "selector": ".time-readout",
+      "property": "gap",
+      "unit": "CSS px",
+      "value": 16,
+      "role": "internal",
+      "purpose": "between intact duration pairs",
+      "origin": "Pre-generation host-chosen contract;not screenshot measurement or preexisting-system exception",
+      "current": "Component CSS not yet generated",
+      "proposed": 16,
+      "status": "ALIGNED_INTENT_NOT_RENDERED"
+    },
+    {
+      "selector": ".time-pair",
+      "property": "gap",
+      "unit": "CSS px",
+      "value": 8,
+      "role": "internal",
+      "purpose": "number/unit association",
+      "origin": "Pre-generation host-chosen contract;not screenshot measurement or preexisting-system exception",
+      "current": "Component CSS not yet generated",
+      "proposed": 8,
+      "status": "ALIGNED_INTENT_NOT_RENDERED"
+    },
+    {
+      "selector": "#completed",
+      "property": "gap",
+      "unit": "CSS px",
+      "value": 16,
+      "role": "internal",
+      "purpose": "primary outcome/support",
+      "origin": "Pre-generation host-chosen contract;not screenshot measurement or preexisting-system exception",
+      "current": "Component CSS not yet generated",
+      "proposed": 16,
+      "status": "ALIGNED_INTENT_NOT_RENDERED"
+    },
+    {
+      "selector": ".error-region",
+      "property": "gap",
+      "unit": "CSS px",
+      "value": 8,
+      "role": "internal",
+      "purpose": "message/recovery action",
+      "origin": "Pre-generation host-chosen contract;not screenshot measurement or preexisting-system exception",
+      "current": "Component CSS not yet generated",
+      "proposed": 8,
+      "status": "ALIGNED_INTENT_NOT_RENDERED"
+    },
+    {
+      "selector": ".session-actions",
+      "property": "gap",
+      "unit": "CSS px",
+      "value": 16,
+      "role": "internal",
+      "purpose": "primary/reset",
+      "origin": "Pre-generation host-chosen contract;not screenshot measurement or preexisting-system exception",
+      "current": "Component CSS not yet generated",
+      "proposed": 16,
+      "status": "ALIGNED_INTENT_NOT_RENDERED"
+    },
+    {
+      "selector": "#primary-action",
+      "property": "padding-block",
+      "unit": "CSS px",
+      "value": 16,
+      "role": "internal",
+      "purpose": "actual action hit area",
+      "origin": "Pre-generation host-chosen contract;not screenshot measurement or preexisting-system exception",
+      "current": "Component CSS not yet generated",
+      "proposed": 16,
+      "status": "ALIGNED_INTENT_NOT_RENDERED"
+    },
+    {
+      "selector": "#primary-action",
+      "property": "padding-inline",
+      "unit": "CSS px",
+      "value": 24,
+      "role": "internal",
+      "purpose": "compact action extent",
+      "origin": "Pre-generation host-chosen contract;not screenshot measurement or preexisting-system exception",
+      "current": "Component CSS not yet generated",
+      "proposed": 24,
+      "status": "ALIGNED_INTENT_NOT_RENDERED"
+    },
+    {
+      "selector": "#primary-action",
+      "property": "gap",
+      "unit": "CSS px",
+      "value": 8,
+      "role": "icon-label",
+      "purpose": "official paint and visible label",
+      "origin": "Pre-generation host-chosen contract;not screenshot measurement or preexisting-system exception",
+      "current": "Component CSS not yet generated",
+      "proposed": 8,
+      "status": "ALIGNED_INTENT_NOT_RENDERED"
+    },
+    {
+      "selector": ".duration-panel",
+      "property": "padding",
+      "unit": "CSS px",
+      "value": 24,
+      "role": "structural",
+      "purpose": "sheet content",
+      "origin": "Pre-generation host-chosen contract;not screenshot measurement or preexisting-system exception",
+      "current": "Component CSS not yet generated",
+      "proposed": 24,
+      "status": "ALIGNED_INTENT_NOT_RENDERED"
+    },
+    {
+      "selector": ".config-heading",
+      "property": "gap",
+      "unit": "CSS px",
+      "value": 16,
+      "role": "internal",
+      "purpose": "title/cancel",
+      "origin": "Pre-generation host-chosen contract;not screenshot measurement or preexisting-system exception",
+      "current": "Component CSS not yet generated",
+      "proposed": 16,
+      "status": "ALIGNED_INTENT_NOT_RENDERED"
+    },
+    {
+      "selector": "#duration-form",
+      "property": "margin-top",
+      "unit": "CSS px",
+      "value": 24,
+      "role": "structural",
+      "purpose": "heading/form distinction",
+      "origin": "Pre-generation host-chosen contract;not screenshot measurement or preexisting-system exception",
+      "current": "Component CSS not yet generated",
+      "proposed": 24,
+      "status": "ALIGNED_INTENT_NOT_RENDERED"
+    },
+    {
+      "selector": "#duration-form",
+      "property": "gap",
+      "unit": "CSS px",
+      "value": 24,
+      "role": "structural",
+      "purpose": "field/error/confirmation",
+      "origin": "Pre-generation host-chosen contract;not screenshot measurement or preexisting-system exception",
+      "current": "Component CSS not yet generated",
+      "proposed": 24,
+      "status": "ALIGNED_INTENT_NOT_RENDERED"
+    },
+    {
+      "selector": ".duration-field",
+      "property": "gap",
+      "unit": "CSS px",
+      "value": 8,
+      "role": "internal",
+      "purpose": "label/control/error association",
+      "origin": "Pre-generation host-chosen contract;not screenshot measurement or preexisting-system exception",
+      "current": "Component CSS not yet generated",
+      "proposed": 8,
+      "status": "ALIGNED_INTENT_NOT_RENDERED"
+    },
+    {
+      "selector": "#duration-input",
+      "property": "padding",
+      "unit": "CSS px",
+      "value": 12,
+      "role": "internal",
+      "purpose": "field interior",
+      "origin": "Pre-generation host-chosen contract;not screenshot measurement or preexisting-system exception",
+      "current": "Component CSS not yet generated",
+      "proposed": 12,
+      "status": "ALIGNED_INTENT_NOT_RENDERED"
+    },
+    {
+      "selector": "#apply-duration",
+      "property": "padding",
+      "unit": "CSS px",
+      "value": 16,
+      "role": "internal",
+      "purpose": "sheet confirmation",
+      "origin": "Pre-generation host-chosen contract;not screenshot measurement or preexisting-system exception",
+      "current": "Component CSS not yet generated",
+      "proposed": 16,
+      "status": "ALIGNED_INTENT_NOT_RENDERED"
+    }
+  ],
+  "valuesAndBindings": {
+    "--space-inset": "24px,focus-screen padding",
+    "--space-section": "32px,screen/focus-session gap",
+    "--space-group": "24px,planned groups",
+    "--space-control": "16px,planned controls",
+    "--space-label": "8px,planned labels"
+  },
+  "preserve": "Existing frozen scaffold chosen tokens stay bound. These are new chosen inputs,not old-system exemption claims.",
+  "unknown": "Auto margins,flex centering and all final distances/state heights are content/viewport-dependent;no fixed-px approval. Component CSS absent. Native number spinner margins require rendered review.",
+  "excluded": "Radius,border/outline widths,icon size,minimum hit size and font size are not spacing declarations."
+}

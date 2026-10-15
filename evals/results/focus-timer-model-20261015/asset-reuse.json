@@ -1,0 +1,25 @@
+{
+  "reason": "Reuse one already-published exact licensed10MBfont instead of duplicate snapshots. No asset bytes substituted.",
+  "entries": [
+    {
+      "artifactPath": "initial-source/assets/fonts/NotoSansKR.ttf",
+      "repositoryPath": "evals/results/planner-transfer-20261015/reading-priority/source/assets/fonts/NotoSansKR.ttf",
+      "sha256": "194018e6b2b293a7964f037b25c0249ce1418bc9ab3c971060a03aa57861e252"
+    },
+    {
+      "artifactPath": "prepared-v1-source/assets/fonts/NotoSansKR.ttf",
+      "repositoryPath": "evals/results/planner-transfer-20261015/reading-priority/source/assets/fonts/NotoSansKR.ttf",
+      "sha256": "194018e6b2b293a7964f037b25c0249ce1418bc9ab3c971060a03aa57861e252"
+    },
+    {
+      "artifactPath": "unit-model/failed-source/assets/fonts/NotoSansKR.ttf",
+      "repositoryPath": "evals/results/planner-transfer-20261015/reading-priority/source/assets/fonts/NotoSansKR.ttf",
+      "sha256": "194018e6b2b293a7964f037b25c0249ce1418bc9ab3c971060a03aa57861e252"
+    },
+    {
+      "artifactPath": "source/assets/fonts/NotoSansKR.ttf",
+      "repositoryPath": "evals/results/planner-transfer-20261015/reading-priority/source/assets/fonts/NotoSansKR.ttf",
+      "sha256": "194018e6b2b293a7964f037b25c0249ce1418bc9ab3c971060a03aa57861e252"
+    }
+  ]
+}

@@ -1,0 +1,179 @@
+{
+  "status": "PARTIAL_ACTUAL_BEHAVIOR_IMPLEMENTATION_NO_UI_APPROVAL",
+  "recordedAtUtc": "2026-10-15T13:32:06.995Z",
+  "entries": [
+    {
+      "phase": "research",
+      "path": "skills/qwen-samkill-ui/references/upstream/uibowl-research/guide.md",
+      "actualReadPath": "skills/qwen-samkill-ui/references/upstream/uibowl-research/guide.md",
+      "sha256": "e69173ad106db14f3cdd9a319d9dfa5353db7065476e8a9c8503768b2220f209",
+      "status": "applied",
+      "outcome": "Initial five actual timer/settings/picker pixels inspected;fresh focus retry returned three unrelated screens explicitly rejected. No pagination/repeated successful intent.",
+      "evidence": "research.json;config-research.json;additional-research/research.json;OBSERVATIONS.md",
+      "readingTime": "Read during current continuation before relevant unit;exact read second not retrospectively fabricated"
+    },
+    {
+      "phase": "decomposition",
+      "path": "skills/qwen-samkill-ui/references/upstream/reference-decompose/guide.md",
+      "actualReadPath": "skills/qwen-samkill-ui/references/upstream/reference-decompose/guide.md",
+      "sha256": "75b42c9d969e681167ee4bf1cdcc852da19901e4bd3005ea7d5a4ec6bb46fceb",
+      "status": "applied",
+      "outcome": "Main compact centered action is distinct from fullwidth sheet confirmation. Mobile vertical scope and state ownership frozen before Qwen;prepared-v1 contradiction retained.",
+      "evidence": "initial-source/design/component-plan.json;preparation.json;prepared-v1-source",
+      "readingTime": "Read during current continuation before relevant unit;exact read second not retrospectively fabricated"
+    },
+    {
+      "phase": "decomposition",
+      "path": "skills/qwen-samkill-ui/references/upstream/reference-decompose/references/element-contract.md",
+      "actualReadPath": "skills/qwen-samkill-ui/references/upstream/reference-decompose/references/element-contract.md",
+      "sha256": "7269c5580b61c1af3ddd7631cd1cce6145e1238905fa6c022308cdf340abafdd",
+      "status": "applied",
+      "outcome": "Original O/E versus chosen D and unknown Q remain separate. Natural centered shared cluster;no fabricated page-bottom footer.",
+      "evidence": "OBSERVATIONS.md;initial-source/DESIGN.md",
+      "readingTime": "Read during current continuation before relevant unit;exact read second not retrospectively fabricated"
+    },
+    {
+      "phase": "contract",
+      "path": "skills/qwen-samkill-ui/references/upstream/design-md/guide.md",
+      "actualReadPath": "skills/qwen-samkill-ui/references/upstream/design-md/guide.md",
+      "sha256": "06e3ed239bfd26723e5a2ca8b2dd049e50775e952243db803051860ae00dee76",
+      "status": "applied",
+      "outcome": "Host semantic scaffold,type/layout/state roles,assets and fixed copy precede actual local modules. Exact six-field host count correction explicitly versioned.",
+      "evidence": "preparation.json;MODULE-CONTRACT-v1.md;MODULE-CONTRACT-v2.md;MODULE-CONTRACT-v3.md;host-count-correction.json",
+      "readingTime": "Read during current continuation before relevant unit;exact read second not retrospectively fabricated"
+    },
+    {
+      "phase": "contract",
+      "path": "skills/qwen-samkill-ui/references/upstream/design-md/references/document-contract.md",
+      "actualReadPath": "skills/qwen-samkill-ui/references/upstream/design-md/references/document-contract.md",
+      "sha256": "84a919c4238a77164e625d61191d0de46cbabd41599a66eab852718e6a1cde61",
+      "status": "applied",
+      "outcome": "Role tokens and exact numeric type values chosen rather than claimed measured screenshot CSS.",
+      "evidence": "initial-source/DESIGN.md;initial-source/design/typography.json",
+      "readingTime": "Read during current continuation before relevant unit;exact read second not retrospectively fabricated"
+    },
+    {
+      "phase": "implementation",
+      "path": "skills/qwen-samkill-ui/references/upstream/reference-to-ui/guide.md",
+      "actualReadPath": "skills/qwen-samkill-ui/references/upstream/reference-to-ui/guide.md",
+      "sha256": "567526f1bf26f8cb75907be57b2c4c4f3968923e3b497697caf5e7891f684c62",
+      "status": "read",
+      "outcome": "Complete fixed HTML,behavior-before-CSS plan. Core first rendered comparison still pending and must precede extra screens.",
+      "evidence": "PLAN.md",
+      "readingTime": "Read during current continuation before relevant unit;exact read second not retrospectively fabricated"
+    },
+    {
+      "phase": "implementation",
+      "path": "skills/qwen-samkill-ui/references/upstream/reference-to-ui/references/product-reasoning.md",
+      "actualReadPath": "skills/qwen-samkill-ui/references/upstream/reference-to-ui/references/product-reasoning.md",
+      "sha256": "947cbbbe96401e2072c723c6b8ebf13c33621ea663f6bc8a66ef149638218ac3",
+      "status": "applied",
+      "outcome": "Bounded single-task mobile timer;three chosen default font sizes,licensed Noto,pinned official Play/Pause variants,real native sheet. Actual rendered type/paint/targets still unverified.",
+      "evidence": "initial-source/DESIGN.md;initial-source/design/typography.json;initial-source/assets",
+      "readingTime": "Read during current continuation before relevant unit;exact read second not retrospectively fabricated"
+    },
+    {
+      "phase": "implementation",
+      "path": "skills/qwen-samkill-ui/references/upstream/reference-to-ui/references/typography.md",
+      "actualReadPath": "skills/qwen-samkill-ui/references/upstream/reference-to-ui/references/typography.md",
+      "sha256": "d1003eda3338b973d1399e492bf1adea0e8eced6c054fb65cf0de480b88431d7",
+      "status": "applied",
+      "outcome": "Bounded single-task mobile timer;three chosen default font sizes,licensed Noto,pinned official Play/Pause variants,real native sheet. Actual rendered type/paint/targets still unverified.",
+      "evidence": "initial-source/DESIGN.md;initial-source/design/typography.json;initial-source/assets",
+      "readingTime": "Read during current continuation before relevant unit;exact read second not retrospectively fabricated"
+    },
+    {
+      "phase": "implementation",
+      "path": "skills/qwen-samkill-ui/references/upstream/reference-to-ui/references/icon-controls.md",
+      "actualReadPath": "skills/qwen-samkill-ui/references/upstream/reference-to-ui/references/icon-controls.md",
+      "sha256": "c20876adeda380825867f3fd7ffa1381125623756c865d2bc1ace07a9d39692e",
+      "status": "applied",
+      "outcome": "Bounded single-task mobile timer;three chosen default font sizes,licensed Noto,pinned official Play/Pause variants,real native sheet. Actual rendered type/paint/targets still unverified.",
+      "evidence": "initial-source/DESIGN.md;initial-source/design/typography.json;initial-source/assets",
+      "readingTime": "Read during current continuation before relevant unit;exact read second not retrospectively fabricated"
+    },
+    {
+      "phase": "implementation",
+      "path": "skills/qwen-samkill-ui/references/upstream/reference-to-ui/references/mobile.md",
+      "actualReadPath": "skills/qwen-samkill-ui/references/upstream/reference-to-ui/references/mobile.md",
+      "sha256": "8d3b261b27f5523b713a68fa445b37603d72eb0dc12887bd55fa16db4f9d6e03",
+      "status": "applied",
+      "outcome": "Bounded single-task mobile timer;three chosen default font sizes,licensed Noto,pinned official Play/Pause variants,real native sheet. Actual rendered type/paint/targets still unverified.",
+      "evidence": "initial-source/DESIGN.md;initial-source/design/typography.json;initial-source/assets",
+      "readingTime": "Read during current continuation before relevant unit;exact read second not retrospectively fabricated"
+    },
+    {
+      "phase": "spacing",
+      "path": "skills/qwen-samkill-ui/references/upstream/reference-to-ui/references/spacing-audit.md",
+      "actualReadPath": "skills/qwen-samkill-ui/references/upstream/reference-to-ui/references/spacing-audit.md",
+      "sha256": "30565c3fbc3e06cdb2e53aab78955b28142774a44c7e24eb34b661ef85135539",
+      "status": "applied",
+      "outcome": "Full current source declaration inventory and all planned new component gaps/paddings recorded before styling. No numeric source spacing changed;rendered distances still unknown.",
+      "evidence": "spacing-before.json;SPACING-BEFORE.md",
+      "readingTime": "Read during current continuation before relevant unit;exact read second not retrospectively fabricated"
+    },
+    {
+      "phase": "copy",
+      "path": "skills/qwen-samkill-ui/references/upstream/ux-copy/guide.md",
+      "actualReadPath": "skills/qwen-samkill-ui/references/upstream/ux-copy/guide.md",
+      "sha256": "2352e5db7e12be3f00eb32da92425b16611278519760f6bb6c24e6263ebb719b",
+      "status": "applied",
+      "outcome": "Frozen actual copy distinguishes initial-read unknown,write retry,field validation and restored-running conflict;no demo notices.",
+      "evidence": "initial-source/copy.js;MODULE-CONTRACT-v3.md",
+      "readingTime": "Read during current continuation before relevant unit;exact read second not retrospectively fabricated"
+    },
+    {
+      "phase": "copy",
+      "path": "skills/qwen-samkill-ui/references/upstream/ux-copy/references/copy-contract.md",
+      "actualReadPath": "skills/qwen-samkill-ui/references/upstream/ux-copy/references/copy-contract.md",
+      "sha256": "4f31283c5563ee7c9b883009a8843a01c490f03d586f9d18a15085285860f45f",
+      "status": "applied",
+      "outcome": "Frozen actual copy distinguishes initial-read unknown,write retry,field validation and restored-running conflict;no demo notices.",
+      "evidence": "initial-source/copy.js;MODULE-CONTRACT-v3.md",
+      "readingTime": "Read during current continuation before relevant unit;exact read second not retrospectively fabricated"
+    },
+    {
+      "phase": "copy",
+      "path": "skills/qwen-samkill-ui/references/upstream/ux-copy/references/korean-writing.md",
+      "actualReadPath": "skills/qwen-samkill-ui/references/upstream/ux-copy/references/korean-writing.md",
+      "sha256": "7672b1baddd7fc11ec7fc518f89f41558cb2606526030e8edcdbcb588ff47b2f",
+      "status": "applied",
+      "outcome": "Frozen actual copy distinguishes initial-read unknown,write retry,field validation and restored-running conflict;no demo notices.",
+      "evidence": "initial-source/copy.js;MODULE-CONTRACT-v3.md",
+      "readingTime": "Read during current continuation before relevant unit;exact read second not retrospectively fabricated"
+    },
+    {
+      "phase": "behavior",
+      "path": "skills/qwen-samkill-ui/references/upstream/reference-review/references/state-stress.md",
+      "actualReadPath": "skills/qwen-samkill-ui/references/upstream/reference-review/references/state-stress.md",
+      "sha256": "5dbdc14b7e7d86a18f98a38f420ac5cf710575168f7b2668bed9db60908170b5",
+      "status": "applied",
+      "outcome": "Actual pure model failures retained;added undercovered duration-bound/event-prototype/no-mutation cases prospectively. Provider/browser tests precede consumer inference.",
+      "evidence": "unit-model;check-model-v1.mjs;check-model-v2.mjs.txt;check-model.mjs;check-store.mjs;check-render.mjs;check-behavior.mjs",
+      "readingTime": "Read during current continuation before relevant unit;exact read second not retrospectively fabricated"
+    },
+    {
+      "phase": "behavior",
+      "path": "skills/qwen-samkill-ui/references/decomposed-layout.md",
+      "actualReadPath": "skills/qwen-samkill-ui/references/decomposed-layout.md",
+      "sha256": "c87dfb9a7353f265c6f0659de6616edd0b1d1e0c1bdb5c8c969cf3c45009f4b2",
+      "status": "applied",
+      "outcome": "Validation/time,store,stable renderer and controller are separate actual local units. Failed model narrowed to one function;no host behavior patch attributed to Qwen.",
+      "evidence": "unit-model/request.json;unit-model/repair-validateRecord;unit-model/repair-validateRecord-bounds;unit-model/repair-snapshot",
+      "readingTime": "Read during current continuation before relevant unit;exact read second not retrospectively fabricated"
+    },
+    {
+      "phase": "review",
+      "path": "skills/qwen-samkill-ui/references/upstream/reference-review/guide.md",
+      "status": "planned",
+      "outcome": "Must read/apply to actual complete renders;all75/eight-guide catalog unknown until evidence. Unit counts cannot approve visual quality."
+    },
+    {
+      "phase": "onboarding",
+      "path": "skills/qwen-samkill-ui/references/upstream/onboarding-flow/guide.md",
+      "status": "not-applicable",
+      "outcome": "Single-user local timer has no account,forced tutorial or onboarding state. Configuration/failure recovery remain required and are not excluded."
+    }
+  ],
+  "limits": "Read/applied is not verified. No after-the-fact independent reproduction,fullguide completion,physical-device/AT or commercial/reference parity claim."
+}

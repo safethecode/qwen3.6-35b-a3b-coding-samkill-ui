@@ -1,0 +1,54 @@
+{
+  "status": "HOST_FIXED_INPUT_NOT_MODEL_OUTPUT_OR_APPROVAL",
+  "preparedAtUtc": "2026-10-15T13:06:21.423Z",
+  "sourceHashes": {
+    "index.html": "197ad40eeb6e605669ba203ddbec355e873ae1d5d260579e86746de9c98eafe7",
+    "styles.css": "23967c6e9a2679b40441ceb5c4859f79164da59394f8d9f7a7c8eb11a2963919",
+    "DESIGN.md": "1f623cab2b4e1c4d5054274b53d54668cd0c74e2577a8bfe9d28ce4a052ba89c",
+    "REFERENCE.md": "f6befe514a9a38d48884a9697c614877ddd0d006f9d6320304981056907766c0",
+    "assets/fonts/METADATA.pb": "9b8b27c0dd1adbb0057d1fbe9534207ab3606114ace6755453d14668912471a1",
+    "assets/fonts/NotoSansKR.ttf": "194018e6b2b293a7964f037b25c0249ce1418bc9ab3c971060a03aa57861e252",
+    "assets/fonts/OFL.txt": "1c05c68c34f9708415aada51f17e1b0092d2cea709bf4a94cd38114f9e73d7d9",
+    "assets/icons/LICENSE": "b495047bd93a9b06913511076f504daba17d5bbeb3e0650f3bb53a4220329c57",
+    "assets/icons/Pause-light.svg": "709366e7faae5e637d9e4bbda6ab1156bcb8ac7d132bbd97a240fe142969db7a",
+    "assets/icons/Pause.svg": "f84f5fbe8f3bf37a4d4545ef8c0851e3d22a0b4de89cf6ec6561c2187705a777",
+    "assets/icons/Play-light.svg": "7da2c2f42f06511a84c2eef0cd760e054922d83f36438b1440e0ec12aee56deb",
+    "assets/icons/Play.svg": "6f226a46d36157e64ebb7eb72223efd8461212078bea69e663ecc1c794a8383b",
+    "assets/icons/manifest.json": "69b94327458ede12e4505e2315d628931c0f0f61fe2af14758ebcda1295edcd7",
+    "design/typography.json": "875fcd1503a54544e5341872e1ebaea879fbe45039b363ab469d6f31ed875d59",
+    "design/component-plan.json": "a809f5d991a4bf7920711e1b964bc67b80f22e09d6d98c91ec5bff33b5c25d86",
+    "design/layout-contract.json": "a0e28dcfebeecb71b95957bba3e6551af90aa139b502867ff76a67dba807169c",
+    "copy.js": "b71199531ddaf6aebde7b61d9baa9c86e053b1e6b1f060660307b3d352259d1d",
+    "sample-actions.html": "f9829ea91beb8f0d99c4667e630142ee3f791c9a3db90db11d77cd238d7d2b1d",
+    "sample-config.html": "a73ed0d53cd3aa200fd2e650264b2cf6a11965e960b26a5d458032644ecf7941",
+    "sample-timer.html": "31fbc66ab3be017bbf7149d87feece91e60d8ad60e4775f0ee8ae8cc05890caa"
+  },
+  "originalInputHashes": {
+    "runs/focus-timer-transfer-20261015/BRIEF.md": "d9ec0b6fe53cf515a126b1b7be79574897032190ac5c8e8de4cedeb5a063fa9a",
+    "runs/focus-timer-transfer-20261015/DESIGN-DRAFT.md": "a623965a07469b3538fa142ceea63ea55ca5f94de03571b2cf1b00b8424fe422",
+    "runs/focus-timer-transfer-20261015/MODULE-CONTRACT-v1.md": "5d95f3d198a36fe296f4457527856335b71c5cd91ed4288be19a1058fb78ce5a",
+    "runs/focus-timer-transfer-20261015/additional-research/research.json": "1289ba32ca6a2aaeb12f9619b1f9ffe7a08d4d6cf25b514d0b3c9d30a6bf1bcc"
+  },
+  "states": [
+    "ready",
+    "running",
+    "paused",
+    "completed",
+    "read-error",
+    "config",
+    "config-invalid",
+    "config-write-error",
+    "config-read-error",
+    "config-restored-running",
+    "completed-config"
+  ],
+  "assistance": [
+    "Fixed semantic HTML/shared assembly/tokens/font/official variants",
+    "Predeclared role metrics,layout/state/copy/contracts",
+    "Initial unknown placeholders/disabled controls;no seeded records"
+  ],
+  "upstream": "167fc8d5982e361d86f598c80540d4eff460394d matches current remote HEAD;no new update adopted",
+  "revisedAtUtc": "2026-10-15T13:13:13.119Z",
+  "initialDraft": "preparation-v1.json and prepared-v1-source retain pre-generation over-broad bottom-bar layout assumption. No Qwen inference occurred between versions.",
+  "reason": "Actual timer main shows compact centered start below dominant time. Shared-centered cluster and intrinsic-width main action preserve this anchor better than a full-width page-bottom action. Sheet confirmation remains fullwidth,as observed separately."
+}

@@ -1,0 +1,22 @@
+export const COPY = {
+  "screenTitle": "집중 타이머",
+  "completedTitle": "집중 완료",
+  "paused": "일시 정지",
+  "configure": "시간 설정",
+  "start": "시작하기",
+  "pause": "일시 정지",
+  "resume": "이어서 하기",
+  "restart": "다시 시작하기",
+  "reset": "타이머 초기화",
+  "configTitle": "집중 시간",
+  "durationLabel": "시간(분)",
+  "cancel": "취소",
+  "apply": "적용하기",
+  "reload": "다시 불러오기",
+  "invalidDuration": "1~180분 사이의 정수를 입력해 주세요.",
+  "readError": "저장한 시간을 확인하지 못했어요. 다시 불러온 후 이용해 주세요.",
+  "writeError": "저장하지 못했어요. 다시 시도해 주세요.",
+  "unavailableConfig": "타이머를 초기화한 후 시간을 바꿔 주세요.",
+  "transitionError": "현재 상태에서 실행할 수 없어요.",
+  "clockError": "현재 시간을 확인하지 못했어요."
+};
