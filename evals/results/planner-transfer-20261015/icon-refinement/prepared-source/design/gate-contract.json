@@ -1,0 +1,996 @@
+{
+  "schema_version": 1,
+  "catalog_version": 5,
+  "targets": [
+    "index.html",
+    "styles.css",
+    "app.js",
+    "DESIGN.md",
+    "REFERENCE.md",
+    "assets/fonts/METADATA.pb",
+    "assets/fonts/NotoSansKR.ttf",
+    "assets/fonts/OFL.txt",
+    "assets/icons/LICENSE",
+    "assets/icons/Plus.svg",
+    "assets/icons/Trash2-neutral.svg",
+    "assets/icons/X.svg",
+    "assets/icons/manifest.json",
+    "design/typography.json",
+    "design/component-plan.json",
+    "design/layout-contract.json",
+    "render.js",
+    "sample-editor.html",
+    "sample-tasks.html",
+    "sample-week.html",
+    "store.js"
+  ],
+  "rules": [
+    {
+      "id": "ORC-F01",
+      "applicable": false,
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
+      "reason": "No sidebar: a single bounded mobile canvas and one native dialog.",
+      "checks": [
+        "code",
+        "visual"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "ORC-F02",
+      "applicable": false,
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
+      "reason": "No sidebar or sidebar-only accent region.",
+      "checks": [
+        "code",
+        "visual"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "ORC-F03",
+      "applicable": true,
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
+      "reason": "Dark primary action and selected day use white>=600 text; direct normal/form screenshots and CSS inspected.",
+      "checks": [
+        "code",
+        "visual"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "ORC-F04",
+      "applicable": true,
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
+      "reason": "Each category has one scoped add opener, the dialog has one submit action; their targets/states differ.",
+      "checks": [
+        "code",
+        "visual"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "ORC-F05",
+      "applicable": false,
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
+      "reason": "Simple title/completion checklists, no visual card grid or three-attribute tabular record view.",
+      "checks": [
+        "code",
+        "visual"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "ORC-F06",
+      "applicable": true,
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
+      "reason": "Red appears only for errors; selected/completed states remain neutral.",
+      "checks": [
+        "code",
+        "visual"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "ORC-F07",
+      "applicable": true,
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
+      "reason": "Main/form purpose headings22px, not landing-sized32–40px.",
+      "checks": [
+        "code",
+        "visual"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "ORC-F08",
+      "applicable": true,
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
+      "reason": "Repeated delete buttons remain permanently visible on every task row. The fresh normal/enlarged captures confirm the original action-noise condition. A quieter presentation must preserve discoverable touch/keyboard deletion; no hover-only workaround or blanket exception is approved.",
+      "checks": [
+        "code",
+        "visual",
+        "interaction"
+      ],
+      "exceptions": [
+        {
+          "id": "mobile-explicit-management",
+          "scope": "Only the mobile task list deletion presentation",
+          "reason": "Literal hover-only access conflicts with mobile/coarse-pointer use. Repeated actions are hidden in reading and revealed by a labelled native edit mode; real touch/keyboard deletion and state/focus recovery are tested. The UI Bowl menu supports management grouping only, not this exact flow."
+        }
+      ]
+    },
+    {
+      "id": "ORC-F09",
+      "applicable": false,
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
+      "reason": "No multi-column layout at any width; max390px vertical mobile scope.",
+      "checks": [
+        "code",
+        "visual"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "ORC-F10",
+      "applicable": true,
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
+      "reason": "Normal icon20px/text16px alignment is directly visible. Full original size/centering review across enlarged text and every icon pair is pending; fixed20px graphics with32px text need explicit scoped adjudication.",
+      "checks": [
+        "code",
+        "visual"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "ORC-F11",
+      "applicable": true,
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
+      "reason": "Need exact effective icon paint versus adjacent text across default/hover/focus/disabled states; external SVG currentColor does not inherit a parent button color automatically.",
+      "checks": [
+        "code",
+        "visual"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "ORC-F12",
+      "applicable": true,
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
+      "reason": "Complete role-based source and rendered gap/inset inventory is pending. Typography-derived alignment offsets must be distinguished from structural spacing, not snapped blindly.",
+      "checks": [
+        "code",
+        "visual"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "ORC-F13",
+      "applicable": true,
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
+      "reason": "Native buttons and clickable labels use pointer styling; no clickable div substitutes.",
+      "checks": [
+        "code",
+        "visual",
+        "interaction"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "ORC-F14",
+      "applicable": true,
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
+      "reason": "Semantic header/main/section/list/label/button/form/dialog; layout/focus wrappers have concrete roles.",
+      "checks": [
+        "code",
+        "visual"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "ORC-F16",
+      "applicable": true,
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
+      "reason": "The necessary narrow/enlarged week rail conflicts with the generic rule allowed-scroll list. Full scroll audit and scoped guide-priority/exception adjudication remain pending; no blanket exception is approved.",
+      "checks": [
+        "code",
+        "visual",
+        "interaction"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "ORC-F15",
+      "applicable": true,
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
+      "reason": "Repeated groups/controls remain neutral; no rainbow tags or avatar color assignment.",
+      "checks": [
+        "code",
+        "visual"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "ORC-G01",
+      "applicable": true,
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
+      "reason": "No gradients; white background follows explicit current guide.",
+      "checks": [
+        "code",
+        "visual"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "ORC-G02",
+      "applicable": true,
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
+      "reason": "Shadows serve focus indication only, with no hover depth.",
+      "checks": [
+        "code",
+        "visual"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "ORC-G03",
+      "applicable": true,
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
+      "reason": "Fields6px/action8px/dialog8px; larger radii only scoped category pills/day circles.",
+      "checks": [
+        "code",
+        "visual"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "ORC-G04",
+      "applicable": true,
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
+      "reason": "One semantic red error family, otherwise neutral.",
+      "checks": [
+        "code",
+        "visual"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "ORC-G05",
+      "applicable": true,
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
+      "reason": "No transform/opacity/shadow hover effects introduced.",
+      "checks": [
+        "code",
+        "visual",
+        "interaction"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "ORC-G06",
+      "applicable": true,
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
+      "reason": "Visited document states use14/16/22px; no fourth default size after label repair.",
+      "checks": [
+        "code",
+        "visual"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "ORC-G07",
+      "applicable": true,
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
+      "reason": "Role/provenance audit of every spacing use is unfinished; source token existence and prior numeric geometry do not establish a full4px-grid review.",
+      "checks": [
+        "code",
+        "visual"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "ORC-G08",
+      "applicable": true,
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
+      "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
+      "checks": [
+        "code",
+        "visual"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "ORC-G09",
+      "applicable": true,
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
+      "reason": "No decorative hero, illustration, KPI, divider or brand filler.",
+      "checks": [
+        "code",
+        "visual"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "ORC-G10",
+      "applicable": false,
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
+      "reason": "No sidebar/content mood split.",
+      "checks": [
+        "code",
+        "visual"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "ORC-G11",
+      "applicable": true,
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
+      "reason": "Dark-control text is white and>=600 in inspected states.",
+      "checks": [
+        "code",
+        "visual"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "ORC-G12",
+      "applicable": true,
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
+      "reason": "Same scoped-action inventory as ORC-F04.",
+      "checks": [
+        "code",
+        "visual"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "ORC-G13",
+      "applicable": false,
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
+      "reason": "No card grid for tabular data.",
+      "checks": [
+        "code",
+        "visual"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "ORC-G14",
+      "applicable": true,
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
+      "reason": "Errors red, ordinary controls/selection neutral.",
+      "checks": [
+        "code",
+        "visual"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "ORC-G15",
+      "applicable": true,
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
+      "reason": "Page title22px, within24px maximum.",
+      "checks": [
+        "code",
+        "visual"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "ORC-G16",
+      "applicable": true,
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
+      "reason": "Repeated permanently visible task deletion remains a confirmed action-noise failure. Adding required labels improves clarity but increases action mass; layout counts do not resolve this composition issue.",
+      "checks": [
+        "code",
+        "visual",
+        "interaction"
+      ],
+      "exceptions": [
+        {
+          "id": "mobile-explicit-management",
+          "scope": "Only the mobile task list deletion presentation",
+          "reason": "Literal hover-only access conflicts with mobile/coarse-pointer use. Repeated actions are hidden in reading and revealed by a labelled native edit mode; real touch/keyboard deletion and state/focus recovery are tested. The UI Bowl menu supports management grouping only, not this exact flow."
+        }
+      ]
+    },
+    {
+      "id": "ORC-G17",
+      "applicable": false,
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
+      "reason": "No multi-column dashboard.",
+      "checks": [
+        "code",
+        "visual"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "ORC-G18",
+      "applicable": true,
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
+      "reason": "Same unresolved full icon-size/alignment scope as ORC-F10; no full approval from flex declarations alone.",
+      "checks": [
+        "code",
+        "visual"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "ORC-G19",
+      "applicable": true,
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
+      "reason": "Need the complete default/state color-pair inventory, especially external Plus and neutral Trash2 paint. No automatic color-unity pass.",
+      "checks": [
+        "code",
+        "visual"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "ORC-G20",
+      "applicable": true,
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
+      "reason": "Need measured header/content/form sibling gap and inset matrix including first/last child margins. Existing role differences need explicit review.",
+      "checks": [
+        "code",
+        "visual"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "ORC-G21",
+      "applicable": true,
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
+      "reason": "Same native-control/pointer inventory as ORC-F13.",
+      "checks": [
+        "code",
+        "visual",
+        "interaction"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "ORC-G22",
+      "applicable": true,
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
+      "reason": "No decorative status/entity color cycling.",
+      "checks": [
+        "code",
+        "visual"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "ORC-G23",
+      "applicable": true,
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
+      "reason": "Same unresolved calendar-rail and all-container scroll audit as ORC-F16; keyboard reachability alone does not approve every scrollbar.",
+      "checks": [
+        "code",
+        "visual",
+        "interaction"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "ORC-G24",
+      "applicable": true,
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
+      "reason": "Concrete semantic markup; wrappers own layout and field focus, not div-only navigation.",
+      "checks": [
+        "code",
+        "visual"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "ORC-A01",
+      "applicable": true,
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
+      "reason": "Radius roles vary: pills/circles versus6px fields/8px action/dialog.",
+      "checks": [
+        "code",
+        "visual"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "ORC-A02",
+      "applicable": true,
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
+      "reason": "Original layered-background rule conflicts with the latest upstream mandatory white default and this mobile product contract. A documented scope/priority exception and actual surface review are still pending.",
+      "checks": [
+        "code",
+        "visual"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "ORC-A03",
+      "applicable": true,
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
+      "reason": "Only focus paint uses shadows in observed code. The literal no-box-shadow catalog rule needs explicit scoped adjudication with actual keyboard/forced-colors paint evidence; decorative-shadow absence is insufficient.",
+      "checks": [
+        "code",
+        "visual"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "ORC-A04",
+      "applicable": true,
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
+      "reason": "No Tailwind Blue-500 accent exists. The original no-brand three-direction prescription still requires scoped adjudication against the chosen reference-driven neutral contract; a neutral implementation alone is not a complete palette review.",
+      "checks": [
+        "code",
+        "visual"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "ORC-A05",
+      "applicable": false,
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
+      "reason": "No hero/sidebar/footer composition; mobile task rows already use asymmetric checkbox/text/action roles.",
+      "checks": [
+        "code",
+        "visual"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "ORC-A06",
+      "applicable": false,
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
+      "reason": "No Korean commerce catalogue price/rating/seller fields; actual task metadata is preserved and no filler is added.",
+      "checks": [
+        "code",
+        "visual"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "ORC-A07",
+      "applicable": true,
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
+      "reason": "Visible 추가/삭제 spans now accompany official icons in both categories and the actual dynamic row template. All12 mode/width label checks, matching accessible names, natural wrapping and44px targets pass. Standalone sample and component plan match assembly.",
+      "checks": [
+        "code",
+        "visual"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "ORC-A08",
+      "applicable": false,
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
+      "reason": "No photographic or illustration content required; only licensed local font and official functional icons.",
+      "checks": [
+        "code",
+        "visual"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "ORC-A09",
+      "applicable": false,
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
+      "reason": "No card grid.",
+      "checks": [
+        "code",
+        "visual"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "ORC-A10",
+      "applicable": true,
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
+      "reason": "Read-error versus confirmed-empty and recovery now work, but the generic every-component loading/illustration/retry prescription still needs applicability review for synchronous local data and unavailable native storage policies.",
+      "checks": [
+        "code",
+        "visual",
+        "interaction"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "RUI-01",
+      "applicable": true,
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
+      "reason": "Reference/native image dimensions are recorded separately from390px displayed comparison width. Original CSS viewport,DPR,font and hidden task-add modal remain explicitly unknown. Host/model/adaptation decisions are separated in DESIGN/REFERENCE and raw input records.",
+      "checks": [
+        "spec"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "RUI-02",
+      "applicable": true,
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
+      "reason": "Full token definition→reference→use-site and state text/background/icon mapping is not complete. Literal size/color/alignment values remain to be classified.",
+      "checks": [
+        "code"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "RUI-03",
+      "applicable": true,
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
+      "reason": "Current product scope/exclusions and all75 original checks plus8 guides are included. The result stays INCOMPLETE/UNVERIFIED with known failures/unknowns; no completion is inferred from functional totals.",
+      "checks": [
+        "spec"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "RUI-04",
+      "applicable": true,
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
+      "reason": "73 actual workflow assertions plus15 store cases and2 browser read-recovery transitions pass. Failed initial reads preserve disk/input, do not show a confirmed-empty claim, and recover on explicit successful reload. Ordinary write retries remain exercised. Native storage-property access policies are outside this scoped result.",
+      "checks": [
+        "spec",
+        "interaction"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "RUI-05",
+      "applicable": true,
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
+      "reason": "The separately frozen planner purpose has real selected-day task creation in two categories, completion, deletion,persistence and recovery. Current main/form render supports these tasks instead of relabeling workshop price/booking cards. This scoped requirement coverage is not a creative or reference-parity approval.",
+      "checks": [
+        "spec",
+        "visual"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "RUI-06",
+      "applicable": true,
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
+      "reason": "The original anti-slop JS review has not been executed and adjudicated for all current modules. Syntax,store and browser success are not substitutes.",
+      "checks": [
+        "code"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "RUI-07",
+      "applicable": true,
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
+      "reason": "Date heading and week filter establish task context; category openers create in that category; checkbox/title and supporting deletion own one record; the native form separates creation. Predeclared owned markup/contracts and actual main/form images show these relationships without invented decorative sections. The separate repeated-action failure remains open.",
+      "checks": [
+        "spec",
+        "visual"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "RUI-08",
+      "applicable": true,
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
+      "reason": "No invented logo/wordmark/slogan; the date heading is functional.",
+      "checks": [
+        "spec",
+        "code",
+        "visual"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "RUI-09",
+      "applicable": true,
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
+      "reason": "All visible document text in executed main/empty/form/error states is14,16 or22 CSS px, with actual computed typography checks at four widths and enlarged/spacing probes. Action labels are16px/500; input/select typography and actual local Noto fonts were exercised. Native popup/device/AT rendering is not included.",
+      "checks": [
+        "code",
+        "visual"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "RUI-10",
+      "applicable": true,
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
+      "reason": "Category add controls and full-width form submission have distinct roles; no CTA styled as a filter.",
+      "checks": [
+        "spec",
+        "visual"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "RUI-11",
+      "applicable": true,
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
+      "reason": "No demo notices, slogans or unrelated helper copy in product UI.",
+      "checks": [
+        "spec",
+        "visual"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "RUI-12",
+      "applicable": true,
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
+      "reason": "Official Lucide Plus and Trash2-neutral source, geometry/license/manifest verified. Trash2 denotes actual removal, is visibly rendered at20px in a44px target, has a task-specific accessible name and passed actual edge deletion/focus/reload checks. Original X asset remains unused historical material.",
+      "checks": [
+        "code",
+        "visual"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "RUI-13",
+      "applicable": true,
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
+      "reason": "Empty,one/few and long task states use natural-height lists rather than fixed-height scrolling cards. Actual four-task normal390px capture fits900px; long200%text extends the page naturally. Last week-day keyboard access in its necessary narrow calendar rail is tested; stricter generic scrollbar-rule conflicts remain unapproved separately.",
+      "checks": [
+        "code",
+        "visual",
+        "interaction"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "RUI-14",
+      "applicable": true,
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
+      "reason": "No section bars/tab underlines/hr; borders/rings only native fields and focus.",
+      "checks": [
+        "code",
+        "visual"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "RUI-15",
+      "applicable": false,
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
+      "reason": "No chat/composer or competing list/chat tasks.",
+      "checks": [
+        "spec",
+        "visual",
+        "interaction"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "RUI-16",
+      "applicable": true,
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
+      "reason": "Concrete Q-ID reference/implementation/token mappings and same-display-width positive feature review are still partial. Category/week likeness and corrected actions alone cannot approve all adopted advantages.",
+      "checks": [
+        "spec",
+        "visual"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "RUI-17",
+      "applicable": true,
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
+      "reason": "Reference/commercial equivalence remains unverified: action mass,density,field boundaries and full composition need positive comparison, with actual task-add reference still unavailable.",
+      "checks": [
+        "spec",
+        "visual"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "RUI-18",
+      "applicable": true,
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
+      "reason": "Main and auxiliary routine/category references are preserved separately, but actual task-add modal research remains unknown. Complete B/SC/R/D/Q coverage is not yet established.",
+      "checks": [
+        "spec",
+        "visual"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "RUI-19",
+      "applicable": false,
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
+      "reason": "No destination tabs; week buttons are date filtering, not page destinations.",
+      "checks": [
+        "spec",
+        "code",
+        "visual",
+        "interaction"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "RUI-20",
+      "applicable": true,
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
+      "reason": "Form purpose heading22/700 remains distinct from14px labels and16px values.",
+      "checks": [
+        "code",
+        "visual"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "RUI-21",
+      "applicable": true,
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
+      "reason": "Custom week filtering selection/focus/date persistence works in tests, but full date-control applicability and selection/cancel/reset scope require explicit adjudication. No claim about an unseen native picker.",
+      "checks": [
+        "code",
+        "visual",
+        "interaction"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "RUI-22",
+      "applicable": true,
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
+      "reason": "Need rendered first/last child and parent margin/padding matrix for main,form,error and enlarged states; source declarations alone cannot approve cumulative spacing.",
+      "checks": [
+        "code",
+        "visual"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "RUI-23",
+      "applicable": true,
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
+      "reason": "Current same-width main/form/empty/error renders use the same white surfaces,neutral text,22px purpose headings,14px labels,16px values and bounded mobile width. Main20px inset and form24px/20px inset have recorded distinct container roles. This verifies scoped cross-view consistency, not complete token use or full-guide compliance.",
+      "checks": [
+        "spec",
+        "code",
+        "visual"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "RUI-24",
+      "applicable": true,
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
+      "reason": "Heading sets selected-day context; date buttons select that context. No decorative duplicate badges/counts.",
+      "checks": [
+        "spec",
+        "visual"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "RUI-25",
+      "applicable": true,
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
+      "reason": "Category titles/space and native modal distinguish tasks; no forced cardification of all regions.",
+      "checks": [
+        "spec",
+        "visual"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "PROJECT-GUIDE-design-md",
+      "applicable": true,
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
+      "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
+      "checks": [
+        "spec"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "PROJECT-GUIDE-onboarding-flow",
+      "applicable": false,
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
+      "reason": "No signup/onboarding/consent flow is requested in this personal task planner.",
+      "checks": [
+        "spec",
+        "interaction"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "PROJECT-GUIDE-reference-decompose",
+      "applicable": true,
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
+      "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
+      "checks": [
+        "spec",
+        "visual"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "PROJECT-GUIDE-reference-review",
+      "applicable": true,
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
+      "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
+      "checks": [
+        "spec",
+        "code",
+        "visual",
+        "interaction"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "PROJECT-GUIDE-reference-to-ui",
+      "applicable": true,
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
+      "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
+      "checks": [
+        "spec",
+        "code",
+        "visual",
+        "interaction"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "PROJECT-GUIDE-samkill-ui",
+      "applicable": true,
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
+      "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
+      "checks": [
+        "spec",
+        "code",
+        "visual",
+        "interaction"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "PROJECT-GUIDE-uibowl-research",
+      "applicable": true,
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
+      "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
+      "checks": [
+        "spec",
+        "visual"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "PROJECT-GUIDE-ux-copy",
+      "applicable": true,
+      "scope": "Current mobile planner main, empty, form, errors and long/enlarged states; unvisited native/platform states remain unverified",
+      "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
+      "checks": [
+        "spec",
+        "visual",
+        "interaction"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "PROJECT-LONG-ACTION-OWNERSHIP",
+      "applicable": true,
+      "scope": "Wrapped task rows at296px/200% text",
+      "reason": "All visible short/120-character task rows keep checkbox and delete centered within2px of the first line at296/320/390/1440 in normal,200%text and separate text-spacing modes. Official44px delete target and44px capsule verified. Direct296px enlarged screenshot inspected.",
+      "checks": [
+        "spec",
+        "code",
+        "visual"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "PROJECT-INITIAL-READ-INTEGRITY",
+      "applicable": true,
+      "scope": "Planner malformed/denied initial reads, attempted create, read restored and explicit reload; ordinary write retries",
+      "reason": "Read failure is unknown data. A new create must not overwrite unreadable original storage or show confirmed empty UI.",
+      "checks": [
+        "spec",
+        "code",
+        "visual",
+        "interaction"
+      ],
+      "exceptions": []
+    }
+  ]
+}

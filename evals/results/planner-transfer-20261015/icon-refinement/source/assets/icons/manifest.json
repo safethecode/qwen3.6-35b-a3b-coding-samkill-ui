@@ -1,0 +1,38 @@
+{
+  "package": "lucide",
+  "version": "1.51.0",
+  "source": "https://github.com/lucide-icons/lucide",
+  "licenseSha256": "b495047bd93a9b06913511076f504daba17d5bbeb3e0650f3bb53a4220329c57",
+  "icons": [
+    {
+      "name": "Plus",
+      "file": "Plus.svg",
+      "sha256": "3d4f93d0e5a8eb932e4d1f0d71122d01917e7624439adc35dddcd5352d7a228f",
+      "geometrySha256": "3ed1784e53a9252aa47f2392c529dc2078803a22e84522f68ec8165c23f05bb0"
+    },
+    {
+      "name": "X",
+      "file": "X.svg",
+      "sha256": "f27abfc353abc2497a1d9752e21e2e2e32eeeb4271401f2a067c4d1fcced7a23",
+      "geometrySha256": "7bf13b1e2e2ab7bb7226b828a7b6ded9a6482211bdeafc7a1e61ea450232d212"
+    },
+    {
+      "name": "Trash2",
+      "variant": "neutral",
+      "fill": "none",
+      "stroke": "#202024",
+      "file": "Trash2-neutral.svg",
+      "sha256": "4e249e5c0f31edddd39895daffe23cf7bc80d405fb1a1f21749683d391de419a",
+      "geometrySha256": "0887db16204aec49dbefc692233cd54fe3844849ddbada6d52709cfba3b70e28"
+    },
+    {
+      "name": "Plus",
+      "variant": "neutral",
+      "fill": "none",
+      "stroke": "#202024",
+      "file": "Plus-neutral.svg",
+      "sha256": "13e30a4730e5e97733ad1ecb4783952fd08ef7a73239a3f07668556b0360b539",
+      "geometrySha256": "3ed1784e53a9252aa47f2392c529dc2078803a22e84522f68ec8165c23f05bb0"
+    }
+  ]
+}

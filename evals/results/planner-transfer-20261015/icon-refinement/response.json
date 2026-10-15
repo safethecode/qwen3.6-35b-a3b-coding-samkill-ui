@@ -1,0 +1,18 @@
+{
+  "elapsedMs": 41339,
+  "model": "qwen3.6:35b-a3b-coding",
+  "created_at": "2026-10-15T10:42:17.5610199Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\"iconSize\":\"calc(1em + 4px)\",\"actionColor\":\"var(--text)\"}"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 41333529600,
+  "load_duration": 16760343200,
+  "prompt_eval_count": 2227,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration": 23827646000,
+  "eval_count": 22,
+  "eval_duration": 725314000
+}

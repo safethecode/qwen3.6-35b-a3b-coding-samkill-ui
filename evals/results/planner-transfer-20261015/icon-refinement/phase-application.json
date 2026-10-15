@@ -1,0 +1,10 @@
+{
+  "status": "APPLIED_BOUNDED_ICON_REPAIR_NOT_FULL_GUIDE_COMPLETION",
+  "guide": "skills/qwen-samkill-ui/references/upstream/reference-to-ui/references/icon-controls.md",
+  "exactDelivery": "request.json guideSources plus full guide text and original4catalog rules",
+  "decomposition": "preparation.json and integration.json define official asset consumers and four exact CSS declaration blocks",
+  "visualReview": "source/design/evidence/icon-review.md",
+  "preservedReferenceRound": "../edit-mode-research/reference.json",
+  "inheritedPhaseRecord": "../edit-mode/phase-application.json",
+  "fullGuideLimit": "Seven applicable whole-guide assessments remain unknown; this repair does not approve them."
+}
