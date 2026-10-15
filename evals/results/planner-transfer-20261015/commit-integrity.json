@@ -1,0 +1,8 @@
+{
+  "commit": "271e4cb1d94767518c9beb32a466085154d2c132",
+  "exactStudyAndOtherFiles": 184,
+  "normalizedDocumentation": [
+    "evals/QUALITY-GATE-RESULTS.md"
+  ],
+  "note": "Generic staged-byte checker stopped at root Markdown CRLF normalization before the push; post-commit HEAD verification confirms all184other files are byte-exact and only the root prose document differs in line endings."
+}

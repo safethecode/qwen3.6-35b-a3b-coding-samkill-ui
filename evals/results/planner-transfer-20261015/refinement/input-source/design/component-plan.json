@@ -1,0 +1,58 @@
+{
+  "viewport": {
+    "mode": "mobile-only",
+    "maxWidth": 390
+  },
+  "reference": {
+    "status": "inspected",
+    "app": "투두메이트",
+    "source": "Fresh UI Bowl 메인 representative image, not the initially returned AI recommendation sheet",
+    "sourceImage": "reference-0.jpg",
+    "unknowns": [
+      "Original CSS/DPR/font",
+      "Actual task mutation behavior",
+      "Uninspected result images"
+    ],
+    "observations": [
+      "White content canvas",
+      "Week navigation above category task groups",
+      "Compact category headings and nearby plus actions",
+      "Selected day number has a small dark circle"
+    ],
+    "adaptations": [
+      "Standalone personal study/life planner; omit social profiles, advertising and AI upsell",
+      "New product functional choices create/toggle/delete and day filtering are chosen, not observed original behavior",
+      "44px wide day targets scroll within the strip on narrow widths; do not overflow the document",
+      "No desktop variant or copied booking product content"
+    ]
+  },
+  "shared": "New independently specified mobile personal task planner. White canvas, date/week navigation, category groups and task controls. No brand header, KPI cards, marketing, demo notices, divider bars or desktop adaptation. Host supplies semantic markup/layout/assets; local model styles units, then separately generates behavior. This is assisted transfer, not proof of independent full-product parity. All text>=14px and weight>=500. Native checkbox/select affordances stay native. Shared assembly owns outer spacing and rows. No actual tasks are seeded; filled-state fixtures will be inserted by evaluation through the real create flow.",
+  "sharedCss": ":root{--surface:#fff;--text:#202024;--muted:#60606a;--quiet:#f4f4f5;--focus:#202024;--space-small:8px;--space-inline:16px;--space-section:32px;--screen-inset:20px}*{box-sizing:border-box}body{width:100%;max-width:390px;margin:0 auto;background:#fff;color:var(--text);font-family:\"Noto Sans KR\",sans-serif;font-weight:500}p,h1,h2,ul{margin:0}button,input,select{font:inherit}button{cursor:pointer}img{display:block;max-width:100%}[hidden]{display:none!important}button:focus-visible{outline:2px solid var(--focus);outline-offset:2px}.planner-header{padding:24px var(--screen-inset) 0}.task-groups{padding:var(--space-section) var(--screen-inset)}.week-strip{display:flex;gap:4px;overflow-x:auto;width:100%;padding:4px 0}.task-category{margin-bottom:var(--space-section)}.category-heading{display:flex;align-items:center;gap:8px}.task-list{padding:0;list-style:none}.task-row{display:flex;align-items:flex-start;gap:8px}.task-toggle{flex:1;min-width:0}.editor-sample{width:358px;max-width:calc(100% - 32px);margin:16px auto}dialog{width:358px;max-width:calc(100% - 32px);max-height:calc(100dvh - 32px);padding:0;border:0;border-radius:8px;overflow:auto;background:#fff;color:var(--text)}dialog::backdrop{background:rgb(20 20 24 / .45)}",
+  "assembly": "{{week}}{{tasks}}<dialog id=\"task-dialog\" aria-labelledby=\"task-title\">{{editor}}</dialog>",
+  "elements": [
+    {
+      "id": "week",
+      "html": "<header data-ui-unit=\"week\" class=\"planner-header\" aria-label=\"할 일 날짜\"><h1 id=\"selected-date\">10월 15일 목요일</h1><div id=\"week-days\" class=\"week-strip\" aria-label=\"날짜 선택\"><button class=\"day-button\" type=\"button\" data-date=\"2026-10-12\" aria-label=\"10월 12일 월요일\" aria-pressed=\"false\"><span class=\"weekday\">월</span><span class=\"day-number\">12</span></button><button class=\"day-button\" type=\"button\" data-date=\"2026-10-13\" aria-label=\"10월 13일 화요일\" aria-pressed=\"false\"><span class=\"weekday\">화</span><span class=\"day-number\">13</span></button><button class=\"day-button\" type=\"button\" data-date=\"2026-10-14\" aria-label=\"10월 14일 수요일\" aria-pressed=\"false\"><span class=\"weekday\">수</span><span class=\"day-number\">14</span></button><button class=\"day-button\" type=\"button\" data-date=\"2026-10-15\" aria-label=\"10월 15일 목요일\" aria-pressed=\"true\"><span class=\"weekday\">목</span><span class=\"day-number\">15</span></button><button class=\"day-button\" type=\"button\" data-date=\"2026-10-16\" aria-label=\"10월 16일 금요일\" aria-pressed=\"false\"><span class=\"weekday\">금</span><span class=\"day-number\">16</span></button><button class=\"day-button\" type=\"button\" data-date=\"2026-10-17\" aria-label=\"10월 17일 토요일\" aria-pressed=\"false\"><span class=\"weekday\">토</span><span class=\"day-number\">17</span></button><button class=\"day-button\" type=\"button\" data-date=\"2026-10-18\" aria-label=\"10월 18일 일요일\" aria-pressed=\"false\"><span class=\"weekday\">일</span><span class=\"day-number\">18</span></button></div></header>",
+      "assets": [],
+      "sample": "{{week}}",
+      "prompt": "Style date heading22px700 line-height1.5, left aligned, margin-bottom16px. Shared week-strip owns flex and horizontal scrolling. Day buttons flex0 0 auto,min-width44px,padding4px, min-height64px with natural growth, transparent borderless, two centered rows with4pxgap. Weekday14px500 muted; number16px600 in2em circular slot that scales with actual font size. Selected aria-pressed=true changes only number circle to dark text-role background withwhite number and700weight; other circle is transparent. Do not paint whole tab rectangles or underlines. Keep keyboard focus, no fixed text height or clipped labels, no native browser status bar or invented menu."
+    },
+    {
+      "id": "tasks",
+      "html": "<main data-ui-unit=\"tasks\" class=\"task-groups\"><p id=\"empty-state\">등록한 할 일이 없어요</p><section class=\"task-category\" aria-labelledby=\"study-title\"><div class=\"category-heading\"><h2 id=\"study-title\">공부</h2><button class=\"add-task\" type=\"button\" data-add-category=\"study\" aria-label=\"공부 할 일 추가\"><img src=\"assets/icons/Plus.svg\" width=\"20\" height=\"20\" alt=\"\"></button></div><ul id=\"study-items\" class=\"task-list\"></ul></section><section class=\"task-category\" aria-labelledby=\"life-title\"><div class=\"category-heading\"><h2 id=\"life-title\">생활</h2><button class=\"add-task\" type=\"button\" data-add-category=\"life\" aria-label=\"생활 할 일 추가\"><img src=\"assets/icons/Plus.svg\" width=\"20\" height=\"20\" alt=\"\"></button></div><ul id=\"life-items\" class=\"task-list\"></ul></section><template id=\"task-template\"><li class=\"task-row\"><label class=\"task-toggle\"><input class=\"task-check\" type=\"checkbox\"><span class=\"task-name\"></span></label><button class=\"delete-task\" type=\"button\" aria-label=\"할 일 삭제\"><img src=\"assets/icons/Trash2-neutral.svg\" width=\"20\" height=\"20\" alt=\"\"></button></li></template><p id=\"page-error\" role=\"alert\"></p></main>",
+      "assets": [
+        "assets/icons/Plus.svg",
+        "assets/icons/Trash2-neutral.svg"
+      ],
+      "sample": "{{tasks}}",
+      "prompt": "Shared assembly owns category separation and task-row flex. Category h2=14px600 inside quiet gray rounded16px content-fit pill,padding4px12px. Add button44px square transparent with official20pxPlus. Lists margin-top8px. Dynamic rows use .task-row min-height56px and8pxblockgap. .task-toggle is the full clickable label: displayflex alignstart gap12px, padding8px0,min-height44px; native checkbox20px with dark accent, flex-shrink0; title16px500 line-height1.6,keep-all with emergencywrap. Completed checkbox state can be represented by .task-row.is-complete and checked input: title muted,strikethrough,never reducedopacity. Delete button44px,official20pxX,quiet transparent. Empty state14px500 muted line-height1.6 with24pxbottomgap. Page error14px500 red and hidewhenempty. No seeded visible task text, avatars, cards, row dividers or made-up counts. Style the template classes for later real DOM insertion. Post-review correction: use the supplied official Trash2 deletion icon, not a close X. For wrapping titles, row controls anchor to the first text line; checkbox/delete centers within2px across normal,200%text and text-spacing. Keep44px delete target and20px checkbox. Category background pill should be44px high with0px vertical/12px horizontal padding; preserve title14/600 and44px add target."
+    },
+    {
+      "id": "editor",
+      "html": "<div data-ui-unit=\"editor\" class=\"task-form-panel\"><div class=\"editor-heading\"><h2 id=\"task-title\">할 일 추가</h2><button id=\"close-task\" type=\"button\">닫기</button></div><form id=\"task-form\"><div class=\"form-field\"><label for=\"task-name\">할 일</label><div class=\"field-control\"><input id=\"task-name\" name=\"title\" required maxlength=\"120\" autocomplete=\"off\"></div></div><div class=\"form-field\"><label for=\"task-category\">분류</label><div class=\"field-control\"><select id=\"task-category\" name=\"category\"><option value=\"study\">공부</option><option value=\"life\">생활</option></select></div></div><p id=\"task-error\" role=\"alert\"></p><button id=\"save-task\" type=\"submit\">추가하기</button></form></div>",
+      "assets": [],
+      "sample": "<div class=\"editor-sample\">{{editor}}</div>",
+      "prompt": "Own internal24pxpadding (20px <=360). Single primary h2=22px700,close14px600,min44px auto height; header wraps naturally at200%text. Form margin-top24px,field groups16pxgap,labels14px600 line-height1.5 and8pxinputgap. Wrapper .field-control ownswhitebackground,border1pxneutral,radius6px and visible inset0 0 0 2pxdark focus shadow; input/select children transparentbackground,outline:none scoped here,appearance:auto,nativearrow,width100%,min-height48px,padding12px,font16px500,line-height1.5. No opaque child may cover the inset ring. forced-colors uses a system-color wrapper outline. Empty task-error displaynone,nonempty14px500red. Submit fullwidthmin52px,autoheight,padding16px,darkbackgroundwhite16px700,line-height1.5,normalwrap,margin-top24px. Keep all names, labels and options. No placeholders/demotext/extrahints. No desktopstyles or pseudo-icons."
+    }
+  ]
+}

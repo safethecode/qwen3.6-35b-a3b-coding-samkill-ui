@@ -1,0 +1,1081 @@
+{
+  "scope": "Every spacing declaration in the supplied CSS, including media/state declarations; not a complete DOM or rendered-distance audit",
+  "declarations": 42,
+  "selectors": 34,
+  "entries": [
+    {
+      "selector": "body",
+      "property": "margin",
+      "raw": "0 auto",
+      "role": "UNVERIFIED",
+      "scope": [],
+      "values": [
+        {
+          "raw": "0",
+          "resolved": "0",
+          "value": 0,
+          "status": "UNVERIFIED",
+          "candidates": [],
+          "reason": "Spacing role not established"
+        },
+        {
+          "status": "UNVERIFIED",
+          "reason": "Content-dependent, relative or unresolved spacing requires rendered/context review",
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "selector": "p,h1,h2,ul",
+      "property": "margin",
+      "raw": "0",
+      "role": "UNVERIFIED",
+      "scope": [],
+      "values": [
+        {
+          "raw": "0",
+          "resolved": "0",
+          "value": 0,
+          "status": "UNVERIFIED",
+          "candidates": [],
+          "reason": "Spacing role not established"
+        }
+      ]
+    },
+    {
+      "selector": ".planner-header",
+      "property": "padding",
+      "raw": "24px var(--screen-inset) 0",
+      "role": "structural",
+      "scope": [],
+      "values": [
+        {
+          "raw": "24px",
+          "resolved": "24px",
+          "value": 24,
+          "status": "ALIGNED",
+          "candidates": [],
+          "reason": "Within the declared role scale; not visual approval"
+        },
+        {
+          "raw": "var(--screen-inset)",
+          "token": "--screen-inset",
+          "resolved": "20px",
+          "value": 20,
+          "status": "REVIEW",
+          "candidates": [
+            16,
+            24
+          ],
+          "reason": "Structural eight-step or scale alignment review; not a hard product failure"
+        },
+        {
+          "raw": "0",
+          "resolved": "0",
+          "value": 0,
+          "status": "ALIGNED",
+          "candidates": [],
+          "reason": "Within the declared role scale; not visual approval"
+        }
+      ]
+    },
+    {
+      "selector": ".task-groups",
+      "property": "padding",
+      "raw": "var(--space-section) var(--screen-inset)",
+      "role": "structural",
+      "scope": [],
+      "values": [
+        {
+          "raw": "var(--space-section)",
+          "token": "--space-section",
+          "resolved": "32px",
+          "value": 32,
+          "status": "ALIGNED",
+          "candidates": [],
+          "reason": "Within the declared role scale; not visual approval"
+        },
+        {
+          "raw": "var(--screen-inset)",
+          "token": "--screen-inset",
+          "resolved": "20px",
+          "value": 20,
+          "status": "REVIEW",
+          "candidates": [
+            16,
+            24
+          ],
+          "reason": "Structural eight-step or scale alignment review; not a hard product failure"
+        }
+      ]
+    },
+    {
+      "selector": ".week-strip",
+      "property": "gap",
+      "raw": "4px",
+      "role": "internal",
+      "scope": [],
+      "values": [
+        {
+          "raw": "4px",
+          "resolved": "4px",
+          "value": 4,
+          "status": "ALIGNED",
+          "candidates": [],
+          "reason": "Within the declared role scale; not visual approval"
+        }
+      ]
+    },
+    {
+      "selector": ".week-strip",
+      "property": "padding",
+      "raw": "4px 0",
+      "role": "internal",
+      "scope": [],
+      "values": [
+        {
+          "raw": "4px",
+          "resolved": "4px",
+          "value": 4,
+          "status": "ALIGNED",
+          "candidates": [],
+          "reason": "Within the declared role scale; not visual approval"
+        },
+        {
+          "raw": "0",
+          "resolved": "0",
+          "value": 0,
+          "status": "ALIGNED",
+          "candidates": [],
+          "reason": "Within the declared role scale; not visual approval"
+        }
+      ]
+    },
+    {
+      "selector": ".task-category",
+      "property": "margin-bottom",
+      "raw": "var(--space-section)",
+      "role": "structural",
+      "scope": [],
+      "values": [
+        {
+          "raw": "var(--space-section)",
+          "token": "--space-section",
+          "resolved": "32px",
+          "value": 32,
+          "status": "ALIGNED",
+          "candidates": [],
+          "reason": "Within the declared role scale; not visual approval"
+        }
+      ]
+    },
+    {
+      "selector": ".category-heading",
+      "property": "gap",
+      "raw": "8px",
+      "role": "internal",
+      "scope": [],
+      "values": [
+        {
+          "raw": "8px",
+          "resolved": "8px",
+          "value": 8,
+          "status": "ALIGNED",
+          "candidates": [],
+          "reason": "Within the declared role scale; not visual approval"
+        }
+      ]
+    },
+    {
+      "selector": ".task-list",
+      "property": "padding",
+      "raw": "0",
+      "role": "internal",
+      "scope": [],
+      "values": [
+        {
+          "raw": "0",
+          "resolved": "0",
+          "value": 0,
+          "status": "ALIGNED",
+          "candidates": [],
+          "reason": "Within the declared role scale; not visual approval"
+        }
+      ]
+    },
+    {
+      "selector": ".task-row",
+      "property": "gap",
+      "raw": "8px",
+      "role": "internal",
+      "scope": [],
+      "values": [
+        {
+          "raw": "8px",
+          "resolved": "8px",
+          "value": 8,
+          "status": "ALIGNED",
+          "candidates": [],
+          "reason": "Within the declared role scale; not visual approval"
+        }
+      ]
+    },
+    {
+      "selector": ".editor-sample",
+      "property": "margin",
+      "raw": "16px auto",
+      "role": "structural",
+      "scope": [],
+      "values": [
+        {
+          "raw": "16px",
+          "resolved": "16px",
+          "value": 16,
+          "status": "ALIGNED",
+          "candidates": [],
+          "reason": "Within the declared role scale; not visual approval"
+        },
+        {
+          "status": "UNVERIFIED",
+          "reason": "Content-dependent, relative or unresolved spacing requires rendered/context review",
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "selector": "dialog",
+      "property": "padding",
+      "raw": "0",
+      "role": "UNVERIFIED",
+      "scope": [],
+      "values": [
+        {
+          "raw": "0",
+          "resolved": "0",
+          "value": 0,
+          "status": "UNVERIFIED",
+          "candidates": [],
+          "reason": "Spacing role not established"
+        }
+      ]
+    },
+    {
+      "selector": "[data-ui-unit=\"week\"].planner-header",
+      "property": "padding",
+      "raw": "24px var(--screen-inset) 0",
+      "role": "structural",
+      "scope": [],
+      "values": [
+        {
+          "raw": "24px",
+          "resolved": "24px",
+          "value": 24,
+          "status": "ALIGNED",
+          "candidates": [],
+          "reason": "Within the declared role scale; not visual approval"
+        },
+        {
+          "raw": "var(--screen-inset)",
+          "token": "--screen-inset",
+          "resolved": "20px",
+          "value": 20,
+          "status": "REVIEW",
+          "candidates": [
+            16,
+            24
+          ],
+          "reason": "Structural eight-step or scale alignment review; not a hard product failure"
+        },
+        {
+          "raw": "0",
+          "resolved": "0",
+          "value": 0,
+          "status": "ALIGNED",
+          "candidates": [],
+          "reason": "Within the declared role scale; not visual approval"
+        }
+      ]
+    },
+    {
+      "selector": "[data-ui-unit=\"week\"].planner-header h1",
+      "property": "margin-bottom",
+      "raw": "16px",
+      "role": "UNVERIFIED",
+      "scope": [],
+      "values": [
+        {
+          "raw": "16px",
+          "resolved": "16px",
+          "value": 16,
+          "status": "UNVERIFIED",
+          "candidates": [],
+          "reason": "Spacing role not established"
+        }
+      ]
+    },
+    {
+      "selector": "[data-ui-unit=\"week\"] .week-strip",
+      "property": "gap",
+      "raw": "4px",
+      "role": "internal",
+      "scope": [],
+      "values": [
+        {
+          "raw": "4px",
+          "resolved": "4px",
+          "value": 4,
+          "status": "ALIGNED",
+          "candidates": [],
+          "reason": "Within the declared role scale; not visual approval"
+        }
+      ]
+    },
+    {
+      "selector": "[data-ui-unit=\"week\"] .week-strip",
+      "property": "padding",
+      "raw": "4px 0",
+      "role": "internal",
+      "scope": [],
+      "values": [
+        {
+          "raw": "4px",
+          "resolved": "4px",
+          "value": 4,
+          "status": "ALIGNED",
+          "candidates": [],
+          "reason": "Within the declared role scale; not visual approval"
+        },
+        {
+          "raw": "0",
+          "resolved": "0",
+          "value": 0,
+          "status": "ALIGNED",
+          "candidates": [],
+          "reason": "Within the declared role scale; not visual approval"
+        }
+      ]
+    },
+    {
+      "selector": "[data-ui-unit=\"week\"] .day-button",
+      "property": "gap",
+      "raw": "4px",
+      "role": "internal",
+      "scope": [],
+      "values": [
+        {
+          "raw": "4px",
+          "resolved": "4px",
+          "value": 4,
+          "status": "ALIGNED",
+          "candidates": [],
+          "reason": "Within the declared role scale; not visual approval"
+        }
+      ]
+    },
+    {
+      "selector": "[data-ui-unit=\"week\"] .day-button",
+      "property": "padding",
+      "raw": "4px",
+      "role": "internal",
+      "scope": [],
+      "values": [
+        {
+          "raw": "4px",
+          "resolved": "4px",
+          "value": 4,
+          "status": "ALIGNED",
+          "candidates": [],
+          "reason": "Within the declared role scale; not visual approval"
+        }
+      ]
+    },
+    {
+      "selector": "[data-ui-unit=\"tasks\"] .task-category .category-heading",
+      "property": "padding",
+      "raw": "4px 12px",
+      "role": "internal",
+      "scope": [],
+      "values": [
+        {
+          "raw": "4px",
+          "resolved": "4px",
+          "value": 4,
+          "status": "ALIGNED",
+          "candidates": [],
+          "reason": "Within the declared role scale; not visual approval"
+        },
+        {
+          "raw": "12px",
+          "resolved": "12px",
+          "value": 12,
+          "status": "ALIGNED",
+          "candidates": [],
+          "reason": "Within the declared role scale; not visual approval"
+        }
+      ]
+    },
+    {
+      "selector": "[data-ui-unit=\"tasks\"] .task-category .category-heading h2",
+      "property": "margin",
+      "raw": "0",
+      "role": "UNVERIFIED",
+      "scope": [],
+      "values": [
+        {
+          "raw": "0",
+          "resolved": "0",
+          "value": 0,
+          "status": "UNVERIFIED",
+          "candidates": [],
+          "reason": "Spacing role not established"
+        }
+      ]
+    },
+    {
+      "selector": "[data-ui-unit=\"tasks\"] .add-task",
+      "property": "padding",
+      "raw": "0",
+      "role": "internal",
+      "scope": [],
+      "values": [
+        {
+          "raw": "0",
+          "resolved": "0",
+          "value": 0,
+          "status": "ALIGNED",
+          "candidates": [],
+          "reason": "Within the declared role scale; not visual approval"
+        }
+      ]
+    },
+    {
+      "selector": "[data-ui-unit=\"tasks\"] .task-list",
+      "property": "margin-top",
+      "raw": "8px",
+      "role": "internal",
+      "scope": [],
+      "values": [
+        {
+          "raw": "8px",
+          "resolved": "8px",
+          "value": 8,
+          "status": "ALIGNED",
+          "candidates": [],
+          "reason": "Within the declared role scale; not visual approval"
+        }
+      ]
+    },
+    {
+      "selector": "[data-ui-unit=\"tasks\"] .task-list",
+      "property": "padding",
+      "raw": "0",
+      "role": "internal",
+      "scope": [],
+      "values": [
+        {
+          "raw": "0",
+          "resolved": "0",
+          "value": 0,
+          "status": "ALIGNED",
+          "candidates": [],
+          "reason": "Within the declared role scale; not visual approval"
+        }
+      ]
+    },
+    {
+      "selector": "[data-ui-unit=\"tasks\"] .task-row",
+      "property": "gap",
+      "raw": "8px",
+      "role": "internal",
+      "scope": [],
+      "values": [
+        {
+          "raw": "8px",
+          "resolved": "8px",
+          "value": 8,
+          "status": "ALIGNED",
+          "candidates": [],
+          "reason": "Within the declared role scale; not visual approval"
+        }
+      ]
+    },
+    {
+      "selector": "[data-ui-unit=\"tasks\"] .task-toggle",
+      "property": "gap",
+      "raw": "12px",
+      "role": "internal",
+      "scope": [],
+      "values": [
+        {
+          "raw": "12px",
+          "resolved": "12px",
+          "value": 12,
+          "status": "ALIGNED",
+          "candidates": [],
+          "reason": "Within the declared role scale; not visual approval"
+        }
+      ]
+    },
+    {
+      "selector": "[data-ui-unit=\"tasks\"] .task-toggle",
+      "property": "padding",
+      "raw": "8px 0",
+      "role": "internal",
+      "scope": [],
+      "values": [
+        {
+          "raw": "8px",
+          "resolved": "8px",
+          "value": 8,
+          "status": "ALIGNED",
+          "candidates": [],
+          "reason": "Within the declared role scale; not visual approval"
+        },
+        {
+          "raw": "0",
+          "resolved": "0",
+          "value": 0,
+          "status": "ALIGNED",
+          "candidates": [],
+          "reason": "Within the declared role scale; not visual approval"
+        }
+      ]
+    },
+    {
+      "selector": "[data-ui-unit=\"tasks\"] .task-check",
+      "property": "margin-top",
+      "raw": "2px",
+      "role": "UNVERIFIED",
+      "scope": [],
+      "values": [
+        {
+          "raw": "2px",
+          "resolved": "2px",
+          "value": 2,
+          "status": "UNVERIFIED",
+          "candidates": [],
+          "reason": "Spacing role not established"
+        }
+      ]
+    },
+    {
+      "selector": "[data-ui-unit=\"tasks\"] .delete-task",
+      "property": "padding",
+      "raw": "0",
+      "role": "internal",
+      "scope": [],
+      "values": [
+        {
+          "raw": "0",
+          "resolved": "0",
+          "value": 0,
+          "status": "ALIGNED",
+          "candidates": [],
+          "reason": "Within the declared role scale; not visual approval"
+        }
+      ]
+    },
+    {
+      "selector": "[data-ui-unit=\"tasks\"] #empty-state",
+      "property": "padding-bottom",
+      "raw": "24px",
+      "role": "structural",
+      "scope": [],
+      "values": [
+        {
+          "raw": "24px",
+          "resolved": "24px",
+          "value": 24,
+          "status": "ALIGNED",
+          "candidates": [],
+          "reason": "Within the declared role scale; not visual approval"
+        }
+      ]
+    },
+    {
+      "selector": "[data-ui-unit=\"tasks\"] #page-error",
+      "property": "margin-top",
+      "raw": "16px",
+      "role": "structural",
+      "scope": [],
+      "values": [
+        {
+          "raw": "16px",
+          "resolved": "16px",
+          "value": 16,
+          "status": "ALIGNED",
+          "candidates": [],
+          "reason": "Within the declared role scale; not visual approval"
+        }
+      ]
+    },
+    {
+      "selector": "[data-ui-unit=\"editor\"].task-form-panel",
+      "property": "padding",
+      "raw": "24px",
+      "role": "internal",
+      "scope": [],
+      "values": [
+        {
+          "raw": "24px",
+          "resolved": "24px",
+          "value": 24,
+          "status": "ALIGNED",
+          "candidates": [],
+          "reason": "Within the declared role scale; not visual approval"
+        }
+      ]
+    },
+    {
+      "selector": "[data-ui-unit=\"editor\"].task-form-panel",
+      "property": "padding",
+      "raw": "20px",
+      "role": "internal",
+      "scope": [
+        "@media (max-width: 360px)"
+      ],
+      "values": [
+        {
+          "raw": "20px",
+          "resolved": "20px",
+          "value": 20,
+          "status": "ALIGNED",
+          "candidates": [],
+          "reason": "Within the declared role scale; not visual approval"
+        }
+      ]
+    },
+    {
+      "selector": "[data-ui-unit=\"editor\"] .editor-heading",
+      "property": "margin-bottom",
+      "raw": "16px",
+      "role": "internal",
+      "scope": [],
+      "values": [
+        {
+          "raw": "16px",
+          "resolved": "16px",
+          "value": 16,
+          "status": "ALIGNED",
+          "candidates": [],
+          "reason": "Within the declared role scale; not visual approval"
+        }
+      ]
+    },
+    {
+      "selector": "[data-ui-unit=\"editor\"] .editor-heading h2",
+      "property": "margin",
+      "raw": "0",
+      "role": "UNVERIFIED",
+      "scope": [],
+      "values": [
+        {
+          "raw": "0",
+          "resolved": "0",
+          "value": 0,
+          "status": "UNVERIFIED",
+          "candidates": [],
+          "reason": "Spacing role not established"
+        }
+      ]
+    },
+    {
+      "selector": "[data-ui-unit=\"editor\"] #close-task",
+      "property": "padding",
+      "raw": "8px",
+      "role": "internal",
+      "scope": [],
+      "values": [
+        {
+          "raw": "8px",
+          "resolved": "8px",
+          "value": 8,
+          "status": "ALIGNED",
+          "candidates": [],
+          "reason": "Within the declared role scale; not visual approval"
+        }
+      ]
+    },
+    {
+      "selector": "[data-ui-unit=\"editor\"] #task-form",
+      "property": "margin-top",
+      "raw": "24px",
+      "role": "structural",
+      "scope": [],
+      "values": [
+        {
+          "raw": "24px",
+          "resolved": "24px",
+          "value": 24,
+          "status": "ALIGNED",
+          "candidates": [],
+          "reason": "Within the declared role scale; not visual approval"
+        }
+      ]
+    },
+    {
+      "selector": "[data-ui-unit=\"editor\"] #task-form",
+      "property": "gap",
+      "raw": "16px",
+      "role": "structural",
+      "scope": [],
+      "values": [
+        {
+          "raw": "16px",
+          "resolved": "16px",
+          "value": 16,
+          "status": "ALIGNED",
+          "candidates": [],
+          "reason": "Within the declared role scale; not visual approval"
+        }
+      ]
+    },
+    {
+      "selector": "[data-ui-unit=\"editor\"] .form-field label",
+      "property": "margin-bottom",
+      "raw": "8px",
+      "role": "internal",
+      "scope": [],
+      "values": [
+        {
+          "raw": "8px",
+          "resolved": "8px",
+          "value": 8,
+          "status": "ALIGNED",
+          "candidates": [],
+          "reason": "Within the declared role scale; not visual approval"
+        }
+      ]
+    },
+    {
+      "selector": "[data-ui-unit=\"editor\"] #task-name,\n[data-ui-unit=\"editor\"] #task-category",
+      "property": "padding",
+      "raw": "12px",
+      "role": "internal",
+      "scope": [],
+      "values": [
+        {
+          "raw": "12px",
+          "resolved": "12px",
+          "value": 12,
+          "status": "ALIGNED",
+          "candidates": [],
+          "reason": "Within the declared role scale; not visual approval"
+        }
+      ]
+    },
+    {
+      "selector": "[data-ui-unit=\"editor\"] #task-error",
+      "property": "margin-top",
+      "raw": "0",
+      "role": "internal",
+      "scope": [],
+      "values": [
+        {
+          "raw": "0",
+          "resolved": "0",
+          "value": 0,
+          "status": "ALIGNED",
+          "candidates": [],
+          "reason": "Within the declared role scale; not visual approval"
+        }
+      ]
+    },
+    {
+      "selector": "[data-ui-unit=\"editor\"] #save-task",
+      "property": "margin-top",
+      "raw": "24px",
+      "role": "internal",
+      "scope": [],
+      "values": [
+        {
+          "raw": "24px",
+          "resolved": "24px",
+          "value": 24,
+          "status": "ALIGNED",
+          "candidates": [],
+          "reason": "Within the declared role scale; not visual approval"
+        }
+      ]
+    },
+    {
+      "selector": "[data-ui-unit=\"editor\"] #save-task",
+      "property": "padding",
+      "raw": "16px",
+      "role": "internal",
+      "scope": [],
+      "values": [
+        {
+          "raw": "16px",
+          "resolved": "16px",
+          "value": 16,
+          "status": "ALIGNED",
+          "candidates": [],
+          "reason": "Within the declared role scale; not visual approval"
+        }
+      ]
+    }
+  ],
+  "hardFindings": [],
+  "reviewFindings": [
+    {
+      "selector": ".planner-header",
+      "property": "padding",
+      "raw": "24px var(--screen-inset) 0",
+      "role": "structural",
+      "scope": [],
+      "values": [
+        {
+          "raw": "24px",
+          "resolved": "24px",
+          "value": 24,
+          "status": "ALIGNED",
+          "candidates": [],
+          "reason": "Within the declared role scale; not visual approval"
+        },
+        {
+          "raw": "var(--screen-inset)",
+          "token": "--screen-inset",
+          "resolved": "20px",
+          "value": 20,
+          "status": "REVIEW",
+          "candidates": [
+            16,
+            24
+          ],
+          "reason": "Structural eight-step or scale alignment review; not a hard product failure"
+        },
+        {
+          "raw": "0",
+          "resolved": "0",
+          "value": 0,
+          "status": "ALIGNED",
+          "candidates": [],
+          "reason": "Within the declared role scale; not visual approval"
+        }
+      ]
+    },
+    {
+      "selector": ".task-groups",
+      "property": "padding",
+      "raw": "var(--space-section) var(--screen-inset)",
+      "role": "structural",
+      "scope": [],
+      "values": [
+        {
+          "raw": "var(--space-section)",
+          "token": "--space-section",
+          "resolved": "32px",
+          "value": 32,
+          "status": "ALIGNED",
+          "candidates": [],
+          "reason": "Within the declared role scale; not visual approval"
+        },
+        {
+          "raw": "var(--screen-inset)",
+          "token": "--screen-inset",
+          "resolved": "20px",
+          "value": 20,
+          "status": "REVIEW",
+          "candidates": [
+            16,
+            24
+          ],
+          "reason": "Structural eight-step or scale alignment review; not a hard product failure"
+        }
+      ]
+    },
+    {
+      "selector": "[data-ui-unit=\"week\"].planner-header",
+      "property": "padding",
+      "raw": "24px var(--screen-inset) 0",
+      "role": "structural",
+      "scope": [],
+      "values": [
+        {
+          "raw": "24px",
+          "resolved": "24px",
+          "value": 24,
+          "status": "ALIGNED",
+          "candidates": [],
+          "reason": "Within the declared role scale; not visual approval"
+        },
+        {
+          "raw": "var(--screen-inset)",
+          "token": "--screen-inset",
+          "resolved": "20px",
+          "value": 20,
+          "status": "REVIEW",
+          "candidates": [
+            16,
+            24
+          ],
+          "reason": "Structural eight-step or scale alignment review; not a hard product failure"
+        },
+        {
+          "raw": "0",
+          "resolved": "0",
+          "value": 0,
+          "status": "ALIGNED",
+          "candidates": [],
+          "reason": "Within the declared role scale; not visual approval"
+        }
+      ]
+    }
+  ],
+  "unverified": [
+    {
+      "selector": "body",
+      "property": "margin",
+      "raw": "0 auto",
+      "role": "UNVERIFIED",
+      "scope": [],
+      "values": [
+        {
+          "raw": "0",
+          "resolved": "0",
+          "value": 0,
+          "status": "UNVERIFIED",
+          "candidates": [],
+          "reason": "Spacing role not established"
+        },
+        {
+          "status": "UNVERIFIED",
+          "reason": "Content-dependent, relative or unresolved spacing requires rendered/context review",
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "selector": "p,h1,h2,ul",
+      "property": "margin",
+      "raw": "0",
+      "role": "UNVERIFIED",
+      "scope": [],
+      "values": [
+        {
+          "raw": "0",
+          "resolved": "0",
+          "value": 0,
+          "status": "UNVERIFIED",
+          "candidates": [],
+          "reason": "Spacing role not established"
+        }
+      ]
+    },
+    {
+      "selector": ".editor-sample",
+      "property": "margin",
+      "raw": "16px auto",
+      "role": "structural",
+      "scope": [],
+      "values": [
+        {
+          "raw": "16px",
+          "resolved": "16px",
+          "value": 16,
+          "status": "ALIGNED",
+          "candidates": [],
+          "reason": "Within the declared role scale; not visual approval"
+        },
+        {
+          "status": "UNVERIFIED",
+          "reason": "Content-dependent, relative or unresolved spacing requires rendered/context review",
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "selector": "dialog",
+      "property": "padding",
+      "raw": "0",
+      "role": "UNVERIFIED",
+      "scope": [],
+      "values": [
+        {
+          "raw": "0",
+          "resolved": "0",
+          "value": 0,
+          "status": "UNVERIFIED",
+          "candidates": [],
+          "reason": "Spacing role not established"
+        }
+      ]
+    },
+    {
+      "selector": "[data-ui-unit=\"week\"].planner-header h1",
+      "property": "margin-bottom",
+      "raw": "16px",
+      "role": "UNVERIFIED",
+      "scope": [],
+      "values": [
+        {
+          "raw": "16px",
+          "resolved": "16px",
+          "value": 16,
+          "status": "UNVERIFIED",
+          "candidates": [],
+          "reason": "Spacing role not established"
+        }
+      ]
+    },
+    {
+      "selector": "[data-ui-unit=\"tasks\"] .task-category .category-heading h2",
+      "property": "margin",
+      "raw": "0",
+      "role": "UNVERIFIED",
+      "scope": [],
+      "values": [
+        {
+          "raw": "0",
+          "resolved": "0",
+          "value": 0,
+          "status": "UNVERIFIED",
+          "candidates": [],
+          "reason": "Spacing role not established"
+        }
+      ]
+    },
+    {
+      "selector": "[data-ui-unit=\"tasks\"] .task-check",
+      "property": "margin-top",
+      "raw": "2px",
+      "role": "UNVERIFIED",
+      "scope": [],
+      "values": [
+        {
+          "raw": "2px",
+          "resolved": "2px",
+          "value": 2,
+          "status": "UNVERIFIED",
+          "candidates": [],
+          "reason": "Spacing role not established"
+        }
+      ]
+    },
+    {
+      "selector": "[data-ui-unit=\"editor\"] .editor-heading h2",
+      "property": "margin",
+      "raw": "0",
+      "role": "UNVERIFIED",
+      "scope": [],
+      "values": [
+        {
+          "raw": "0",
+          "resolved": "0",
+          "value": 0,
+          "status": "UNVERIFIED",
+          "candidates": [],
+          "reason": "Spacing role not established"
+        }
+      ]
+    }
+  ],
+  "status": "AUDIT_NOT_VISUAL_APPROVAL",
+  "proposal": {
+    "categoryVerticalPadding": "4px->0; horizontal12px and44px add target retained",
+    "controlOffsets": "Replace static2px and whole-row centering with line-height-relative alignment; math values remain unresolved in CSS-only audit and require rendered firstLineControls checks",
+    "preserved": "20px screen inset and all unrelated tokens remain"
+  },
+  "roleOrigin": "Inherited explicit roles from prior full CSS audit; unresolved roles remain unresolved"
+}

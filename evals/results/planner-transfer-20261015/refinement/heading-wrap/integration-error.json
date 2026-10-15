@@ -1,0 +1,6 @@
+{
+  "error": "Initial host adapter assumed samples embed CSS, but actual samples link shared styles.css",
+  "partialWrites": false,
+  "sourceHashesUnchangedAfterError": true,
+  "resolution": "Validated native link dependencies and reused the complete original model response; no extra inference. Applied only shared stylesheet so both actual samples and assembly receive the same CSS."
+}

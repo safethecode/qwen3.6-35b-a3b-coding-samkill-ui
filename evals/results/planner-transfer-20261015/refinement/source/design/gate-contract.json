@@ -1,0 +1,959 @@
+{
+  "schema_version": 1,
+  "catalog_version": 5,
+  "targets": [
+    "index.html",
+    "styles.css",
+    "app.js",
+    "DESIGN.md",
+    "REFERENCE.md",
+    "assets/fonts/METADATA.pb",
+    "assets/fonts/NotoSansKR.ttf",
+    "assets/fonts/OFL.txt",
+    "assets/icons/LICENSE",
+    "assets/icons/Plus.svg",
+    "assets/icons/Trash2-neutral.svg",
+    "assets/icons/X.svg",
+    "assets/icons/manifest.json",
+    "design/typography.json",
+    "design/component-plan.json",
+    "design/layout-contract.json",
+    "render.js",
+    "sample-editor.html",
+    "sample-tasks.html",
+    "sample-week.html",
+    "store.js"
+  ],
+  "rules": [
+    {
+      "id": "ORC-F01",
+      "applicable": true,
+      "scope": "All requested screens and states; applicability review pending",
+      "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
+      "checks": [
+        "code",
+        "visual"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "ORC-F02",
+      "applicable": true,
+      "scope": "All requested screens and states; applicability review pending",
+      "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
+      "checks": [
+        "code",
+        "visual"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "ORC-F03",
+      "applicable": true,
+      "scope": "All requested screens and states; applicability review pending",
+      "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
+      "checks": [
+        "code",
+        "visual"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "ORC-F04",
+      "applicable": true,
+      "scope": "All requested screens and states; applicability review pending",
+      "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
+      "checks": [
+        "code",
+        "visual"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "ORC-F05",
+      "applicable": true,
+      "scope": "All requested screens and states; applicability review pending",
+      "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
+      "checks": [
+        "code",
+        "visual"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "ORC-F06",
+      "applicable": true,
+      "scope": "All requested screens and states; applicability review pending",
+      "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
+      "checks": [
+        "code",
+        "visual"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "ORC-F07",
+      "applicable": true,
+      "scope": "All requested screens and states; applicability review pending",
+      "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
+      "checks": [
+        "code",
+        "visual"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "ORC-F08",
+      "applicable": true,
+      "scope": "All requested screens and states; applicability review pending",
+      "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
+      "checks": [
+        "code",
+        "visual",
+        "interaction"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "ORC-F09",
+      "applicable": true,
+      "scope": "All requested screens and states; applicability review pending",
+      "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
+      "checks": [
+        "code",
+        "visual"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "ORC-F10",
+      "applicable": true,
+      "scope": "All requested screens and states; applicability review pending",
+      "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
+      "checks": [
+        "code",
+        "visual"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "ORC-F11",
+      "applicable": true,
+      "scope": "All requested screens and states; applicability review pending",
+      "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
+      "checks": [
+        "code",
+        "visual"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "ORC-F12",
+      "applicable": true,
+      "scope": "All requested screens and states; applicability review pending",
+      "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
+      "checks": [
+        "code",
+        "visual"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "ORC-F13",
+      "applicable": true,
+      "scope": "All requested screens and states; applicability review pending",
+      "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
+      "checks": [
+        "code",
+        "visual",
+        "interaction"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "ORC-F14",
+      "applicable": true,
+      "scope": "All requested screens and states; applicability review pending",
+      "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
+      "checks": [
+        "code",
+        "visual"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "ORC-F16",
+      "applicable": true,
+      "scope": "All requested screens and states; applicability review pending",
+      "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
+      "checks": [
+        "code",
+        "visual",
+        "interaction"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "ORC-F15",
+      "applicable": true,
+      "scope": "All requested screens and states; applicability review pending",
+      "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
+      "checks": [
+        "code",
+        "visual"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "ORC-G01",
+      "applicable": true,
+      "scope": "All requested screens and states; applicability review pending",
+      "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
+      "checks": [
+        "code",
+        "visual"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "ORC-G02",
+      "applicable": true,
+      "scope": "All requested screens and states; applicability review pending",
+      "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
+      "checks": [
+        "code",
+        "visual"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "ORC-G03",
+      "applicable": true,
+      "scope": "All requested screens and states; applicability review pending",
+      "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
+      "checks": [
+        "code",
+        "visual"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "ORC-G04",
+      "applicable": true,
+      "scope": "All requested screens and states; applicability review pending",
+      "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
+      "checks": [
+        "code",
+        "visual"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "ORC-G05",
+      "applicable": true,
+      "scope": "All requested screens and states; applicability review pending",
+      "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
+      "checks": [
+        "code",
+        "visual",
+        "interaction"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "ORC-G06",
+      "applicable": true,
+      "scope": "All requested screens and states; applicability review pending",
+      "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
+      "checks": [
+        "code",
+        "visual"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "ORC-G07",
+      "applicable": true,
+      "scope": "All requested screens and states; applicability review pending",
+      "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
+      "checks": [
+        "code",
+        "visual"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "ORC-G08",
+      "applicable": true,
+      "scope": "All requested screens and states; applicability review pending",
+      "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
+      "checks": [
+        "code",
+        "visual"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "ORC-G09",
+      "applicable": true,
+      "scope": "All requested screens and states; applicability review pending",
+      "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
+      "checks": [
+        "code",
+        "visual"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "ORC-G10",
+      "applicable": true,
+      "scope": "All requested screens and states; applicability review pending",
+      "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
+      "checks": [
+        "code",
+        "visual"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "ORC-G11",
+      "applicable": true,
+      "scope": "All requested screens and states; applicability review pending",
+      "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
+      "checks": [
+        "code",
+        "visual"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "ORC-G12",
+      "applicable": true,
+      "scope": "All requested screens and states; applicability review pending",
+      "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
+      "checks": [
+        "code",
+        "visual"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "ORC-G13",
+      "applicable": true,
+      "scope": "All requested screens and states; applicability review pending",
+      "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
+      "checks": [
+        "code",
+        "visual"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "ORC-G14",
+      "applicable": true,
+      "scope": "All requested screens and states; applicability review pending",
+      "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
+      "checks": [
+        "code",
+        "visual"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "ORC-G15",
+      "applicable": true,
+      "scope": "All requested screens and states; applicability review pending",
+      "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
+      "checks": [
+        "code",
+        "visual"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "ORC-G16",
+      "applicable": true,
+      "scope": "All requested screens and states; applicability review pending",
+      "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
+      "checks": [
+        "code",
+        "visual",
+        "interaction"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "ORC-G17",
+      "applicable": true,
+      "scope": "All requested screens and states; applicability review pending",
+      "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
+      "checks": [
+        "code",
+        "visual"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "ORC-G18",
+      "applicable": true,
+      "scope": "All requested screens and states; applicability review pending",
+      "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
+      "checks": [
+        "code",
+        "visual"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "ORC-G19",
+      "applicable": true,
+      "scope": "All requested screens and states; applicability review pending",
+      "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
+      "checks": [
+        "code",
+        "visual"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "ORC-G20",
+      "applicable": true,
+      "scope": "All requested screens and states; applicability review pending",
+      "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
+      "checks": [
+        "code",
+        "visual"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "ORC-G21",
+      "applicable": true,
+      "scope": "All requested screens and states; applicability review pending",
+      "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
+      "checks": [
+        "code",
+        "visual",
+        "interaction"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "ORC-G22",
+      "applicable": true,
+      "scope": "All requested screens and states; applicability review pending",
+      "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
+      "checks": [
+        "code",
+        "visual"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "ORC-G23",
+      "applicable": true,
+      "scope": "All requested screens and states; applicability review pending",
+      "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
+      "checks": [
+        "code",
+        "visual",
+        "interaction"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "ORC-G24",
+      "applicable": true,
+      "scope": "All requested screens and states; applicability review pending",
+      "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
+      "checks": [
+        "code",
+        "visual"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "ORC-A01",
+      "applicable": true,
+      "scope": "All requested screens and states; applicability review pending",
+      "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
+      "checks": [
+        "code",
+        "visual"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "ORC-A02",
+      "applicable": true,
+      "scope": "All requested screens and states; applicability review pending",
+      "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
+      "checks": [
+        "code",
+        "visual"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "ORC-A03",
+      "applicable": true,
+      "scope": "All requested screens and states; applicability review pending",
+      "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
+      "checks": [
+        "code",
+        "visual"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "ORC-A04",
+      "applicable": true,
+      "scope": "All requested screens and states; applicability review pending",
+      "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
+      "checks": [
+        "code",
+        "visual"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "ORC-A05",
+      "applicable": true,
+      "scope": "All requested screens and states; applicability review pending",
+      "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
+      "checks": [
+        "code",
+        "visual"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "ORC-A06",
+      "applicable": true,
+      "scope": "All requested screens and states; applicability review pending",
+      "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
+      "checks": [
+        "code",
+        "visual"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "ORC-A07",
+      "applicable": true,
+      "scope": "All requested screens and states; applicability review pending",
+      "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
+      "checks": [
+        "code",
+        "visual"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "ORC-A08",
+      "applicable": true,
+      "scope": "All requested screens and states; applicability review pending",
+      "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
+      "checks": [
+        "code",
+        "visual"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "ORC-A09",
+      "applicable": true,
+      "scope": "All requested screens and states; applicability review pending",
+      "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
+      "checks": [
+        "code",
+        "visual"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "ORC-A10",
+      "applicable": true,
+      "scope": "All requested screens and states; applicability review pending",
+      "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
+      "checks": [
+        "code",
+        "visual",
+        "interaction"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "RUI-01",
+      "applicable": true,
+      "scope": "All requested screens and states; applicability review pending",
+      "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
+      "checks": [
+        "spec"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "RUI-02",
+      "applicable": true,
+      "scope": "All requested screens and states; applicability review pending",
+      "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
+      "checks": [
+        "code"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "RUI-03",
+      "applicable": true,
+      "scope": "All requested screens and states; applicability review pending",
+      "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
+      "checks": [
+        "spec"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "RUI-04",
+      "applicable": true,
+      "scope": "All requested screens and states; applicability review pending",
+      "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
+      "checks": [
+        "spec",
+        "interaction"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "RUI-05",
+      "applicable": true,
+      "scope": "All requested screens and states; applicability review pending",
+      "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
+      "checks": [
+        "spec",
+        "visual"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "RUI-06",
+      "applicable": true,
+      "scope": "All requested screens and states; applicability review pending",
+      "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
+      "checks": [
+        "code"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "RUI-07",
+      "applicable": true,
+      "scope": "All requested screens and states; applicability review pending",
+      "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
+      "checks": [
+        "spec",
+        "visual"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "RUI-08",
+      "applicable": true,
+      "scope": "All requested screens and states; applicability review pending",
+      "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
+      "checks": [
+        "spec",
+        "code",
+        "visual"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "RUI-09",
+      "applicable": true,
+      "scope": "All requested screens and states; applicability review pending",
+      "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
+      "checks": [
+        "code",
+        "visual"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "RUI-10",
+      "applicable": true,
+      "scope": "All requested screens and states; applicability review pending",
+      "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
+      "checks": [
+        "spec",
+        "visual"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "RUI-11",
+      "applicable": true,
+      "scope": "All requested screens and states; applicability review pending",
+      "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
+      "checks": [
+        "spec",
+        "visual"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "RUI-12",
+      "applicable": true,
+      "scope": "All requested screens and states; applicability review pending",
+      "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
+      "checks": [
+        "code",
+        "visual"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "RUI-13",
+      "applicable": true,
+      "scope": "All requested screens and states; applicability review pending",
+      "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
+      "checks": [
+        "code",
+        "visual",
+        "interaction"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "RUI-14",
+      "applicable": true,
+      "scope": "All requested screens and states; applicability review pending",
+      "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
+      "checks": [
+        "code",
+        "visual"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "RUI-15",
+      "applicable": true,
+      "scope": "All requested screens and states; applicability review pending",
+      "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
+      "checks": [
+        "spec",
+        "visual",
+        "interaction"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "RUI-16",
+      "applicable": true,
+      "scope": "All requested screens and states; applicability review pending",
+      "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
+      "checks": [
+        "spec",
+        "visual"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "RUI-17",
+      "applicable": true,
+      "scope": "All requested screens and states; applicability review pending",
+      "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
+      "checks": [
+        "spec",
+        "visual"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "RUI-18",
+      "applicable": true,
+      "scope": "All requested screens and states; applicability review pending",
+      "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
+      "checks": [
+        "spec",
+        "visual"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "RUI-19",
+      "applicable": true,
+      "scope": "All requested screens and states; applicability review pending",
+      "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
+      "checks": [
+        "spec",
+        "code",
+        "visual",
+        "interaction"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "RUI-20",
+      "applicable": true,
+      "scope": "All requested screens and states; applicability review pending",
+      "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
+      "checks": [
+        "code",
+        "visual"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "RUI-21",
+      "applicable": true,
+      "scope": "All requested screens and states; applicability review pending",
+      "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
+      "checks": [
+        "code",
+        "visual",
+        "interaction"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "RUI-22",
+      "applicable": true,
+      "scope": "All requested screens and states; applicability review pending",
+      "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
+      "checks": [
+        "code",
+        "visual"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "RUI-23",
+      "applicable": true,
+      "scope": "All requested screens and states; applicability review pending",
+      "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
+      "checks": [
+        "spec",
+        "code",
+        "visual"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "RUI-24",
+      "applicable": true,
+      "scope": "All requested screens and states; applicability review pending",
+      "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
+      "checks": [
+        "spec",
+        "visual"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "RUI-25",
+      "applicable": true,
+      "scope": "All requested screens and states; applicability review pending",
+      "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
+      "checks": [
+        "spec",
+        "visual"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "PROJECT-GUIDE-design-md",
+      "applicable": true,
+      "scope": "All requested screens and states; applicability review pending",
+      "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
+      "checks": [
+        "spec"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "PROJECT-GUIDE-onboarding-flow",
+      "applicable": true,
+      "scope": "All requested screens and states; applicability review pending",
+      "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
+      "checks": [
+        "spec",
+        "interaction"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "PROJECT-GUIDE-reference-decompose",
+      "applicable": true,
+      "scope": "All requested screens and states; applicability review pending",
+      "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
+      "checks": [
+        "spec",
+        "visual"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "PROJECT-GUIDE-reference-review",
+      "applicable": true,
+      "scope": "All requested screens and states; applicability review pending",
+      "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
+      "checks": [
+        "spec",
+        "code",
+        "visual",
+        "interaction"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "PROJECT-GUIDE-reference-to-ui",
+      "applicable": true,
+      "scope": "All requested screens and states; applicability review pending",
+      "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
+      "checks": [
+        "spec",
+        "code",
+        "visual",
+        "interaction"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "PROJECT-GUIDE-samkill-ui",
+      "applicable": true,
+      "scope": "All requested screens and states; applicability review pending",
+      "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
+      "checks": [
+        "spec",
+        "code",
+        "visual",
+        "interaction"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "PROJECT-GUIDE-uibowl-research",
+      "applicable": true,
+      "scope": "All requested screens and states; applicability review pending",
+      "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
+      "checks": [
+        "spec",
+        "visual"
+      ],
+      "exceptions": []
+    },
+    {
+      "id": "PROJECT-GUIDE-ux-copy",
+      "applicable": true,
+      "scope": "All requested screens and states; applicability review pending",
+      "reason": "Conservative pending review, not a finding. Determine the actual project scope before approval.",
+      "checks": [
+        "spec",
+        "visual",
+        "interaction"
+      ],
+      "exceptions": []
+    }
+  ]
+}

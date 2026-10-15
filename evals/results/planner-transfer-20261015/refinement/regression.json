@@ -1,0 +1,7 @@
+{
+  "sharedHarnessCommit": "840318d",
+  "npmTest": 116,
+  "browserTests": 44,
+  "failures": 0,
+  "notes": "116shared tests include real browser layout fixtures.44additional browser regressions also passed. Later local guide prose correction passed npm test116again under d2b1a85; screenshots retain their actual harness/source hashes."
+}

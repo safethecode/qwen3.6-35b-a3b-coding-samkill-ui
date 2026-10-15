@@ -1,0 +1,14 @@
+{
+  "/assets/icons/Plus.svg": {
+    "name": "Plus",
+    "source": "lucide@1.51.0"
+  },
+  "/assets/icons/X.svg": {
+    "name": "X",
+    "source": "lucide@1.51.0"
+  },
+  "/assets/icons/Trash2-neutral.svg": {
+    "name": "Trash2",
+    "source": "lucide@1.51.0"
+  }
+}
