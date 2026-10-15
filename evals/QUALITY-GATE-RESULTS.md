@@ -1,6 +1,12 @@
 # Quality gate verification
 
-## Current status — 2026-10-05
+## Current status — 2026-10-15
+
+Synced samkill-ui167fc8d and passed157regression tests. The new local run exposed a32px-wide primary button that previous clipping checks missed; a local patch and a fresh booking-component repetition now satisfy allocated-width checks. A locally generated dialog required two further local repairs: native selection/focus ownership, then actual paint visibility after screenshots exposed a native black outline despite computed-shadow checks passing. Four viewport workflows, keyboard/forced-colors field checks and seven storage faults pass within their recorded scope. Host markup/shared layout/behavior reuse remain disclosed. [Source-bound failures, raw responses and latest candidate](results/upstream-20261015/README.md).
+
+A different independently specified mobile task-planner transfer is now generating with fresh UI Bowl main-screen references and frozen inputs. Static generation does not implement its required behaviors. [Transfer scope and pending work](results/planner-transfer-20261015/STATUS.md). Overall reference parity remains unfinished.
+
+### Earlier results
 
 The user rejected the unrequested desktop adaptation. The latest detail screen is mobile-only at every window width; a maximum-width gate and viewport-independent vertical ordering catch that regression. AGENTS.md now requires the skill-first workflow, and the operating rules consolidate prior reference, decomposition, local-model attribution and validation failures.151 regression tests pass; the final instruction-binding change also passes12 focused tests. [Current mobile evidence](results/detail-hierarchy/mobile/hierarchy/report.json). Earlier desktop captures below are historical, not the current approved scope.
 
