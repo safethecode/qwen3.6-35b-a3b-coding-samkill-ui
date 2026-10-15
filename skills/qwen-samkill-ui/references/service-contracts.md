@@ -2,6 +2,8 @@
 
 Before generating a new service, identify its user, primary task and one complete state transition. Specify the initial, empty, invalid, saved and recovered state. A static translation exercise must not imply that disabled sample controls are real product functionality.
 
+When the user asks for a complex product, freeze its connected journeys and the data carried between them before choosing the evaluation case. Preserve consequential choices such as item/variant identity, dates, conditional prices, policy, review and later management where the product needs them. A simple timer, isolated list or detail screen can test a dependency, but cannot replace the requested product or establish its quality. Decompose that product into bounded implementation units while keeping its complete journey as the acceptance scope. Screen or test counts do not measure product complexity or commercial quality.
+
 For reference-driven work, follow [Decomposed layout](decomposed-layout.md) before implementation. Break the dominant component into owned semantic regions, declare layout relationships, and compare element samples with the assembled screen. File-by-file generation alone is not decomposition.
 
 Choose the dominant structure from the task, not from the last generated application:
