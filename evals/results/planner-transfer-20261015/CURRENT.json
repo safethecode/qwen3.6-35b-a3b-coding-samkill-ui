@@ -1,12 +1,12 @@
 {
   "status": "INCOMPLETE_REFERENCE_PARITY",
-  "source": "list-ownership/source",
-  "summary": "list-ownership/summary.json",
-  "workflow": "list-ownership/copy-refinement/workflow/report.json",
-  "catalog": "list-ownership/catalog-check.json",
+  "source": "reading-priority/source",
+  "summary": "reading-priority/summary.json",
+  "workflow": "reading-priority/workflow/report.json",
+  "catalog": "reading-priority/catalog-check.json",
   "assisted": true,
-  "previousSource": "icon-refinement/source",
+  "previousSource": "list-ownership/source",
   "historicalSource": "final/source",
-  "priorPreviousSource": "edit-mode/source",
-  "latestScopedChange": "Existing list action moved out of date header;explicit scope/exit labels,original calendar focus preserved. Severe enlarged editing wrap and reference parity unfinished."
+  "priorPreviousSource": "icon-refinement/source",
+  "latestScopedChange": "Actual bounded Qwen CSS repair restores enlarged editing title width102.109→217px and126.109→241px;22of24PNG bytes unchanged. Explicit version2 reading/action contract;earlier rejected intrinsic-basis response retained. Full reference quality unfinished."
 }
