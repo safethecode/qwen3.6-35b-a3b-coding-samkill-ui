@@ -1,0 +1,17 @@
+{
+  "rules": [
+    {
+      "id": "mobile-width",
+      "kind": "maxWidth",
+      "subject": "body",
+      "maximum": 390
+    },
+    {
+      "id": "groups-after-week",
+      "kind": "below",
+      "subject": "[data-ui-unit=\"tasks\"]",
+      "reference": "[data-ui-unit=\"week\"]",
+      "minGap": 0
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "elapsedMs": 21459,
+  "model": "qwen3.6:35b-a3b-coding",
+  "created_at": "2026-10-15T07:18:29.0572733Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\n\"code\": \"function renderTasks(state) {\\n  const { tasks, selectedDate, error } = state;\\n  const containerStudy = document.getElementById('study-items');\\n  const containerLife = document.getElementById('life-items');\\n  const emptyState = document.getElementById('empty-state');\\n  const pageError = document.getElementById('page-error');\\n  const template = document.getElementById('task-template');\\n\\n  if (pageError) {\\n    pageError.textContent = error || '';\\n  }\\n\\n  const filteredTasks = tasks.filter(task => task.date === selectedDate);\\n\\n  if (containerStudy) containerStudy.replaceChildren();\\n  if (containerLife) containerLife.replaceChildren();\\n\\n  if (filteredTasks.length > 0) {\\n    if (emptyState) emptyState.classList.add('hidden');\\n  } else {\\n    if (emptyState) emptyState.classList.remove('hidden');\\n  }\\n\\n  const fragment = document.createDocumentFragment();\\n\\n  filteredTasks.forEach(task => {\\n    const clone = template.content.cloneNode(true);\\n    const row = clone.querySelector('.task-row');\\n    const checkbox = clone.querySelector('.task-check');\\n    const nameSpan = clone.querySelector('.task-name');\\n    const deleteBtn = clone.querySelector('.delete-task');\\n\\n    if (row) {\\n      row.dataset.id = task.id;\\n      if (task.completed) {\\n        row.classList.add('is-complete');\\n      } else {\\n        row.classList.remove('is-complete');\\n      }\\n    }\\n\\n    if (checkbox) {\\n      checkbox.checked = !!task.completed;\\n    }\\n\\n    if (nameSpan) {\\n      nameSpan.textContent = task.title;\\n    }\\n\\n    if (deleteBtn) {\\n      deleteBtn.setAttribute('aria-label', task.title + ' 할 일 삭제');\\n    }\\n\\n    if (task.category === 'study') {\\n      if (containerStudy) containerStudy.appendChild(clone);\\n    } else if (task.category === 'life') {\\n      if (containerLife) containerLife.appendChild(clone);\\n    }\\n  });\\n}\"\n}"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 21457424900,
+  "load_duration": 8617800,
+  "prompt_eval_count": 655,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration": 6596118000,
+  "eval_count": 477,
+  "eval_duration": 14792592000
+}

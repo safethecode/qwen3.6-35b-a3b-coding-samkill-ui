@@ -1,0 +1,5 @@
+{
+  "recordedAtUtc": "2026-10-15T07:16:51.216Z",
+  "status": "SECOND_REQUEST_CANCELLED_FOR_SCOPE_REDUCTION",
+  "reason": "First full renderer thinking request consumed6144tokens/421424ms and truncated. Cancelled own worker during its automatic same-size second request rather than repeat this diagnosed failure. No accepted renderer/app module and no script boot injection. Store remains accepted. Partial second response unavailable after client termination; do not treat cancellation as model completion."
+}

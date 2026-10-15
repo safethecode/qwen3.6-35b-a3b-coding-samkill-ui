@@ -1,0 +1,707 @@
+{
+  "sourceHashes": {
+    "index.html": "655c3cfa3ceb34babdd6abd6f59bbe1f51401f8782d3a7ba82301a742c32abd0",
+    "styles.css": "35687249c7e713e6c1370208871f68648c6785adbef7f451c8ddb30de08d4d79",
+    "app.js": "903de0737ff5d035e8de2cdf4700e52a6f76b0ad9b3febec5aaf092725a664f7",
+    "DESIGN.md": "503a2ccdb265039f940d9715f78cade01b218330a5fcfa2e11ad78b8ef5ec2b4",
+    "REFERENCE.md": "9f04811d7f04c3d0ae81da3cf35c30457499108f6a3e7df93c9ab9b872a9078c",
+    "assets/fonts/METADATA.pb": "9b8b27c0dd1adbb0057d1fbe9534207ab3606114ace6755453d14668912471a1",
+    "assets/fonts/NotoSansKR.ttf": "194018e6b2b293a7964f037b25c0249ce1418bc9ab3c971060a03aa57861e252",
+    "assets/fonts/OFL.txt": "1c05c68c34f9708415aada51f17e1b0092d2cea709bf4a94cd38114f9e73d7d9",
+    "assets/icons/LICENSE": "b495047bd93a9b06913511076f504daba17d5bbeb3e0650f3bb53a4220329c57",
+    "assets/icons/Plus.svg": "3d4f93d0e5a8eb932e4d1f0d71122d01917e7624439adc35dddcd5352d7a228f",
+    "assets/icons/X.svg": "f27abfc353abc2497a1d9752e21e2e2e32eeeb4271401f2a067c4d1fcced7a23",
+    "assets/icons/manifest.json": "240e03f21ea9fd1f6477baf9b0a0b811bb0a4b27333854ad2d88a3ed3f07f771",
+    "design/typography.json": "534c3deed77d20d1d9839d0eceda9925e0cdb26b2f632ba652d29bb5e1909cee",
+    "design/component-plan.json": "958f1ad12ca9c2275666f269c5c28c1a6234e0298003cc5d25d33c22636004cd",
+    "design/layout-contract.json": "86634d866ea1b110d4d875f543721e15f0f787ff07e75c504f0cf2381b1f180c",
+    "sample-editor.html": "6986f9ac088f35c49edd8bce742b4fb33dd43c64d2f6bbe003e7b7e2edf117ef",
+    "sample-tasks.html": "649ffd09d6db5bd362f69a7b60cd5da9293959df29e221a6cf6fa0e0ceeabf30",
+    "sample-week.html": "bc2a5478593a394f124d388ae299191f89f0f7a1781e745f3de21567f2a6c3f8"
+  },
+  "scope": "Static template CSS fixture inserted by host; not app interaction evidence",
+  "input": "one120-character Korean task cloned from actual template",
+  "normal": {
+    "viewport": 296,
+    "scrollWidth": 1825,
+    "titleWidth": 1766.40625
+  },
+  "stress": [
+    {
+      "mode": "text-200",
+      "viewport": 296,
+      "scrollWidth": 3592,
+      "overflowPx": 3295,
+      "flexPressure": [
+        {
+          "tag": "SPAN",
+          "id": "",
+          "class": "task-name",
+          "width": 3532.8125,
+          "minWidth": "auto",
+          "flexShrink": "1",
+          "flexBasis": "auto",
+          "parent": {
+            "tag": "LABEL",
+            "id": "",
+            "class": "task-toggle",
+            "width": 204,
+            "scrollWidth": 3572,
+            "display": "flex",
+            "gap": "12px"
+          },
+          "hypothesis": "An automatic intrinsic minimum may prevent this flex item from shrinking. Inspect its min-width and sibling space; allow shrink/wrap without hiding content or changing font size."
+        }
+      ],
+      "gridPressure": [],
+      "clippedByAncestor": [],
+      "overlappingLines": [],
+      "controlTextOverflow": [
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "class": "day-button",
+          "text": "월12",
+          "width": 44,
+          "scrollWidth": 44,
+          "height": 64,
+          "scrollHeight": 71,
+          "overflow": "visible",
+          "method": "Visible label text range extends outside its control box; inspect wrapping, padding and automatic height."
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "class": "day-button",
+          "text": "화13",
+          "width": 44,
+          "scrollWidth": 44,
+          "height": 64,
+          "scrollHeight": 71,
+          "overflow": "visible",
+          "method": "Visible label text range extends outside its control box; inspect wrapping, padding and automatic height."
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "class": "day-button",
+          "text": "수14",
+          "width": 44,
+          "scrollWidth": 44,
+          "height": 64,
+          "scrollHeight": 71,
+          "overflow": "visible",
+          "method": "Visible label text range extends outside its control box; inspect wrapping, padding and automatic height."
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "class": "day-button",
+          "text": "목15",
+          "width": 44,
+          "scrollWidth": 44,
+          "height": 64,
+          "scrollHeight": 71,
+          "overflow": "visible",
+          "method": "Visible label text range extends outside its control box; inspect wrapping, padding and automatic height."
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "class": "day-button",
+          "text": "금16",
+          "width": 44,
+          "scrollWidth": 44,
+          "height": 64,
+          "scrollHeight": 71,
+          "overflow": "visible",
+          "method": "Visible label text range extends outside its control box; inspect wrapping, padding and automatic height."
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "class": "day-button",
+          "text": "토17",
+          "width": 44,
+          "scrollWidth": 44,
+          "height": 64,
+          "scrollHeight": 71,
+          "overflow": "visible",
+          "method": "Visible label text range extends outside its control box; inspect wrapping, padding and automatic height."
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "class": "day-button",
+          "text": "일18",
+          "width": 44,
+          "scrollWidth": 44,
+          "height": 64,
+          "scrollHeight": 71,
+          "overflow": "visible",
+          "method": "Visible label text range extends outside its control box; inspect wrapping, padding and automatic height."
+        }
+      ],
+      "outsideViewport": [
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "class": "day-button",
+          "text": "토17",
+          "width": 44,
+          "scrollWidth": 44,
+          "height": 64,
+          "scrollHeight": 71,
+          "overflow": "visible"
+        },
+        {
+          "tag": "SPAN",
+          "id": "",
+          "class": "day-number",
+          "text": "17",
+          "width": 32,
+          "scrollWidth": 35,
+          "height": 32,
+          "scrollHeight": 39,
+          "overflow": "visible"
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "class": "day-button",
+          "text": "일18",
+          "width": 44,
+          "scrollWidth": 44,
+          "height": 64,
+          "scrollHeight": 71,
+          "overflow": "visible"
+        },
+        {
+          "tag": "SPAN",
+          "id": "",
+          "class": "weekday",
+          "text": "일",
+          "width": 26,
+          "scrollWidth": 26,
+          "height": 28,
+          "scrollHeight": 34,
+          "overflow": "visible"
+        },
+        {
+          "tag": "SPAN",
+          "id": "",
+          "class": "day-number",
+          "text": "18",
+          "width": 32,
+          "scrollWidth": 35,
+          "height": 32,
+          "scrollHeight": 39,
+          "overflow": "visible"
+        },
+        {
+          "tag": "SPAN",
+          "id": "",
+          "class": "task-name",
+          "text": "가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가",
+          "width": 3533,
+          "scrollWidth": 3533,
+          "height": 51,
+          "scrollHeight": 51,
+          "overflow": "visible"
+        }
+      ],
+      "clippingCandidates": [
+        {
+          "tag": "DIV",
+          "id": "week-days",
+          "class": "week-strip",
+          "text": "월12화13수14목15금16토17일18",
+          "width": 256,
+          "scrollWidth": 332,
+          "height": 72,
+          "scrollHeight": 75,
+          "overflow": "auto"
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "class": "day-button",
+          "text": "월12",
+          "width": 44,
+          "scrollWidth": 44,
+          "height": 64,
+          "scrollHeight": 71,
+          "overflow": "visible"
+        },
+        {
+          "tag": "SPAN",
+          "id": "",
+          "class": "weekday",
+          "text": "월",
+          "width": 26,
+          "scrollWidth": 26,
+          "height": 28,
+          "scrollHeight": 34,
+          "overflow": "visible"
+        },
+        {
+          "tag": "SPAN",
+          "id": "",
+          "class": "day-number",
+          "text": "12",
+          "width": 32,
+          "scrollWidth": 35,
+          "height": 32,
+          "scrollHeight": 39,
+          "overflow": "visible"
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "class": "day-button",
+          "text": "화13",
+          "width": 44,
+          "scrollWidth": 44,
+          "height": 64,
+          "scrollHeight": 71,
+          "overflow": "visible"
+        },
+        {
+          "tag": "SPAN",
+          "id": "",
+          "class": "weekday",
+          "text": "화",
+          "width": 26,
+          "scrollWidth": 26,
+          "height": 28,
+          "scrollHeight": 34,
+          "overflow": "visible"
+        },
+        {
+          "tag": "SPAN",
+          "id": "",
+          "class": "day-number",
+          "text": "13",
+          "width": 32,
+          "scrollWidth": 35,
+          "height": 32,
+          "scrollHeight": 39,
+          "overflow": "visible"
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "class": "day-button",
+          "text": "수14",
+          "width": 44,
+          "scrollWidth": 44,
+          "height": 64,
+          "scrollHeight": 71,
+          "overflow": "visible"
+        },
+        {
+          "tag": "SPAN",
+          "id": "",
+          "class": "weekday",
+          "text": "수",
+          "width": 26,
+          "scrollWidth": 26,
+          "height": 28,
+          "scrollHeight": 34,
+          "overflow": "visible"
+        },
+        {
+          "tag": "SPAN",
+          "id": "",
+          "class": "day-number",
+          "text": "14",
+          "width": 32,
+          "scrollWidth": 35,
+          "height": 32,
+          "scrollHeight": 39,
+          "overflow": "visible"
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "class": "day-button",
+          "text": "목15",
+          "width": 44,
+          "scrollWidth": 44,
+          "height": 64,
+          "scrollHeight": 71,
+          "overflow": "visible"
+        },
+        {
+          "tag": "SPAN",
+          "id": "",
+          "class": "weekday",
+          "text": "목",
+          "width": 26,
+          "scrollWidth": 26,
+          "height": 28,
+          "scrollHeight": 34,
+          "overflow": "visible"
+        },
+        {
+          "tag": "SPAN",
+          "id": "",
+          "class": "day-number",
+          "text": "15",
+          "width": 32,
+          "scrollWidth": 35,
+          "height": 32,
+          "scrollHeight": 39,
+          "overflow": "visible"
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "class": "day-button",
+          "text": "금16",
+          "width": 44,
+          "scrollWidth": 44,
+          "height": 64,
+          "scrollHeight": 71,
+          "overflow": "visible"
+        },
+        {
+          "tag": "SPAN",
+          "id": "",
+          "class": "weekday",
+          "text": "금",
+          "width": 26,
+          "scrollWidth": 26,
+          "height": 28,
+          "scrollHeight": 34,
+          "overflow": "visible"
+        },
+        {
+          "tag": "SPAN",
+          "id": "",
+          "class": "day-number",
+          "text": "16",
+          "width": 32,
+          "scrollWidth": 35,
+          "height": 32,
+          "scrollHeight": 39,
+          "overflow": "visible"
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "class": "day-button",
+          "text": "토17",
+          "width": 44,
+          "scrollWidth": 44,
+          "height": 64,
+          "scrollHeight": 71,
+          "overflow": "visible"
+        },
+        {
+          "tag": "SPAN",
+          "id": "",
+          "class": "weekday",
+          "text": "토",
+          "width": 26,
+          "scrollWidth": 26,
+          "height": 28,
+          "scrollHeight": 34,
+          "overflow": "visible"
+        },
+        {
+          "tag": "SPAN",
+          "id": "",
+          "class": "day-number",
+          "text": "17",
+          "width": 32,
+          "scrollWidth": 35,
+          "height": 32,
+          "scrollHeight": 39,
+          "overflow": "visible"
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "class": "day-button",
+          "text": "일18",
+          "width": 44,
+          "scrollWidth": 44,
+          "height": 64,
+          "scrollHeight": 71,
+          "overflow": "visible"
+        },
+        {
+          "tag": "SPAN",
+          "id": "",
+          "class": "weekday",
+          "text": "일",
+          "width": 26,
+          "scrollWidth": 26,
+          "height": 28,
+          "scrollHeight": 34,
+          "overflow": "visible"
+        },
+        {
+          "tag": "SPAN",
+          "id": "",
+          "class": "day-number",
+          "text": "18",
+          "width": 32,
+          "scrollWidth": 35,
+          "height": 32,
+          "scrollHeight": 39,
+          "overflow": "visible"
+        },
+        {
+          "tag": "MAIN",
+          "id": "",
+          "class": "task-groups",
+          "text": "등록한 할 일이 없어요공부가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가",
+          "width": 296,
+          "scrollWidth": 3592,
+          "height": 307,
+          "scrollHeight": 307,
+          "overflow": "visible"
+        },
+        {
+          "tag": "SECTION",
+          "id": "",
+          "class": "task-category",
+          "text": "공부가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가",
+          "width": 256,
+          "scrollWidth": 3572,
+          "height": 127,
+          "scrollHeight": 127,
+          "overflow": "visible"
+        },
+        {
+          "tag": "H2",
+          "id": "study-title",
+          "class": "",
+          "text": "공부",
+          "width": 52,
+          "scrollWidth": 52,
+          "height": 28,
+          "scrollHeight": 34,
+          "overflow": "visible"
+        },
+        {
+          "tag": "UL",
+          "id": "study-items",
+          "class": "task-list",
+          "text": "가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가",
+          "width": 256,
+          "scrollWidth": 3572,
+          "height": 67,
+          "scrollHeight": 67,
+          "overflow": "visible"
+        },
+        {
+          "tag": "LI",
+          "id": "",
+          "class": "task-row",
+          "text": "가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가",
+          "width": 256,
+          "scrollWidth": 3572,
+          "height": 67,
+          "scrollHeight": 67,
+          "overflow": "visible"
+        },
+        {
+          "tag": "LABEL",
+          "id": "",
+          "class": "task-toggle",
+          "text": "가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가",
+          "width": 204,
+          "scrollWidth": 3572,
+          "height": 67,
+          "scrollHeight": 67,
+          "overflow": "visible"
+        },
+        {
+          "tag": "H2",
+          "id": "life-title",
+          "class": "",
+          "text": "생활",
+          "width": 52,
+          "scrollWidth": 52,
+          "height": 28,
+          "scrollHeight": 34,
+          "overflow": "visible"
+        }
+      ],
+      "visual": "UNVERIFIED",
+      "method": "Chromium computed-font 200% enlargement or separate text-spacing override; not real-device zoom. Clipping candidates need visual review."
+    },
+    {
+      "mode": "text-spacing",
+      "viewport": 296,
+      "scrollWidth": 2056,
+      "overflowPx": 1759,
+      "flexPressure": [
+        {
+          "tag": "SPAN",
+          "id": "",
+          "class": "task-name",
+          "width": 1996.8125,
+          "minWidth": "auto",
+          "flexShrink": "1",
+          "flexBasis": "auto",
+          "parent": {
+            "tag": "LABEL",
+            "id": "",
+            "class": "task-toggle",
+            "width": 204,
+            "scrollWidth": 2036,
+            "display": "flex",
+            "gap": "12px"
+          },
+          "hypothesis": "An automatic intrinsic minimum may prevent this flex item from shrinking. Inspect its min-width and sibling space; allow shrink/wrap without hiding content or changing font size."
+        }
+      ],
+      "gridPressure": [],
+      "clippedByAncestor": [],
+      "overlappingLines": [],
+      "controlTextOverflow": [],
+      "outsideViewport": [
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "class": "day-button",
+          "text": "토17",
+          "width": 44,
+          "scrollWidth": 44,
+          "height": 64,
+          "scrollHeight": 64,
+          "overflow": "visible"
+        },
+        {
+          "tag": "SPAN",
+          "id": "",
+          "class": "day-number",
+          "text": "17",
+          "width": 32,
+          "scrollWidth": 32,
+          "height": 32,
+          "scrollHeight": 32,
+          "overflow": "visible"
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "class": "day-button",
+          "text": "일18",
+          "width": 44,
+          "scrollWidth": 44,
+          "height": 64,
+          "scrollHeight": 64,
+          "overflow": "visible"
+        },
+        {
+          "tag": "SPAN",
+          "id": "",
+          "class": "weekday",
+          "text": "일",
+          "width": 15,
+          "scrollWidth": 15,
+          "height": 21,
+          "scrollHeight": 21,
+          "overflow": "visible"
+        },
+        {
+          "tag": "SPAN",
+          "id": "",
+          "class": "day-number",
+          "text": "18",
+          "width": 32,
+          "scrollWidth": 32,
+          "height": 32,
+          "scrollHeight": 32,
+          "overflow": "visible"
+        },
+        {
+          "tag": "SPAN",
+          "id": "",
+          "class": "task-name",
+          "text": "가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가",
+          "width": 1997,
+          "scrollWidth": 1997,
+          "height": 24,
+          "scrollHeight": 24,
+          "overflow": "visible"
+        }
+      ],
+      "clippingCandidates": [
+        {
+          "tag": "DIV",
+          "id": "week-days",
+          "class": "week-strip",
+          "text": "월12화13수14목15금16토17일18",
+          "width": 256,
+          "scrollWidth": 332,
+          "height": 72,
+          "scrollHeight": 72,
+          "overflow": "auto"
+        },
+        {
+          "tag": "MAIN",
+          "id": "",
+          "class": "task-groups",
+          "text": "등록한 할 일이 없어요공부가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가",
+          "width": 296,
+          "scrollWidth": 2056,
+          "height": 296,
+          "scrollHeight": 296,
+          "overflow": "visible"
+        },
+        {
+          "tag": "SECTION",
+          "id": "",
+          "class": "task-category",
+          "text": "공부가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가",
+          "width": 256,
+          "scrollWidth": 2036,
+          "height": 116,
+          "scrollHeight": 116,
+          "overflow": "visible"
+        },
+        {
+          "tag": "UL",
+          "id": "study-items",
+          "class": "task-list",
+          "text": "가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가",
+          "width": 256,
+          "scrollWidth": 2036,
+          "height": 56,
+          "scrollHeight": 56,
+          "overflow": "visible"
+        },
+        {
+          "tag": "LI",
+          "id": "",
+          "class": "task-row",
+          "text": "가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가",
+          "width": 256,
+          "scrollWidth": 2036,
+          "height": 56,
+          "scrollHeight": 56,
+          "overflow": "visible"
+        },
+        {
+          "tag": "LABEL",
+          "id": "",
+          "class": "task-toggle",
+          "text": "가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가가",
+          "width": 204,
+          "scrollWidth": 2036,
+          "height": 44,
+          "scrollHeight": 44,
+          "overflow": "visible"
+        }
+      ],
+      "visual": "UNVERIFIED",
+      "method": "Chromium computed-font 200% enlargement or separate text-spacing override; not real-device zoom. Clipping candidates need visual review."
+    }
+  ]
+}

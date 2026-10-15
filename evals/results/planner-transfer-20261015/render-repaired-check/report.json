@@ -1,0 +1,40 @@
+{
+  "status": "PASS",
+  "sourceHashes": {
+    "index.html": "4c5156d32f29a829e9529063f11e670ce68b582f22a0e4ec63b3b394bfc1df52",
+    "styles.css": "35687249c7e713e6c1370208871f68648c6785adbef7f451c8ddb30de08d4d79",
+    "app.js": "997dcd394f50ceaffc91a6b74cfbd4e55a6a3fdf01f81eed4f57af6efd99532e",
+    "DESIGN.md": "503a2ccdb265039f940d9715f78cade01b218330a5fcfa2e11ad78b8ef5ec2b4",
+    "REFERENCE.md": "9f04811d7f04c3d0ae81da3cf35c30457499108f6a3e7df93c9ab9b872a9078c",
+    "assets/fonts/METADATA.pb": "9b8b27c0dd1adbb0057d1fbe9534207ab3606114ace6755453d14668912471a1",
+    "assets/fonts/NotoSansKR.ttf": "194018e6b2b293a7964f037b25c0249ce1418bc9ab3c971060a03aa57861e252",
+    "assets/fonts/OFL.txt": "1c05c68c34f9708415aada51f17e1b0092d2cea709bf4a94cd38114f9e73d7d9",
+    "assets/icons/LICENSE": "b495047bd93a9b06913511076f504daba17d5bbeb3e0650f3bb53a4220329c57",
+    "assets/icons/Plus.svg": "3d4f93d0e5a8eb932e4d1f0d71122d01917e7624439adc35dddcd5352d7a228f",
+    "assets/icons/X.svg": "f27abfc353abc2497a1d9752e21e2e2e32eeeb4271401f2a067c4d1fcced7a23",
+    "assets/icons/manifest.json": "240e03f21ea9fd1f6477baf9b0a0b811bb0a4b27333854ad2d88a3ed3f07f771",
+    "design/typography.json": "534c3deed77d20d1d9839d0eceda9925e0cdb26b2f632ba652d29bb5e1909cee",
+    "design/component-plan.json": "958f1ad12ca9c2275666f269c5c28c1a6234e0298003cc5d25d33c22636004cd",
+    "design/layout-contract.json": "86634d866ea1b110d4d875f543721e15f0f787ff07e75c504f0cf2381b1f180c",
+    "render.js": "2b3c18eb0e2f44f5515881d886891fb861110f0d2a282abd13f918095f62a8d1",
+    "sample-editor.html": "6986f9ac088f35c49edd8bce742b4fb33dd43c64d2f6bbe003e7b7e2edf117ef",
+    "sample-tasks.html": "649ffd09d6db5bd362f69a7b60cd5da9293959df29e221a6cf6fa0e0ceeabf30",
+    "sample-week.html": "bc2a5478593a394f124d388ae299191f89f0f7a1781e745f3de21567f2a6c3f8",
+    "store.js": "86ffb7f9fd370b5e7a774e108d5b31cd797a989621b0a862ddbeae2260627853"
+  },
+  "checks": [
+    {
+      "name": "empty",
+      "status": "PASS"
+    },
+    {
+      "name": "filled",
+      "status": "PASS"
+    },
+    {
+      "name": "clear",
+      "status": "PASS"
+    }
+  ],
+  "scope": "Actual renderer with ISO-string state, repeated empty/filled/clear, day selection, category/date filtering and safe user text. Not app or design approval."
+}
