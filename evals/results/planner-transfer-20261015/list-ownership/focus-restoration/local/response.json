@@ -1,0 +1,18 @@
+{
+  "elapsedMs": 148562,
+  "model": "qwen3.6:35b-a3b-coding",
+  "created_at": "2026-10-15T11:49:30.8736592Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\n  \"patches\": [\n    {\n      \"field\": \"css\",\n      \"oldString\": \"[data-ui-unit=\\\"week\\\"] .day-button:focus-visible {\\n  outline: 2px solid var(--focus);\\n  outline-offset: 2px;\\n}\\n\\n[data-ui-unit=\\\"week\\\"] .day-button:focus-visible .day-number {\\n  box-shadow: none;\\n}\\n\\n\",\n      \"newString\": \"[data-ui-unit=\\\"week\\\"] .day-button:focus-visible {\\n  outline: none;\\n}\\n\\n[data-ui-unit=\\\"week\\\"] .day-button:focus-visible .day-number {\\n  box-shadow: 0 0 0 2px var(--surface), 0 0 0 4px var(--focus);\\n}\\n\\n\\n[data-ui-unit=\\\"week\\\"] .week-strip::-webkit-scrollbar {\\n  display: none;\\n}\\n\\n\"\n    }\n  ]\n}"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 147157778100,
+  "load_duration": 5208500,
+  "prompt_eval_count": 12950,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration": 135957654000,
+  "eval_count": 202,
+  "eval_duration": 11130421000
+}

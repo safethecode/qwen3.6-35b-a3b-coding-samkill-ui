@@ -1,0 +1,201 @@
+{
+  "request": {
+    "model": "qwen3.6:35b-a3b-coding",
+    "stream": false,
+    "think": false,
+    "options": {
+      "num_ctx": 16384,
+      "num_gpu": 16,
+      "num_batch": 128,
+      "num_predict": 192,
+      "temperature": 0.2
+    },
+    "format": {
+      "type": "object",
+      "properties": {
+        "readingLabel": {
+          "type": "string"
+        },
+        "editingLabel": {
+          "type": "string"
+        },
+        "readingAccessibleName": {
+          "type": "string"
+        },
+        "editingAccessibleName": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "readingLabel",
+        "editingLabel",
+        "readingAccessibleName",
+        "editingAccessibleName"
+      ],
+      "additionalProperties": false
+    },
+    "messages": [
+      {
+        "role": "system",
+        "content": "Return JSON with only the four requested Korean copy values. No JavaScript,HTML,CSS,comments,explanations,new features or other strings. Preserve the exact chosen state/copy contract."
+      },
+      {
+        "role": "user",
+        "content": "skills/qwen-samkill-ui/references/upstream/ux-copy/guide.md\n---\r\nname: ux-copy\r\ndescription: Use when writing or reviewing UI labels, onboarding copy, empty states, errors, or Korean product microcopy, including 번역투 제거 and 토스 라이팅 원칙 적용; not for general article rewriting.\r\n---\r\n\r\n# 제품 UX 문구\r\n\r\n문구를 사용자 상태와 실행 가능한 다음 행동에 연결한다. 한국어는 사람이 말할 때 쓰는 표현으로 작성한다. 브랜드 어조를 유지하되 상투적인 사과나 추상적인 친절함으로 정보를 대체하지 않는다.\r\n\r\n대상 레포가 있으면 루트 `DESIGN.md`를 먼저 읽어 제품의 현재 디자인·문구·컴포넌트 기준을 반영한다. 기준 작성/갱신은 `design-md`와 연결하며 읽기 전용 조사·리뷰 범위에서는 파일을 임의 수정하지 않는다.\r\n\r\n## 입력\r\n\r\n화면/상태, 사용자 과제, 확정된 제품 동작, 브랜드 어조, 공간 제약, 기존 문자열, 참고 문구를 확인한다. 모르는 원인·처리 결과·과금 여부·시간 약속은 unknown으로 둔다. 선택 정보가 없으면 가정을 표시하고 가능한 문구를 작성한다.\r\n\r\nUIbowl 검색이 필요한 요청이면 설치된 `uibowl-research` 또는 현재 도구 설명을 사용한다. 특정 표시 문구는 OCR, 화면/흐름은 패턴 검색이다. 검색은 필요할 때만 한다. 레퍼런스 문구는 표현의 사례이며 우리 서비스의 정책·효과·복구 가능성에 대한 증거가 아니다.\r\n\r\n## 작성\r\n\r\n문구를 다듬기 전에 필요한 문구인지와 위치를 확인한다. 선택 기능의 입력법을 composer에 상시 붙이지 않는다. 입력과 실행이 명확하면 삭제하고, 실제 도움/오류 시점 등 필요한 노출 조건이 있을 때만 안내한다. 날짜·수량·상태가 제목/설명/배지에서 형식만 달리 반복되는 의미 중복도 검사하고 필요한 정보는 한 곳에 보존한다. 제목 옆 빈 공간을 채우는 힌트·슬로건·중복 설명은 삭제를 우선한다. 필요한 안내는 관련 입력/행동 근처에 한 번 배치하고, 삭제 시 잃는 정보와 노출 시점을 기록한다. 읽는 UI 글자는 기본14 CSS px 이상으로 둔다. 짧은 보조정보의 제한적12px 예외는 [글자 기준](../reference-to-ui/references/ui-composition.md#글자-크기-하한)에 따라 범위와 검증을 남기며, 내용을 숨기기 위한 축소로 쓰지 않는다.\r\n\r\n[문구 계약과 예시](references/copy-contract.md)를 읽는다. 각 문자열에 C-ID, 화면/상태와 노출 조건, 최종 문구, 연결 행동, 사실 근거, 검증 방법을 붙인다. UI에 표시할 문구와 구현자를 위한 unknown/주의 메모는 칸을 나눠 쓴다.\r\n\r\n한국어 문구는 [한국어 글쓰기 기준](references/korean-writing.md)을 반드시 읽고 8개 원칙으로 검토한다. 다음 행동 예측, 군더더기 단어, 중복 문장, 현재 필요한 핵심 정보, 말하기 쉬움, 선택권, 누구나 이해할 표현, 상황에 맞는 공감을 확인한다. 미래의 혜택을 지금 버튼의 동작처럼 쓰지 않는다.\r\n\r\n화면에는 현재 상태와 가능한 다음 행동을 필요한 만큼 전달한다. 버튼은 **누른 직후**의 동작을 드러내는 동사/목적어를 쓴다. 서비스 용어와 호칭·종결어미를 일관되게 유지한다. 금액·주기·날짜·조건·불확실성은 짧게 만들기 위해 삭제하지 않는다. 빈 공간을 채우려고 부제나 설명을 만들지 않는다.\r\n\r\n## 피할 선택\r\n\r\n- 원인이 불명확한 오류에 “일시적”, “네트워크 문제”, “곧 해결”을 붙이지 않는다.\r\n- 결과가 불명확한 결제에 “청구되지 않았어요”, “다시 결제”를 확정하지 않는다.\r\n- 실패 상황의 “앗!”, 이모지, 반복 사과, “혁신적인 경험” 같은 광고 문구를 기본값으로 쓰지 않는다. 확인된 사실과 행동을 먼저 쓴다.\r\n- 동작이 정해지지 않은 버튼을 그럴듯한 라벨만 붙여 활성화하지 않는다. 문구 초안/연결 대기로 표시하고 확정된 문자열은 전달한다.\r\n- 레퍼런스의 이름·혜택·수치·보장을 우리 제품의 사실로 복제하지 않는다. “전환율이 좋아지는 문구”라고 주장할 실험 근거가 없으면 가설로 쓴다.\r\n- “~에 대한 처리가 수행되었어요” 같은 명사화·피동, 불필요한 소유격·외래어를 그대로 두고 어미만 해요체로 바꾸지 않는다. 바뀐 상태나 사용자의 행동을 쉬운 동사로 쓴다.\r\n- 비용을 숨기거나 “혜택을 포기하시겠어요?”처럼 거절에 죄책감을 주는 표현을 쓰지 않는다. 가능한 선택과 결과를 정확히 보여준다.\r\n\r\n## 검증과 종료\r\n\r\nAI 문구 탐지 결과를 받았으면 일치를 수정 후보로만 취급한다. 표현을 구체화하려고 수치·원인·복구 기능을 만들지 않는다. 반복 오류나 사라지는 복구 안내는 [상태 검증](../reference-review/references/state-stress.md)에 연결하고 문구 수정 범위와 흐름 수정의 필요를 구별한다. 폰트·줄바꿈·말줄임도 다루는 작업은 [타이포그래피](../reference-to-ui/references/typography.md)를 적용한다.\r\n\r\n실제 레이아웃을 사용할 수 있으면 좁은 폭·긴 변수·줄바꿈·스크린리더 이름·관련 상태에서 확인한다. 없으면 문구 명세를 전달하고 레이아웃/행동 검증은 not-verified다. API를 구현하거나 출시 승인까지 범위를 넓히지 않는다.\r\n\r\n결과는 기존 문자열 문서 또는 `design/copy.md`에 작성한다. 작은 요청은 채팅 표로 충분하다. 확정 문자열, 조건부 초안, 필요한 제품 사실, 실제 확인한 검증을 구분하면 완료다. 기존 문구를 수정했다면 바꾼 이유와 지킨 사실을 짧게 남긴다. 8원칙 점검은 해당 문구/화면의 근거를 기록하고 매번 전체 체크리스트를 사용자에게 반복하지 않는다. 미확인 복구 동작 때문에 확정 가능한 문구까지 전달하지 않는 일은 피한다.\r\n\n\nskills/qwen-samkill-ui/references/upstream/ux-copy/references/copy-contract.md\n# 문구 전달 계약\r\n\r\n## 문자열마다 필요한 항목\r\n\r\n| 항목 | 내용 |\r\n|---|---|\r\n| C-ID / key | C1 같은 추적 ID와 실제/예정 문자열 key |\r\n| 화면·상태·노출 조건 | 서버/사용자 행동 중 어떤 조건이 문구를 표시하는지 |\r\n| 필요성과 배치 | 이 문구가 필요한 판단/행동, 삭제 시 잃는 정보, 해당 입력/행동과의 거리. 불필요하면 삭제로 기록 |\r\n| 최종 UI 문구 | 사용자가 볼 내용만. 개발 메모나 출처를 섞지 않음 |\r\n| 연결 행동 | 클릭/다음 단계, 없으면 없음, 미정이면 unknown |\r\n| 사실 근거 | 확인한 제품 사실, 사용자 요구, 참고 R/O-ID; 어조 참고와 동작 근거 분리 |\r\n| 상태 | ready / draft-dependent / blocked-on-fact |\r\n| 검증 | 사실 보존·누른 직후 행동·한국어 8원칙, 긴 변수·좁은 폭·줄바꿈·접근 가능한 이름·상태 일치; 미실행 명시 |\r\n\r\nkey는 기존 i18n 규칙을 따른다. 코드베이스가 없으면 예정 key라고 표시한다. 길이 제한은 제품 요구 또는 실제 레이아웃으로 정하고 임의의 글자 수를 범용 규칙으로 만들지 않는다.\r\n\r\n## 가상 예시: 결제 실패\r\n\r\n입력: 화면은 실패로 분류됨. 원인·과금 여부·복구 행동은 미확인. 레퍼런스에는 “결제 실패 / 다시 결제”가 표시된다는 사용자 기록이 있음.\r\n\r\n| ID / 예정 key | 노출 조건 | 최종 UI 문구 | 연결 행동 | 근거/상태 | 검증 |\r\n|---|---|---|---|---|---|\r\n| C1 / payment.failure.title | 제품에서 결제 실패로 확정한 상태 | 결제를 완료하지 못했어요 | 없음 | 사용자 제공 실패 상태 / ready | 좁은 폭 줄바꿈, 상태 일치: 미실행 |\r\n| C2 / payment.failure.action | 복구 행동 확정 전 | 미정 — UI에 이 메모를 표시하지 않음 | unknown | 레퍼런스 버튼은 동작 근거가 아님 / blocked-on-fact | 행동 확정 뒤 라벨과 실제 실행 대조 |\r\n\r\n필요성과 배치: C1은 처리 상태를 알리는 제목으로 둔다. 같은 실패를 반복하는 설명은 추가하지 않는다. C2는 복구 동작이 확정되면 상태 안내 근처에 둔다.\r\n\r\n개발 메모: 과금 여부를 단정하는 설명, 원인 단정, 자동 재결제를 추가하지 않는다. 실제 서버 상태가 실패가 아닌 결과 미상이라면 제목도 “결제 결과를 확인하지 못했어요”처럼 확인된 상태에 맞춰 바꾼다. 화면 이름이 실패라는 이유로 서버 결과까지 실패라고 추정하지 않는다.\r\n\r\n## 상태별 적용\r\n\r\n- 빈 결과: 실제로 0건인지 조회 실패인지 구분한다. 검색 조건 변경/초기화가 가능할 때 그 행동을 안내한다.\r\n- 처리 중: 실제 진행률이 없으면 숫자나 예상 완료 시간을 만들지 않는다.\r\n- 성공: 완료된 범위를 정확히 말한다. 요청 접수와 처리 완료를 같은 말로 쓰지 않는다.\r\n- 파괴적 행동 확인: 무엇이 바뀌고 대상이 무엇인지, 되돌릴 수 있는지는 확인된 정책으로 쓴다.\r\n- 오류: 알려진 사실과 실행 가능한 복구 행동을 제공한다. 외부 정책이나 법률 판단은 문구 스킬에서 만들어내지 않는다.\r\n\r\n## 표현 검토\r\n\r\n같은 행동에 다른 라벨을 붙이지 않았는지, 화면 제목과 설명이 같은 말만 반복하는지, 명사형 버튼이 실제 행동을 숨기는지 확인한다. 한국어는 자연스러운 어순과 제품의 어조를 따른다. 친근함을 위해 모든 오류에 감탄사·이모지를 넣지 않는다. 검증 메모는 UI 밖에 둔다.\r\n\r\n한국어 문구의 상세 검토는 [한국어 글쓰기 기준](korean-writing.md)을 따른다. 필요한 C-ID에 바꾸기 전/후와 이유를 기록한다. ‘더 자연스러워짐’만 적지 말고 중복 제거, 즉시 행동 예측, 조건 보존처럼 무엇을 개선했는지 쓴다.\r\n\r\n## 의미가 겹치는 날짜·수량·상태\r\n\r\n문자열 일치만으로 중복을 판단하지 않는다(RUI-24). 상단의 ‘2026년 9월’과 바로 아래 ‘9월 13일 할 일’처럼 같은 월이 다른 형식으로 반복되는지 확인한다. 설명·제목·배지·본문이 같은 날짜/수량/상태를 재진술하면 한 곳으로 합치거나 역할 없는 줄을 삭제한다.\r\n\r\n정보 항목별로 필요한 연도/월/일/요일/수량/상태와 실제 소유 위치를 정한다. 연도가 필요하면 ‘2026년 9월 13일 할 일’ 등 한 제목에 보존할 수 있다. 현재 연도가 명확한 작업에서 생략해도 되는지는 과제와 날짜 범위로 판단한다. 글자가 길다는 이유만으로 축소하지 않는다. 기본14px를 유지하고 짧은 보조정보의12px 예외는 [글자 기준](../../reference-to-ui/references/ui-composition.md#글자-크기-하한)에 따라 별도 판단한다. 달력 월 이동 제목과 선택된 날짜의 작업 제목처럼 역할이 다른 경우에는 그 탐색 역할을 확인하고 유지한다. 문구가 다르다는 사실만으로 두 표시가 필요하다고 보지 않는다.\r\n\r\n## 선택 기능 안내를 입력창에 상시 붙이지 않기\r\n\r\n‘여러 일은 한 줄에 하나씩’ 같은 보조 입력법은 기본 composer의 전송 버튼 옆이나 입력창 아래에 상시 넣지 않는다. 입력과 실행이 이미 명확하면 안내를 삭제한다. 안내를 입력 근처로 옮겼다는 사실만으로 필요한 문구가 되는 것은 아니다(RUI-11).\r\n\r\n선택 기능 설명이 실제로 필요하면 사용자가 도움말을 열었거나 해당 입력 방식의 오류를 고치는 시점처럼 구체적인 노출 조건을 정한다. 첫 사용이라는 이유만으로 안내/칩/툴팁을 자동 추가하지 않는다. 필수 형식·비용·오류·유효성 조건을 전달하는 문구는 필요성을 확인해 보존한다. 사용자가 여러 항목을 입력할 수 있다는 기능 자체는 안내 삭제와 무관하게 유지한다.\r\n\r\n문구를 제거한 뒤에는 빈 설명 행과 예약 높이도 제거하도록 구현에 전달한다. 어떤 문구인지 외우기보다 현재 사용자의 판단/행동에 실제 도움이 되는지 검사한다.\r\n\n\nskills/qwen-samkill-ui/references/upstream/ux-copy/references/korean-writing.md\n# 한국어 제품 문구 기준\r\n\r\n근거: 사용자가 제공한 김자유(토스 UX Writer), 「토스의 8가지 라이팅 원칙들」, 2022-11-15 본문. 다음은 원문을 제품 제작에 적용하기 위해 정리한 지침과 새로 만든 예시다. 현재 토스의 전체 내부 정책이나 공식 인증 지침이 아니다. 댓글·메뉴·푸터는 근거에서 제외했다.\r\n\r\n## 목소리와 상황\r\n\r\n기본 가치는 **명확함, 간결함, 친근함, 존중, 공감**이다. 제품의 목소리는 유지하되 상황에 맞게 말한다. 실패 안내는 차분하게, 중요한 일을 마친 순간은 짧게 축하할 수 있다. 모든 화면을 같은 감탄사·사과·농담으로 꾸미지 않는다. 한국어 어조가 정해지지 않았다면 쉬운 해요체를 기본으로 삼고, 명시된 브랜드 어조가 있으면 따른다.\r\n\r\n## 여덟 가지 점검\r\n\r\n| 원칙 | 확인할 질문 | 실제 적용 |\r\n|---|---|---|\r\n| 1. 다음 행동을 예상하게 쓰기 | 버튼을 누른 직후 무슨 일이 일어나는지 알 수 있는가? | 설문으로 가면 ‘설문 참여하기’, 실제 결제면 금액과 결제 행동. 장래의 혜택을 당장 받는 것처럼 쓰지 않는다. |\r\n| 2. 필요 없는 단어 덜기 | 지워도 뜻·조건·확실성이 같은가? | 의미 없는 ‘정상적으로’, ‘성공적으로’, 반복 호칭 등을 검토한다. 실제 구분에 필요한 단어는 남긴다. |\r\n| 3. 반복하는 문장 덜기 | 설명이 제목과 같은 말만 반복하는가? | 완료 제목 아래 완료 사실을 다시 쓰지 않는다. 날짜·다음 행동 등 새 정보가 없으면 설명을 생략한다. |\r\n| 4. 지금 필요한 정보에 집중하기 | 지금 선택에 필요한 내용이 먼저 있는가? | 선택지를 구별하는 정보부터 쓴다. 배경 설명은 필요할 때 읽게 하되 비용·조건을 숨기지 않는다. |\r\n| 5. 말하듯 쉽게 쓰기 | 사람에게 그대로 말해도 자연스러운가? | 추상 명사와 긴 피동문을 쉬운 동사로 바꾼다. 한 문장에 핵심 메시지 하나를 담되 기계적인 글자 수 제한은 두지 않는다. |\r\n| 6. 선택을 존중하기 | 거절하는 사람을 탓하거나 겁주지 않는가? | 사실에 맞는 선택과 결과를 제시한다. ‘포기’, ‘손해’, 가짜 긴급성으로 행동을 밀어붙이지 않는다. 실제 기한·결과는 중립적으로 설명한다. |\r\n| 7. 누구나 이해할 말 쓰기 | 특정 업계·세대만 알아듣는가? | 불필요한 외래어·은어·밈을 쉬운 말로 바꾼다. 제품명과 대상 사용자에게 필요한 전문 용어는 정확히 유지한다. |\r\n| 8. 상황에 맞게 공감하기 | 이 정보를 받는 순간 어떤 마음일지 고려했는가? | 상환 완료 같은 이정표는 사실과 짧은 축하를 함께 전한다. 모르는 노력·기간·감정은 단정하지 않고 오류에 억지 위로를 붙이지 않는다. |\r\n\r\n간결함은 단어 → 화면의 문장 → 화면 사이의 정보 순서로 확인한다. 사용자가 알아야 할 금액·기간·불이익을 삭제해서 짧게 만들지 않는다.\r\n\r\n## 번역투를 고치는 방법\r\n\r\n다음은 감지 신호이며 일괄 치환 규칙이 아니다. 먼저 누가 무엇을 했고 실제 상태가 어떻게 바뀌었는지 확인한다.\r\n\r\n| 거친 문구 | 자연스러운 문구 | 전제/주의 |\r\n|---|---|---|\r\n| 고객님의 구독에 대한 자동 갱신 비활성화 처리가 성공적으로 수행되었습니다. | 자동 갱신을 껐어요. | 자동 갱신 해제가 실제로 확인됐을 때. ‘구독 종료’와 혼동하지 않음 |\r\n| 설정 변경을 통해 알림의 수신을 관리할 수 있습니다. | 설정에서 알림을 켜거나 끌 수 있어요. | 실제로 두 행동을 지원할 때. 가능성을 완료 사실로 바꾸지 않음 |\r\n| 이메일 주소의 입력을 진행해 주세요. | 이메일 주소를 입력해 주세요. | 명사+진행을 직접 행동으로 바꿈 |\r\n| 당신의 계정이 성공적으로 생성되었어요. | 계정을 만들었어요. | 계정 생성 완료 확인. 불필요한 소유격·완료 수식 제거 |\r\n| 더욱 원활한 경험을 제공하기 위해 권한 허용이 필요합니다. | 사진을 올리려면 사진 접근을 허용해 주세요. | 실제 권한 목적이 사진 업로드일 때만. 권한 종류를 지어내지 않음 |\r\n| 온보딩을 컴플리트하고 베네핏을 확인하세요. | 가입을 마치고 혜택을 확인해 보세요. | 이 온보딩이 실제 가입이고 확인할 혜택이 있을 때만 |\r\n\r\n‘~에 대해’, ‘~를 통해’, ‘~에 있어서’, ‘~에 의해’, ‘~의 ~의’, ‘~되어지다’, ‘~처리를 진행하다’가 겹치면 문장 구조를 고친다. 자연스러운 용법까지 모두 지우지 않는다. ‘환불’과 ‘결제 취소’, ‘자동 갱신 해제’와 ‘이용 종료’처럼 제품 의미가 다른 말을 편의상 바꾸지 않는다.\r\n\r\n소리 내어 읽듯 검토하되 실제 음성 테스트를 하지 않았다면 했다고 쓰지 않는다. 표준 약어·고유명사·필수 고지 원문을 억지로 번역하지 않는다. ‘~할 수 있어요’가 가능성이나 권한을 나타내면 그대로 보존한다. ‘없을 수 있어요’를 ‘없어요’로 단정하지 않는다.\r\n\r\n## 화면 단위 예시 — 가상 제품\r\n\r\n### 다음 화면 예측\r\n\r\n전제: 지금 버튼은 원하는 브랜드를 묻는 선택 설문으로 이동하며 혜택을 지급하지 않는다.\r\n\r\n- 제목: 원하는 브랜드를 알려주세요\r\n- 버튼: 설문 참여하기\r\n- 보조 행동: 건너뛰기\r\n- 배제: ‘혜택 받기’, ‘다른 곳에서 바로 결제’처럼 현재 동작과 다른 약속.\r\n\r\n### 반복 설명 줄이기\r\n\r\n전제: 구독 취소 완료, 이미 결제한 이용은 10월 31일까지 유지, 이후 청구 없음.\r\n\r\n- 제목: 구독을 취소했어요\r\n- 설명: 10월 31일까지 이용할 수 있어요. 추가 요금은 없어요.\r\n- 배제: ‘구독 취소가 정상적으로 완료되었습니다’라는 중복 설명.\r\n\r\n### 비용과 선택권\r\n\r\n전제: 지금 3,900원 결제, 이후 매월 3,900원 자동 결제.\r\n\r\n- 제목: 월 3,900원으로 이용해요\r\n- 설명: 지금 3,900원이 결제돼요. 이후 매월 3,900원이 자동 결제돼요.\r\n- 주요 버튼: 3,900원 결제하기\r\n- 보조 행동: 나가기\r\n- 배제: ‘무료로 시작’, ‘혜택을 포기하시겠어요?’. 나가기 동작도 실제 지원하는 경로에 연결한다.\r\n\r\n### 완료 순간의 공감\r\n\r\n전제: 대출 전액 상환을 확인했다.\r\n\r\n- 제목: 대출을 모두 갚았어요\r\n- 설명: 축하해요!\r\n- 배제: 확인되지 않은 ‘3년의 노력’, ‘이제 걱정 끝’, ‘신용점수가 올랐어요’.\r\n\r\n축하가 매 화면의 필수 요소는 아니다. 기능적 상태에는 사실만으로 충분할 수 있다. 중요한 완료 순간에서 짧은 공감이 적합한지 판단한다.\r\n\r\n## 전달 전 확인\r\n\r\n### 조작 의미와 번역 문자열\r\n\r\n토글은 켰을 때의 상태를 바로 알 수 있게 쓴다. ‘알림을 받지 않기’가 켜짐과 겹쳐 혼란스럽다면 ‘알림 받기’처럼 긍정 상태를 검토하되 저장값의 실제 의미까지 함께 대조한다. 문구만 뒤집고 설정 동작은 반대로 남기지 않는다. 파괴적 확인 버튼은 ‘예’보다 ‘문서 삭제’처럼 즉시 결과를 드러낸다. 영어 verb-first를 한국어 어순에 강제하지 않는다.\r\n\r\n번역을 지원하는 제품에서는 조사·수량·동사를 조각 문자열로 이어 붙이지 않고 완전한 메시지와 변수로 관리한다. 한국어 조사 처리·수량·날짜 형식과 제품 용어를 확인하고 같은 동작의 메뉴/버튼/완료 안내를 함께 대조한다. 한국어 전용의 작은 문구 수정을 새 번역 시스템 구축으로 확대하지 않는다.\r\n\r\n### 탐지 신호와 제품 사실\r\n\r\n‘혁신적인’, ‘직관적인’, 기계적인 삼단 나열처럼 구체적 역할이 없는 표현을 줄인다. AI 탐지기의 일치는 단서이며 고유명사·인용·검증된 수치를 자동 삭제하지 않는다. 구체적으로 쓰려고 속도·성과·사용자 수를 발명하지 않는다. 예를 들어 ‘검색 40% 단축(내부 실험, 20명, 기존판 대비)’에서는 수치와 조건을 보존하되 무엇을 단축한 것인지 불명이면 ‘검색 시간’이라고 채워 넣지 않는다.\r\n\r\n빈 결과에는 조회 조건과 실제 가능한 복구 행동을 전달하되 내용이 생겨도 필요한 저장 범위·비용·조건은 빈 화면에만 두지 않는다. 같은 오류가 반복되면 안내 문구 외에 입력 제약·전이·복구 설계의 문제인지 구별한다. 문구 요청에서는 수정 문자열을 제공하고 흐름 문제를 별도 전달한다. 확인되지 않은 네트워크 원인이나 안전한 재시도를 약속하지 않는다.\r\n\r\n이 절은 [Jakub better-writing](https://github.com/jakubkrehel/skills/tree/267330e1adfc66a718fb65fa6918c1f06d0a689e/skills/better-writing)의 조작/문자열 기준과 [Yetone 문구 신호](https://github.com/yetone/kill-ai-slop/blob/96d1ca568a1db7e1ef9a381644c744440f816ee4/skill/references/taxonomy.md)를 토스 8원칙에 맞춰 보완했다.\r\n\r\n### 최종 대조\r\n\r\n8원칙 중 문제를 발견한 항목은 C-ID와 수정 이유에 연결한다. 적용 대상이 아니면 이유를 남기고 억지로 문구를 추가하지 않는다. 마지막으로 숫자·날짜·조건·부정/선택·불확실성·즉시 행동을 원래 제품 사실과 대조한다. 그다음 실제 화면이 있으면 줄바꿈·잘림·접근 가능한 이름을 확인한다. 텍스트 검토와 렌더 검증 결과를 구분한다.\r\n\nCURRENT FROZEN COPY CONTRACT\n# List action copy before the bounded copy request\n\nPROPOSED INPUT,not implemented or approved. Read actual current DESIGN and pinned UX-copy/copy-contract/Korean-writing guides. Existing generic 편집/완료 controls were moved into the list region;their isolated visible label still leaves scope implicit. Clarify the existing action without adding a title,description,hint,header or feature.\n\n| C-ID | State/condition | Chosen visible text | Accessible name | Actual immediate action |\n|---|---|---|---|---|\n| C-LIST-ENTER | Reading;disabled when selected list has no mutable records | 목록 편집 | 할 일 목록 편집 | Reveal existing per-record delete actions for this selected-day list |\n| C-LIST-EXIT | Editing | 편집 마치기 | 할 일 목록 편집 마치기 | Exit transient editing;no new save or pending changes are implied |\n\nFour string values only. Preserve every event/state/storage operation and the current14px600 role. Local Qwen returns these bounded copy values;host inserts actual returned values into two exact existing controller text/ARIA statements and synchronizes the initial native button in assembly/sample/plan. This assistance is not a fresh behavior generation claim. Do not change CSS,assets,calendar,other copy or add instructions to the product UI.\n\nEight-principle review: explicit next action/scope;no filler word,duplicate sentence,future promise,jargon,pressure,unfounded empathy or success guarantee. The extra 목록 word disambiguates the changed object. 마치기 describes mode exit rather than claiming a new save. Real narrow/enlarged wrapping,accessible-name inclusion,keyboard exit/reset and write-retry behavior must be tested after integration. Full product copy review remains incomplete.\n"
+      }
+    ]
+  },
+  "sourceHashes": {
+    "index.html": "b38f615211b9a40e93122db68a00a0aa9b73c92632ba5b3e2c464558283fb097",
+    "styles.css": "0813506dc4d25e5e54153cf97ce5b123228c9f115bf709a3304781caf25ac35f",
+    "app.js": "84e4af53f4e244210620b9146c903f075c4fabcc9459e1ff7ac58ca5467ef857",
+    "DESIGN.md": "b7c5a94bd9823ff43d9085545a5dba639939cebaf115d9676a1ed66826b110f7",
+    "REFERENCE.md": "9f04811d7f04c3d0ae81da3cf35c30457499108f6a3e7df93c9ab9b872a9078c",
+    "assets/fonts/METADATA.pb": "9b8b27c0dd1adbb0057d1fbe9534207ab3606114ace6755453d14668912471a1",
+    "assets/fonts/NotoSansKR.ttf": "194018e6b2b293a7964f037b25c0249ce1418bc9ab3c971060a03aa57861e252",
+    "assets/fonts/OFL.txt": "1c05c68c34f9708415aada51f17e1b0092d2cea709bf4a94cd38114f9e73d7d9",
+    "assets/icons/LICENSE": "b495047bd93a9b06913511076f504daba17d5bbeb3e0650f3bb53a4220329c57",
+    "assets/icons/Plus-neutral.svg": "13e30a4730e5e97733ad1ecb4783952fd08ef7a73239a3f07668556b0360b539",
+    "assets/icons/Plus.svg": "3d4f93d0e5a8eb932e4d1f0d71122d01917e7624439adc35dddcd5352d7a228f",
+    "assets/icons/Trash2-neutral.svg": "4e249e5c0f31edddd39895daffe23cf7bc80d405fb1a1f21749683d391de419a",
+    "assets/icons/X.svg": "f27abfc353abc2497a1d9752e21e2e2e32eeeb4271401f2a067c4d1fcced7a23",
+    "assets/icons/manifest.json": "9e5787944a2f2b999f31d352c278ac7507c2e96dbc0f9ca0a4609c35babb538b",
+    "design/typography.json": "044d8a4fa9d51d8836f9df602c64e79eb6b2151a039fe8e457f7db32c144c3db",
+    "design/component-plan.json": "3dc155ae16ffa3f370138a3909c2a2be5facf0bd46bbcd2633c0a1006b17e9d2",
+    "design/layout-contract.json": "d5e01e841895680904ee0af1919de48b2bcc82cb83a02516e81b00f16ded4332",
+    "render.js": "7e5dc567bbb2130dc3df06820967ecbabbeb298a7a47fd2fe6a2f0e776a099e0",
+    "sample-editor.html": "6986f9ac088f35c49edd8bce742b4fb33dd43c64d2f6bbe003e7b7e2edf117ef",
+    "sample-tasks.html": "2941f594bd792a2d933b63cb84fa900b5fd2bf1202f940bd907404a862e7ea4f",
+    "sample-week.html": "8c7acd3441fbb26eb31d764d86bfd972d54b92244f9a57df90fa8e79c82f825e",
+    "store.js": "2300e692f886294a8d328b7d3f72fdac9c72b57eac8c6d2c79d95fd9bd25f0ce"
+  },
+  "harnessHashes": {
+    "AGENTS.md": "3eb9af77f4551532cd6973c81dac432515d406857ff1c6097c512eeb085eb75b",
+    "evals/service-cases.mjs": "32e9f476eae3539437bccad4892bfc839bb4ab12dc3e3842fb6c2a7c49d35e4e",
+    "package-lock.json": "97f0b672e3c84a57a0c8a3a291170929b80ef3025a88318aa99b7b4ad9cbdee6",
+    "scripts/asset-references.mjs": "669299f3a8b72b22648f4909d50a91d94c00af8eb444834c74d3cc075b892d5e",
+    "scripts/benchmark.mjs": "a97bfa6c6021884cfdb45ac631f853d115fc4245ae218dd6edcb3f68bab7f861",
+    "scripts/catalog-gate.mjs": "99b62ae18ae16ec185cc7a553c958a90810af60d73166d4d3346e7f5df8856dd",
+    "scripts/catalog-plan.mjs": "f1cf03229d42e1f56887d3ecced5df8c1ff9da70bdffb7ff1b747e0c3178a2d8",
+    "scripts/catalog.mjs": "bdd1e96da8c9d42ab7e89b4de5f3bde67ba338d9ac25f2eef7607c2e997e8bc6",
+    "scripts/comments.mjs": "1f376069d9f134fe6b974d9611ec1e8ecbe7a3efcd1ed021a0c31434d713a118",
+    "scripts/component-plan.mjs": "da75b9bd5393c6924670c838b2e24abed7c6229b1a7949f33b03deaeacc7f760",
+    "scripts/component-scope.mjs": "bd7d6505250627eac125f9f8dd40ec5ee32e88213c67b946015b907653260439",
+    "scripts/controls.mjs": "e63842a8286a6d1a317f95072df778a08ae6379a0053d7e353d6408e227e0740",
+    "scripts/design-checks.mjs": "b32ac2d270a0a6494c6d3e195348e481e02146d355df3de0147bd6349cf53f5c",
+    "scripts/dom-references.mjs": "f98202274d55fa641fdb94349fabbd7557ddee2c1a379a90a595eed22e41baf0",
+    "scripts/evaluate.mjs": "cc8381180b7225fbbdcff66cd620eae97433f26f654a91505c87f9daf82f00ef",
+    "scripts/feedback.mjs": "f681d661b20130f1246804eb465d0e45313fb8b96dd9a10e57c6a89392016c33",
+    "scripts/font-rendering.mjs": "3dbc464fd328f7a52b7e97ec908709d65ced937922347c85dbf7345885e396a3",
+    "scripts/generate-components.mjs": "0a04195317122922850ee1ff8e294cdbeb9dc1a3e0f97f106cb1756283ebcb63",
+    "scripts/generate-service.mjs": "76d22f572ff7952d273aee02984d82969669d7d8a561a8d8f7fb64c6a048dd33",
+    "scripts/generate.mjs": "04c2126929a1cf378898e9b57163ce79198c47c84228f3ef9d3ca130dee2eda0",
+    "scripts/harness-binding.mjs": "7c4489059ab34d19721d7f9bfe07e8aa6c05e13deed09e7176e86b3f45c48501",
+    "scripts/icon-assets.mjs": "988a013be916847143e2242b34f07101a9c433826d3b80f4562db10c333a4791",
+    "scripts/icon-check.mjs": "dc7c96dcf3e2e7198d04ac9380d73017f12363e9bea792070a864e24a5ab4b80",
+    "scripts/icons.mjs": "105ad7cf37f100e0e922bbe086bbd5eb40e8e0389860fa75edbceefeaf58a679",
+    "scripts/inference-http.mjs": "bb410beb0fdbf74888567dbdc489198bf66490231cae92ff2dae3877ebefa52c",
+    "scripts/inference-options.mjs": "5554438d5a454be997f1b24cadf666a0a4c6fb6990fc095c04cefc03bcd664f3",
+    "scripts/iterate.mjs": "0396f6eaf1bca6114fba1d56684c1eabcc2c845820e80249ffd5ca37f588ec4f",
+    "scripts/label-check.mjs": "ef1ad24758761e19d108de19a720f1e0510ebd203a78edd9a0b01e08218e3f6d",
+    "scripts/layout-contract.mjs": "b1baa75b1e18f8d32ef84d3dcd5f4833489309b2ab7f767fbda3974a54fab856",
+    "scripts/layout-state-coverage.mjs": "83797fb18654129ea86baf413bf6465ba6ddf3723346fdfc5e1a031bd57b24f4",
+    "scripts/local-font.mjs": "b3aa5c07856bf905ad1d34d7f55d58ae38a4fe6cf995e524ad2e3cb834c41a9b",
+    "scripts/media-visibility.mjs": "b30e3221e77ab64b58346ffd3f202a33d3d06df92663e99ec65f4a87a923480e",
+    "scripts/owned-rollback.mjs": "e7ae6ea4ba450f14a621dfe5e4c958e7ff619e33dd7f16332e6a776e937e879e",
+    "scripts/patches.mjs": "69e4e775435a4475772ab927912c1af87fc0e9600ca5c1966ff713b3f8bed948",
+    "scripts/process.mjs": "581bbc80176812e90a13b43e1957a5b2c94f92ddd64956b58e9ba9b09049d817",
+    "scripts/progress.mjs": "b4521023cf4fa5ca61350365db23b9222234d13aa5a971a2bcce920a3062d754",
+    "scripts/quality-loop.mjs": "4d8168ba213788ab413be20d3574c5cf5eaa8516031b57267a4d95ff30ec001b",
+    "scripts/quality-policy.mjs": "29fe2de8114a08a610ec2c7061f8a69a7e712ecf796d5c5a163cc37602fb9b35",
+    "scripts/quality.mjs": "810669c1cd79d72e4d4739f94756aff56958da4217689e04c2a44f6571a86724",
+    "scripts/reference-assets.mjs": "647cf0c06f2715817b181eefb907a0815ef62cc39a8b77ce23938c221da5831e",
+    "scripts/reference-capture.mjs": "e9f80432bc4865a4775a1deefd5b7b4c9165c143aa6a68f2adbd189dfc423157",
+    "scripts/refine.mjs": "3f233369b6ac5c353ed4e971672a2066aaba8e564397f79f7256373e3df9b52c",
+    "scripts/repair-component.mjs": "27852ef233760ef2e78ed24698cf428a296c7b0f437dedcd3ed49943a859d96a",
+    "scripts/repair-units.mjs": "659bc56e101e358adcfd4cf96b69cbc2fcf506d228c56db6da58cb30a70b58a6",
+    "scripts/repair.mjs": "566a74a4355b98fabe994c9ffa3323c28390c11d611b99a01415cc87a25841b8",
+    "scripts/replacements.mjs": "ef0d1207a43697ef603d9889319f81edd1b88686376a01dfdc564ef4190cb46f",
+    "scripts/review-findings.mjs": "2050e8b80eeb933d813f64cbeef0d873aab8c9fb9e5d2474309660fed4af26c6",
+    "scripts/run-state.mjs": "a5555d9729d6a5ef53408f490112154e35249d726463de2acf28efed316f205c",
+    "scripts/sampling.mjs": "7cefe8e0f243ca5b8d9ef60d93aaa35ed1e61913d9fcb25112740abb2f8f69c8",
+    "scripts/service-benchmark.mjs": "d72bc81fe06a87994d3d3f7f703f68839867f98b2f82c6483ce77ce4cb3e81d3",
+    "scripts/service-evaluate.mjs": "7f4e21694ea7ece7ba26724aad72c45840fcb8cbcd8bcdd6336b286bfe601350",
+    "scripts/service-gallery.mjs": "78621a605a0b9869a12fb4e34f243a5c5ad3407db0d1f8a298e823f59cabcf74",
+    "scripts/service-interface.mjs": "b0cc323f9bf6e1f0b47ae24495ae14c29c57645ca49491450980a7ca99bd5569",
+    "scripts/service-progress.mjs": "4f1d99b8a23ea26ed984d07983d9a542d555acf6c7907c07da66df6b9815bb34",
+    "scripts/service-repair.mjs": "08ddc619c826136dd1c25f986eec6608e86980cadc6f3297f75e9b874b4ff4e4",
+    "scripts/service-resume.mjs": "1956218819ba5d2cc0263cc11c71d911a19c5f871e2194bebf8a7f45ded498d2",
+    "scripts/service-revalidate.mjs": "bba83ba00a9e8bf53ee1133e3c7f2da44f8bf4b50bd34ae66908edb69bc231c7",
+    "scripts/service-stages.mjs": "3a9fb2ffb89e201511e14680655003b4746dc9d0f477454d48f30f168b278bc5",
+    "scripts/setup.mjs": "8a9e96c393a64bf7bfb28462945b537b277725bc0b0d951b3dfed4c370a4e363",
+    "scripts/skill-context.mjs": "d99bda5203efdde31f7c5cb73a88357344a619d4154465911071ffd4857033f9",
+    "scripts/source-binding.mjs": "2f7062615198054611124c97531c983ecff7e440962309d035c40935a6617da7",
+    "scripts/spacing-audit.mjs": "2442eed07972748e1ecb18c8af76cf50ce68f0e05953e3e0a5b04a286c146154",
+    "scripts/stacked-content.mjs": "33d78907983e41a23e9dbabd3fc162bea16564f9ed563f0989964cdb8bffae34",
+    "scripts/text-stress.mjs": "12fa6df9d2d0e83809af25c4076b4da6a859eee58c731c0778f4fe4d71a26d4d",
+    "scripts/transaction.mjs": "fa9bf159634f106d8d68410dcdeb2e9135893ee00e096ae2b48736968bc801de",
+    "scripts/typography-check.mjs": "b89a5f727df9fc45b197f829e524a1c384c960a9ea1d0ea92a1085aabc11c0d4",
+    "scripts/typography-metrics.mjs": "c97db775ed5829ac175d689afd0c962f1c4282cf2d9ad31d7885d4ef8effde80",
+    "scripts/typography.mjs": "51d6b7cc8fcf6ee615569ce31134c53b99aceeac533f94880a1111e6c12d65df",
+    "scripts/visibility.mjs": "fa748f7755f974823270b34f3e9a94e8d9913a4a8e22a631d561a0ac76f4f9d5",
+    "scripts/vision-review.mjs": "44d988922e8468b8086f62d6900747f0a1d27315f0ae07658848ceb4df239ae8",
+    "scripts/workflow-state.mjs": "d2cbbdcc14238eedd7c91b805cca0eade24cc38f4c0b9c23001c065494e15a56",
+    "skills/qwen-samkill-ui/SKILL.md": "5fae0e4b0b689f1c4f0d6870493dc7620c071598dd8f21e9bd4d503b89c2eca2",
+    "skills/qwen-samkill-ui/references/decomposed-layout.md": "c3ddfab9bb4902d4e69f903898521ea1284ea17ef2cd5e5c6a712371ed57d292",
+    "skills/qwen-samkill-ui/references/operating-rules.md": "375409a9c49b1a43600c985f8d8d6d54cc84c6325a077ba1d5831ca5b15b1dae",
+    "skills/qwen-samkill-ui/references/service-contracts.md": "1a14ea097d5d7deeecb554b04c90441ca986fa50b1abf11a3aeb94f1469cc491",
+    "skills/qwen-samkill-ui/references/upstream/design-md/guide.md": "06e3ed239bfd26723e5a2ca8b2dd049e50775e952243db803051860ae00dee76",
+    "skills/qwen-samkill-ui/references/upstream/design-md/references/document-contract.md": "84a919c4238a77164e625d61191d0de46cbabd41599a66eab852718e6a1cde61",
+    "skills/qwen-samkill-ui/references/upstream/onboarding-flow/guide.md": "1cea6902c39a49281da5ed1e0c4980788ec4fa914813065362a7c05caf571f44",
+    "skills/qwen-samkill-ui/references/upstream/onboarding-flow/references/flow-contract.md": "141799d53fe392690cbfcf16e35f4436db7e59ec44297e6a93861d5bc08cb705",
+    "skills/qwen-samkill-ui/references/upstream/reference-decompose/guide.md": "75b42c9d969e681167ee4bf1cdcc852da19901e4bd3005ea7d5a4ec6bb46fceb",
+    "skills/qwen-samkill-ui/references/upstream/reference-decompose/references/element-contract.md": "7269c5580b61c1af3ddd7631cd1cce6145e1238905fa6c022308cdf340abafdd",
+    "skills/qwen-samkill-ui/references/upstream/reference-review/guide.md": "6018495454ca3652463541feca21507c61a61c8d93407552f17866775dbfe900",
+    "skills/qwen-samkill-ui/references/upstream/reference-review/references/change-review.md": "835a677ff3307b05eda95c4d9aae578fe21f6040fed786d86867d4a2de1537eb",
+    "skills/qwen-samkill-ui/references/upstream/reference-review/references/design-gate.md": "e7d4d49ca8cc4cf9ac5657d40a0e2ae790ab08dc899eaadd0c57f8c85a74e922",
+    "skills/qwen-samkill-ui/references/upstream/reference-review/references/deslop-triage.md": "19b4b368b6381214ebcf43c2e8c13482482a9b80ef8e7b87656066bc67080d69",
+    "skills/qwen-samkill-ui/references/upstream/reference-review/references/failure-catalog.json": "82e459f06fb4113a1c2caa89ac2c28e95c29c186a0190bb8bf0c2a5caf74329f",
+    "skills/qwen-samkill-ui/references/upstream/reference-review/references/feedback-regression.md": "dbb395f3bb69064bdd27d5530161176f02c91f72eb52059312d8ef0d98070e9b",
+    "skills/qwen-samkill-ui/references/upstream/reference-review/references/review-criteria.md": "a1c23982ec119e90f7942c245fff8ba21b8a76e2ad3be67e2a4a14244e17097f",
+    "skills/qwen-samkill-ui/references/upstream/reference-review/references/state-stress.md": "5dbdc14b7e7d86a18f98a38f420ac5cf710575168f7b2668bed9db60908170b5",
+    "skills/qwen-samkill-ui/references/upstream/reference-to-ui/guide.md": "567526f1bf26f8cb75907be57b2c4c4f3968923e3b497697caf5e7891f684c62",
+    "skills/qwen-samkill-ui/references/upstream/reference-to-ui/references/anti-slop-code.md": "3dee460457dba58eeb7e5e9b0bd70ab91987aad85ef1ea389bf92e10d1b2a130",
+    "skills/qwen-samkill-ui/references/upstream/reference-to-ui/references/application-format.md": "0766ac025e38b30fbe6288b3f46deddffb8616eb8488041d86aec21add7a875a",
+    "skills/qwen-samkill-ui/references/upstream/reference-to-ui/references/dashboard.md": "a2e8952a72052e87d3cece16c2a8514d7fa033f36642e76d8d9de66fad2c91b0",
+    "skills/qwen-samkill-ui/references/upstream/reference-to-ui/references/design-guardrails.md": "dcdc36114b7332cef376c4b87d77524df064877d76f5607502f4ad65ae9beec9",
+    "skills/qwen-samkill-ui/references/upstream/reference-to-ui/references/design-tokens.md": "e8f6a508a6c81ce0519c1217fea1a68c6ee3d3ba9f64b1bd0627fa62953f8b7d",
+    "skills/qwen-samkill-ui/references/upstream/reference-to-ui/references/icon-controls.md": "c20876adeda380825867f3fd7ffa1381125623756c865d2bc1ace07a9d39692e",
+    "skills/qwen-samkill-ui/references/upstream/reference-to-ui/references/mobile.md": "8d3b261b27f5523b713a68fa445b37603d72eb0dc12887bd55fa16db4f9d6e03",
+    "skills/qwen-samkill-ui/references/upstream/reference-to-ui/references/primary-color.md": "7754a8f5796f72415161570643dd2fcea0cbf8e0e995598ad2d3155b24d4c57f",
+    "skills/qwen-samkill-ui/references/upstream/reference-to-ui/references/product-reasoning.md": "947cbbbe96401e2072c723c6b8ebf13c33621ea663f6bc8a66ef149638218ac3",
+    "skills/qwen-samkill-ui/references/upstream/reference-to-ui/references/reference-synthesis.md": "f61501b8959c7281912fe61bd5bb565add6a1e430db1124958606137cdcca55d",
+    "skills/qwen-samkill-ui/references/upstream/reference-to-ui/references/spacing-audit.md": "30565c3fbc3e06cdb2e53aab78955b28142774a44c7e24eb34b661ef85135539",
+    "skills/qwen-samkill-ui/references/upstream/reference-to-ui/references/typography.md": "d1003eda3338b973d1399e492bf1adea0e8eced6c054fb65cf0de480b88431d7",
+    "skills/qwen-samkill-ui/references/upstream/reference-to-ui/references/ui-composition.md": "8294a96f3e12501e25de75c395da5362359ba9697dfd76a9a1e7947650e43a8d",
+    "skills/qwen-samkill-ui/references/upstream/samkill-ui/guide.md": "fab042a57a7e9c2bb6e93a1e0ec3c11a6acaace4f1f9dd7981bf70f6cce3888e",
+    "skills/qwen-samkill-ui/references/upstream/uibowl-research/guide.md": "e69173ad106db14f3cdd9a319d9dfa5353db7065476e8a9c8503768b2220f209",
+    "skills/qwen-samkill-ui/references/upstream/uibowl-research/references/component-anatomy.md": "b7388c780937fd607d649cd96ab433bff3f0355fd1b30ba7f6c4e9f61d983106",
+    "skills/qwen-samkill-ui/references/upstream/uibowl-research/references/observation-format.md": "73d42bbbec0316530391f72983b76572eec0cda0d2844553cf1a5e1114ec1fe1",
+    "skills/qwen-samkill-ui/references/upstream/uibowl-research/references/research-plan.md": "85f3d74be7cc8b16ac9bb9ab99ed5ae66886f8da63874fe27b787a934c2de0cf",
+    "skills/qwen-samkill-ui/references/upstream/uibowl-research/references/search-examples.md": "6890636ac9f3dbc68904e39ef842d4e2d27874f025a1b86838f2700776ddfd81",
+    "skills/qwen-samkill-ui/references/upstream/ux-copy/guide.md": "2352e5db7e12be3f00eb32da92425b16611278519760f6bb6c24e6263ebb719b",
+    "skills/qwen-samkill-ui/references/upstream/ux-copy/references/copy-contract.md": "4f31283c5563ee7c9b883009a8843a01c490f03d586f9d18a15085285860f45f",
+    "skills/qwen-samkill-ui/references/upstream/ux-copy/references/korean-writing.md": "7672b1baddd7fc11ec7fc518f89f41558cb2606526030e8edcdbcb588ff47b2f"
+  },
+  "guideSources": [
+    {
+      "path": "skills/qwen-samkill-ui/references/upstream/ux-copy/guide.md",
+      "sha256": "2352e5db7e12be3f00eb32da92425b16611278519760f6bb6c24e6263ebb719b"
+    },
+    {
+      "path": "skills/qwen-samkill-ui/references/upstream/ux-copy/references/copy-contract.md",
+      "sha256": "4f31283c5563ee7c9b883009a8843a01c490f03d586f9d18a15085285860f45f"
+    },
+    {
+      "path": "skills/qwen-samkill-ui/references/upstream/ux-copy/references/korean-writing.md",
+      "sha256": "7672b1baddd7fc11ec7fc518f89f41558cb2606526030e8edcdbcb588ff47b2f"
+    }
+  ],
+  "assistance": "Host predeclares factual copy/conditions and exact string slots. Actual local Qwen values will be integrated;not fresh behavior generation."
+}

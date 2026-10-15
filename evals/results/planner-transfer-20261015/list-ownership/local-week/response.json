@@ -1,0 +1,18 @@
+{
+  "elapsedMs": 198359,
+  "model": "qwen3.6:35b-a3b-coding",
+  "created_at": "2026-10-15T11:40:06.5950885Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\n  \"patches\": [\n    {\n      \"field\": \"css\",\n      \"oldString\": \"[data-ui-unit=\\\"week\\\"] .planner-heading {\\n  display: flex;\\n  align-items: center;\\n  gap: 12px;\\n  margin-bottom: 16px;\\n}\\n\\n[data-ui-unit=\\\"week\\\"] .planner-heading h1 {\\n  font-size: 22px;\\n  font-weight: 700;\\n  line-height: 1.5;\\n  text-align: left;\\n  flex: 1;\\n  min-width: 0;\\n  margin-bottom: 0;\\n  color: var(--text);\\n  word-break: keep-all;\\n  overflow-wrap: anywhere;\\n}\\n\\n[data-ui-unit=\\\"week\\\"] #edit-tasks {\\n  font-size: 14px;\\n  font-weight: 600;\\n  line-height: 1.5;\\n  min-width: 44px;\\n  min-height: 44px;\\n  padding: 8px;\\n  background: transparent;\\n  border: none;\\n  color: var(--muted);\\n}\",\n      \"newString\": \"[data-ui-unit=\\\"week\\\"] .planner-heading {\\n  display: block;\\n  margin-bottom: 16px;\\n}\\n\\n[data-ui-unit=\\\"week\\\"] .planner-heading h1 {\\n  font-size: 22px;\\n  font-weight: 700;\\n  line-height: 1.5;\\n  text-align: left;\\n  width: 100%;\\n  margin: 0;\\n  color: var(--text);\\n  word-break: keep-all;\\n  overflow-wrap: anywhere;\\n}\"\n    },\n    {\n      \"field\": \"css\",\n      \"oldString\": \"[data-ui-unit=\\\"week\\\"] .day-button:focus-visible {\\n  outline: none;\\n}\\n\\n[data-ui-unit=\\\"week\\\"] .day-button:focus-visible .day-number {\\n  box-shadow: 0 0 0 2px var(--surface), 0 0 0 4px var(--focus);\\n}\\n\\n\\n[data-ui-unit=\\\"week\\\"] .week-strip::-webkit-scrollbar {\\n  display: none;\\n}\",\n      \"newString\": \"[data-ui-unit=\\\"week\\\"] .day-button:focus-visible {\\n  outline: 2px solid var(--focus);\\n  outline-offset: 2px;\\n}\\n\\n[data-ui-unit=\\\"week\\\"] .day-button:focus-visible .day-number {\\n  box-shadow: none;\\n}\"\n    }\n  ]\n}"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 196987911000,
+  "load_duration": 16994555700,
+  "prompt_eval_count": 13580,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration": 142687735000,
+  "eval_count": 586,
+  "eval_duration": 37228024000
+}

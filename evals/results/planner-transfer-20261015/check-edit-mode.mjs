@@ -25,6 +25,20 @@ const check = async (name, fn) => { try { await fn(); checks.push({ name, status
 const add = async (page, title, category = 'study') => { await page.locator(`[data-add-category=${category}]`).click(); await page.locator('#task-name').fill(title); await page.locator('#save-task').click(); };
 const toggle = async (page, touch = false) => { assert.equal(await page.locator('#edit-tasks').isEnabled(), true, 'Populated list editing must be available'); if (touch) await page.locator('#edit-tasks').tap(); else await page.locator('#edit-tasks').click(); };
 try {
+  await check('list management belongs to the task list after date navigation', async () => {
+    const { context, page } = await open();
+    try {
+      await add(page, '목록 소속 검증');
+      assert.equal((await page.locator('#edit-tasks').innerText()).trim(), '목록 편집');
+      assert.equal(await page.locator('[data-ui-unit="tasks"] > .list-management > #edit-tasks').count(), 1);
+      assert.equal(await page.locator('[data-ui-unit="week"] #edit-tasks').count(), 0);
+      assert.equal(await page.locator('.list-management').innerText(), await page.locator('#edit-tasks').innerText());
+      await page.locator('.day-button').last().focus(); await page.keyboard.press('Tab');
+      assert.equal(await page.locator('#edit-tasks').evaluate(e => e === document.activeElement), true);
+      await page.keyboard.press('Space'); assert.equal(await page.locator('.delete-task:visible').count(), 1);
+      await page.keyboard.press('Enter'); assert.equal(await page.locator('.delete-task:visible').count(), 0);
+    } finally { await context.close(); }
+  });
   await check('empty and malformed-read lists cannot enter editing', async () => {
     for (const raw of [undefined, '{']) { const { context, page } = await open(390, false, raw); try { assert.equal(await page.locator('#edit-tasks').isDisabled(), true); assert.equal(await page.locator('#edit-tasks').getAttribute('aria-pressed'), 'false'); assert.equal(await page.locator('.delete-task:visible').count(), 0); if (raw) assert.equal(await page.evaluate(() => localStorage.getItem('weekly-tasks-v1')), raw); } finally { await context.close(); } }
   });
@@ -33,7 +47,7 @@ try {
     try {
       assert.equal(await page.evaluate(() => matchMedia('(hover: none)').matches && navigator.maxTouchPoints > 0), true);
       await add(page, '공부할 일'); await add(page, '생활할 일', 'life'); assert.equal(await page.locator('.delete-task:visible').count(), 0);
-      await toggle(page, true); assert.equal(await page.locator('#edit-tasks').getAttribute('aria-pressed'), 'true'); assert.equal((await page.locator('#edit-tasks').innerText()).trim(), '완료'); assert.equal(await page.locator('.delete-task:visible').count(), 2);
+      await toggle(page, true); assert.equal(await page.locator('#edit-tasks').getAttribute('aria-pressed'), 'true'); assert.equal((await page.locator('#edit-tasks').innerText()).trim(), '편집 마치기'); assert.equal(await page.locator('.delete-task:visible').count(), 2);
       await page.locator('.delete-task:visible').first().tap(); assert.equal(await page.locator('.task-row').count(), 1); assert.equal(await page.locator('.task-name').innerText(), '생활할 일');
       await page.locator('.delete-task:visible').tap(); assert.equal(await page.locator('.task-row').count(), 0); assert.equal(await page.locator('#edit-tasks').isDisabled(), true); assert.equal(await page.locator('#edit-tasks').getAttribute('aria-pressed'), 'false'); assert.equal(await page.evaluate(() => document.activeElement.matches('[data-add-category=life]')), true);
       await page.reload(); assert.equal(await page.locator('#edit-tasks').isDisabled(), true); assert.equal(await page.locator('.task-row').count(), 0);

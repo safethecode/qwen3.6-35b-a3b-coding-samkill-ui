@@ -1,0 +1,11 @@
+{
+  "status": "REJECTED_UNREQUESTED_FOCUS_CHANGE",
+  "mode": 15,
+  "exactRole": "24captures0issues",
+  "workflows": 73,
+  "iconPairs": 432,
+  "storeReplay": "Driver passed directory instead of store.js;CLI invocation failed before semantic checks. Original failure retained;rerun correct file.",
+  "reason": "Week second patch changed calendar focus despite read-only contract. Existing functional/layout tests did not approve that scope change.",
+  "source": "stage1-source",
+  "next": "Use actual existing repairComponent API with only the focused CSS fragment;preserve complete failed source,then rerun after restoration."
+}

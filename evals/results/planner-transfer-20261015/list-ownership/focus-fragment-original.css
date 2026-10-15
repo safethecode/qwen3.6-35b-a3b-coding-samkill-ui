@@ -1,0 +1,13 @@
+[data-ui-unit="week"] .day-button:focus-visible {
+  outline: none;
+}
+
+[data-ui-unit="week"] .day-button:focus-visible .day-number {
+  box-shadow: 0 0 0 2px var(--surface), 0 0 0 4px var(--focus);
+}
+
+
+[data-ui-unit="week"] .week-strip::-webkit-scrollbar {
+  display: none;
+}
+

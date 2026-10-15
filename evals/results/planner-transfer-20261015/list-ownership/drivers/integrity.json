@@ -1,0 +1,8 @@
+{
+  "scope": "Original exact driver bytes retained as data;not portable clone execution entries.",
+  "hashes": {
+    "copy.mjs.txt": "b3e067c63c1b86bf4a4af4b481681a4c1085097be7303940dee5eac6159a0a09",
+    "focus.mjs.txt": "600013cc594db5d1a8f69f1aac4507f1abb0fa66e500130331c707670352d70f",
+    "initial.mjs.txt": "7235670a6a41a0007501c1015e7d6ed9cb2558d3384471eb7b0f2ccfbb818c02"
+  }
+}

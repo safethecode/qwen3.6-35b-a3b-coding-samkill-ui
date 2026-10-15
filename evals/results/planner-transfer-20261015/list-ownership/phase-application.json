@@ -1,0 +1,114 @@
+{
+  "status": "PARTIAL_GUIDE_APPLICATION_NOT_COMPLETION",
+  "recordedAtUtc": "2026-10-15T12:06:41.536Z",
+  "phases": [
+    {
+      "phase": "scope/decomposition",
+      "guides": [
+        {
+          "actualReadPath": "skills/qwen-samkill-ui/references/upstream/reference-to-ui/references/product-reasoning.md",
+          "sha256": "947cbbbe96401e2072c723c6b8ebf13c33621ea663f6bc8a66ef149638218ac3"
+        },
+        {
+          "actualReadPath": "skills/qwen-samkill-ui/references/upstream/reference-decompose/guide.md",
+          "sha256": "75b42c9d969e681167ee4bf1cdcc852da19901e4bd3005ea7d5a4ec6bb46fceb"
+        },
+        {
+          "actualReadPath": "skills/qwen-samkill-ui/references/upstream/reference-decompose/references/element-contract.md",
+          "sha256": "7269c5580b61c1af3ddd7631cd1cce6145e1238905fa6c022308cdf340abafdd"
+        }
+      ],
+      "status": "applied",
+      "evidence": [
+        "PLAN.md",
+        "markup-assistance.json",
+        "snapshots/input-source/snapshot.json"
+      ],
+      "limit": "Host owns semantic move;local styling receives fixed actual ownership contract. This does not approve all reference decomposition."
+    },
+    {
+      "phase": "spacing",
+      "guides": [
+        {
+          "actualReadPath": "skills/qwen-samkill-ui/references/upstream/reference-to-ui/references/spacing-audit.md",
+          "sha256": "30565c3fbc3e06cdb2e53aab78955b28142774a44c7e24eb34b661ef85135539"
+        }
+      ],
+      "status": "applied-not-verified",
+      "evidence": [
+        "SPACING-BEFORE.md",
+        "spacing-before.json"
+      ],
+      "limit": "Full declared source scope only;2calculated offsets and complete rendered spacing/token audit remain unverified. Initial selector-wide icon-label role classification corrected per declaration;both drafts retained."
+    },
+    {
+      "phase": "local CSS",
+      "guides": [
+        {
+          "actualReadPath": "skills/qwen-samkill-ui/references/upstream/reference-to-ui/guide.md",
+          "sha256": "567526f1bf26f8cb75907be57b2c4c4f3968923e3b497697caf5e7891f684c62"
+        },
+        {
+          "actualReadPath": "skills/qwen-samkill-ui/references/upstream/reference-to-ui/references/typography.md",
+          "sha256": "d1003eda3338b973d1399e492bf1adea0e8eced6c054fb65cf0de480b88431d7"
+        },
+        {
+          "actualReadPath": "skills/qwen-samkill-ui/references/upstream/reference-to-ui/references/icon-controls.md",
+          "sha256": "c20876adeda380825867f3fd7ffa1381125623756c865d2bc1ace07a9d39692e"
+        }
+      ],
+      "status": "applied",
+      "evidence": [
+        "local-week/request.json",
+        "local-tasks/request.json",
+        "focus-restoration/local/request.json"
+      ],
+      "limit": "Actual selected full CSS guide texts/hashes delivered per request. Entry use and successful scoped repair do not prove whole-guide completion."
+    },
+    {
+      "phase": "UX copy",
+      "guides": [
+        {
+          "actualReadPath": "skills/qwen-samkill-ui/references/upstream/ux-copy/guide.md",
+          "sha256": "2352e5db7e12be3f00eb32da92425b16611278519760f6bb6c24e6263ebb719b"
+        },
+        {
+          "actualReadPath": "skills/qwen-samkill-ui/references/upstream/ux-copy/references/copy-contract.md",
+          "sha256": "4f31283c5563ee7c9b883009a8843a01c490f03d586f9d18a15085285860f45f"
+        },
+        {
+          "actualReadPath": "skills/qwen-samkill-ui/references/upstream/ux-copy/references/korean-writing.md",
+          "sha256": "7672b1baddd7fc11ec7fc518f89f41558cb2606526030e8edcdbcb588ff47b2f"
+        }
+      ],
+      "status": "applied",
+      "evidence": [
+        "COPY-CONTRACT.md",
+        "copy-refinement/request.json",
+        "copy-refinement/integration.json"
+      ],
+      "limit": "All three full references delivered for4bounded labels;no full product copy approval."
+    },
+    {
+      "phase": "review",
+      "guides": [
+        {
+          "actualReadPath": "skills/qwen-samkill-ui/references/upstream/reference-review/guide.md",
+          "sha256": "6018495454ca3652463541feca21507c61a61c8d93407552f17866775dbfe900"
+        },
+        {
+          "actualReadPath": "skills/qwen-samkill-ui/references/upstream/reference-review/references/state-stress.md",
+          "sha256": "5dbdc14b7e7d86a18f98a38f420ac5cf710575168f7b2668bed9db60908170b5"
+        }
+      ],
+      "status": "applied-not-complete",
+      "evidence": [
+        "source/design/evidence/ownership-review.md",
+        "catalog-check.json",
+        "copy-refinement/mode/report.json"
+      ],
+      "limit": "Actual reference and candidate screens inspected;85entry catalog keeps24unknown. Read-only assistant review found no scope/behavior regression in checked cases;severe enlarged editing wrap remains."
+    }
+  ],
+  "limits": "Research reuses this bounded planner round actual references;separate fresh timer images are a new-product research record,not planner evidence. All75active rules/eightwhole-guide coverage remains mandatory and not complete."
+}

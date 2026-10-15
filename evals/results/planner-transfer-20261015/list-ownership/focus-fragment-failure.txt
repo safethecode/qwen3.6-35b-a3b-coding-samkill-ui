@@ -1,0 +1,15 @@
+Confirmed scope violation in the previous week response: date-only ownership repair also changed original calendar focus from inset circle ring to whole-button outline and removed original trailing scrollbar rule. That unrelated calendar change was never authorized by the declared repair. The writable CSS fragment is now ONLY these calendar focus/scrollbar rules;all header,date,calendar targets,task/button styles and every other file remain outside this substring. Restore the original fragment below exactly,without applying other guide cleanup. This is a regression restoration,not a request to redesign focus. Return one CSS patch replacing the supplied current fragment with the original fragment. Preserve whitespace as supplied where possible.
+ORIGINAL FRAGMENT
+[data-ui-unit="week"] .day-button:focus-visible {
+  outline: none;
+}
+
+[data-ui-unit="week"] .day-button:focus-visible .day-number {
+  box-shadow: 0 0 0 2px var(--surface), 0 0 0 4px var(--focus);
+}
+
+
+[data-ui-unit="week"] .week-strip::-webkit-scrollbar {
+  display: none;
+}
+
