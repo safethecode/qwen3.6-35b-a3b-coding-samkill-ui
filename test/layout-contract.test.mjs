@@ -4,6 +4,18 @@ import { chromium } from 'playwright';
 import { inspectLayoutContract } from '../scripts/layout-contract.mjs';
 import { createServer } from 'node:http';
 
+test('primary action must occupy the remainder of its two-control row', async () => {
+  const browser = await chromium.launch({ executablePath: process.env.CHROME_PATH || undefined, headless: true });
+  try {
+    const page = await browser.newPage();
+    await page.setContent('<div id="row" style="display:grid;grid-template-columns:48px minmax(0,1fr);gap:12px;width:300px"><button id="favorite">Save</button><button id="book" style="padding:12px 16px;min-width:0;width:0">Book this class</button></div>');
+    const contract = { rules: [{ id: 'action-space', kind: 'fillRemainder', subject: '#book', reference: '#favorite', container: '#row' }] };
+    assert.equal((await inspectLayoutContract(page, contract)).results[0].status, 'FAIL');
+    await page.locator('#book').evaluate(e => { e.style.width = '100%'; e.style.boxSizing = 'border-box'; });
+    assert.equal((await inspectLayoutContract(page, contract)).results[0].status, 'PASS');
+  } finally { await browser.close(); }
+});
+
 test('mobile-only preview rejects expansion on a desktop viewport', async () => {
   const browser = await chromium.launch({ executablePath: process.env.CHROME_PATH || undefined, headless: true });
   try {

@@ -43,7 +43,19 @@ export async function inspectLayoutContract(page, contract, options = {}) {
         if (observed.maximumInlineGroups > rule.maximum) throw new Error(`Too many semantic groups share a row: ${observed.maximumInlineGroups} > ${rule.maximum}`);
       } else {
         observed.subject = await box(rule.subject);
-        if (rule.kind === 'maxWidth') {
+        if (rule.kind === 'fillRemainder') {
+          observed.reference = await box(rule.reference);
+          observed.container = await box(rule.container);
+          observed.row = await page.locator(rule.container).evaluate((element, selectors) => {
+            const style = getComputedStyle(element);
+            const subjects = selectors.map(selector => document.querySelector(selector));
+            return { directChildren: subjects.every(subject => subject?.parentElement === element), children: [...element.children].filter(child => child.checkVisibility()).length, innerWidth: element.clientWidth - parseFloat(style.paddingLeft) - parseFloat(style.paddingRight), gap: parseFloat(style.columnGap) || 0 };
+          }, [rule.subject, rule.reference]);
+          const tolerance = rule.tolerance ?? 2;
+          if (!Number.isFinite(tolerance) || tolerance < 0 || tolerance > 4) throw new Error('Fill tolerance must be between zero and four pixels');
+          observed.expectedWidth = observed.row.innerWidth - observed.reference.width - observed.row.gap;
+          if (!observed.row.directChildren || observed.row.children !== 2 || observed.expectedWidth <= 0 || Math.abs(observed.subject.width - observed.expectedWidth) > tolerance || !inside(observed.subject, observed.container)) throw new Error('Primary action does not fill the remaining space in its declared two-control row');
+        } else if (rule.kind === 'maxWidth') {
           if (!Number.isFinite(rule.maximum) || rule.maximum <= 0) throw new Error('Maximum rendered width must be positive');
           if (observed.subject.width > rule.maximum + .5) throw new Error(`Screen exceeds declared mobile width: ${observed.subject.width} > ${rule.maximum}`);
         } else if (rule.kind === 'returnNavigation') {
