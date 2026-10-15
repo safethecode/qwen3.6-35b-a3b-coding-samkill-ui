@@ -3,6 +3,32 @@ import assert from 'node:assert/strict';
 import { chromium } from 'playwright';
 import { inspectLayoutContract } from '../scripts/layout-contract.mjs';
 import { createServer } from 'node:http';
+import { aggregateLayoutStates } from '../scripts/layout-state-coverage.mjs';
+
+test('real state captures resolve pending coverage only after every state and retain failed editing geometry', async () => {
+  const browser = await chromium.launch({ executablePath: process.env.CHROME_PATH || undefined, headless: true });
+  try {
+    const page = await browser.newPage({ viewport: { width: 320, height: 900 } });
+    await page.setContent('<style>*{box-sizing:border-box}body{font:16px sans-serif}#tasks{width:240px}.row{display:flex;align-items:center;gap:8px}.text{flex:1;line-height:1.6;overflow-wrap:anywhere;margin:8px 0}.delete{font:inherit;min-width:44px;height:44px}[hidden]{display:none!important}</style><main id="tasks"><div class="row"><span class="text">A long complete task title that wraps over several lines without removing content</span><button class="delete" hidden>Delete</button></div></main>');
+    const contract = { rules: [{ id: 'quiet', kind: 'absent', subject: '.delete:not([hidden])', states: ['reading'] }, { id: 'editing-action', kind: 'firstLineControls', subject: '#tasks', rows: '.row', text: '.text', controls: ['.delete'], states: ['editing'], tolerance: 2 }] };
+    const scope = { widths: [320], states: ['reading', 'editing'], modes: ['normal'] };
+    const reading = await inspectLayoutContract(page, contract, { state: 'reading' });
+    assert.equal(reading.issues[0].code, 'LAYOUT_STATES_PENDING');
+    assert.equal(aggregateLayoutStates(contract, [reading], scope).status, 'UNVERIFIED');
+    await page.locator('.delete').evaluate(e => e.hidden = false);
+    const bad = await inspectLayoutContract(page, contract, { state: 'editing' });
+    assert.equal(aggregateLayoutStates(contract, [reading, bad], scope).status, 'FAIL');
+    await page.locator('.row').evaluate(e => e.style.alignItems = 'flex-start');
+    const editing = await inspectLayoutContract(page, contract, { state: 'editing' });
+    assert.equal(aggregateLayoutStates(contract, [reading, editing], scope).status, 'PASS');
+    assert.equal(aggregateLayoutStates(contract, [reading, bad, editing], scope).status, 'FAIL');
+    assert.equal(aggregateLayoutStates(contract, [reading, editing], { ...scope, widths: [320, 390] }).status, 'UNVERIFIED');
+    await page.locator('.text').evaluate(e => { e.style.margin = '0'; e.style.padding = '8px 0'; e.style.borderTop = '2px solid transparent'; });
+    const padded = await inspectLayoutContract(page, contract, { state: 'editing' });
+    assert.equal(aggregateLayoutStates(contract, [reading, padded], scope).status, 'PASS');
+    for (const field of ['widths', 'states']) for (const value of [[], null, false, 0, '']) assert.ok((await inspectLayoutContract(page, { rules: [{ ...contract.rules[0], [field]: value }] }, { state: 'reading' })).issues.some(i => i.status === 'FAIL'));
+  } finally { await browser.close(); }
+});
 
 test('first-line control contract rejects controls centered in a tall wrapped row', async () => {
   const browser = await chromium.launch({ executablePath: process.env.CHROME_PATH || undefined, headless: true });

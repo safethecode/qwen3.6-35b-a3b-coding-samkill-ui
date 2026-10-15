@@ -1,5 +1,6 @@
 import { readFile } from 'node:fs/promises';
 import { resolve } from 'node:path';
+import { layoutContractFingerprint } from './layout-state-coverage.mjs';
 
 export const readLayoutContract = target => readFile(resolve(target, 'design/layout-contract.json'), 'utf8').then(JSON.parse).catch(error => { if (error.code === 'ENOENT') return null; throw error; });
 
@@ -8,10 +9,11 @@ export async function inspectLayoutContract(page, contract, options = {}) {
   const issues = [];
   const pendingStates = [];
   const scope = 'Declared DOM ownership, rendered geometry, row grouping and sample width. These measurements do not certify visual equivalence or undeclared relationships.';
-  if (!contract) return { results, issues: [{ status: 'UNVERIFIED', problem: 'Reference layout ownership and grouping contract is missing' }], scope };
-  if (!Array.isArray(contract.rules) || !contract.rules.length || contract.rules.length > 64 || new Set(contract.rules.map(rule => rule.id)).size !== contract.rules.length) return { results, issues: [{ status: 'FAIL', problem: 'Layout contract requires 1–64 uniquely identified rules' }], scope };
   const width = page.viewportSize()?.width;
   const state = options.state || 'initial';
+  const identity = { width, state, mode: options.mode || 'normal', contractSha256: layoutContractFingerprint(contract) };
+  if (!contract) return { ...identity, results, issues: [{ status: 'UNVERIFIED', problem: 'Reference layout ownership and grouping contract is missing' }], scope };
+  if (!Array.isArray(contract.rules) || !contract.rules.length || contract.rules.length > 64 || contract.rules.some(rule => !rule || typeof rule.id !== 'string' || !rule.id.trim()) || new Set(contract.rules.map(rule => rule.id)).size !== contract.rules.length) return { ...identity, results, issues: [{ status: 'FAIL', problem: 'Layout contract requires 1–64 uniquely identified rules' }], scope };
   const box = async (selector, surface = page) => {
     if (typeof selector !== 'string' || !selector.trim()) throw new Error('A concrete selector is required');
     const locator = surface.locator(selector);
@@ -23,8 +25,8 @@ export async function inspectLayoutContract(page, contract, options = {}) {
   };
   const inside = (a, b) => a.x >= b.x - .5 && a.y >= b.y - .5 && a.x + a.width <= b.x + b.width + .5 && a.y + a.height <= b.y + b.height + .5;
   for (const rule of contract.rules) {
-    if (rule.widths && (!Array.isArray(rule.widths) || rule.widths.some(value => !Number.isInteger(value) || value < 1))) { issues.push({ status: 'FAIL', problem: `Invalid widths for ${rule.id}` }); continue; }
-    if (rule.states && (!Array.isArray(rule.states) || rule.states.some(value => typeof value !== 'string'))) { issues.push({ status: 'FAIL', problem: `Invalid states for ${rule.id}` }); continue; }
+    if (rule.widths !== undefined && (!Array.isArray(rule.widths) || !rule.widths.length || new Set(rule.widths).size !== rule.widths.length || rule.widths.some(value => !Number.isInteger(value) || value < 1))) { issues.push({ status: 'FAIL', problem: `Invalid widths for ${rule.id}` }); continue; }
+    if (rule.states !== undefined && (!Array.isArray(rule.states) || !rule.states.length || new Set(rule.states).size !== rule.states.length || rule.states.some(value => typeof value !== 'string' || !value.trim()))) { issues.push({ status: 'FAIL', problem: `Invalid states for ${rule.id}` }); continue; }
     if (rule.widths && !rule.widths.includes(width)) continue;
     if (rule.states && !rule.states.includes(state)) { pendingStates.push({ id: rule.id, states: rule.states, status: 'UNVERIFIED' }); continue; }
     let observed = {};
@@ -53,9 +55,9 @@ export async function inspectLayoutContract(page, contract, options = {}) {
             return rows.map((row, index) => {
               const texts = row.querySelectorAll(rule.text);
               if (texts.length !== 1 || !visible(texts[0])) throw new Error('Expected one visible first-line text subject per row');
-              const text = texts[0], lineHeight = parseFloat(getComputedStyle(text).lineHeight);
+              const text = texts[0], style = getComputedStyle(text), lineHeight = parseFloat(style.lineHeight);
               if (!Number.isFinite(lineHeight) || lineHeight <= 0) throw new Error('First-line alignment requires a resolved numeric line-height');
-              const firstLineCenter = text.getBoundingClientRect().top + lineHeight / 2, bounds = row.getBoundingClientRect();
+              const firstLineCenter = text.getBoundingClientRect().top + parseFloat(style.borderTopWidth) + parseFloat(style.paddingTop) + lineHeight / 2, bounds = row.getBoundingClientRect();
               const controls = rule.controls.map(selector => {
                 const elements = row.querySelectorAll(selector);
                 if (elements.length !== 1 || !visible(elements[0])) throw new Error('Expected one visible owned control per selector in each row');
@@ -145,6 +147,6 @@ export async function inspectLayoutContract(page, contract, options = {}) {
     }
   }
   if (!results.length && !issues.length) issues.push({ status: 'UNVERIFIED', problem: 'No declared layout relation was checked for this viewport/state' });
-  if (pendingStates.length) issues.push({ status: 'UNVERIFIED', problem: 'Declared state relations still require their own state captures', rules: pendingStates });
-  return { results, issues, pendingStates, scope };
+  if (pendingStates.length) issues.push({ code: 'LAYOUT_STATES_PENDING', status: 'UNVERIFIED', problem: 'Declared state relations still require their own state captures', rules: pendingStates });
+  return { ...identity, results, issues, pendingStates, scope };
 }
