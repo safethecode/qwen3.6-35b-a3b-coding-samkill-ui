@@ -1,0 +1,186 @@
+{
+  "sourceCount": 18,
+  "sources": [
+    {
+      "file": "stayB1/reference-0.jpg",
+      "sha256": "5125101c211b10ee4d0a2a288d18f73974b84588e3b1ea5b875fbcb4bf725d47",
+      "bytes": 11333,
+      "app": "NOL (야놀자)",
+      "ui_url": "https://uibowl.io/name/NOL%20(%EC%95%BC%EB%86%80%EC%9E%90)?patterns=%EB%82%B4%EC%97%AD&patternName=%EA%B5%AD%EB%82%B4%EC%88%99%EC%86%8C",
+      "screenId": null,
+      "receivedAtUtc": "2026-10-15T15:54:49.407Z",
+      "inspectedNativeRepresentative": true
+    },
+    {
+      "file": "stayB1/reference-1.jpg",
+      "sha256": "cabd12f54d765f604f3e06fba85ab1b93fc9db940f391a290c1dbdb87cccc10c",
+      "bytes": 20683,
+      "app": "에어비앤비",
+      "ui_url": "https://uibowl.io/name/%EC%97%90%EC%96%B4%EB%B9%84%EC%95%A4%EB%B9%84?patterns=%EC%83%81%EC%84%B8%EC%A0%95%EB%B3%B4%20%28PDP%29&patternName=%EC%88%99%EC%86%8C%EC%83%81%EC%84%B8%EC%A0%95%EB%B3%B4",
+      "screenId": null,
+      "receivedAtUtc": "2026-10-15T15:54:49.407Z",
+      "inspectedNativeRepresentative": true
+    },
+    {
+      "file": "stayB1/reference-2.jpg",
+      "sha256": "501f09298486c1c48fa362e24417ae8acd7f2eccdaceee54d5cec56080f6c57f",
+      "bytes": 17390,
+      "app": "트리플",
+      "ui_url": "https://uibowl.io/name/%ED%8A%B8%EB%A6%AC%ED%94%8C?patterns=%EC%83%81%EC%84%B8%EC%A0%95%EB%B3%B4%20%28PDP%29&patternName=%EC%88%99%EC%86%8C",
+      "screenId": null,
+      "receivedAtUtc": "2026-10-15T15:54:49.407Z",
+      "inspectedNativeRepresentative": true
+    },
+    {
+      "file": "stayBooking/reference-0.jpg",
+      "sha256": "4e4f5b8b778c3b79f30bf4d2d31e5e6ae4fcbd8e5e1ae901b188536bf3916bab",
+      "bytes": 12799,
+      "app": "에어비앤비",
+      "ui_url": "https://uibowl.io/name/%EC%97%90%EC%96%B4%EB%B9%84%EC%95%A4%EB%B9%84?patterns=%EB%82%B4%EC%97%AD&patternName=%EC%98%88%EC%95%BD%EB%82%B4%EC%97%AD",
+      "screenId": null,
+      "receivedAtUtc": "2026-10-15T15:55:27.414Z",
+      "inspectedNativeRepresentative": true
+    },
+    {
+      "file": "stayBooking/reference-1.jpg",
+      "sha256": "5a3433a09130bb584386313a0846e12f3495335a50d6a48b0e66e7f4259c5a13",
+      "bytes": 16024,
+      "app": "에어비앤비",
+      "ui_url": "https://uibowl.io/name/%EC%97%90%EC%96%B4%EB%B9%84%EC%95%A4%EB%B9%84?patterns=%EC%83%81%EC%84%B8%EC%A0%95%EB%B3%B4%20%28PDP%29&patternName=%EC%98%88%EC%95%BD%EC%83%81%EC%84%B8%EC%A0%95%EB%B3%B4",
+      "screenId": null,
+      "receivedAtUtc": "2026-10-15T15:55:27.414Z",
+      "inspectedNativeRepresentative": true
+    },
+    {
+      "file": "stayBooking/reference-2.jpg",
+      "sha256": "6791459292831a3c3fe4b25348fb86694f0a12ebfc4eefaf58e9982dc19f9933",
+      "bytes": 12542,
+      "app": "에어비앤비",
+      "ui_url": "https://uibowl.io/name/%EC%97%90%EC%96%B4%EB%B9%84%EC%95%A4%EB%B9%84?patterns=%EC%8B%A0%EC%B2%AD%ED%95%98%EA%B8%B0&patternName=%EC%98%88%EC%95%BD%EB%8C%80%EA%B8%B0",
+      "screenId": null,
+      "receivedAtUtc": "2026-10-15T15:55:27.414Z",
+      "inspectedNativeRepresentative": true
+    },
+    {
+      "file": "stayCancel/reference-0.jpg",
+      "sha256": "95163a80eae37f808195b1f5b4788d13d3e689e87177a5e4c0db4dd98747e7dd",
+      "bytes": 10434,
+      "app": "수현이랑",
+      "ui_url": "https://uibowl.io/name/%EC%88%98%ED%98%84%EC%9D%B4%EB%9E%91?patterns=%EC%B7%A8%EC%86%8C%ED%95%98%EA%B8%B0&patternName=%EA%B2%8C%EC%8B%9C%EA%B8%80%20%EC%82%AD%EC%A0%9C%ED%95%98%EA%B8%B0",
+      "screenId": null,
+      "receivedAtUtc": "2026-10-15T15:55:26.970Z",
+      "inspectedNativeRepresentative": true
+    },
+    {
+      "file": "stayCancel/reference-1.jpg",
+      "sha256": "87380b9792fe96a81fe9f76b36974e0d7cdac64f64a3605509f62e0d7ca163da",
+      "bytes": 18646,
+      "app": "데일리호텔",
+      "ui_url": "https://uibowl.io/name/%EB%8D%B0%EC%9D%BC%EB%A6%AC%ED%98%B8%ED%85%94?patterns=%EC%B7%A8%EC%86%8C%ED%95%98%EA%B8%B0",
+      "screenId": null,
+      "receivedAtUtc": "2026-10-15T15:55:26.970Z",
+      "inspectedNativeRepresentative": true
+    },
+    {
+      "file": "stayCancel/reference-2.jpg",
+      "sha256": "ae393c12124b82de06430bcb7b9ac4e1b94693d433f0c393d195055899cf5653",
+      "bytes": 11299,
+      "app": "마이리얼트립",
+      "ui_url": "https://uibowl.io/name/%EB%A7%88%EC%9D%B4%EB%A6%AC%EC%96%BC%ED%8A%B8%EB%A6%BD?patterns=%EB%82%B4%EC%97%AD&patternName=%EC%B7%A8%EC%86%8C%EB%90%9C%20%EC%97%AC%ED%96%89",
+      "screenId": null,
+      "receivedAtUtc": "2026-10-15T15:55:26.970Z",
+      "inspectedNativeRepresentative": true
+    },
+    {
+      "file": "stayCheckout/reference-0.jpg",
+      "sha256": "7fd2c0d8ec22d8c54ecce93fa7c16c3b25cc7f1b26d30dc99e8b23ff77301020",
+      "bytes": 15409,
+      "app": "에어비앤비",
+      "ui_url": "https://uibowl.io/name/%EC%97%90%EC%96%B4%EB%B9%84%EC%95%A4%EB%B9%84?patterns=%EB%82%B4%EC%97%AD&patternName=%EA%B2%B0%EC%A0%9C%EB%82%B4%EC%97%AD",
+      "screenId": null,
+      "receivedAtUtc": "2026-10-15T15:55:50.294Z",
+      "inspectedNativeRepresentative": true
+    },
+    {
+      "file": "stayCheckout/reference-1.jpg",
+      "sha256": "fe5a636b73a2bbd6610868779ad9ad7e98e4b276dfb32c69adf093a27af2279d",
+      "bytes": 12639,
+      "app": "에어비앤비",
+      "ui_url": "https://uibowl.io/name/%EC%97%90%EC%96%B4%EB%B9%84%EC%95%A4%EB%B9%84?patterns=%EC%98%88%EC%95%BD%C2%B7%EA%B2%B0%EC%A0%9C",
+      "screenId": null,
+      "receivedAtUtc": "2026-10-15T15:55:50.294Z",
+      "inspectedNativeRepresentative": true
+    },
+    {
+      "file": "stayCheckout/reference-2.jpg",
+      "sha256": "0865ba8a42b68f6365d38cf1feec6833d9caec12ce85130f8cd102cd5f11534f",
+      "bytes": 7227,
+      "app": "에어비앤비",
+      "ui_url": "https://uibowl.io/name/%EC%97%90%EC%96%B4%EB%B9%84%EC%95%A4%EB%B9%84?patterns=%EC%98%88%EC%95%BD%C2%B7%EA%B2%B0%EC%A0%9C&patternName=%EC%B9%B4%EB%93%9C%EC%B6%94%EA%B0%80",
+      "screenId": null,
+      "receivedAtUtc": "2026-10-15T15:55:50.294Z",
+      "inspectedNativeRepresentative": true
+    },
+    {
+      "file": "stayDates/reference-0.jpg",
+      "sha256": "819f03599c2166b4a8899d563c38635ea234521e908bcb7dd06ad1485b66608b",
+      "bytes": 11240,
+      "app": "에어비앤비",
+      "ui_url": "https://uibowl.io/name/%EC%97%90%EC%96%B4%EB%B9%84%EC%95%A4%EB%B9%84?patterns=%EA%B2%80%EC%83%89&imgId=cmpt6zdib8ehkvsr19trusm0",
+      "screenId": "cmpt6zdib8ehkvsr19trusm0",
+      "receivedAtUtc": "2026-10-15T15:56:03.935Z",
+      "inspectedNativeRepresentative": true
+    },
+    {
+      "file": "stayDates/reference-1.jpg",
+      "sha256": "a125c027650dda12f40471d9c4c24a11813d1a681a2d1be5c48f3a95eed08aac",
+      "bytes": 9192,
+      "app": "에어비앤비",
+      "ui_url": "https://uibowl.io/name/%EC%97%90%EC%96%B4%EB%B9%84%EC%95%A4%EB%B9%84?patterns=%EC%98%88%EC%95%BD%C2%B7%EA%B2%B0%EC%A0%9C&imgId=b6f90a4d6cnwk7sgjojf7vvy",
+      "screenId": "b6f90a4d6cnwk7sgjojf7vvy",
+      "receivedAtUtc": "2026-10-15T15:56:03.935Z",
+      "inspectedNativeRepresentative": true
+    },
+    {
+      "file": "stayFiltersRetry/reference-0.jpg",
+      "sha256": "0ca3bdd45eee021652abe562ac87300e50c329328f6fff02798dff4a97527c00",
+      "bytes": 11390,
+      "app": "에어비앤비",
+      "ui_url": "https://uibowl.io/name/%EC%97%90%EC%96%B4%EB%B9%84%EC%95%A4%EB%B9%84?patterns=%ED%95%84%ED%84%B0&imgId=ztbrsznvgzk4s7zv1ttmx89m",
+      "screenId": "ztbrsznvgzk4s7zv1ttmx89m",
+      "receivedAtUtc": "2026-10-15T15:56:03.491Z",
+      "inspectedNativeRepresentative": true
+    },
+    {
+      "file": "staySearch/reference-0.jpg",
+      "sha256": "4f1729058860dcd57852976a784c4b7cd380d7117377e70edb606128f2dd82f8",
+      "bytes": 11002,
+      "app": "에어비앤비",
+      "ui_url": "https://uibowl.io/name/%EC%97%90%EC%96%B4%EB%B9%84%EC%95%A4%EB%B9%84?patterns=%EA%B2%80%EC%83%89",
+      "screenId": null,
+      "receivedAtUtc": "2026-10-15T15:55:05.755Z",
+      "inspectedNativeRepresentative": true
+    },
+    {
+      "file": "staySearch/reference-1.jpg",
+      "sha256": "f64355a62531a62c5d518d800ac3edab07e616ff418fb2e6e530edab06a4600a",
+      "bytes": 16967,
+      "app": "에어비앤비",
+      "ui_url": "https://uibowl.io/name/%EC%97%90%EC%96%B4%EB%B9%84%EC%95%A4%EB%B9%84?patterns=%EB%A9%94%EC%9D%B8",
+      "screenId": null,
+      "receivedAtUtc": "2026-10-15T15:55:05.755Z",
+      "inspectedNativeRepresentative": true
+    },
+    {
+      "file": "staySearch/reference-2.jpg",
+      "sha256": "c41c586c9c424707c7ade54354ef7bf6fd78f5229e379cc85d81279925f5064a",
+      "bytes": 15128,
+      "app": "에어비앤비",
+      "ui_url": "https://uibowl.io/name/%EC%97%90%EC%96%B4%EB%B9%84%EC%95%A4%EB%B9%84?patterns=%EC%83%81%EC%84%B8%EC%A0%95%EB%B3%B4%20%28PDP%29&patternName=%ED%9B%84%EA%B8%B0",
+      "screenId": null,
+      "receivedAtUtc": "2026-10-15T15:55:05.755Z",
+      "inspectedNativeRepresentative": true
+    }
+  ],
+  "limits": "Only returned native representative previews were inspected. Othergalleryimages/videos,originalCSS/DPR/fontidentities andhiddeninteractions were not observed. UI Bowl pixels are preserved in the local evidence store;public records contain canonicalsourceURLs and exactimagehashes. Product assets are independentlylicensed photos,not screenshotcrops."
+}

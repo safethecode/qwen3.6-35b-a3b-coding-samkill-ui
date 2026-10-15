@@ -1,0 +1,52 @@
+{
+  "startedAtUtc": "2026-10-15T15:55:26.104Z",
+  "receivedAtUtc": "2026-10-15T15:55:26.970Z",
+  "args": {
+    "query": "취소",
+    "category": "여행",
+    "platform": "MOBILE",
+    "limit": 3
+  },
+  "returned_count": 3,
+  "total_count": 19,
+  "has_more": true,
+  "results": [
+    {
+      "app_name": "수현이랑",
+      "platform": "MOBILE",
+      "pattern": "취소하기",
+      "pattern_variant": "게시글 삭제하기",
+      "components": [
+        "모달"
+      ],
+      "ui_url": "https://uibowl.io/name/%EC%88%98%ED%98%84%EC%9D%B4%EB%9E%91?patterns=%EC%B7%A8%EC%86%8C%ED%95%98%EA%B8%B0&patternName=%EA%B2%8C%EC%8B%9C%EA%B8%80%20%EC%82%AD%EC%A0%9C%ED%95%98%EA%B8%B0",
+      "screenId": null,
+      "imageFile": "stayCancel/reference-0.jpg"
+    },
+    {
+      "app_name": "데일리호텔",
+      "platform": "MOBILE",
+      "pattern": "취소하기",
+      "components": [
+        "라디오 버튼"
+      ],
+      "ui_url": "https://uibowl.io/name/%EB%8D%B0%EC%9D%BC%EB%A6%AC%ED%98%B8%ED%85%94?patterns=%EC%B7%A8%EC%86%8C%ED%95%98%EA%B8%B0",
+      "screenId": null,
+      "imageFile": "stayCancel/reference-1.jpg"
+    },
+    {
+      "app_name": "마이리얼트립",
+      "platform": "MOBILE",
+      "pattern": "내역",
+      "pattern_variant": "취소된 여행",
+      "components": [
+        "카드"
+      ],
+      "ui_url": "https://uibowl.io/name/%EB%A7%88%EC%9D%B4%EB%A6%AC%EC%96%BC%ED%8A%B8%EB%A6%BD?patterns=%EB%82%B4%EC%97%AD&patternName=%EC%B7%A8%EC%86%8C%EB%90%9C%20%EC%97%AC%ED%96%89",
+      "screenId": null,
+      "imageFile": "stayCancel/reference-2.jpg"
+    }
+  ],
+  "nativeRepresentativeImagesInspectedByHost": true,
+  "screenIdLimit": "Pattern-group results lack individual screen IDs;component results retain returned imgId when present. No ID inferred for group-level previews."
+}

@@ -1,0 +1,63 @@
+{
+  "startedAtUtc": "2026-10-15T15:54:48.135Z",
+  "receivedAtUtc": "2026-10-15T15:54:49.407Z",
+  "args": {
+    "query": "숙소",
+    "category": "여행",
+    "platform": "MOBILE",
+    "limit": 3
+  },
+  "returned_count": 3,
+  "total_count": 36,
+  "has_more": true,
+  "results": [
+    {
+      "app_name": "NOL (야놀자)",
+      "platform": "MOBILE",
+      "pattern": "내역",
+      "pattern_variant": "국내숙소",
+      "components": [],
+      "ui_url": "https://uibowl.io/name/NOL%20(%EC%95%BC%EB%86%80%EC%9E%90)?patterns=%EB%82%B4%EC%97%AD&patternName=%EA%B5%AD%EB%82%B4%EC%88%99%EC%86%8C",
+      "screenId": null,
+      "imageFile": "stayB1/reference-0.jpg"
+    },
+    {
+      "app_name": "에어비앤비",
+      "platform": "MOBILE",
+      "pattern": "상세정보 (PDP)",
+      "pattern_variant": "숙소상세정보",
+      "components": [
+        "바텀시트",
+        "버튼",
+        "상단 네비게이션",
+        "지도 핀",
+        "카드",
+        "캐러셀"
+      ],
+      "ui_url": "https://uibowl.io/name/%EC%97%90%EC%96%B4%EB%B9%84%EC%95%A4%EB%B9%84?patterns=%EC%83%81%EC%84%B8%EC%A0%95%EB%B3%B4%20%28PDP%29&patternName=%EC%88%99%EC%86%8C%EC%83%81%EC%84%B8%EC%A0%95%EB%B3%B4",
+      "screenId": null,
+      "imageFile": "stayB1/reference-1.jpg"
+    },
+    {
+      "app_name": "트리플",
+      "platform": "MOBILE",
+      "pattern": "상세정보 (PDP)",
+      "pattern_variant": "숙소",
+      "components": [
+        "검색 바",
+        "바텀시트",
+        "배지",
+        "지도 핀",
+        "체크박스",
+        "카드",
+        "툴팁",
+        "플로팅 버튼"
+      ],
+      "ui_url": "https://uibowl.io/name/%ED%8A%B8%EB%A6%AC%ED%94%8C?patterns=%EC%83%81%EC%84%B8%EC%A0%95%EB%B3%B4%20%28PDP%29&patternName=%EC%88%99%EC%86%8C",
+      "screenId": null,
+      "imageFile": "stayB1/reference-2.jpg"
+    }
+  ],
+  "nativeRepresentativeImagesInspectedByHost": true,
+  "screenIdLimit": "Pattern-group results lack individual screen IDs;component results retain returned imgId when present. No ID inferred for group-level previews."
+}

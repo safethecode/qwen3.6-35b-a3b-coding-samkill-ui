@@ -1,0 +1,61 @@
+{
+  "startedAtUtc": "2026-10-15T15:55:04.392Z",
+  "receivedAtUtc": "2026-10-15T15:55:05.755Z",
+  "args": {
+    "query": "검색",
+    "app_name": "에어비앤비",
+    "platform": "MOBILE",
+    "limit": 3
+  },
+  "returned_count": 3,
+  "total_count": 3,
+  "has_more": false,
+  "results": [
+    {
+      "app_name": "에어비앤비",
+      "platform": "MOBILE",
+      "pattern": "검색",
+      "components": [
+        "검색 바",
+        "날짜 피커",
+        "리스트",
+        "스텝퍼",
+        "탭",
+        "플로팅 버튼"
+      ],
+      "ui_url": "https://uibowl.io/name/%EC%97%90%EC%96%B4%EB%B9%84%EC%95%A4%EB%B9%84?patterns=%EA%B2%80%EC%83%89",
+      "screenId": null,
+      "imageFile": "staySearch/reference-0.jpg"
+    },
+    {
+      "app_name": "에어비앤비",
+      "platform": "MOBILE",
+      "pattern": "메인",
+      "components": [
+        "검색 바",
+        "리스트",
+        "카드",
+        "탭",
+        "플로팅 버튼",
+        "하단 네비게이션"
+      ],
+      "ui_url": "https://uibowl.io/name/%EC%97%90%EC%96%B4%EB%B9%84%EC%95%A4%EB%B9%84?patterns=%EB%A9%94%EC%9D%B8",
+      "screenId": null,
+      "imageFile": "staySearch/reference-1.jpg"
+    },
+    {
+      "app_name": "에어비앤비",
+      "platform": "MOBILE",
+      "pattern": "상세정보 (PDP)",
+      "pattern_variant": "후기",
+      "components": [
+        "검색 바"
+      ],
+      "ui_url": "https://uibowl.io/name/%EC%97%90%EC%96%B4%EB%B9%84%EC%95%A4%EB%B9%84?patterns=%EC%83%81%EC%84%B8%EC%A0%95%EB%B3%B4%20%28PDP%29&patternName=%ED%9B%84%EA%B8%B0",
+      "screenId": null,
+      "imageFile": "staySearch/reference-2.jpg"
+    }
+  ],
+  "nativeRepresentativeImagesInspectedByHost": true,
+  "screenIdLimit": "Pattern-group results lack individual screen IDs;component results retain returned imgId when present. No ID inferred for group-level previews."
+}

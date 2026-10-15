@@ -1,0 +1,40 @@
+{
+  "startedAtUtc": "2026-10-15T15:56:02.727Z",
+  "receivedAtUtc": "2026-10-15T15:56:03.935Z",
+  "args": {
+    "component_type": "날짜 피커",
+    "app_name": "에어비앤비",
+    "platform": "MOBILE",
+    "limit": 2
+  },
+  "returned_count": 2,
+  "total_count": 2,
+  "has_more": false,
+  "results": [
+    {
+      "app_name": "에어비앤비",
+      "platform": "MOBILE",
+      "pattern": "검색",
+      "components": [
+        "날짜 피커"
+      ],
+      "ui_url": "https://uibowl.io/name/%EC%97%90%EC%96%B4%EB%B9%84%EC%95%A4%EB%B9%84?patterns=%EA%B2%80%EC%83%89&imgId=cmpt6zdib8ehkvsr19trusm0",
+      "screenId": "cmpt6zdib8ehkvsr19trusm0",
+      "imageFile": "stayDates/reference-0.jpg"
+    },
+    {
+      "app_name": "에어비앤비",
+      "platform": "MOBILE",
+      "pattern": "예약·결제",
+      "pattern_variant": "예약요청",
+      "components": [
+        "날짜 피커"
+      ],
+      "ui_url": "https://uibowl.io/name/%EC%97%90%EC%96%B4%EB%B9%84%EC%95%A4%EB%B9%84?patterns=%EC%98%88%EC%95%BD%C2%B7%EA%B2%B0%EC%A0%9C&imgId=b6f90a4d6cnwk7sgjojf7vvy",
+      "screenId": "b6f90a4d6cnwk7sgjojf7vvy",
+      "imageFile": "stayDates/reference-1.jpg"
+    }
+  ],
+  "nativeRepresentativeImagesInspectedByHost": true,
+  "screenIdLimit": "Pattern-group results lack individual screen IDs;component results retain returned imgId when present. No ID inferred for group-level previews."
+}

@@ -1,0 +1,56 @@
+{
+  "startedAtUtc": "2026-10-15T15:55:26.104Z",
+  "receivedAtUtc": "2026-10-15T15:55:27.414Z",
+  "args": {
+    "query": "예약",
+    "app_name": "에어비앤비",
+    "platform": "MOBILE",
+    "limit": 3
+  },
+  "returned_count": 3,
+  "total_count": 6,
+  "has_more": true,
+  "results": [
+    {
+      "app_name": "에어비앤비",
+      "platform": "MOBILE",
+      "pattern": "내역",
+      "pattern_variant": "예약내역",
+      "components": [
+        "배지",
+        "버튼",
+        "빈 화면",
+        "카드"
+      ],
+      "ui_url": "https://uibowl.io/name/%EC%97%90%EC%96%B4%EB%B9%84%EC%95%A4%EB%B9%84?patterns=%EB%82%B4%EC%97%AD&patternName=%EC%98%88%EC%95%BD%EB%82%B4%EC%97%AD",
+      "screenId": null,
+      "imageFile": "stayBooking/reference-0.jpg"
+    },
+    {
+      "app_name": "에어비앤비",
+      "platform": "MOBILE",
+      "pattern": "상세정보 (PDP)",
+      "pattern_variant": "예약상세정보",
+      "components": [
+        "지도 핀"
+      ],
+      "ui_url": "https://uibowl.io/name/%EC%97%90%EC%96%B4%EB%B9%84%EC%95%A4%EB%B9%84?patterns=%EC%83%81%EC%84%B8%EC%A0%95%EB%B3%B4%20%28PDP%29&patternName=%EC%98%88%EC%95%BD%EC%83%81%EC%84%B8%EC%A0%95%EB%B3%B4",
+      "screenId": null,
+      "imageFile": "stayBooking/reference-1.jpg"
+    },
+    {
+      "app_name": "에어비앤비",
+      "platform": "MOBILE",
+      "pattern": "신청하기",
+      "pattern_variant": "예약대기",
+      "components": [
+        "텍스트 필드"
+      ],
+      "ui_url": "https://uibowl.io/name/%EC%97%90%EC%96%B4%EB%B9%84%EC%95%A4%EB%B9%84?patterns=%EC%8B%A0%EC%B2%AD%ED%95%98%EA%B8%B0&patternName=%EC%98%88%EC%95%BD%EB%8C%80%EA%B8%B0",
+      "screenId": null,
+      "imageFile": "stayBooking/reference-2.jpg"
+    }
+  ],
+  "nativeRepresentativeImagesInspectedByHost": true,
+  "screenIdLimit": "Pattern-group results lack individual screen IDs;component results retain returned imgId when present. No ID inferred for group-level previews."
+}

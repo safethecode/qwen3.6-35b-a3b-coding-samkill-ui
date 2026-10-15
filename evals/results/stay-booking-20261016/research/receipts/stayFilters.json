@@ -1,0 +1,17 @@
+{
+  "startedAtUtc": "2026-10-15T15:55:49.027Z",
+  "receivedAtUtc": "2026-10-15T15:55:49.397Z",
+  "args": {
+    "component_type": "필터",
+    "app_name": "에어비앤비",
+    "platform": "MOBILE",
+    "limit": 3
+  },
+  "returned_count": 0,
+  "total_count": 0,
+  "has_more": false,
+  "results": [],
+  "nativeRepresentativeImagesInspectedByHost": true,
+  "screenIdLimit": "Pattern-group results lack individual screen IDs;component results retain returned imgId when present. No ID inferred for group-level previews.",
+  "zeroResultText": "일치하는 UI 화면을 찾지 못했어요. 이 데이터베이스에서 검색 가능한 표현 목록이에요 — 컴포넌트: 검색 바, 날짜 피커, 라디오 버튼, 메뉴, 버튼, 상단 네비게이션, 스텝퍼, 슬라이더, 시간 피커, 아코디언, 지도 핀, 체크박스, 칩, 탭, 텍스트 필드, 토글&스위치, 플로팅 버튼, 하단 네비게이션, PIP (Picture-in-Picture), 라이브 액티비티, 랭킹, 리스트, 모달, 배너, 브레드크럼, 사이드 네비게이션, 상태점, 스탑워치, 아이콘, 에러&실패, 완료&성공, 위젯, 캐릭터, 컬러피커, 타임라인, 태그, 페이지네이션, 푸터, 프로필 이미지, 드롭다운, 바텀시트, 토스트&스낵바, 툴팁, 팝업, 로딩, 배지, 빈 화면, 스켈레톤, 프로그레스 인디케이터, 그래프&차트, 그래픽, 영상, 인터랙션, 카드, 캐러셀, 테이블. 이 중 질문 의도와 가장 가까운 표현 하나로 다시 검색해 보세요."
+}

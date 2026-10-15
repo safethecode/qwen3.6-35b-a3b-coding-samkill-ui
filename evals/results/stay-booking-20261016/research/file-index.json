@@ -1,0 +1,68 @@
+{
+  "files": [
+    {
+      "path": ".gitattributes",
+      "sha256": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da"
+    },
+    {
+      "path": "inputs/BRIEF.md",
+      "sha256": "803399fab3baeeb7b2ef2775707ccea6be349fbe773cf094959c2577dfcb2154"
+    },
+    {
+      "path": "inputs/DECOMPOSITION-v1.md",
+      "sha256": "76805deb402e5e264a1759b726fc38bb3a8087790e49d0a77d56809ea4565544"
+    },
+    {
+      "path": "inputs/DECOMPOSITION.md",
+      "sha256": "40043eede1f56697848303945b5b67881b5f0c9a34f16cf7045ea5efb99b9fa5"
+    },
+    {
+      "path": "inputs/DESIGN.md",
+      "sha256": "fc3ec744b9859861cb676848ad381e5f1cf8cc7316a7669ad0ce9edf59690bf5"
+    },
+    {
+      "path": "inputs/PLAN.md",
+      "sha256": "1c3459892953a8087c092a5e655577493cae8f28376bee83a06dea85aab0d76e"
+    },
+    {
+      "path": "README.md",
+      "sha256": "60684b367993e1d0bd90bc619e2584e17cfe47c51916ca5fcb7cc87261a60360"
+    },
+    {
+      "path": "receipts/stayB1.json",
+      "sha256": "f9364f6c8388b1e02c2636685471fcbae0c3c760f2594f74ae02a907b9243681"
+    },
+    {
+      "path": "receipts/stayBooking.json",
+      "sha256": "6383d431363d333f0bc7acd414766986a06528ce448dc0af73b151653fded46d"
+    },
+    {
+      "path": "receipts/stayCancel.json",
+      "sha256": "11ab0bddb628fb4fb13c51dc0bc21cf68b30f5592164449a9373697b0b1cc6d9"
+    },
+    {
+      "path": "receipts/stayCheckout.json",
+      "sha256": "e488543d8a2f5e610c6607c4483a6ad2a6e0e7bab108d79262642e2d44214e66"
+    },
+    {
+      "path": "receipts/stayDates.json",
+      "sha256": "a3cf5dd580146dfa4b00f4d846ed183f89f5ef4e33cae01b552de3b0bd8ba9e6"
+    },
+    {
+      "path": "receipts/stayFilters.json",
+      "sha256": "ad4e0c2b01704104461fdef0261e92ad7ad2144b9f0fc7aaec97a5948b58d98a"
+    },
+    {
+      "path": "receipts/stayFiltersRetry.json",
+      "sha256": "5493ced2eab83e180b44063a8069fd7857b27fa2acf011ad23f0346e99e7b090"
+    },
+    {
+      "path": "receipts/staySearch.json",
+      "sha256": "4414d5d1d50da4869f7c65c5fca2ca92088e538a0a4722deef27ccebc207fb65"
+    },
+    {
+      "path": "reference-index.json",
+      "sha256": "ff6cf68f0db2baad183117301bb1ca0ff739930f35c1465ffe28480fa4a5d6a9"
+    }
+  ]
+}

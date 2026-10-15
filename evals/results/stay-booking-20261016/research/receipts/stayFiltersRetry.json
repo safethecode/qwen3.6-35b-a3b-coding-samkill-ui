@@ -1,0 +1,28 @@
+{
+  "startedAtUtc": "2026-10-15T15:56:02.727Z",
+  "receivedAtUtc": "2026-10-15T15:56:03.491Z",
+  "args": {
+    "component_type": "슬라이더",
+    "app_name": "에어비앤비",
+    "platform": "MOBILE",
+    "limit": 2
+  },
+  "returned_count": 1,
+  "total_count": 1,
+  "has_more": false,
+  "results": [
+    {
+      "app_name": "에어비앤비",
+      "platform": "MOBILE",
+      "pattern": "필터",
+      "components": [
+        "슬라이더"
+      ],
+      "ui_url": "https://uibowl.io/name/%EC%97%90%EC%96%B4%EB%B9%84%EC%95%A4%EB%B9%84?patterns=%ED%95%84%ED%84%B0&imgId=ztbrsznvgzk4s7zv1ttmx89m",
+      "screenId": "ztbrsznvgzk4s7zv1ttmx89m",
+      "imageFile": "stayFiltersRetry/reference-0.jpg"
+    }
+  ],
+  "nativeRepresentativeImagesInspectedByHost": true,
+  "screenIdLimit": "Pattern-group results lack individual screen IDs;component results retain returned imgId when present. No ID inferred for group-level previews."
+}

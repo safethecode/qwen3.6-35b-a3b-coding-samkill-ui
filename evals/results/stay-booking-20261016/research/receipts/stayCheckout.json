@@ -1,0 +1,51 @@
+{
+  "startedAtUtc": "2026-10-15T15:55:49.027Z",
+  "receivedAtUtc": "2026-10-15T15:55:50.294Z",
+  "args": {
+    "query": "결제",
+    "app_name": "에어비앤비",
+    "platform": "MOBILE",
+    "limit": 3
+  },
+  "returned_count": 3,
+  "total_count": 4,
+  "has_more": true,
+  "results": [
+    {
+      "app_name": "에어비앤비",
+      "platform": "MOBILE",
+      "pattern": "내역",
+      "pattern_variant": "결제내역",
+      "components": [
+        "리스트"
+      ],
+      "ui_url": "https://uibowl.io/name/%EC%97%90%EC%96%B4%EB%B9%84%EC%95%A4%EB%B9%84?patterns=%EB%82%B4%EC%97%AD&patternName=%EA%B2%B0%EC%A0%9C%EB%82%B4%EC%97%AD",
+      "screenId": null,
+      "imageFile": "stayCheckout/reference-0.jpg"
+    },
+    {
+      "app_name": "에어비앤비",
+      "platform": "MOBILE",
+      "pattern": "예약·결제",
+      "components": [
+        "로딩",
+        "완료&성공"
+      ],
+      "ui_url": "https://uibowl.io/name/%EC%97%90%EC%96%B4%EB%B9%84%EC%95%A4%EB%B9%84?patterns=%EC%98%88%EC%95%BD%C2%B7%EA%B2%B0%EC%A0%9C",
+      "screenId": null,
+      "imageFile": "stayCheckout/reference-1.jpg"
+    },
+    {
+      "app_name": "에어비앤비",
+      "platform": "MOBILE",
+      "pattern": "예약·결제",
+      "pattern_variant": "카드추가",
+      "components": [],
+      "ui_url": "https://uibowl.io/name/%EC%97%90%EC%96%B4%EB%B9%84%EC%95%A4%EB%B9%84?patterns=%EC%98%88%EC%95%BD%C2%B7%EA%B2%B0%EC%A0%9C&patternName=%EC%B9%B4%EB%93%9C%EC%B6%94%EA%B0%80",
+      "screenId": null,
+      "imageFile": "stayCheckout/reference-2.jpg"
+    }
+  ],
+  "nativeRepresentativeImagesInspectedByHost": true,
+  "screenIdLimit": "Pattern-group results lack individual screen IDs;component results retain returned imgId when present. No ID inferred for group-level previews."
+}

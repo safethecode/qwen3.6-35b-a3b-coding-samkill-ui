@@ -1,0 +1,15 @@
+# Complex mobile stay-booking product
+
+User steering2026-10-16:TodoMate/timer is too simple;evaluate a complex product. Continue actual local Qwen work against fresh UI Bowl references without routine questions. The earlier timer remains incomplete and its known first-comparison mismatch is preserved;do not continue it as the priority or claim it approved.
+
+Independent product intent fixed before research:new mobile stay search and booking experience for comparing rooms and managing a stay. Complexity comes from connected decisions and data,not extra decorations or arbitrary screen counts. Preserve mobile390px at every browser width and user's existing no-comments/no-demo-copy/no-invented-header requirements.
+
+Core journeys:B1 destination/date/guest search→results→filters/sort with preserved input;B2 accommodation detail→room/rate comparison with factual inclusions and cancellation conditions;B3 selected room→booking summary and guest details→validation/review/confirmed local record;B4 booking list/detail→change request or cancellation→explicit confirmation→persisted result and return path. Favorite state belongs to accommodation,not a price/CTA row. Booking outcome is primary;supporting stay facts are subordinate.
+
+The artifact is a local UI implementation/evaluation. No real hotel inventory,payment,external booking fulfillment or vendor confirmation is available or claimed. Product copy must not suggest an external payment or reservation was executed. Choose a coherent local booking-request lifecycle and preserve this limitation in reports rather than adding implementation/demo filler to product screens. No payment-card data or live charge integration.
+
+Research primary candidates:actual mobile accommodation-search/detail/booking/management screens,not a generic timer. Split B1–B4 into relevant UI Bowl searches and inspect native pixels. Unknown states stay unknown. Design follows observed semantic surfaces per product;do not impose workshop gray cards or a stock white template. Original UI screenshots are references,not reusable product photography. Product photos require distinct authorized/licensed assets with provenance.
+
+Host responsibilities:planning/reference decomposition,stable interfaces,real assets and independently fixed acceptance fixtures. Actual Qwen responsibilities:bounded implementation and repairs with retained prompts/raw output/source/harness binding. Document every host implementation correction. Build and compare one complete realistic results/detail core before extending dependent booking screens. Never infer commercial quality from rule/test counts or a timer success.
+
+Completion requires completeHTML/CSS,functioning connected navigation/drafts/room selection/price arithmetic/date constraints/booking lifecycle/persistence/fault recovery,responsive and enlarged-text behavior,actualfonts/officialicons,all active75rules/eightguides and direct fresh source-bound reference comparisons across representative repeated runs. Previous original/transfer/regression failures remain separate evidence.
