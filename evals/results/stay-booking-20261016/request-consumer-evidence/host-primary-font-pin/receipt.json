@@ -1,0 +1,67 @@
+{
+  "at": "2026-10-15T22:10:15.320Z",
+  "kind": "HOST_SUPPLIED_FONT_PRIORITY_NORMALIZATION",
+  "changes": [
+    {
+      "selector": "#requests-view h1",
+      "before": "-apple-system, BlinkMacSystemFont, 'Noto Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Apple Color Emoji', sans-serif",
+      "after": "\"Noto Sans KR\",sans-serif",
+      "reason": "Declared suppliedprimaryfont mustprecede systemfamilies onotherplatforms;Windowsfontmatchesalone cannotproveportableordering"
+    },
+    {
+      "selector": "#requests-empty h2",
+      "before": "-apple-system, BlinkMacSystemFont, 'Noto Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Apple Color Emoji', sans-serif",
+      "after": "\"Noto Sans KR\",sans-serif",
+      "reason": "Declared suppliedprimaryfont mustprecede systemfamilies onotherplatforms;Windowsfontmatchesalone cannotproveportableordering"
+    },
+    {
+      "selector": "#requests-empty a",
+      "before": "-apple-system, BlinkMacSystemFont, 'Noto Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Apple Color Emoji', sans-serif",
+      "after": "\"Noto Sans KR\",sans-serif",
+      "reason": "Declared suppliedprimaryfont mustprecede systemfamilies onotherplatforms;Windowsfontmatchesalone cannotproveportableordering"
+    },
+    {
+      "selector": ".request-card h2",
+      "before": "-apple-system, BlinkMacSystemFont, 'Noto Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Apple Color Emoji', sans-serif",
+      "after": "\"Noto Sans KR\",sans-serif",
+      "reason": "Declared suppliedprimaryfont mustprecede systemfamilies onotherplatforms;Windowsfontmatchesalone cannotproveportableordering"
+    },
+    {
+      "selector": "[data-request-status],[data-request-room]",
+      "before": "-apple-system, BlinkMacSystemFont, 'Noto Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Apple Color Emoji', sans-serif",
+      "after": "\"Noto Sans KR\",sans-serif",
+      "reason": "Declared suppliedprimaryfont mustprecede systemfamilies onotherplatforms;Windowsfontmatchesalone cannotproveportableordering"
+    },
+    {
+      "selector": "[data-request-trip],#request-detail-trip",
+      "before": "-apple-system, BlinkMacSystemFont, 'Noto Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Apple Color Emoji', sans-serif",
+      "after": "\"Noto Sans KR\",sans-serif",
+      "reason": "Declared suppliedprimaryfont mustprecede systemfamilies onotherplatforms;Windowsfontmatchesalone cannotproveportableordering"
+    },
+    {
+      "selector": "[data-request-total]",
+      "before": "-apple-system, BlinkMacSystemFont, 'Noto Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Apple Color Emoji', sans-serif",
+      "after": "\"Noto Sans KR\",sans-serif",
+      "reason": "Declared suppliedprimaryfont mustprecede systemfamilies onotherplatforms;Windowsfontmatchesalone cannotproveportableordering"
+    },
+    {
+      "selector": "#requests-error,#request-detail-error",
+      "before": "-apple-system, BlinkMacSystemFont, 'Noto Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Apple Color Emoji', sans-serif",
+      "after": "\"Noto Sans KR\",sans-serif",
+      "reason": "Declared suppliedprimaryfont mustprecede systemfamilies onotherplatforms;Windowsfontmatchesalone cannotproveportableordering"
+    },
+    {
+      "selector": ".request-outcome",
+      "before": "-apple-system, BlinkMacSystemFont, 'Noto Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Apple Color Emoji', sans-serif",
+      "after": "\"Noto Sans KR\",sans-serif",
+      "reason": "Declared suppliedprimaryfont mustprecede systemfamilies onotherplatforms;Windowsfontmatchesalone cannotproveportableordering"
+    },
+    {
+      "selector": "#requests-reload,#request-detail-reload",
+      "before": "-apple-system, BlinkMacSystemFont, 'Noto Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Apple Color Emoji', sans-serif",
+      "after": "\"Noto Sans KR\",sans-serif",
+      "reason": "Declared suppliedprimaryfont mustprecede systemfamilies onotherplatforms;Windowsfontmatchesalone cannotproveportableordering"
+    }
+  ],
+  "scope": "Only font-family values inactualQwennewrequestCSS changed. NativeWindowsactualfont evidence required;nootherOS execution orindependentQwengenerationclaim. Fontface/userUnicodefallbacks untouched."
+}

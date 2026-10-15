@@ -1,0 +1,16 @@
+{
+  "at": "2026-10-15T22:18:51.879Z",
+  "status": "DIRECT_VISUAL_REGRESSION_CONFIRMED_BEFORE_REPAIR",
+  "native": {
+    "path": "references/checkout/reference-1.jpg",
+    "sha256": "f5738f295c9f97b2b446affa7ae83fbba981289ac6078b8902d7f822bd3a59e6",
+    "displayedWidth": 296,
+    "originalCSSFontDPR": "unknown"
+  },
+  "candidate": "final-verification/booking-render/form-296.png",
+  "observation": "Native dates form one continuous quiet information panel includingthemiddle nightsvalue;candidate putquietbackgroundandroundedcornerson2individualcells withwhitegaps,lookinglikeseparatecontrols.",
+  "positiveAnchor": "One owned staticcomparison surface,leadingpaired dates,nights subordinate;not merelytheconceptoftwodates.",
+  "repair": "Parent .booking-dates owns existing--quiet background. Both .booking-date cells become transparent with0radius. Preserve everypadding/gap/measurement/date/font/behavior value andnormalpairing/measuredtextstress reflow. No extraeditingcontrol ordivider.",
+  "chosen": "Use existingquiettoken and0radius forcontinuouspanel;notrecoverednativeHEX/CSS.",
+  "unknown": "Originalruntime,font,DPR,exactradius andhiddenstates unknown. Nooverallparityfromthisrepair."
+}

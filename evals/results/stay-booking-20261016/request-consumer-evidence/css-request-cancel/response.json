@@ -1,0 +1,18 @@
+{
+  "elapsedMs": 67684,
+  "model": "qwen3.6:35b-a3b-coding",
+  "created_at": "2026-10-15T21:40:52.1523349Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\n  \"#cancel-request-title\": \"font-size: 22px; font-weight: 700; line-height: 1.5; color: var(--text); margin: 0; min-width: 0; word-break: keep-all; overflow-wrap: anywhere;\",\n  \"#cancel-request-subject\": \"font-size: 16px; font-weight: 500; line-height: 1.5; color: var(--text); margin-top: 16px; word-break: keep-all; overflow-wrap: anywhere;\",\n  \"#cancel-request-dialog>p:not([id])\": \"font-size: 14px; font-weight: 500; line-height: 1.5; color: var(--muted); margin-top: 8px; word-break: keep-all; overflow-wrap: anywhere;\",\n  \"#cancel-request-error\": \"font-size: 16px; font-weight: 500; line-height: 1.5; color: var(--error); margin-top: 16px; word-break: keep-all; overflow-wrap: anywhere;\",\n  \"#cancel-request-reload\": \"font-size: 16px; font-weight: 600; line-height: 1.5; min-height: 44px; padding: 12px 16px; border: 0; border-radius: 8px; background: var(--quiet); color: var(--text); margin-top: 12px; word-break: keep-all; overflow-wrap: anywhere;\",\n  \".request-cancel-actions\": \"display: flex; flex-direction: row; flex-wrap: wrap; gap: 8px; margin-top: 24px;\",\n  \"#keep-request,#confirm-cancel-request\": \"font-size: 16px; font-weight: 600; line-height: 1.5; min-height: 48px; padding: 12px; border: 0; border-radius: 8px; flex: 1 1 calc(4em + 24px); max-width: 100%; word-break: keep-all; overflow-wrap: anywhere;\",\n  \"#keep-request\": \"background: var(--quiet); color: var(--text);\",\n  \"#confirm-cancel-request\": \"background: var(--error); color: var(--surface);\"\n}"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 67682301400,
+  "load_duration": 8734800,
+  "prompt_eval_count": 4527,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration": 48233598000,
+  "eval_count": 509,
+  "eval_duration": 19242791000
+}

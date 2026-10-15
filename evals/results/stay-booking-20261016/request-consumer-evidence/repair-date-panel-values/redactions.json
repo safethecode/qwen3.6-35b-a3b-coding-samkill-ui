@@ -1,0 +1,10 @@
+{
+  "redactions": [
+    {
+      "path": "request.json",
+      "originalSha256": "e2051577d41e14a49ca81cecd35568e62baaf62a573caf5d7024e9802a89a181",
+      "publishedSha256": "8aeacf54a982bb77887a610b523a0da626f58d40a1a6d23db14ce2531af51a92",
+      "reason": "Native reference imagepayload and/or private hostpath removed; original private bytes preserved; sanitized file is not an exact replayable inference request"
+    }
+  ]
+}

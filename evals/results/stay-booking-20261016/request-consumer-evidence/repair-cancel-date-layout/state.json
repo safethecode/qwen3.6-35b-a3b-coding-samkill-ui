@@ -1,0 +1,6 @@
+{
+  "status": "FAILED_STAGE",
+  "pid": 36560,
+  "at": "2026-10-15T21:43:52.850Z",
+  "error": "The expression evaluated to a falsy value:\n\n  assert.ok(['display','flex-direction','flex-wrap','flex-basis','min-width','max-width','column-gap','row-gap','margin'].includes(d.prop))\n"
+}

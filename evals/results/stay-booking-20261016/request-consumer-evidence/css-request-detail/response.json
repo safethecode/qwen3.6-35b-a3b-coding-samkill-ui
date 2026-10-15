@@ -1,0 +1,18 @@
+{
+  "elapsedMs": 93314,
+  "model": "qwen3.6:35b-a3b-coding",
+  "created_at": "2026-10-15T21:38:15.077583Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\n  \"#request-detail-view\": \"display:flex; flex-direction:column; gap:8px; background-color:var(--quiet); min-width:0;\",\n  \".request-detail-header\": \"display:grid; grid-template-columns:44px minmax(0,1fr) 44px; align-items:center; gap:0; padding:8px var(--page-inset); background-color:var(--surface);\",\n  \".request-detail-header h1\": \"font-size:16px; font-weight:600; line-height:1.5; text-align:center; margin:0; min-width:0; word-break:keep-all; overflow-wrap:anywhere;\",\n  \".request-detail-header>span\": \"width:44px;\",\n  \"#request-detail-content\": \"display:grid; gap:8px; min-width:0; background-color:var(--quiet);\",\n  \".request-detail-group\": \"background-color:var(--surface); padding:24px var(--page-inset); display:flex; flex-direction:column; gap:8px; min-width:0;\",\n  \"#request-detail-stay\": \"font-size:18px; font-weight:600; line-height:1.5; margin:0; min-width:0; word-break:keep-all; overflow-wrap:anywhere;\",\n  \".request-detail-group h2:not(#request-detail-stay)\": \"font-size:16px; font-weight:600; line-height:1.5; margin:0; word-break:keep-all; overflow-wrap:anywhere;\",\n  \"#request-detail-status,#request-detail-room\": \"font-size:14px; font-weight:500; line-height:1.5; color:var(--muted); margin:0; min-width:0; word-break:keep-all; overflow-wrap:anywhere;\",\n  \".request-detail-group dl\": \"display:grid; gap:16px; margin:0; padding:0; min-width:0;\",\n  \".request-detail-group dl>div\": \"display:grid; gap:4px; min-width:0;\",\n  \".request-detail-group dt\": \"font-size:14px; font-weight:500; line-height:1.5; color:var(--muted); margin:0; word-break:keep-all; overflow-wrap:anywhere;\",\n  \".request-detail-group dd\": \"font-size:16px; font-weight:500; line-height:1.5; margin:0; min-width:0; word-break:keep-all; overflow-wrap:anywhere;\"\n}"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 93312400100,
+  "load_duration": 10906400,
+  "prompt_eval_count": 6059,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration": 66500596000,
+  "eval_count": 561,
+  "eval_duration": 26555488000
+}

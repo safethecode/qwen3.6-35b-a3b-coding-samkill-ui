@@ -1,0 +1,14 @@
+[
+  {
+    "path": "skills/qwen-samkill-ui/references/upstream/reference-to-ui/references/typography.md",
+    "sourceSha256": "d1003eda3338b973d1399e492bf1adea0e8eced6c054fb65cf0de480b88431d7",
+    "deliveredSha256": "d1003eda3338b973d1399e492bf1adea0e8eced6c054fb65cf0de480b88431d7",
+    "scope": "First8completeparagraphsonly;notfullguide"
+  },
+  {
+    "path": "skills/qwen-samkill-ui/references/upstream/reference-to-ui/references/spacing-audit.md",
+    "sourceSha256": "30565c3fbc3e06cdb2e53aab78955b28142774a44c7e24eb34b661ef85135539",
+    "deliveredSha256": "3b9fb97c64e1529d3eb4c20a38f0191eb08707d2eba566e8fb13893736c90be1",
+    "scope": "First8completeparagraphsonly;notfullguide"
+  }
+]

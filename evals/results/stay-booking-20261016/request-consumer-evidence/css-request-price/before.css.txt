@@ -1,0 +1,35 @@
+
+#main-content:has(#requests-view:not([hidden])),#main-content:has(#request-detail-view:not([hidden])){padding-inline:0}
+#main-content:has(#request-detail-view:not([hidden])){padding-bottom:0}
+#requests-view{display:flex; flex-direction:column; min-width:0; min-height:calc(100dvh - var(--nav-height) - 24px); background-color:var(--surface)}
+#requests-view h1{font-family: -apple-system, BlinkMacSystemFont, 'Noto Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Apple Color Emoji', sans-serif; font-size:16px; font-weight:600; line-height:1.5; text-align:center; padding:12px var(--page-inset); margin:0}
+#requests-empty{flex:1; display:flex; flex-direction:column; justify-content:center; align-items:center; gap:16px; padding:32px var(--page-inset); min-width:0}
+#requests-empty h2{font-family: -apple-system, BlinkMacSystemFont, 'Noto Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Apple Color Emoji', sans-serif; font-size:18px; font-weight:600; line-height:1.5; text-align:center; word-break:keep-all; overflow-wrap:anywhere}
+#requests-empty a{display:inline-flex; justify-content:center; align-items:center; min-height:48px; padding:12px 16px; border:0; border-radius:8px; background-color:var(--action); color:var(--surface); font-family: -apple-system, BlinkMacSystemFont, 'Noto Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Apple Color Emoji', sans-serif; font-size:16px; font-weight:600; line-height:1.5; text-decoration:none; max-width:100%; word-break:keep-all; overflow-wrap:anywhere}
+#request-list{display:grid; grid-template-columns:1fr; gap:8px; min-width:0; background-color:var(--quiet)}
+.request-card{display:grid; gap:8px; padding:16px var(--page-inset); background-color:var(--surface); min-width:0}
+.request-card a{display:flex; flex-direction:row; align-items:center; gap:8px; min-height:44px; min-width:0; text-decoration:none}
+.request-card h2{font-family: -apple-system, BlinkMacSystemFont, 'Noto Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Apple Color Emoji', sans-serif; font-size:18px; font-weight:600; line-height:1.5; flex:1; min-width:0; margin:0; word-break:keep-all; overflow-wrap:anywhere}
+.request-card a img{width:20px; height:20px; flex-shrink:0}
+[data-request-status],[data-request-room]{font-family: -apple-system, BlinkMacSystemFont, 'Noto Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Apple Color Emoji', sans-serif; font-size:14px; font-weight:500; line-height:1.5; color:var(--muted); margin:0; min-width:0; word-break:keep-all; overflow-wrap:anywhere}
+[data-request-trip],#request-detail-trip{display:flex; flex-direction:row; flex-wrap:wrap; align-items:baseline; column-gap:8px; row-gap:4px; font-family: -apple-system, BlinkMacSystemFont, 'Noto Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Apple Color Emoji', sans-serif; font-size:14px; font-weight:500; line-height:1.5; color:var(--muted); min-width:0}
+.request-trip-date{display:inline-block; max-width:100%; white-space:nowrap}
+.request-trip-meta{flex-basis:100%; white-space:normal; min-width:0; word-break:keep-all; overflow-wrap:anywhere}
+[data-request-total]{font-family: -apple-system, BlinkMacSystemFont, 'Noto Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Apple Color Emoji', sans-serif; font-size:18px; font-weight:700; line-height:1.5; display:block; color:var(--action); text-align:end; min-width:0; overflow-wrap:anywhere}
+#requests-error,#request-detail-error{font-family: -apple-system, BlinkMacSystemFont, 'Noto Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Apple Color Emoji', sans-serif; font-size:16px; font-weight:500; line-height:1.5; color:var(--error); padding-inline:var(--page-inset); min-width:0; word-break:keep-all; overflow-wrap:anywhere}
+.request-outcome{font-family: -apple-system, BlinkMacSystemFont, 'Noto Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Apple Color Emoji', sans-serif; font-size:22px; font-weight:700; line-height:1.5; background-color:var(--surface); padding:16px var(--page-inset); min-width:0; word-break:keep-all; overflow-wrap:anywhere}
+#requests-reload,#request-detail-reload{font-family: -apple-system, BlinkMacSystemFont, 'Noto Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', 'Apple Color Emoji', sans-serif; font-size:16px; font-weight:600; line-height:1.5; min-height:44px; padding:12px 16px; margin:16px var(--page-inset); border:0; border-radius:8px; background-color:var(--quiet); color:var(--text); word-break:keep-all; overflow-wrap:anywhere}
+
+#request-detail-view{display:flex; flex-direction:column; gap:8px; background-color:var(--quiet); min-width:0;}
+.request-detail-header{display:grid; grid-template-columns:44px minmax(0,1fr) 44px; align-items:center; gap:0; padding:8px var(--page-inset); background-color:var(--surface);}
+.request-detail-header h1{font-size:16px; font-weight:600; line-height:1.5; text-align:center; margin:0; min-width:0; word-break:keep-all; overflow-wrap:anywhere;}
+.request-detail-header>span{width:44px;}
+#request-detail-content{display:grid; gap:8px; min-width:0; background-color:var(--quiet);}
+.request-detail-group{background-color:var(--surface); padding:24px var(--page-inset); display:flex; flex-direction:column; gap:8px; min-width:0;}
+#request-detail-stay{font-size:18px; font-weight:600; line-height:1.5; margin:0; min-width:0; word-break:keep-all; overflow-wrap:anywhere;}
+.request-detail-group h2:not(#request-detail-stay){font-size:16px; font-weight:600; line-height:1.5; margin:0; word-break:keep-all; overflow-wrap:anywhere;}
+#request-detail-status,#request-detail-room{font-size:14px; font-weight:500; line-height:1.5; color:var(--muted); margin:0; min-width:0; word-break:keep-all; overflow-wrap:anywhere;}
+.request-detail-group dl{display:grid; gap:16px; margin:0; padding:0; min-width:0;}
+.request-detail-group dl>div{display:grid; gap:4px; min-width:0;}
+.request-detail-group dt{font-size:14px; font-weight:500; line-height:1.5; color:var(--muted); margin:0; word-break:keep-all; overflow-wrap:anywhere;}
+.request-detail-group dd{font-size:16px; font-weight:500; line-height:1.5; margin:0; min-width:0; word-break:keep-all; overflow-wrap:anywhere;}

@@ -1,0 +1,81 @@
+{
+  "scope": "Exact original private driver bytes preserved as evidence. Relative private-run paths are historical provenance, not portable entry points. Sanitized model requests omit native image payloads; original image hashes remain.",
+  "files": [
+    {
+      "path": "drivers/run-request-styles.mjs",
+      "sha256": "04bab3ef9501cd7db9fce11051068402bc910f34f1f7cb828bb8bc8b7afb5696"
+    },
+    {
+      "path": "drivers/repair-cancel-date-layout.mjs",
+      "sha256": "5ed31f848610276fcb94f8c514c7d6a92ee74d5d7fd9c6c46a3d4b0b06cc08b2"
+    },
+    {
+      "path": "drivers/repair-cancel-date-layout-retry.mjs",
+      "sha256": "dbd98b3791b6dece666a3711cd5a757dc8a44254589873037d148217a7cbea76"
+    },
+    {
+      "path": "drivers/repair-cancel-date-values.mjs",
+      "sha256": "97a987a3bfd7401def5a35a48700ee0465aa21f4402d05772c00e63dc2da129e"
+    },
+    {
+      "path": "drivers/repair-date-panel-values.mjs",
+      "sha256": "d787a5912099ae1eeab80044a07b843c85fab5af11510da5c93affacf8613a2b"
+    },
+    {
+      "path": "drivers/repair-header-leading-values.mjs",
+      "sha256": "e34e8bf2c68f293283746cc1a380a93ba862e288d0912b8ccec6fd514c3ec766"
+    },
+    {
+      "path": "drivers/request-style-guide-delivery-list.json",
+      "sha256": "e4a7f3e421deeacb93f0417dde044ca5830d1ffb4269efb6b88d925ef84e13fc"
+    },
+    {
+      "path": "drivers/request-style-guide-delivery-detail.json",
+      "sha256": "e4a7f3e421deeacb93f0417dde044ca5830d1ffb4269efb6b88d925ef84e13fc"
+    },
+    {
+      "path": "drivers/request-style-guide-delivery-price.json",
+      "sha256": "e4a7f3e421deeacb93f0417dde044ca5830d1ffb4269efb6b88d925ef84e13fc"
+    },
+    {
+      "path": "drivers/request-style-guide-delivery-cancel.json",
+      "sha256": "5cb1e850d19cb8d4d4b54ad42582ef1e45a3d994253517a1930af34f4af76a27"
+    },
+    {
+      "path": "drivers/cancel-date-guide-delivery.json",
+      "sha256": "c3182cf041b9a7c3afa1585dd881f8f72d62ed15d9933faf19721b17f6fd8280"
+    },
+    {
+      "path": "drivers/cancel-date-values-guide-delivery.json",
+      "sha256": "b9596f78a3460728d26db7279377d64a739f0d830760198f8b45d7cbb7e873e9"
+    },
+    {
+      "path": "drivers/date-panel-guide-delivery.json",
+      "sha256": "cab8d2ffd6cfc7f986da78489268dbde78b0f06e6a36f128066c32bb769ff4b5"
+    },
+    {
+      "path": "drivers/header-leading-guide-delivery.json",
+      "sha256": "6d71a59a6adcc6c945064aa605bf1da104688dbd4a421511b14645707fd53cd9"
+    },
+    {
+      "path": "drivers/CANCEL-DATE-REPAIR.md",
+      "sha256": "cc13deb3098ee6928f9517ad9b0f2eb3ccd4442357128fb75bb42212da07cb56"
+    },
+    {
+      "path": "drivers/DATE-PANEL-REPAIR.json",
+      "sha256": "ad20bb706688dddbb4fedb302caf754e3be71336e87e4bba5e635c68f0de7358"
+    },
+    {
+      "path": "drivers/HEADER-LEADING-REPAIR.md",
+      "sha256": "f7250c3763243f511b40d4d52c26d3d33c09de2d62ad2edb495e3fbf1a3deb82"
+    },
+    {
+      "path": "drivers/REQUEST-STYLE-PLAN.md",
+      "sha256": "43f199c7232fb979fd29c77ef22763a2363bad93bfb21f50d27ff97cd2989ce0"
+    },
+    {
+      "path": "drivers/local-stage.mjs",
+      "sha256": "d8b74c67bf58bb1b402d5eca1401ad5f12aae7383d117abfb3c32742ed007329"
+    }
+  ]
+}
