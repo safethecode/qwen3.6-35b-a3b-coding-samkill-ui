@@ -1,0 +1,26 @@
+{
+  "algorithm": "sha256",
+  "scope": "Exact published bytes; index excludes itself. Functional evidence does not establish visual approval.",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 26,
+      "sha256": "155348a89d5e749f50d336f8f164a39bf8415179177b36e8b51766f3ab9a16d3"
+    },
+    {
+      "path": "checks.log",
+      "bytes": 1225,
+      "sha256": "ece55ec89c927ee9ca0b2b24c3f400a3b801e0dd745dd4abea71d6f9167272ff"
+    },
+    {
+      "path": "installed-skill.json",
+      "bytes": 9198,
+      "sha256": "828002f6b14d3e812d266df7d949f63441c73079628dc820e680e435729499b0"
+    },
+    {
+      "path": "README.md",
+      "bytes": 941,
+      "sha256": "191b36ebfe77d7231571d2fff047ca5d2cfd8ccd42c2dbd33826adfed40f572f"
+    }
+  ]
+}

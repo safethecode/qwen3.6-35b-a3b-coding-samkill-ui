@@ -1,0 +1,22 @@
+✔ mobile-only generation rejects unrequested desktop variants in shared and component CSS (2.9741ms)
+✔ semantic slots assemble exactly the same validated component source used by samples (4.8693ms)
+✔ component boundaries reject global style, hidden labels, scripts and undeclared media (1.1276ms)
+✔ host selector scoping preserves component roots and children without document escapes (1.4781ms)
+Generating component E1, attempt 1
+Generating component E2, attempt 1
+Generating component E2, attempt 2
+Generating component E2, attempt 1
+✔ component generation resumes fixed element outputs and rejects changed decomposition (104.2795ms)
+✔ installation preserves model, MCP and other agents and refuses duplicate replacement (161.7209ms)
+✔ JSONC is left untouched (43.8903ms)
+✔ component styling receives complete applicable guides with source hashes (7.2915ms)
+✔ direct model stages receive the linked local decomposition guide as source-bound text (3.4805ms)
+✔ all active catalog rules remain available and stage prompts carry original font and icon rules (17.5128ms)
+ℹ tests 10
+ℹ suites 0
+ℹ pass 10
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 513.6144
