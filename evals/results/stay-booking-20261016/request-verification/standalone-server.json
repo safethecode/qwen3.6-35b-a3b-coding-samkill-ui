@@ -1,0 +1,14 @@
+{
+  "at": "2026-10-15T22:40:06.166Z",
+  "rows": [
+    {
+      "name": "unknown paths rejected and actual supplied font bytes served",
+      "pass": true
+    },
+    {
+      "name": "actual standalone server connected create,reload and return at296",
+      "pass": true
+    }
+  ],
+  "scope": "Actual built-in static server plus desktop Chromium; no local generation or native parity claim"
+}
