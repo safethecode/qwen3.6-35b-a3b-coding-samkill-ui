@@ -1,5 +1,6 @@
 import { readFile, readdir } from 'node:fs/promises';
 import { createHash } from 'node:crypto';
+import { componentScope } from './component-scope.mjs';
 
 const upstream = new URL('../skills/qwen-samkill-ui/references/upstream/', import.meta.url);
 const sharedGenerationGuides = ['../decomposed-layout.md'];
@@ -17,7 +18,7 @@ export async function componentSkillContext(element) {
   const paths = [...sharedGenerationGuides, ...routes.layout, 'reference-to-ui/references/mobile.md'];
   if (element.assets.some(asset => /\.svg$/i.test(asset))) paths.push('reference-to-ui/references/icon-controls.md');
   const sources = await Promise.all(paths.map(async path => ({ path, text: await readFile(new URL(path, upstream), 'utf8') })));
-  return { text: sources.map(source => `GENERATION GUIDE ${source.path}\n${source.text}`).join('\n\n'), sources: sources.map(({ path, text }) => ({ path, sha256: digest(text) })) };
+  return { text: `${sources.map(source => `GENERATION GUIDE ${source.path}\n${source.text}`).join('\n\n')}\n\nOWNED SELECTOR CONTEXT\n${JSON.stringify(componentScope(element))}`, sources: sources.map(({ path, text }) => ({ path, sha256: digest(text) })) };
 }
 
 export async function stageSkillContext(stage) {
