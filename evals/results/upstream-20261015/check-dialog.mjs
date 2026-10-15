@@ -30,6 +30,15 @@ try {
     await page.locator('#book').click();
     const report = { width, checks: [] };
     const check = async (name, fn) => { try { report.checks.push({ name, status: 'PASS', observed: await fn() }); } catch (e) { report.checks.push({ name, status: 'FAIL', detail: e.message.slice(0, 500) }); } };
+    await check('native time selection affordance retained', async () => {
+      const appearance = await page.locator('#slot').evaluate(e => getComputedStyle(e).appearance);
+      assert.notEqual(appearance, 'none');
+      return appearance;
+    });
+    await check('empty storage error does not reserve a form gap', async () => {
+      assert.equal(await page.locator('#storage-error').innerText(), '');
+      assert.equal(await page.locator('#storage-error').evaluate(e => getComputedStyle(e).display), 'none');
+    });
     await check('dialog component sample width matches real dialog', async () => {
       const r = await inspectLayoutContract(page, { rules: [{ id: 'dialog-width', kind: 'sampleWidth', subject: '[data-ui-unit="dialog"]', sample: 'sample-dialog.html' }] });
       assert.equal(r.results[0].status, 'PASS');
@@ -48,6 +57,9 @@ try {
         const style = await wrapper.evaluate(e => ({ shadow: getComputedStyle(e).boxShadow, border: getComputedStyle(e).borderWidth }));
         assert.notEqual(style.shadow, 'none');
         assert.ok(style.shadow.includes('inset'));
+        const inputPaint = await field.evaluate(e => ({ outline: getComputedStyle(e).outlineStyle, background: getComputedStyle(e).backgroundColor }));
+        assert.equal(inputPaint.outline, 'none');
+        assert.ok(inputPaint.background === 'transparent' || /rgba\([^)]*,\s*0\)$/.test(inputPaint.background), 'Opaque child background can cover the wrapper inset ring');
         await page.screenshot({ path: `${evidence}/focus-${id}-${width}.png` });
         await page.locator('#close-booking').focus();
         assert.equal(await wrapper.evaluate(e => getComputedStyle(e).boxShadow), 'none');

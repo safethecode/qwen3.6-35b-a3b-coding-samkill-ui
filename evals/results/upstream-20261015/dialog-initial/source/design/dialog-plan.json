@@ -1,0 +1,46 @@
+{
+  "reference": {
+    "tool": "UI Bowl search_ui_patterns",
+    "arguments": {
+      "query": "상세정보",
+      "app_name": "프립",
+      "limit": 3
+    },
+    "retrievedAtUtc": "2026-10-15T05:36:23.653Z",
+    "screenId": null,
+    "screenIdSource": "Current connector did not return a screen ID; do not infer one from a previous response",
+    "ui_url": "https://uibowl.io/name/%ED%94%84%EB%A6%BD?patterns=%EC%83%81%EC%84%B8%EC%A0%95%EB%B3%B4%20%28PDP%29",
+    "previewSha256": "0fa0d1f2cb50cfc86b9b18be417f88fdf5faf72e18c58c6ceb9b90219857fde8",
+    "scope": "Fresh connector retrieval and direct visual inspection of native representative preview; CSS/DPR/font/hidden states unknown",
+    "status": "inspected",
+    "width": 296,
+    "observations": [
+      "Back navigation sits over the top photo",
+      "Product facts are below media",
+      "White regions are separated by gray canvas gaps",
+      "Quiet bounded secondary actions accompany a strong primary booking action"
+    ],
+    "unknowns": [
+      "Original CSS/DPR/font",
+      "Original hidden modal states"
+    ],
+    "modal": "No original modal was observed. User-directed state hierarchy and existing booking behavior, not claimed Frip modal reproduction."
+  },
+  "viewport": {
+    "mode": "mobile-only",
+    "maxWidth": 390,
+    "rationale": "User requested a mobile screen; wide windows only center the same screen."
+  },
+  "shared": "Mobile-only booking form and saved confirmation. The actual dialog shell owns width358px/max-width viewport-32, backdrop and scrolling. This component owns all internal padding/typography/controls/surfaces. Preserve existing Korean strings, IDs, hidden-state ownership and all time options. Completion is the single primary h2; product and selected booking data are subordinate. No added demo notices, branding, divider bars or desktop variant. No scripts.",
+  "sharedCss": ":root{--screen-inset:20px;--section-padding-block:24px;--section-gap:12px;--metadata-gap:16px;--icon-label-gap:8px;--content-gap:20px;--title-gap:8px;--price-gap:12px;--action-pad-block:12px;--action-pad-inline:16px;--action-bg:#5146d7;--action-fg:#fff;--text-primary:#202024;--text-secondary:#60606a}\n*{box-sizing:border-box}body{margin:0;color:#202024;background:#f3f3f5;font-family:\"Noto Sans KR\",sans-serif;font-weight:500;max-width:390px;margin:0 auto}button,input,select{font:inherit}button{cursor:pointer}img{display:block;max-width:100%}p,h1,h2,h3{margin:0}button:focus-visible,a:focus-visible{outline:3px solid #5146d7;outline-offset:4px}.product{display:block;margin:0;padding:0;width:100%}.details{min-width:0}.media-navigation{position:relative;min-width:0}.detail-navigation{position:absolute;z-index:1;left:16px;top:16px}#back{display:flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:50%;background:rgb(255 255 255 / .94);box-shadow:0 2px 12px rgb(0 0 0 / .08)}.product-identity{background:white;padding:28px}#booking-layout{padding-top:12px}.booking-host,.booking-surface{background:#fff;padding:24px 28px}.booking-surface{margin-top:var(--section-gap)}#booking-actions{display:grid;grid-template-columns:48px minmax(0,1fr);align-items:center;gap:12px}.section-label{font-size:14px;font-weight:500;line-height:1.6;color:#60606a;margin-bottom:8px}@media(max-width:700px){.product{display:block;margin:0;padding:0;width:100%}.details{padding:0}.product-identity{padding:var(--section-padding-block) var(--screen-inset)}.booking-host,.booking-surface{padding:var(--section-padding-block) var(--screen-inset)}}\n.product-identity,.booking-host,.booking-surface{padding:var(--section-padding-block) var(--screen-inset)}dialog{width:358px;max-width:calc(100% - 32px)}.class-list{max-width:390px;margin:24px auto}\n.dialog-sample{width:358px;max-width:calc(100% - 32px);margin:16px auto}.dialog-content [hidden]{display:none!important}",
+  "assembly": "<div class=\"dialog-sample\">{{dialog}}</div>",
+  "elements": [
+    {
+      "id": "dialog",
+      "html": "<div data-ui-unit=\"dialog\" class=\"dialog-content\"><div class=\"dialog-heading\"><h2 id=\"booking-title\">수업 예약</h2><button id=\"close-booking\" type=\"button\" aria-label=\"예약 창 닫기\">닫기</button></div><div id=\"booking-product\" class=\"booking-summary\"><p class=\"section-label\">선택한 수업</p><p class=\"booking-class\">내 손으로 빚는 첫 번째 도자기 잔</p><p class=\"booking-price\">55,000원 · 90분 · 1명</p></div><form id=\"booking-form\"><div class=\"booking-field\"><label for=\"guest\">예약자 이름</label><div class=\"field-control\"><input id=\"guest\" name=\"guest\" autocomplete=\"name\" required maxlength=\"40\"></div></div><div class=\"booking-field\"><label for=\"date\">방문일</label><div class=\"field-control\"><input id=\"date\" name=\"date\" type=\"date\" required></div></div><div class=\"booking-field\"><label for=\"slot\">예약 시간</label><div class=\"field-control\"><select id=\"slot\" name=\"slot\" required><option value=\"\">시간을 선택하세요</option><option value=\"10:00\">오전 10:00</option><option value=\"14:00\">오후 2:00</option><option value=\"18:00\">오후 6:00</option></select></div></div><p id=\"storage-error\" role=\"alert\"></p><button class=\"confirm-booking\" type=\"submit\">예약 확정</button></form><section id=\"confirmation\" hidden><p class=\"confirmation-intro\">선택한 일정으로 예약을 저장했어요.</p><div class=\"booking-summary\"><p class=\"section-label\">예약 내역</p><p id=\"confirmation-details\"></p></div><p id=\"cancel-error\" role=\"alert\"></p><button id=\"cancel-booking\" type=\"button\">예약 취소</button></section></div>",
+      "assets": [],
+      "sample": "<div class=\"dialog-sample\">{{dialog}}</div>",
+      "prompt": "Style this complete dialog content with bounded CSS. Outer padding24px (20px at <=360). Header h2=22px700 line-height1.45 keep-all with emergencywrap; close min44px,14px600, quiet gray rounded6. Header must wrap at enlarged text rather than squeeze title into a character column. Product summary and saved summary pale gray padded20px radius8, supporting text15px500 line-height1.7; product title16px700, price14px500. Use one success heading; hidden form/product block is controlled by existing app.js. Labels15px600 visible, field gap8px, field groups16px apart. Each field-control wraps its own input/select and owns stable border1px and inset focus ring2px; input/select keep DOM focus and use16px500, line-height1.5, min-height48px, width100%, padding12px, min-width0. Only these controls remove their native outline while the wrapper shows input/select focus; forced-colors gets a visible system-color outline. Parent focus style must not respond to unrelated buttons. Main submit min-height52px padding16px, purple existing --action-bg/white --action-fg,16px700, line-height1.5, natural growth, normal wrapping. Cancel quiet secondary control min44px,14px600. Errors14px500 red with readable contrast. Confirmation intro15px500; pre-line summary wraps full data. All buttons keep visible keyboard focus and no clipping at200% text. Do not use fixed text heights, hidden overflow, decorative lines, pseudo-elements, extra controls or external assets. Use provided role variables where applicable. No animations are required; respect reduced motion if any transition is added. Return concise complete CSS under1800tokens."
+    }
+  ]
+}
