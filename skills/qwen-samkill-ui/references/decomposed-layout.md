@@ -50,6 +50,8 @@ If a diagnosed repair repeats the same defect, reduce the writable unit to one f
 
 At a module boundary, declare parameter types, exact imported names and existing selectors. Probe a generated renderer with real typed state in the browser before passing it to the event-wiring stage. Treating an ISO date string as a Date object or inventing an external helper can propagate a bad interface into every later stage even when each file parses. A change in the accepted interface requires a new caller contract and replay, not a syntax-only checkpoint.
 
+For source-backed JSON examples, the component runner accepts per-element `dataSources` with `id`, a project-relative `file` and a JSON `pointer`. It delivers the selected actual records and binds both source bytes and delivered values. Missing records fail before inference rather than becoming invented helpers or fields. Bounded behavior callers can use the same `readElementDataContext` API. Its limits, pointer syntax and receipts are in the repository's `docs/COMPONENT-GENERATION.md`; data delivery does not prove correct use of the fields or replace semantic tests.
+
 ## Executable layout contract
 
 Create `design/layout-contract.json` with a nonempty `rules` array. Each rule needs a unique `id` and `kind`. Selectors must identify exactly one visible element except `absent`, which requires no matching element. Optional `widths` and `states` restrict applicability and must not hide required coverage.

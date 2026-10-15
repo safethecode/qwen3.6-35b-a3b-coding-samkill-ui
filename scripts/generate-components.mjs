@@ -14,6 +14,7 @@ import { samplingOptions } from './sampling.mjs';
 import { componentSkillContext } from './skill-context.mjs';
 import { readLayoutContract } from './layout-contract.mjs';
 import { validateTypographyMetrics } from './typography-metrics.mjs';
+import { readElementDataContext } from './element-data.mjs';
 
 export async function generateComponents(target, evidence, options = {}) {
   if (resolve(evidence) === resolve(target) || resolve(evidence).startsWith(resolve(target) + sep)) throw new Error('Component evidence must be outside the source target');
@@ -27,17 +28,19 @@ export async function generateComponents(target, evidence, options = {}) {
   const layoutContract = await readLayoutContract(target);
   const guideContexts = Object.fromEntries(await Promise.all(plan.elements.map(async element => [element.id, await componentSkillContext(element)])));
   const guideSources = Object.fromEntries(Object.entries(guideContexts).map(([id, context]) => [id, context.sources]));
+  const dataContexts = Object.fromEntries(await Promise.all(plan.elements.map(async element => [element.id, await readElementDataContext(target, element)])));
+  const dataSources = Object.fromEntries(Object.entries(dataContexts).map(([id, context]) => [id, context.sources]));
   const inputs = await sourceBinding(target);
   const harness = await harnessBinding();
   const requestTimeoutMs = inferenceTimeout();
   const settings = { model: process.env.QWEN_GENERATE_MODEL || 'qwen3-coder:30b', think: false, options: { num_ctx: 16384, ...samplingOptions(), ...inferenceOptions(), num_predict: 2048 } };
-  const binding = createHash('sha256').update(JSON.stringify({ plan, typography, contract, reference, guideSources, inputs, harness, settings, requestTimeoutMs })).digest('hex');
+  const binding = createHash('sha256').update(JSON.stringify({ plan, typography, contract, reference, guideSources, dataSources, inputs, harness, settings, requestTimeoutMs })).digest('hex');
   await mkdir(evidence, { recursive: true });
   const checkpoint = resolve(evidence, 'component-checkpoint.json');
   const saved = await readFile(checkpoint, 'utf8').then(JSON.parse, error => { if (error.code === 'ENOENT') return null; throw error; });
   if (saved && (!options.resume || saved.binding !== binding)) throw new Error('Component checkpoint does not match current inputs or resume was not requested');
   const completed = saved?.completed || {};
-  await writeFile(resolve(evidence, 'inputs.json'), JSON.stringify({ binding, settings, requestTimeoutMs, inputs, guideSources, harnessHashes: harness }, null, 2));
+  await writeFile(resolve(evidence, 'inputs.json'), JSON.stringify({ binding, settings, requestTimeoutMs, inputs, guideSources, dataSources, harnessHashes: harness }, null, 2));
   for (const element of plan.elements) {
     if (completed[element.id]) { validateComponent(element, completed[element.id]); continue; }
     let previousError = '';
@@ -58,6 +61,7 @@ export async function generateComponents(target, evidence, options = {}) {
         request.messages[0].content += ' Never use + or ~ selector combinators, including between descendants inside the component. For spacing between repeated groups, use a parent gap or :not(:first-child) instead. The validator rejects all sibling combinators, not only selectors that escape the root.';
         request.messages[0].content += ` Platform contract: ${JSON.stringify(plan.viewport || { mode: 'unspecified' })}. A mobile-only screen keeps the same vertical mobile composition in a wide window. Do not introduce desktop-only layout or typography.`;
         request.messages[1].content = `APPLICABLE SOURCE GUIDES\n${guideContexts[element.id].text}\n\nDECLARED CROSS-COMPONENT RELATIONS\n${layoutContract ? JSON.stringify(layoutContract) : 'UNVERIFIED: no layout contract supplied. Do not invent missing screen purpose or claim complete decomposition.'}\nPreserve relations owned by the shared assembly; implement only this element. State-specific rules describe their named state, not all states simultaneously.\n\n${request.messages[1].content}`;
+        request.messages[1].content += `\n${dataContexts[element.id].text}`;
         const response = await (options.fetcher || inferenceFetch)(`${process.env.OLLAMA_URL || 'http://127.0.0.1:11434'}/api/chat`, { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify(request), signal: AbortSignal.timeout(requestTimeoutMs) });
         if (!response.ok) throw new Error(`Ollama HTTP ${response.status}`);
         const result = await response.json();
@@ -80,6 +84,7 @@ export async function generateComponents(target, evidence, options = {}) {
       }
     }
   }
+  for (const element of plan.elements) if (JSON.stringify((await readElementDataContext(target, element)).sources) !== JSON.stringify(dataSources[element.id])) throw new Error('Element data sources changed during generation');
   if (JSON.stringify(inputs) !== JSON.stringify(await sourceBinding(target)) || JSON.stringify(harness) !== JSON.stringify(await harnessBinding())) throw new Error('Component inputs changed during generation');
   const assembled = assembleComponents(plan, completed);
   const document = html => `<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Reference component prototype</title><link rel="stylesheet" href="styles.css"></head><body>${html}</body></html>`;
