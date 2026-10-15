@@ -26,10 +26,18 @@ New read-failure tests exposed data loss that the earlier13-case state suite mis
 
 [Current formal catalog](refinement/catalog-check.json) correctly returns UNVERIFIED/exit2:33 scoped passes,14 not applicable,37 unknown and1 confirmed failure across75original+8guide+2project rules. Deletion semantics and long-row ownership are fixed-and-verified. ORC-A07 still fails because add/delete have no visible text labels; accessible names do not satisfy that stricter rule. No exception is declared. Full token/copy/positive reference-synthesis review, native popup/device/AT and repeated representative independent generation remain unfinished.
 
-## Current visible-action candidate
+## Earlier visible-action candidate
 
 [Runnable source](action-labels/source/index.html), [source-bound summary](action-labels/summary.json), [raw local generation and retained failures](action-labels/README.md). Actual local Qwen adds visible 추가/삭제 text beside official icons. Its first response introduced forbidden nowrap; a separate local declaration repair restores natural wrapping. The host then propagated the exact button response into omitted sample/plan consumers. Both stale handoffs failed before synchronization and pass afterward.
 
 Fresh exact-source receipts pass12 visible-label mode/width checks,73 workflows,15 store cases,4 renderer states,2 read-recovery transitions,2 canonical handoff comparisons and all declared first-line/asset/capsule checks. Normal390px and narrow/enlarged output were directly inspected. Earlier functional receipts and original failed requests remain unchanged.
 
 [Current catalog](action-labels/catalog-check.json) remains UNVERIFIED/exit2:41 scoped passes,14 not applicable,28 unknown and2 confirmed failures. ORC-A07 is fixed; permanently repeated row actions now have explicit ORC-F08/ORC-G16 failures instead of blanket unknown findings. Visible labels improve clarity but increase action mass, especially with enlarged text. A quieter touch/keyboard-accessible presentation, full token/spacing/copy/positive-reference review and representative independent repetitions remain unfinished. No hover-only workaround, weakened rule or reference-parity claim is approved.
+
+## Current explicit-management candidate
+
+[Actual default screen](edit-mode/filled-final/390-reading.png), [editing](edit-mode/filled-final/390-editing.png), [form](edit-mode/filled-final/390-form.png), [runnable source](edit-mode/source/index.html), [source-bound summary](edit-mode/summary.json). Actual local Qwen renderer/controller/CSS/selector/focus units create an explicit native edit mode: repeated deletion is absent in reading, restoring69.45px title width. Touch and real keyboard deletion,exact retained records,focus,reload,date/create/empty transitions and write retry are verified. The stricter seven-day focus probe exposed and locally repaired partial clipping.
+
+14mode checks cover24actual state/width/text cells;73existing workflow assertions,15store cases,4renderer states,2read-recovery transitions and2handoff comparisons pass. Revised checker versions and negative-control failures remain separate. [Original responses and adjudication](edit-mode/README.md). These are assisted scope checks,not an independent quality percentage.
+
+The85-entry catalog remains UNVERIFIED/exit2:41scoped passes,14not applicable,24unknown,4confirmed icon size/color failures and2narrow mobile explicit-management exceptions to the literal hover-only recipe. Default action noise improves, but icons stay20px beside32px enlarged labels and Trash paint differs from its text. Full reference/commercial quality and repeated representative unattended reproduction remain unfinished.

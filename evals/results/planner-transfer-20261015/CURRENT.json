@@ -1,10 +1,10 @@
 {
   "status": "INCOMPLETE_REFERENCE_PARITY",
-  "source": "action-labels/source",
-  "summary": "action-labels/summary.json",
-  "workflow": "action-labels/final-workflow/report.json",
-  "catalog": "action-labels/catalog-check.json",
-  "historicalSource": "final/source",
+  "source": "edit-mode/source",
+  "summary": "edit-mode/summary.json",
+  "workflow": "edit-mode/final-workflow/report.json",
+  "catalog": "edit-mode/catalog-check.json",
   "assisted": true,
-  "previousSource": "refinement/source"
+  "previousSource": "action-labels/source",
+  "historicalSource": "final/source"
 }
