@@ -1,0 +1,11 @@
+# Visible-action review
+
+INCOMPLETE/changes-needed. Current source is a bounded assisted continuation, not independent generation or reference parity. The original UI Bowl main and current390px filled/296px enlarged task/form images were directly inspected. Native source294x640 is compared at390px displayed width; CSS viewport,DPR,original font and actual task-add modal remain unknown.
+
+Visible 추가/삭제 text now makes the official icon action explicit. Natural wrapping,44px minimum targets and first-line row ownership survive narrow/enlarged/spacing tests. Canonical main/sample/plan markup agrees after host propagation of the unchanged model response. First-response nowrap and stale consumers are retained failures. The known initial-read data-loss/false-empty defects remain fixed under fresh actual recovery replay.
+
+The added text increases permanently repeated row-action mass. ORC-F08 and ORC-G16 are confirmed failures in fresh captures. Do not solve them by hiding deletion behind hover on this touch-oriented mobile product. A discoverable quieter interaction must be designed and tested; no exception is declared in this report.
+
+Specific additional scoped reviews: RUI-01 preserves observed/adapted/unknown provenance;RUI-03 keeps all active checks and unfinished status;RUI-05 supports separately planned task purpose;RUI-07 connects owned regions to actual task actions;RUI-09 verifies visible document typography;RUI-13 verifies natural-height few/long lists;RUI-23 compares main/form/state visual language. These findings do not close the separate action-noise,token,spacing,positive-reference or full-guide issues. Previous simple neutral/color/type/semantic-control observations were reinspected in current code/screens and remain scoped.
+
+Remaining unknowns now have specific follow-up requirements in gate-report rather than a blanket pending sentence. They include exact icon/text paint,all spacing/token use sites,strict catalog conflicts with white default/focus rings/calendar rails,anti-slop JS review,positive Q-ID synthesis,actual task-add research,full Korean copy and native/device/AT checks. Seven applicable whole-guide assessments remain incomplete; onboarding/signup is outside this product.

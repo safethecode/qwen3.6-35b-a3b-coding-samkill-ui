@@ -2,6 +2,8 @@
 
 ## Current status — 2026-10-15
 
+Fresh repeated bounded CSS repair now satisfies the corrected role/ownership input in2/2first responses,after0/2with the contradictory old prompt. Each new run passes14mode assertions,24actual layout cells,24exact-type captures and73workflows;390normal images are byte-identical. Shared checks pass129unit/51browser tests. **This is not product approval:** the retained date-header placement of list editing still conflicts with the pinned action-ownership guide and needs a new semantic correction. [Raw repeated runs,actual images and limits](results/planner-transfer-20261015/typed-ownership-repeat/README.md). The preview remains the earlier candidate;reference quality is unfinished.
+
 The latest assisted planner keeps explicit mobile edit mode and scales official action icons with enlarged text. Actual local Qwen returned two CSS values; host exported an official paint variant and synchronized consumers.144same-contract pair checks now pass; default/actual-hover/actual-focus expands scoped coverage to432checks.24real state/width/text cells and all73workflow assertions pass. Full catalog remains UNVERIFIED/exit2 with45scoped passes,14NA,24unknown and2narrow mobile hover exceptions. Larger icons increase title wrapping during enlarged editing. [Actual renders,source,retained failures and limits](results/planner-transfer-20261015/icon-refinement/README.md). Shared harness127unit/45browser tests and these single-service checks do not establish reference parity or unattended reproducibility.
 
 ### Preceding runs

@@ -1,0 +1,42 @@
+{
+  "status": "SCOPED_CSS_REPETITION_PASS_PRODUCT_REVIEW_INCOMPLETE",
+  "firstResponseScopeAcceptance": "2/2",
+  "responses": [
+    {
+      "case": 1,
+      "elapsedMs": 188963,
+      "promptTokens": 13797,
+      "outputTokens": 379,
+      "doneReason": "stop"
+    },
+    {
+      "case": 2,
+      "elapsedMs": 29114,
+      "promptTokens": 13797,
+      "outputTokens": 390,
+      "doneReason": "stop"
+    }
+  ],
+  "perResponse": {
+    "modeAssertions": 14,
+    "actualLayoutCells": 24,
+    "exactRoleCaptures": 24,
+    "exactRoleIssues": 0,
+    "workflowAssertions": 73
+  },
+  "actualNormal390ReadingPngSha256": "4ba95241e0a4bba0817ab6acf1dbf6dcddbe7e288c566c5c179368e1c4b37073",
+  "twoNormalScreensByteIdentical": true,
+  "priorUncorrected": "../scope-context-repeat:0/2 observed row/type design acceptance",
+  "hostAssistance": "Replaced contradictory prompt and predeclared existing numeric intent before both requests. Fixed markup/shared source is assisted. No post-response CSS/selector changes.",
+  "directReview": "Both390normal screens and second296enlarged editing directly inspected;actual reference reread. Intended heading/action typography restored. Enlarged editing still wraps aggressively. Product guide action ownership is not approved.",
+  "remaining": [
+    "Pinned product-reasoning guide locates list editing in list region rather than date/calendar header. Current screen still needs that semantic correction.",
+    "Only two bounded CSS repairs;not independent full product/reference reproduction or general reliability",
+    "Full catalog/positive reference comparison and device/AT remain incomplete"
+  ],
+  "sharedRegression": {
+    "unit": 129,
+    "browser": 51
+  },
+  "publishedPreview": "Remains icon-refinement while semantic ownership and full quality remain unfinished"
+}

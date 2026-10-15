@@ -49,3 +49,9 @@ The85-entry catalog remains UNVERIFIED/exit2:41scoped passes,14not applicable,24
 144same-contract pair checks now pass; additional actual per-action hover/focus expands coverage to432checks. The expanded count is not directly comparable to144. All24mode cells,14mode checks,73workflow assertions,15store cases,4renderer states,2read-recovery transitions and2handoff comparisons pass. [Raw local response,host preparation and tradeoffs](icon-refinement/README.md). Enlarged editing titles wrap more because icons grow; the ordinary reading layout stays quiet.
 
 Full85-entry catalog stays UNVERIFIED/exit2:45scoped passes,14NA,24unknown and2narrow mobile hover exceptions. Confirmed size/color failures are fixed in scoped web checks; commercial/reference quality,full guide/token/spacing/copy/synthesis review,physical devices/AT and repeated representative unattended generation remain unfinished. Shared harness verification is127unit/45browser tests,not a design score.
+
+## Typed ownership repetition
+
+[Fresh corrected bounded requests](typed-ownership-repeat/README.md) pass the limited row/type contract2/2,after the [uncorrected0/2failure](scope-context-repeat/README.md). Each has14mode checks,24actual layout cells,24exact-role captures with0issues and73workflows. Both390normal screens are byte-identical. Predeclared metrics now reach common repair/generation intake;actual text owners are inspected.129unit/51browser regressions pass.
+
+No reference or product approval: list editing remains in the date/calendar header,contrary to the pinned product-reasoning ownership requirement. A new input must move the existing action into its list region and preserve real mode/focus/storage behavior. Enlarged editing still wraps aggressively. Current icon-refinement preview and historical catalog snapshots remain unchanged;their scoped counts do not approve this newly identified ownership defect.
