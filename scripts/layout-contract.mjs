@@ -1,6 +1,7 @@
 import { readFile } from 'node:fs/promises';
 import { resolve } from 'node:path';
 import { layoutContractFingerprint } from './layout-state-coverage.mjs';
+import { inspectReadableToken } from './readable-token.mjs';
 
 export const readLayoutContract = target => readFile(resolve(target, 'design/layout-contract.json'), 'utf8').then(JSON.parse).catch(error => { if (error.code === 'ENOENT') return null; throw error; });
 
@@ -153,6 +154,10 @@ export async function inspectLayoutContract(page, contract, options = {}) {
           observed.container = await box(rule.container);
           const owns = await page.locator(rule.container).evaluate((container, selector) => container.contains(document.querySelector(selector)), rule.subject);
           if (!owns || !inside(observed.subject, observed.container)) throw new Error('Action/content is outside its declared owner');
+        } else if (rule.kind === 'readableToken') {
+          const token = await inspectReadableToken(page, rule);
+          observed = { ...observed, ...token.observed };
+          if (token.status !== 'PASS') throw Object.assign(new Error(token.detail), { verificationStatus: token.status });
         } else if (rule.kind === 'sameRow') {
           observed.reference = await box(rule.reference);
           const tolerance = rule.tolerance ?? 2;
@@ -186,8 +191,9 @@ export async function inspectLayoutContract(page, contract, options = {}) {
       results.push({ id: rule.id, kind: rule.kind, status: 'PASS', observed });
     } catch (error) {
       const detail = error.message.slice(0, 500);
-      results.push({ id: rule.id, kind: rule.kind, status: 'FAIL', detail, observed });
-      issues.push({ status: 'FAIL', problem: `${rule.id}: ${detail}` });
+      const status = error.verificationStatus === 'UNVERIFIED' ? 'UNVERIFIED' : 'FAIL';
+      results.push({ id: rule.id, kind: rule.kind, status, detail, observed });
+      issues.push({ status, problem: `${rule.id}: ${detail}` });
     }
   }
   if (!results.length && !issues.length) issues.push({ status: 'UNVERIFIED', problem: 'No declared layout relation was checked for this viewport/state' });
