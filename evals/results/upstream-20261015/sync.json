@@ -1,0 +1,112 @@
+{
+  "source": "https://github.com/safethecode/samkill-ui",
+  "previousCommit": "c4ddc53f18519d8e95eebb29c7d261b34d691398",
+  "commit": "167fc8d5982e361d86f598c80540d4eff460394d",
+  "retrievedAtUtc": "2026-10-15T05:35:55.388Z",
+  "files": [
+    {
+      "source": "skills/design-md/references/document-contract.md",
+      "target": "skills/qwen-samkill-ui/references/upstream/design-md/references/document-contract.md",
+      "sourceSha256": "5ca782cf8272d0faf962ba54319df4c3bdccca7ce1337d619882cb5ca90a8e5d",
+      "adaptedSha256": "5ca782cf8272d0faf962ba54319df4c3bdccca7ce1337d619882cb5ca90a8e5d",
+      "transformation": "Entry files and links renamed SKILL.md to guide.md; normalized-LF hashes"
+    },
+    {
+      "source": "skills/onboarding-flow/SKILL.md",
+      "target": "skills/qwen-samkill-ui/references/upstream/onboarding-flow/guide.md",
+      "sourceSha256": "70227e29db4fc525a7cf585caab0b5d3e600d93500af48e35a7143f5d13d4522",
+      "adaptedSha256": "70227e29db4fc525a7cf585caab0b5d3e600d93500af48e35a7143f5d13d4522",
+      "transformation": "Entry files and links renamed SKILL.md to guide.md; normalized-LF hashes"
+    },
+    {
+      "source": "skills/onboarding-flow/references/flow-contract.md",
+      "target": "skills/qwen-samkill-ui/references/upstream/onboarding-flow/references/flow-contract.md",
+      "sourceSha256": "01c0415d7e398721875fc63e31123528ec10a8b63f703416fcb55cbdab645781",
+      "adaptedSha256": "01c0415d7e398721875fc63e31123528ec10a8b63f703416fcb55cbdab645781",
+      "transformation": "Entry files and links renamed SKILL.md to guide.md; normalized-LF hashes"
+    },
+    {
+      "source": "skills/reference-decompose/SKILL.md",
+      "target": "skills/qwen-samkill-ui/references/upstream/reference-decompose/guide.md",
+      "sourceSha256": "06d42cc7819b44bb2d113e0b622111ce925540478259d0946c8bef837e9d1749",
+      "adaptedSha256": "06d42cc7819b44bb2d113e0b622111ce925540478259d0946c8bef837e9d1749",
+      "transformation": "Entry files and links renamed SKILL.md to guide.md; normalized-LF hashes"
+    },
+    {
+      "source": "skills/reference-decompose/references/element-contract.md",
+      "target": "skills/qwen-samkill-ui/references/upstream/reference-decompose/references/element-contract.md",
+      "sourceSha256": "9596c64daf0655a32797413a6dfa011f7b8955fe046467d2f6f6fe0613cbcbc6",
+      "adaptedSha256": "9596c64daf0655a32797413a6dfa011f7b8955fe046467d2f6f6fe0613cbcbc6",
+      "transformation": "Entry files and links renamed SKILL.md to guide.md; normalized-LF hashes"
+    },
+    {
+      "source": "skills/reference-review/SKILL.md",
+      "target": "skills/qwen-samkill-ui/references/upstream/reference-review/guide.md",
+      "sourceSha256": "962be9198cc1e1baca357e8d4c09d5758ef80e98d6a6637bb3c97067f20f8846",
+      "adaptedSha256": "ca818c6787da659f59348d58c602a3fc70dd4795c2952e589c286998ab831e61",
+      "transformation": "Entry files and links renamed SKILL.md to guide.md; normalized-LF hashes"
+    },
+    {
+      "source": "skills/reference-review/references/design-gate.md",
+      "target": "skills/qwen-samkill-ui/references/upstream/reference-review/references/design-gate.md",
+      "sourceSha256": "ae08e504cf72801016f66dd43c3bcdca4fd342e1fe90d97d6faadffbaf6e3f57",
+      "adaptedSha256": "ae08e504cf72801016f66dd43c3bcdca4fd342e1fe90d97d6faadffbaf6e3f57",
+      "transformation": "Entry files and links renamed SKILL.md to guide.md; normalized-LF hashes"
+    },
+    {
+      "source": "skills/reference-review/references/review-criteria.md",
+      "target": "skills/qwen-samkill-ui/references/upstream/reference-review/references/review-criteria.md",
+      "sourceSha256": "443736357e1ce77caf9de25d954c648f40866cd81031f87ae59cb1448580f848",
+      "adaptedSha256": "443736357e1ce77caf9de25d954c648f40866cd81031f87ae59cb1448580f848",
+      "transformation": "Entry files and links renamed SKILL.md to guide.md; normalized-LF hashes"
+    },
+    {
+      "source": "skills/reference-to-ui/SKILL.md",
+      "target": "skills/qwen-samkill-ui/references/upstream/reference-to-ui/guide.md",
+      "sourceSha256": "919d9e9ddbba2a54ae6553a51ad6d1fe05a333ec167b238744e812f514adee19",
+      "adaptedSha256": "a82971f98bd4f6ea26edf7b6f6979010f5ed2b3bbb0fa6b305c047fd15f99784",
+      "transformation": "Entry files and links renamed SKILL.md to guide.md; normalized-LF hashes"
+    },
+    {
+      "source": "skills/reference-to-ui/references/design-tokens.md",
+      "target": "skills/qwen-samkill-ui/references/upstream/reference-to-ui/references/design-tokens.md",
+      "sourceSha256": "7fd10c97b710938d659cf9b475c87682a56368f134c7b8482878ff112663ecb8",
+      "adaptedSha256": "7fd10c97b710938d659cf9b475c87682a56368f134c7b8482878ff112663ecb8",
+      "transformation": "Entry files and links renamed SKILL.md to guide.md; normalized-LF hashes"
+    },
+    {
+      "source": "skills/reference-to-ui/references/primary-color.md",
+      "target": "skills/qwen-samkill-ui/references/upstream/reference-to-ui/references/primary-color.md",
+      "sourceSha256": "7754a8f5796f72415161570643dd2fcea0cbf8e0e995598ad2d3155b24d4c57f",
+      "adaptedSha256": "7754a8f5796f72415161570643dd2fcea0cbf8e0e995598ad2d3155b24d4c57f",
+      "transformation": "Entry files and links renamed SKILL.md to guide.md; normalized-LF hashes"
+    },
+    {
+      "source": "skills/reference-to-ui/references/spacing-audit.md",
+      "target": "skills/qwen-samkill-ui/references/upstream/reference-to-ui/references/spacing-audit.md",
+      "sourceSha256": "30565c3fbc3e06cdb2e53aab78955b28142774a44c7e24eb34b661ef85135539",
+      "adaptedSha256": "30565c3fbc3e06cdb2e53aab78955b28142774a44c7e24eb34b661ef85135539",
+      "transformation": "Entry files and links renamed SKILL.md to guide.md; normalized-LF hashes"
+    },
+    {
+      "source": "skills/samkill-ui/SKILL.md",
+      "target": "skills/qwen-samkill-ui/references/upstream/samkill-ui/guide.md",
+      "sourceSha256": "d16e7c7f996cfef2f717adeabdb6914d509e733e952782d805c1f8f94e45a3c4",
+      "adaptedSha256": "066a8da14acc73826fe4450a3d5f01d0412334feff7a874a916fbc41a9f87f72",
+      "transformation": "Entry files and links renamed SKILL.md to guide.md; normalized-LF hashes"
+    },
+    {
+      "source": "skills/samkill-ui/agents/openai.yaml",
+      "target": "skills/qwen-samkill-ui/references/upstream/samkill-ui/agents/openai.yaml",
+      "sourceSha256": "bea3a6a85650a13ccc8cfe7e74a9517fbfe97d935d686c727d398f7ff222ca39",
+      "adaptedSha256": "bea3a6a85650a13ccc8cfe7e74a9517fbfe97d935d686c727d398f7ff222ca39",
+      "transformation": "Entry files and links renamed SKILL.md to guide.md; normalized-LF hashes"
+    }
+  ],
+  "preserved": [
+    "Local entry skill and operating rules",
+    "Mobile-only user scope",
+    "Explicit gray-canvas/white-section request",
+    "Local sidecar-lock design gate adaptation; upstream Python unchanged"
+  ]
+}
