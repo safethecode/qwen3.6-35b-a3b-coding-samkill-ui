@@ -17,6 +17,7 @@ These rules consolidate failures observed in this repository. They apply to both
 - Keep price, favorite and primary action semantically distinct. Bound supporting controls with a quiet surface where observed or requested. Limit crowded rows through declared relationships.
 - Success state has one primary outcome heading; product and reservation facts belong in a subordinate summary. Hide stale form headings and duplicate product blocks. Verify actual transitions and saved-state reopening.
 - Shared assembly owns cross-component layout. Model fragments must receive the actual contract, relevant guide text and permitted assets. A filename or skill link alone is not delivery. Avoid dumping every guide into every bounded request.
+- Replace obsolete instructions after a structural/ownership change. Do not append a new row contract while retaining its old standalone-title margin or type rule. Reconcile all active consumers before freezing the next input; preserve the contradictory version separately.
 
 ## Local execution and repair
 
@@ -31,6 +32,7 @@ These rules consolidate failures observed in this repository. They apply to both
 - Use real licensed images, supplied fonts and official icon assets. Confirm loaded font identity and actual rendered icons, not only declared CSS or successful requests. Do not hand-draw replacement icons or invent asset names.
 - Check complete HTML/CSS, valid field labels, actual select options and browser console/runtime behavior. Malformed tags can silently remove options even if their strings remain in source.
 - Inspect mobile/narrow and wide-window captures, 200% text and separate spacing stress. Use unitless line-height, normal wrapping and natural control growth. Do not hide overflow, shrink text or drop content to pass.
+- Declare known size,weight and line-height roles as numeric typography expectations before inference and verify actual text owners. A family match and14px minimum do not prove a22px heading kept its size. Keep genuine enlargement/spacing overrides explicit; missing exact-role evidence stays unknown.
 - Test booking, validation, reload, cancel, focus return and storage faults. Preserve the existing record on failed cancellation; do not replace user content with unsafe HTML. Impossible dates and malformed saved data are invalid.
 - A failed initial read is unknown data, not a confirmed empty list or permission to seed/overwrite storage. Test failed read followed by create, preserve raw data and input, restore reads, explicitly reload, and create alongside the restored record. Keep read readiness separate from write errors so ordinary write retries still work. One renderer owns empty/error visibility; controller updates must not override it. Verify truthful recovery guidance, including read guards placed outside write-error catches.
 - Validate declared maxWidth, vertical ordering, ownership, surfaces and state hierarchy in their applicable states. Unvisited states remain unverified. Gates supplement direct visual comparison; they do not replace it.
