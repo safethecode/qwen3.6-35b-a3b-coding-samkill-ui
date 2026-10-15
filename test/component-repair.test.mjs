@@ -64,3 +64,16 @@ test('component repair forwards valid role metrics and rejects invalid intent be
   await writeFile(join(target, 'design/typography.json'), JSON.stringify(typography));
   await assert.rejects(repairComponent(target, evidence + '-invalid', 'A', { ...component, css: '[data-ui-unit="A"]{font-size:14px}' }, 'Invalid metric must not reach model', { fetcher: () => assert.fail('Invalid metric reached inference') }), /typography metric/);
 });
+
+test('a CSS fragment boundary protects unchanged rules in the same semantic component', async () => {
+  const protectedRule = '[data-ui-unit="A"]:focus-visible{outline:2px solid black}';
+  for (const escape of [true, false]) {
+    const { target, evidence } = await fixture();
+    await writeFile(join(target, 'styles.css'), component.css + '\n' + protectedRule);
+    const operation = repairComponent(target, evidence, 'A', component, 'Only repair the title font fragment;focus is read-only', { fetcher: async () => reply([{ field: 'css', oldString: escape ? protectedRule : component.css, newString: escape ? '[data-ui-unit="A"]:focus-visible{outline:none}' : '[data-ui-unit="A"]{font-size:14px}' }]) });
+    if (escape) await assert.rejects(operation, /match exactly once/); else await operation;
+    assert.equal(await readFile(join(target, 'styles.css'), 'utf8'), (escape ? component.css : '[data-ui-unit="A"]{font-size:14px}') + '\n' + protectedRule);
+    assert.equal(await readFile(join(target, 'index.html'), 'utf8'), component.html);
+    assert.equal(await readFile(join(target, 'app.js'), 'utf8'), 'void 0;');
+  }
+});
