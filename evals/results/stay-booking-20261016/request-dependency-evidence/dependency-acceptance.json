@@ -1,0 +1,27 @@
+{
+  "at": "2026-10-15T21:09:59.383Z",
+  "files": {
+    "dates.js": "bb814d23499e375aaeb818698dae5ba96f1dc34687ee45625e61b2ada62d7095",
+    "stored-quote.js": "b5cf4f1c722ef525897982d9073ac42423a6f5927b9409ca12651b8350869a36",
+    "request-store.js": "6686bb61f7319dd5f535c6ecb16d0a4a714d945615744cfe82e6581119ca9ad7",
+    "request-reducer.js": "b94db34b38eb24fded225e7e61060d151fdb94b7df77a53155ac03c7bf1f184e",
+    "request-storage.js": "3e0be4388d3ca507aefa98781269fd7a051f92ef69bb89334d2faab4bb054fcf",
+    "booking-fixtures.json": "f280a73796116fcbe58974ee90ad96ef4e4a627310ee10295b2a34dbe5535cbf"
+  },
+  "actualLocalResult": "repair-reducer-expression-slots/result.json",
+  "localGuardResponseSha256": "f299b03aed87a30423b01af29decb30984d456834abee869fb0daa8881ccc00f",
+  "retainedOriginalFailure": "unit-reducer/checks/report.json remains9/13;repair-reducer-guards syntaxfailure preserved",
+  "checks": {
+    "reducer": {
+      "pass": 15,
+      "total": 15,
+      "checkerSha256": "6916cf95cd72144ce8842ac1212a4a496e137015e58e5bda939a2862a03d1182"
+    },
+    "hostStorage": {
+      "pass": 7,
+      "total": 7,
+      "checkerSha256": "37285b06f6949351667e9c12bcd1fe6f1cb151c931c320ab6691c28550c9e3b9"
+    }
+  },
+  "scope": "Fresh dependency acceptance matches actual accepted localmodule bytes and explicitlyhost storage bytes,not UIflow/style/refquality. Assembly must recheck these bindings."
+}

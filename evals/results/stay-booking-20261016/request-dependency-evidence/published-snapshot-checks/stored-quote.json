@@ -1,0 +1,46 @@
+{
+  "rows": [
+    {
+      "name": "only the contracted export is present",
+      "pass": true
+    },
+    {
+      "name": "actual accepted quote is valid and unchanged",
+      "pass": true
+    },
+    {
+      "name": "past dates and removed catalogue IDs remain readable snapshots",
+      "pass": true
+    },
+    {
+      "name": "all other JSON top-level shapes return false",
+      "pass": true
+    },
+    {
+      "name": "each required field and every unknown field is enforced",
+      "pass": true
+    },
+    {
+      "name": "IDs have strict string identity boundaries",
+      "pass": true
+    },
+    {
+      "name": "calendar validity and exact1to28night duration",
+      "pass": true
+    },
+    {
+      "name": "guest capacity and integer bounds reject coercion",
+      "pass": true
+    },
+    {
+      "name": "all monetary fields are nonnegative safe integers with exact safe arithmetic",
+      "pass": true
+    },
+    {
+      "name": "inclusions are booleans rather than truthy values",
+      "pass": true
+    }
+  ],
+  "pass": 10,
+  "total": 10
+}

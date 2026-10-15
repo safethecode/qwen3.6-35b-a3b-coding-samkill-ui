@@ -1,0 +1,18 @@
+{
+  "elapsedMs": 12958,
+  "model": "qwen3.6:35b-a3b-coding",
+  "created_at": "2026-10-15T21:06:31.4094844Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\n  \"commandValidExpression\": \"Object.keys(command).length === allowedCommandKeys.length && allowedCommandKeys.every(k => Object.hasOwn(command, k)) && operationId === trimmedOpId && (isCreate || (Number.isSafeInteger(expectedRevision) && expectedRevision >= 1 && expectedRevision <= 1000))\",\n  \"atCapacityExpression\": \"isCreate && !existingRecord && records.length >= 500\"\n}"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 12952178000,
+  "load_duration": 6463000,
+  "prompt_eval_count": 898,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration": 10115656000,
+  "eval_count": 96,
+  "eval_duration": 2705140000
+}

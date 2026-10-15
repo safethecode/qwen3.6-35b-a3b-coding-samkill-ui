@@ -1,0 +1,18 @@
+{
+  "elapsedMs": 47910,
+  "model": "qwen3.6:35b-a3b-coding",
+  "created_at": "2026-10-15T21:03:48.7776423Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\n  \"commandGuard\": \"if (isCreate && new Set([\\\"kind\\\",\\\"operationId\\\",\\\"id\\\",\\\"at\\\",\\\"quote\\\",\\\"snapshot\\\",\\\"guest\\\"]).size !== Object.keys(command).length) return {ok:false,error:\\\"INVALID_COMMAND\\\"}; if (isUpdate && Object.keys(command).length !== 7) return {ok:false,error:\\\"INVALID_COMMAND\\\"}; if (isCancel && Object.keys(command).length !== 5) return {ok:false,error:\\\"INVALID_COMMAND\\\"}; if (isUpdate && typeof expectedRevision !== 'number' || !Number.isSafeInteger(expectedRevision) || expectedRevision < 1 || expectedRevision > 1000) return {ok:false,error:\\\"INVALID_COMMAND\\\"}; if (isCancel && typeof expectedRevision !== 'number' || !Number.isSafeInteger(expectedRevision) || expectedRevision < 1 || expectedRevision > 1000) return {ok:false,error:\\\"INVALID_COMMAND\\\"};\",\n  \"payloadGuard\": \"if (isCreate || isUpdate) { const candidate = { version: 1, id, status: \\\"saved\\\", revision: 1, createdAt: at, updatedAt: at, quote, snapshot, guest, operations: [operationId] }; if (!isValidRequestStore([candidate])) return {ok:false,error:\\\"INVALID_COMMAND\\\"}; }\",\n  \"replayGuard\": \"const ownerIndex = records.findIndex(r => r.operations.includes(operationId)); if (ownerIndex !== -1) { if (records[ownerIndex].id !== id) return {ok:false,error:\\\"INVALID_COMMAND\\\"}; return {ok:true,records:structuredClone(records),id,duplicate:true}; }\",\n  \"capacityGuard\": \"if (isCreate && !existingRecord && records.length >= 500) return {ok:false,error:\\\"INVALID_COMMAND\\\"}; }\"\n}"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 47901988800,
+  "load_duration": 17526856000,
+  "prompt_eval_count": 1542,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration": 17237262000,
+  "eval_count": 381,
+  "eval_duration": 13123282000
+}

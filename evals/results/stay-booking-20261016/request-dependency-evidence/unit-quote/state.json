@@ -1,0 +1,6 @@
+{
+  "status": "FAILED_REQUEST_OR_VALIDATION",
+  "pid": 41216,
+  "at": "2026-10-15T19:13:25.409Z",
+  "error": "Cannot read properties of undefined (reading 'signal')"
+}

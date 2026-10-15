@@ -1,0 +1,55 @@
+{
+  "rows": [
+    {
+      "name": "single exact contracted export",
+      "pass": true
+    },
+    {
+      "name": "empty and actual single request are valid without mutation",
+      "pass": true
+    },
+    {
+      "name": "malformed top-level or any record cannot become confirmed empty",
+      "pass": true
+    },
+    {
+      "name": "record exact own fields and version",
+      "pass": true
+    },
+    {
+      "name": "record identity and supported states only",
+      "pass": true
+    },
+    {
+      "name": "timestamps must be canonical and monotonic",
+      "pass": true
+    },
+    {
+      "name": "quotes are validated structurally and past or removed property snapshots remain readable",
+      "pass": true
+    },
+    {
+      "name": "snapshot has exact five strict human-readable values",
+      "pass": true
+    },
+    {
+      "name": "guest name and optional note preserve explicit bounds and text",
+      "pass": true
+    },
+    {
+      "name": "revision and operation history have matching bounded exact identities",
+      "pass": false,
+      "error": "Expected values to be strictly equal:\n\ntrue !== false\n"
+    },
+    {
+      "name": "IDs and operation tokens are unique across the whole store",
+      "pass": true
+    },
+    {
+      "name": "store size over500 is rejected without truncating valid records",
+      "pass": true
+    }
+  ],
+  "pass": 11,
+  "total": 12
+}

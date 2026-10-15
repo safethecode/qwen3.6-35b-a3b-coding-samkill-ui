@@ -1,0 +1,72 @@
+{
+  "rows": [
+    {
+      "name": "single exact contracted export",
+      "pass": true
+    },
+    {
+      "name": "create makes exact snapshot and preserves unrelated input records",
+      "pass": true
+    },
+    {
+      "name": "create retries never duplicate records",
+      "pass": false,
+      "error": "Expected values to be strictly equal:\n\nfalse !== true\n"
+    },
+    {
+      "name": "invalid original store is always rejected before a command",
+      "pass": true
+    },
+    {
+      "name": "all command kinds enforce exact keys and strict IDs, tokens and time",
+      "pass": false,
+      "error": "Expected values to be strictly deep-equal:\n+ actual - expected\n\n  {\n+   duplicate: false,\n+   id: 'new-request',\n+   ok: true,\n+   records: [\n+     {\n+       createdAt: '2026-10-16T04:00:00.000Z',\n+       guest: {\n+         name: '다른 가상 예약자',\n+         note: '메모'\n+       },\n+       id: 'new-request',\n+       operations: [\n+         'create-operation'\n+       ],\n+       quote: {\n+         breakfast: false,\n+         capacity: 2,\n+         cleaningFee: 20000,\n+         end: '2026-11-08',\n+         freeCancellation: true,\n+         guests: 2,\n+         nightly: 148000,\n+         nights: 2,\n+         rateId: 'afternoon-standard-flex',\n+         roomId: 'afternoon-standard',\n+         serviceFee: 14800,\n+         start: '2026-11-06',\n+         stayId: 'afternoon',\n+         total: 330800\n+       },\n+       revision: 1,\n+       snapshot: {\n+         bed: '더블 침대 1개',\n+         city: '강릉',\n+         rateName: '무료 취소',\n+         roomName: '스탠다드 더블',\n+         stayName: '오후의 방'\n+       },\n+       status: 'saved',\n+       updatedAt: '2026-10-16T04:00:00.000Z',\n+       version: 1\n+     }\n+   ]\n-   error: 'INVALID_COMMAND',\n-   ok: false\n  }\n"
+    },
+    {
+      "name": "invalid quote, guest or snapshot cannot be stored",
+      "pass": true
+    },
+    {
+      "name": "existing identity and cross-record operation reuse cannot overwrite records",
+      "pass": false,
+      "error": "Expected values to be strictly deep-equal:\n+ actual - expected\n\n  {\n+   duplicate: false,\n+   id: 'new-request',\n+   ok: true,\n+   records: [\n+     {\n+       createdAt: '2026-10-16T03:00:00.000Z',\n+       guest: {\n+         name: '가상 예약자',\n+         note: ''\n+       },\n+       id: 'request-one',\n+       operations: [\n+         'operation-one'\n+       ],\n+       quote: {\n+         breakfast: false,\n+         capacity: 2,\n+         cleaningFee: 20000,\n+         end: '2026-11-08',\n+         freeCancellation: true,\n+         guests: 2,\n+         nightly: 148000,\n+         nights: 2,\n+         rateId: 'afternoon-standard-flex',\n+         roomId: 'afternoon-standard',\n+         serviceFee: 14800,\n+         start: '2026-11-06',\n+         stayId: 'afternoon',\n+         total: 330800\n+       },\n+       revision: 1,\n+       snapshot: {\n+         bed: '더블 침대 1개',\n+         city: '강릉',\n+         rateName: '무료 취소',\n+         roomName: '스탠다드 더블',\n+         stayName: '오후의 방'\n+       },\n+       status: 'saved',\n+       updatedAt: '2026-10-16T03:00:00.000Z',\n+       version: 1\n+     },\n+     {\n+       createdAt: '2026-10-16T04:00:00.000Z',\n+       guest: {\n+         name: '다른 가상 예약자',\n+         note: '메모'\n+       },\n+       id: 'new-request',\n+       operations: [\n+         'operation-one'\n+       ],\n+       quote: {\n+         breakfast: false,\n+         capacity: 2,\n+         cleaningFee: 20000,\n+         end: '2026-11-08',\n+         freeCancellation: true,\n+         guests: 2,\n+         nig"
+    },
+    {
+      "name": "update preserves creation and snapshots independent deep-copy values",
+      "pass": true
+    },
+    {
+      "name": "missing records, malformed revisions and revision conflict are separate",
+      "pass": true
+    },
+    {
+      "name": "cancel preserves quote and guest while changing only local request state",
+      "pass": true
+    },
+    {
+      "name": "applied update and cancel retry are recognized before stale revision or status",
+      "pass": true
+    },
+    {
+      "name": "time cannot move backwards and past historical trips can be cancelled",
+      "pass": true
+    },
+    {
+      "name": "store and revision limits do not corrupt existing history",
+      "pass": false,
+      "error": "Expected values to be strictly deep-equal:\n+ actual - expected\n\n  {\n+   duplicate: false,\n+   id: 'new-request',\n+   ok: true,\n+   records: [\n+     {\n+       createdAt: '2026-10-16T03:00:00.000Z',\n+       guest: {\n+         name: '가상 예약자',\n+         note: ''\n+       },\n+       id: 'request-0',\n+       operations: [\n+         'op-0'\n+       ],\n+       quote: {\n+         breakfast: false,\n+         capacity: 2,\n+         cleaningFee: 20000,\n+         end: '2026-11-08',\n+         freeCancellation: true,\n+         guests: 2,\n+         nightly: 148000,\n+         nights: 2,\n+         rateId: 'afternoon-standard-flex',\n+         roomId: 'afternoon-standard',\n+         serviceFee: 14800,\n+         start: '2026-11-06',\n+         stayId: 'afternoon',\n+         total: 330800\n+       },\n+       revision: 1,\n+       snapshot: {\n+         bed: '더블 침대 1개',\n+         city: '강릉',\n+         rateName: '무료 취소',\n+         roomName: '스탠다드 더블',\n+         stayName: '오후의 방'\n+       },\n+       status: 'saved',\n+       updatedAt: '2026-10-16T03:00:00.000Z',\n+       version: 1\n+     },\n+     {\n+       createdAt: '2026-10-16T03:00:00.000Z',\n+       guest: {\n+         name: '가상 예약자',\n+         note: ''\n+       },\n+       id: 'request-1',\n+       operations: [\n+         'op-1'\n+       ],\n+       quote: {\n+         breakfast: false,\n+         capacity: 2,\n+         cleaningFee: 20000,\n+         end: '2026-11-08',\n+         freeCancellation: true,\n+         guests: 2,\n+         nightly: 148000,\n+         nig"
+    },
+    {
+      "name": "malformed replay commands cannot bypass exact-key,revision or payload validation",
+      "pass": false,
+      "error": "Expected values to be strictly deep-equal:\n+ actual - expected\n\n  {\n+   error: 'CONFLICT',\n-   error: 'INVALID_COMMAND',\n    ok: false\n  }\n"
+    },
+    {
+      "name": "an already applied create remains idempotent at full store capacity",
+      "pass": false,
+      "error": "Expected values to be strictly equal:\n\nfalse !== true\n"
+    }
+  ],
+  "pass": 9,
+  "total": 15
+}

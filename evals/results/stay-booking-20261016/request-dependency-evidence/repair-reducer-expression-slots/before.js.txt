@@ -1,0 +1,156 @@
+import { isValidRequestStore } from './request-store.js';
+
+export function applyRequest(records, command) {
+  try {
+    if (!isValidRequestStore(records)) {
+      return { ok: false, error: 'INVALID_STORE' };
+    }
+
+    if (!command || typeof command !== 'object' || Array.isArray(command)) {
+      return { ok: false, error: 'INVALID_COMMAND' };
+    }
+
+    const { kind, operationId, id, at, expectedRevision, quote, snapshot, guest } = command;
+
+    if (typeof kind !== 'string' || !['create', 'update', 'cancel'].includes(kind)) {
+      return { ok: false, error: 'INVALID_COMMAND' };
+    }
+
+    const trimmedOpId = operationId === null || typeof operationId !== 'string' ? '' : operationId.trim();
+    if (trimmedOpId.length === 0 || trimmedOpId.length > 128) {
+      return { ok: false, error: 'INVALID_COMMAND' };
+    }
+
+    const isCreate = kind === 'create';
+    const isUpdate = kind === 'update';
+    const isCancel = kind === 'cancel';
+
+    if (isCreate || isUpdate || isCancel) {
+      if (!id || typeof id !== 'string' || id.trim().length === 0 || id.trim().length > 128 || id.trim() !== id) {
+        return { ok: false, error: 'INVALID_COMMAND' };
+      }
+    }
+
+    const trimmedId = id.trim();
+
+    if (at === null || typeof at !== 'string') {
+      return { ok: false, error: 'INVALID_COMMAND' };
+    }
+    const parsedAt = Date.parse(at);
+    if (isNaN(parsedAt) || new Date(parsedAt).toISOString() !== at) {
+      return { ok: false, error: 'INVALID_COMMAND' };
+    }
+
+    let existingRecord = null;
+    let existingIndex = -1;
+    for (let i = 0; i < records.length; i++) {
+      if (records[i].id === trimmedId) {
+        existingRecord = records[i];
+        existingIndex = i;
+        break;
+      }
+    }
+
+    if (isCreate) {
+      if (existingRecord !== null) {
+        return { ok: false, error: 'CONFLICT' };
+      }
+      if (!quote || !snapshot || !guest) {
+        return { ok: false, error: 'INVALID_COMMAND' };
+      }
+      const candidate = {
+        version: 1,
+        id: trimmedId,
+        revision: 1,
+        status: 'saved',
+        createdAt: at,
+        updatedAt: at,
+        quote: JSON.parse(JSON.stringify(quote)),
+        snapshot: JSON.parse(JSON.stringify(snapshot)),
+        guest: JSON.parse(JSON.stringify(guest)),
+        operations: [trimmedOpId]
+      };
+      if (!isValidRequestStore([candidate])) {
+        return { ok: false, error: 'INVALID_COMMAND' };
+      }
+      const newRecords = JSON.parse(JSON.stringify(records));
+      newRecords.push(candidate);
+      return { ok: true, records: newRecords, id: trimmedId, duplicate: false };
+    }
+
+    if (existingRecord === null) {
+      return { ok: false, error: 'NOT_FOUND' };
+    }
+
+    const existingOps = existingRecord.operations || [];
+    if (existingOps.includes(trimmedOpId)) {
+      return { ok: true, records: JSON.parse(JSON.stringify(records)), id: trimmedId, duplicate: true };
+    }
+
+    for (const rec of records) {
+      if (rec.operations && rec.operations.includes(trimmedOpId)) {
+        return { ok: false, error: 'INVALID_COMMAND' };
+      }
+    }
+
+    if (existingRecord.status === 'cancelled') {
+      return { ok: false, error: 'CANCELLED' };
+    }
+
+    if (parsedAt < new Date(existingRecord.updatedAt).getTime()) {
+      return { ok: false, error: 'INVALID_COMMAND' };
+    }
+
+    if (isUpdate) {
+      if (!quote || !snapshot || !guest) {
+        return { ok: false, error: 'INVALID_COMMAND' };
+      }
+      const expRev = expectedRevision;
+      if (expRev === null || typeof expRev !== 'number' || !Number.isSafeInteger(expRev) || expRev < 1 || expRev > 1000) {
+        return { ok: false, error: 'INVALID_COMMAND' };
+      }
+      if (existingRecord.revision !== expRev) {
+        return { ok: false, error: 'CONFLICT' };
+      }
+      const newRevision = existingRecord.revision + 1;
+      const newRecords = JSON.parse(JSON.stringify(records));
+      const updatedRec = newRecords[existingIndex];
+      updatedRec.revision = newRevision;
+      updatedRec.status = 'saved';
+      updatedRec.quote = JSON.parse(JSON.stringify(quote));
+      updatedRec.snapshot = JSON.parse(JSON.stringify(snapshot));
+      updatedRec.guest = JSON.parse(JSON.stringify(guest));
+      updatedRec.operations = [...existingOps, trimmedOpId];
+      updatedRec.updatedAt = at;
+      if (!isValidRequestStore(newRecords)) {
+        return { ok: false, error: 'INVALID_COMMAND' };
+      }
+      return { ok: true, records: newRecords, id: trimmedId, duplicate: false };
+    }
+
+    if (isCancel) {
+      const expRev = expectedRevision;
+      if (expRev === null || typeof expRev !== 'number' || !Number.isSafeInteger(expRev) || expRev < 1 || expRev > 1000) {
+        return { ok: false, error: 'INVALID_COMMAND' };
+      }
+      if (existingRecord.revision !== expRev) {
+        return { ok: false, error: 'CONFLICT' };
+      }
+      const newRevision = existingRecord.revision + 1;
+      const newRecords = JSON.parse(JSON.stringify(records));
+      const cancelledRec = newRecords[existingIndex];
+      cancelledRec.revision = newRevision;
+      cancelledRec.status = 'cancelled';
+      cancelledRec.operations = [...existingOps, trimmedOpId];
+      cancelledRec.updatedAt = at;
+      if (!isValidRequestStore(newRecords)) {
+        return { ok: false, error: 'INVALID_COMMAND' };
+      }
+      return { ok: true, records: newRecords, id: trimmedId, duplicate: false };
+    }
+
+    return { ok: false, error: 'INVALID_COMMAND' };
+  } catch (e) {
+    return { ok: false, error: 'INVALID_COMMAND' };
+  }
+}

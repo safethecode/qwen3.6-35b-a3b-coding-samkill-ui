@@ -1,0 +1,24 @@
+import assert from 'node:assert/strict';
+import { readFile, mkdir, writeFile } from 'node:fs/promises';
+import { resolve } from 'node:path';
+import { pathToFileURL } from 'node:url';
+const [target, out] = process.argv.slice(2);
+await mkdir(out, { recursive: true });
+const { record } = JSON.parse(await readFile(target + '/booking-fixtures.json', 'utf8'));
+const namespace = await import(pathToFileURL(resolve(target, 'request-store.js'))).catch(error => ({ missing: error.code })), valid = namespace.isValidRequestStore, rows = [];
+function check(name, action) { try { action(); rows.push({ name, pass: true }); } catch (error) { rows.push({ name, pass: false, error: error.message }); } }
+check('single exact contracted export', () => assert.deepEqual(Object.keys(namespace), ['isValidRequestStore']));
+check('empty and actual single request are valid without mutation', () => { assert.equal(valid([]), true); const input = [structuredClone(record)], before = JSON.stringify(input); assert.equal(valid(input), true); assert.equal(JSON.stringify(input), before); });
+check('malformed top-level or any record cannot become confirmed empty', () => { for (const x of [null, {}, '[]', 0, true, [null], [[]], [{}], [record, null]]) assert.equal(valid(x), false); });
+check('record exact own fields and version', () => { for (const key of Object.keys(record)) { const x = structuredClone(record); delete x[key]; assert.equal(valid([x]), false, key); } for (const x of [{ ...record, version: '1' }, { ...record, version: 2 }, { ...record, extra: true }]) assert.equal(valid([x]), false); });
+check('record identity and supported states only', () => { for (const id of ['', ' ', ' id ', 2, null, 'a'.repeat(129)]) assert.equal(valid([{ ...record, id }]), false); for (const status of ['confirmed', 'paid', '', 0, null]) assert.equal(valid([{ ...record, status }]), false); assert.equal(valid([{ ...record, status: 'cancelled' }]), true); });
+check('timestamps must be canonical and monotonic', () => { for (const patch of [{ createdAt: 'yesterday' }, { updatedAt: '2026-10-16' }, { updatedAt: '2026-10-16T03:00:00Z' }, { updatedAt: '2026-10-15T03:00:00.000Z' }, { createdAt: 1790000000000 }, { updatedAt: '2026-02-30T00:00:00.000Z' }]) assert.equal(valid([{ ...record, ...patch }]), false); });
+check('quotes are validated structurally and past or removed property snapshots remain readable', () => { assert.equal(valid([{ ...record, quote: { ...record.quote, total: 1 } }]), false); assert.equal(valid([{ ...record, quote: { ...record.quote, stayId: 'removed', start: '2020-01-01', end: '2020-01-03' } }]), true); });
+check('snapshot has exact five strict human-readable values', () => { for (const key of Object.keys(record.snapshot)) { const snapshot = { ...record.snapshot }; delete snapshot[key]; assert.equal(valid([{ ...record, snapshot }]), false); for (const x of ['', ' ', ' value ', 2, null, '한'.repeat(201)]) assert.equal(valid([{ ...record, snapshot: { ...record.snapshot, [key]: x } }]), false); } assert.equal(valid([{ ...record, snapshot: { ...record.snapshot, photo: 'invented' } }]), false); });
+check('guest name and optional note preserve explicit bounds and text', () => { for (const guest of [{}, { name: '가상' }, { name: '', note: '' }, { name: ' a ', note: '' }, { name: 'a'.repeat(61), note: '' }, { name: '가상', note: 2 }, { name: '가상', note: 'a'.repeat(501) }, { name: '가상', note: '', phone: 'extra' }]) assert.equal(valid([{ ...record, guest }]), false); assert.equal(valid([{ ...record, guest: { name: '가상', note: '<img src=x onerror=alert(1)>' } }]), true); });
+check('revision and operation history have matching bounded exact identities', () => { for (const patch of [{ revision: 0 }, { revision: 1.5 }, { revision: '1' }, { revision: 1001 }, { revision: 2 }, { operations: [] }, { operations: [' operation-one '] }, { operations: [''] }, { revision: 2, operations: ['same', 'same'] }]) assert.equal(valid([{ ...record, ...patch }]), false); assert.equal(valid([{ ...record, revision: 2, operations: ['one', 'two'] }]), true); });
+check('IDs and operation tokens are unique across the whole store', () => { assert.equal(valid([record, record]), false); assert.equal(valid([record, { ...record, id: 'different' }]), false); assert.equal(valid([record, { ...record, id: 'different', operations: ['other-operation'] }]), true); });
+check('store size over500 is rejected without truncating valid records', () => { const input = Array.from({ length: 501 }, (_, i) => ({ ...structuredClone(record), id: 'request-' + i, operations: ['op-' + i] })); assert.equal(valid(input.slice(0, 500)), true); assert.equal(valid(input), false); assert.equal(input.length, 501); });
+await writeFile(out + '/report.json', JSON.stringify({ rows, pass: rows.filter(x => x.pass).length, total: rows.length }, null, 2));
+console.log(JSON.stringify(rows));
+process.exitCode = rows.every(x => x.pass) ? 0 : 1;

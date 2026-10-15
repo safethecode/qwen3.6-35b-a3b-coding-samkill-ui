@@ -1,0 +1,97 @@
+{
+  "at": "2026-10-15T21:46:43.643Z",
+  "stages": [
+    {
+      "folder": "unit-quote",
+      "status": "FAILED_REQUEST_OR_VALIDATION"
+    },
+    {
+      "folder": "unit-quote-bounded-preflight",
+      "status": "FAILED_DEPENDENCY_PRESERVED",
+      "checks": {
+        "pass": 9,
+        "total": 10
+      }
+    },
+    {
+      "folder": "repair-quote-identity",
+      "status": "FAILED_REQUEST_OR_VALIDATION"
+    },
+    {
+      "folder": "repair-quote-identity-slots",
+      "status": "SCOPED_LOCAL_REPAIR_ACCEPTED_NOT_PRODUCT_APPROVAL",
+      "checks": {
+        "pass": 10,
+        "total": 10
+      }
+    },
+    {
+      "folder": "unit-store",
+      "status": "FAILED_DEPENDENCY_PRESERVED",
+      "checks": {
+        "pass": 11,
+        "total": 12
+      }
+    },
+    {
+      "folder": "repair-store-identity-slots",
+      "status": "SCOPED_LOCAL_REPAIR_ACCEPTED_NOT_PRODUCT_APPROVAL",
+      "checks": {
+        "pass": 12,
+        "total": 12
+      }
+    },
+    {
+      "folder": "unit-reducer",
+      "status": "FAILED_DEPENDENCY_PRESERVED",
+      "checks": {
+        "pass": 9,
+        "total": 13
+      }
+    },
+    {
+      "folder": "repair-reducer-guards",
+      "status": "FAILED_STAGE"
+    },
+    {
+      "folder": "repair-reducer-expression-slots",
+      "status": "SCOPED_REDUCER_EXPRESSION_REPAIR_ACCEPTED",
+      "checks": {
+        "pass": 15,
+        "total": 15
+      }
+    },
+    {
+      "folder": "reducer-v2-red",
+      "status": "CHECK_REPORT_ONLY",
+      "checks": {
+        "pass": 9,
+        "total": 15
+      }
+    },
+    {
+      "folder": "storage-accepted",
+      "status": "CHECK_REPORT_ONLY",
+      "checks": {
+        "pass": 7,
+        "total": 7
+      }
+    }
+  ],
+  "finalPureChecks": {
+    "quote": 10,
+    "store": 12,
+    "reducer": 15,
+    "storage": 7,
+    "total": 44
+  },
+  "originalReducer": {
+    "pass": 9,
+    "total": 13
+  },
+  "expandedReducerRed": {
+    "pass": 9,
+    "total": 15
+  },
+  "scope": "Exactpublished dependency evidence and preservedfailures;not UI/reference/commercial approval."
+}

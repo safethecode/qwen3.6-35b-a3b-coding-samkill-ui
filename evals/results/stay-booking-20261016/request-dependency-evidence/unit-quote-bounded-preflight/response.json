@@ -1,0 +1,18 @@
+{
+  "elapsedMs": 55440,
+  "model": "qwen3.6:35b-a3b-coding",
+  "created_at": "2026-10-15T19:16:46.745102Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\"code\":\"import { parseStayDate, countNights } from './dates.js';\\n\\nexport function isValidStoredQuote(value) {\\n  if (value === null || typeof value !== 'object' || Array.isArray(value)) return false;\\n  const requiredKeys = [\\\"stayId\\\",\\\"roomId\\\",\\\"rateId\\\",\\\"start\\\",\\\"end\\\",\\\"guests\\\",\\\"nights\\\",\\\"nightly\\\",\\\"cleaningFee\\\",\\\"serviceFee\\\",\\\"total\\\",\\\"freeCancellation\\\",\\\"breakfast\\\",\\\"capacity\\\"];\\n  const keys = Object.keys(value);\\n  if (keys.length !== 14) return false;\\n  for (const k of requiredKeys) {\\n    if (!keys.includes(k)) return false;\\n  }\\n  if (typeof value.stayId !== 'string' || typeof value.roomId !== 'string' || typeof value.rateId !== 'string') return false;\\n  const s1 = value.stayId.trim();\\n  const s2 = value.roomId.trim();\\n  const s3 = value.rateId.trim();\\n  if (s1.length === 0 || s1.length > 128) return false;\\n  if (s2.length === 0 || s2.length > 128) return false;\\n  if (s3.length === 0 || s3.length > 128) return false;\\n  if (typeof value.start !== 'string' || typeof value.end !== 'string') return false;\\n  const nights = countNights(value.start, value.end);\\n  if (nights === null) return false;\\n  if (value.nights !== nights) return false;\\n  if (typeof value.guests !== 'number' || !Number.isInteger(value.guests) || value.guests < 1 || value.guests > 8) return false;\\n  if (typeof value.capacity !== 'number' || !Number.isInteger(value.capacity) || value.capacity < 1 || value.capacity > 8) return false;\\n  if (value.capacity < value.guests) return false;\\n  if (value.nights < 1 || value.nights > 28) return false;\\n  const safeInt = Number.isSafeInteger;\\n  const nonNeg = n => typeof n === 'number' && safeInt(n) && n >= 0;\\n  if (!nonNeg(value.nightly) || !nonNeg(value.cleaningFee) || !nonNeg(value.serviceFee) || !nonNeg(value.total)) return false;\\n  if (value.nightly * value.nights + value.cleaningFee + value.serviceFee !== value.total) return false;\\n  if (typeof value.freeCancellation !== 'boolean' || typeof value.breakfast !== 'boolean') return false;\\n  return true;\\n}\"}"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 55437915100,
+  "load_duration": 18588099500,
+  "prompt_eval_count": 1546,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration": 16372887000,
+  "eval_count": 595,
+  "eval_duration": 20462914000
+}

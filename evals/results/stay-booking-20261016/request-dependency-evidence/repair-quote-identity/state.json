@@ -1,0 +1,6 @@
+{
+  "status": "FAILED_REQUEST_OR_VALIDATION",
+  "pid": 6960,
+  "at": "2026-10-15T19:18:16.542Z",
+  "error": "The expression evaluated to a falsy value:\n\n  assert.ok(!/\\b(?:export|import|function|return true)\\b|\\/\\/|\\/\\*/.test(patch.new))\n"
+}

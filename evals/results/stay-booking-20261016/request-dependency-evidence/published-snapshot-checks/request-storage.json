@@ -1,0 +1,34 @@
+{
+  "rows": [
+    {
+      "name": "absent store is confirmed empty only after an actual read and is not seeded",
+      "pass": true
+    },
+    {
+      "name": "failed initial read blocks mutation until explicit load even after access restores",
+      "pass": true
+    },
+    {
+      "name": "malformed original bytes and nonempty unsupported shapes are preserved",
+      "pass": true
+    },
+    {
+      "name": "write failure keeps draft command and successful retry appends once",
+      "pass": true
+    },
+    {
+      "name": "applied write with lost acknowledgement is confirmed through actual stored operation identity",
+      "pass": true
+    },
+    {
+      "name": "postwrite read failure stays unknown until explicit reload and exact retry",
+      "pass": true
+    },
+    {
+      "name": "fresh store read detects concurrent revision instead of overwriting another tab",
+      "pass": true
+    }
+  ],
+  "pass": 7,
+  "total": 7
+}

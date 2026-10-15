@@ -1,0 +1,6 @@
+{
+  "status": "FAILED_STAGE",
+  "pid": 21188,
+  "at": "2026-10-15T21:03:48.843Z",
+  "error": "Missing catch or finally clause (4:2)"
+}
