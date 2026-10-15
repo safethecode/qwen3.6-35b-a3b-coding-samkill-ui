@@ -57,6 +57,12 @@ Both browser evaluation routes emit layout-contract evidence. Missing contracts 
 
 Geometry cannot establish reference-level quality. Inspect font appearance, icon states, density, rhythm, copy and complete responsive composition against the reference directly. Assess every active rule in the 75-rule catalog and all eight guides with evidence. Missing visual, interaction or asset evidence remains unknown even when every layout relation passes.
 
+## Read failure is a distinct state
+
+For persistent products, distinguish absent storage, successfully read empty data, malformed data, denied reads and failed writes. Never turn a failed initial read into permission to seed, create or overwrite the unreadable original. Preserve raw data and submitted input; require a successful reinitialization or an explicitly designed recovery flow before mutation. A normal write failure must still permit the product's existing retry behavior. Keep initialization readiness separate from the current error string.
+
+Assign one renderer to each state-bearing DOM node. Controllers must not overwrite the renderer's empty/error decision afterward. Unknown data is not a confirmed empty result. Test the complete sequence: initial read fails, create is attempted, original disk and input remain, reads become available, explicit reload restores the old record, then create succeeds. Test malformed data separately. Check the displayed recovery instruction as well as the write count: a read guard caught by a write-error catch can preserve data but show the wrong recovery action. Keep the read precondition outside that catch. Use these probes before accepting downstream UI modules; passing isolated store exports or a normal create/reload flow does not cover this transition.
+
 ## Resolve text sizing conflicts before generation
 
 A reference measurement describes a default-size state. For buttons, headings and other text-bearing regions, translate the observed height into a minimum height with natural growth unless the product explicitly requires a bounded scroll region. Keep exact dimensions for genuinely fixed visual assets or icon-only targets when appropriate. Do not pass a fixed text height to the local model while also requiring enlarged text to remain visible. Resolve that contradiction in the component plan before generation and record the plan change; do not silently weaken the text-stress requirement.
