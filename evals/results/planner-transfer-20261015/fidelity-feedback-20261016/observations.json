@@ -1,0 +1,25 @@
+{
+  "at": "2026-10-15T17:09:11.474Z",
+  "trigger": "User directly reports concept-only transfer at the existing62587comparison URL",
+  "inspection": "Existing browser tab AX and full-page screenshot directly inspected in thisturn. Native source294x640,rendered candidate390x900. No fresh originalCSS/DPR/font identity or runtime observed.",
+  "bindings": {
+    "comparison.html": "a1c79e9b888ff6fb5100a1fda51c7f61fd6663fb4df86d87a562f1ac47a14bd8",
+    "reference-0.jpg": "09875b826251cf34adb3a274c1dc4df7b1dcdfc69f2d02a32f862e46717e50c3",
+    "revalidation-current-checker/390-filled.png": "d08497de7c0308186ca34a6ca4080adc1b2f3255b5e8dbee6938d14bbe93f51c",
+    "final/source/index.html": "4c5156d32f29a829e9529063f11e670ce68b582f22a0e4ec63b3b394bfc1df52",
+    "final/source/styles.css": "09ebc31755bbf0f32b04b30358df5b439c8eea11b8421b2e72a962d9ef476de9"
+  },
+  "status": "FAIL_REFERENCE_FIDELITY_FOR_DISPLAYED_CANDIDATE",
+  "findings": [
+    "The reference week/month context becomes a different selected-day heading",
+    "Calendar date markers and category/task density differ substantially",
+    "Profile/social/advertising exclusions do not establish fidelity of the remaining composition",
+    "The comparison page displays a historical final/source iframe and a filled historical screenshot,while later scoped reading-priority outputs are elsewhere;they are not interchangeable evidence",
+    "The live iframe is confirmed empty while the supplied candidate image is filled;these states cannot jointly prove matched-state reference fidelity"
+  ],
+  "catalog": [
+    "RUI-16",
+    "RUI-17"
+  ],
+  "limits": "This is a scoped rejection of the displayed historical adaptation. It does not rewrite original inputs/reports,approve later candidates or replace the complex stay primary scope. A missing source font identity remains unknown,not a demonstrated wrong-family claim."
+}
