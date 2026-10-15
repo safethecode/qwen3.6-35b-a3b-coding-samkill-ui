@@ -1,0 +1,13 @@
+#review-view .booking-guest{padding-block:24px;display:flex;flex-direction:column;gap:16px;margin:0;}
+#review-view #edit-request-guest{display:flex;align-items:center;justify-content:space-between;gap:8px;width:100%;min-height:44px;padding:0;border:0;background:transparent;text-align:start;font:inherit;}
+#review-view #request-guest-summary{font-size:16px;font-weight:500;line-height:1.5;color:var(--muted);min-width:0;word-break:keep-all;overflow-wrap:anywhere;}
+#review-view #edit-request-guest img{width:20px;height:20px;flex-shrink:0;}
+#guest-dialog .booking-field{display:flex;flex-direction:column;gap:8px;margin-bottom:16px;}
+#guest-dialog label{font-size:16px;font-weight:600;line-height:1.5;}
+#guest-dialog .booking-optional{font-size:14px;font-weight:500;line-height:1.5;color:var(--muted);}
+#guest-dialog input,#guest-dialog textarea{font:inherit;font-size:16px;font-weight:500;line-height:1.5;width:100%;min-width:0;padding:12px;border:0;background:transparent;color:var(--text);}
+#guest-dialog textarea{min-height:88px;resize:vertical;}
+#guest-dialog textarea:focus{outline:none;}
+#guest-dialog .sheet-heading h2{flex:1;min-width:0;word-break:keep-all;overflow-wrap:anywhere;}
+#guest-dialog .sheet-heading button{flex-shrink:0;word-break:keep-all;min-width:44px;}
+#guest-form-error{font-size:16px;font-weight:500;line-height:1.5;color:var(--error);min-width:0;word-break:keep-all;overflow-wrap:anywhere;}

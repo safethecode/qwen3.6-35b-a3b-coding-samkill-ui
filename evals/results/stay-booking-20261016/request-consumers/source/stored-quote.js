@@ -1,0 +1,31 @@
+import { parseStayDate, countNights } from './dates.js';
+
+export function isValidStoredQuote(value) {
+  if (value === null || typeof value !== 'object' || Array.isArray(value)) return false;
+  const requiredKeys = ["stayId","roomId","rateId","start","end","guests","nights","nightly","cleaningFee","serviceFee","total","freeCancellation","breakfast","capacity"];
+  const keys = Object.keys(value);
+  if (keys.length !== 14) return false;
+  for (const k of requiredKeys) {
+    if (!keys.includes(k)) return false;
+  }
+  if (typeof value.stayId !== 'string' || typeof value.roomId !== 'string' || typeof value.rateId !== 'string') return false;
+  const s1 = value.stayId.trim();
+  const s2 = value.roomId.trim();
+  const s3 = value.rateId.trim();
+if (value.stayId.trim() !== value.stayId || value.stayId.length === 0 || value.stayId.length > 128) return false;
+  if (value.roomId.trim() !== value.roomId || value.roomId.length === 0 || value.roomId.length > 128) return false;
+  if (value.rateId.trim() !== value.rateId || value.rateId.length === 0 || value.rateId.length > 128) return false;  if (typeof value.start !== 'string' || typeof value.end !== 'string') return false;
+  const nights = countNights(value.start, value.end);
+  if (nights === null) return false;
+  if (value.nights !== nights) return false;
+  if (typeof value.guests !== 'number' || !Number.isInteger(value.guests) || value.guests < 1 || value.guests > 8) return false;
+  if (typeof value.capacity !== 'number' || !Number.isInteger(value.capacity) || value.capacity < 1 || value.capacity > 8) return false;
+  if (value.capacity < value.guests) return false;
+  if (value.nights < 1 || value.nights > 28) return false;
+  const safeInt = Number.isSafeInteger;
+  const nonNeg = n => typeof n === 'number' && safeInt(n) && n >= 0;
+  if (!nonNeg(value.nightly) || !nonNeg(value.cleaningFee) || !nonNeg(value.serviceFee) || !nonNeg(value.total)) return false;
+  if (value.nightly * value.nights + value.cleaningFee + value.serviceFee !== value.total) return false;
+  if (typeof value.freeCancellation !== 'boolean' || typeof value.breakfast !== 'boolean') return false;
+  return true;
+}

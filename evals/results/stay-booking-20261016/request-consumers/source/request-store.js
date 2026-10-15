@@ -1,0 +1,68 @@
+import { isValidStoredQuote } from './stored-quote.js';
+
+export function isValidRequestStore(value) {
+  if (value === null || typeof value !== 'object' || Array.isArray(value) === false) return false;
+  const len = value.length;
+  if (len > 500) return false;
+  const seenIds = new Set();
+  const allOps = new Set();
+  for (let i = 0; i < len; i++) {
+    const rec = value[i];
+    if (rec === null || typeof rec !== 'object' || Array.isArray(rec)) return false;
+    const keys = Object.keys(rec);
+    if (keys.length !== 10) return false;
+    if (keys.includes('version') === false || keys.includes('id') === false || keys.includes('revision') === false || keys.includes('status') === false || keys.includes('createdAt') === false || keys.includes('updatedAt') === false || keys.includes('quote') === false || keys.includes('snapshot') === false || keys.includes('guest') === false || keys.includes('operations') === false) return false;
+    if (rec.version !== 1) return false;
+    const rid = rec.id;
+    if (typeof rid !== 'string') return false;
+    const tRid = rid.trim();
+    if (tRid.length === 0 || tRid.length > 128 || tRid !== rid) return false;
+    if (seenIds.has(tRid)) return false;
+    seenIds.add(tRid);
+    const rev = rec.revision;
+    if (Number.isSafeInteger(rev) === false || rev < 1 || rev > 1000) return false;
+    if (rec.status !== 'saved' && rec.status !== 'cancelled') return false;
+    const cAt = rec.createdAt;
+    const uAt = rec.updatedAt;
+    if (typeof cAt !== 'string' || typeof uAt !== 'string') return false;
+    const d1 = Date.parse(cAt);
+    const d2 = Date.parse(uAt);
+    if (isNaN(d1) || isNaN(d2)) return false;
+    if (new Date(d1).toISOString() !== cAt || new Date(d2).toISOString() !== uAt) return false;
+    if (d1 > d2) return false;
+    if (isValidStoredQuote(rec.quote) === false) return false;
+    const snap = rec.snapshot;
+    if (snap === null || typeof snap !== 'object' || Array.isArray(snap)) return false;
+    const sKeys = Object.keys(snap);
+    if (sKeys.length !== 5) return false;
+    if (sKeys.includes('stayName') === false || sKeys.includes('roomName') === false || sKeys.includes('rateName') === false || sKeys.includes('city') === false || sKeys.includes('bed') === false) return false;
+    const snapFields = ['stayName', 'roomName', 'rateName', 'city', 'bed'];
+    for (const sf of snapFields) {
+      const v = snap[sf];
+      if (typeof v !== 'string') return false;
+      const tv = v.trim();
+      if (tv.length === 0 || tv.length > 200 || tv !== v) return false;
+    }
+    const g = rec.guest;
+    if (g === null || typeof g !== 'object' || Array.isArray(g)) return false;
+    const gKeys = Object.keys(g);
+    if (gKeys.length !== 2) return false;
+    if (gKeys.includes('name') === false || gKeys.includes('note') === false) return false;
+    const gName = g.name;
+    if (typeof gName !== 'string') return false;
+    const tgName = gName.trim();
+    if (tgName.length === 0 || tgName.length > 60 || tgName !== gName) return false;
+    const gNote = g.note;
+    if (typeof gNote !== 'string') return false;
+    if (gNote.length > 500) return false;
+    const ops = rec.operations;
+if (ops === null || typeof ops !== 'object' || Array.isArray(ops) === false || ops.length !== rev) return false;    for (const op of ops) {
+      if (typeof op !== 'string') return false;
+      const top = op.trim();
+      if (top.length === 0 || top.length > 128 || top !== op) return false;
+      if (allOps.has(top)) return false;
+      allOps.add(top);
+    }
+  }
+  return true;
+}

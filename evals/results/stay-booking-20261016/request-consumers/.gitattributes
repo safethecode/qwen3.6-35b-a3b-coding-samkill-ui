@@ -1,0 +1,4 @@
+* -text
+*.log -whitespace
+source/query.js -whitespace
+source/assets/fonts/*OFL.txt -whitespace

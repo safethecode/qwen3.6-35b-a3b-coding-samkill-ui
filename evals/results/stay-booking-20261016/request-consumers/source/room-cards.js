@@ -1,0 +1,48 @@
+export function renderRoomChoices({ container, template, stay, quotes, selectedRateId, onOpen }) {
+  const money = (n) => n.toLocaleString("ko-KR") + "원";
+  const fragment = document.createDocumentFragment();
+
+  stay.rooms.forEach((room) => {
+    const roomQuotes = quotes.filter((q) => q.roomId === room.id);
+    if (!roomQuotes.length) return;
+
+const summaryQuote = roomQuotes.find(q => q.rateId === selectedRateId) || roomQuotes.reduce((a, b) => a.total < b.total ? a : b);
+    const isSelected = roomQuotes.some((q) => q.rateId === selectedRateId);
+
+    const clone = template.content.firstElementChild.cloneNode(true);
+    const article = clone;
+    const titleBtn = clone.querySelector("[data-open-room]");
+    const nameSpan = clone.querySelector("[data-room-name]");
+    const photoImg = clone.querySelector("[data-room-photo]");
+    const bedSpan = clone.querySelector("[data-room-bed]");
+    const capSpan = clone.querySelector("[data-room-capacity]");
+    const nightlySpan = clone.querySelector("[data-room-nightly]");
+    const totalP = clone.querySelector("[data-room-total]");
+    const selectedP = clone.querySelector("[data-room-selected]");
+
+    article.dataset.roomId = room.id;
+    titleBtn.dataset.roomId = room.id;
+    titleBtn.addEventListener("click", () => onOpen(room.id));
+
+    nameSpan.textContent = room.name;
+    photoImg.src = room.photo;
+    photoImg.alt = room.photoAlt;
+    bedSpan.textContent = room.bed;
+    capSpan.textContent = "최대 " + room.capacity + "명";
+
+nightlySpan.textContent = money(summaryQuote.nightly);
+totalP.textContent = `${summaryQuote.nights}박 총 ${money(summaryQuote.total)} · 수수료 포함`; clone.querySelector('.room-price > p > span').textContent = isSelected ? ' /박' : ' /박부터';
+
+    if (isSelected) {
+      const matchedRate = stay.rooms.find((r) => r.id === room.id).rates.find((r) => r.id === selectedRateId);
+      selectedP.textContent = "선택한 요금 · " + matchedRate.name;
+      selectedP.hidden = false;
+    } else {
+      selectedP.hidden = true;
+    }
+
+    fragment.append(article);
+  });
+
+  container.replaceChildren(...fragment.childNodes);
+}

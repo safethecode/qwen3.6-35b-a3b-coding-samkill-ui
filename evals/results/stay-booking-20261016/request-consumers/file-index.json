@@ -1,0 +1,466 @@
+{
+  "algorithm": "sha256",
+  "scope": "Exact published bytes; index excludes itself. Functional evidence does not establish visual approval.",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 95,
+      "sha256": "a359b78574825ac2a718bd0e4257ea4583e9b65bb0ddb09542bab786c263ae9c"
+    },
+    {
+      "path": "checks/browser-harness.mjs",
+      "bytes": 2979,
+      "sha256": "bd13ed1b2269b9ac6b030dae713a985371d86fcc30ca820b6291f569f3ab3084"
+    },
+    {
+      "path": "checks/capture-form.mjs",
+      "bytes": 6300,
+      "sha256": "2a454facc9e1259695be73929b70a4650a87aa9723a4ea5d665bd5bc17140874"
+    },
+    {
+      "path": "checks/capture-request-consumers-v2.mjs",
+      "bytes": 11499,
+      "sha256": "7ec9643030ec3380cfd2cd5e77c41b260971e3f02d9e3e69f0eb32142bd1c256"
+    },
+    {
+      "path": "checks/check-cancel-date-layout.mjs",
+      "bytes": 3574,
+      "sha256": "e0855dcee53c2cb10dd8774d410cbea9d7699c0aa27ef5a29a0381677c5c0b6f"
+    },
+    {
+      "path": "checks/check-connected-static.mjs",
+      "bytes": 3850,
+      "sha256": "7b60edd674b9ed157723d6565c33ec7beee684f7feff3b59e9848ce0d45230b1"
+    },
+    {
+      "path": "checks/check-core-workflows-b2.mjs",
+      "bytes": 9875,
+      "sha256": "87613593fd80b59c4f8d15720e08561b2a80567d290e53436fb0f929e985f9c8"
+    },
+    {
+      "path": "checks/check-guest-consumer.mjs",
+      "bytes": 5198,
+      "sha256": "37e9f25f7e9b6aeedff649e41f219a5b13761fc31c480c13e0348a26a927d415"
+    },
+    {
+      "path": "checks/check-guest-route.mjs",
+      "bytes": 4027,
+      "sha256": "c4157d49501169c7c9e58cd425ad9c3c39f29e81711539d425f8b94eba4bddbe"
+    },
+    {
+      "path": "checks/check-header-leading.mjs",
+      "bytes": 3171,
+      "sha256": "698cec0b45b6432c9fcf2ef3b6c6a10c87e5b1234565c37f8c1605d5784dda8a"
+    },
+    {
+      "path": "checks/check-request-font-states.mjs",
+      "bytes": 6403,
+      "sha256": "6fda875641a16253bbe7165595cd8045e801bae9e3825d55c0f9ae6662f0fa1d"
+    },
+    {
+      "path": "checks/check-request-workflows-v4.mjs",
+      "bytes": 24178,
+      "sha256": "c581e48a05a6ffe2663331a38363a78996a80809ca7437081527ccf4849d577d"
+    },
+    {
+      "path": "checks/check-room-workflows-v3.mjs",
+      "bytes": 9933,
+      "sha256": "e84a83d02a7f7f9527af7cf779535dbb6061fbae79e334a776e0817220674705"
+    },
+    {
+      "path": "portable-derivatives.json",
+      "bytes": 4082,
+      "sha256": "d4d80fac9441be80e4a37e075e8d85ba710e4d1590c041df392bf6d84c07e199"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4012,
+      "sha256": "72cb7329e2c3947e5f45c4492eb8325a6b8e0cc2e94cde869cca1ae95920011f"
+    },
+    {
+      "path": "serve.mjs",
+      "bytes": 1274,
+      "sha256": "8a6d8fb969d720a26ead52f49d4d8d64baa96172cd4a43b5dba336001085d637"
+    },
+    {
+      "path": "source/app.js",
+      "bytes": 1996,
+      "sha256": "f1b17e685561d5c4c0597e726560031276576d170a10a22b4c76434c631fcbbd"
+    },
+    {
+      "path": "source/assets/fonts/METADATA.pb",
+      "bytes": 767,
+      "sha256": "9b8b27c0dd1adbb0057d1fbe9534207ab3606114ace6755453d14668912471a1"
+    },
+    {
+      "path": "source/assets/fonts/NotoColorEmoji-OFL.txt",
+      "bytes": 4301,
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    {
+      "path": "source/assets/fonts/NotoColorEmoji.ttf",
+      "bytes": 4991984,
+      "sha256": "0ae57fe58645638523ba35f388d93739d292539a9acb84df5700c81b1e1a28d2"
+    },
+    {
+      "path": "source/assets/fonts/NotoEmoji-METADATA.pb",
+      "bytes": 12386,
+      "sha256": "88d5f22b863f40f1e0f14484e018cd93c5e0d899e80523d84351483b2bd3d993"
+    },
+    {
+      "path": "source/assets/fonts/NotoEmoji-OFL.txt",
+      "bytes": 4330,
+      "sha256": "500bb1ccf43df7bbb522112f9133a52b16e1c35e809632f5d8609b179152de5b"
+    },
+    {
+      "path": "source/assets/fonts/NotoEmoji.ttf",
+      "bytes": 1982596,
+      "sha256": "de6c18832938afc99caf132b39d6a30a19bac7f2e812e28db2535b4608d27551"
+    },
+    {
+      "path": "source/assets/fonts/NotoSansKR.ttf",
+      "bytes": 10414588,
+      "sha256": "194018e6b2b293a7964f037b25c0249ce1418bc9ab3c971060a03aa57861e252"
+    },
+    {
+      "path": "source/assets/fonts/OFL.txt",
+      "bytes": 4388,
+      "sha256": "1c05c68c34f9708415aada51f17e1b0092d2cea709bf4a94cd38114f9e73d7d9"
+    },
+    {
+      "path": "source/assets/icons/BedDouble.svg",
+      "bytes": 452,
+      "sha256": "92e030f21feb28a69e5b40cd8835e8eddc9990aa1e7edf75f6f5bc496373f3fa"
+    },
+    {
+      "path": "source/assets/icons/CalendarDays.svg",
+      "bytes": 582,
+      "sha256": "0602d1be0b8814686858660f26ece24e8403a97ffac66ae80725107efd97a93c"
+    },
+    {
+      "path": "source/assets/icons/Check.svg",
+      "bytes": 313,
+      "sha256": "3a5b45878e79ab641ff6ac8dd83f9c8d711c297856aba532af3fc3db2dfd9c96"
+    },
+    {
+      "path": "source/assets/icons/ChevronDown.svg",
+      "bytes": 316,
+      "sha256": "eeddd7b0466147fae6f92fff1c5ca91ee737da38714572eb4ed53e9a01caf58a"
+    },
+    {
+      "path": "source/assets/icons/ChevronLeft.svg",
+      "bytes": 318,
+      "sha256": "526ea8730c4ac9176a3df836141daf948df6edd8f2f35976a616f353fcc23081"
+    },
+    {
+      "path": "source/assets/icons/ChevronRight.svg",
+      "bytes": 318,
+      "sha256": "1db358b44dd0b76c26b8f0e81b3c36134a56bf2287acf197355c1c5419cbd75e"
+    },
+    {
+      "path": "source/assets/icons/ClipboardList.svg",
+      "bytes": 544,
+      "sha256": "0e0ef2b7bdb17d1a93959e0f4341fcdf70e68ab89a812f17b98f7b2a0fe85331"
+    },
+    {
+      "path": "source/assets/icons/Heart.svg",
+      "bytes": 447,
+      "sha256": "26421e91f4de871a545ed11defec7f59d7e6caea37f8da7cd14d3e046c1f4468"
+    },
+    {
+      "path": "source/assets/icons/LICENSE",
+      "bytes": 3208,
+      "sha256": "b495047bd93a9b06913511076f504daba17d5bbeb3e0650f3bb53a4220329c57"
+    },
+    {
+      "path": "source/assets/icons/manifest.json",
+      "bytes": 4354,
+      "sha256": "e3f0fafbe866004dc30ec5392ffd0130b25b7c7582c54731d08d18b83243d304"
+    },
+    {
+      "path": "source/assets/icons/MapPin.svg",
+      "bytes": 438,
+      "sha256": "006d6b63bfa711de039a1e1128ee4b7749241aa11bf8293d8ff63bc2229a83dc"
+    },
+    {
+      "path": "source/assets/icons/Minus.svg",
+      "bytes": 306,
+      "sha256": "30e89246d91856aed7f2edccf9b2d296e939a98bb948532c2c744d48cab3970d"
+    },
+    {
+      "path": "source/assets/icons/Plus.svg",
+      "bytes": 331,
+      "sha256": "3d4f93d0e5a8eb932e4d1f0d71122d01917e7624439adc35dddcd5352d7a228f"
+    },
+    {
+      "path": "source/assets/icons/Search.svg",
+      "bytes": 354,
+      "sha256": "91afdeccb52714821640ad95dd03d1b66d3c678a1b08f5a53d706f9c28448b5d"
+    },
+    {
+      "path": "source/assets/icons/SlidersHorizontal.svg",
+      "bytes": 524,
+      "sha256": "042dbb407d9c877d79450ce7a920450813fbf1666835f16d8d7e3bbd459064d1"
+    },
+    {
+      "path": "source/assets/icons/Star.svg",
+      "bytes": 661,
+      "sha256": "0da3143d6e4af43fec84ef03382242d03d0e7a6d7a1cf2a42b8597e497fb86d3"
+    },
+    {
+      "path": "source/assets/icons/Users.svg",
+      "bytes": 465,
+      "sha256": "01824f8e3f0fd8152511dbcdcce74dd7818ffa7ad1f34bea0e1a2b052a51b9ec"
+    },
+    {
+      "path": "source/assets/icons/UsersRound.svg",
+      "bytes": 421,
+      "sha256": "447d5029f1e2b98525187bb4730dec3a142030f72a284f69571007deace19c4b"
+    },
+    {
+      "path": "source/assets/icons/X.svg",
+      "bytes": 332,
+      "sha256": "f27abfc353abc2497a1d9752e21e2e2e32eeeb4271401f2a067c4d1fcced7a23"
+    },
+    {
+      "path": "source/assets/photo-alternatives/provenance.json",
+      "bytes": 932,
+      "sha256": "362b243a664fd969f2eda14e5afcec24bb175a0cd1435bb3810acfcc8cd6d799"
+    },
+    {
+      "path": "source/assets/photo-alternatives/room-light.jpg",
+      "bytes": 88962,
+      "sha256": "9df877531d7d29254a641e92e42abb21406f1c72c3b946e1131a2824db246e56"
+    },
+    {
+      "path": "source/assets/photo-alternatives/room-spacious.jpg",
+      "bytes": 82138,
+      "sha256": "469149c94d0f04077af0675580166a5f2d829eb23e27196b501a4eeadda91a0b"
+    },
+    {
+      "path": "source/assets/photos/family-blue.jpg",
+      "bytes": 107526,
+      "sha256": "c37245f942ebfa8b17e52b2a537459250fcade0fe52a5e82bacd446134b8b0b2"
+    },
+    {
+      "path": "source/assets/photos/family-light.jpg",
+      "bytes": 54899,
+      "sha256": "5ea08a543d58f4fea48b3ae7b830f1ed76dc1d2549c3863d268b7e14cc9e130b"
+    },
+    {
+      "path": "source/assets/photos/provenance.json",
+      "bytes": 1053,
+      "sha256": "c358b38f9874c160f53b9505d237aed7e81a45ccec55190156f932e4612b3dec"
+    },
+    {
+      "path": "source/assets/photos/room-neutral.jpg",
+      "bytes": 105074,
+      "sha256": "64cc4eff5cf6e123025b651ed5a14c8d1afebfccbc48286c1c77193a9468d7b3"
+    },
+    {
+      "path": "source/assets/photos/room-warm.jpg",
+      "bytes": 69412,
+      "sha256": "f6cc627e9506037ca888eb7bddb59bcc2f1119d797d58ecd360f300d2020640c"
+    },
+    {
+      "path": "source/assets/room-photo-provenance.json",
+      "bytes": 1725,
+      "sha256": "a0f0df333723150e663e66d129c155e2c916abc380f67c09df22f321a0d61b72"
+    },
+    {
+      "path": "source/booking-fixtures.json",
+      "bytes": 1293,
+      "sha256": "f280a73796116fcbe58974ee90ad96ef4e4a627310ee10295b2a34dbe5535cbf"
+    },
+    {
+      "path": "source/booking.css",
+      "bytes": 5552,
+      "sha256": "7f420f42805c33506ba145c851f178e5528b72b3566f415c001dd43f1f46f1c2"
+    },
+    {
+      "path": "source/catalog.js",
+      "bytes": 5375,
+      "sha256": "3fb70ac22209c5384df1e0aa0cfe51cddad4c9f7045a8f4cd1c50e5ac1d664f8"
+    },
+    {
+      "path": "source/catalog.json",
+      "bytes": 5350,
+      "sha256": "ba21b198d7964d70e3dddbd7ee0fb889809d5d34397485de9614f905136d8a97"
+    },
+    {
+      "path": "source/controllers.js",
+      "bytes": 1689,
+      "sha256": "8b61cde3d93cf9b94694c44f8c6c57c927b14d9f26e57ba2292af87c2eabc5ac"
+    },
+    {
+      "path": "source/core-runtime.js",
+      "bytes": 12522,
+      "sha256": "217d878e1ed80762093d996d341560ebfdccaef3eef3eaf0eb679d7fd1391c2b"
+    },
+    {
+      "path": "source/dates.js",
+      "bytes": 1270,
+      "sha256": "bb814d23499e375aaeb818698dae5ba96f1dc34687ee45625e61b2ada62d7095"
+    },
+    {
+      "path": "source/DESIGN.md",
+      "bytes": 6307,
+      "sha256": "c9eea76cb84032f2e758a3d64c8729826868ba04b7ca2a92654356c6f7b675da"
+    },
+    {
+      "path": "source/design/booking-plan.json",
+      "bytes": 11406,
+      "sha256": "a18d6426a26cefc940af30cee6bccee509a43cf85eb0d8a81b543d6f9ce2372c"
+    },
+    {
+      "path": "source/design/component-plan.json",
+      "bytes": 61882,
+      "sha256": "69e07b38d89ff49b73dfb72efc4695cb344547c3e713f92a574cad5a0be4ab7e"
+    },
+    {
+      "path": "source/design/flow.md",
+      "bytes": 4299,
+      "sha256": "6d1110da7ef79683253e28ff676365907c551d2888187c71a47d02407accf762"
+    },
+    {
+      "path": "source/design/layout-contract-b2.json",
+      "bytes": 1639,
+      "sha256": "34ee2fc3d6c79bca94514649de6a90d5f960570b2f83078dad392fb5bd5d5fff"
+    },
+    {
+      "path": "source/design/layout-contract.json",
+      "bytes": 18215,
+      "sha256": "aff7775c6091e0f07dfc7d24dd862cbd744f943be6dd31fbc6a5126626dfe5dd"
+    },
+    {
+      "path": "source/design/typography.json",
+      "bytes": 20604,
+      "sha256": "8402dc4dc2e0cb9b326dd2313f0ac71211140c2be8dce7066ddee3d11c2602bb"
+    },
+    {
+      "path": "source/guest-editor-instance.js",
+      "bytes": 166,
+      "sha256": "db03a1661d831dd001b541d22ddc47a9b3cd00bd9a90af8bd1f3fb35bf1ce66a"
+    },
+    {
+      "path": "source/guest-editor.css",
+      "bytes": 1419,
+      "sha256": "41680a495827cab4bf89540f229567a6c36544006a62a690a7c469f85de64d42"
+    },
+    {
+      "path": "source/guest-editor.js",
+      "bytes": 2752,
+      "sha256": "924943c581f80170e7f92f449e9fd1eb734f9772b781f704d0cc1ba71944afba"
+    },
+    {
+      "path": "source/index.html",
+      "bytes": 18601,
+      "sha256": "d1f1a71fc1280e64269edf3c682a55295a33e9e434b47d9ca0e992deed5730c3"
+    },
+    {
+      "path": "source/query.js",
+      "bytes": 4365,
+      "sha256": "8708472cd57a32910602013769e023c666a7603e8030be36031ac0738c2a4a5f"
+    },
+    {
+      "path": "source/quote.js",
+      "bytes": 4780,
+      "sha256": "db99f129b9d66bab2edffc99e39d0b2bbbe16934cdc5b321ac6738c275ee7091"
+    },
+    {
+      "path": "source/request-pages.css",
+      "bytes": 8600,
+      "sha256": "226cf9723ce6e3027c7663f74af57a6f4d8344fbcd651fc14ff32b15baf5baae"
+    },
+    {
+      "path": "source/request-reducer.js",
+      "bytes": 6677,
+      "sha256": "b94db34b38eb24fded225e7e61060d151fdb94b7df77a53155ac03c7bf1f184e"
+    },
+    {
+      "path": "source/request-storage.js",
+      "bytes": 2339,
+      "sha256": "3e0be4388d3ca507aefa98781269fd7a051f92ef69bb89334d2faab4bb054fcf"
+    },
+    {
+      "path": "source/request-store.js",
+      "bytes": 3542,
+      "sha256": "6686bb61f7319dd5f535c6ecb16d0a4a714d945615744cfe82e6581119ca9ad7"
+    },
+    {
+      "path": "source/request-ui.js",
+      "bytes": 14653,
+      "sha256": "5691a6d061a85291dc73f7c059ba630ad7fe4fe08707ca50d950a2f409262738"
+    },
+    {
+      "path": "source/room-cards.js",
+      "bytes": 2141,
+      "sha256": "f1a6b15bfe2980ed36616313fb010c24e7589d555950d6fc89dfee7adeb4ffb2"
+    },
+    {
+      "path": "source/room-layout-contract.json",
+      "bytes": 2505,
+      "sha256": "8ad1ab9583aa90aabe700c245fe1d2a4b42a5be464f3b3e3e915f98829279d0d"
+    },
+    {
+      "path": "source/room-rates-view.js",
+      "bytes": 1192,
+      "sha256": "99c0f3e1451fa51c9b35d7c56b26cd5c142298f25bac41546f7788a4c7e86466"
+    },
+    {
+      "path": "source/room-rates.js",
+      "bytes": 2899,
+      "sha256": "a56f7bb987d632be03b1dafb16226320b2167a9858a5bde81b209c3583ba4740"
+    },
+    {
+      "path": "source/room-renderer.js",
+      "bytes": 111,
+      "sha256": "8d2775899b4ce890900c519901fab4e73bbcf9c97f1d4a3892f3bf7cf9e49c75"
+    },
+    {
+      "path": "source/room-runtime.js",
+      "bytes": 10038,
+      "sha256": "f2b420a0f3100ad17a9375c20fba7380278845427323153813d25ccc8b9a70c2"
+    },
+    {
+      "path": "source/ROOMS-CONTRACT.md",
+      "bytes": 5654,
+      "sha256": "59fa819e9731697ea04da281da3b97f17af773a869055b98a27d4bbc937520fb"
+    },
+    {
+      "path": "source/rooms.css",
+      "bytes": 7899,
+      "sha256": "ba85fbc57c56ea0baca9121388e7e3f7eaea26c66c17c37c2674c22a363b245b"
+    },
+    {
+      "path": "source/stored-quote.js",
+      "bytes": 2150,
+      "sha256": "b5cf4f1c722ef525897982d9073ac42423a6f5927b9409ca12651b8350869a36"
+    },
+    {
+      "path": "source/STYLE-CONTRACT.md",
+      "bytes": 6386,
+      "sha256": "0d5e05e6951e6c45be9a3d7b88e26b0fa38a24a3abc2b5d0465cee08ed85488c"
+    },
+    {
+      "path": "source/styles.css",
+      "bytes": 9657,
+      "sha256": "bb23bc6427d0b1d9d769a569873b3e1d2003483ca6bbbd32ed3c01a523334d2a"
+    },
+    {
+      "path": "source/trip-layout.js",
+      "bytes": 4901,
+      "sha256": "508b9df91731c8c9096923e80bffd8dc57bfa9030c66554530d17ee0938de372"
+    },
+    {
+      "path": "source/UI-DECISIONS.md",
+      "bytes": 1782,
+      "sha256": "396fff4872b7ac634a240681e08c23f3a81aeff6cc89372b387fce9e42812556"
+    },
+    {
+      "path": "verify.mjs",
+      "bytes": 2645,
+      "sha256": "1d3d41531f8aa4d94faf28f4542012da158512d9b9144f24c2e305c9ea59d530"
+    }
+  ]
+}

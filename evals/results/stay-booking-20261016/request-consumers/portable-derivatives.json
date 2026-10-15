@@ -1,0 +1,78 @@
+{
+  "at": "2026-10-15T22:36:12.837Z",
+  "scope": "Derivative drivers are not byte-identical historical inference or browser evidence. Fresh portable verification is required.",
+  "files": [
+    {
+      "path": "checks/browser-harness.mjs",
+      "originalDriverSha256": "9fa3baa1b2ed34b46e67fcd73837cc409d4e06045f0f824a9349982692800a7d",
+      "publishedDriverSha256": "bd13ed1b2269b9ac6b030dae713a985371d86fcc30ca820b6291f569f3ab3084",
+      "changes": "Portable import/root/helper paths only"
+    },
+    {
+      "path": "checks/check-connected-static.mjs",
+      "originalDriverSha256": "7cf49205d8ce932333ff8a1f258431117e75cd339d8b3b2d0fc0fbac33375362",
+      "publishedDriverSha256": "7b60edd674b9ed157723d6565c33ec7beee684f7feff3b59e9848ce0d45230b1",
+      "changes": "Portable import/root/helper paths only"
+    },
+    {
+      "path": "checks/check-request-workflows-v4.mjs",
+      "originalDriverSha256": "2e9aa162d1d8d627487837ed68a3319ab03c9f2ba77428bc7f68c8c2f8ac8543",
+      "publishedDriverSha256": "c581e48a05a6ffe2663331a38363a78996a80809ca7437081527ccf4849d577d",
+      "changes": "Portable import/root/helper paths only"
+    },
+    {
+      "path": "checks/check-request-font-states.mjs",
+      "originalDriverSha256": "0f767577532204e39e21974c4b27da123333261e81c625c3e43ea80a5e2f15b3",
+      "publishedDriverSha256": "6fda875641a16253bbe7165595cd8045e801bae9e3825d55c0f9ae6662f0fa1d",
+      "changes": "Portable import/root/helper paths only"
+    },
+    {
+      "path": "checks/check-cancel-date-layout.mjs",
+      "originalDriverSha256": "6932aba983a99f28dfde2a07630e58ad754a38c7e56dbbe4deb8ea97154ad76b",
+      "publishedDriverSha256": "e0855dcee53c2cb10dd8774d410cbea9d7699c0aa27ef5a29a0381677c5c0b6f",
+      "changes": "Portable import/root/helper paths only"
+    },
+    {
+      "path": "checks/check-guest-route.mjs",
+      "originalDriverSha256": "af03a6cbadc459df40c2eec931d46d9a5001d55d2fa96ce889e335d1f62b859b",
+      "publishedDriverSha256": "c4157d49501169c7c9e58cd425ad9c3c39f29e81711539d425f8b94eba4bddbe",
+      "changes": "Portable import/root/helper paths only"
+    },
+    {
+      "path": "checks/check-guest-consumer.mjs",
+      "originalDriverSha256": "8d080dee44e5563932c91c63b5a0ed471b550f5bbe61f17e5055130dded1cbe8",
+      "publishedDriverSha256": "37e9f25f7e9b6aeedff649e41f219a5b13761fc31c480c13e0348a26a927d415",
+      "changes": "Portable import/root/helper paths only"
+    },
+    {
+      "path": "checks/capture-form.mjs",
+      "originalDriverSha256": "511775bd5afb88fdb4da3878e88ce44f1cb4bd64411a364baa6de02c4d62dbb8",
+      "publishedDriverSha256": "2a454facc9e1259695be73929b70a4650a87aa9723a4ea5d665bd5bc17140874",
+      "changes": "Portable import/root paths and private native comparison capture omitted; actual candidate checks retained"
+    },
+    {
+      "path": "checks/capture-request-consumers-v2.mjs",
+      "originalDriverSha256": "8b7c53364aa43aed6856e6af684f271575085d57a7558cc016c68847ebcd39a6",
+      "publishedDriverSha256": "7ec9643030ec3380cfd2cd5e77c41b260971e3f02d9e3e69f0eb32142bd1c256",
+      "changes": "Portable import/root/helper paths only"
+    },
+    {
+      "path": "checks/check-header-leading.mjs",
+      "originalDriverSha256": "2de20c973557849e0226dce7037ec7ca544e6a3da699c9a8967ec6da1e833a43",
+      "publishedDriverSha256": "698cec0b45b6432c9fcf2ef3b6c6a10c87e5b1234565c37f8c1605d5784dda8a",
+      "changes": "Portable import/root/helper paths only"
+    },
+    {
+      "path": "checks/check-core-workflows-b2.mjs",
+      "originalDriverSha256": "38ee0c365c4004cad823c2898e2a5721c5ff93305f9b4296f0e2541bc34dd14e",
+      "publishedDriverSha256": "87613593fd80b59c4f8d15720e08561b2a80567d290e53436fb0f929e985f9c8",
+      "changes": "Portable import/root/helper paths only"
+    },
+    {
+      "path": "checks/check-room-workflows-v3.mjs",
+      "originalDriverSha256": "e84a83d02a7f7f9527af7cf779535dbb6061fbae79e334a776e0817220674705",
+      "publishedDriverSha256": "e84a83d02a7f7f9527af7cf779535dbb6061fbae79e334a776e0817220674705",
+      "changes": "Portable import/root/helper paths only"
+    }
+  ]
+}

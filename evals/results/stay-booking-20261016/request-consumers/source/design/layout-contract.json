@@ -1,0 +1,762 @@
+{
+  "rules": [
+    {
+      "id": "mobile-core",
+      "kind": "maxWidth",
+      "subject": "body",
+      "maximum": 390
+    },
+    {
+      "id": "mobile-navigation",
+      "kind": "maxWidth",
+      "subject": ".bottom-navigation",
+      "maximum": 390,
+      "states": [
+        "initial",
+        "saved",
+        "requests",
+        "search",
+        "filter",
+        "empty",
+        "read-error"
+      ]
+    },
+    {
+      "id": "price-separate-afternoon",
+      "kind": "below",
+      "subject": "#card-afternoon .stay-price",
+      "reference": "#card-afternoon .stay-room",
+      "minGap": 0,
+      "states": [
+        "initial"
+      ]
+    },
+    {
+      "id": "metadata-below-photo-afternoon",
+      "kind": "below",
+      "subject": "#card-afternoon .stay-facts",
+      "reference": "#card-afternoon .stay-media",
+      "minGap": 12,
+      "states": [
+        "initial"
+      ]
+    },
+    {
+      "id": "price-separate-walk",
+      "kind": "below",
+      "subject": "#card-walk .stay-price",
+      "reference": "#card-walk .stay-room",
+      "minGap": 0,
+      "states": [
+        "initial"
+      ]
+    },
+    {
+      "id": "metadata-below-photo-walk",
+      "kind": "below",
+      "subject": "#card-walk .stay-facts",
+      "reference": "#card-walk .stay-media",
+      "minGap": 12,
+      "states": [
+        "initial"
+      ]
+    },
+    {
+      "id": "price-separate-smallroom",
+      "kind": "below",
+      "subject": "#card-smallroom .stay-price",
+      "reference": "#card-smallroom .stay-room",
+      "minGap": 0,
+      "states": [
+        "initial"
+      ]
+    },
+    {
+      "id": "metadata-below-photo-smallroom",
+      "kind": "below",
+      "subject": "#card-smallroom .stay-facts",
+      "reference": "#card-smallroom .stay-media",
+      "minGap": 12,
+      "states": [
+        "initial"
+      ]
+    },
+    {
+      "id": "search-control",
+      "kind": "computedStyle",
+      "subject": "#open-search",
+      "properties": {
+        "border-radius": "24px",
+        "border-top-width": "0px",
+        "text-align": "start"
+      },
+      "states": [
+        "initial"
+      ]
+    },
+    {
+      "id": "filter-control",
+      "kind": "computedStyle",
+      "subject": "#open-filters",
+      "properties": {
+        "border-radius": "12px",
+        "border-top-width": "0px",
+        "text-align": "start"
+      },
+      "states": [
+        "initial"
+      ]
+    },
+    {
+      "id": "search-wrap",
+      "kind": "computedStyle",
+      "subject": ".search-entry",
+      "properties": {
+        "flex-wrap": "wrap"
+      },
+      "states": [
+        "initial"
+      ]
+    },
+    {
+      "id": "tools-wrap",
+      "kind": "computedStyle",
+      "subject": ".result-tools",
+      "properties": {
+        "flex-wrap": "wrap",
+        "gap": "8px"
+      },
+      "states": [
+        "initial"
+      ]
+    },
+    {
+      "id": "sort-field",
+      "kind": "computedStyle",
+      "subject": "#sort",
+      "properties": {
+        "appearance": "none",
+        "line-height": "24px",
+        "border-top-width": "0px"
+      },
+      "states": [
+        "initial"
+      ]
+    },
+    {
+      "id": "city-field",
+      "kind": "computedStyle",
+      "subject": "#city",
+      "properties": {
+        "appearance": "none",
+        "line-height": "24px",
+        "border-top-width": "0px"
+      },
+      "states": [
+        "search"
+      ]
+    },
+    {
+      "id": "type-field",
+      "kind": "computedStyle",
+      "subject": "#stay-type",
+      "properties": {
+        "appearance": "none",
+        "line-height": "24px",
+        "border-top-width": "0px"
+      },
+      "states": [
+        "filter"
+      ]
+    },
+    {
+      "id": "b2-wide-compact-first-room-photo",
+      "kind": "computedStyle",
+      "subject": ".room-card[data-room-id=\"afternoon-standard\"] .room-photo",
+      "properties": {
+        "aspect-ratio": "11 / 5",
+        "object-fit": "cover"
+      },
+      "states": [
+        "rooms",
+        "selected"
+      ]
+    },
+    {
+      "id": "b2-room-metadata-below-photo",
+      "kind": "below",
+      "subject": ".room-card[data-room-id=\"afternoon-standard\"] .room-card-content",
+      "reference": ".room-card[data-room-id=\"afternoon-standard\"] .room-photo",
+      "minGap": 0,
+      "states": [
+        "rooms",
+        "selected"
+      ]
+    },
+    {
+      "id": "b2-price-below-room-facts",
+      "kind": "below",
+      "subject": ".room-card[data-room-id=\"afternoon-standard\"] .room-price",
+      "reference": ".room-card[data-room-id=\"afternoon-standard\"] .room-facts",
+      "minGap": 16,
+      "states": [
+        "rooms",
+        "selected"
+      ]
+    },
+    {
+      "id": "b2-separate-room-cards",
+      "kind": "below",
+      "subject": ".room-card[data-room-id=\"afternoon-family\"]",
+      "reference": ".room-card[data-room-id=\"afternoon-standard\"]",
+      "minGap": 24,
+      "states": [
+        "rooms",
+        "selected"
+      ]
+    },
+    {
+      "id": "b2-closed-native-dialogs-stay-hidden",
+      "kind": "absent",
+      "subject": "dialog:not([open]):visible"
+    },
+    {
+      "id": "b2-specific-firstroom-bed-focalpoint",
+      "kind": "computedStyle",
+      "subject": ".room-card[data-room-id=\"afternoon-standard\"] .room-photo",
+      "properties": {
+        "object-position": "50% 100%"
+      },
+      "states": [
+        "rooms",
+        "selected"
+      ]
+    },
+    {
+      "id": "b2-selected-native-radio-surface",
+      "kind": "computedStyle",
+      "subject": ".rate-option:has(input:checked)",
+      "properties": {
+        "background-color": "rgb(255, 255, 255)",
+        "box-shadow": "rgb(34, 33, 38) 0px 0px 0px 2px inset"
+      },
+      "states": [
+        "rate-selected"
+      ]
+    },
+    {
+      "id": "b2-shortcloseword-preserved",
+      "kind": "computedStyle",
+      "subject": "#rate-dialog .sheet-heading [data-cancel]",
+      "properties": {
+        "flex-shrink": "0",
+        "word-break": "keep-all"
+      },
+      "states": [
+        "rates",
+        "rate-selected"
+      ]
+    },
+    {
+      "id": "b2-ratetitle-word-boundaries",
+      "kind": "computedStyle",
+      "subject": "#rate-dialog .sheet-heading h2",
+      "properties": {
+        "word-break": "keep-all",
+        "overflow-wrap": "break-word"
+      },
+      "states": [
+        "rates",
+        "rate-selected"
+      ]
+    },
+    {
+      "id": "B3-mobile-canvas",
+      "kind": "maxWidth",
+      "subject": "body",
+      "maximum": 390
+    },
+    {
+      "id": "B3-photo-free-identity",
+      "kind": "absent",
+      "subject": "#review-view img:not(.booking-header img):not(#edit-request-guest img)",
+      "states": [
+        "booking"
+      ]
+    },
+    {
+      "id": "B3-compact-title",
+      "kind": "computedStyle",
+      "subject": "#review-view h1",
+      "properties": {
+        "font-size": "16px",
+        "font-weight": "600",
+        "line-height": "24px"
+      },
+      "states": [
+        "booking"
+      ],
+      "modes": [
+        "normal"
+      ]
+    },
+    {
+      "id": "B3-guest-price-surface-ownership",
+      "kind": "computedStyle",
+      "subject": "#request-form",
+      "properties": {
+        "row-gap": "8px"
+      },
+      "states": [
+        "booking"
+      ]
+    },
+    {
+      "id": "B3-nav-hidden",
+      "kind": "absent",
+      "subject": ".bottom-navigation:not([hidden])",
+      "states": [
+        "booking"
+      ]
+    },
+    {
+      "id": "B3-guest-chevron-owned",
+      "kind": "contained",
+      "subject": "#edit-request-guest img",
+      "container": "#edit-request-guest",
+      "states": [
+        "booking"
+      ]
+    },
+    {
+      "id": "B3-guest-price-separated",
+      "kind": "below",
+      "subject": ".booking-pricing",
+      "reference": ".booking-guest",
+      "minGap": 8,
+      "states": [
+        "booking"
+      ]
+    },
+    {
+      "id": "B3-price-action-separated",
+      "kind": "below",
+      "subject": ".booking-submit",
+      "reference": ".booking-pricing",
+      "minGap": 8,
+      "states": [
+        "booking"
+      ]
+    },
+    {
+      "id": "B3-date-leading-alignment",
+      "kind": "computedStyle",
+      "subject": ".booking-date:first-child",
+      "properties": {
+        "align-items": "flex-start"
+      },
+      "states": [
+        "booking"
+      ]
+    },
+    {
+      "id": "B3-date-label-leading-text",
+      "kind": "computedStyle",
+      "subject": ".booking-date:first-child .booking-date-label",
+      "properties": {
+        "text-align": "start"
+      },
+      "states": [
+        "booking"
+      ]
+    },
+    {
+      "id": "B3-date-value-leading-text",
+      "kind": "computedStyle",
+      "subject": "#review-start",
+      "properties": {
+        "text-align": "start"
+      },
+      "states": [
+        "booking"
+      ]
+    },
+    {
+      "id": "B3-normal-date-pair",
+      "kind": "sameRow",
+      "subject": ".booking-date:first-child",
+      "reference": ".booking-date:last-child",
+      "states": [
+        "booking"
+      ],
+      "tolerance": 1,
+      "modes": [
+        "normal"
+      ]
+    },
+    {
+      "id": "B3-readable-start",
+      "kind": "readableToken",
+      "subject": "#review-start",
+      "container": ".booking-dates",
+      "token": "whole",
+      "states": [
+        "booking"
+      ]
+    },
+    {
+      "id": "B3-readable-end",
+      "kind": "readableToken",
+      "subject": "#review-end",
+      "container": ".booking-dates",
+      "token": "whole",
+      "states": [
+        "booking"
+      ]
+    },
+    {
+      "id": "B3-readable-start-label",
+      "kind": "readableToken",
+      "subject": ".booking-date:first-child .booking-date-label",
+      "container": ".booking-dates",
+      "token": "whole",
+      "states": [
+        "booking"
+      ]
+    },
+    {
+      "id": "B3-readable-end-label",
+      "kind": "readableToken",
+      "subject": ".booking-date:last-child .booking-date-label",
+      "container": ".booking-dates",
+      "token": "whole",
+      "states": [
+        "booking"
+      ]
+    },
+    {
+      "id": "B3-readable-nights-unit",
+      "kind": "readableToken",
+      "subject": "#review-nights",
+      "container": ".booking-pricing",
+      "token": "number",
+      "suffix": "원",
+      "states": [
+        "booking"
+      ]
+    },
+    {
+      "id": "B3-readable-base-unit",
+      "kind": "readableToken",
+      "subject": "#review-base",
+      "container": ".booking-pricing",
+      "token": "number",
+      "suffix": "원",
+      "states": [
+        "booking"
+      ]
+    },
+    {
+      "id": "B3-readable-cleaning-unit",
+      "kind": "readableToken",
+      "subject": "#review-cleaning",
+      "container": ".booking-pricing",
+      "token": "number",
+      "suffix": "원",
+      "states": [
+        "booking"
+      ]
+    },
+    {
+      "id": "B3-readable-service-unit",
+      "kind": "readableToken",
+      "subject": "#review-service",
+      "container": ".booking-pricing",
+      "token": "number",
+      "suffix": "원",
+      "states": [
+        "booking"
+      ]
+    },
+    {
+      "id": "B3-readable-total-unit",
+      "kind": "readableToken",
+      "subject": "#review-total",
+      "container": ".booking-pricing",
+      "token": "number",
+      "suffix": "원",
+      "states": [
+        "booking"
+      ]
+    },
+    {
+      "id": "B3-requests-inset-owner",
+      "kind": "computedStyle",
+      "subject": "#main-content",
+      "properties": {
+        "padding-left": "0px",
+        "padding-right": "0px"
+      },
+      "states": [
+        "requests-empty",
+        "requests-list",
+        "request-detail",
+        "request-outcome"
+      ]
+    },
+    {
+      "id": "B3-request-header-row",
+      "kind": "sameRow",
+      "subject": "#request-detail-back",
+      "reference": ".request-detail-header h1",
+      "states": [
+        "request-detail",
+        "request-outcome"
+      ]
+    },
+    {
+      "id": "B3-request-no-photo",
+      "kind": "absent",
+      "subject": "#request-detail-view img:not(.request-detail-header img)",
+      "states": [
+        "request-detail",
+        "request-outcome"
+      ]
+    },
+    {
+      "id": "B3-request-list-assets",
+      "kind": "absent",
+      "subject": "#requests-view img:not(.request-card a img)",
+      "states": [
+        "requests-list"
+      ]
+    },
+    {
+      "id": "B3-request-start-whole",
+      "kind": "readableToken",
+      "subject": "#request-detail-trip .request-trip-date:first-child",
+      "container": "#request-detail-trip",
+      "token": "whole",
+      "states": [
+        "request-detail",
+        "request-outcome"
+      ]
+    },
+    {
+      "id": "B3-request-end-whole",
+      "kind": "readableToken",
+      "subject": "#request-detail-trip .request-trip-date:nth-of-type(2)",
+      "container": "#request-detail-trip",
+      "token": "whole",
+      "states": [
+        "request-detail",
+        "request-outcome"
+      ]
+    },
+    {
+      "id": "B3-request-whole-base",
+      "kind": "readableToken",
+      "subject": "#request-detail-base",
+      "container": ".request-detail-price",
+      "token": "number",
+      "suffix": "원",
+      "states": [
+        "request-detail",
+        "request-outcome"
+      ]
+    },
+    {
+      "id": "B3-request-whole-cleaning",
+      "kind": "readableToken",
+      "subject": "#request-detail-cleaning",
+      "container": ".request-detail-price",
+      "token": "number",
+      "suffix": "원",
+      "states": [
+        "request-detail",
+        "request-outcome"
+      ]
+    },
+    {
+      "id": "B3-request-whole-service",
+      "kind": "readableToken",
+      "subject": "#request-detail-service",
+      "container": ".request-detail-price",
+      "token": "number",
+      "suffix": "원",
+      "states": [
+        "request-detail",
+        "request-outcome"
+      ]
+    },
+    {
+      "id": "B3-request-whole-total",
+      "kind": "readableToken",
+      "subject": "#request-detail-total",
+      "container": ".request-detail-price",
+      "token": "number",
+      "suffix": "원",
+      "states": [
+        "request-detail",
+        "request-outcome"
+      ]
+    },
+    {
+      "id": "B3-request-outcome-hierarchy",
+      "kind": "typeHierarchy",
+      "subject": "#request-detail-outcome",
+      "reference": "#request-detail-stay",
+      "minSizeDifference": 4,
+      "states": [
+        "request-outcome"
+      ]
+    },
+    {
+      "id": "B3-request-guest-separate",
+      "kind": "below",
+      "subject": ".request-detail-group:nth-of-type(2)",
+      "reference": ".request-detail-group:first-of-type",
+      "minGap": 8,
+      "states": [
+        "request-detail",
+        "request-outcome"
+      ]
+    },
+    {
+      "id": "B3-request-price-separate",
+      "kind": "below",
+      "subject": ".request-detail-price",
+      "reference": ".request-detail-group:nth-of-type(2)",
+      "minGap": 8,
+      "states": [
+        "request-detail",
+        "request-outcome"
+      ]
+    },
+    {
+      "id": "B3-request-card-price-owner",
+      "kind": "below",
+      "subject": ".request-card:first-child [data-request-total]",
+      "reference": ".request-card:first-child [data-request-trip]",
+      "minGap": 8,
+      "states": [
+        "requests-list"
+      ]
+    },
+    {
+      "id": "B3-cancel-question-hierarchy",
+      "kind": "typeHierarchy",
+      "subject": "#cancel-request-title",
+      "reference": "#cancel-request-subject",
+      "minSizeDifference": 4,
+      "states": [
+        "cancel-request"
+      ]
+    },
+    {
+      "id": "B3-request-no-separators",
+      "kind": "absent",
+      "subject": "#requests-view hr,#request-detail-view hr,#cancel-request-dialog hr,#requests-view [role=\"separator\"],#request-detail-view [role=\"separator\"]",
+      "states": [
+        "requests-empty",
+        "requests-list",
+        "request-detail",
+        "request-outcome",
+        "cancel-request"
+      ]
+    },
+    {
+      "id": "B3-native-total-accent",
+      "kind": "computedStyle",
+      "subject": "#review-total",
+      "properties": {
+        "color": "rgb(181, 29, 81)"
+      },
+      "states": [
+        "booking"
+      ]
+    },
+    {
+      "id": "B3-cancel-start-whole",
+      "kind": "readableToken",
+      "subject": "#cancel-request-subject .request-trip-date:nth-of-type(2)",
+      "container": "#cancel-request-subject",
+      "token": "whole",
+      "states": [
+        "cancel-request"
+      ]
+    },
+    {
+      "id": "B3-cancel-end-whole",
+      "kind": "readableToken",
+      "subject": "#cancel-request-subject .request-trip-date:nth-of-type(3)",
+      "container": "#cancel-request-subject",
+      "token": "whole",
+      "states": [
+        "cancel-request"
+      ]
+    },
+    {
+      "id": "B3-date-panel-owned-quiet",
+      "kind": "computedStyle",
+      "subject": "#review-view .booking-dates",
+      "properties": {
+        "background-color": "rgb(245, 243, 244)",
+        "border-radius": "0px"
+      },
+      "states": [
+        "booking"
+      ]
+    },
+    {
+      "id": "B3-date-start-transparent",
+      "kind": "computedStyle",
+      "subject": "#review-view .booking-date:first-child",
+      "properties": {
+        "background-color": "rgba(0, 0, 0, 0)",
+        "border-radius": "0px"
+      },
+      "states": [
+        "booking"
+      ]
+    },
+    {
+      "id": "B3-date-end-transparent",
+      "kind": "computedStyle",
+      "subject": "#review-view .booking-date:last-child",
+      "properties": {
+        "background-color": "rgba(0, 0, 0, 0)",
+        "border-radius": "0px"
+      },
+      "states": [
+        "booking"
+      ]
+    },
+    {
+      "id": "B3-booking-header-leading-target",
+      "kind": "computedStyle",
+      "subject": "#review-view .booking-header",
+      "properties": {
+        "padding-left": "0px",
+        "padding-right": "0px"
+      },
+      "states": [
+        "booking"
+      ]
+    },
+    {
+      "id": "B3-request-header-leading-target",
+      "kind": "computedStyle",
+      "subject": ".request-detail-header",
+      "properties": {
+        "padding-left": "0px",
+        "padding-right": "0px"
+      },
+      "states": [
+        "request-detail",
+        "request-outcome"
+      ]
+    }
+  ],
+  "scope": "Active B1/B2/B3 assisted-product mechanical contract. Native normal date pairing and16pxheader are normal-only;token readability applies to allactual captured modes. Missingotherstates/guides/nativehiddenbehavior stayunknown. Not fullreference/commercial approval."
+}

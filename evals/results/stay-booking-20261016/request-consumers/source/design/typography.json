@@ -1,0 +1,826 @@
+{
+  "roles": [
+    {
+      "unit": "shared",
+      "selector": "body *",
+      "families": [
+        "Noto Sans KR Thin",
+        "Noto Emoji",
+        "Noto Color Emoji"
+      ],
+      "requireCustomFont": true
+    },
+    {
+      "unit": "search",
+      "selector": "#destination-summary",
+      "families": [
+        "Noto Sans KR Thin"
+      ],
+      "requireCustomFont": true,
+      "fontSizePx": 16,
+      "fontWeight": 600,
+      "lineHeightRatio": 1.5
+    },
+    {
+      "unit": "search",
+      "selector": "#trip-summary,#result-count",
+      "families": [
+        "Noto Sans KR Thin"
+      ],
+      "requireCustomFont": true,
+      "fontSizePx": 14,
+      "fontWeight": 500,
+      "lineHeightRatio": 1.5
+    },
+    {
+      "unit": "search",
+      "selector": "#sort",
+      "families": [
+        "Noto Sans KR Thin"
+      ],
+      "requireCustomFont": true,
+      "fontSizePx": 16,
+      "fontWeight": 500,
+      "lineHeightRatio": 1.5
+    },
+    {
+      "unit": "search",
+      "selector": ".sort-control label",
+      "families": [
+        "Noto Sans KR Thin"
+      ],
+      "requireCustomFont": true,
+      "fontSizePx": 14,
+      "fontWeight": 500,
+      "lineHeightRatio": 1.5
+    },
+    {
+      "unit": "search",
+      "selector": "#open-filters span",
+      "families": [
+        "Noto Sans KR Thin"
+      ],
+      "requireCustomFont": true,
+      "fontSizePx": 16,
+      "fontWeight": 600,
+      "lineHeightRatio": 1.5
+    },
+    {
+      "unit": "stays",
+      "selector": ".stay-card h2 a",
+      "families": [
+        "Noto Sans KR Thin"
+      ],
+      "requireCustomFont": true,
+      "fontSizePx": 18,
+      "fontWeight": 600,
+      "lineHeightRatio": 1.5
+    },
+    {
+      "unit": "stays",
+      "selector": ".stay-location,.stay-room,.stay-policy,.stay-total,.stay-unavailable",
+      "families": [
+        "Noto Sans KR Thin"
+      ],
+      "requireCustomFont": true,
+      "fontSizePx": 14,
+      "fontWeight": 500,
+      "lineHeightRatio": 1.5
+    },
+    {
+      "unit": "stays",
+      "selector": ".stay-price strong",
+      "families": [
+        "Noto Sans KR Thin"
+      ],
+      "requireCustomFont": true,
+      "fontSizePx": 18,
+      "fontWeight": 700,
+      "lineHeightRatio": 1.5
+    },
+    {
+      "unit": "stays",
+      "selector": ".stay-price > span",
+      "families": [
+        "Noto Sans KR Thin"
+      ],
+      "requireCustomFont": true,
+      "fontSizePx": 14,
+      "fontWeight": 500,
+      "lineHeightRatio": 1.5
+    },
+    {
+      "unit": "stays",
+      "selector": ".favorite span",
+      "families": [
+        "Noto Sans KR Thin"
+      ],
+      "requireCustomFont": true,
+      "fontSizePx": 14,
+      "fontWeight": 600,
+      "lineHeightRatio": 1.5
+    },
+    {
+      "unit": "navigation",
+      "selector": ".bottom-navigation a:not([aria-current]) span",
+      "families": [
+        "Noto Sans KR Thin"
+      ],
+      "requireCustomFont": true,
+      "fontSizePx": 14,
+      "fontWeight": 600,
+      "lineHeightRatio": 1.5
+    },
+    {
+      "unit": "shared",
+      "selector": ".sheet-heading h2",
+      "families": [
+        "Noto Sans KR Thin"
+      ],
+      "requireCustomFont": true,
+      "fontSizePx": 22,
+      "fontWeight": 700,
+      "lineHeightRatio": 1.5,
+      "states": [
+        "search",
+        "search-invalid",
+        "filter",
+        "filter-invalid",
+        "trip",
+        "room-filter"
+      ]
+    },
+    {
+      "unit": "shared",
+      "selector": "dialog:not(#guest-dialog) label,dialog button,dialog legend",
+      "families": [
+        "Noto Sans KR Thin"
+      ],
+      "requireCustomFont": true,
+      "fontSizePx": 16,
+      "fontWeight": 600,
+      "lineHeightRatio": 1.5,
+      "states": [
+        "search",
+        "search-invalid",
+        "filter",
+        "filter-invalid",
+        "trip",
+        "room-filter"
+      ]
+    },
+    {
+      "unit": "shared",
+      "selector": "dialog input:not([type=checkbox]),dialog select",
+      "families": [
+        "Noto Sans KR Thin",
+        "Noto Emoji",
+        "Noto Color Emoji"
+      ],
+      "requireCustomFont": true,
+      "fontSizePx": 16,
+      "fontWeight": 500,
+      "lineHeightRatio": 1.5,
+      "states": [
+        "search",
+        "search-invalid",
+        "filter",
+        "filter-invalid",
+        "trip",
+        "room-filter"
+      ]
+    },
+    {
+      "unit": "navigation",
+      "selector": ".bottom-navigation a[aria-current=page] span",
+      "families": [
+        "Noto Sans KR Thin"
+      ],
+      "requireCustomFont": true,
+      "fontSizePx": 14,
+      "fontWeight": 700,
+      "lineHeightRatio": 1.5
+    },
+    {
+      "unit": "rooms",
+      "selector": "#detail-title",
+      "families": [
+        "Noto Sans KR Thin"
+      ],
+      "requireCustomFont": true,
+      "fontSizePx": 22,
+      "fontWeight": 700,
+      "lineHeightRatio": 1.5,
+      "states": [
+        "rooms",
+        "selected"
+      ]
+    },
+    {
+      "unit": "rooms",
+      "selector": "#detail-location,.room-count,.room-facts span,.room-price [data-room-total],.room-price>p>span",
+      "families": [
+        "Noto Sans KR Thin"
+      ],
+      "requireCustomFont": true,
+      "fontSizePx": 14,
+      "fontWeight": 500,
+      "lineHeightRatio": 1.5,
+      "states": [
+        "rooms",
+        "selected"
+      ]
+    },
+    {
+      "unit": "rooms",
+      "selector": ".room-title-button [data-room-name]",
+      "families": [
+        "Noto Sans KR Thin"
+      ],
+      "requireCustomFont": true,
+      "fontSizePx": 18,
+      "fontWeight": 600,
+      "lineHeightRatio": 1.5,
+      "states": [
+        "rooms",
+        "selected"
+      ]
+    },
+    {
+      "unit": "rooms",
+      "selector": ".room-price strong",
+      "families": [
+        "Noto Sans KR Thin"
+      ],
+      "requireCustomFont": true,
+      "fontSizePx": 18,
+      "fontWeight": 700,
+      "lineHeightRatio": 1.5,
+      "states": [
+        "rooms",
+        "selected"
+      ]
+    },
+    {
+      "unit": "rooms",
+      "selector": ".room-tools button span,#detail-favorite span",
+      "families": [
+        "Noto Sans KR Thin"
+      ],
+      "requireCustomFont": true,
+      "fontSizePx": 14,
+      "fontWeight": 600,
+      "lineHeightRatio": 1.5,
+      "states": [
+        "rooms",
+        "selected"
+      ]
+    },
+    {
+      "unit": "rooms",
+      "selector": ".chosen-rate",
+      "families": [
+        "Noto Sans KR Thin"
+      ],
+      "requireCustomFont": true,
+      "fontSizePx": 14,
+      "fontWeight": 600,
+      "lineHeightRatio": 1.5,
+      "states": [
+        "selected"
+      ]
+    },
+    {
+      "unit": "rooms",
+      "selector": "#rate-title",
+      "families": [
+        "Noto Sans KR Thin"
+      ],
+      "requireCustomFont": true,
+      "fontSizePx": 22,
+      "fontWeight": 700,
+      "lineHeightRatio": 1.5,
+      "states": [
+        "rates",
+        "rate-selected"
+      ]
+    },
+    {
+      "unit": "rooms",
+      "selector": "#rate-trip,.rate-note,[data-rate-policy],[data-rate-nightly]",
+      "families": [
+        "Noto Sans KR Thin"
+      ],
+      "requireCustomFont": true,
+      "fontSizePx": 14,
+      "fontWeight": 500,
+      "lineHeightRatio": 1.5,
+      "states": [
+        "rates",
+        "rate-selected"
+      ]
+    },
+    {
+      "unit": "rooms",
+      "selector": "[data-rate-name]",
+      "families": [
+        "Noto Sans KR Thin"
+      ],
+      "requireCustomFont": true,
+      "fontSizePx": 16,
+      "fontWeight": 600,
+      "lineHeightRatio": 1.5,
+      "states": [
+        "rates",
+        "rate-selected"
+      ]
+    },
+    {
+      "unit": "rooms",
+      "selector": "[data-rate-total]",
+      "families": [
+        "Noto Sans KR Thin"
+      ],
+      "requireCustomFont": true,
+      "fontSizePx": 18,
+      "fontWeight": 700,
+      "lineHeightRatio": 1.5,
+      "states": [
+        "rates",
+        "rate-selected"
+      ]
+    },
+    {
+      "unit": "rooms",
+      "selector": "#confirm-rate",
+      "families": [
+        "Noto Sans KR Thin"
+      ],
+      "requireCustomFont": true,
+      "fontSizePx": 16,
+      "fontWeight": 600,
+      "lineHeightRatio": 1.5,
+      "states": [
+        "rates",
+        "rate-selected"
+      ]
+    },
+    {
+      "unit": "rooms",
+      "selector": "#selected-room-name",
+      "families": [
+        "Noto Sans KR Thin"
+      ],
+      "requireCustomFont": true,
+      "fontSizePx": 14,
+      "fontWeight": 500,
+      "lineHeightRatio": 1.5,
+      "states": [
+        "selected"
+      ]
+    },
+    {
+      "unit": "rooms",
+      "selector": "#selected-room-total",
+      "families": [
+        "Noto Sans KR Thin"
+      ],
+      "requireCustomFont": true,
+      "fontSizePx": 18,
+      "fontWeight": 700,
+      "lineHeightRatio": 1.5,
+      "states": [
+        "selected"
+      ]
+    },
+    {
+      "unit": "rooms",
+      "selector": "#continue-review",
+      "families": [
+        "Noto Sans KR Thin"
+      ],
+      "requireCustomFont": true,
+      "fontSizePx": 16,
+      "fontWeight": 600,
+      "lineHeightRatio": 1.5,
+      "states": [
+        "selected"
+      ]
+    },
+    {
+      "name": "booking-task-title",
+      "selector": "#review-view .booking-header h1",
+      "families": [
+        "Noto Sans KR Thin"
+      ],
+      "fontSizePx": 16,
+      "fontWeight": 600,
+      "lineHeightRatio": 1.5
+    },
+    {
+      "name": "booking-property",
+      "selector": "#review-stay",
+      "families": [
+        "Noto Sans KR Thin"
+      ],
+      "fontSizePx": 18,
+      "fontWeight": 600,
+      "lineHeightRatio": 1.5
+    },
+    {
+      "name": "booking-room-meta",
+      "selector": "#review-room,.booking-meta,.booking-meta span,.booking-date-label,.booking-nights,.booking-optional,.booking-policy p",
+      "families": [
+        "Noto Sans KR Thin"
+      ],
+      "fontSizePx": 14,
+      "fontWeight": 500,
+      "lineHeightRatio": 1.5
+    },
+    {
+      "name": "booking-date",
+      "selector": ".booking-date strong",
+      "families": [
+        "Noto Sans KR Thin"
+      ],
+      "fontSizePx": 16,
+      "fontWeight": 600,
+      "lineHeightRatio": 1.5
+    },
+    {
+      "name": "booking-section",
+      "selector": "#request-form h2",
+      "families": [
+        "Noto Sans KR Thin"
+      ],
+      "fontSizePx": 16,
+      "fontWeight": 600,
+      "lineHeightRatio": 1.5
+    },
+    {
+      "name": "booking-price",
+      "selector": ".booking-pricing dl>div:not(.booking-total) dt,.booking-pricing dl>div:not(.booking-total) dd",
+      "families": [
+        "Noto Sans KR Thin"
+      ],
+      "fontSizePx": 16,
+      "fontWeight": 500,
+      "lineHeightRatio": 1.5
+    },
+    {
+      "name": "booking-total",
+      "selector": ".booking-total dt,.booking-total dd",
+      "families": [
+        "Noto Sans KR Thin"
+      ],
+      "fontSizePx": 18,
+      "fontWeight": 700,
+      "lineHeightRatio": 1.5
+    },
+    {
+      "name": "booking-actions",
+      "selector": "#save-request,#request-form-reload",
+      "families": [
+        "Noto Sans KR Thin"
+      ],
+      "fontSizePx": 16,
+      "fontWeight": 600,
+      "lineHeightRatio": 1.5
+    },
+    {
+      "name": "booking-error",
+      "selector": "#request-form-error",
+      "families": [
+        "Noto Sans KR Thin"
+      ],
+      "fontSizePx": 16,
+      "fontWeight": 500,
+      "lineHeightRatio": 1.5
+    },
+    {
+      "name": "booking-guest-summary",
+      "selector": "#edit-request-guest span",
+      "families": [
+        "Noto Sans KR Thin",
+        "Noto Emoji",
+        "Noto Color Emoji"
+      ],
+      "fontSizePx": 16,
+      "fontWeight": 500,
+      "lineHeightRatio": 1.5
+    },
+    {
+      "name": "guest-editor-input",
+      "selector": "#guest-dialog input,#guest-dialog textarea",
+      "families": [
+        "Noto Sans KR Thin",
+        "Noto Emoji",
+        "Noto Color Emoji"
+      ],
+      "fontSizePx": 16,
+      "fontWeight": 500,
+      "lineHeightRatio": 1.5
+    },
+    {
+      "name": "guest-editor-heading",
+      "selector": "#guest-title",
+      "families": [
+        "Noto Sans KR Thin"
+      ],
+      "fontSizePx": 22,
+      "fontWeight": 700,
+      "lineHeightRatio": 1.5
+    },
+    {
+      "name": "guest-editor-error",
+      "selector": "#guest-form-error",
+      "families": [
+        "Noto Sans KR Thin"
+      ],
+      "fontSizePx": 16,
+      "fontWeight": 500,
+      "lineHeightRatio": 1.5
+    },
+    {
+      "name": "guest-editor-label-owner",
+      "selector": "#guest-dialog .guest-field-label",
+      "families": [
+        "Noto Sans KR Thin"
+      ],
+      "fontSizePx": 16,
+      "fontWeight": 600,
+      "lineHeightRatio": 1.5
+    },
+    {
+      "name": "guest-editor-controls",
+      "selector": "#guest-dialog button",
+      "families": [
+        "Noto Sans KR Thin"
+      ],
+      "fontSizePx": 16,
+      "fontWeight": 600,
+      "lineHeightRatio": 1.5
+    },
+    {
+      "unit": "requests",
+      "name": "request-title",
+      "selector": "#requests-view h1,.request-detail-header h1",
+      "families": [
+        "Noto Sans KR Thin"
+      ],
+      "requireCustomFont": true,
+      "fontSizePx": 16,
+      "fontWeight": 600,
+      "lineHeightRatio": 1.5
+    },
+    {
+      "unit": "requests",
+      "name": "request-empty-title",
+      "selector": "#requests-empty h2",
+      "families": [
+        "Noto Sans KR Thin"
+      ],
+      "requireCustomFont": true,
+      "fontSizePx": 18,
+      "fontWeight": 600,
+      "lineHeightRatio": 1.5
+    },
+    {
+      "unit": "requests",
+      "name": "request-empty-action",
+      "selector": "#requests-empty a",
+      "families": [
+        "Noto Sans KR Thin"
+      ],
+      "requireCustomFont": true,
+      "fontSizePx": 16,
+      "fontWeight": 600,
+      "lineHeightRatio": 1.5
+    },
+    {
+      "unit": "requests",
+      "name": "request-card-title",
+      "selector": "[data-request-stay]",
+      "families": [
+        "Noto Sans KR Thin"
+      ],
+      "requireCustomFont": true,
+      "fontSizePx": 18,
+      "fontWeight": 600,
+      "lineHeightRatio": 1.5
+    },
+    {
+      "unit": "requests",
+      "name": "request-support",
+      "selector": "[data-request-status],[data-request-room],[data-request-trip],#request-detail-status,#request-detail-room,#request-detail-trip,.request-detail-policy p",
+      "families": [
+        "Noto Sans KR Thin"
+      ],
+      "requireCustomFont": true,
+      "fontSizePx": 14,
+      "fontWeight": 500,
+      "lineHeightRatio": 1.5
+    },
+    {
+      "unit": "requests",
+      "name": "request-card-total",
+      "selector": "[data-request-total]",
+      "families": [
+        "Noto Sans KR Thin"
+      ],
+      "requireCustomFont": true,
+      "fontSizePx": 18,
+      "fontWeight": 700,
+      "lineHeightRatio": 1.5
+    },
+    {
+      "unit": "requests",
+      "name": "request-outcome",
+      "selector": ".request-outcome",
+      "families": [
+        "Noto Sans KR Thin"
+      ],
+      "requireCustomFont": true,
+      "fontSizePx": 22,
+      "fontWeight": 700,
+      "lineHeightRatio": 1.5
+    },
+    {
+      "unit": "requests",
+      "name": "request-stay",
+      "selector": "#request-detail-stay",
+      "families": [
+        "Noto Sans KR Thin"
+      ],
+      "requireCustomFont": true,
+      "fontSizePx": 18,
+      "fontWeight": 600,
+      "lineHeightRatio": 1.5
+    },
+    {
+      "unit": "requests",
+      "name": "request-group-heading",
+      "selector": ".request-detail-group h2:not(#request-detail-stay)",
+      "families": [
+        "Noto Sans KR Thin"
+      ],
+      "requireCustomFont": true,
+      "fontSizePx": 16,
+      "fontWeight": 600,
+      "lineHeightRatio": 1.5
+    },
+    {
+      "unit": "requests",
+      "name": "request-fact-label",
+      "selector": ".request-detail-group:not(.request-detail-price) dt",
+      "families": [
+        "Noto Sans KR Thin"
+      ],
+      "requireCustomFont": true,
+      "fontSizePx": 14,
+      "fontWeight": 500,
+      "lineHeightRatio": 1.5
+    },
+    {
+      "unit": "requests",
+      "name": "request-fact-value",
+      "selector": ".request-detail-group:not(.request-detail-price) dd",
+      "families": [
+        "Noto Sans KR Thin",
+        "Noto Emoji",
+        "Noto Color Emoji"
+      ],
+      "requireCustomFont": true,
+      "fontSizePx": 16,
+      "fontWeight": 500,
+      "lineHeightRatio": 1.5
+    },
+    {
+      "unit": "requests",
+      "name": "request-price-label",
+      "selector": ".request-detail-price dt",
+      "families": [
+        "Noto Sans KR Thin"
+      ],
+      "requireCustomFont": true,
+      "fontSizePx": 16,
+      "fontWeight": 500,
+      "lineHeightRatio": 1.5
+    },
+    {
+      "unit": "requests",
+      "name": "request-price-value",
+      "selector": ".request-cost-row dd",
+      "families": [
+        "Noto Sans KR Thin"
+      ],
+      "requireCustomFont": true,
+      "fontSizePx": 16,
+      "fontWeight": 500,
+      "lineHeightRatio": 1.5
+    },
+    {
+      "unit": "requests",
+      "name": "request-detail-total",
+      "selector": "#request-detail-total",
+      "families": [
+        "Noto Sans KR Thin"
+      ],
+      "requireCustomFont": true,
+      "fontSizePx": 18,
+      "fontWeight": 700,
+      "lineHeightRatio": 1.5
+    },
+    {
+      "unit": "requests",
+      "name": "request-errors",
+      "selector": "#requests-error,#request-detail-error,#cancel-request-error",
+      "families": [
+        "Noto Sans KR Thin"
+      ],
+      "requireCustomFont": true,
+      "fontSizePx": 16,
+      "fontWeight": 500,
+      "lineHeightRatio": 1.5
+    },
+    {
+      "unit": "requests",
+      "name": "request-actions",
+      "selector": "#requests-reload,#request-detail-reload,#cancel-request,#keep-request,#confirm-cancel-request,#cancel-request-reload",
+      "families": [
+        "Noto Sans KR Thin"
+      ],
+      "requireCustomFont": true,
+      "fontSizePx": 16,
+      "fontWeight": 600,
+      "lineHeightRatio": 1.5
+    },
+    {
+      "unit": "requests",
+      "name": "cancel-question",
+      "selector": "#cancel-request-title",
+      "families": [
+        "Noto Sans KR Thin"
+      ],
+      "requireCustomFont": true,
+      "fontSizePx": 22,
+      "fontWeight": 700,
+      "lineHeightRatio": 1.5
+    },
+    {
+      "unit": "requests",
+      "name": "cancel-subject",
+      "selector": "#cancel-request-subject",
+      "families": [
+        "Noto Sans KR Thin"
+      ],
+      "requireCustomFont": true,
+      "fontSizePx": 16,
+      "fontWeight": 500,
+      "lineHeightRatio": 1.5
+    },
+    {
+      "unit": "requests",
+      "name": "cancel-consequence",
+      "selector": "#cancel-request-dialog>p:not([id])",
+      "families": [
+        "Noto Sans KR Thin"
+      ],
+      "requireCustomFont": true,
+      "fontSizePx": 14,
+      "fontWeight": 500,
+      "lineHeightRatio": 1.5
+    }
+  ],
+  "cssFamily": "Noto Sans KR",
+  "localFont": {
+    "sha256": "194018e6b2b293a7964f037b25c0249ce1418bc9ab3c971060a03aa57861e252",
+    "weight": "100 900",
+    "source": "https://raw.githubusercontent.com/google/fonts/b38c5c93af322c45f633e17ac440ec1e6c94d489/ofl/notosanskr/NotoSansKR%5Bwght%5D.ttf",
+    "asset": "assets/fonts/NotoSansKR.ttf",
+    "family": "Noto Sans KR",
+    "license": "assets/fonts/OFL.txt"
+  },
+  "scope": "Original B1 roles plus pre-CSS declared B2 room/rate/selected/review roles. Use per-state applicable roles; no overall approval. New request list/detail/cancel exact roles declared before firstlocalCSS;full75/referencequality notapproved.",
+  "exactRoleOrigin": "Chosen before first CSS generation,following actualphoto-ledreference hierarchy.20pxpageinset preserved. No exact reference CSS/font measurements claimed.",
+  "userTextFallback": {
+    "family": "Noto Emoji",
+    "actualPlatformFamilyExpected": "Noto Emoji",
+    "asset": "assets/fonts/NotoEmoji.ttf",
+    "sha256": "de6c18832938afc99caf132b39d6a30a19bac7f2e812e28db2535b4608d27551",
+    "weight": "300 700",
+    "license": "assets/fonts/NotoEmoji-OFL.txt",
+    "metadata": "assets/fonts/NotoEmoji-METADATA.pb",
+    "source": "https://raw.githubusercontent.com/google/fonts/b38c5c93af322c45f633e17ac440ec1e6c94d489/ofl/notoemoji/NotoEmoji%5Bwght%5D.ttf",
+    "scope": "Suppliedmonochromeemoji fallbackforrequest usertext only;strictcustomfont checks retained. PrimaryKorean/Latin/numericroles unchanged."
+  },
+  "userTextColorFallback": {
+    "family": "Noto Color Emoji",
+    "asset": "assets/fonts/NotoColorEmoji.ttf",
+    "sha256": "0ae57fe58645638523ba35f388d93739d292539a9acb84df5700c81b1e1a28d2",
+    "weight": 400,
+    "license": "assets/fonts/NotoColorEmoji-OFL.txt",
+    "source": "https://raw.githubusercontent.com/googlefonts/noto-emoji/8998f5dd683424a73e2314a8c1f1e359c19e8742/fonts/Noto-COLRv1.ttf",
+    "scope": "Additionalsuppliedcolor-glyphfallback for usertext sequences. Staticglyphweight isnot500;primaryKorean/Latin/numericroleweights retained. No fullUnicode orcrossdeviceapproval."
+  }
+}

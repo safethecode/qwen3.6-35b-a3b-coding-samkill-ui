@@ -1,0 +1,56 @@
+{
+  "quote": {
+    "stayId": "afternoon",
+    "roomId": "afternoon-standard",
+    "rateId": "afternoon-standard-flex",
+    "start": "2026-11-06",
+    "end": "2026-11-08",
+    "guests": 2,
+    "nights": 2,
+    "nightly": 148000,
+    "cleaningFee": 20000,
+    "serviceFee": 14800,
+    "total": 330800,
+    "freeCancellation": true,
+    "breakfast": false,
+    "capacity": 2
+  },
+  "record": {
+    "version": 1,
+    "id": "request-one",
+    "revision": 1,
+    "status": "saved",
+    "createdAt": "2026-10-16T03:00:00.000Z",
+    "updatedAt": "2026-10-16T03:00:00.000Z",
+    "quote": {
+      "stayId": "afternoon",
+      "roomId": "afternoon-standard",
+      "rateId": "afternoon-standard-flex",
+      "start": "2026-11-06",
+      "end": "2026-11-08",
+      "guests": 2,
+      "nights": 2,
+      "nightly": 148000,
+      "cleaningFee": 20000,
+      "serviceFee": 14800,
+      "total": 330800,
+      "freeCancellation": true,
+      "breakfast": false,
+      "capacity": 2
+    },
+    "snapshot": {
+      "stayName": "오후의 방",
+      "roomName": "스탠다드 더블",
+      "rateName": "무료 취소",
+      "city": "강릉",
+      "bed": "더블 침대 1개"
+    },
+    "guest": {
+      "name": "가상 예약자",
+      "note": ""
+    },
+    "operations": [
+      "operation-one"
+    ]
+  }
+}

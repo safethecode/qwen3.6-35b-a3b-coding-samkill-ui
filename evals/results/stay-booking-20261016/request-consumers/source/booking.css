@@ -1,0 +1,61 @@
+#main-content:has(#review-view:not([hidden])){padding-inline:0;padding-bottom:0}
+
+#review-view{display:flex;flex-direction:column;gap:0;min-width:0;}
+#review-view .booking-group{background-color:var(--surface);padding-inline:var(--page-inset);}
+#review-view .booking-header{display:grid;grid-template-columns:minmax(0,1fr)44px;align-items:center;padding-block:8px;padding-inline:var(--page-inset);gap:0;}
+#review-view .booking-header h1{font-size:16px;font-weight:600;line-height:1.5;text-align:center;margin:0;}
+#review-view .booking-header-spacer{width:44px;flex-shrink:0;}
+#review-view #review-stay{font-size:18px;font-weight:600;line-height:1.5;margin-block:0;padding-block:0;}
+#review-view #review-room{font-size:14px;font-weight:500;line-height:1.5;margin-block:0;padding-block:0;}
+#review-view .booking-meta{font-size:14px;font-weight:500;line-height:1.5;margin-block:0;padding-block:0;}
+
+#review-view .booking-identity{padding-block:16px;padding-inline:var(--page-inset);}
+#review-view .booking-dates{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);gap:8px;margin-block-start:16px;}
+#review-view .booking-date{background-color:var(--quiet);padding:12px;border-radius:8px;min-width:0;display:flex;flex-direction:column;align-items:center;justify-content:center;}
+#review-view .booking-date-label{font-size:14px;font-weight:500;color:var(--muted);margin-block-end:4px;text-align:center;}
+#review-view .booking-date strong{font-size:16px;font-weight:600;line-height:1.5;overflow-wrap:anywhere;text-align:center;display:block;}
+#review-view .booking-nights{display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:500;color:var(--muted);line-height:1.5;padding-inline:8px;white-space:nowrap;}
+
+#review-view .booking-header{display:grid;grid-template-columns:44px minmax(0,1fr) 44px;align-items:center;padding-block:8px;}
+
+#review-view #request-form{display:grid;gap:8px;background-color:var(--quiet);padding-top:8px;}
+#review-view .booking-guest{padding-block:24px;padding-inline:var(--page-inset);display:flex;flex-direction:column;gap:16px;margin:0;}
+#review-view #request-form h2{font-size:16px;font-weight:600;line-height:1.5;margin:0;}
+#review-view .booking-field{display:flex;flex-direction:column;gap:8px;margin:0;min-width:0;}
+#review-view .booking-field label{font-size:14px;font-weight:500;line-height:1.5;}
+#review-view .booking-optional{font-size:14px;font-weight:500;line-height:1.5;color:var(--muted);}
+#review-view #request-name{font-size:16px;font-weight:500;line-height:1.5;font-family:inherit;width:100%;min-width:0;padding:12px;border:0;background:transparent;color:var(--text);min-height:48px;}
+#review-view #request-note{font-size:16px;font-weight:500;line-height:1.5;font-family:inherit;width:100%;min-width:0;padding:12px;border:0;background:transparent;color:var(--text);min-height:88px;resize:vertical;}
+
+#review-view .booking-pricing{padding:24px var(--page-inset);background-color:var(--surface)}
+#review-view .booking-pricing dl{display:grid;gap:12px;margin:0;padding:0}
+#review-view .booking-pricing dl>div{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:12px;align-items:start}
+#review-view .booking-pricing dt{font-size:16px;font-weight:500;line-height:1.5;margin:0;min-width:0;overflow-wrap:anywhere}
+#review-view .booking-pricing dd{font-size:16px;font-weight:500;line-height:1.5;margin:0;min-width:0;overflow-wrap:anywhere;text-align:right}
+#review-view .booking-pricing .booking-total{margin-top:24px}
+#review-view .booking-total dt{font-size:18px;font-weight:700;line-height:1.5}
+#review-view .booking-total dd{font-size:18px;font-weight:700;line-height:1.5}
+#review-view .booking-policy{display:grid;gap:4px;margin-top:16px}
+#review-view .booking-policy p{font-size:14px;font-weight:500;line-height:1.5;color:var(--muted);margin:0}
+
+#review-view .booking-submit{display:flex;flex-direction:column;gap:12px;padding:16px 20px 24px;background-color:var(--surface);}
+#review-view #request-form-error{font-size:16px;font-weight:500;line-height:1.5;color:var(--error);margin:0;word-break:keep-all;overflow-wrap:anywhere;}
+#review-view #request-form-reload{font-size:16px;font-weight:600;line-height:1.5;min-height:44px;padding:12px;border:0;border-radius:8px;}
+#review-view #save-request{width:100%;min-height:48px;padding:16px;border:0;border-radius:8px;background-color:var(--action);color:white;font-size:16px;font-weight:600;line-height:1.5;word-break:keep-all;overflow-wrap:anywhere;}
+#review-view #save-request:disabled{opacity:.6;}
+
+#review-view .booking-identity{container-type:inline-size;container-name:booking-trip;}
+#review-view .booking-pricing{container-type:inline-size;container-name:booking-price;}
+#review-view .booking-meta,#review-view .booking-date-label,#review-view .booking-pricing dt,#review-view .booking-pricing dd{word-break:keep-all;overflow-wrap:anywhere;}
+@container booking-trip (max-width:20em){#review-view .booking-date{padding:4px}#review-view .booking-nights{padding-inline:0}}
+#review-view .booking-dates[data-trip-stacked="true"]{grid-template-columns:minmax(0,1fr)}
+@container booking-price (max-width:15em){#review-view .booking-pricing dl>div{grid-template-columns:minmax(0,1fr);}}
+
+#review-view .booking-date{align-items:flex-start}
+#review-view .booking-date-label{text-align:start}
+#review-view .booking-date strong{text-align:start}
+
+#review-view .booking-dates{background-color:var(--quiet)}
+#review-view .booking-date{background-color:transparent;border-radius:0px}
+
+#review-view .booking-header{padding-inline:0}
