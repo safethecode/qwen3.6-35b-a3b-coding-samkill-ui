@@ -1,0 +1,33 @@
+{
+  "records": [
+    {
+      "id": 14021931,
+      "file": "family-blue.jpg",
+      "author": "Quang Nguyen Vinh",
+      "page": "https://www.pexels.com/photo/hotel-double-room-14021931/",
+      "license": "https://www.pexels.com/license/",
+      "sha256": "c37245f942ebfa8b17e52b2a537459250fcade0fe52a5e82bacd446134b8b0b2",
+      "bytes": 107526,
+      "downloadedAtUtc": "2026-10-15T17:45:12.101Z",
+      "status": "ACCEPTED_LICENSED_ROOM_ASSET_ONLY",
+      "purpose": "Separate licensed implementation asset candidate;not a UI Bowl screenshot crop or real fixture-property endorsement",
+      "inspectedAtUtc": "2026-10-15T17:52:47.675Z",
+      "observation": "Directly inspected real room with two visible beds; source photo does not verify fixture location or exact bed sizes"
+    },
+    {
+      "id": 29080576,
+      "file": "family-light.jpg",
+      "author": "AJ Ahamad",
+      "page": "https://www.pexels.com/photo/modern-twin-bed-hotel-room-in-dubai-29080576/",
+      "license": "https://www.pexels.com/license/",
+      "sha256": "5ea08a543d58f4fea48b3ae7b830f1ed76dc1d2549c3863d268b7e14cc9e130b",
+      "bytes": 54899,
+      "downloadedAtUtc": "2026-10-15T17:45:11.861Z",
+      "status": "ACCEPTED_LICENSED_ROOM_ASSET_ONLY",
+      "purpose": "Separate licensed implementation asset candidate;not a UI Bowl screenshot crop or real fixture-property endorsement",
+      "inspectedAtUtc": "2026-10-15T17:52:47.675Z",
+      "observation": "Directly inspected real room with two visible beds; source photo does not verify fixture location or exact bed sizes"
+    }
+  ],
+  "scope": "Fictional local catalogue with independently licensed generic photo assets. No UI Bowl screenshot pixels used as implementation assets."
+}

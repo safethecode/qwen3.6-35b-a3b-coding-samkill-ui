@@ -1,0 +1,7 @@
+{
+  "at": "2026-10-15T18:37:40.024Z",
+  "status": "PUBLISHED_BUILTIN_SERVER_AND_BROWSER_SMOKE_PASS",
+  "scope": "Actualserve.mjs startup,HTTP HTML/CSS,realclockdirectroom→flexrate→review,errors[];temporaryserverstoppedaftercheck",
+  "errors": [],
+  "limits": "Notallworkflow/visualreferenceapproval."
+}

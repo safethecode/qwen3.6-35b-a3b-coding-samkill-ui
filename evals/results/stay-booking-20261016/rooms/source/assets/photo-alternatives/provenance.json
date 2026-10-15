@@ -1,0 +1,23 @@
+{
+  "license": "Pexels License",
+  "licenseUrl": "https://www.pexels.com/license/",
+  "photos": [
+    {
+      "file": "room-light.jpg",
+      "author": "Luca Luperto",
+      "page": "https://www.pexels.com/photo/interior-design-of-hotel-room-19045884/",
+      "sha256": "9df877531d7d29254a641e92e42abb21406f1c72c3b946e1131a2824db246e56",
+      "bytes": 88962,
+      "acquiredAtUtc": "2026-10-15T16:04:45.944Z"
+    },
+    {
+      "file": "room-spacious.jpg",
+      "author": "AJ Ahamad",
+      "page": "https://www.pexels.com/photo/modern-minimalist-hotel-room-interior-decor-33636641/",
+      "sha256": "469149c94d0f04077af0675580166a5f2d829eb23e27196b501a4eeadda91a0b",
+      "bytes": 82138,
+      "acquiredAtUtc": "2026-10-15T16:04:46.912Z"
+    }
+  ],
+  "selection": "Pending actualpixelinspection. Earlierroom-warm isnotselected duevisibleTVthirdpartymediaandweakerphotocomposition;originalfile/provenancepreserved,notdeleted."
+}

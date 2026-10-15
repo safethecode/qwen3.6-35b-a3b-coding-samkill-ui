@@ -1,0 +1,66 @@
+import { isBookableRange } from "./dates.js";
+import { buildQuote } from "./quote.js";
+
+export function listStayRates(catalog, stayId, trip, today, filters) {
+if (!Array.isArray(catalog)) return {ok:false,error:'INVALID_ROOM_QUERY'};
+if (typeof stayId !== 'string' || stayId.length === 0) return {ok:false,error:'INVALID_ROOM_QUERY'};
+if (!filters || typeof filters !== 'object' || !('freeCancellation' in filters) || !('breakfast' in filters) || typeof filters.freeCancellation !== 'boolean' || typeof filters.breakfast !== 'boolean') return {ok:false,error:'INVALID_ROOM_QUERY'};
+const tripKeys = new Set(['start','end','guests']);
+if (typeof trip !== 'object' || trip === null || Array.isArray(trip)) return {ok:false,error:'INVALID_ROOM_QUERY'};
+for (const key of Object.keys(trip)) {
+  if (!tripKeys.has(key)) return {ok:false,error:'INVALID_ROOM_QUERY'};
+}
+if (!tripKeys.has('start') || !tripKeys.has('end') || !tripKeys.has('guests')) return {ok:false,error:'INVALID_ROOM_QUERY'};
+    if (!trip || typeof trip !== 'object' || !('start' in trip) || !('end' in trip) || !('guests' in trip)) {
+        return { ok: false, error: 'INVALID_ROOM_QUERY' };
+    }
+    const { start, end, guests } = trip;
+    if (typeof start !== 'string' || typeof end !== 'string') {
+        return { ok: false, error: 'INVALID_ROOM_QUERY' };
+    }
+    if (!isBookableRange(start, end, today)) {
+        return { ok: false, error: 'INVALID_ROOM_QUERY' };
+    }
+    if (typeof guests !== 'number' || !Number.isInteger(guests) || guests < 1 || guests > 8) {
+        return { ok: false, error: 'INVALID_ROOM_QUERY' };
+    }
+
+if (Object.keys(trip).length !== 3 || !tripKeys.has('start') || !tripKeys.has('end') || !tripKeys.has('guests')) return {ok:false,error:'INVALID_ROOM_QUERY'};
+if (Object.keys(filters).length !== 2 || !('freeCancellation' in filters) || !('breakfast' in filters)) return {ok:false,error:'INVALID_ROOM_QUERY'};
+    let property = null;
+    for (const p of catalog) {
+        if (p.id === stayId) {
+            property = p;
+            break;
+        }
+    }
+    if (!property) {
+        return { ok: false, error: 'UNKNOWN_STAY' };
+    }
+
+    const quotes = [];
+    for (const room of property.rooms) {
+        if (room.capacity < guests) continue;
+
+        for (const rate of room.rates) {
+            if (filters.freeCancellation && !rate.freeCancellation) continue;
+            if (filters.breakfast && !rate.breakfast) continue;
+
+            const selection = {
+                stayId: stayId,
+                roomId: room.id,
+                rateId: rate.id,
+                start: start,
+                end: end,
+                guests: guests
+            };
+
+            const result = buildQuote(catalog, selection, today);
+            if (result.ok && result.quote) {
+                quotes.push(result.quote);
+            }
+        }
+    }
+
+    return { ok: true, quotes: quotes };
+}

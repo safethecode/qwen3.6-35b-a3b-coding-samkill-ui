@@ -1,0 +1,286 @@
+{
+  "rules": [
+    {
+      "id": "mobile-core",
+      "kind": "maxWidth",
+      "subject": "body",
+      "maximum": 390
+    },
+    {
+      "id": "mobile-navigation",
+      "kind": "maxWidth",
+      "subject": ".bottom-navigation",
+      "maximum": 390,
+      "states": [
+        "initial",
+        "saved",
+        "requests",
+        "search",
+        "filter",
+        "empty",
+        "read-error"
+      ]
+    },
+    {
+      "id": "price-separate-afternoon",
+      "kind": "below",
+      "subject": "#card-afternoon .stay-price",
+      "reference": "#card-afternoon .stay-room",
+      "minGap": 0,
+      "states": [
+        "initial"
+      ]
+    },
+    {
+      "id": "metadata-below-photo-afternoon",
+      "kind": "below",
+      "subject": "#card-afternoon .stay-facts",
+      "reference": "#card-afternoon .stay-media",
+      "minGap": 12,
+      "states": [
+        "initial"
+      ]
+    },
+    {
+      "id": "price-separate-walk",
+      "kind": "below",
+      "subject": "#card-walk .stay-price",
+      "reference": "#card-walk .stay-room",
+      "minGap": 0,
+      "states": [
+        "initial"
+      ]
+    },
+    {
+      "id": "metadata-below-photo-walk",
+      "kind": "below",
+      "subject": "#card-walk .stay-facts",
+      "reference": "#card-walk .stay-media",
+      "minGap": 12,
+      "states": [
+        "initial"
+      ]
+    },
+    {
+      "id": "price-separate-smallroom",
+      "kind": "below",
+      "subject": "#card-smallroom .stay-price",
+      "reference": "#card-smallroom .stay-room",
+      "minGap": 0,
+      "states": [
+        "initial"
+      ]
+    },
+    {
+      "id": "metadata-below-photo-smallroom",
+      "kind": "below",
+      "subject": "#card-smallroom .stay-facts",
+      "reference": "#card-smallroom .stay-media",
+      "minGap": 12,
+      "states": [
+        "initial"
+      ]
+    },
+    {
+      "id": "search-control",
+      "kind": "computedStyle",
+      "subject": "#open-search",
+      "properties": {
+        "border-radius": "24px",
+        "border-top-width": "0px",
+        "text-align": "start"
+      },
+      "states": [
+        "initial"
+      ]
+    },
+    {
+      "id": "filter-control",
+      "kind": "computedStyle",
+      "subject": "#open-filters",
+      "properties": {
+        "border-radius": "12px",
+        "border-top-width": "0px",
+        "text-align": "start"
+      },
+      "states": [
+        "initial"
+      ]
+    },
+    {
+      "id": "search-wrap",
+      "kind": "computedStyle",
+      "subject": ".search-entry",
+      "properties": {
+        "flex-wrap": "wrap"
+      },
+      "states": [
+        "initial"
+      ]
+    },
+    {
+      "id": "tools-wrap",
+      "kind": "computedStyle",
+      "subject": ".result-tools",
+      "properties": {
+        "flex-wrap": "wrap",
+        "gap": "8px"
+      },
+      "states": [
+        "initial"
+      ]
+    },
+    {
+      "id": "sort-field",
+      "kind": "computedStyle",
+      "subject": "#sort",
+      "properties": {
+        "appearance": "none",
+        "line-height": "24px",
+        "border-top-width": "0px"
+      },
+      "states": [
+        "initial"
+      ]
+    },
+    {
+      "id": "city-field",
+      "kind": "computedStyle",
+      "subject": "#city",
+      "properties": {
+        "appearance": "none",
+        "line-height": "24px",
+        "border-top-width": "0px"
+      },
+      "states": [
+        "search"
+      ]
+    },
+    {
+      "id": "type-field",
+      "kind": "computedStyle",
+      "subject": "#stay-type",
+      "properties": {
+        "appearance": "none",
+        "line-height": "24px",
+        "border-top-width": "0px"
+      },
+      "states": [
+        "filter"
+      ]
+    },
+    {
+      "id": "b2-wide-compact-first-room-photo",
+      "kind": "computedStyle",
+      "subject": ".room-card[data-room-id=\"afternoon-standard\"] .room-photo",
+      "properties": {
+        "aspect-ratio": "11 / 5",
+        "object-fit": "cover"
+      },
+      "states": [
+        "rooms",
+        "selected"
+      ]
+    },
+    {
+      "id": "b2-room-metadata-below-photo",
+      "kind": "below",
+      "subject": ".room-card[data-room-id=\"afternoon-standard\"] .room-card-content",
+      "reference": ".room-card[data-room-id=\"afternoon-standard\"] .room-photo",
+      "minGap": 0,
+      "states": [
+        "rooms",
+        "selected"
+      ]
+    },
+    {
+      "id": "b2-price-below-room-facts",
+      "kind": "below",
+      "subject": ".room-card[data-room-id=\"afternoon-standard\"] .room-price",
+      "reference": ".room-card[data-room-id=\"afternoon-standard\"] .room-facts",
+      "minGap": 16,
+      "states": [
+        "rooms",
+        "selected"
+      ]
+    },
+    {
+      "id": "b2-separate-room-cards",
+      "kind": "below",
+      "subject": ".room-card[data-room-id=\"afternoon-family\"]",
+      "reference": ".room-card[data-room-id=\"afternoon-standard\"]",
+      "minGap": 24,
+      "states": [
+        "rooms",
+        "selected"
+      ]
+    },
+    {
+      "id": "b2-closed-native-dialogs-stay-hidden",
+      "kind": "absent",
+      "subject": "dialog:not([open]):visible"
+    },
+    {
+      "id": "b2-specific-firstroom-bed-focalpoint",
+      "kind": "computedStyle",
+      "subject": ".room-card[data-room-id=\"afternoon-standard\"] .room-photo",
+      "properties": {
+        "object-position": "50% 100%"
+      },
+      "states": [
+        "rooms",
+        "selected"
+      ]
+    },
+    {
+      "id": "b2-review-return-leading-edge",
+      "kind": "computedStyle",
+      "subject": "#review-back",
+      "properties": {
+        "align-self": "flex-start"
+      },
+      "states": [
+        "review"
+      ]
+    },
+    {
+      "id": "b2-selected-native-radio-surface",
+      "kind": "computedStyle",
+      "subject": ".rate-option:has(input:checked)",
+      "properties": {
+        "background-color": "rgb(255, 255, 255)",
+        "box-shadow": "rgb(34, 33, 38) 0px 0px 0px 2px inset"
+      },
+      "states": [
+        "rate-selected"
+      ]
+    },
+    {
+      "id": "b2-shortcloseword-preserved",
+      "kind": "computedStyle",
+      "subject": "#rate-dialog .sheet-heading [data-cancel]",
+      "properties": {
+        "flex-shrink": "0",
+        "word-break": "keep-all"
+      },
+      "states": [
+        "rates",
+        "rate-selected"
+      ]
+    },
+    {
+      "id": "b2-ratetitle-word-boundaries",
+      "kind": "computedStyle",
+      "subject": "#rate-dialog .sheet-heading h2",
+      "properties": {
+        "word-break": "keep-all",
+        "overflow-wrap": "break-word"
+      },
+      "states": [
+        "rates",
+        "rate-selected"
+      ]
+    }
+  ],
+  "scope": "Active combined B1 discovery and B2 room/rate/review mechanical contract. State-specific relationships do not approve appearance; unvisited states remain unknown."
+}
