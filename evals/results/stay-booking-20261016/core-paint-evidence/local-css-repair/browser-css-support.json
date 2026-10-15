@@ -1,0 +1,27 @@
+[
+  {
+    "property": "z-index",
+    "value": "10",
+    "supported": true
+  },
+  {
+    "property": "flex",
+    "value": "1 1 calc(9em + 60px)",
+    "supported": true
+  },
+  {
+    "property": "color",
+    "value": "var(--text)",
+    "supported": true
+  },
+  {
+    "property": "background",
+    "value": "var(--quiet)",
+    "supported": true
+  },
+  {
+    "property": "color",
+    "value": "var(--text)",
+    "supported": true
+  }
+]
