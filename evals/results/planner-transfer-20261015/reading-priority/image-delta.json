@@ -1,0 +1,39 @@
+{
+  "status": "MEASURED_SCREENSHOT_BYTES_AND_REPORTED_TEXT_WIDTH_NOT_QUALITY_PARITY",
+  "identical": 22,
+  "compared": 24,
+  "changes": [
+    {
+      "width": 296,
+      "state": "editing",
+      "mode": "text-200",
+      "beforeImageHeight": 3003,
+      "afterImageHeight": 1926,
+      "beforeTextWidth": 102.109375,
+      "afterTextWidth": 217,
+      "placements": [
+        "below",
+        "below",
+        "below"
+      ],
+      "beforePngSha256": "74c3ee6542340412eff751efd7d6a131d45a38f20a6ffc3fae8fdaac79d6ebb3",
+      "afterPngSha256": "f9da7607cf9a723d5b461c5d526370d8f87691b74022203f1c302222a6283f91"
+    },
+    {
+      "width": 320,
+      "state": "editing",
+      "mode": "text-200",
+      "beforeImageHeight": 2440,
+      "afterImageHeight": 1772,
+      "beforeTextWidth": 126.109375,
+      "afterTextWidth": 241,
+      "placements": [
+        "below",
+        "below",
+        "below"
+      ],
+      "beforePngSha256": "ecbb468c6eaa5d6c7bbce6fe3d35f2b7dcbdbbb3a819b002c4d8bf5770a79586",
+      "afterPngSha256": "5c980022c86969ac0b221fc7d375512b96f953f34932eed22d2e8d1af6320ae3"
+    }
+  ]
+}

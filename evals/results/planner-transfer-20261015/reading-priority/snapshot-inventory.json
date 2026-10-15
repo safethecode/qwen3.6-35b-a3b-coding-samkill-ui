@@ -1,0 +1,23 @@
+{
+  "snapshots": [
+    {
+      "status": "EXACT_BOUND_SOURCE_RESTORED",
+      "snapshot": "original-source",
+      "files": 22,
+      "changedFiles": 4
+    },
+    {
+      "status": "EXACT_BOUND_SOURCE_RESTORED",
+      "snapshot": "input-source",
+      "files": 22,
+      "changedFiles": 1
+    },
+    {
+      "status": "EXACT_BOUND_SOURCE_RESTORED",
+      "snapshot": "stage1-source",
+      "files": 22,
+      "changedFiles": 1
+    }
+  ],
+  "materializerSha256": "0cc0b8f27f759ace75843d469742825c722d4182137c382e947e551a7dd5a3c8"
+}

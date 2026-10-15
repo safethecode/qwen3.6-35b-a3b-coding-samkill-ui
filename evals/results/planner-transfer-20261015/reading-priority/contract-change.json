@@ -1,0 +1,43 @@
+{
+  "declaredAtUtc": "2026-10-15T12:27:42.447Z",
+  "status": "PREDECLARED_EXPERIMENT_NOT_APPROVAL",
+  "oldRule": {
+    "id": "editing-action-first-line",
+    "kind": "firstLineControls",
+    "subject": "[data-ui-unit=\"tasks\"]",
+    "rows": ".task-row",
+    "text": ".task-name",
+    "controls": [
+      ".task-check",
+      ".delete-task"
+    ],
+    "tolerance": 2,
+    "states": [
+      "editing"
+    ]
+  },
+  "newRule": {
+    "id": "editing-readable-action",
+    "kind": "readingActionFlow",
+    "subject": "[data-ui-unit=\"tasks\"]",
+    "rows": ".task-row",
+    "text": ".task-name",
+    "body": ".task-toggle",
+    "action": ".delete-task",
+    "minimumTextEm": 6,
+    "minimumTarget": 44,
+    "minGap": 8,
+    "maxBelowGap": 24,
+    "tolerance": 2,
+    "states": [
+      "editing"
+    ],
+    "reservedInlineWidth": 39
+  },
+  "reason": "Historical all-inline relation can pass a severe96px title column at296px200%text. First-line checkbox relation stays unchanged. Delete stays owned,end-aligned,44px target and complete labels/assets. Below flow allowed only when selected reading width cannot coexist inline;gap8..24px and no overlap. New dimensions add readability/containment constraints,not an exception that turns original outcomes into pass.",
+  "threshold": "6em chosen for this personal planner;not measured reference CSS,not a WCAG standard or universal preset. Capped at full available row minus native-control/insets;actual ordinary/enlarged/long renders remain decisive.",
+  "priorResults": "evals/results/planner-transfer-20261015/list-ownership/copy-refinement/mode/report.json",
+  "reference": "Reuse this same comparison round observations/reference.json and edit-mode-research/reference.json. Original task edit/enlarged behavior is unobserved;this is a chosen adaptation.",
+  "independentAllowance": "39px measured before inference:20px native checkbox +4px native left margin +3px native right margin +12px existing CSS gap. Full raw computed receipt native-inset.json. No native margin or spacing changes. Initial32px host omission and false-extra-failure baseline preserved separately.",
+  "supersededDraft": "contract-change-v1.json and baseline-mode/report.json;these used32px and falsely rejected ordinary native margins. Not generation evidence."
+}

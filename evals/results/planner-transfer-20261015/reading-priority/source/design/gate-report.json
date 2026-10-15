@@ -1,0 +1,3450 @@
+{
+  "schema_version": 1,
+  "results": [
+    {
+      "id": "ORC-F01",
+      "status": "not-applicable",
+      "reason": "No sidebar: a single bounded mobile canvas and one native dialog.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/reading-review.md",
+          "sha256": "7a77b26b2b292b8a1180c10dd479faba1e6bc6ae6dbc880f34ed962849709a42"
+        }
+      ]
+    },
+    {
+      "id": "ORC-F02",
+      "status": "not-applicable",
+      "reason": "No sidebar or sidebar-only accent region.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/reading-review.md",
+          "sha256": "7a77b26b2b292b8a1180c10dd479faba1e6bc6ae6dbc880f34ed962849709a42"
+        }
+      ]
+    },
+    {
+      "id": "ORC-F03",
+      "status": "pass",
+      "reason": "Dark primary action and selected day use white>=600 text; direct normal/form screenshots and CSS inspected.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/reading-review.md",
+          "sha256": "7a77b26b2b292b8a1180c10dd479faba1e6bc6ae6dbc880f34ed962849709a42"
+        },
+        {
+          "kind": "code",
+          "path": "index.html",
+          "sha256": "ab82f40fe2e255e8d990c9ab45e6a9f0cf1466054e00e84eac1a668d09fc7e33"
+        },
+        {
+          "kind": "code",
+          "path": "styles.css",
+          "sha256": "4f8526a4e2366d91377463cee0967456614e41868a13352cd4ca56a7a54c56b0"
+        },
+        {
+          "kind": "code",
+          "path": "app.js",
+          "sha256": "e3a606e0069f7635bdf79e1dd11bf5e91ce4c761e7fc765f99be1c2220524ca5"
+        },
+        {
+          "kind": "code",
+          "path": "render.js",
+          "sha256": "7e5dc567bbb2130dc3df06820967ecbabbeb298a7a47fd2fe6a2f0e776a099e0"
+        },
+        {
+          "kind": "code",
+          "path": "store.js",
+          "sha256": "2300e692f886294a8d328b7d3f72fdac9c72b57eac8c6d2c79d95fd9bd25f0ce"
+        },
+        {
+          "kind": "code",
+          "path": "assets/icons/manifest.json",
+          "sha256": "9e5787944a2f2b999f31d352c278ac7507c2e96dbc0f9ca0a4609c35babb538b"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/reading.png",
+          "sha256": "5ff7c5ede5d31a8f93be3451683d7b4e943a00c483954ddae6ddad2c72c8988b"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/editing.png",
+          "sha256": "4f7ed6822d7a83e11e4b5378e8668567df03b003d80da1f40d833ded2324abb5"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/form.png",
+          "sha256": "b8d160fda76be2c8cc087ecf50b51b40c75c93888ed010cd890a48bd400aa1ec"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/296-enlarged.png",
+          "sha256": "f9da7607cf9a723d5b461c5d526370d8f87691b74022203f1c302222a6283f91"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/read-failed.png",
+          "sha256": "45f62c4d99c3f3822b70dedaf879f2fd7a3062f518bfd9d383d42460f7bae66a"
+        }
+      ]
+    },
+    {
+      "id": "ORC-F04",
+      "status": "pass",
+      "reason": "Each category has one scoped add opener, the dialog has one submit action; their targets/states differ.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/reading-review.md",
+          "sha256": "7a77b26b2b292b8a1180c10dd479faba1e6bc6ae6dbc880f34ed962849709a42"
+        },
+        {
+          "kind": "code",
+          "path": "index.html",
+          "sha256": "ab82f40fe2e255e8d990c9ab45e6a9f0cf1466054e00e84eac1a668d09fc7e33"
+        },
+        {
+          "kind": "code",
+          "path": "styles.css",
+          "sha256": "4f8526a4e2366d91377463cee0967456614e41868a13352cd4ca56a7a54c56b0"
+        },
+        {
+          "kind": "code",
+          "path": "app.js",
+          "sha256": "e3a606e0069f7635bdf79e1dd11bf5e91ce4c761e7fc765f99be1c2220524ca5"
+        },
+        {
+          "kind": "code",
+          "path": "render.js",
+          "sha256": "7e5dc567bbb2130dc3df06820967ecbabbeb298a7a47fd2fe6a2f0e776a099e0"
+        },
+        {
+          "kind": "code",
+          "path": "store.js",
+          "sha256": "2300e692f886294a8d328b7d3f72fdac9c72b57eac8c6d2c79d95fd9bd25f0ce"
+        },
+        {
+          "kind": "code",
+          "path": "assets/icons/manifest.json",
+          "sha256": "9e5787944a2f2b999f31d352c278ac7507c2e96dbc0f9ca0a4609c35babb538b"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/reading.png",
+          "sha256": "5ff7c5ede5d31a8f93be3451683d7b4e943a00c483954ddae6ddad2c72c8988b"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/editing.png",
+          "sha256": "4f7ed6822d7a83e11e4b5378e8668567df03b003d80da1f40d833ded2324abb5"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/form.png",
+          "sha256": "b8d160fda76be2c8cc087ecf50b51b40c75c93888ed010cd890a48bd400aa1ec"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/296-enlarged.png",
+          "sha256": "f9da7607cf9a723d5b461c5d526370d8f87691b74022203f1c302222a6283f91"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/read-failed.png",
+          "sha256": "45f62c4d99c3f3822b70dedaf879f2fd7a3062f518bfd9d383d42460f7bae66a"
+        }
+      ]
+    },
+    {
+      "id": "ORC-F05",
+      "status": "not-applicable",
+      "reason": "Simple title/completion checklists, no visual card grid or three-attribute tabular record view.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/reading-review.md",
+          "sha256": "7a77b26b2b292b8a1180c10dd479faba1e6bc6ae6dbc880f34ed962849709a42"
+        }
+      ]
+    },
+    {
+      "id": "ORC-F06",
+      "status": "pass",
+      "reason": "Red appears only for errors; selected/completed states remain neutral.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/reading-review.md",
+          "sha256": "7a77b26b2b292b8a1180c10dd479faba1e6bc6ae6dbc880f34ed962849709a42"
+        },
+        {
+          "kind": "code",
+          "path": "index.html",
+          "sha256": "ab82f40fe2e255e8d990c9ab45e6a9f0cf1466054e00e84eac1a668d09fc7e33"
+        },
+        {
+          "kind": "code",
+          "path": "styles.css",
+          "sha256": "4f8526a4e2366d91377463cee0967456614e41868a13352cd4ca56a7a54c56b0"
+        },
+        {
+          "kind": "code",
+          "path": "app.js",
+          "sha256": "e3a606e0069f7635bdf79e1dd11bf5e91ce4c761e7fc765f99be1c2220524ca5"
+        },
+        {
+          "kind": "code",
+          "path": "render.js",
+          "sha256": "7e5dc567bbb2130dc3df06820967ecbabbeb298a7a47fd2fe6a2f0e776a099e0"
+        },
+        {
+          "kind": "code",
+          "path": "store.js",
+          "sha256": "2300e692f886294a8d328b7d3f72fdac9c72b57eac8c6d2c79d95fd9bd25f0ce"
+        },
+        {
+          "kind": "code",
+          "path": "assets/icons/manifest.json",
+          "sha256": "9e5787944a2f2b999f31d352c278ac7507c2e96dbc0f9ca0a4609c35babb538b"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/reading.png",
+          "sha256": "5ff7c5ede5d31a8f93be3451683d7b4e943a00c483954ddae6ddad2c72c8988b"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/editing.png",
+          "sha256": "4f7ed6822d7a83e11e4b5378e8668567df03b003d80da1f40d833ded2324abb5"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/form.png",
+          "sha256": "b8d160fda76be2c8cc087ecf50b51b40c75c93888ed010cd890a48bd400aa1ec"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/296-enlarged.png",
+          "sha256": "f9da7607cf9a723d5b461c5d526370d8f87691b74022203f1c302222a6283f91"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/read-failed.png",
+          "sha256": "45f62c4d99c3f3822b70dedaf879f2fd7a3062f518bfd9d383d42460f7bae66a"
+        }
+      ]
+    },
+    {
+      "id": "ORC-F07",
+      "status": "pass",
+      "reason": "Main/form purpose headings22px, not landing-sized32–40px.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/reading-review.md",
+          "sha256": "7a77b26b2b292b8a1180c10dd479faba1e6bc6ae6dbc880f34ed962849709a42"
+        },
+        {
+          "kind": "code",
+          "path": "index.html",
+          "sha256": "ab82f40fe2e255e8d990c9ab45e6a9f0cf1466054e00e84eac1a668d09fc7e33"
+        },
+        {
+          "kind": "code",
+          "path": "styles.css",
+          "sha256": "4f8526a4e2366d91377463cee0967456614e41868a13352cd4ca56a7a54c56b0"
+        },
+        {
+          "kind": "code",
+          "path": "app.js",
+          "sha256": "e3a606e0069f7635bdf79e1dd11bf5e91ce4c761e7fc765f99be1c2220524ca5"
+        },
+        {
+          "kind": "code",
+          "path": "render.js",
+          "sha256": "7e5dc567bbb2130dc3df06820967ecbabbeb298a7a47fd2fe6a2f0e776a099e0"
+        },
+        {
+          "kind": "code",
+          "path": "store.js",
+          "sha256": "2300e692f886294a8d328b7d3f72fdac9c72b57eac8c6d2c79d95fd9bd25f0ce"
+        },
+        {
+          "kind": "code",
+          "path": "assets/icons/manifest.json",
+          "sha256": "9e5787944a2f2b999f31d352c278ac7507c2e96dbc0f9ca0a4609c35babb538b"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/reading.png",
+          "sha256": "5ff7c5ede5d31a8f93be3451683d7b4e943a00c483954ddae6ddad2c72c8988b"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/editing.png",
+          "sha256": "4f7ed6822d7a83e11e4b5378e8668567df03b003d80da1f40d833ded2324abb5"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/form.png",
+          "sha256": "b8d160fda76be2c8cc087ecf50b51b40c75c93888ed010cd890a48bd400aa1ec"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/296-enlarged.png",
+          "sha256": "f9da7607cf9a723d5b461c5d526370d8f87691b74022203f1c302222a6283f91"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/read-failed.png",
+          "sha256": "45f62c4d99c3f3822b70dedaf879f2fd7a3062f518bfd9d383d42460f7bae66a"
+        }
+      ]
+    },
+    {
+      "id": "ORC-F08",
+      "status": "exception",
+      "reason": "Permanent row actions are removed in normal reading. Explicit mobile list management preserves visible labels and real touch/keyboard access. Literal show-on-hover recipe has the narrow declared mobile exception; no general rule or other unknown is waived.",
+      "exception_id": "mobile-explicit-management",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/reading-review.md",
+          "sha256": "7a77b26b2b292b8a1180c10dd479faba1e6bc6ae6dbc880f34ed962849709a42"
+        },
+        {
+          "kind": "code",
+          "path": "index.html",
+          "sha256": "ab82f40fe2e255e8d990c9ab45e6a9f0cf1466054e00e84eac1a668d09fc7e33"
+        },
+        {
+          "kind": "code",
+          "path": "styles.css",
+          "sha256": "4f8526a4e2366d91377463cee0967456614e41868a13352cd4ca56a7a54c56b0"
+        },
+        {
+          "kind": "code",
+          "path": "app.js",
+          "sha256": "e3a606e0069f7635bdf79e1dd11bf5e91ce4c761e7fc765f99be1c2220524ca5"
+        },
+        {
+          "kind": "code",
+          "path": "render.js",
+          "sha256": "7e5dc567bbb2130dc3df06820967ecbabbeb298a7a47fd2fe6a2f0e776a099e0"
+        },
+        {
+          "kind": "code",
+          "path": "store.js",
+          "sha256": "2300e692f886294a8d328b7d3f72fdac9c72b57eac8c6d2c79d95fd9bd25f0ce"
+        },
+        {
+          "kind": "code",
+          "path": "assets/icons/manifest.json",
+          "sha256": "9e5787944a2f2b999f31d352c278ac7507c2e96dbc0f9ca0a4609c35babb538b"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/reading.png",
+          "sha256": "5ff7c5ede5d31a8f93be3451683d7b4e943a00c483954ddae6ddad2c72c8988b"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/editing.png",
+          "sha256": "4f7ed6822d7a83e11e4b5378e8668567df03b003d80da1f40d833ded2324abb5"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/form.png",
+          "sha256": "b8d160fda76be2c8cc087ecf50b51b40c75c93888ed010cd890a48bd400aa1ec"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/296-enlarged.png",
+          "sha256": "f9da7607cf9a723d5b461c5d526370d8f87691b74022203f1c302222a6283f91"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/read-failed.png",
+          "sha256": "45f62c4d99c3f3822b70dedaf879f2fd7a3062f518bfd9d383d42460f7bae66a"
+        },
+        {
+          "kind": "interaction",
+          "path": "design/evidence/mode.json",
+          "sha256": "32b56ee1039ecc2e988b2158bbb9667cccacbd9efd18485bda3339e6b9225351"
+        },
+        {
+          "kind": "interaction",
+          "path": "design/evidence/role.json",
+          "sha256": "30cd7f7c2031599adec6471e3641512d8a702d4060ed93e206a361a4cd0d02a0"
+        },
+        {
+          "kind": "interaction",
+          "path": "design/evidence/workflow.json",
+          "sha256": "8a7d68a21e356ce78359fd78f193cd07bd141bc9a9cfe8923b25b8b8eec35ac8"
+        },
+        {
+          "kind": "interaction",
+          "path": "design/evidence/recovery.json",
+          "sha256": "1e64664368eb15b456eed2f0760676024e604cd3006c6e62a647906b9fd88d49"
+        }
+      ]
+    },
+    {
+      "id": "ORC-F09",
+      "status": "not-applicable",
+      "reason": "No multi-column layout at any width; max390px vertical mobile scope.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/reading-review.md",
+          "sha256": "7a77b26b2b292b8a1180c10dd479faba1e6bc6ae6dbc880f34ed962849709a42"
+        }
+      ]
+    },
+    {
+      "id": "ORC-F10",
+      "status": "pass",
+      "reason": "Scoped current add/delete pairs use official block images and flex-center parents. Actual20/16px default and36/32px enlarged proportion,0px box-center difference and natural-height targets pass default/actual-hover/actual-focus at4widths×3modes. Normal/enlarged renders were directly inspected; asset and within-control pair geometry is preserved;row placement changes only under the predeclared readability contract. Optical judgment/device/AT and other complete-guide work remain separate.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/reading-review.md",
+          "sha256": "7a77b26b2b292b8a1180c10dd479faba1e6bc6ae6dbc880f34ed962849709a42"
+        },
+        {
+          "kind": "code",
+          "path": "index.html",
+          "sha256": "ab82f40fe2e255e8d990c9ab45e6a9f0cf1466054e00e84eac1a668d09fc7e33"
+        },
+        {
+          "kind": "code",
+          "path": "styles.css",
+          "sha256": "4f8526a4e2366d91377463cee0967456614e41868a13352cd4ca56a7a54c56b0"
+        },
+        {
+          "kind": "code",
+          "path": "app.js",
+          "sha256": "e3a606e0069f7635bdf79e1dd11bf5e91ce4c761e7fc765f99be1c2220524ca5"
+        },
+        {
+          "kind": "code",
+          "path": "render.js",
+          "sha256": "7e5dc567bbb2130dc3df06820967ecbabbeb298a7a47fd2fe6a2f0e776a099e0"
+        },
+        {
+          "kind": "code",
+          "path": "store.js",
+          "sha256": "2300e692f886294a8d328b7d3f72fdac9c72b57eac8c6d2c79d95fd9bd25f0ce"
+        },
+        {
+          "kind": "code",
+          "path": "assets/icons/manifest.json",
+          "sha256": "9e5787944a2f2b999f31d352c278ac7507c2e96dbc0f9ca0a4609c35babb538b"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/reading.png",
+          "sha256": "5ff7c5ede5d31a8f93be3451683d7b4e943a00c483954ddae6ddad2c72c8988b"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/editing.png",
+          "sha256": "4f7ed6822d7a83e11e4b5378e8668567df03b003d80da1f40d833ded2324abb5"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/form.png",
+          "sha256": "b8d160fda76be2c8cc087ecf50b51b40c75c93888ed010cd890a48bd400aa1ec"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/296-enlarged.png",
+          "sha256": "f9da7607cf9a723d5b461c5d526370d8f87691b74022203f1c302222a6283f91"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/read-failed.png",
+          "sha256": "45f62c4d99c3f3822b70dedaf879f2fd7a3062f518bfd9d383d42460f7bae66a"
+        },
+        {
+          "kind": "interaction",
+          "path": "design/evidence/icons.json",
+          "sha256": "287f63c90aeb03fbbf4f4fad410c1e8c8b3f0644edcebe6f082f8b46e139489a"
+        }
+      ]
+    },
+    {
+      "id": "ORC-F11",
+      "status": "pass",
+      "reason": "Both parent action colors use returned var(--text); verified official neutral external icons and browser-computed labels use32,32,36 in all sampled default/actual-hover/actual-focus states. No CSS compositing effects or clipping in this source; unsupported effects are blocked as unknown by counterexamples.432pair checks pass,not a whole-product approval.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/reading-review.md",
+          "sha256": "7a77b26b2b292b8a1180c10dd479faba1e6bc6ae6dbc880f34ed962849709a42"
+        },
+        {
+          "kind": "code",
+          "path": "index.html",
+          "sha256": "ab82f40fe2e255e8d990c9ab45e6a9f0cf1466054e00e84eac1a668d09fc7e33"
+        },
+        {
+          "kind": "code",
+          "path": "styles.css",
+          "sha256": "4f8526a4e2366d91377463cee0967456614e41868a13352cd4ca56a7a54c56b0"
+        },
+        {
+          "kind": "code",
+          "path": "app.js",
+          "sha256": "e3a606e0069f7635bdf79e1dd11bf5e91ce4c761e7fc765f99be1c2220524ca5"
+        },
+        {
+          "kind": "code",
+          "path": "render.js",
+          "sha256": "7e5dc567bbb2130dc3df06820967ecbabbeb298a7a47fd2fe6a2f0e776a099e0"
+        },
+        {
+          "kind": "code",
+          "path": "store.js",
+          "sha256": "2300e692f886294a8d328b7d3f72fdac9c72b57eac8c6d2c79d95fd9bd25f0ce"
+        },
+        {
+          "kind": "code",
+          "path": "assets/icons/manifest.json",
+          "sha256": "9e5787944a2f2b999f31d352c278ac7507c2e96dbc0f9ca0a4609c35babb538b"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/reading.png",
+          "sha256": "5ff7c5ede5d31a8f93be3451683d7b4e943a00c483954ddae6ddad2c72c8988b"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/editing.png",
+          "sha256": "4f7ed6822d7a83e11e4b5378e8668567df03b003d80da1f40d833ded2324abb5"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/form.png",
+          "sha256": "b8d160fda76be2c8cc087ecf50b51b40c75c93888ed010cd890a48bd400aa1ec"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/296-enlarged.png",
+          "sha256": "f9da7607cf9a723d5b461c5d526370d8f87691b74022203f1c302222a6283f91"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/read-failed.png",
+          "sha256": "45f62c4d99c3f3822b70dedaf879f2fd7a3062f518bfd9d383d42460f7bae66a"
+        },
+        {
+          "kind": "interaction",
+          "path": "design/evidence/icons.json",
+          "sha256": "287f63c90aeb03fbbf4f4fad410c1e8c8b3f0644edcebe6f082f8b46e139489a"
+        }
+      ]
+    },
+    {
+      "id": "ORC-F12",
+      "status": "unknown",
+      "reason": "Complete role-based source and rendered gap/inset inventory is pending. Typography-derived alignment offsets must be distinguished from structural spacing, not snapped blindly.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/reading-review.md",
+          "sha256": "7a77b26b2b292b8a1180c10dd479faba1e6bc6ae6dbc880f34ed962849709a42"
+        }
+      ]
+    },
+    {
+      "id": "ORC-F13",
+      "status": "pass",
+      "reason": "Native buttons and clickable labels use pointer styling; no clickable div substitutes.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/reading-review.md",
+          "sha256": "7a77b26b2b292b8a1180c10dd479faba1e6bc6ae6dbc880f34ed962849709a42"
+        },
+        {
+          "kind": "code",
+          "path": "index.html",
+          "sha256": "ab82f40fe2e255e8d990c9ab45e6a9f0cf1466054e00e84eac1a668d09fc7e33"
+        },
+        {
+          "kind": "code",
+          "path": "styles.css",
+          "sha256": "4f8526a4e2366d91377463cee0967456614e41868a13352cd4ca56a7a54c56b0"
+        },
+        {
+          "kind": "code",
+          "path": "app.js",
+          "sha256": "e3a606e0069f7635bdf79e1dd11bf5e91ce4c761e7fc765f99be1c2220524ca5"
+        },
+        {
+          "kind": "code",
+          "path": "render.js",
+          "sha256": "7e5dc567bbb2130dc3df06820967ecbabbeb298a7a47fd2fe6a2f0e776a099e0"
+        },
+        {
+          "kind": "code",
+          "path": "store.js",
+          "sha256": "2300e692f886294a8d328b7d3f72fdac9c72b57eac8c6d2c79d95fd9bd25f0ce"
+        },
+        {
+          "kind": "code",
+          "path": "assets/icons/manifest.json",
+          "sha256": "9e5787944a2f2b999f31d352c278ac7507c2e96dbc0f9ca0a4609c35babb538b"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/reading.png",
+          "sha256": "5ff7c5ede5d31a8f93be3451683d7b4e943a00c483954ddae6ddad2c72c8988b"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/editing.png",
+          "sha256": "4f7ed6822d7a83e11e4b5378e8668567df03b003d80da1f40d833ded2324abb5"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/form.png",
+          "sha256": "b8d160fda76be2c8cc087ecf50b51b40c75c93888ed010cd890a48bd400aa1ec"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/296-enlarged.png",
+          "sha256": "f9da7607cf9a723d5b461c5d526370d8f87691b74022203f1c302222a6283f91"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/read-failed.png",
+          "sha256": "45f62c4d99c3f3822b70dedaf879f2fd7a3062f518bfd9d383d42460f7bae66a"
+        },
+        {
+          "kind": "interaction",
+          "path": "design/evidence/mode.json",
+          "sha256": "32b56ee1039ecc2e988b2158bbb9667cccacbd9efd18485bda3339e6b9225351"
+        },
+        {
+          "kind": "interaction",
+          "path": "design/evidence/role.json",
+          "sha256": "30cd7f7c2031599adec6471e3641512d8a702d4060ed93e206a361a4cd0d02a0"
+        },
+        {
+          "kind": "interaction",
+          "path": "design/evidence/workflow.json",
+          "sha256": "8a7d68a21e356ce78359fd78f193cd07bd141bc9a9cfe8923b25b8b8eec35ac8"
+        },
+        {
+          "kind": "interaction",
+          "path": "design/evidence/recovery.json",
+          "sha256": "1e64664368eb15b456eed2f0760676024e604cd3006c6e62a647906b9fd88d49"
+        }
+      ]
+    },
+    {
+      "id": "ORC-F14",
+      "status": "pass",
+      "reason": "Semantic header/main/section/list/label/button/form/dialog; layout/focus wrappers have concrete roles.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/reading-review.md",
+          "sha256": "7a77b26b2b292b8a1180c10dd479faba1e6bc6ae6dbc880f34ed962849709a42"
+        },
+        {
+          "kind": "code",
+          "path": "index.html",
+          "sha256": "ab82f40fe2e255e8d990c9ab45e6a9f0cf1466054e00e84eac1a668d09fc7e33"
+        },
+        {
+          "kind": "code",
+          "path": "styles.css",
+          "sha256": "4f8526a4e2366d91377463cee0967456614e41868a13352cd4ca56a7a54c56b0"
+        },
+        {
+          "kind": "code",
+          "path": "app.js",
+          "sha256": "e3a606e0069f7635bdf79e1dd11bf5e91ce4c761e7fc765f99be1c2220524ca5"
+        },
+        {
+          "kind": "code",
+          "path": "render.js",
+          "sha256": "7e5dc567bbb2130dc3df06820967ecbabbeb298a7a47fd2fe6a2f0e776a099e0"
+        },
+        {
+          "kind": "code",
+          "path": "store.js",
+          "sha256": "2300e692f886294a8d328b7d3f72fdac9c72b57eac8c6d2c79d95fd9bd25f0ce"
+        },
+        {
+          "kind": "code",
+          "path": "assets/icons/manifest.json",
+          "sha256": "9e5787944a2f2b999f31d352c278ac7507c2e96dbc0f9ca0a4609c35babb538b"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/reading.png",
+          "sha256": "5ff7c5ede5d31a8f93be3451683d7b4e943a00c483954ddae6ddad2c72c8988b"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/editing.png",
+          "sha256": "4f7ed6822d7a83e11e4b5378e8668567df03b003d80da1f40d833ded2324abb5"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/form.png",
+          "sha256": "b8d160fda76be2c8cc087ecf50b51b40c75c93888ed010cd890a48bd400aa1ec"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/296-enlarged.png",
+          "sha256": "f9da7607cf9a723d5b461c5d526370d8f87691b74022203f1c302222a6283f91"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/read-failed.png",
+          "sha256": "45f62c4d99c3f3822b70dedaf879f2fd7a3062f518bfd9d383d42460f7bae66a"
+        }
+      ]
+    },
+    {
+      "id": "ORC-F16",
+      "status": "unknown",
+      "reason": "The necessary narrow/enlarged week rail conflicts with the generic rule allowed-scroll list. Full scroll audit and scoped guide-priority/exception adjudication remain pending; no blanket exception is approved.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/reading-review.md",
+          "sha256": "7a77b26b2b292b8a1180c10dd479faba1e6bc6ae6dbc880f34ed962849709a42"
+        }
+      ]
+    },
+    {
+      "id": "ORC-F15",
+      "status": "pass",
+      "reason": "Repeated groups/controls remain neutral; no rainbow tags or avatar color assignment.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/reading-review.md",
+          "sha256": "7a77b26b2b292b8a1180c10dd479faba1e6bc6ae6dbc880f34ed962849709a42"
+        },
+        {
+          "kind": "code",
+          "path": "index.html",
+          "sha256": "ab82f40fe2e255e8d990c9ab45e6a9f0cf1466054e00e84eac1a668d09fc7e33"
+        },
+        {
+          "kind": "code",
+          "path": "styles.css",
+          "sha256": "4f8526a4e2366d91377463cee0967456614e41868a13352cd4ca56a7a54c56b0"
+        },
+        {
+          "kind": "code",
+          "path": "app.js",
+          "sha256": "e3a606e0069f7635bdf79e1dd11bf5e91ce4c761e7fc765f99be1c2220524ca5"
+        },
+        {
+          "kind": "code",
+          "path": "render.js",
+          "sha256": "7e5dc567bbb2130dc3df06820967ecbabbeb298a7a47fd2fe6a2f0e776a099e0"
+        },
+        {
+          "kind": "code",
+          "path": "store.js",
+          "sha256": "2300e692f886294a8d328b7d3f72fdac9c72b57eac8c6d2c79d95fd9bd25f0ce"
+        },
+        {
+          "kind": "code",
+          "path": "assets/icons/manifest.json",
+          "sha256": "9e5787944a2f2b999f31d352c278ac7507c2e96dbc0f9ca0a4609c35babb538b"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/reading.png",
+          "sha256": "5ff7c5ede5d31a8f93be3451683d7b4e943a00c483954ddae6ddad2c72c8988b"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/editing.png",
+          "sha256": "4f7ed6822d7a83e11e4b5378e8668567df03b003d80da1f40d833ded2324abb5"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/form.png",
+          "sha256": "b8d160fda76be2c8cc087ecf50b51b40c75c93888ed010cd890a48bd400aa1ec"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/296-enlarged.png",
+          "sha256": "f9da7607cf9a723d5b461c5d526370d8f87691b74022203f1c302222a6283f91"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/read-failed.png",
+          "sha256": "45f62c4d99c3f3822b70dedaf879f2fd7a3062f518bfd9d383d42460f7bae66a"
+        }
+      ]
+    },
+    {
+      "id": "ORC-G01",
+      "status": "pass",
+      "reason": "No gradients; white background follows explicit current guide.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/reading-review.md",
+          "sha256": "7a77b26b2b292b8a1180c10dd479faba1e6bc6ae6dbc880f34ed962849709a42"
+        },
+        {
+          "kind": "code",
+          "path": "index.html",
+          "sha256": "ab82f40fe2e255e8d990c9ab45e6a9f0cf1466054e00e84eac1a668d09fc7e33"
+        },
+        {
+          "kind": "code",
+          "path": "styles.css",
+          "sha256": "4f8526a4e2366d91377463cee0967456614e41868a13352cd4ca56a7a54c56b0"
+        },
+        {
+          "kind": "code",
+          "path": "app.js",
+          "sha256": "e3a606e0069f7635bdf79e1dd11bf5e91ce4c761e7fc765f99be1c2220524ca5"
+        },
+        {
+          "kind": "code",
+          "path": "render.js",
+          "sha256": "7e5dc567bbb2130dc3df06820967ecbabbeb298a7a47fd2fe6a2f0e776a099e0"
+        },
+        {
+          "kind": "code",
+          "path": "store.js",
+          "sha256": "2300e692f886294a8d328b7d3f72fdac9c72b57eac8c6d2c79d95fd9bd25f0ce"
+        },
+        {
+          "kind": "code",
+          "path": "assets/icons/manifest.json",
+          "sha256": "9e5787944a2f2b999f31d352c278ac7507c2e96dbc0f9ca0a4609c35babb538b"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/reading.png",
+          "sha256": "5ff7c5ede5d31a8f93be3451683d7b4e943a00c483954ddae6ddad2c72c8988b"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/editing.png",
+          "sha256": "4f7ed6822d7a83e11e4b5378e8668567df03b003d80da1f40d833ded2324abb5"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/form.png",
+          "sha256": "b8d160fda76be2c8cc087ecf50b51b40c75c93888ed010cd890a48bd400aa1ec"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/296-enlarged.png",
+          "sha256": "f9da7607cf9a723d5b461c5d526370d8f87691b74022203f1c302222a6283f91"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/read-failed.png",
+          "sha256": "45f62c4d99c3f3822b70dedaf879f2fd7a3062f518bfd9d383d42460f7bae66a"
+        }
+      ]
+    },
+    {
+      "id": "ORC-G02",
+      "status": "pass",
+      "reason": "Shadows serve focus indication only, with no hover depth.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/reading-review.md",
+          "sha256": "7a77b26b2b292b8a1180c10dd479faba1e6bc6ae6dbc880f34ed962849709a42"
+        },
+        {
+          "kind": "code",
+          "path": "index.html",
+          "sha256": "ab82f40fe2e255e8d990c9ab45e6a9f0cf1466054e00e84eac1a668d09fc7e33"
+        },
+        {
+          "kind": "code",
+          "path": "styles.css",
+          "sha256": "4f8526a4e2366d91377463cee0967456614e41868a13352cd4ca56a7a54c56b0"
+        },
+        {
+          "kind": "code",
+          "path": "app.js",
+          "sha256": "e3a606e0069f7635bdf79e1dd11bf5e91ce4c761e7fc765f99be1c2220524ca5"
+        },
+        {
+          "kind": "code",
+          "path": "render.js",
+          "sha256": "7e5dc567bbb2130dc3df06820967ecbabbeb298a7a47fd2fe6a2f0e776a099e0"
+        },
+        {
+          "kind": "code",
+          "path": "store.js",
+          "sha256": "2300e692f886294a8d328b7d3f72fdac9c72b57eac8c6d2c79d95fd9bd25f0ce"
+        },
+        {
+          "kind": "code",
+          "path": "assets/icons/manifest.json",
+          "sha256": "9e5787944a2f2b999f31d352c278ac7507c2e96dbc0f9ca0a4609c35babb538b"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/reading.png",
+          "sha256": "5ff7c5ede5d31a8f93be3451683d7b4e943a00c483954ddae6ddad2c72c8988b"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/editing.png",
+          "sha256": "4f7ed6822d7a83e11e4b5378e8668567df03b003d80da1f40d833ded2324abb5"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/form.png",
+          "sha256": "b8d160fda76be2c8cc087ecf50b51b40c75c93888ed010cd890a48bd400aa1ec"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/296-enlarged.png",
+          "sha256": "f9da7607cf9a723d5b461c5d526370d8f87691b74022203f1c302222a6283f91"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/read-failed.png",
+          "sha256": "45f62c4d99c3f3822b70dedaf879f2fd7a3062f518bfd9d383d42460f7bae66a"
+        }
+      ]
+    },
+    {
+      "id": "ORC-G03",
+      "status": "pass",
+      "reason": "Fields6px/action8px/dialog8px; larger radii only scoped category pills/day circles.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/reading-review.md",
+          "sha256": "7a77b26b2b292b8a1180c10dd479faba1e6bc6ae6dbc880f34ed962849709a42"
+        },
+        {
+          "kind": "code",
+          "path": "index.html",
+          "sha256": "ab82f40fe2e255e8d990c9ab45e6a9f0cf1466054e00e84eac1a668d09fc7e33"
+        },
+        {
+          "kind": "code",
+          "path": "styles.css",
+          "sha256": "4f8526a4e2366d91377463cee0967456614e41868a13352cd4ca56a7a54c56b0"
+        },
+        {
+          "kind": "code",
+          "path": "app.js",
+          "sha256": "e3a606e0069f7635bdf79e1dd11bf5e91ce4c761e7fc765f99be1c2220524ca5"
+        },
+        {
+          "kind": "code",
+          "path": "render.js",
+          "sha256": "7e5dc567bbb2130dc3df06820967ecbabbeb298a7a47fd2fe6a2f0e776a099e0"
+        },
+        {
+          "kind": "code",
+          "path": "store.js",
+          "sha256": "2300e692f886294a8d328b7d3f72fdac9c72b57eac8c6d2c79d95fd9bd25f0ce"
+        },
+        {
+          "kind": "code",
+          "path": "assets/icons/manifest.json",
+          "sha256": "9e5787944a2f2b999f31d352c278ac7507c2e96dbc0f9ca0a4609c35babb538b"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/reading.png",
+          "sha256": "5ff7c5ede5d31a8f93be3451683d7b4e943a00c483954ddae6ddad2c72c8988b"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/editing.png",
+          "sha256": "4f7ed6822d7a83e11e4b5378e8668567df03b003d80da1f40d833ded2324abb5"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/form.png",
+          "sha256": "b8d160fda76be2c8cc087ecf50b51b40c75c93888ed010cd890a48bd400aa1ec"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/296-enlarged.png",
+          "sha256": "f9da7607cf9a723d5b461c5d526370d8f87691b74022203f1c302222a6283f91"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/read-failed.png",
+          "sha256": "45f62c4d99c3f3822b70dedaf879f2fd7a3062f518bfd9d383d42460f7bae66a"
+        }
+      ]
+    },
+    {
+      "id": "ORC-G04",
+      "status": "pass",
+      "reason": "One semantic red error family, otherwise neutral.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/reading-review.md",
+          "sha256": "7a77b26b2b292b8a1180c10dd479faba1e6bc6ae6dbc880f34ed962849709a42"
+        },
+        {
+          "kind": "code",
+          "path": "index.html",
+          "sha256": "ab82f40fe2e255e8d990c9ab45e6a9f0cf1466054e00e84eac1a668d09fc7e33"
+        },
+        {
+          "kind": "code",
+          "path": "styles.css",
+          "sha256": "4f8526a4e2366d91377463cee0967456614e41868a13352cd4ca56a7a54c56b0"
+        },
+        {
+          "kind": "code",
+          "path": "app.js",
+          "sha256": "e3a606e0069f7635bdf79e1dd11bf5e91ce4c761e7fc765f99be1c2220524ca5"
+        },
+        {
+          "kind": "code",
+          "path": "render.js",
+          "sha256": "7e5dc567bbb2130dc3df06820967ecbabbeb298a7a47fd2fe6a2f0e776a099e0"
+        },
+        {
+          "kind": "code",
+          "path": "store.js",
+          "sha256": "2300e692f886294a8d328b7d3f72fdac9c72b57eac8c6d2c79d95fd9bd25f0ce"
+        },
+        {
+          "kind": "code",
+          "path": "assets/icons/manifest.json",
+          "sha256": "9e5787944a2f2b999f31d352c278ac7507c2e96dbc0f9ca0a4609c35babb538b"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/reading.png",
+          "sha256": "5ff7c5ede5d31a8f93be3451683d7b4e943a00c483954ddae6ddad2c72c8988b"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/editing.png",
+          "sha256": "4f7ed6822d7a83e11e4b5378e8668567df03b003d80da1f40d833ded2324abb5"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/form.png",
+          "sha256": "b8d160fda76be2c8cc087ecf50b51b40c75c93888ed010cd890a48bd400aa1ec"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/296-enlarged.png",
+          "sha256": "f9da7607cf9a723d5b461c5d526370d8f87691b74022203f1c302222a6283f91"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/read-failed.png",
+          "sha256": "45f62c4d99c3f3822b70dedaf879f2fd7a3062f518bfd9d383d42460f7bae66a"
+        }
+      ]
+    },
+    {
+      "id": "ORC-G05",
+      "status": "pass",
+      "reason": "No transform/opacity/shadow hover effects introduced.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/reading-review.md",
+          "sha256": "7a77b26b2b292b8a1180c10dd479faba1e6bc6ae6dbc880f34ed962849709a42"
+        },
+        {
+          "kind": "code",
+          "path": "index.html",
+          "sha256": "ab82f40fe2e255e8d990c9ab45e6a9f0cf1466054e00e84eac1a668d09fc7e33"
+        },
+        {
+          "kind": "code",
+          "path": "styles.css",
+          "sha256": "4f8526a4e2366d91377463cee0967456614e41868a13352cd4ca56a7a54c56b0"
+        },
+        {
+          "kind": "code",
+          "path": "app.js",
+          "sha256": "e3a606e0069f7635bdf79e1dd11bf5e91ce4c761e7fc765f99be1c2220524ca5"
+        },
+        {
+          "kind": "code",
+          "path": "render.js",
+          "sha256": "7e5dc567bbb2130dc3df06820967ecbabbeb298a7a47fd2fe6a2f0e776a099e0"
+        },
+        {
+          "kind": "code",
+          "path": "store.js",
+          "sha256": "2300e692f886294a8d328b7d3f72fdac9c72b57eac8c6d2c79d95fd9bd25f0ce"
+        },
+        {
+          "kind": "code",
+          "path": "assets/icons/manifest.json",
+          "sha256": "9e5787944a2f2b999f31d352c278ac7507c2e96dbc0f9ca0a4609c35babb538b"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/reading.png",
+          "sha256": "5ff7c5ede5d31a8f93be3451683d7b4e943a00c483954ddae6ddad2c72c8988b"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/editing.png",
+          "sha256": "4f7ed6822d7a83e11e4b5378e8668567df03b003d80da1f40d833ded2324abb5"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/form.png",
+          "sha256": "b8d160fda76be2c8cc087ecf50b51b40c75c93888ed010cd890a48bd400aa1ec"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/296-enlarged.png",
+          "sha256": "f9da7607cf9a723d5b461c5d526370d8f87691b74022203f1c302222a6283f91"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/read-failed.png",
+          "sha256": "45f62c4d99c3f3822b70dedaf879f2fd7a3062f518bfd9d383d42460f7bae66a"
+        },
+        {
+          "kind": "interaction",
+          "path": "design/evidence/mode.json",
+          "sha256": "32b56ee1039ecc2e988b2158bbb9667cccacbd9efd18485bda3339e6b9225351"
+        },
+        {
+          "kind": "interaction",
+          "path": "design/evidence/role.json",
+          "sha256": "30cd7f7c2031599adec6471e3641512d8a702d4060ed93e206a361a4cd0d02a0"
+        },
+        {
+          "kind": "interaction",
+          "path": "design/evidence/workflow.json",
+          "sha256": "8a7d68a21e356ce78359fd78f193cd07bd141bc9a9cfe8923b25b8b8eec35ac8"
+        },
+        {
+          "kind": "interaction",
+          "path": "design/evidence/recovery.json",
+          "sha256": "1e64664368eb15b456eed2f0760676024e604cd3006c6e62a647906b9fd88d49"
+        }
+      ]
+    },
+    {
+      "id": "ORC-G06",
+      "status": "pass",
+      "reason": "Visited document states use14/16/22px; no fourth default size after label repair.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/reading-review.md",
+          "sha256": "7a77b26b2b292b8a1180c10dd479faba1e6bc6ae6dbc880f34ed962849709a42"
+        },
+        {
+          "kind": "code",
+          "path": "index.html",
+          "sha256": "ab82f40fe2e255e8d990c9ab45e6a9f0cf1466054e00e84eac1a668d09fc7e33"
+        },
+        {
+          "kind": "code",
+          "path": "styles.css",
+          "sha256": "4f8526a4e2366d91377463cee0967456614e41868a13352cd4ca56a7a54c56b0"
+        },
+        {
+          "kind": "code",
+          "path": "app.js",
+          "sha256": "e3a606e0069f7635bdf79e1dd11bf5e91ce4c761e7fc765f99be1c2220524ca5"
+        },
+        {
+          "kind": "code",
+          "path": "render.js",
+          "sha256": "7e5dc567bbb2130dc3df06820967ecbabbeb298a7a47fd2fe6a2f0e776a099e0"
+        },
+        {
+          "kind": "code",
+          "path": "store.js",
+          "sha256": "2300e692f886294a8d328b7d3f72fdac9c72b57eac8c6d2c79d95fd9bd25f0ce"
+        },
+        {
+          "kind": "code",
+          "path": "assets/icons/manifest.json",
+          "sha256": "9e5787944a2f2b999f31d352c278ac7507c2e96dbc0f9ca0a4609c35babb538b"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/reading.png",
+          "sha256": "5ff7c5ede5d31a8f93be3451683d7b4e943a00c483954ddae6ddad2c72c8988b"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/editing.png",
+          "sha256": "4f7ed6822d7a83e11e4b5378e8668567df03b003d80da1f40d833ded2324abb5"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/form.png",
+          "sha256": "b8d160fda76be2c8cc087ecf50b51b40c75c93888ed010cd890a48bd400aa1ec"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/296-enlarged.png",
+          "sha256": "f9da7607cf9a723d5b461c5d526370d8f87691b74022203f1c302222a6283f91"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/read-failed.png",
+          "sha256": "45f62c4d99c3f3822b70dedaf879f2fd7a3062f518bfd9d383d42460f7bae66a"
+        }
+      ]
+    },
+    {
+      "id": "ORC-G07",
+      "status": "unknown",
+      "reason": "Role/provenance audit of every spacing use is unfinished; source token existence and prior numeric geometry do not establish a full4px-grid review.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/reading-review.md",
+          "sha256": "7a77b26b2b292b8a1180c10dd479faba1e6bc6ae6dbc880f34ed962849709a42"
+        }
+      ]
+    },
+    {
+      "id": "ORC-G08",
+      "status": "unknown",
+      "reason": "Original ORC-G08 checks retained. Full scoped review remains incomplete; DOM/state counters alone are insufficient. See concrete remaining work in design/evidence/reading-review.md.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/reading-review.md",
+          "sha256": "7a77b26b2b292b8a1180c10dd479faba1e6bc6ae6dbc880f34ed962849709a42"
+        }
+      ]
+    },
+    {
+      "id": "ORC-G09",
+      "status": "pass",
+      "reason": "No decorative hero, illustration, KPI, divider or brand filler.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/reading-review.md",
+          "sha256": "7a77b26b2b292b8a1180c10dd479faba1e6bc6ae6dbc880f34ed962849709a42"
+        },
+        {
+          "kind": "code",
+          "path": "index.html",
+          "sha256": "ab82f40fe2e255e8d990c9ab45e6a9f0cf1466054e00e84eac1a668d09fc7e33"
+        },
+        {
+          "kind": "code",
+          "path": "styles.css",
+          "sha256": "4f8526a4e2366d91377463cee0967456614e41868a13352cd4ca56a7a54c56b0"
+        },
+        {
+          "kind": "code",
+          "path": "app.js",
+          "sha256": "e3a606e0069f7635bdf79e1dd11bf5e91ce4c761e7fc765f99be1c2220524ca5"
+        },
+        {
+          "kind": "code",
+          "path": "render.js",
+          "sha256": "7e5dc567bbb2130dc3df06820967ecbabbeb298a7a47fd2fe6a2f0e776a099e0"
+        },
+        {
+          "kind": "code",
+          "path": "store.js",
+          "sha256": "2300e692f886294a8d328b7d3f72fdac9c72b57eac8c6d2c79d95fd9bd25f0ce"
+        },
+        {
+          "kind": "code",
+          "path": "assets/icons/manifest.json",
+          "sha256": "9e5787944a2f2b999f31d352c278ac7507c2e96dbc0f9ca0a4609c35babb538b"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/reading.png",
+          "sha256": "5ff7c5ede5d31a8f93be3451683d7b4e943a00c483954ddae6ddad2c72c8988b"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/editing.png",
+          "sha256": "4f7ed6822d7a83e11e4b5378e8668567df03b003d80da1f40d833ded2324abb5"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/form.png",
+          "sha256": "b8d160fda76be2c8cc087ecf50b51b40c75c93888ed010cd890a48bd400aa1ec"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/296-enlarged.png",
+          "sha256": "f9da7607cf9a723d5b461c5d526370d8f87691b74022203f1c302222a6283f91"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/read-failed.png",
+          "sha256": "45f62c4d99c3f3822b70dedaf879f2fd7a3062f518bfd9d383d42460f7bae66a"
+        }
+      ]
+    },
+    {
+      "id": "ORC-G10",
+      "status": "not-applicable",
+      "reason": "No sidebar/content mood split.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/reading-review.md",
+          "sha256": "7a77b26b2b292b8a1180c10dd479faba1e6bc6ae6dbc880f34ed962849709a42"
+        }
+      ]
+    },
+    {
+      "id": "ORC-G11",
+      "status": "pass",
+      "reason": "Dark-control text is white and>=600 in inspected states.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/reading-review.md",
+          "sha256": "7a77b26b2b292b8a1180c10dd479faba1e6bc6ae6dbc880f34ed962849709a42"
+        },
+        {
+          "kind": "code",
+          "path": "index.html",
+          "sha256": "ab82f40fe2e255e8d990c9ab45e6a9f0cf1466054e00e84eac1a668d09fc7e33"
+        },
+        {
+          "kind": "code",
+          "path": "styles.css",
+          "sha256": "4f8526a4e2366d91377463cee0967456614e41868a13352cd4ca56a7a54c56b0"
+        },
+        {
+          "kind": "code",
+          "path": "app.js",
+          "sha256": "e3a606e0069f7635bdf79e1dd11bf5e91ce4c761e7fc765f99be1c2220524ca5"
+        },
+        {
+          "kind": "code",
+          "path": "render.js",
+          "sha256": "7e5dc567bbb2130dc3df06820967ecbabbeb298a7a47fd2fe6a2f0e776a099e0"
+        },
+        {
+          "kind": "code",
+          "path": "store.js",
+          "sha256": "2300e692f886294a8d328b7d3f72fdac9c72b57eac8c6d2c79d95fd9bd25f0ce"
+        },
+        {
+          "kind": "code",
+          "path": "assets/icons/manifest.json",
+          "sha256": "9e5787944a2f2b999f31d352c278ac7507c2e96dbc0f9ca0a4609c35babb538b"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/reading.png",
+          "sha256": "5ff7c5ede5d31a8f93be3451683d7b4e943a00c483954ddae6ddad2c72c8988b"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/editing.png",
+          "sha256": "4f7ed6822d7a83e11e4b5378e8668567df03b003d80da1f40d833ded2324abb5"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/form.png",
+          "sha256": "b8d160fda76be2c8cc087ecf50b51b40c75c93888ed010cd890a48bd400aa1ec"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/296-enlarged.png",
+          "sha256": "f9da7607cf9a723d5b461c5d526370d8f87691b74022203f1c302222a6283f91"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/read-failed.png",
+          "sha256": "45f62c4d99c3f3822b70dedaf879f2fd7a3062f518bfd9d383d42460f7bae66a"
+        }
+      ]
+    },
+    {
+      "id": "ORC-G12",
+      "status": "pass",
+      "reason": "Same scoped-action inventory as ORC-F04.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/reading-review.md",
+          "sha256": "7a77b26b2b292b8a1180c10dd479faba1e6bc6ae6dbc880f34ed962849709a42"
+        },
+        {
+          "kind": "code",
+          "path": "index.html",
+          "sha256": "ab82f40fe2e255e8d990c9ab45e6a9f0cf1466054e00e84eac1a668d09fc7e33"
+        },
+        {
+          "kind": "code",
+          "path": "styles.css",
+          "sha256": "4f8526a4e2366d91377463cee0967456614e41868a13352cd4ca56a7a54c56b0"
+        },
+        {
+          "kind": "code",
+          "path": "app.js",
+          "sha256": "e3a606e0069f7635bdf79e1dd11bf5e91ce4c761e7fc765f99be1c2220524ca5"
+        },
+        {
+          "kind": "code",
+          "path": "render.js",
+          "sha256": "7e5dc567bbb2130dc3df06820967ecbabbeb298a7a47fd2fe6a2f0e776a099e0"
+        },
+        {
+          "kind": "code",
+          "path": "store.js",
+          "sha256": "2300e692f886294a8d328b7d3f72fdac9c72b57eac8c6d2c79d95fd9bd25f0ce"
+        },
+        {
+          "kind": "code",
+          "path": "assets/icons/manifest.json",
+          "sha256": "9e5787944a2f2b999f31d352c278ac7507c2e96dbc0f9ca0a4609c35babb538b"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/reading.png",
+          "sha256": "5ff7c5ede5d31a8f93be3451683d7b4e943a00c483954ddae6ddad2c72c8988b"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/editing.png",
+          "sha256": "4f7ed6822d7a83e11e4b5378e8668567df03b003d80da1f40d833ded2324abb5"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/form.png",
+          "sha256": "b8d160fda76be2c8cc087ecf50b51b40c75c93888ed010cd890a48bd400aa1ec"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/296-enlarged.png",
+          "sha256": "f9da7607cf9a723d5b461c5d526370d8f87691b74022203f1c302222a6283f91"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/read-failed.png",
+          "sha256": "45f62c4d99c3f3822b70dedaf879f2fd7a3062f518bfd9d383d42460f7bae66a"
+        }
+      ]
+    },
+    {
+      "id": "ORC-G13",
+      "status": "not-applicable",
+      "reason": "No card grid for tabular data.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/reading-review.md",
+          "sha256": "7a77b26b2b292b8a1180c10dd479faba1e6bc6ae6dbc880f34ed962849709a42"
+        }
+      ]
+    },
+    {
+      "id": "ORC-G14",
+      "status": "pass",
+      "reason": "Errors red, ordinary controls/selection neutral.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/reading-review.md",
+          "sha256": "7a77b26b2b292b8a1180c10dd479faba1e6bc6ae6dbc880f34ed962849709a42"
+        },
+        {
+          "kind": "code",
+          "path": "index.html",
+          "sha256": "ab82f40fe2e255e8d990c9ab45e6a9f0cf1466054e00e84eac1a668d09fc7e33"
+        },
+        {
+          "kind": "code",
+          "path": "styles.css",
+          "sha256": "4f8526a4e2366d91377463cee0967456614e41868a13352cd4ca56a7a54c56b0"
+        },
+        {
+          "kind": "code",
+          "path": "app.js",
+          "sha256": "e3a606e0069f7635bdf79e1dd11bf5e91ce4c761e7fc765f99be1c2220524ca5"
+        },
+        {
+          "kind": "code",
+          "path": "render.js",
+          "sha256": "7e5dc567bbb2130dc3df06820967ecbabbeb298a7a47fd2fe6a2f0e776a099e0"
+        },
+        {
+          "kind": "code",
+          "path": "store.js",
+          "sha256": "2300e692f886294a8d328b7d3f72fdac9c72b57eac8c6d2c79d95fd9bd25f0ce"
+        },
+        {
+          "kind": "code",
+          "path": "assets/icons/manifest.json",
+          "sha256": "9e5787944a2f2b999f31d352c278ac7507c2e96dbc0f9ca0a4609c35babb538b"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/reading.png",
+          "sha256": "5ff7c5ede5d31a8f93be3451683d7b4e943a00c483954ddae6ddad2c72c8988b"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/editing.png",
+          "sha256": "4f7ed6822d7a83e11e4b5378e8668567df03b003d80da1f40d833ded2324abb5"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/form.png",
+          "sha256": "b8d160fda76be2c8cc087ecf50b51b40c75c93888ed010cd890a48bd400aa1ec"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/296-enlarged.png",
+          "sha256": "f9da7607cf9a723d5b461c5d526370d8f87691b74022203f1c302222a6283f91"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/read-failed.png",
+          "sha256": "45f62c4d99c3f3822b70dedaf879f2fd7a3062f518bfd9d383d42460f7bae66a"
+        }
+      ]
+    },
+    {
+      "id": "ORC-G15",
+      "status": "pass",
+      "reason": "Page title22px, within24px maximum.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/reading-review.md",
+          "sha256": "7a77b26b2b292b8a1180c10dd479faba1e6bc6ae6dbc880f34ed962849709a42"
+        },
+        {
+          "kind": "code",
+          "path": "index.html",
+          "sha256": "ab82f40fe2e255e8d990c9ab45e6a9f0cf1466054e00e84eac1a668d09fc7e33"
+        },
+        {
+          "kind": "code",
+          "path": "styles.css",
+          "sha256": "4f8526a4e2366d91377463cee0967456614e41868a13352cd4ca56a7a54c56b0"
+        },
+        {
+          "kind": "code",
+          "path": "app.js",
+          "sha256": "e3a606e0069f7635bdf79e1dd11bf5e91ce4c761e7fc765f99be1c2220524ca5"
+        },
+        {
+          "kind": "code",
+          "path": "render.js",
+          "sha256": "7e5dc567bbb2130dc3df06820967ecbabbeb298a7a47fd2fe6a2f0e776a099e0"
+        },
+        {
+          "kind": "code",
+          "path": "store.js",
+          "sha256": "2300e692f886294a8d328b7d3f72fdac9c72b57eac8c6d2c79d95fd9bd25f0ce"
+        },
+        {
+          "kind": "code",
+          "path": "assets/icons/manifest.json",
+          "sha256": "9e5787944a2f2b999f31d352c278ac7507c2e96dbc0f9ca0a4609c35babb538b"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/reading.png",
+          "sha256": "5ff7c5ede5d31a8f93be3451683d7b4e943a00c483954ddae6ddad2c72c8988b"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/editing.png",
+          "sha256": "4f7ed6822d7a83e11e4b5378e8668567df03b003d80da1f40d833ded2324abb5"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/form.png",
+          "sha256": "b8d160fda76be2c8cc087ecf50b51b40c75c93888ed010cd890a48bd400aa1ec"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/296-enlarged.png",
+          "sha256": "f9da7607cf9a723d5b461c5d526370d8f87691b74022203f1c302222a6283f91"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/read-failed.png",
+          "sha256": "45f62c4d99c3f3822b70dedaf879f2fd7a3062f518bfd9d383d42460f7bae66a"
+        }
+      ]
+    },
+    {
+      "id": "ORC-G16",
+      "status": "exception",
+      "reason": "Permanent row actions are removed in normal reading. Explicit mobile list management preserves visible labels and real touch/keyboard access. Literal show-on-hover recipe has the narrow declared mobile exception; no general rule or other unknown is waived.",
+      "exception_id": "mobile-explicit-management",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/reading-review.md",
+          "sha256": "7a77b26b2b292b8a1180c10dd479faba1e6bc6ae6dbc880f34ed962849709a42"
+        },
+        {
+          "kind": "code",
+          "path": "index.html",
+          "sha256": "ab82f40fe2e255e8d990c9ab45e6a9f0cf1466054e00e84eac1a668d09fc7e33"
+        },
+        {
+          "kind": "code",
+          "path": "styles.css",
+          "sha256": "4f8526a4e2366d91377463cee0967456614e41868a13352cd4ca56a7a54c56b0"
+        },
+        {
+          "kind": "code",
+          "path": "app.js",
+          "sha256": "e3a606e0069f7635bdf79e1dd11bf5e91ce4c761e7fc765f99be1c2220524ca5"
+        },
+        {
+          "kind": "code",
+          "path": "render.js",
+          "sha256": "7e5dc567bbb2130dc3df06820967ecbabbeb298a7a47fd2fe6a2f0e776a099e0"
+        },
+        {
+          "kind": "code",
+          "path": "store.js",
+          "sha256": "2300e692f886294a8d328b7d3f72fdac9c72b57eac8c6d2c79d95fd9bd25f0ce"
+        },
+        {
+          "kind": "code",
+          "path": "assets/icons/manifest.json",
+          "sha256": "9e5787944a2f2b999f31d352c278ac7507c2e96dbc0f9ca0a4609c35babb538b"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/reading.png",
+          "sha256": "5ff7c5ede5d31a8f93be3451683d7b4e943a00c483954ddae6ddad2c72c8988b"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/editing.png",
+          "sha256": "4f7ed6822d7a83e11e4b5378e8668567df03b003d80da1f40d833ded2324abb5"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/form.png",
+          "sha256": "b8d160fda76be2c8cc087ecf50b51b40c75c93888ed010cd890a48bd400aa1ec"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/296-enlarged.png",
+          "sha256": "f9da7607cf9a723d5b461c5d526370d8f87691b74022203f1c302222a6283f91"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/read-failed.png",
+          "sha256": "45f62c4d99c3f3822b70dedaf879f2fd7a3062f518bfd9d383d42460f7bae66a"
+        },
+        {
+          "kind": "interaction",
+          "path": "design/evidence/mode.json",
+          "sha256": "32b56ee1039ecc2e988b2158bbb9667cccacbd9efd18485bda3339e6b9225351"
+        },
+        {
+          "kind": "interaction",
+          "path": "design/evidence/role.json",
+          "sha256": "30cd7f7c2031599adec6471e3641512d8a702d4060ed93e206a361a4cd0d02a0"
+        },
+        {
+          "kind": "interaction",
+          "path": "design/evidence/workflow.json",
+          "sha256": "8a7d68a21e356ce78359fd78f193cd07bd141bc9a9cfe8923b25b8b8eec35ac8"
+        },
+        {
+          "kind": "interaction",
+          "path": "design/evidence/recovery.json",
+          "sha256": "1e64664368eb15b456eed2f0760676024e604cd3006c6e62a647906b9fd88d49"
+        }
+      ]
+    },
+    {
+      "id": "ORC-G17",
+      "status": "not-applicable",
+      "reason": "No multi-column dashboard.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/reading-review.md",
+          "sha256": "7a77b26b2b292b8a1180c10dd479faba1e6bc6ae6dbc880f34ed962849709a42"
+        }
+      ]
+    },
+    {
+      "id": "ORC-G18",
+      "status": "pass",
+      "reason": "Scoped current add/delete pairs use official block images and flex-center parents. Actual20/16px default and36/32px enlarged proportion,0px box-center difference and natural-height targets pass default/actual-hover/actual-focus at4widths×3modes. Normal/enlarged renders were directly inspected; asset and within-control pair geometry is preserved;row placement changes only under the predeclared readability contract. Optical judgment/device/AT and other complete-guide work remain separate.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/reading-review.md",
+          "sha256": "7a77b26b2b292b8a1180c10dd479faba1e6bc6ae6dbc880f34ed962849709a42"
+        },
+        {
+          "kind": "code",
+          "path": "index.html",
+          "sha256": "ab82f40fe2e255e8d990c9ab45e6a9f0cf1466054e00e84eac1a668d09fc7e33"
+        },
+        {
+          "kind": "code",
+          "path": "styles.css",
+          "sha256": "4f8526a4e2366d91377463cee0967456614e41868a13352cd4ca56a7a54c56b0"
+        },
+        {
+          "kind": "code",
+          "path": "app.js",
+          "sha256": "e3a606e0069f7635bdf79e1dd11bf5e91ce4c761e7fc765f99be1c2220524ca5"
+        },
+        {
+          "kind": "code",
+          "path": "render.js",
+          "sha256": "7e5dc567bbb2130dc3df06820967ecbabbeb298a7a47fd2fe6a2f0e776a099e0"
+        },
+        {
+          "kind": "code",
+          "path": "store.js",
+          "sha256": "2300e692f886294a8d328b7d3f72fdac9c72b57eac8c6d2c79d95fd9bd25f0ce"
+        },
+        {
+          "kind": "code",
+          "path": "assets/icons/manifest.json",
+          "sha256": "9e5787944a2f2b999f31d352c278ac7507c2e96dbc0f9ca0a4609c35babb538b"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/reading.png",
+          "sha256": "5ff7c5ede5d31a8f93be3451683d7b4e943a00c483954ddae6ddad2c72c8988b"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/editing.png",
+          "sha256": "4f7ed6822d7a83e11e4b5378e8668567df03b003d80da1f40d833ded2324abb5"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/form.png",
+          "sha256": "b8d160fda76be2c8cc087ecf50b51b40c75c93888ed010cd890a48bd400aa1ec"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/296-enlarged.png",
+          "sha256": "f9da7607cf9a723d5b461c5d526370d8f87691b74022203f1c302222a6283f91"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/read-failed.png",
+          "sha256": "45f62c4d99c3f3822b70dedaf879f2fd7a3062f518bfd9d383d42460f7bae66a"
+        },
+        {
+          "kind": "interaction",
+          "path": "design/evidence/icons.json",
+          "sha256": "287f63c90aeb03fbbf4f4fad410c1e8c8b3f0644edcebe6f082f8b46e139489a"
+        }
+      ]
+    },
+    {
+      "id": "ORC-G19",
+      "status": "pass",
+      "reason": "Both parent action colors use returned var(--text); verified official neutral external icons and browser-computed labels use32,32,36 in all sampled default/actual-hover/actual-focus states. No CSS compositing effects or clipping in this source; unsupported effects are blocked as unknown by counterexamples.432pair checks pass,not a whole-product approval.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/reading-review.md",
+          "sha256": "7a77b26b2b292b8a1180c10dd479faba1e6bc6ae6dbc880f34ed962849709a42"
+        },
+        {
+          "kind": "code",
+          "path": "index.html",
+          "sha256": "ab82f40fe2e255e8d990c9ab45e6a9f0cf1466054e00e84eac1a668d09fc7e33"
+        },
+        {
+          "kind": "code",
+          "path": "styles.css",
+          "sha256": "4f8526a4e2366d91377463cee0967456614e41868a13352cd4ca56a7a54c56b0"
+        },
+        {
+          "kind": "code",
+          "path": "app.js",
+          "sha256": "e3a606e0069f7635bdf79e1dd11bf5e91ce4c761e7fc765f99be1c2220524ca5"
+        },
+        {
+          "kind": "code",
+          "path": "render.js",
+          "sha256": "7e5dc567bbb2130dc3df06820967ecbabbeb298a7a47fd2fe6a2f0e776a099e0"
+        },
+        {
+          "kind": "code",
+          "path": "store.js",
+          "sha256": "2300e692f886294a8d328b7d3f72fdac9c72b57eac8c6d2c79d95fd9bd25f0ce"
+        },
+        {
+          "kind": "code",
+          "path": "assets/icons/manifest.json",
+          "sha256": "9e5787944a2f2b999f31d352c278ac7507c2e96dbc0f9ca0a4609c35babb538b"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/reading.png",
+          "sha256": "5ff7c5ede5d31a8f93be3451683d7b4e943a00c483954ddae6ddad2c72c8988b"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/editing.png",
+          "sha256": "4f7ed6822d7a83e11e4b5378e8668567df03b003d80da1f40d833ded2324abb5"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/form.png",
+          "sha256": "b8d160fda76be2c8cc087ecf50b51b40c75c93888ed010cd890a48bd400aa1ec"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/296-enlarged.png",
+          "sha256": "f9da7607cf9a723d5b461c5d526370d8f87691b74022203f1c302222a6283f91"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/read-failed.png",
+          "sha256": "45f62c4d99c3f3822b70dedaf879f2fd7a3062f518bfd9d383d42460f7bae66a"
+        },
+        {
+          "kind": "interaction",
+          "path": "design/evidence/icons.json",
+          "sha256": "287f63c90aeb03fbbf4f4fad410c1e8c8b3f0644edcebe6f082f8b46e139489a"
+        }
+      ]
+    },
+    {
+      "id": "ORC-G20",
+      "status": "unknown",
+      "reason": "Need measured header/content/form sibling gap and inset matrix including first/last child margins. Existing role differences need explicit review.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/reading-review.md",
+          "sha256": "7a77b26b2b292b8a1180c10dd479faba1e6bc6ae6dbc880f34ed962849709a42"
+        }
+      ]
+    },
+    {
+      "id": "ORC-G21",
+      "status": "pass",
+      "reason": "Same native-control/pointer inventory as ORC-F13.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/reading-review.md",
+          "sha256": "7a77b26b2b292b8a1180c10dd479faba1e6bc6ae6dbc880f34ed962849709a42"
+        },
+        {
+          "kind": "code",
+          "path": "index.html",
+          "sha256": "ab82f40fe2e255e8d990c9ab45e6a9f0cf1466054e00e84eac1a668d09fc7e33"
+        },
+        {
+          "kind": "code",
+          "path": "styles.css",
+          "sha256": "4f8526a4e2366d91377463cee0967456614e41868a13352cd4ca56a7a54c56b0"
+        },
+        {
+          "kind": "code",
+          "path": "app.js",
+          "sha256": "e3a606e0069f7635bdf79e1dd11bf5e91ce4c761e7fc765f99be1c2220524ca5"
+        },
+        {
+          "kind": "code",
+          "path": "render.js",
+          "sha256": "7e5dc567bbb2130dc3df06820967ecbabbeb298a7a47fd2fe6a2f0e776a099e0"
+        },
+        {
+          "kind": "code",
+          "path": "store.js",
+          "sha256": "2300e692f886294a8d328b7d3f72fdac9c72b57eac8c6d2c79d95fd9bd25f0ce"
+        },
+        {
+          "kind": "code",
+          "path": "assets/icons/manifest.json",
+          "sha256": "9e5787944a2f2b999f31d352c278ac7507c2e96dbc0f9ca0a4609c35babb538b"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/reading.png",
+          "sha256": "5ff7c5ede5d31a8f93be3451683d7b4e943a00c483954ddae6ddad2c72c8988b"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/editing.png",
+          "sha256": "4f7ed6822d7a83e11e4b5378e8668567df03b003d80da1f40d833ded2324abb5"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/form.png",
+          "sha256": "b8d160fda76be2c8cc087ecf50b51b40c75c93888ed010cd890a48bd400aa1ec"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/296-enlarged.png",
+          "sha256": "f9da7607cf9a723d5b461c5d526370d8f87691b74022203f1c302222a6283f91"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/read-failed.png",
+          "sha256": "45f62c4d99c3f3822b70dedaf879f2fd7a3062f518bfd9d383d42460f7bae66a"
+        },
+        {
+          "kind": "interaction",
+          "path": "design/evidence/mode.json",
+          "sha256": "32b56ee1039ecc2e988b2158bbb9667cccacbd9efd18485bda3339e6b9225351"
+        },
+        {
+          "kind": "interaction",
+          "path": "design/evidence/role.json",
+          "sha256": "30cd7f7c2031599adec6471e3641512d8a702d4060ed93e206a361a4cd0d02a0"
+        },
+        {
+          "kind": "interaction",
+          "path": "design/evidence/workflow.json",
+          "sha256": "8a7d68a21e356ce78359fd78f193cd07bd141bc9a9cfe8923b25b8b8eec35ac8"
+        },
+        {
+          "kind": "interaction",
+          "path": "design/evidence/recovery.json",
+          "sha256": "1e64664368eb15b456eed2f0760676024e604cd3006c6e62a647906b9fd88d49"
+        }
+      ]
+    },
+    {
+      "id": "ORC-G22",
+      "status": "pass",
+      "reason": "No decorative status/entity color cycling.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/reading-review.md",
+          "sha256": "7a77b26b2b292b8a1180c10dd479faba1e6bc6ae6dbc880f34ed962849709a42"
+        },
+        {
+          "kind": "code",
+          "path": "index.html",
+          "sha256": "ab82f40fe2e255e8d990c9ab45e6a9f0cf1466054e00e84eac1a668d09fc7e33"
+        },
+        {
+          "kind": "code",
+          "path": "styles.css",
+          "sha256": "4f8526a4e2366d91377463cee0967456614e41868a13352cd4ca56a7a54c56b0"
+        },
+        {
+          "kind": "code",
+          "path": "app.js",
+          "sha256": "e3a606e0069f7635bdf79e1dd11bf5e91ce4c761e7fc765f99be1c2220524ca5"
+        },
+        {
+          "kind": "code",
+          "path": "render.js",
+          "sha256": "7e5dc567bbb2130dc3df06820967ecbabbeb298a7a47fd2fe6a2f0e776a099e0"
+        },
+        {
+          "kind": "code",
+          "path": "store.js",
+          "sha256": "2300e692f886294a8d328b7d3f72fdac9c72b57eac8c6d2c79d95fd9bd25f0ce"
+        },
+        {
+          "kind": "code",
+          "path": "assets/icons/manifest.json",
+          "sha256": "9e5787944a2f2b999f31d352c278ac7507c2e96dbc0f9ca0a4609c35babb538b"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/reading.png",
+          "sha256": "5ff7c5ede5d31a8f93be3451683d7b4e943a00c483954ddae6ddad2c72c8988b"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/editing.png",
+          "sha256": "4f7ed6822d7a83e11e4b5378e8668567df03b003d80da1f40d833ded2324abb5"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/form.png",
+          "sha256": "b8d160fda76be2c8cc087ecf50b51b40c75c93888ed010cd890a48bd400aa1ec"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/296-enlarged.png",
+          "sha256": "f9da7607cf9a723d5b461c5d526370d8f87691b74022203f1c302222a6283f91"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/read-failed.png",
+          "sha256": "45f62c4d99c3f3822b70dedaf879f2fd7a3062f518bfd9d383d42460f7bae66a"
+        }
+      ]
+    },
+    {
+      "id": "ORC-G23",
+      "status": "unknown",
+      "reason": "Same unresolved calendar-rail and all-container scroll audit as ORC-F16; keyboard reachability alone does not approve every scrollbar.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/reading-review.md",
+          "sha256": "7a77b26b2b292b8a1180c10dd479faba1e6bc6ae6dbc880f34ed962849709a42"
+        }
+      ]
+    },
+    {
+      "id": "ORC-G24",
+      "status": "pass",
+      "reason": "Concrete semantic markup; wrappers own layout and field focus, not div-only navigation.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/reading-review.md",
+          "sha256": "7a77b26b2b292b8a1180c10dd479faba1e6bc6ae6dbc880f34ed962849709a42"
+        },
+        {
+          "kind": "code",
+          "path": "index.html",
+          "sha256": "ab82f40fe2e255e8d990c9ab45e6a9f0cf1466054e00e84eac1a668d09fc7e33"
+        },
+        {
+          "kind": "code",
+          "path": "styles.css",
+          "sha256": "4f8526a4e2366d91377463cee0967456614e41868a13352cd4ca56a7a54c56b0"
+        },
+        {
+          "kind": "code",
+          "path": "app.js",
+          "sha256": "e3a606e0069f7635bdf79e1dd11bf5e91ce4c761e7fc765f99be1c2220524ca5"
+        },
+        {
+          "kind": "code",
+          "path": "render.js",
+          "sha256": "7e5dc567bbb2130dc3df06820967ecbabbeb298a7a47fd2fe6a2f0e776a099e0"
+        },
+        {
+          "kind": "code",
+          "path": "store.js",
+          "sha256": "2300e692f886294a8d328b7d3f72fdac9c72b57eac8c6d2c79d95fd9bd25f0ce"
+        },
+        {
+          "kind": "code",
+          "path": "assets/icons/manifest.json",
+          "sha256": "9e5787944a2f2b999f31d352c278ac7507c2e96dbc0f9ca0a4609c35babb538b"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/reading.png",
+          "sha256": "5ff7c5ede5d31a8f93be3451683d7b4e943a00c483954ddae6ddad2c72c8988b"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/editing.png",
+          "sha256": "4f7ed6822d7a83e11e4b5378e8668567df03b003d80da1f40d833ded2324abb5"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/form.png",
+          "sha256": "b8d160fda76be2c8cc087ecf50b51b40c75c93888ed010cd890a48bd400aa1ec"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/296-enlarged.png",
+          "sha256": "f9da7607cf9a723d5b461c5d526370d8f87691b74022203f1c302222a6283f91"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/read-failed.png",
+          "sha256": "45f62c4d99c3f3822b70dedaf879f2fd7a3062f518bfd9d383d42460f7bae66a"
+        }
+      ]
+    },
+    {
+      "id": "ORC-A01",
+      "status": "pass",
+      "reason": "Radius roles vary: pills/circles versus6px fields/8px action/dialog.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/reading-review.md",
+          "sha256": "7a77b26b2b292b8a1180c10dd479faba1e6bc6ae6dbc880f34ed962849709a42"
+        },
+        {
+          "kind": "code",
+          "path": "index.html",
+          "sha256": "ab82f40fe2e255e8d990c9ab45e6a9f0cf1466054e00e84eac1a668d09fc7e33"
+        },
+        {
+          "kind": "code",
+          "path": "styles.css",
+          "sha256": "4f8526a4e2366d91377463cee0967456614e41868a13352cd4ca56a7a54c56b0"
+        },
+        {
+          "kind": "code",
+          "path": "app.js",
+          "sha256": "e3a606e0069f7635bdf79e1dd11bf5e91ce4c761e7fc765f99be1c2220524ca5"
+        },
+        {
+          "kind": "code",
+          "path": "render.js",
+          "sha256": "7e5dc567bbb2130dc3df06820967ecbabbeb298a7a47fd2fe6a2f0e776a099e0"
+        },
+        {
+          "kind": "code",
+          "path": "store.js",
+          "sha256": "2300e692f886294a8d328b7d3f72fdac9c72b57eac8c6d2c79d95fd9bd25f0ce"
+        },
+        {
+          "kind": "code",
+          "path": "assets/icons/manifest.json",
+          "sha256": "9e5787944a2f2b999f31d352c278ac7507c2e96dbc0f9ca0a4609c35babb538b"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/reading.png",
+          "sha256": "5ff7c5ede5d31a8f93be3451683d7b4e943a00c483954ddae6ddad2c72c8988b"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/editing.png",
+          "sha256": "4f7ed6822d7a83e11e4b5378e8668567df03b003d80da1f40d833ded2324abb5"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/form.png",
+          "sha256": "b8d160fda76be2c8cc087ecf50b51b40c75c93888ed010cd890a48bd400aa1ec"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/296-enlarged.png",
+          "sha256": "f9da7607cf9a723d5b461c5d526370d8f87691b74022203f1c302222a6283f91"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/read-failed.png",
+          "sha256": "45f62c4d99c3f3822b70dedaf879f2fd7a3062f518bfd9d383d42460f7bae66a"
+        }
+      ]
+    },
+    {
+      "id": "ORC-A02",
+      "status": "unknown",
+      "reason": "Original layered-background rule conflicts with the latest upstream mandatory white default and this mobile product contract. A documented scope/priority exception and actual surface review are still pending.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/reading-review.md",
+          "sha256": "7a77b26b2b292b8a1180c10dd479faba1e6bc6ae6dbc880f34ed962849709a42"
+        }
+      ]
+    },
+    {
+      "id": "ORC-A03",
+      "status": "unknown",
+      "reason": "Only focus paint uses shadows in observed code. The literal no-box-shadow catalog rule needs explicit scoped adjudication with actual keyboard/forced-colors paint evidence; decorative-shadow absence is insufficient.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/reading-review.md",
+          "sha256": "7a77b26b2b292b8a1180c10dd479faba1e6bc6ae6dbc880f34ed962849709a42"
+        }
+      ]
+    },
+    {
+      "id": "ORC-A04",
+      "status": "unknown",
+      "reason": "No Tailwind Blue-500 accent exists. The original no-brand three-direction prescription still requires scoped adjudication against the chosen reference-driven neutral contract; a neutral implementation alone is not a complete palette review.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/reading-review.md",
+          "sha256": "7a77b26b2b292b8a1180c10dd479faba1e6bc6ae6dbc880f34ed962849709a42"
+        }
+      ]
+    },
+    {
+      "id": "ORC-A05",
+      "status": "not-applicable",
+      "reason": "No hero/sidebar/footer composition; mobile task rows already use asymmetric checkbox/text/action roles.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/reading-review.md",
+          "sha256": "7a77b26b2b292b8a1180c10dd479faba1e6bc6ae6dbc880f34ed962849709a42"
+        }
+      ]
+    },
+    {
+      "id": "ORC-A06",
+      "status": "not-applicable",
+      "reason": "No Korean commerce catalogue price/rating/seller fields; actual task metadata is preserved and no filler is added.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/reading-review.md",
+          "sha256": "7a77b26b2b292b8a1180c10dd479faba1e6bc6ae6dbc880f34ed962849709a42"
+        }
+      ]
+    },
+    {
+      "id": "ORC-A07",
+      "status": "pass",
+      "reason": "Visible 추가/삭제 labels accompany official assets. Native 목록 편집/편집 마치기 in its task-list owner reveals deletion;actual touch/keyboard/state/focus/reload/retry tests pass.14px600 actual local-font management labels preserve their declared size/lineheight.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/reading-review.md",
+          "sha256": "7a77b26b2b292b8a1180c10dd479faba1e6bc6ae6dbc880f34ed962849709a42"
+        },
+        {
+          "kind": "code",
+          "path": "index.html",
+          "sha256": "ab82f40fe2e255e8d990c9ab45e6a9f0cf1466054e00e84eac1a668d09fc7e33"
+        },
+        {
+          "kind": "code",
+          "path": "styles.css",
+          "sha256": "4f8526a4e2366d91377463cee0967456614e41868a13352cd4ca56a7a54c56b0"
+        },
+        {
+          "kind": "code",
+          "path": "app.js",
+          "sha256": "e3a606e0069f7635bdf79e1dd11bf5e91ce4c761e7fc765f99be1c2220524ca5"
+        },
+        {
+          "kind": "code",
+          "path": "render.js",
+          "sha256": "7e5dc567bbb2130dc3df06820967ecbabbeb298a7a47fd2fe6a2f0e776a099e0"
+        },
+        {
+          "kind": "code",
+          "path": "store.js",
+          "sha256": "2300e692f886294a8d328b7d3f72fdac9c72b57eac8c6d2c79d95fd9bd25f0ce"
+        },
+        {
+          "kind": "code",
+          "path": "assets/icons/manifest.json",
+          "sha256": "9e5787944a2f2b999f31d352c278ac7507c2e96dbc0f9ca0a4609c35babb538b"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/reading.png",
+          "sha256": "5ff7c5ede5d31a8f93be3451683d7b4e943a00c483954ddae6ddad2c72c8988b"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/editing.png",
+          "sha256": "4f7ed6822d7a83e11e4b5378e8668567df03b003d80da1f40d833ded2324abb5"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/form.png",
+          "sha256": "b8d160fda76be2c8cc087ecf50b51b40c75c93888ed010cd890a48bd400aa1ec"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/296-enlarged.png",
+          "sha256": "f9da7607cf9a723d5b461c5d526370d8f87691b74022203f1c302222a6283f91"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/read-failed.png",
+          "sha256": "45f62c4d99c3f3822b70dedaf879f2fd7a3062f518bfd9d383d42460f7bae66a"
+        }
+      ]
+    },
+    {
+      "id": "ORC-A08",
+      "status": "not-applicable",
+      "reason": "No photographic or illustration content required; only licensed local font and official functional icons.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/reading-review.md",
+          "sha256": "7a77b26b2b292b8a1180c10dd479faba1e6bc6ae6dbc880f34ed962849709a42"
+        }
+      ]
+    },
+    {
+      "id": "ORC-A09",
+      "status": "not-applicable",
+      "reason": "No card grid.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/reading-review.md",
+          "sha256": "7a77b26b2b292b8a1180c10dd479faba1e6bc6ae6dbc880f34ed962849709a42"
+        }
+      ]
+    },
+    {
+      "id": "ORC-A10",
+      "status": "unknown",
+      "reason": "Read-error versus confirmed-empty and recovery now work, but the generic every-component loading/illustration/retry prescription still needs applicability review for synchronous local data and unavailable native storage policies.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/reading-review.md",
+          "sha256": "7a77b26b2b292b8a1180c10dd479faba1e6bc6ae6dbc880f34ed962849709a42"
+        }
+      ]
+    },
+    {
+      "id": "RUI-01",
+      "status": "pass",
+      "reason": "Reference/native image dimensions are recorded separately from390px displayed comparison width. Original CSS viewport,DPR,font and hidden task-add modal remain explicitly unknown. Host/model/adaptation decisions are separated in DESIGN/REFERENCE and raw input records.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/reading-review.md",
+          "sha256": "7a77b26b2b292b8a1180c10dd479faba1e6bc6ae6dbc880f34ed962849709a42"
+        }
+      ]
+    },
+    {
+      "id": "RUI-02",
+      "status": "unknown",
+      "reason": "Full token definition→reference→use-site and state text/background/icon mapping is not complete. Literal size/color/alignment values remain to be classified.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/reading-review.md",
+          "sha256": "7a77b26b2b292b8a1180c10dd479faba1e6bc6ae6dbc880f34ed962849709a42"
+        }
+      ]
+    },
+    {
+      "id": "RUI-03",
+      "status": "pass",
+      "reason": "Current product scope/exclusions and all75 original checks plus8 guides are included. The result stays INCOMPLETE/UNVERIFIED with known failures/unknowns; no completion is inferred from functional totals.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/reading-review.md",
+          "sha256": "7a77b26b2b292b8a1180c10dd479faba1e6bc6ae6dbc880f34ed962849709a42"
+        }
+      ]
+    },
+    {
+      "id": "RUI-04",
+      "status": "pass",
+      "reason": "73 actual workflow assertions plus15 store cases and2 browser read-recovery transitions pass. Failed initial reads preserve disk/input, do not show a confirmed-empty claim, and recover on explicit successful reload. Ordinary write retries remain exercised. Native storage-property access policies are outside this scoped result.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/reading-review.md",
+          "sha256": "7a77b26b2b292b8a1180c10dd479faba1e6bc6ae6dbc880f34ed962849709a42"
+        },
+        {
+          "kind": "interaction",
+          "path": "design/evidence/mode.json",
+          "sha256": "32b56ee1039ecc2e988b2158bbb9667cccacbd9efd18485bda3339e6b9225351"
+        },
+        {
+          "kind": "interaction",
+          "path": "design/evidence/role.json",
+          "sha256": "30cd7f7c2031599adec6471e3641512d8a702d4060ed93e206a361a4cd0d02a0"
+        },
+        {
+          "kind": "interaction",
+          "path": "design/evidence/workflow.json",
+          "sha256": "8a7d68a21e356ce78359fd78f193cd07bd141bc9a9cfe8923b25b8b8eec35ac8"
+        },
+        {
+          "kind": "interaction",
+          "path": "design/evidence/recovery.json",
+          "sha256": "1e64664368eb15b456eed2f0760676024e604cd3006c6e62a647906b9fd88d49"
+        }
+      ]
+    },
+    {
+      "id": "RUI-05",
+      "status": "pass",
+      "reason": "The separately frozen planner purpose has real selected-day task creation in two categories, completion, deletion,persistence and recovery. Current main/form render supports these tasks instead of relabeling workshop price/booking cards. This scoped requirement coverage is not a creative or reference-parity approval.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/reading-review.md",
+          "sha256": "7a77b26b2b292b8a1180c10dd479faba1e6bc6ae6dbc880f34ed962849709a42"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/reading.png",
+          "sha256": "5ff7c5ede5d31a8f93be3451683d7b4e943a00c483954ddae6ddad2c72c8988b"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/editing.png",
+          "sha256": "4f7ed6822d7a83e11e4b5378e8668567df03b003d80da1f40d833ded2324abb5"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/form.png",
+          "sha256": "b8d160fda76be2c8cc087ecf50b51b40c75c93888ed010cd890a48bd400aa1ec"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/296-enlarged.png",
+          "sha256": "f9da7607cf9a723d5b461c5d526370d8f87691b74022203f1c302222a6283f91"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/read-failed.png",
+          "sha256": "45f62c4d99c3f3822b70dedaf879f2fd7a3062f518bfd9d383d42460f7bae66a"
+        }
+      ]
+    },
+    {
+      "id": "RUI-06",
+      "status": "unknown",
+      "reason": "The original anti-slop JS review has not been executed and adjudicated for all current modules. Syntax,store and browser success are not substitutes.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/reading-review.md",
+          "sha256": "7a77b26b2b292b8a1180c10dd479faba1e6bc6ae6dbc880f34ed962849709a42"
+        }
+      ]
+    },
+    {
+      "id": "RUI-07",
+      "status": "pass",
+      "reason": "Selected date/calendar own filtering. The existing list-management action is now inside the actual task list,after calendar navigation and before categories;visible 목록 편집/편집 마치기 names scope and mode exit. Actual ownership/tab-order/mode/reset/failure tests and reading/editing images verify this scoped relationship. Full positive composition remains separately unknown.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/reading-review.md",
+          "sha256": "7a77b26b2b292b8a1180c10dd479faba1e6bc6ae6dbc880f34ed962849709a42"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/reading.png",
+          "sha256": "5ff7c5ede5d31a8f93be3451683d7b4e943a00c483954ddae6ddad2c72c8988b"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/editing.png",
+          "sha256": "4f7ed6822d7a83e11e4b5378e8668567df03b003d80da1f40d833ded2324abb5"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/form.png",
+          "sha256": "b8d160fda76be2c8cc087ecf50b51b40c75c93888ed010cd890a48bd400aa1ec"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/296-enlarged.png",
+          "sha256": "f9da7607cf9a723d5b461c5d526370d8f87691b74022203f1c302222a6283f91"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/read-failed.png",
+          "sha256": "45f62c4d99c3f3822b70dedaf879f2fd7a3062f518bfd9d383d42460f7bae66a"
+        }
+      ]
+    },
+    {
+      "id": "RUI-08",
+      "status": "pass",
+      "reason": "No invented logo/wordmark/slogan; the date heading is functional.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/reading-review.md",
+          "sha256": "7a77b26b2b292b8a1180c10dd479faba1e6bc6ae6dbc880f34ed962849709a42"
+        },
+        {
+          "kind": "code",
+          "path": "index.html",
+          "sha256": "ab82f40fe2e255e8d990c9ab45e6a9f0cf1466054e00e84eac1a668d09fc7e33"
+        },
+        {
+          "kind": "code",
+          "path": "styles.css",
+          "sha256": "4f8526a4e2366d91377463cee0967456614e41868a13352cd4ca56a7a54c56b0"
+        },
+        {
+          "kind": "code",
+          "path": "app.js",
+          "sha256": "e3a606e0069f7635bdf79e1dd11bf5e91ce4c761e7fc765f99be1c2220524ca5"
+        },
+        {
+          "kind": "code",
+          "path": "render.js",
+          "sha256": "7e5dc567bbb2130dc3df06820967ecbabbeb298a7a47fd2fe6a2f0e776a099e0"
+        },
+        {
+          "kind": "code",
+          "path": "store.js",
+          "sha256": "2300e692f886294a8d328b7d3f72fdac9c72b57eac8c6d2c79d95fd9bd25f0ce"
+        },
+        {
+          "kind": "code",
+          "path": "assets/icons/manifest.json",
+          "sha256": "9e5787944a2f2b999f31d352c278ac7507c2e96dbc0f9ca0a4609c35babb538b"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/reading.png",
+          "sha256": "5ff7c5ede5d31a8f93be3451683d7b4e943a00c483954ddae6ddad2c72c8988b"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/editing.png",
+          "sha256": "4f7ed6822d7a83e11e4b5378e8668567df03b003d80da1f40d833ded2324abb5"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/form.png",
+          "sha256": "b8d160fda76be2c8cc087ecf50b51b40c75c93888ed010cd890a48bd400aa1ec"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/296-enlarged.png",
+          "sha256": "f9da7607cf9a723d5b461c5d526370d8f87691b74022203f1c302222a6283f91"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/read-failed.png",
+          "sha256": "45f62c4d99c3f3822b70dedaf879f2fd7a3062f518bfd9d383d42460f7bae66a"
+        }
+      ]
+    },
+    {
+      "id": "RUI-09",
+      "status": "pass",
+      "reason": "All visible document text in executed main/empty/form/error states is14,16 or22 CSS px, with actual computed typography checks at four widths and enlarged/spacing probes. Action labels are16px/500; input/select typography and actual local Noto fonts were exercised. Native popup/device/AT rendering is not included.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/reading-review.md",
+          "sha256": "7a77b26b2b292b8a1180c10dd479faba1e6bc6ae6dbc880f34ed962849709a42"
+        },
+        {
+          "kind": "code",
+          "path": "index.html",
+          "sha256": "ab82f40fe2e255e8d990c9ab45e6a9f0cf1466054e00e84eac1a668d09fc7e33"
+        },
+        {
+          "kind": "code",
+          "path": "styles.css",
+          "sha256": "4f8526a4e2366d91377463cee0967456614e41868a13352cd4ca56a7a54c56b0"
+        },
+        {
+          "kind": "code",
+          "path": "app.js",
+          "sha256": "e3a606e0069f7635bdf79e1dd11bf5e91ce4c761e7fc765f99be1c2220524ca5"
+        },
+        {
+          "kind": "code",
+          "path": "render.js",
+          "sha256": "7e5dc567bbb2130dc3df06820967ecbabbeb298a7a47fd2fe6a2f0e776a099e0"
+        },
+        {
+          "kind": "code",
+          "path": "store.js",
+          "sha256": "2300e692f886294a8d328b7d3f72fdac9c72b57eac8c6d2c79d95fd9bd25f0ce"
+        },
+        {
+          "kind": "code",
+          "path": "assets/icons/manifest.json",
+          "sha256": "9e5787944a2f2b999f31d352c278ac7507c2e96dbc0f9ca0a4609c35babb538b"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/reading.png",
+          "sha256": "5ff7c5ede5d31a8f93be3451683d7b4e943a00c483954ddae6ddad2c72c8988b"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/editing.png",
+          "sha256": "4f7ed6822d7a83e11e4b5378e8668567df03b003d80da1f40d833ded2324abb5"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/form.png",
+          "sha256": "b8d160fda76be2c8cc087ecf50b51b40c75c93888ed010cd890a48bd400aa1ec"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/296-enlarged.png",
+          "sha256": "f9da7607cf9a723d5b461c5d526370d8f87691b74022203f1c302222a6283f91"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/read-failed.png",
+          "sha256": "45f62c4d99c3f3822b70dedaf879f2fd7a3062f518bfd9d383d42460f7bae66a"
+        }
+      ]
+    },
+    {
+      "id": "RUI-10",
+      "status": "pass",
+      "reason": "Category add controls and full-width form submission have distinct roles; no CTA styled as a filter.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/reading-review.md",
+          "sha256": "7a77b26b2b292b8a1180c10dd479faba1e6bc6ae6dbc880f34ed962849709a42"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/reading.png",
+          "sha256": "5ff7c5ede5d31a8f93be3451683d7b4e943a00c483954ddae6ddad2c72c8988b"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/editing.png",
+          "sha256": "4f7ed6822d7a83e11e4b5378e8668567df03b003d80da1f40d833ded2324abb5"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/form.png",
+          "sha256": "b8d160fda76be2c8cc087ecf50b51b40c75c93888ed010cd890a48bd400aa1ec"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/296-enlarged.png",
+          "sha256": "f9da7607cf9a723d5b461c5d526370d8f87691b74022203f1c302222a6283f91"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/read-failed.png",
+          "sha256": "45f62c4d99c3f3822b70dedaf879f2fd7a3062f518bfd9d383d42460f7bae66a"
+        }
+      ]
+    },
+    {
+      "id": "RUI-11",
+      "status": "pass",
+      "reason": "No demo notices, slogans or unrelated helper copy in product UI.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/reading-review.md",
+          "sha256": "7a77b26b2b292b8a1180c10dd479faba1e6bc6ae6dbc880f34ed962849709a42"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/reading.png",
+          "sha256": "5ff7c5ede5d31a8f93be3451683d7b4e943a00c483954ddae6ddad2c72c8988b"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/editing.png",
+          "sha256": "4f7ed6822d7a83e11e4b5378e8668567df03b003d80da1f40d833ded2324abb5"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/form.png",
+          "sha256": "b8d160fda76be2c8cc087ecf50b51b40c75c93888ed010cd890a48bd400aa1ec"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/296-enlarged.png",
+          "sha256": "f9da7607cf9a723d5b461c5d526370d8f87691b74022203f1c302222a6283f91"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/read-failed.png",
+          "sha256": "45f62c4d99c3f3822b70dedaf879f2fd7a3062f518bfd9d383d42460f7bae66a"
+        }
+      ]
+    },
+    {
+      "id": "RUI-12",
+      "status": "pass",
+      "reason": "Official Lucide Plus and Trash2-neutral source, geometry/license/manifest verified. Trash2 denotes actual removal, is visibly rendered at20px in a44px target, has a task-specific accessible name and passed actual edge deletion/focus/reload checks. Original X asset remains unused historical material.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/reading-review.md",
+          "sha256": "7a77b26b2b292b8a1180c10dd479faba1e6bc6ae6dbc880f34ed962849709a42"
+        },
+        {
+          "kind": "code",
+          "path": "index.html",
+          "sha256": "ab82f40fe2e255e8d990c9ab45e6a9f0cf1466054e00e84eac1a668d09fc7e33"
+        },
+        {
+          "kind": "code",
+          "path": "styles.css",
+          "sha256": "4f8526a4e2366d91377463cee0967456614e41868a13352cd4ca56a7a54c56b0"
+        },
+        {
+          "kind": "code",
+          "path": "app.js",
+          "sha256": "e3a606e0069f7635bdf79e1dd11bf5e91ce4c761e7fc765f99be1c2220524ca5"
+        },
+        {
+          "kind": "code",
+          "path": "render.js",
+          "sha256": "7e5dc567bbb2130dc3df06820967ecbabbeb298a7a47fd2fe6a2f0e776a099e0"
+        },
+        {
+          "kind": "code",
+          "path": "store.js",
+          "sha256": "2300e692f886294a8d328b7d3f72fdac9c72b57eac8c6d2c79d95fd9bd25f0ce"
+        },
+        {
+          "kind": "code",
+          "path": "assets/icons/manifest.json",
+          "sha256": "9e5787944a2f2b999f31d352c278ac7507c2e96dbc0f9ca0a4609c35babb538b"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/reading.png",
+          "sha256": "5ff7c5ede5d31a8f93be3451683d7b4e943a00c483954ddae6ddad2c72c8988b"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/editing.png",
+          "sha256": "4f7ed6822d7a83e11e4b5378e8668567df03b003d80da1f40d833ded2324abb5"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/form.png",
+          "sha256": "b8d160fda76be2c8cc087ecf50b51b40c75c93888ed010cd890a48bd400aa1ec"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/296-enlarged.png",
+          "sha256": "f9da7607cf9a723d5b461c5d526370d8f87691b74022203f1c302222a6283f91"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/read-failed.png",
+          "sha256": "45f62c4d99c3f3822b70dedaf879f2fd7a3062f518bfd9d383d42460f7bae66a"
+        }
+      ]
+    },
+    {
+      "id": "RUI-13",
+      "status": "pass",
+      "reason": "Empty,one/few and long task states use natural-height lists rather than fixed-height scrolling cards. Actual four-task normal390px capture fits900px; long200%text extends the page naturally. Last week-day keyboard access in its necessary narrow calendar rail is tested; stricter generic scrollbar-rule conflicts remain unapproved separately.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/reading-review.md",
+          "sha256": "7a77b26b2b292b8a1180c10dd479faba1e6bc6ae6dbc880f34ed962849709a42"
+        },
+        {
+          "kind": "code",
+          "path": "index.html",
+          "sha256": "ab82f40fe2e255e8d990c9ab45e6a9f0cf1466054e00e84eac1a668d09fc7e33"
+        },
+        {
+          "kind": "code",
+          "path": "styles.css",
+          "sha256": "4f8526a4e2366d91377463cee0967456614e41868a13352cd4ca56a7a54c56b0"
+        },
+        {
+          "kind": "code",
+          "path": "app.js",
+          "sha256": "e3a606e0069f7635bdf79e1dd11bf5e91ce4c761e7fc765f99be1c2220524ca5"
+        },
+        {
+          "kind": "code",
+          "path": "render.js",
+          "sha256": "7e5dc567bbb2130dc3df06820967ecbabbeb298a7a47fd2fe6a2f0e776a099e0"
+        },
+        {
+          "kind": "code",
+          "path": "store.js",
+          "sha256": "2300e692f886294a8d328b7d3f72fdac9c72b57eac8c6d2c79d95fd9bd25f0ce"
+        },
+        {
+          "kind": "code",
+          "path": "assets/icons/manifest.json",
+          "sha256": "9e5787944a2f2b999f31d352c278ac7507c2e96dbc0f9ca0a4609c35babb538b"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/reading.png",
+          "sha256": "5ff7c5ede5d31a8f93be3451683d7b4e943a00c483954ddae6ddad2c72c8988b"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/editing.png",
+          "sha256": "4f7ed6822d7a83e11e4b5378e8668567df03b003d80da1f40d833ded2324abb5"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/form.png",
+          "sha256": "b8d160fda76be2c8cc087ecf50b51b40c75c93888ed010cd890a48bd400aa1ec"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/296-enlarged.png",
+          "sha256": "f9da7607cf9a723d5b461c5d526370d8f87691b74022203f1c302222a6283f91"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/read-failed.png",
+          "sha256": "45f62c4d99c3f3822b70dedaf879f2fd7a3062f518bfd9d383d42460f7bae66a"
+        },
+        {
+          "kind": "interaction",
+          "path": "design/evidence/mode.json",
+          "sha256": "32b56ee1039ecc2e988b2158bbb9667cccacbd9efd18485bda3339e6b9225351"
+        },
+        {
+          "kind": "interaction",
+          "path": "design/evidence/role.json",
+          "sha256": "30cd7f7c2031599adec6471e3641512d8a702d4060ed93e206a361a4cd0d02a0"
+        },
+        {
+          "kind": "interaction",
+          "path": "design/evidence/workflow.json",
+          "sha256": "8a7d68a21e356ce78359fd78f193cd07bd141bc9a9cfe8923b25b8b8eec35ac8"
+        },
+        {
+          "kind": "interaction",
+          "path": "design/evidence/recovery.json",
+          "sha256": "1e64664368eb15b456eed2f0760676024e604cd3006c6e62a647906b9fd88d49"
+        }
+      ]
+    },
+    {
+      "id": "RUI-14",
+      "status": "pass",
+      "reason": "No section bars/tab underlines/hr; borders/rings only native fields and focus.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/reading-review.md",
+          "sha256": "7a77b26b2b292b8a1180c10dd479faba1e6bc6ae6dbc880f34ed962849709a42"
+        },
+        {
+          "kind": "code",
+          "path": "index.html",
+          "sha256": "ab82f40fe2e255e8d990c9ab45e6a9f0cf1466054e00e84eac1a668d09fc7e33"
+        },
+        {
+          "kind": "code",
+          "path": "styles.css",
+          "sha256": "4f8526a4e2366d91377463cee0967456614e41868a13352cd4ca56a7a54c56b0"
+        },
+        {
+          "kind": "code",
+          "path": "app.js",
+          "sha256": "e3a606e0069f7635bdf79e1dd11bf5e91ce4c761e7fc765f99be1c2220524ca5"
+        },
+        {
+          "kind": "code",
+          "path": "render.js",
+          "sha256": "7e5dc567bbb2130dc3df06820967ecbabbeb298a7a47fd2fe6a2f0e776a099e0"
+        },
+        {
+          "kind": "code",
+          "path": "store.js",
+          "sha256": "2300e692f886294a8d328b7d3f72fdac9c72b57eac8c6d2c79d95fd9bd25f0ce"
+        },
+        {
+          "kind": "code",
+          "path": "assets/icons/manifest.json",
+          "sha256": "9e5787944a2f2b999f31d352c278ac7507c2e96dbc0f9ca0a4609c35babb538b"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/reading.png",
+          "sha256": "5ff7c5ede5d31a8f93be3451683d7b4e943a00c483954ddae6ddad2c72c8988b"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/editing.png",
+          "sha256": "4f7ed6822d7a83e11e4b5378e8668567df03b003d80da1f40d833ded2324abb5"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/form.png",
+          "sha256": "b8d160fda76be2c8cc087ecf50b51b40c75c93888ed010cd890a48bd400aa1ec"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/296-enlarged.png",
+          "sha256": "f9da7607cf9a723d5b461c5d526370d8f87691b74022203f1c302222a6283f91"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/read-failed.png",
+          "sha256": "45f62c4d99c3f3822b70dedaf879f2fd7a3062f518bfd9d383d42460f7bae66a"
+        }
+      ]
+    },
+    {
+      "id": "RUI-15",
+      "status": "not-applicable",
+      "reason": "No chat/composer or competing list/chat tasks.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/reading-review.md",
+          "sha256": "7a77b26b2b292b8a1180c10dd479faba1e6bc6ae6dbc880f34ed962849709a42"
+        }
+      ]
+    },
+    {
+      "id": "RUI-16",
+      "status": "unknown",
+      "reason": "Concrete Q-ID reference/implementation/token mappings and same-display-width positive feature review are still partial. Category/week likeness and corrected actions alone cannot approve all adopted advantages.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/reading-review.md",
+          "sha256": "7a77b26b2b292b8a1180c10dd479faba1e6bc6ae6dbc880f34ed962849709a42"
+        }
+      ]
+    },
+    {
+      "id": "RUI-17",
+      "status": "unknown",
+      "reason": "Reference/commercial equivalence remains unverified: action mass,density,field boundaries and full composition need positive comparison, with actual task-add reference still unavailable.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/reading-review.md",
+          "sha256": "7a77b26b2b292b8a1180c10dd479faba1e6bc6ae6dbc880f34ed962849709a42"
+        }
+      ]
+    },
+    {
+      "id": "RUI-18",
+      "status": "unknown",
+      "reason": "Main and auxiliary routine/category references are preserved separately, but actual task-add modal research remains unknown. Complete B/SC/R/D/Q coverage is not yet established.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/reading-review.md",
+          "sha256": "7a77b26b2b292b8a1180c10dd479faba1e6bc6ae6dbc880f34ed962849709a42"
+        }
+      ]
+    },
+    {
+      "id": "RUI-19",
+      "status": "not-applicable",
+      "reason": "No destination tabs; week buttons are date filtering, not page destinations.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/reading-review.md",
+          "sha256": "7a77b26b2b292b8a1180c10dd479faba1e6bc6ae6dbc880f34ed962849709a42"
+        }
+      ]
+    },
+    {
+      "id": "RUI-20",
+      "status": "pass",
+      "reason": "Form purpose heading22/700 remains distinct from14px labels and16px values.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/reading-review.md",
+          "sha256": "7a77b26b2b292b8a1180c10dd479faba1e6bc6ae6dbc880f34ed962849709a42"
+        },
+        {
+          "kind": "code",
+          "path": "index.html",
+          "sha256": "ab82f40fe2e255e8d990c9ab45e6a9f0cf1466054e00e84eac1a668d09fc7e33"
+        },
+        {
+          "kind": "code",
+          "path": "styles.css",
+          "sha256": "4f8526a4e2366d91377463cee0967456614e41868a13352cd4ca56a7a54c56b0"
+        },
+        {
+          "kind": "code",
+          "path": "app.js",
+          "sha256": "e3a606e0069f7635bdf79e1dd11bf5e91ce4c761e7fc765f99be1c2220524ca5"
+        },
+        {
+          "kind": "code",
+          "path": "render.js",
+          "sha256": "7e5dc567bbb2130dc3df06820967ecbabbeb298a7a47fd2fe6a2f0e776a099e0"
+        },
+        {
+          "kind": "code",
+          "path": "store.js",
+          "sha256": "2300e692f886294a8d328b7d3f72fdac9c72b57eac8c6d2c79d95fd9bd25f0ce"
+        },
+        {
+          "kind": "code",
+          "path": "assets/icons/manifest.json",
+          "sha256": "9e5787944a2f2b999f31d352c278ac7507c2e96dbc0f9ca0a4609c35babb538b"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/reading.png",
+          "sha256": "5ff7c5ede5d31a8f93be3451683d7b4e943a00c483954ddae6ddad2c72c8988b"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/editing.png",
+          "sha256": "4f7ed6822d7a83e11e4b5378e8668567df03b003d80da1f40d833ded2324abb5"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/form.png",
+          "sha256": "b8d160fda76be2c8cc087ecf50b51b40c75c93888ed010cd890a48bd400aa1ec"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/296-enlarged.png",
+          "sha256": "f9da7607cf9a723d5b461c5d526370d8f87691b74022203f1c302222a6283f91"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/read-failed.png",
+          "sha256": "45f62c4d99c3f3822b70dedaf879f2fd7a3062f518bfd9d383d42460f7bae66a"
+        }
+      ]
+    },
+    {
+      "id": "RUI-21",
+      "status": "unknown",
+      "reason": "Custom week filtering selection/focus/date persistence works in tests, but full date-control applicability and selection/cancel/reset scope require explicit adjudication. No claim about an unseen native picker.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/reading-review.md",
+          "sha256": "7a77b26b2b292b8a1180c10dd479faba1e6bc6ae6dbc880f34ed962849709a42"
+        }
+      ]
+    },
+    {
+      "id": "RUI-22",
+      "status": "unknown",
+      "reason": "Need rendered first/last child and parent margin/padding matrix for main,form,error and enlarged states; source declarations alone cannot approve cumulative spacing.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/reading-review.md",
+          "sha256": "7a77b26b2b292b8a1180c10dd479faba1e6bc6ae6dbc880f34ed962849709a42"
+        }
+      ]
+    },
+    {
+      "id": "RUI-23",
+      "status": "pass",
+      "reason": "Current same-width main/form/empty/error renders use the same white surfaces,neutral text,22px purpose headings,14px labels,16px values and bounded mobile width. Main20px inset and form24px/20px inset have recorded distinct container roles. This verifies scoped cross-view consistency, not complete token use or full-guide compliance.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/reading-review.md",
+          "sha256": "7a77b26b2b292b8a1180c10dd479faba1e6bc6ae6dbc880f34ed962849709a42"
+        },
+        {
+          "kind": "code",
+          "path": "index.html",
+          "sha256": "ab82f40fe2e255e8d990c9ab45e6a9f0cf1466054e00e84eac1a668d09fc7e33"
+        },
+        {
+          "kind": "code",
+          "path": "styles.css",
+          "sha256": "4f8526a4e2366d91377463cee0967456614e41868a13352cd4ca56a7a54c56b0"
+        },
+        {
+          "kind": "code",
+          "path": "app.js",
+          "sha256": "e3a606e0069f7635bdf79e1dd11bf5e91ce4c761e7fc765f99be1c2220524ca5"
+        },
+        {
+          "kind": "code",
+          "path": "render.js",
+          "sha256": "7e5dc567bbb2130dc3df06820967ecbabbeb298a7a47fd2fe6a2f0e776a099e0"
+        },
+        {
+          "kind": "code",
+          "path": "store.js",
+          "sha256": "2300e692f886294a8d328b7d3f72fdac9c72b57eac8c6d2c79d95fd9bd25f0ce"
+        },
+        {
+          "kind": "code",
+          "path": "assets/icons/manifest.json",
+          "sha256": "9e5787944a2f2b999f31d352c278ac7507c2e96dbc0f9ca0a4609c35babb538b"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/reading.png",
+          "sha256": "5ff7c5ede5d31a8f93be3451683d7b4e943a00c483954ddae6ddad2c72c8988b"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/editing.png",
+          "sha256": "4f7ed6822d7a83e11e4b5378e8668567df03b003d80da1f40d833ded2324abb5"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/form.png",
+          "sha256": "b8d160fda76be2c8cc087ecf50b51b40c75c93888ed010cd890a48bd400aa1ec"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/296-enlarged.png",
+          "sha256": "f9da7607cf9a723d5b461c5d526370d8f87691b74022203f1c302222a6283f91"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/read-failed.png",
+          "sha256": "45f62c4d99c3f3822b70dedaf879f2fd7a3062f518bfd9d383d42460f7bae66a"
+        }
+      ]
+    },
+    {
+      "id": "RUI-24",
+      "status": "pass",
+      "reason": "Heading sets selected-day context; date buttons select that context. No decorative duplicate badges/counts.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/reading-review.md",
+          "sha256": "7a77b26b2b292b8a1180c10dd479faba1e6bc6ae6dbc880f34ed962849709a42"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/reading.png",
+          "sha256": "5ff7c5ede5d31a8f93be3451683d7b4e943a00c483954ddae6ddad2c72c8988b"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/editing.png",
+          "sha256": "4f7ed6822d7a83e11e4b5378e8668567df03b003d80da1f40d833ded2324abb5"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/form.png",
+          "sha256": "b8d160fda76be2c8cc087ecf50b51b40c75c93888ed010cd890a48bd400aa1ec"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/296-enlarged.png",
+          "sha256": "f9da7607cf9a723d5b461c5d526370d8f87691b74022203f1c302222a6283f91"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/read-failed.png",
+          "sha256": "45f62c4d99c3f3822b70dedaf879f2fd7a3062f518bfd9d383d42460f7bae66a"
+        }
+      ]
+    },
+    {
+      "id": "RUI-25",
+      "status": "pass",
+      "reason": "Category titles/space and native modal distinguish tasks; no forced cardification of all regions.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/reading-review.md",
+          "sha256": "7a77b26b2b292b8a1180c10dd479faba1e6bc6ae6dbc880f34ed962849709a42"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/reading.png",
+          "sha256": "5ff7c5ede5d31a8f93be3451683d7b4e943a00c483954ddae6ddad2c72c8988b"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/editing.png",
+          "sha256": "4f7ed6822d7a83e11e4b5378e8668567df03b003d80da1f40d833ded2324abb5"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/form.png",
+          "sha256": "b8d160fda76be2c8cc087ecf50b51b40c75c93888ed010cd890a48bd400aa1ec"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/296-enlarged.png",
+          "sha256": "f9da7607cf9a723d5b461c5d526370d8f87691b74022203f1c302222a6283f91"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/read-failed.png",
+          "sha256": "45f62c4d99c3f3822b70dedaf879f2fd7a3062f518bfd9d383d42460f7bae66a"
+        }
+      ]
+    },
+    {
+      "id": "PROJECT-GUIDE-design-md",
+      "status": "unknown",
+      "reason": "Original PROJECT-GUIDE-design-md checks retained. Full scoped review remains incomplete; DOM/state counters alone are insufficient. See concrete remaining work in design/evidence/reading-review.md.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/reading-review.md",
+          "sha256": "7a77b26b2b292b8a1180c10dd479faba1e6bc6ae6dbc880f34ed962849709a42"
+        }
+      ]
+    },
+    {
+      "id": "PROJECT-GUIDE-onboarding-flow",
+      "status": "not-applicable",
+      "reason": "No signup/onboarding/consent flow is requested in this personal task planner.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/reading-review.md",
+          "sha256": "7a77b26b2b292b8a1180c10dd479faba1e6bc6ae6dbc880f34ed962849709a42"
+        }
+      ]
+    },
+    {
+      "id": "PROJECT-GUIDE-reference-decompose",
+      "status": "unknown",
+      "reason": "Original PROJECT-GUIDE-reference-decompose checks retained. Full scoped review remains incomplete; DOM/state counters alone are insufficient. See concrete remaining work in design/evidence/reading-review.md.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/reading-review.md",
+          "sha256": "7a77b26b2b292b8a1180c10dd479faba1e6bc6ae6dbc880f34ed962849709a42"
+        }
+      ]
+    },
+    {
+      "id": "PROJECT-GUIDE-reference-review",
+      "status": "unknown",
+      "reason": "Original PROJECT-GUIDE-reference-review checks retained. Full scoped review remains incomplete; DOM/state counters alone are insufficient. See concrete remaining work in design/evidence/reading-review.md.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/reading-review.md",
+          "sha256": "7a77b26b2b292b8a1180c10dd479faba1e6bc6ae6dbc880f34ed962849709a42"
+        }
+      ]
+    },
+    {
+      "id": "PROJECT-GUIDE-reference-to-ui",
+      "status": "unknown",
+      "reason": "Original PROJECT-GUIDE-reference-to-ui checks retained. Full scoped review remains incomplete; DOM/state counters alone are insufficient. See concrete remaining work in design/evidence/reading-review.md.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/reading-review.md",
+          "sha256": "7a77b26b2b292b8a1180c10dd479faba1e6bc6ae6dbc880f34ed962849709a42"
+        }
+      ]
+    },
+    {
+      "id": "PROJECT-GUIDE-samkill-ui",
+      "status": "unknown",
+      "reason": "Original PROJECT-GUIDE-samkill-ui checks retained. Full scoped review remains incomplete; DOM/state counters alone are insufficient. See concrete remaining work in design/evidence/reading-review.md.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/reading-review.md",
+          "sha256": "7a77b26b2b292b8a1180c10dd479faba1e6bc6ae6dbc880f34ed962849709a42"
+        }
+      ]
+    },
+    {
+      "id": "PROJECT-GUIDE-uibowl-research",
+      "status": "unknown",
+      "reason": "Original PROJECT-GUIDE-uibowl-research checks retained. Full scoped review remains incomplete; DOM/state counters alone are insufficient. See concrete remaining work in design/evidence/reading-review.md.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/reading-review.md",
+          "sha256": "7a77b26b2b292b8a1180c10dd479faba1e6bc6ae6dbc880f34ed962849709a42"
+        }
+      ]
+    },
+    {
+      "id": "PROJECT-GUIDE-ux-copy",
+      "status": "unknown",
+      "reason": "Original PROJECT-GUIDE-ux-copy checks retained. Full scoped review remains incomplete; DOM/state counters alone are insufficient. See concrete remaining work in design/evidence/reading-review.md.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/reading-review.md",
+          "sha256": "7a77b26b2b292b8a1180c10dd479faba1e6bc6ae6dbc880f34ed962849709a42"
+        }
+      ]
+    },
+    {
+      "id": "PROJECT-LONG-ACTION-OWNERSHIP",
+      "status": "pass",
+      "reason": "Versioned correction of the prior host-chosen always-inline supporting Delete relation,predeclared before inference in contract-change.json. Native checkbox stays first-line;title has chosen6em reading width capped only by an independent39px native checkbox/margins/gap allowance. Delete stays first-line/end-aligned when inline fits;only insufficient296/320px200%rows move it below their own body with8..24px gap and44px target. Old all-inline results remain historical and are not relabelled pass. Actual24cells include120-character rows;normal390appearance is unchanged. This scoped replacement does not change any original75rule check or mobile exception.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/reading-review.md",
+          "sha256": "7a77b26b2b292b8a1180c10dd479faba1e6bc6ae6dbc880f34ed962849709a42"
+        },
+        {
+          "kind": "code",
+          "path": "index.html",
+          "sha256": "ab82f40fe2e255e8d990c9ab45e6a9f0cf1466054e00e84eac1a668d09fc7e33"
+        },
+        {
+          "kind": "code",
+          "path": "styles.css",
+          "sha256": "4f8526a4e2366d91377463cee0967456614e41868a13352cd4ca56a7a54c56b0"
+        },
+        {
+          "kind": "code",
+          "path": "app.js",
+          "sha256": "e3a606e0069f7635bdf79e1dd11bf5e91ce4c761e7fc765f99be1c2220524ca5"
+        },
+        {
+          "kind": "code",
+          "path": "render.js",
+          "sha256": "7e5dc567bbb2130dc3df06820967ecbabbeb298a7a47fd2fe6a2f0e776a099e0"
+        },
+        {
+          "kind": "code",
+          "path": "store.js",
+          "sha256": "2300e692f886294a8d328b7d3f72fdac9c72b57eac8c6d2c79d95fd9bd25f0ce"
+        },
+        {
+          "kind": "code",
+          "path": "assets/icons/manifest.json",
+          "sha256": "9e5787944a2f2b999f31d352c278ac7507c2e96dbc0f9ca0a4609c35babb538b"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/reading.png",
+          "sha256": "5ff7c5ede5d31a8f93be3451683d7b4e943a00c483954ddae6ddad2c72c8988b"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/editing.png",
+          "sha256": "4f7ed6822d7a83e11e4b5378e8668567df03b003d80da1f40d833ded2324abb5"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/form.png",
+          "sha256": "b8d160fda76be2c8cc087ecf50b51b40c75c93888ed010cd890a48bd400aa1ec"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/296-enlarged.png",
+          "sha256": "f9da7607cf9a723d5b461c5d526370d8f87691b74022203f1c302222a6283f91"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/read-failed.png",
+          "sha256": "45f62c4d99c3f3822b70dedaf879f2fd7a3062f518bfd9d383d42460f7bae66a"
+        }
+      ]
+    },
+    {
+      "id": "PROJECT-INITIAL-READ-INTEGRITY",
+      "status": "pass",
+      "reason": "Actual failed-read/create/reload browser sequence preserves original raw storage and input, restores the old record and permits a new create after successful reload;15 store cases and4 renderer states pass.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/reading-review.md",
+          "sha256": "7a77b26b2b292b8a1180c10dd479faba1e6bc6ae6dbc880f34ed962849709a42"
+        },
+        {
+          "kind": "code",
+          "path": "index.html",
+          "sha256": "ab82f40fe2e255e8d990c9ab45e6a9f0cf1466054e00e84eac1a668d09fc7e33"
+        },
+        {
+          "kind": "code",
+          "path": "styles.css",
+          "sha256": "4f8526a4e2366d91377463cee0967456614e41868a13352cd4ca56a7a54c56b0"
+        },
+        {
+          "kind": "code",
+          "path": "app.js",
+          "sha256": "e3a606e0069f7635bdf79e1dd11bf5e91ce4c761e7fc765f99be1c2220524ca5"
+        },
+        {
+          "kind": "code",
+          "path": "render.js",
+          "sha256": "7e5dc567bbb2130dc3df06820967ecbabbeb298a7a47fd2fe6a2f0e776a099e0"
+        },
+        {
+          "kind": "code",
+          "path": "store.js",
+          "sha256": "2300e692f886294a8d328b7d3f72fdac9c72b57eac8c6d2c79d95fd9bd25f0ce"
+        },
+        {
+          "kind": "code",
+          "path": "assets/icons/manifest.json",
+          "sha256": "9e5787944a2f2b999f31d352c278ac7507c2e96dbc0f9ca0a4609c35babb538b"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/reading.png",
+          "sha256": "5ff7c5ede5d31a8f93be3451683d7b4e943a00c483954ddae6ddad2c72c8988b"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/editing.png",
+          "sha256": "4f7ed6822d7a83e11e4b5378e8668567df03b003d80da1f40d833ded2324abb5"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/form.png",
+          "sha256": "b8d160fda76be2c8cc087ecf50b51b40c75c93888ed010cd890a48bd400aa1ec"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/296-enlarged.png",
+          "sha256": "f9da7607cf9a723d5b461c5d526370d8f87691b74022203f1c302222a6283f91"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/read-failed.png",
+          "sha256": "45f62c4d99c3f3822b70dedaf879f2fd7a3062f518bfd9d383d42460f7bae66a"
+        },
+        {
+          "kind": "interaction",
+          "path": "design/evidence/mode.json",
+          "sha256": "32b56ee1039ecc2e988b2158bbb9667cccacbd9efd18485bda3339e6b9225351"
+        },
+        {
+          "kind": "interaction",
+          "path": "design/evidence/role.json",
+          "sha256": "30cd7f7c2031599adec6471e3641512d8a702d4060ed93e206a361a4cd0d02a0"
+        },
+        {
+          "kind": "interaction",
+          "path": "design/evidence/workflow.json",
+          "sha256": "8a7d68a21e356ce78359fd78f193cd07bd141bc9a9cfe8923b25b8b8eec35ac8"
+        },
+        {
+          "kind": "interaction",
+          "path": "design/evidence/recovery.json",
+          "sha256": "1e64664368eb15b456eed2f0760676024e604cd3006c6e62a647906b9fd88d49"
+        }
+      ]
+    }
+  ],
+  "catalog_sha256": "82e459f06fb4113a1c2caa89ac2c28e95c29c186a0190bb8bf0c2a5caf74329f",
+  "contract_sha256": "0846b3468b3c12ad35650ce84f21cbeb0b05a8a6649eb2e5baffa56255ebb46f",
+  "target_sha256": "ffa587ff2a946b9e4bb8d528d846a92a4086101b9bd4f9c282d34e95e8bc6495"
+}

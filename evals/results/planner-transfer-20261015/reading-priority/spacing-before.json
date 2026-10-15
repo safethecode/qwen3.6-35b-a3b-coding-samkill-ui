@@ -1,0 +1,217 @@
+{
+  "scope": "Every spacing declaration in the supplied CSS, including media/state declarations; not a complete DOM or rendered-distance audit",
+  "declarations": 7,
+  "selectors": 4,
+  "entries": [
+    {
+      "selector": "[data-ui-unit=\"tasks\"] .task-row",
+      "property": "gap",
+      "raw": "8px",
+      "role": "internal",
+      "scope": [],
+      "values": [
+        {
+          "raw": "8px",
+          "resolved": "8px",
+          "value": 8,
+          "status": "ALIGNED",
+          "candidates": [],
+          "reason": "Within the declared role scale; not visual approval"
+        }
+      ]
+    },
+    {
+      "selector": "[data-ui-unit=\"tasks\"] .task-toggle",
+      "property": "gap",
+      "raw": "12px",
+      "role": "internal",
+      "scope": [],
+      "values": [
+        {
+          "raw": "12px",
+          "resolved": "12px",
+          "value": 12,
+          "status": "ALIGNED",
+          "candidates": [],
+          "reason": "Within the declared role scale; not visual approval"
+        }
+      ]
+    },
+    {
+      "selector": "[data-ui-unit=\"tasks\"] .task-toggle",
+      "property": "padding",
+      "raw": "8px 0",
+      "role": "internal",
+      "scope": [],
+      "values": [
+        {
+          "raw": "8px",
+          "resolved": "8px",
+          "value": 8,
+          "status": "ALIGNED",
+          "candidates": [],
+          "reason": "Within the declared role scale; not visual approval"
+        },
+        {
+          "raw": "0",
+          "resolved": "0",
+          "value": 0,
+          "status": "ALIGNED",
+          "candidates": [],
+          "reason": "Within the declared role scale; not visual approval"
+        }
+      ]
+    },
+    {
+      "selector": "[data-ui-unit=\"tasks\"] .task-check",
+      "property": "margin-top",
+      "raw": "calc(.8em - 10px)",
+      "role": "internal",
+      "scope": [],
+      "values": [
+        {
+          "raw": "10px",
+          "resolved": "10px",
+          "value": 10,
+          "status": "UNVERIFIED",
+          "candidates": [],
+          "reason": "A term inside calculated spacing is not the final fixed distance"
+        },
+        {
+          "status": "UNVERIFIED",
+          "reason": "Content-dependent, relative or unresolved spacing requires rendered/context review",
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "selector": "[data-ui-unit=\"tasks\"] .delete-task",
+      "property": "padding",
+      "raw": "0 4px",
+      "role": "internal",
+      "scope": [],
+      "values": [
+        {
+          "raw": "0",
+          "resolved": "0",
+          "value": 0,
+          "status": "ALIGNED",
+          "candidates": [],
+          "reason": "Within the declared role scale; not visual approval"
+        },
+        {
+          "raw": "4px",
+          "resolved": "4px",
+          "value": 4,
+          "status": "ALIGNED",
+          "candidates": [],
+          "reason": "Within the declared role scale; not visual approval"
+        }
+      ]
+    },
+    {
+      "selector": "[data-ui-unit=\"tasks\"] .delete-task",
+      "property": "gap",
+      "raw": "4px",
+      "role": "internal",
+      "scope": [],
+      "values": [
+        {
+          "raw": "4px",
+          "resolved": "4px",
+          "value": 4,
+          "status": "ALIGNED",
+          "candidates": [],
+          "reason": "Within the declared role scale; not visual approval"
+        }
+      ]
+    },
+    {
+      "selector": "[data-ui-unit=\"tasks\"] .delete-task",
+      "property": "margin-top",
+      "raw": "max(0px, calc(0.8em - 14px))",
+      "role": "internal",
+      "scope": [],
+      "values": [
+        {
+          "raw": "0px",
+          "resolved": "0px",
+          "value": 0,
+          "status": "UNVERIFIED",
+          "candidates": [],
+          "reason": "A term inside calculated spacing is not the final fixed distance"
+        },
+        {
+          "raw": "14px",
+          "resolved": "14px",
+          "value": 14,
+          "status": "UNVERIFIED",
+          "candidates": [],
+          "reason": "A term inside calculated spacing is not the final fixed distance"
+        },
+        {
+          "status": "UNVERIFIED",
+          "reason": "Content-dependent, relative or unresolved spacing requires rendered/context review",
+          "candidates": []
+        }
+      ]
+    }
+  ],
+  "hardFindings": [],
+  "reviewFindings": [],
+  "unverified": [
+    {
+      "selector": "[data-ui-unit=\"tasks\"] .task-check",
+      "property": "margin-top",
+      "raw": "calc(.8em - 10px)",
+      "role": "internal",
+      "scope": [],
+      "values": [
+        {
+          "raw": "10px",
+          "resolved": "10px",
+          "value": 10,
+          "status": "UNVERIFIED",
+          "candidates": [],
+          "reason": "A term inside calculated spacing is not the final fixed distance"
+        },
+        {
+          "status": "UNVERIFIED",
+          "reason": "Content-dependent, relative or unresolved spacing requires rendered/context review",
+          "candidates": []
+        }
+      ]
+    },
+    {
+      "selector": "[data-ui-unit=\"tasks\"] .delete-task",
+      "property": "margin-top",
+      "raw": "max(0px, calc(0.8em - 14px))",
+      "role": "internal",
+      "scope": [],
+      "values": [
+        {
+          "raw": "0px",
+          "resolved": "0px",
+          "value": 0,
+          "status": "UNVERIFIED",
+          "candidates": [],
+          "reason": "A term inside calculated spacing is not the final fixed distance"
+        },
+        {
+          "raw": "14px",
+          "resolved": "14px",
+          "value": 14,
+          "status": "UNVERIFIED",
+          "candidates": [],
+          "reason": "A term inside calculated spacing is not the final fixed distance"
+        },
+        {
+          "status": "UNVERIFIED",
+          "reason": "Content-dependent, relative or unresolved spacing requires rendered/context review",
+          "candidates": []
+        }
+      ]
+    }
+  ],
+  "status": "AUDIT_NOT_VISUAL_APPROVAL"
+}

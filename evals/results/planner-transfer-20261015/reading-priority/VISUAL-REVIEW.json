@@ -1,0 +1,83 @@
+{
+  "status": "SCOPED_IMPROVEMENT_NOT_REFERENCE_PARITY",
+  "reviewedAtUtc": "2026-10-15T12:42:44.073Z",
+  "sourceHashes": {
+    "index.html": "ab82f40fe2e255e8d990c9ab45e6a9f0cf1466054e00e84eac1a668d09fc7e33",
+    "styles.css": "4f8526a4e2366d91377463cee0967456614e41868a13352cd4ca56a7a54c56b0",
+    "app.js": "e3a606e0069f7635bdf79e1dd11bf5e91ce4c761e7fc765f99be1c2220524ca5",
+    "DESIGN.md": "3ea39374df0226184707ecef958ba7caf2f0b02852ff3891bfa9cc00bd3c5ee3",
+    "REFERENCE.md": "9f04811d7f04c3d0ae81da3cf35c30457499108f6a3e7df93c9ab9b872a9078c",
+    "assets/fonts/METADATA.pb": "9b8b27c0dd1adbb0057d1fbe9534207ab3606114ace6755453d14668912471a1",
+    "assets/fonts/NotoSansKR.ttf": "194018e6b2b293a7964f037b25c0249ce1418bc9ab3c971060a03aa57861e252",
+    "assets/fonts/OFL.txt": "1c05c68c34f9708415aada51f17e1b0092d2cea709bf4a94cd38114f9e73d7d9",
+    "assets/icons/LICENSE": "b495047bd93a9b06913511076f504daba17d5bbeb3e0650f3bb53a4220329c57",
+    "assets/icons/Plus-neutral.svg": "13e30a4730e5e97733ad1ecb4783952fd08ef7a73239a3f07668556b0360b539",
+    "assets/icons/Plus.svg": "3d4f93d0e5a8eb932e4d1f0d71122d01917e7624439adc35dddcd5352d7a228f",
+    "assets/icons/Trash2-neutral.svg": "4e249e5c0f31edddd39895daffe23cf7bc80d405fb1a1f21749683d391de419a",
+    "assets/icons/X.svg": "f27abfc353abc2497a1d9752e21e2e2e32eeeb4271401f2a067c4d1fcced7a23",
+    "assets/icons/manifest.json": "9e5787944a2f2b999f31d352c278ac7507c2e96dbc0f9ca0a4609c35babb538b",
+    "design/typography.json": "044d8a4fa9d51d8836f9df602c64e79eb6b2151a039fe8e457f7db32c144c3db",
+    "design/component-plan.json": "36772d35ee3516996c8ed2fbe713544aabfb871134c2ffcbc81993f718c88cda",
+    "design/layout-contract.json": "5263d30990dc87de3d24a83807e795d63bdf448e65a5b8193a3e4e17025bcfd6",
+    "render.js": "7e5dc567bbb2130dc3df06820967ecbabbeb298a7a47fd2fe6a2f0e776a099e0",
+    "sample-editor.html": "6986f9ac088f35c49edd8bce742b4fb33dd43c64d2f6bbe003e7b7e2edf117ef",
+    "sample-tasks.html": "5910154cc0fe1972a6e002c7ad2d27878444304cb4e1d365cfc265462cb89384",
+    "sample-week.html": "8c7acd3441fbb26eb31d764d86bfd972d54b92244f9a57df90fa8e79c82f825e",
+    "store.js": "2300e692f886294a8d328b7d3f72fdac9c72b57eac8c6d2c79d95fd9bd25f0ce"
+  },
+  "metrics": {
+    "status": "MEASURED_SCREENSHOT_BYTES_AND_REPORTED_TEXT_WIDTH_NOT_QUALITY_PARITY",
+    "identical": 22,
+    "compared": 24,
+    "changes": [
+      {
+        "width": 296,
+        "state": "editing",
+        "mode": "text-200",
+        "beforeImageHeight": 3003,
+        "afterImageHeight": 1926,
+        "beforeTextWidth": 102.109375,
+        "afterTextWidth": 217,
+        "placements": [
+          "below",
+          "below",
+          "below"
+        ],
+        "beforePngSha256": "74c3ee6542340412eff751efd7d6a131d45a38f20a6ffc3fae8fdaac79d6ebb3",
+        "afterPngSha256": "f9da7607cf9a723d5b461c5d526370d8f87691b74022203f1c302222a6283f91"
+      },
+      {
+        "width": 320,
+        "state": "editing",
+        "mode": "text-200",
+        "beforeImageHeight": 2440,
+        "afterImageHeight": 1772,
+        "beforeTextWidth": 126.109375,
+        "afterTextWidth": 241,
+        "placements": [
+          "below",
+          "below",
+          "below"
+        ],
+        "beforePngSha256": "ecbb468c6eaa5d6c7bbce6fe3d35f2b7dcbdbbb3a819b002c4d8bf5770a79586",
+        "afterPngSha256": "5c980022c86969ac0b221fc7d375512b96f953f34932eed22d2e8d1af6320ae3"
+      }
+    ]
+  },
+  "inspected": [
+    "reference-0.jpg original native UI Bowl main reopened",
+    "basis-refinement/mode/296-editing-text-200.png",
+    "basis-refinement/mode/320-editing-text-200.png",
+    "basis-refinement/mode/390-editing-normal.png",
+    "basis-refinement/mode/390-editing-text-200.png",
+    "basis-refinement/filled/390-reading.png",
+    "basis-refinement/filled/390-form.png"
+  ],
+  "findings": [
+    "V-READ-01 fixed-and-verified within scope: actual enlarged Korean short title uses217px/241px rather than102.109px/126.109px at296/320. Full120-character content remains;the long stress capture height reduces3003→1926px and2440→1772px without changing type,labels,official icon,target or source content. These are captured whole-page heights,not a reference quality score.",
+    "V-READ-02 fixed-and-verified within geometry scope: native checkboxes stay first-line. Only296/320px200%editing moves supporting Delete below its own complete body,at the row end,with actual19.59375px body-to-action gap and48px target height. Normal/spacing states and390/1440 enlarged keep actions inline. Fresh24cells and original criteria remain separately versioned. Optical pairing of below actions and broader spacing/readability across representative products still require further design review.",
+    "V-REGRESSION-01 scoped evidence:22of24 original/final mode captures are byte-identical. Only the two targeted enlarged editing cells change. Ordinary390 reading/editing and actual creation modal remain visually the same;local font,official assets,HTML,all JavaScript,calendar ownership/focus and input/storage behavior are protected. No invented product copy or new desktop surface.",
+    "V-LOCAL-01 actual provenance: the initial233747ms Qwen response used content-intrinsic auto basis and failed actual unnecessary-wrap cells despite improved reading width. It is retained as a rejection. Host diagnosed and supplied a content-independent6em +39px basis;the actual171369ms narrow Qwen patch changed only that existing flex declaration. No host CSS substitution;this is assisted repair,not independent product generation.",
+    "V-QUALITY-01 not-verified: refreshed code/normal/enlarged/form and UI Bowl pixels were inspected. Quiet white week/category grouping is retained,with social/profile/advertising/AI intentionally outside this product. Original CSS/DPR/font/task-edit and task-add modal remain unknown. Full positive reference synthesis,all rendered spacing/token/copy inventories,native device/zoom/popup/AT and repeated representative reference-quality generation are unfinished. No commercial/reference parity or creative-composition approval follows from the scoped checks."
+  ]
+}

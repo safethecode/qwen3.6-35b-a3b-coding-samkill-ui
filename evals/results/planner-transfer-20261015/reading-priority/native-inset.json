@@ -1,0 +1,11 @@
+{
+  "measuredAtUtc": "2026-10-15T12:27:42.448Z",
+  "method": "Actual Chromium loaded published source,created real task,read computed native margins and bounding text inset in fresh isolated context before inference",
+  "source": "evals/results/planner-transfer-20261015/list-ownership/source",
+  "checkboxWidth": 20,
+  "marginLeft": 4,
+  "marginRight": 3,
+  "gap": 12,
+  "bodyPadding": "8px 0px",
+  "textInset": 39
+}

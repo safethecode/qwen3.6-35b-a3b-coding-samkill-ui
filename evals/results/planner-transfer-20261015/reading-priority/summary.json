@@ -1,0 +1,138 @@
+{
+  "status": "INCOMPLETE_REFERENCE_PARITY",
+  "sourceHashes": {
+    "index.html": "ab82f40fe2e255e8d990c9ab45e6a9f0cf1466054e00e84eac1a668d09fc7e33",
+    "styles.css": "4f8526a4e2366d91377463cee0967456614e41868a13352cd4ca56a7a54c56b0",
+    "app.js": "e3a606e0069f7635bdf79e1dd11bf5e91ce4c761e7fc765f99be1c2220524ca5",
+    "DESIGN.md": "3ea39374df0226184707ecef958ba7caf2f0b02852ff3891bfa9cc00bd3c5ee3",
+    "REFERENCE.md": "9f04811d7f04c3d0ae81da3cf35c30457499108f6a3e7df93c9ab9b872a9078c",
+    "assets/fonts/METADATA.pb": "9b8b27c0dd1adbb0057d1fbe9534207ab3606114ace6755453d14668912471a1",
+    "assets/fonts/NotoSansKR.ttf": "194018e6b2b293a7964f037b25c0249ce1418bc9ab3c971060a03aa57861e252",
+    "assets/fonts/OFL.txt": "1c05c68c34f9708415aada51f17e1b0092d2cea709bf4a94cd38114f9e73d7d9",
+    "assets/icons/LICENSE": "b495047bd93a9b06913511076f504daba17d5bbeb3e0650f3bb53a4220329c57",
+    "assets/icons/Plus-neutral.svg": "13e30a4730e5e97733ad1ecb4783952fd08ef7a73239a3f07668556b0360b539",
+    "assets/icons/Plus.svg": "3d4f93d0e5a8eb932e4d1f0d71122d01917e7624439adc35dddcd5352d7a228f",
+    "assets/icons/Trash2-neutral.svg": "4e249e5c0f31edddd39895daffe23cf7bc80d405fb1a1f21749683d391de419a",
+    "assets/icons/X.svg": "f27abfc353abc2497a1d9752e21e2e2e32eeeb4271401f2a067c4d1fcced7a23",
+    "assets/icons/manifest.json": "9e5787944a2f2b999f31d352c278ac7507c2e96dbc0f9ca0a4609c35babb538b",
+    "design/typography.json": "044d8a4fa9d51d8836f9df602c64e79eb6b2151a039fe8e457f7db32c144c3db",
+    "design/component-plan.json": "36772d35ee3516996c8ed2fbe713544aabfb871134c2ffcbc81993f718c88cda",
+    "design/layout-contract.json": "5263d30990dc87de3d24a83807e795d63bdf448e65a5b8193a3e4e17025bcfd6",
+    "render.js": "7e5dc567bbb2130dc3df06820967ecbabbeb298a7a47fd2fe6a2f0e776a099e0",
+    "sample-editor.html": "6986f9ac088f35c49edd8bce742b4fb33dd43c64d2f6bbe003e7b7e2edf117ef",
+    "sample-tasks.html": "5910154cc0fe1972a6e002c7ad2d27878444304cb4e1d365cfc265462cb89384",
+    "sample-week.html": "8c7acd3441fbb26eb31d764d86bfd972d54b92244f9a57df90fa8e79c82f825e",
+    "store.js": "2300e692f886294a8d328b7d3f72fdac9c72b57eac8c6d2c79d95fd9bd25f0ce"
+  },
+  "model": "qwen3.6:35b-a3b-coding",
+  "backend": "Ollama",
+  "think": false,
+  "actualChanges": {
+    "status": "MEASURED_SCREENSHOT_BYTES_AND_REPORTED_TEXT_WIDTH_NOT_QUALITY_PARITY",
+    "identical": 22,
+    "compared": 24,
+    "changes": [
+      {
+        "width": 296,
+        "state": "editing",
+        "mode": "text-200",
+        "beforeImageHeight": 3003,
+        "afterImageHeight": 1926,
+        "beforeTextWidth": 102.109375,
+        "afterTextWidth": 217,
+        "placements": [
+          "below",
+          "below",
+          "below"
+        ],
+        "beforePngSha256": "74c3ee6542340412eff751efd7d6a131d45a38f20a6ffc3fae8fdaac79d6ebb3",
+        "afterPngSha256": "f9da7607cf9a723d5b461c5d526370d8f87691b74022203f1c302222a6283f91"
+      },
+      {
+        "width": 320,
+        "state": "editing",
+        "mode": "text-200",
+        "beforeImageHeight": 2440,
+        "afterImageHeight": 1772,
+        "beforeTextWidth": 126.109375,
+        "afterTextWidth": 241,
+        "placements": [
+          "below",
+          "below",
+          "below"
+        ],
+        "beforePngSha256": "ecbb468c6eaa5d6c7bbce6fe3d35f2b7dcbdbbb3a819b002c4d8bf5770a79586",
+        "afterPngSha256": "5c980022c86969ac0b221fc7d375512b96f953f34932eed22d2e8d1af6320ae3"
+      }
+    ]
+  },
+  "checks": [
+    {
+      "checker": "check-edit-mode.mjs",
+      "exitCode": 0
+    },
+    {
+      "checker": "check-heading-roles.mjs",
+      "exitCode": 0
+    },
+    {
+      "checker": "check-edit-workflows.mjs",
+      "exitCode": 0
+    },
+    {
+      "checker": "check-icon-pairs.mjs",
+      "exitCode": 0
+    },
+    {
+      "checker": "check-store.mjs",
+      "exitCode": 0
+    },
+    {
+      "checker": "check-edit-renderer.mjs",
+      "exitCode": 0
+    },
+    {
+      "checker": "check-read-recovery.mjs",
+      "exitCode": 0
+    },
+    {
+      "checker": "check-task-handoff.mjs",
+      "exitCode": 0
+    }
+  ],
+  "catalog": {
+    "status": "UNVERIFIED",
+    "exitCode": 2,
+    "findings": {
+      "not-applicable": 14,
+      "pass": 45,
+      "exception": 2,
+      "unknown": 24
+    }
+  },
+  "assistance": "Host diagnosed intrinsic auto basis after actual rejected full-matrix replay and supplied exact content-independent6em +39px formula. Actual Qwen existing common repair receives only task-toggle CSS rule and changes its existing flex value. Other accepted row wrap/Delete alignment preserved;no host CSS substitution. Not autonomous full-product generation.",
+  "scopeValidation": "scope-validation.json",
+  "contractVersioning": "contract-change.json",
+  "originalInputRecovery": "snapshots/original-source/snapshot.json",
+  "frozenRepairInputRecovery": "snapshots/input-source/snapshot.json",
+  "harnessRecovery": "harness-recovery.json",
+  "quality": "Scoped actual reading-width improvement;not reference/commercial completion or independent reproduction.",
+  "localCalls": [
+    {
+      "stage": "rejected-row-css",
+      "path": "local/response.json",
+      "elapsedMs": 233747,
+      "promptTokens": 15422,
+      "outputTokens": 692,
+      "doneReason": "stop"
+    },
+    {
+      "stage": "accepted-bounded-basis",
+      "path": "basis-refinement/local/response.json",
+      "elapsedMs": 171369,
+      "promptTokens": 14974,
+      "outputTokens": 207,
+      "doneReason": "stop"
+    }
+  ]
+}

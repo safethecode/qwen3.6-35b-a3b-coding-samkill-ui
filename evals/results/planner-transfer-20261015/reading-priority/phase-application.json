@@ -1,0 +1,87 @@
+{
+  "status": "PARTIAL_NOT_QUALITY_APPROVAL",
+  "recordedAtUtc": "2026-10-15T12:25:12.756Z",
+  "guides": [
+    {
+      "actualReadPath": "skills/qwen-samkill-ui/references/upstream/reference-decompose/guide.md",
+      "sha256": "75b42c9d969e681167ee4bf1cdcc852da19901e4bd3005ea7d5a4ec6bb46fceb",
+      "status": "applied-to-predeclared-input",
+      "evidence": [
+        "PLAN.md",
+        "contract-change.json",
+        "SPACING-BEFORE.md"
+      ]
+    },
+    {
+      "actualReadPath": "skills/qwen-samkill-ui/references/upstream/reference-decompose/references/element-contract.md",
+      "sha256": "7269c5580b61c1af3ddd7631cd1cce6145e1238905fa6c022308cdf340abafdd",
+      "status": "applied-to-predeclared-input",
+      "evidence": [
+        "PLAN.md",
+        "contract-change.json",
+        "SPACING-BEFORE.md"
+      ]
+    },
+    {
+      "actualReadPath": "skills/qwen-samkill-ui/references/upstream/reference-to-ui/guide.md",
+      "sha256": "567526f1bf26f8cb75907be57b2c4c4f3968923e3b497697caf5e7891f684c62",
+      "status": "applied-to-predeclared-input",
+      "evidence": [
+        "PLAN.md",
+        "contract-change.json",
+        "SPACING-BEFORE.md"
+      ]
+    },
+    {
+      "actualReadPath": "skills/qwen-samkill-ui/references/upstream/reference-to-ui/references/product-reasoning.md",
+      "sha256": "947cbbbe96401e2072c723c6b8ebf13c33621ea663f6bc8a66ef149638218ac3",
+      "status": "applied-to-predeclared-input",
+      "evidence": [
+        "PLAN.md",
+        "contract-change.json",
+        "SPACING-BEFORE.md"
+      ]
+    },
+    {
+      "actualReadPath": "skills/qwen-samkill-ui/references/upstream/reference-to-ui/references/typography.md",
+      "sha256": "d1003eda3338b973d1399e492bf1adea0e8eced6c054fb65cf0de480b88431d7",
+      "status": "applied-to-predeclared-input",
+      "evidence": [
+        "PLAN.md",
+        "contract-change.json",
+        "SPACING-BEFORE.md"
+      ]
+    },
+    {
+      "actualReadPath": "skills/qwen-samkill-ui/references/upstream/reference-to-ui/references/spacing-audit.md",
+      "sha256": "30565c3fbc3e06cdb2e53aab78955b28142774a44c7e24eb34b661ef85135539",
+      "status": "applied-to-predeclared-input",
+      "evidence": [
+        "PLAN.md",
+        "contract-change.json",
+        "SPACING-BEFORE.md"
+      ]
+    }
+  ],
+  "implementation": "Applied: two actual local request.json files include full applicable guide text/source hashes. Initial component response rejected;smaller existing repair boundary changes only one flex value after diagnosis. scope-validation receipts and final8check groups verified.",
+  "review": {
+    "status": "applied-scoped-not-full-guide-verified",
+    "actualReadPaths": [
+      {
+        "path": "skills/qwen-samkill-ui/references/upstream/reference-review/guide.md",
+        "sha256": "6018495454ca3652463541feca21507c61a61c8d93407552f17866775dbfe900"
+      },
+      {
+        "path": "skills/qwen-samkill-ui/references/upstream/reference-review/references/feedback-regression.md",
+        "sha256": "dbb395f3bb69064bdd27d5530161176f02c91f72eb52059312d8ef0d98070e9b"
+      }
+    ],
+    "evidence": [
+      "VISUAL-REVIEW.json",
+      "image-delta.json",
+      "basis-refinement/mode/report.json",
+      "basis-refinement/role/report.json"
+    ]
+  },
+  "fullCatalog": "Executed source-bound85-entry catalog check:UNVERIFIED/exit2,45scopedpass,14NA,24unknown,2existing narrow mobile exceptions. Original75check kinds unchanged. Host-only row relationship has explicit pre-generation version2;prior always-inline reports preserved."
+}

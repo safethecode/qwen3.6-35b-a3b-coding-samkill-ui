@@ -1,0 +1,76 @@
+{
+  "status": "ONLY_EXISTING_FLEX_VALUE_CHANGED_NOT_APPROVAL",
+  "before": [
+    [
+      [
+        "display",
+        "flex"
+      ],
+      [
+        "align-items",
+        "flex-start"
+      ],
+      [
+        "gap",
+        "12px"
+      ],
+      [
+        "padding",
+        "8px 0"
+      ],
+      [
+        "min-height",
+        "44px"
+      ],
+      [
+        "cursor",
+        "pointer"
+      ],
+      [
+        "flex",
+        "1 1 auto"
+      ],
+      [
+        "min-width",
+        "0"
+      ]
+    ]
+  ],
+  "after": [
+    [
+      [
+        "display",
+        "flex"
+      ],
+      [
+        "align-items",
+        "flex-start"
+      ],
+      [
+        "gap",
+        "12px"
+      ],
+      [
+        "padding",
+        "8px 0"
+      ],
+      [
+        "min-height",
+        "44px"
+      ],
+      [
+        "cursor",
+        "pointer"
+      ],
+      [
+        "flex",
+        "1 1 calc(6em + 39px)"
+      ],
+      [
+        "min-width",
+        "0"
+      ]
+    ]
+  ],
+  "immutable": "All other source hashes and CSS bytes preserved. Host supplies exact diagnosis/formula;actual local Qwen patch applied."
+}

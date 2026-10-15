@@ -1,0 +1,54 @@
+import { readFile, writeFile, mkdir, cp } from 'node:fs/promises';
+import { execFile } from 'node:child_process';
+import { promisify } from 'node:util';
+import { createHash } from 'node:crypto';
+import assert from 'node:assert/strict';
+import postcss from 'postcss';
+import { repairComponent } from '../../scripts/repair-component.mjs';
+import { sourceBinding } from '../../scripts/source-binding.mjs';
+import { harnessBinding } from '../../scripts/harness-binding.mjs';
+import { inferenceFetch } from '../../scripts/inference-http.mjs';
+const root = 'runs/planner-reading-priority-20261015', target = `${root}/source`, run = promisify(execFile), env = { ...process.env, CHROME_PATH: 'C:/Program Files/Google/Chrome/Application/chrome.exe' };
+Object.assign(process.env, { QWEN_REPAIR_MODEL: 'qwen3.6:35b-a3b-coding', QWEN_NUM_GPU: '16', QWEN_NUM_BATCH: '128', QWEN_TEMPERATURE: '.2', QWEN_REQUEST_TIMEOUT_MS: '600000' });
+const state = async (status, extra = {}) => { await writeFile(`${root}/state.json`, JSON.stringify({ status, pid: process.pid, updatedAtUtc: new Date().toISOString(), ...extra }, null, 2)); console.log(status); };
+try {
+  const baseline = JSON.parse(await readFile(`${root}/baseline-v2-mode/report.json`, 'utf8'));
+  const cells = baseline.receipts.filter(c => c.state === 'editing').map(c => ({ width: c.width, mode: c.mode, result: c.results.find(r => r.kind === 'readingActionFlow') }));
+  assert.deepEqual(cells.filter(c => c.result.status === 'FAIL').map(({ width, mode }) => ({ width, mode })), [{ width: 296, mode: 'text-200' }, { width: 320, mode: 'text-200' }]);
+  await cp(target, `${root}/input-source`, { recursive: true, force: false, errorOnExist: true });
+  const sourceHashes = await sourceBinding(target), harnessHashes = await harnessBinding(), before = JSON.parse(await readFile(`${root}/before-fragment.json`, 'utf8')), failure = await readFile(`${root}/failure.txt`, 'utf8'), initialCss = await readFile(`${target}/styles.css`, 'utf8');
+  const driverHash = createHash('sha256').update(await readFile(new URL(import.meta.url))).digest('hex');
+  await writeFile(`${root}/input-binding.json`, JSON.stringify({ sourceHashes, harnessHashes, driverHash, modeChecker: createHash('sha256').update(await readFile('evals/results/planner-transfer-20261015/check-edit-mode.mjs')).digest('hex') }, null, 2), { flag: 'wx' });
+  await state('GENERATING_SERIAL_LOCAL_ROW_FRAGMENT');
+  const result = await repairComponent(target, `${root}/local`, 'tasks', before, failure, { fetcher: async (url, options) => {
+    await run('pwsh.exe', ['-NoProfile', '-Command', `$c=@(Get-NetTCPConnection -State Established -ErrorAction SilentlyContinue | Where-Object { $_.RemotePort -eq 11434 -and $_.OwningProcess -ne ${process.pid} });$w=@(Get-CimInstance Win32_Process | Where-Object { $_.Name -in @('node.exe','python.exe','bun.exe') -and $_.ProcessId -ne ${process.pid} -and $_.CommandLine -match '(generate-service|generate-components|repair-component|planner-.*[/\\]run.mjs|focus-.*[/\\]run.mjs)' });if($c.Count -or $w.Count){exit 9}`], { windowsHide: true, timeout: 15000 });
+    return inferenceFetch(url, options);
+  } });
+  const allowed = { '[data-ui-unit="tasks"] .task-row': ['flex-wrap'], '[data-ui-unit="tasks"] .task-toggle': ['flex', 'flex-basis'], '[data-ui-unit="tasks"] .delete-task': ['margin-left'] };
+  const inspect = css => {
+    const ast = postcss.parse(css); assert.ok(ast.nodes.every(n => n.type === 'rule')); return ast.nodes.map(rule => {
+      const declarations = rule.nodes.map(n => { assert.equal(n.type, 'decl'); assert.equal(Boolean(n.important), false); return [n.prop, n.value]; });
+      assert.equal(new Set(declarations.map(d => d[0])).size, declarations.length);
+      return { selector: rule.selector, protectedDeclarations: declarations.filter(([p]) => !allowed[rule.selector]?.includes(p)), permitted: declarations.filter(([p]) => allowed[rule.selector]?.includes(p)), raw: allowed[rule.selector] ? undefined : rule.toString() };
+    });
+  };
+  try {
+    const old = inspect(before.css), next = inspect(result.after.css);
+    assert.deepEqual(next.map(({ permitted, ...r }) => r), old.map(({ permitted, ...r }) => r));
+    assert.notEqual(result.after.css, before.css);
+    assert.equal(await readFile(`${target}/styles.css`, 'utf8'), initialCss.replace(before.css, () => result.after.css));
+    const after = await sourceBinding(target); for (const [p, hash] of Object.entries(sourceHashes)) if (p !== 'styles.css') assert.equal(after[p], hash, p);
+    await writeFile(`${root}/scope-validation.json`, JSON.stringify({ status: 'PERMITTED_CSS_DELTA_ONLY_NOT_VISUAL_APPROVAL', allowed, before: old, after: next, immutable: 'All other source hashes equal;all other fragment rule/declaration values and protected rule raw bytes unchanged;outside-fragment stylesheet bytes unchanged.' }, null, 2));
+  } catch (error) {
+    await cp(target, `${root}/scope-rejected-source`, { recursive: true, force: false, errorOnExist: true }); await writeFile(`${target}/styles.css`, initialCss); throw error;
+  }
+  assert.deepEqual(await harnessBinding(), harnessHashes); await state('REPLAYING_REPAIRED_ROW_SOURCE'); const checks = [];
+  for (const [checker, name, args] of [['check-edit-mode.mjs', 'mode', []], ['check-heading-roles.mjs', 'role', [`${target}/design/typography.json`]], ['check-edit-workflows.mjs', 'workflow', []], ['check-icon-pairs.mjs', 'icons', []], ['check-store.mjs', 'store.json', []], ['check-edit-renderer.mjs', 'renderer', []], ['check-read-recovery.mjs', 'recovery', []], ['check-task-handoff.mjs', 'handoff.json', []]]) {
+    try { const r = await run(process.execPath, [`evals/results/planner-transfer-20261015/${checker}`, checker === 'check-store.mjs' ? `${target}/store.js` : target, `${root}/${name}`, ...args], { env, windowsHide: true, timeout: 180000, maxBuffer: 2 * 1024 * 1024 }); await writeFile(`${root}/${name}.log`, r.stdout); checks.push({ checker, exitCode: 0 }); }
+    catch (e) { await writeFile(`${root}/${name}.log`, (e.stdout || '') + '\n' + (e.stderr || '')); checks.push({ checker, exitCode: e.code || 1 }); }
+  }
+  await run(process.execPath, ['runs/planner-edit-mode-20261015/capture-filled.mjs', target, `${root}/filled`], { env, windowsHide: true, timeout: 30000 });
+  assert.deepEqual(await harnessBinding(), harnessHashes); assert.equal(createHash('sha256').update(await readFile(new URL(import.meta.url))).digest('hex'), driverHash);
+  await writeFile(`${root}/summary.json`, JSON.stringify({ status: checks.every(c => c.exitCode === 0) ? 'AWAITING_DIRECT_VISUAL_REVIEW' : 'SCOPED_REPLAY_FAILURE', checks, sourceHashes: await sourceBinding(target), harnessHashes, driverHash, assistance: 'Host selected reading priority/independent39px allowance,changed the predeclared relation/prompt and fixed source structure/assets. Actual Qwen bounded CSS response only;no host CSS substitution. Same-round reference observations reused;enlarged editing original is unknown.', quality: 'No commercial/reference parity;full catalog and repeated representative runs remain unfinished.' }, null, 2));
+  await state('AWAITING_DIRECT_VISUAL_REVIEW', { checks });
+} catch (e) { await state('FAILED_READING_PRIORITY', { error: String(e.message).replaceAll(process.cwd(), 'REPOSITORY').slice(0, 1400) }); process.exitCode = 1; }

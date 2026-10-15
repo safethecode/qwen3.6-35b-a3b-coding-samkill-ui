@@ -1,0 +1,80 @@
+{
+  "rules": [
+    {
+      "id": "mobile-width",
+      "kind": "maxWidth",
+      "subject": "body",
+      "maximum": 390
+    },
+    {
+      "id": "groups-after-week",
+      "kind": "below",
+      "subject": "[data-ui-unit=\"tasks\"]",
+      "reference": "[data-ui-unit=\"week\"]",
+      "minGap": 0
+    },
+    {
+      "id": "heading-separation",
+      "kind": "disjoint",
+      "subject": "#selected-date",
+      "reference": "#edit-tasks"
+    },
+    {
+      "id": "task-check-first-line",
+      "kind": "firstLineControls",
+      "subject": "[data-ui-unit=\"tasks\"]",
+      "rows": ".task-row",
+      "text": ".task-name",
+      "controls": [
+        ".task-check"
+      ],
+      "tolerance": 2
+    },
+    {
+      "id": "quiet-reading",
+      "kind": "absent",
+      "subject": ".delete-task:not([hidden])",
+      "states": [
+        "reading"
+      ]
+    },
+    {
+      "id": "editing-readable-action",
+      "kind": "readingActionFlow",
+      "subject": "[data-ui-unit=\"tasks\"]",
+      "rows": ".task-row",
+      "text": ".task-name",
+      "body": ".task-toggle",
+      "action": ".delete-task",
+      "minimumTextEm": 6,
+      "minimumTarget": 44,
+      "minGap": 8,
+      "maxBelowGap": 24,
+      "tolerance": 2,
+      "states": [
+        "editing"
+      ],
+      "reservedInlineWidth": 39
+    },
+    {
+      "id": "list-management-owner",
+      "kind": "contained",
+      "subject": "#edit-tasks",
+      "container": "[data-ui-unit=\"tasks\"] > .list-management"
+    },
+    {
+      "id": "management-after-date-navigation",
+      "kind": "below",
+      "subject": ".list-management",
+      "reference": "#week-days",
+      "minGap": 0
+    },
+    {
+      "id": "categories-after-management",
+      "kind": "below",
+      "subject": ".task-category:first-of-type",
+      "reference": ".list-management",
+      "minGap": 16
+    }
+  ]
+}
