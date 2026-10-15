@@ -68,3 +68,21 @@ test('unused body space or transformed text cannot lower the independently decla
     }
   } finally { await browser.close(); }
 });
+
+test('native checkbox margins participate in both the independent allowance and the preferred wrap basis', async () => {
+  const browser = await chromium.launch({ executablePath: process.env.CHROME_PATH || undefined, headless: true });
+  try {
+    const page = await browser.newPage(); await page.setContent(markup);
+    await page.evaluate(() => { [...document.styleSheets[0].cssRules].find(r => r.selectorText === '.check').style.removeProperty('margin'); document.body.style.fontSize = '32px'; });
+    await page.addStyleTag({ content: '.row{flex-wrap:wrap}.label{flex:1 1 calc(6em + 32px)}.delete{margin-left:auto}' });
+    const nativeInset = await page.locator('.label').evaluate(e => { const c = e.querySelector('.check'), s = getComputedStyle(c); return c.getBoundingClientRect().width + parseFloat(s.marginLeft) + parseFloat(s.marginRight) + parseFloat(getComputedStyle(e).columnGap); });
+    assert.equal(nativeInset, 39);
+    assert.match((await inspect(page)).results[0].detail, /nontext allowance/);
+    await page.locator('main').evaluate(e => e.style.width = '342px');
+    const measured = { ...rule, reservedInlineWidth: nativeInset };
+    assert.match((await inspectLayoutContract(page, { rules: [measured] })).results[0].detail, /reading width/);
+    await page.locator('.label').evaluate((e, inset) => e.style.flexBasis = `calc(6em + ${inset}px)`, nativeInset);
+    const corrected = (await inspectLayoutContract(page, { rules: [measured] })).results[0];
+    assert.equal(corrected.status, 'PASS'); assert.equal(corrected.observed.rows[0].placement, 'below');
+  } finally { await browser.close(); }
+});
