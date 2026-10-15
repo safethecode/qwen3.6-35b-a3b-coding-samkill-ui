@@ -34,10 +34,18 @@ Fresh exact-source receipts pass12 visible-label mode/width checks,73 workflows,
 
 [Current catalog](action-labels/catalog-check.json) remains UNVERIFIED/exit2:41 scoped passes,14 not applicable,28 unknown and2 confirmed failures. ORC-A07 is fixed; permanently repeated row actions now have explicit ORC-F08/ORC-G16 failures instead of blanket unknown findings. Visible labels improve clarity but increase action mass, especially with enlarged text. A quieter touch/keyboard-accessible presentation, full token/spacing/copy/positive-reference review and representative independent repetitions remain unfinished. No hover-only workaround, weakened rule or reference-parity claim is approved.
 
-## Current explicit-management candidate
+## Earlier explicit-management candidate
 
 [Actual default screen](edit-mode/filled-final/390-reading.png), [editing](edit-mode/filled-final/390-editing.png), [form](edit-mode/filled-final/390-form.png), [runnable source](edit-mode/source/index.html), [source-bound summary](edit-mode/summary.json). Actual local Qwen renderer/controller/CSS/selector/focus units create an explicit native edit mode: repeated deletion is absent in reading, restoring69.45px title width. Touch and real keyboard deletion,exact retained records,focus,reload,date/create/empty transitions and write retry are verified. The stricter seven-day focus probe exposed and locally repaired partial clipping.
 
 14mode checks cover24actual state/width/text cells;73existing workflow assertions,15store cases,4renderer states,2read-recovery transitions and2handoff comparisons pass. Revised checker versions and negative-control failures remain separate. [Original responses and adjudication](edit-mode/README.md). These are assisted scope checks,not an independent quality percentage.
 
 The85-entry catalog remains UNVERIFIED/exit2:41scoped passes,14not applicable,24unknown,4confirmed icon size/color failures and2narrow mobile explicit-management exceptions to the literal hover-only recipe. Default action noise improves, but icons stay20px beside32px enlarged labels and Trash paint differs from its text. Full reference/commercial quality and repeated representative unattended reproduction remain unfinished.
+
+## Current scalable-icon candidate
+
+[Actual default screen](icon-refinement/filled-final/390-reading.png), [editing](icon-refinement/filled-final/390-editing.png), [form](icon-refinement/filled-final/390-form.png), [runnable source](icon-refinement/source/index.html), [source-bound summary](icon-refinement/summary.json). Actual local Qwen supplied two bounded CSS values: official icon boxes now track16→32px labels as20→36px, and action parent colors match verified neutral icon paint. Host official variant export and consumer propagation are disclosed; all JavaScript bytes are unchanged.
+
+144same-contract pair checks now pass; additional actual per-action hover/focus expands coverage to432checks. The expanded count is not directly comparable to144. All24mode cells,14mode checks,73workflow assertions,15store cases,4renderer states,2read-recovery transitions and2handoff comparisons pass. [Raw local response,host preparation and tradeoffs](icon-refinement/README.md). Enlarged editing titles wrap more because icons grow; the ordinary reading layout stays quiet.
+
+Full85-entry catalog stays UNVERIFIED/exit2:45scoped passes,14NA,24unknown and2narrow mobile hover exceptions. Confirmed size/color failures are fixed in scoped web checks; commercial/reference quality,full guide/token/spacing/copy/synthesis review,physical devices/AT and repeated representative unattended generation remain unfinished. Shared harness verification is127unit/45browser tests,not a design score.
