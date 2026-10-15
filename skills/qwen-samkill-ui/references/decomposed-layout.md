@@ -22,6 +22,8 @@ When independent generations repeatedly break an already agreed structural relat
 
 Each CSS unit needs the actual rendered element structure, including JavaScript-created children, exact attribute values, attribute owners and available custom properties. Supply complete CSS statements with nearby inheritance context. A tag-only shell omits dynamically rendered cards; a declaration cut midway omits valid existing source. Keep the writable unit explicit and its dependencies read-only.
 
+Before a markup repair, list every consumer of that owned markup: assembly, dynamic template, standalone sample and component-plan handoff. A shared stylesheet does not synchronize their HTML. Apply the accepted bounded response to all matching consumers or explicitly regenerate the dependent sample from the unchanged assembled element. Compare canonical owned markup before the next generation checkpoint. Record host propagation separately from model generation; an omitted consumer is a host integration defect. Then recapture source-bound browser evidence rather than attaching earlier receipts to the changed plan/sample.
+
 For decorative illustrations, implement the frame's dimensions and positioning context first, then each shape variant using the exact rendered attribute value. Review the painted result as well as its box: a positive-size empty background is not a completed illustration, and absolute pseudo-elements can escape a zero-height owner. Test every variant in the assembled page. For forms, verify the actual font and weight of inputs, selects and placeholders separately from body text. A supplied font file alone does not establish control inheritance.
 
 ## Behavior units and semantic acceptance

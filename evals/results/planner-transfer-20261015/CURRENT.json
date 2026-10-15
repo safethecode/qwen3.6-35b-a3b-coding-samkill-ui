@@ -1,9 +1,10 @@
 {
   "status": "INCOMPLETE_REFERENCE_PARITY",
-  "source": "refinement/source",
-  "summary": "refinement/summary.json",
-  "workflow": "refinement/storage-recovery/verified-workflow/report.json",
-  "catalog": "refinement/catalog-check.json",
+  "source": "action-labels/source",
+  "summary": "action-labels/summary.json",
+  "workflow": "action-labels/final-workflow/report.json",
+  "catalog": "action-labels/catalog-check.json",
   "historicalSource": "final/source",
-  "assisted": true
+  "assisted": true,
+  "previousSource": "refinement/source"
 }

@@ -18,10 +18,18 @@ Three actual local CSS repairs completed through the updated common repair route
 
 Actual local Qwen received original/candidate images directly and produced hypotheses in66802ms. [Human adjudication](local-vision/adjudication.json) rejects a nonexistent category-border diagnosis and unsupported spacing/removal advice. It supports clarifying row deletion while preserving the required function. [Additional fresh creation references](form-reference/reference.json) are routine/category screens, not the actual task-add modal.
 
-## Current assisted refinement
+## Earlier assisted refinement
 
 [Runnable source](refinement/source/index.html), [matched390px comparison](comparison.html), [source-bound summary](refinement/summary.json). Actual local CSS repairs now use an official Trash2 deletion asset, anchor checkbox/delete to the first line of wrapped content, reduce category capsules52→44px without shrinking targets and preserve meaningful Korean heading words at200% text. Original failed outputs and the16-failure row/capsule baseline remain preserved.
 
 New read-failure tests exposed data loss that the earlier13-case state suite missed. [Storage recovery](refinement/storage-recovery/README.md) preserves the failed attempts, actual local repairs and fresh browser replay. Current source passes73 workflow assertions,15 store cases,4 renderer states,2 read-recovery transitions and the declared row/asset/capsule checks across296/320/390/1440. These are94 scoped assertions plus geometry checks, not a quality percentage.
 
 [Current formal catalog](refinement/catalog-check.json) correctly returns UNVERIFIED/exit2:33 scoped passes,14 not applicable,37 unknown and1 confirmed failure across75original+8guide+2project rules. Deletion semantics and long-row ownership are fixed-and-verified. ORC-A07 still fails because add/delete have no visible text labels; accessible names do not satisfy that stricter rule. No exception is declared. Full token/copy/positive reference-synthesis review, native popup/device/AT and repeated representative independent generation remain unfinished.
+
+## Current visible-action candidate
+
+[Runnable source](action-labels/source/index.html), [source-bound summary](action-labels/summary.json), [raw local generation and retained failures](action-labels/README.md). Actual local Qwen adds visible 추가/삭제 text beside official icons. Its first response introduced forbidden nowrap; a separate local declaration repair restores natural wrapping. The host then propagated the exact button response into omitted sample/plan consumers. Both stale handoffs failed before synchronization and pass afterward.
+
+Fresh exact-source receipts pass12 visible-label mode/width checks,73 workflows,15 store cases,4 renderer states,2 read-recovery transitions,2 canonical handoff comparisons and all declared first-line/asset/capsule checks. Normal390px and narrow/enlarged output were directly inspected. Earlier functional receipts and original failed requests remain unchanged.
+
+[Current catalog](action-labels/catalog-check.json) remains UNVERIFIED/exit2:41 scoped passes,14 not applicable,28 unknown and2 confirmed failures. ORC-A07 is fixed; permanently repeated row actions now have explicit ORC-F08/ORC-G16 failures instead of blanket unknown findings. Visible labels improve clarity but increase action mass, especially with enlarged text. A quieter touch/keyboard-accessible presentation, full token/spacing/copy/positive-reference review and representative independent repetitions remain unfinished. No hover-only workaround, weakened rule or reference-parity claim is approved.
