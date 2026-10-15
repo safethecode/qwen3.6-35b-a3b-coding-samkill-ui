@@ -1,0 +1,33 @@
+{
+  "recordedAtUtc": "2026-10-15T06:32:59.068Z",
+  "tool": "UI Bowl search_ui_patterns",
+  "arguments": {
+    "query": "메인",
+    "app_name": "투두메이트",
+    "limit": 2
+  },
+  "results": [
+    {
+      "app_name": "투두메이트",
+      "pattern": "메인",
+      "ui_url": "https://uibowl.io/name/%ED%88%AC%EB%91%90%EB%A9%94%EC%9D%B4%ED%8A%B8?patterns=%EB%A9%94%EC%9D%B8"
+    },
+    {
+      "app_name": "투두메이트",
+      "pattern": "메인",
+      "ui_url": "https://uibowl.io/name/%ED%88%AC%EB%91%90%EB%A9%94%EC%9D%B4%ED%8A%B8?patterns=%EB%A9%94%EC%9D%B8&patternName=%EB%82%A0%EC%A7%9C%20%EB%B0%94%EA%BE%B8%EA%B8%B0"
+    }
+  ],
+  "scope": "Two returned representative images directly inspected; additional results not inspected. Initial AI recommendation result rejected for main-task-list purpose; unsupported 홈 query returned no images.",
+  "screenIds": "Not returned by the current connector",
+  "images": [
+    {
+      "file": "reference-0.jpg",
+      "sha256": "09875b826251cf34adb3a274c1dc4df7b1dcdfc69f2d02a32f862e46717e50c3"
+    },
+    {
+      "file": "reference-1.jpg",
+      "sha256": "57368bfedf7ccb9328de2fb30d7d0f5fb76cc0ebf3723351352d233aa80c0197"
+    }
+  ]
+}
