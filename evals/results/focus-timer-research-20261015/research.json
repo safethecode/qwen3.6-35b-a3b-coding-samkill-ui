@@ -1,0 +1,71 @@
+{
+  "status": "NATIVE_IMAGES_INSPECTED_RESEARCH_ONLY",
+  "recordedAtUtc": "2026-10-15T10:55:37.616Z",
+  "query": {
+    "tool": "search_ui_patterns",
+    "query": "타이머",
+    "platform": "MOBILE",
+    "limit": 3
+  },
+  "returned_count": 3,
+  "total_count": 9,
+  "has_more": true,
+  "pagination": "Not requested or performed",
+  "exactRetrievalTime": "Not stamped at native response receipt; file creation of BRIEF.md precedes this call. Exact second unknown; do not fabricate precision.",
+  "results": [
+    {
+      "app_name": "투두메이트",
+      "platform": "MOBILE",
+      "category": "일상",
+      "pattern": "메인",
+      "pattern_variant": "타이머",
+      "components": [
+        "스탑워치"
+      ],
+      "ui_url": "https://uibowl.io/name/%ED%88%AC%EB%91%90%EB%A9%94%EC%9D%B4%ED%8A%B8?patterns=%EB%A9%94%EC%9D%B8&patternName=%ED%83%80%EC%9D%B4%EB%A8%B8",
+      "app_id": null,
+      "screen_id": null,
+      "image": "reference-0.jpg",
+      "scope": "Timer main/stopwatch-like idle display"
+    },
+    {
+      "app_name": "타이머 플러스",
+      "platform": "MOBILE",
+      "category": "운동&건강",
+      "pattern": "생성하기",
+      "pattern_variant": "타이머 추가",
+      "components": [
+        "시간 피커"
+      ],
+      "ui_url": "https://uibowl.io/name/%ED%83%80%EC%9D%B4%EB%A8%B8%20%ED%94%8C%EB%9F%AC%EC%8A%A4?patterns=%EC%83%9D%EC%84%B1%ED%95%98%EA%B8%B0&patternName=%ED%83%80%EC%9D%B4%EB%A8%B8%20%EC%B6%94%EA%B0%80",
+      "app_id": null,
+      "screen_id": null,
+      "image": "reference-1.jpg",
+      "scope": "Workout interval configuration"
+    },
+    {
+      "app_name": "루티너리",
+      "platform": "MOBILE",
+      "category": "일상",
+      "pattern": "설정",
+      "pattern_variant": "타이머 설정",
+      "components": [
+        "바텀시트",
+        "버튼",
+        "팝업"
+      ],
+      "ui_url": "https://uibowl.io/name/%EB%A3%A8%ED%8B%B0%EB%84%88%EB%A6%AC?patterns=%EC%84%A4%EC%A0%95&patternName=%ED%83%80%EC%9D%B4%EB%A8%B8%20%EC%84%A4%EC%A0%95",
+      "app_id": null,
+      "screen_id": null,
+      "image": "reference-2.jpg",
+      "scope": "Routine timer settings"
+    }
+  ],
+  "limits": [
+    "Three representative native previews only; underlying other images/videos not inspected",
+    "Not proof of countdown/pause/resume/completion/storage/hidden controls",
+    "Reference colors/layout must be decomposed before product adoption",
+    "No MAU/analytics tool was called or used as quality evidence",
+    "No candidate generated yet"
+  ]
+}

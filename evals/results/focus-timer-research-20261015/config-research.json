@@ -1,0 +1,35 @@
+{
+  "status": "NATIVE_COMPONENT_IMAGES_DIRECTLY_INSPECTED_RESEARCH_ONLY",
+  "retrievedAtUtc": "2026-10-15T11:23:59.298Z",
+  "query": {
+    "tool": "search_components",
+    "component_type": "피커",
+    "pattern": "타이머",
+    "platform": "MOBILE",
+    "limit": 3
+  },
+  "returned_count": 2,
+  "total_count": 2,
+  "has_more": false,
+  "results": [
+    {
+      "app": "타이머 플러스",
+      "screen_id": "cm30bb6pa000kmh0cca2794nm",
+      "image": "config-reference-0.jpg",
+      "ui_url": "https://uibowl.io/name/%ED%83%80%EC%9D%B4%EB%A8%B8%20%ED%94%8C%EB%9F%AC%EC%8A%A4?patterns=%EC%83%9D%EC%84%B1%ED%95%98%EA%B8%B0&imgId=cm30bb6pa000kmh0cca2794nm",
+      "observed": "Dark full-screen minute/second wheel,selected00min01sec,header back/preparation/done controls,bottom timer navigation. Exact wheel behavior not executed."
+    },
+    {
+      "app": "인아웃",
+      "screen_id": "cm3gtwvs2006ajw0cdh86heoy",
+      "image": "config-reference-1.jpg",
+      "ui_url": "https://uibowl.io/name/%EC%9D%B8%EC%95%84%EC%9B%83?patterns=%EC%83%9D%EC%84%B1%ED%95%98%EA%B8%B0&imgId=cm3gtwvs2006ajw0cdh86heoy",
+      "observed": "White bottom sheet over dimmed fasting form. Time-of-day AM/PM choice,hour/minute option grids with black selected10/30 and full-width black confirmation. This is a time-of-day picker,not a duration picker;AM/PM/fasting cannot be copied into focus duration."
+    }
+  ],
+  "limits": [
+    "Only native representative images inspected;no actual reference behavior tested",
+    "Reference lookup is UI Bowl;new design/code is assistant/local model work",
+    "No pagination,analytics,MAU or signed image download"
+  ]
+}

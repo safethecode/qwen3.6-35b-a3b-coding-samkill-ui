@@ -1,0 +1,61 @@
+{
+  "status": "PREIMPLEMENTATION_PARTIAL",
+  "updatedAtUtc": "2026-10-15T11:27:18.338Z",
+  "entries": [
+    {
+      "path": "skills/qwen-samkill-ui/references/upstream/uibowl-research/guide.md",
+      "sha256": "e69173ad106db14f3cdd9a319d9dfa5353db7065476e8a9c8503768b2220f209",
+      "status": "applied",
+      "outcome": "Five actual native images inspected;observations separate timer/main/settings/picker relationships and unknown behavior."
+    },
+    {
+      "path": "skills/qwen-samkill-ui/references/upstream/reference-decompose/guide.md",
+      "sha256": "75b42c9d969e681167ee4bf1cdcc852da19901e4bd3005ea7d5a4ec6bb46fceb",
+      "status": "applied-not-verified",
+      "outcome": "E/O/D/Q and screen style/ownership draft;no implementation or rendered comparison."
+    },
+    {
+      "path": "skills/qwen-samkill-ui/references/upstream/reference-decompose/references/element-contract.md",
+      "sha256": "7269c5580b61c1af3ddd7631cd1cce6145e1238905fa6c022308cdf340abafdd",
+      "status": "applied-not-verified",
+      "outcome": "Draft explicitly separates source pixels,chosen CSS values and unknowns."
+    },
+    {
+      "path": "skills/qwen-samkill-ui/references/upstream/design-md/guide.md",
+      "sha256": "06e3ed239bfd26723e5a2ca8b2dd049e50775e952243db803051860ae00dee76",
+      "status": "applied-not-verified",
+      "outcome": "DESIGN-DRAFT sections and scope;not frozen final product contract."
+    },
+    {
+      "path": "skills/qwen-samkill-ui/references/upstream/design-md/references/document-contract.md",
+      "sha256": "84a919c4238a77164e625d61191d0de46cbabd41599a66eab852718e6a1cde61",
+      "status": "applied-not-verified",
+      "outcome": "Role tokens/chosen origin and state responsibilities recorded."
+    },
+    {
+      "path": "skills/qwen-samkill-ui/references/upstream/reference-to-ui/references/product-reasoning.md",
+      "sha256": "947cbbbe96401e2072c723c6b8ebf13c33621ea663f6bc8a66ef149638218ac3",
+      "status": "applied-not-verified",
+      "outcome": "Single focus task;state-specific action ownership,no copied planner management header."
+    },
+    {
+      "path": "skills/qwen-samkill-ui/references/upstream/reference-to-ui/references/typography.md",
+      "sha256": "d1003eda3338b973d1399e492bf1adea0e8eced6c054fb65cf0de480b88431d7",
+      "status": "read",
+      "outcome": "Exact candidate roles,wrapping/stress plan;asset/glyph/render evidence still planned."
+    },
+    {
+      "path": "skills/qwen-samkill-ui/references/upstream/reference-to-ui/references/spacing-audit.md",
+      "sha256": "30565c3fbc3e06cdb2e53aab78955b28142774a44c7e24eb34b661ef85135539",
+      "status": "read",
+      "outcome": "Spacing inventory must be completed before code;no existing timer CSS modified."
+    }
+  ],
+  "remaining": [
+    "reference-to-ui implementation guide and relevant asset/control references before coding",
+    "ux-copy guide before freezing visible labels",
+    "reference-review guide/all active catalog rules before acceptance",
+    "onboarding-flow applicability assessment;no account/forced onboarding requested"
+  ],
+  "limitations": "Read/applied draft is not verified UI or all-eight-guide completion."
+}

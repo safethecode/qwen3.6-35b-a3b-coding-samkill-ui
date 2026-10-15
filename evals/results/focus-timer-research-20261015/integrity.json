@@ -1,0 +1,17 @@
+{
+  "status": "RESEARCH_INPUT_ONLY",
+  "createdAtUtc": "2026-10-15T11:38:19.465Z",
+  "candidate": "NONE;no local generation for this service",
+  "hashes": {
+    "BRIEF.md": "d9ec0b6fe53cf515a126b1b7be79574897032190ac5c8e8de4cedeb5a063fa9a",
+    "DESIGN-DRAFT.md": "a623965a07469b3538fa142ceea63ea55ca5f94de03571b2cf1b00b8424fe422",
+    "reference-0.jpg": "349f133bf3cc3c51cc009ad7382571217a5be2704fded5b9f1eb75ac6edc6307",
+    "reference-1.jpg": "ab6e76f58beebaa306d51c55afff497b5b9bcf38f73bfefcdd262b51a6adc321",
+    "reference-2.jpg": "6d70cc180b2220ac4b6329d71c0a523e7fabcad7c921573131d36a07848a6bf6",
+    "config-reference-0.jpg": "2e27f8a7e411fd9608704b84144bc8bf4a21f1d802520ea332437366b23f8c74",
+    "config-reference-1.jpg": "ded644137a8c3d100b16fa3a3b9da9df5b14baf691da186bbbb731edb3601c4b"
+  },
+  "firstLookupFreshness": "Exact first response second unknown;original BRIEF creation2026-10-15T10:53:28 precedes lookup and research record10:55:37.616 follows it. Do not infer false exact retrieval precision.",
+  "configLookupFreshness": "2026-10-15T11:23:59.298Z",
+  "remaining": "Finalize input/control/interface,assets,spacing and tests before serial local generation;all catalog and visual acceptance remain pending."
+}
