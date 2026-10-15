@@ -1,0 +1,49 @@
+{
+  "status": "FAILED_DESIGN_REPETITION",
+  "designAcceptance": "0/2",
+  "model": "qwen3.6:35b-a3b-coding",
+  "responses": [
+    {
+      "case": 1,
+      "elapsedMs": 254016,
+      "promptTokens": 12711,
+      "outputTokens": 1496,
+      "doneReason": "stop"
+    },
+    {
+      "case": 2,
+      "elapsedMs": 106820,
+      "promptTokens": 12711,
+      "outputTokens": 1502,
+      "doneReason": "stop"
+    }
+  ],
+  "cases": [
+    {
+      "case": 1,
+      "modeChecks": "heading-actions FAIL;13 other scoped checks pass",
+      "diagnosis": "Wrong compound selector treats descendant row as root."
+    },
+    {
+      "case": 2,
+      "modeChecks": 14,
+      "workflowChecks": 73,
+      "exactRoleCaptures": 24,
+      "exactRoleIssues": 40,
+      "diagnosis": "Correct row selector,but title selector still treats descendant as root. UA32px heading instead of22px. Functional counts do not approve design."
+    }
+  ],
+  "publishedCandidate": {
+    "path": "../icon-refinement/source",
+    "exactRoleCaptures": 24,
+    "issues": 0,
+    "scope": "Post-generation exact role diagnostic only,not original typed input or reference parity"
+  },
+  "inputFlaw": "Original retained standalone h1 margin/type prompt conflicts with appended row ownership. New corrected inputs must replace it before inference.",
+  "recovery": "All original run harness bytes recoverable from pinned commit and explicit newline transforms;fresh diagnostic has current harness binding.",
+  "limitations": [
+    "Assisted bounded CSS repair,not independent whole-product reproduction",
+    "No reference/commercial parity",
+    "Original raw process error contains private executable path and is not published;replaced by precise failure diagnosis without overwriting raw private evidence"
+  ]
+}

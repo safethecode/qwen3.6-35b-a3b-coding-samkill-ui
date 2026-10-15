@@ -1,0 +1,26 @@
+{
+  "status": "REVIEWER_DERIVED_POST_GENERATION_DIAGNOSTIC",
+  "basis": "Original/failure brief explicitly intended22px700 heading and14px600 management control,line-height1.5. Earlier family/minimum-only receipts did not enforce these values. Not an original typed input for these two requests.",
+  "roles": [
+    {
+      "selector": "#selected-date",
+      "families": [
+        "Noto Sans KR Thin"
+      ],
+      "requireCustomFont": true,
+      "fontSizePx": 22,
+      "fontWeight": 700,
+      "lineHeightRatio": 1.5
+    },
+    {
+      "selector": "#edit-tasks",
+      "families": [
+        "Noto Sans KR Thin"
+      ],
+      "requireCustomFont": true,
+      "fontSizePx": 14,
+      "fontWeight": 600,
+      "lineHeightRatio": 1.5
+    }
+  ]
+}

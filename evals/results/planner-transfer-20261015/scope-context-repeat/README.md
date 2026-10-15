@@ -1,0 +1,7 @@
+# Fresh fixed-DOM context repetition
+
+**0/2 design acceptance.** Both fresh serial local Qwen requests received the same frozen assisted source and ownership context. [First actual screen](repeat-1/mode/390-reading-normal.png) retains a stacked heading/action row. [Second actual screen](repeat-2/filled/390-reading.png) fixes the row but leaves the title at browser-default32px instead of22px. Its14mode/73workflow checks passed; these do not establish design quality.
+
+[Exact-role audit](repeat-2/exact-role-audit-current/report.json) rejects40issues over24actual state/width/text cells. The [existing public candidate](published-exact-role-audit/report.json) has no issues in this limited role audit and remains the preview. These expectations are explicitly post-generation diagnostics for the two historical calls.
+
+The old plan retained contradictory standalone-title/row ownership instructions. Preserve that input here; replace conflicting instructions and predeclare typed metrics in the next input before generation. No selector was silently corrected after these requests. [Source/harness binding](input-binding.json), [exact byte recovery mapping](harness-recovery.json), raw requests/responses, sources and screenshots are retained. Root checkout and Git blobs had mixed/CRLF differences: the recovery map preserves exact bytes rather than pretending the commit alone matches. The current exact-role checker adds explicit real stress context; v1 remains frozen alongside it. Original unknowns and broader reference quality remain unresolved.
