@@ -1,0 +1,17 @@
+{
+  "rules": [
+    {
+      "id": "primary-width-before-repeat",
+      "kind": "fillRemainder",
+      "subject": "#book",
+      "reference": "#favorite",
+      "container": "#booking-actions"
+    },
+    {
+      "id": "mobile-only-repeat",
+      "kind": "maxWidth",
+      "subject": "body",
+      "maximum": 390
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "reference": {
+    "tool": "UI Bowl search_ui_patterns",
+    "arguments": {
+      "query": "상세정보",
+      "app_name": "프립",
+      "limit": 3
+    },
+    "retrievedAtUtc": "2026-10-15T05:36:23.653Z",
+    "screenId": null,
+    "screenIdSource": "Current connector did not return a screen ID; do not infer one from a previous response",
+    "ui_url": "https://uibowl.io/name/%ED%94%84%EB%A6%BD?patterns=%EC%83%81%EC%84%B8%EC%A0%95%EB%B3%B4%20%28PDP%29",
+    "previewSha256": "0fa0d1f2cb50cfc86b9b18be417f88fdf5faf72e18c58c6ceb9b90219857fde8",
+    "scope": "Fresh connector retrieval and direct visual inspection of native representative preview; CSS/DPR/font/hidden states unknown",
+    "status": "inspected",
+    "width": 296,
+    "observations": [
+      "Back navigation sits over the top photo",
+      "Product facts are below media",
+      "White regions are separated by gray canvas gaps",
+      "Quiet bounded secondary actions accompany a strong primary booking action"
+    ],
+    "unknowns": [
+      "Original CSS/DPR/font",
+      "Original hidden modal states"
+    ]
+  },
+  "shared": "Detail screen. No brand header. Actual back link on photo returns to classes.html. White product, host and action surfaces separated by gray canvas; no decorative divider bars. Preserve declared layout relations. No demo notices in visible UI. Host supplied semantic HTML/shared layout; model supplies component CSS. This static stage does not implement booking dialog behavior. MOBILE-ONLY: same vertical mobile layout at every browser width. No desktop adaptation, columns, larger desktop type or alternate navigation. USER OVERRIDES: preserve gray canvas #f3f3f5 and white sections as explicitly requested. Mobile-only at every window width. Existing purple action color is retained; no new palette selection or desktop variant. Apply declared role tokens and normal text wrapping. Do not add demo notices or branded headers.",
+  "sharedCss": ":root{--screen-inset:20px;--section-padding-block:24px;--section-gap:12px;--metadata-gap:16px;--icon-label-gap:8px;--content-gap:20px;--title-gap:8px;--price-gap:12px;--action-pad-block:12px;--action-pad-inline:16px;--action-bg:#5146d7;--action-fg:#fff;--text-primary:#202024;--text-secondary:#60606a}\n*{box-sizing:border-box}body{margin:0;color:#202024;background:#f3f3f5;font-family:\"Noto Sans KR\",sans-serif;font-weight:500;max-width:390px;margin:0 auto}button,input,select{font:inherit}button{cursor:pointer}img{display:block;max-width:100%}p,h1,h2,h3{margin:0}button:focus-visible,a:focus-visible{outline:3px solid #5146d7;outline-offset:4px}.product{display:block;margin:0;padding:0;width:100%}.details{min-width:0}.media-navigation{position:relative;min-width:0}.detail-navigation{position:absolute;z-index:1;left:16px;top:16px}#back{display:flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:50%;background:rgb(255 255 255 / .94);box-shadow:0 2px 12px rgb(0 0 0 / .08)}.product-identity{background:white;padding:28px}#booking-layout{padding-top:12px}.booking-host,.booking-surface{background:#fff;padding:24px 28px}.booking-surface{margin-top:var(--section-gap)}#booking-actions{display:grid;grid-template-columns:48px minmax(0,1fr);align-items:center;gap:12px}.section-label{font-size:14px;font-weight:500;line-height:1.6;color:#60606a;margin-bottom:8px}@media(max-width:700px){.product{display:block;margin:0;padding:0;width:100%}.details{padding:0}.product-identity{padding:var(--section-padding-block) var(--screen-inset)}.booking-host,.booking-surface{padding:var(--section-padding-block) var(--screen-inset)}}\n.product-identity,.booking-host,.booking-surface{padding:var(--section-padding-block) var(--screen-inset)}dialog{width:358px;max-width:calc(100% - 32px)}.class-list{max-width:390px;margin:24px auto}\n",
+  "assembly": "<main class=\"product\"><div class=\"details\">{{booking}}</div></main>",
+  "elements": [
+    {
+      "id": "booking",
+      "html": "<section data-ui-unit=\"booking\" id=\"booking-layout\">\n  <section class=\"booking-host\" aria-labelledby=\"host-title\"><p class=\"section-label\">함께할 호스트</p>\n    <h2 id=\"host-title\" class=\"booking-host-title\">틈 도자기 스튜디오</h2>\n    <p class=\"booking-host-subtitle\">재료와 도구 포함 · 완성품 소성 후 수령</p>\n  </section><div class=\"booking-surface\">\n  <div class=\"booking-action-row\" id=\"booking-actions\">\n    <button id=\"favorite\" class=\"booking-icon-btn\" type=\"button\" aria-label=\"수업 찜하기\" aria-pressed=\"false\">\n      <img src=\"assets/icons/Heart.svg\" alt=\"\" width=\"24\" height=\"24\">\n    </button>\n    <button id=\"book\" class=\"booking-primary-btn\" type=\"button\">일정 선택하고 예약하기</button>\n  </div>\n</div></section>",
+      "prompt": "Style the fixed host and action surfaces. Shared assembly owns padding, gray/white grouping and48px/minmax(0,1fr) action grid. Do not rewrite the grid or root layout. Host title18px700; subtitle14px500 line-height1.6 with4px top gap. Favorite48px square, officialHeart24px centered, quiet gray#f2f2f5 radius8px, pale purple pressed state. Main CTA MUST occupy100% of its remaining grid track. Use width:100%, min-width:0, min-height52px and natural height, white-space:normal, word-break:keep-all, overflow-wrap:anywhere. Never set width:0 or fixed text height. CTA16px700 line-height1.5, existing action background/foreground variables, radius6px, padding from --action-pad-block/--action-pad-inline. Visible keyboard focus. No new elements, helpers, desktop media query, separators or altered host padding. No animation required. Semantic spacing/color variables supplied. The duplicate helper sentence was intentionally removed by the host as a distinct copy decision; do not recreate it. Normal/200%text must fill available width without one-character columns or clipping.",
+      "assets": [
+        "assets/icons/Heart.svg"
+      ],
+      "sample": "<main class=\"product\"><div class=\"details\">{{booking}}</div></main>"
+    }
+  ],
+  "viewport": {
+    "mode": "mobile-only",
+    "maxWidth": 390,
+    "rationale": "User requested a mobile screen; wide windows only center the same screen."
+  }
+}

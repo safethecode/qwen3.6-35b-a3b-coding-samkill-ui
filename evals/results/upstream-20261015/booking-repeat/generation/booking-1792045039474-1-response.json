@@ -1,0 +1,33 @@
+{
+  "binding": "89d6acb9fbfca008424d15d1b6b93c6e26ab944224847eede36dd04864c2e0cc",
+  "settings": {
+    "model": "qwen3.6:35b-a3b-coding",
+    "think": false,
+    "options": {
+      "num_ctx": 16384,
+      "temperature": 0.7,
+      "top_p": 0.8,
+      "top_k": 20,
+      "repeat_penalty": 1.05,
+      "num_gpu": 16,
+      "num_batch": 128,
+      "num_predict": 2048
+    }
+  },
+  "elapsedMs": 161708,
+  "model": "qwen3.6:35b-a3b-coding",
+  "created_at": "2026-10-15T06:17:19.4715275Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\n  \"css\": \"/* Booking Host Surface */\\n.booking-host-title {\\n  font-size: 18px;\\n  font-weight: 700;\\n  color: var(--text-primary);\\n  margin: 0;\\n}\\n\\n.booking-host-subtitle {\\n  font-size: 14px;\\n  font-weight: 500;\\n  line-height: 1.6;\\n  color: var(--text-secondary);\\n  margin-top: 4px;\\n  margin-bottom: 0;\\n}\\n\\n/* Booking Action Surface */\\n.booking-surface {\\n  /* Shared assembly handles margin-top via --section-gap */\\n}\\n\\n/* Favorite Icon Button */\\n#favorite {\\n  width: 48px;\\n  height: 48px;\\n  display: flex;\\n  align-items: center;\\n  justify-content: center;\\n  background-color: #f2f2f5;\\n  border-radius: 8px;\\n  border: none;\\n  cursor: pointer;\\n  transition: background-color 0.1s ease;\\n}\\n\\n#favorite img {\\n  width: 24px;\\n  height: 24px;\\n  display: block;\\n  object-fit: contain;\\n  /* Ensure icon color adapts to button context if SVG uses currentColor, \\n     otherwise default to a neutral dark/gray */\\n  color: var(--text-primary);\\n}\\n\\n#favorite[aria-pressed=\\\"true\\\"] {\\n  background-color: #e8e6fa;\\n}\\n\\n#favorite:focus-visible {\\n  outline: 3px solid #5146d7;\\n  outline-offset: 2px;\\n}\\n\\n/* Primary CTA */\\n#book {\\n  width: 100%;\\n  min-width: 0;\\n  min-height: 52px;\\n  height: auto;\\n  \\n  font-size: 16px;\\n  font-weight: 700;\\n  line-height: 1.5;\\n  white-space: normal;\\n  word-break: keep-all;\\n  overflow-wrap: anywhere;\\n  \\n  background-color: var(--action-bg);\\n  color: var(--action-fg);\\n  \\n  padding-block: var(--action-pad-block);\\n  padding-inline: var(--action-pad-inline);\\n  \\n  border-radius: 6px;\\n  border: none;\\n  cursor: pointer;\\n}\\n\\n#book:focus-visible {\\n  outline: 3px solid #5146d7;\\n  outline-offset: 2px;\\n}\"\n}"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 161699530500,
+  "load_duration": 9552000,
+  "prompt_eval_count": 11759,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration": 123014847000,
+  "eval_count": 599,
+  "eval_duration": 38614274000
+}

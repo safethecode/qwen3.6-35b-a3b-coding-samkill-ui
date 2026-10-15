@@ -1,0 +1,23 @@
+{
+  "binding": "89d6acb9fbfca008424d15d1b6b93c6e26ab944224847eede36dd04864c2e0cc",
+  "settings": {
+    "model": "qwen3.6:35b-a3b-coding",
+    "think": false,
+    "options": {
+      "num_ctx": 16384,
+      "temperature": 0.7,
+      "top_p": 0.8,
+      "top_k": 20,
+      "repeat_penalty": 1.05,
+      "num_gpu": 16,
+      "num_batch": 128,
+      "num_predict": 2048
+    }
+  },
+  "completed": {
+    "booking": {
+      "html": "<section data-ui-unit=\"booking\" id=\"booking-layout\">\n  <section class=\"booking-host\" aria-labelledby=\"host-title\"><p class=\"section-label\">함께할 호스트</p>\n    <h2 id=\"host-title\" class=\"booking-host-title\">틈 도자기 스튜디오</h2>\n    <p class=\"booking-host-subtitle\">재료와 도구 포함 · 완성품 소성 후 수령</p>\n  </section><div class=\"booking-surface\">\n  <div class=\"booking-action-row\" id=\"booking-actions\">\n    <button id=\"favorite\" class=\"booking-icon-btn\" type=\"button\" aria-label=\"수업 찜하기\" aria-pressed=\"false\">\n      <img src=\"assets/icons/Heart.svg\" alt=\"\" width=\"24\" height=\"24\">\n    </button>\n    <button id=\"book\" class=\"booking-primary-btn\" type=\"button\">일정 선택하고 예약하기</button>\n  </div>\n</div></section>",
+      "css": "\n[data-ui-unit=\"booking\"] .booking-host-title {\n  font-size: 18px;\n  font-weight: 700;\n  color: var(--text-primary);\n  margin: 0;\n}\n\n[data-ui-unit=\"booking\"] .booking-host-subtitle {\n  font-size: 14px;\n  font-weight: 500;\n  line-height: 1.6;\n  color: var(--text-secondary);\n  margin-top: 4px;\n  margin-bottom: 0;\n}\n\n\n[data-ui-unit=\"booking\"] .booking-surface {\n  \n}\n\n\n[data-ui-unit=\"booking\"] #favorite {\n  width: 48px;\n  height: 48px;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  background-color: #f2f2f5;\n  border-radius: 8px;\n  border: none;\n  cursor: pointer;\n  transition: background-color 0.1s ease;\n}\n\n[data-ui-unit=\"booking\"] #favorite img {\n  width: 24px;\n  height: 24px;\n  display: block;\n  object-fit: contain;\n  \n  color: var(--text-primary);\n}\n\n[data-ui-unit=\"booking\"] #favorite[aria-pressed=\"true\"] {\n  background-color: #e8e6fa;\n}\n\n[data-ui-unit=\"booking\"] #favorite:focus-visible {\n  outline: 3px solid #5146d7;\n  outline-offset: 2px;\n}\n\n\n[data-ui-unit=\"booking\"] #book {\n  width: 100%;\n  min-width: 0;\n  min-height: 52px;\n  height: auto;\n  \n  font-size: 16px;\n  font-weight: 700;\n  line-height: 1.5;\n  white-space: normal;\n  word-break: keep-all;\n  overflow-wrap: anywhere;\n  \n  background-color: var(--action-bg);\n  color: var(--action-fg);\n  \n  padding-block: var(--action-pad-block);\n  padding-inline: var(--action-pad-inline);\n  \n  border-radius: 6px;\n  border: none;\n  cursor: pointer;\n}\n\n[data-ui-unit=\"booking\"] #book:focus-visible {\n  outline: 3px solid #5146d7;\n  outline-offset: 2px;\n}"
+    }
+  }
+}

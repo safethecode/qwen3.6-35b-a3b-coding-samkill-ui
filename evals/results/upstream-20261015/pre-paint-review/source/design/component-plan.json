@@ -1,0 +1,74 @@
+{
+  "reference": {
+    "tool": "UI Bowl search_ui_patterns",
+    "arguments": {
+      "query": "상세정보",
+      "app_name": "프립",
+      "limit": 3
+    },
+    "retrievedAtUtc": "2026-10-15T05:36:23.653Z",
+    "screenId": null,
+    "screenIdSource": "Current connector did not return a screen ID; do not infer one from a previous response",
+    "ui_url": "https://uibowl.io/name/%ED%94%84%EB%A6%BD?patterns=%EC%83%81%EC%84%B8%EC%A0%95%EB%B3%B4%20%28PDP%29",
+    "previewSha256": "0fa0d1f2cb50cfc86b9b18be417f88fdf5faf72e18c58c6ceb9b90219857fde8",
+    "scope": "Fresh connector retrieval and direct visual inspection of native representative preview; CSS/DPR/font/hidden states unknown",
+    "status": "inspected",
+    "width": 296,
+    "observations": [
+      "Back navigation sits over the top photo",
+      "Product facts are below media",
+      "White regions are separated by gray canvas gaps",
+      "Quiet bounded secondary actions accompany a strong primary booking action"
+    ],
+    "unknowns": [
+      "Original CSS/DPR/font",
+      "Original hidden modal states"
+    ]
+  },
+  "shared": "Detail screen. No brand header. Actual back link on photo returns to classes.html. White product, host and action surfaces separated by gray canvas; no decorative divider bars. Preserve declared layout relations. No demo notices in visible UI. Host supplied semantic HTML/shared layout; model supplies component CSS. This static stage does not implement booking dialog behavior. MOBILE-ONLY: same vertical mobile layout at every browser width. No desktop adaptation, columns, larger desktop type or alternate navigation. USER OVERRIDES: preserve gray canvas #f3f3f5 and white sections as explicitly requested. Mobile-only at every window width. Existing purple action color is retained; no new palette selection or desktop variant. Apply declared role tokens and normal text wrapping. Do not add demo notices or branded headers. The dialog shell and its standalone sample use the same358px maximum allocation. Model content CSS owns internal fields and state styling.",
+  "sharedCss": ":root{--screen-inset:20px;--section-padding-block:24px;--section-gap:12px;--metadata-gap:16px;--icon-label-gap:8px;--content-gap:20px;--title-gap:8px;--price-gap:12px;--action-pad-block:12px;--action-pad-inline:16px;--action-bg:#5146d7;--action-fg:#fff;--text-primary:#202024;--text-secondary:#60606a}\n*{box-sizing:border-box}body{margin:0;color:#202024;background:#f3f3f5;font-family:\"Noto Sans KR\",sans-serif;font-weight:500;max-width:390px;margin:0 auto}button,input,select{font:inherit}button{cursor:pointer}img{display:block;max-width:100%}p,h1,h2,h3{margin:0}button:focus-visible,a:focus-visible{outline:3px solid #5146d7;outline-offset:4px}.product{display:block;margin:0;padding:0;width:100%}.details{min-width:0}.media-navigation{position:relative;min-width:0}.detail-navigation{position:absolute;z-index:1;left:16px;top:16px}#back{display:flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:50%;background:rgb(255 255 255 / .94);box-shadow:0 2px 12px rgb(0 0 0 / .08)}.product-identity{background:white;padding:28px}#booking-layout{padding-top:12px}.booking-host,.booking-surface{background:#fff;padding:24px 28px}.booking-surface{margin-top:var(--section-gap)}#booking-actions{display:grid;grid-template-columns:48px minmax(0,1fr);align-items:center;gap:12px}.section-label{font-size:14px;font-weight:500;line-height:1.6;color:#60606a;margin-bottom:8px}@media(max-width:700px){.product{display:block;margin:0;padding:0;width:100%}.details{padding:0}.product-identity{padding:var(--section-padding-block) var(--screen-inset)}.booking-host,.booking-surface{padding:var(--section-padding-block) var(--screen-inset)}}\n.product-identity,.booking-host,.booking-surface{padding:var(--section-padding-block) var(--screen-inset)}dialog{width:358px;max-width:calc(100% - 32px)}.class-list{max-width:390px;margin:24px auto}\n.dialog-sample{width:358px;max-width:calc(100% - 32px);margin:16px auto}",
+  "assembly": "<main class=\"product\"><div class=\"media-navigation\"><nav class=\"detail-navigation\" aria-label=\"상세 페이지 탐색\"><a id=\"back\" href=\"classes.html\" aria-label=\"수업 목록으로 돌아가기\"><img src=\"assets/icons/ArrowLeft.svg\" width=\"24\" height=\"24\" alt=\"\"></a></nav>{{media}}</div><div class=\"details\">{{identity}}{{booking}}</div></main><dialog id=\"booking-dialog\" aria-labelledby=\"booking-title\">{{dialog}}</dialog>",
+  "elements": [
+    {
+      "id": "media",
+      "html": "<figure class=\"product-media\" data-ui-unit=\"media\"><img src=\"assets/photos/pottery.jpg\" alt=\"물레 위 흙을 손으로 빚는 도자기 작업\"></figure>",
+      "prompt": "Observed square photo-led mobile detail. Keep the supplied photo square with width100%, aspect-ratio1/1, object-fit cover and object-position44% center. Figure margin0. No mobile radius; No desktop variant. Parent owns overlay back navigation; do not style it. Use the supplied semantic variables for applicable spacing/colors. These are chosen values derived from the preserved baseline roles, not measured original CSS. Preserve layout ownership and the mobile-only platform. No media query for a desktop width.",
+      "assets": [
+        "assets/photos/pottery.jpg"
+      ],
+      "sample": "<main class=\"product\"><div class=\"media-navigation\"><nav class=\"detail-navigation\" aria-label=\"상세 페이지 탐색\"><a id=\"back\" href=\"classes.html\" aria-label=\"수업 목록으로 돌아가기\"><img src=\"assets/icons/ArrowLeft.svg\" width=\"24\" height=\"24\" alt=\"\"></a></nav>{{media}}</div><div class=\"details\"></div></main>"
+    },
+    {
+      "id": "identity",
+      "html": "<section data-ui-unit=\"identity\" class=\"product-identity\">\n  <div class=\"eyebrow\">도자기 · 입문</div>\n  <h1 class=\"title\">내 손으로 빚는 첫 번째 도자기 잔</h1>\n  <div class=\"price-row\">\n    <span class=\"price\">55,000원</span>\n  </div>\n  <div class=\"metadata\">\n    <div class=\"meta-item\">\n      <img src=\"assets/icons/Clock.svg\" alt=\"\" class=\"icon-clock\">\n      <span>90분</span>\n    </div>\n    <div class=\"meta-item\">\n      <img src=\"assets/icons/Users.svg\" alt=\"\" class=\"icon-users\">\n      <span>최대6명</span>\n    </div>\n    <div class=\"meta-item\">\n      <img src=\"assets/icons/MapPin.svg\" alt=\"\" class=\"icon-map-pin\">\n      <span>서울·연남동</span>\n    </div>\n  </div>\n  <p class=\"description\">\n    흙을 만지는 감각부터 유약을 고르는 순간까지. 소규모 수업에서 나만의 찻잔을 천천히 완성해 보세요.\n  </p>\n</section>",
+      "prompt": "Style product facts inside the white identity surface already owned by assembly; do not override its padding/background. Eyebrow14px500, margin-bottom8; title22px700 line-height1.45 (at all viewport widths) keep-all with emergency wrap; price24px800 margin-top12px. Metadata wrap flex gap16px, each icon20px with8pxgap, text14px500. Description15px500 line-height1.75 margin-top20px. Metadata margin-top24px. Price remains separate above actions. Do not set fixed heights. Use the supplied semantic variables for applicable spacing/colors. These are chosen values derived from the preserved baseline roles, not measured original CSS. Preserve layout ownership and the mobile-only platform. No media query for a desktop width. Eyebrow uses --title-gap; price uses --price-gap; metadata uses --metadata-gap and --icon-label-gap; description uses --content-gap. Title22px at every width. Normal Korean word wrapping with emergency overflow-wrap; description line-height1.75.",
+      "assets": [
+        "assets/icons/Clock.svg",
+        "assets/icons/Users.svg",
+        "assets/icons/MapPin.svg"
+      ],
+      "sample": "<main class=\"product\"><div class=\"media-navigation\"><nav class=\"detail-navigation\" aria-label=\"상세 페이지 탐색\"><a id=\"back\" href=\"classes.html\" aria-label=\"수업 목록으로 돌아가기\"><img src=\"assets/icons/ArrowLeft.svg\" width=\"24\" height=\"24\" alt=\"\"></a></nav></div><div class=\"details\">{{identity}}</div></main>"
+    },
+    {
+      "id": "booking",
+      "html": "<section data-ui-unit=\"booking\" id=\"booking-layout\">\n  <section class=\"booking-host\" aria-labelledby=\"host-title\"><p class=\"section-label\">함께할 호스트</p>\n    <h2 id=\"host-title\" class=\"booking-host-title\">틈 도자기 스튜디오</h2>\n    <p class=\"booking-host-subtitle\">재료와 도구 포함 · 완성품 소성 후 수령</p>\n  </section><div class=\"booking-surface\">\n  <div class=\"booking-action-row\" id=\"booking-actions\">\n    <button id=\"favorite\" class=\"booking-icon-btn\" type=\"button\" aria-label=\"수업 찜하기\" aria-pressed=\"false\">\n      <img src=\"assets/icons/Heart.svg\" alt=\"\" width=\"24\" height=\"24\">\n    </button>\n    <button id=\"book\" class=\"booking-primary-btn\" type=\"button\">일정 선택하고 예약하기</button>\n  </div>\n</div></section>",
+      "prompt": "Style the fixed host and action surfaces. Shared assembly owns padding, gray/white grouping and48px/minmax(0,1fr) action grid. Do not rewrite the grid or root layout. Host title18px700; subtitle14px500 line-height1.6 with4px top gap. Favorite48px square, officialHeart24px centered, quiet gray#f2f2f5 radius8px, pale purple pressed state. Main CTA MUST occupy100% of its remaining grid track. Use width:100%, min-width:0, min-height52px and natural height, white-space:normal, word-break:keep-all, overflow-wrap:anywhere. Never set width:0 or fixed text height. CTA16px700 line-height1.5, existing action background/foreground variables, radius6px, padding from --action-pad-block/--action-pad-inline. Visible keyboard focus. No new elements, helpers, desktop media query, separators or altered host padding. No animation required. Semantic spacing/color variables supplied. The duplicate helper sentence was intentionally removed by the host as a distinct copy decision; do not recreate it. Normal/200%text must fill available width without one-character columns or clipping.",
+      "assets": [
+        "assets/icons/Heart.svg"
+      ],
+      "sample": "<main class=\"product\"><div class=\"details\">{{booking}}</div></main>"
+    },
+    {
+      "id": "dialog",
+      "html": "<div data-ui-unit=\"dialog\" class=\"dialog-content\"><div class=\"dialog-heading\"><h2 id=\"booking-title\">수업 예약</h2><button id=\"close-booking\" type=\"button\" aria-label=\"예약 창 닫기\">닫기</button></div><div id=\"booking-product\" class=\"booking-summary\"><p class=\"section-label\">선택한 수업</p><p class=\"booking-class\">내 손으로 빚는 첫 번째 도자기 잔</p><p class=\"booking-price\">55,000원 · 90분 · 1명</p></div><form id=\"booking-form\"><div class=\"booking-field\"><label for=\"guest\">예약자 이름</label><div class=\"field-control\"><input id=\"guest\" name=\"guest\" autocomplete=\"name\" required maxlength=\"40\"></div></div><div class=\"booking-field\"><label for=\"date\">방문일</label><div class=\"field-control\"><input id=\"date\" name=\"date\" type=\"date\" required></div></div><div class=\"booking-field\"><label for=\"slot\">예약 시간</label><div class=\"field-control\"><select id=\"slot\" name=\"slot\" required><option value=\"\">시간을 선택하세요</option><option value=\"10:00\">오전 10:00</option><option value=\"14:00\">오후 2:00</option><option value=\"18:00\">오후 6:00</option></select></div></div><p id=\"storage-error\" role=\"alert\"></p><button class=\"confirm-booking\" type=\"submit\">예약 확정</button></form><section id=\"confirmation\" hidden><p class=\"confirmation-intro\">선택한 일정으로 예약을 저장했어요.</p><div class=\"booking-summary\"><p class=\"section-label\">예약 내역</p><p id=\"confirmation-details\"></p></div><p id=\"cancel-error\" role=\"alert\"></p><button id=\"cancel-booking\" type=\"button\">예약 취소</button></section></div>",
+      "assets": [],
+      "sample": "<div class=\"dialog-sample\">{{dialog}}</div>",
+      "prompt": "Style this complete dialog content with bounded CSS. Outer padding24px (20px at <=360). Header h2=22px700 line-height1.45 keep-all with emergencywrap; close min44px,14px600, quiet gray rounded6. Header must wrap at enlarged text rather than squeeze title into a character column. Product summary and saved summary pale gray padded20px radius8, supporting text15px500 line-height1.7; product title16px700, price14px500. Use one success heading; hidden form/product block is controlled by existing app.js. Labels15px600 visible, field gap8px, field groups16px apart. Each field-control wraps its own input/select and owns stable border1px and inset focus ring2px; input/select keep DOM focus and use16px500, line-height1.5, min-height48px, width100%, padding12px, min-width0. Only these controls remove their native outline while the wrapper shows input/select focus; forced-colors gets a visible system-color outline. Parent focus style must not respond to unrelated buttons. Main submit min-height52px padding16px, purple existing --action-bg/white --action-fg,16px700, line-height1.5, natural growth, normal wrapping. Cancel quiet secondary control min44px,14px600. Errors14px500 red with readable contrast. Confirmation intro15px500; pre-line summary wraps full data. All buttons keep visible keyboard focus and no clipping at200% text. Do not use fixed text heights, hidden overflow, decorative lines, pseudo-elements, extra controls or external assets. Use provided role variables where applicable. No animations are required; respect reduced motion if any transition is added. Return concise complete CSS under1800tokens."
+    }
+  ],
+  "viewport": {
+    "mode": "mobile-only",
+    "maxWidth": 390,
+    "rationale": "User requested a mobile screen; wide windows only center the same screen."
+  }
+}

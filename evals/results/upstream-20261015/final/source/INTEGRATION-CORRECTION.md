@@ -1,0 +1,1 @@
+Initial standalone dialog sample omitted its358px wrapper CSS during host integration. That shared read-only allocation is now supplied to the sample. This host correction is separate from the local-model focus/native-selection/empty-error repairs. Earlier source and failed checks remain preserved.
