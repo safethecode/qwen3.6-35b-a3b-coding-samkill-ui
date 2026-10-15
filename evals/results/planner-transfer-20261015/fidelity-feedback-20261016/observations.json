@@ -14,12 +14,17 @@
     "The reference week/month context becomes a different selected-day heading",
     "Calendar date markers and category/task density differ substantially",
     "Profile/social/advertising exclusions do not establish fidelity of the remaining composition",
-    "The comparison page displays a historical final/source iframe and a filled historical screenshot,while later scoped reading-priority outputs are elsewhere;they are not interchangeable evidence",
+    "The already-loaded comparison and current on-disk comparison point to different versions. The shown historical final screenshot/iframe and later reading-priority outputs are not interchangeable evidence.",
     "The live iframe is confirmed empty while the supplied candidate image is filled;these states cannot jointly prove matched-state reference fidelity"
   ],
   "catalog": [
     "RUI-16",
     "RUI-17"
   ],
-  "limits": "This is a scoped rejection of the displayed historical adaptation. It does not rewrite original inputs/reports,approve later candidates or replace the complex stay primary scope. A missing source font identity remains unknown,not a demonstrated wrong-family claim."
+  "limits": "This is a scoped rejection of the displayed historical adaptation. It does not rewrite original inputs/reports,approve later candidates or replace the complex stay primary scope. A missing source font identity remains unknown,not a demonstrated wrong-family claim.",
+  "versionBoundary": {
+    "displayedBrowser": "Already-loaded tab DOM names revalidation-current-checker/390-filled.png and final/source/index.html;the directlyinspected screenshot is this displayed version.",
+    "diskAtInspection": "comparison.html on disk already names reading-priority/filled/390-reading.png and reading-priority/source/index.html. Its bound hash is an on-disk record,not the exact loaded browser markup.",
+    "limits": "No reload or mutation of the user tab was performed. The loading/cache mechanism is not inferred. A newer disk file does not automatically update an already-loaded comparison or approve its visual quality."
+  }
 }
