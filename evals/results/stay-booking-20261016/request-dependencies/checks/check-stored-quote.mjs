@@ -1,0 +1,24 @@
+import assert from 'node:assert/strict';
+import { readFile, mkdir, writeFile } from 'node:fs/promises';
+import { pathToFileURL } from 'node:url';
+import { resolve } from 'node:path';
+const [target, out] = process.argv.slice(2);
+await mkdir(out, { recursive: true });
+const fixtures = JSON.parse(await readFile(target + '/booking-fixtures.json', 'utf8'));
+const namespace = await import(pathToFileURL(resolve(target, 'stored-quote.js'))).catch(error => ({ missing: error.code }));
+const rows = [];
+function check(name, action) { try { action(); rows.push({ name, pass: true }); } catch (error) { rows.push({ name, pass: false, error: error.message }); } }
+const valid = namespace.isValidStoredQuote;
+check('only the contracted export is present', () => assert.deepEqual(Object.keys(namespace), ['isValidStoredQuote']));
+check('actual accepted quote is valid and unchanged', () => { const q = structuredClone(fixtures.quote), original = JSON.stringify(q); assert.equal(valid(q), true); assert.equal(JSON.stringify(q), original); });
+check('past dates and removed catalogue IDs remain readable snapshots', () => assert.equal(valid({ ...fixtures.quote, stayId: 'removed-property', roomId: 'removed-room', rateId: 'removed-rate', start: '2020-01-01', end: '2020-01-03' }), true));
+check('all other JSON top-level shapes return false', () => { for (const x of [null, [], 2, 'quote', true, {}]) assert.equal(valid(x), false); });
+check('each required field and every unknown field is enforced', () => { for (const key of Object.keys(fixtures.quote)) { const q = structuredClone(fixtures.quote); delete q[key]; assert.equal(valid(q), false, key); } assert.equal(valid({ ...fixtures.quote, today: '2026-10-16' }), false); });
+check('IDs have strict string identity boundaries', () => { for (const key of ['stayId', 'roomId', 'rateId']) for (const x of ['', ' ', ' x ', 4, null, 'a'.repeat(129)]) assert.equal(valid({ ...fixtures.quote, [key]: x }), false, key + ':' + x); });
+check('calendar validity and exact1to28night duration', () => { for (const patch of [{ start: '2026-02-30' }, { end: fixtures.quote.start }, { nights: 1 }, { end: '2026-12-06', nights: 30 }, { start: 1790000000000 }, { end: '1999-01-01' }]) assert.equal(valid({ ...fixtures.quote, ...patch }), false); });
+check('guest capacity and integer bounds reject coercion', () => { for (const patch of [{ guests: '2' }, { guests: 0 }, { guests: 9 }, { guests: 2.5 }, { capacity: 1 }, { capacity: '2' }, { capacity: 9 }, { nights: '2' }]) assert.equal(valid({ ...fixtures.quote, ...patch }), false); });
+check('all monetary fields are nonnegative safe integers with exact safe arithmetic', () => { for (const key of ['nightly', 'cleaningFee', 'serviceFee', 'total']) for (const x of ['1', -1, .5, null, Number.MAX_SAFE_INTEGER + 1]) assert.equal(valid({ ...fixtures.quote, [key]: x }), false, key); assert.equal(valid({ ...fixtures.quote, total: fixtures.quote.total + 1 }), false); assert.equal(valid({ ...fixtures.quote, nightly: Number.MAX_SAFE_INTEGER, cleaningFee: 0, serviceFee: 0, total: Number.MAX_SAFE_INTEGER }), false); assert.equal(valid({ ...fixtures.quote, nightly: 0, cleaningFee: 0, serviceFee: 0, total: 0 }), true); });
+check('inclusions are booleans rather than truthy values', () => { for (const key of ['freeCancellation', 'breakfast']) for (const x of [0, 1, '', 'false', null, []]) assert.equal(valid({ ...fixtures.quote, [key]: x }), false); });
+await writeFile(out + '/report.json', JSON.stringify({ rows, pass: rows.filter(x => x.pass).length, total: rows.length }, null, 2));
+console.log(JSON.stringify(rows));
+process.exitCode = rows.every(x => x.pass) ? 0 : 1;
