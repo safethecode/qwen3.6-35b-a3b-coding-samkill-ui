@@ -2,6 +2,8 @@
 
 Read the upstream decomposition guide and its element contract. Record observed reference relationships separately from chosen implementation values and unknowns. Do not infer a font, asset origin or interaction from an uninspected screenshot.
 
+The layout contract supports explicit `modes` alongside widths/states. Declare normal-layout anchors separately from content-preserving enlargement/spacing behavior before repair; keep all requested mode captures in the coverage matrix. Missing captures and unknown observations cannot pass, and adding mode scope does not erase a previously failed observation.
+
 ## Before generation
 
 Match the reference and candidate screen purpose and visible state before comparing them. A checkout screenshot does not specify a catalogue hero. For a photo-led reference, obtain and inspect suitable real media with provenance before implementation; abstract decorative shapes are not a substitute for missing product imagery. Record substitutions explicitly. For illustration-led references, preserve that medium instead of imposing photography. Freeze the initial render before changing the contract.

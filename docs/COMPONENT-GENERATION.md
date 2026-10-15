@@ -2,6 +2,8 @@
 
 This experimental route translates a previously inspected reference decomposition into static element samples and an assembled page. It does not implement product workflows or certify commercial quality. The existing service route still handles those workflows separately.
 
+Layout rules optionally accept a nonempty unique `modes` array, alongside `states` and `widths`. For example, a native date-pair `sameRow` can be mandatory for `modes:["normal"]`, while whole-token readability remains mandatory in normal, enlarged and spacing captures. Declare this distinction before repair; mode scope is not permission to remove a failed requirement. The inspector selects the actual `options.mode` (default `normal`); the coverage aggregator still requires every requested capture and every rule's declared mode, including modes outside a narrower requested matrix. Missing/invalid scopes remain unverified and any failed observation in the batch remains failed.
+
 Create a fresh target containing `DESIGN.md`, `REFERENCE.md`, official local assets, `design/typography.json` and `design/component-plan.json`. Prepare local fonts as described in [quality verification](QUALITY.md). The plan has:
 
 - `reference`: inspected source, original observation region, comparison width, provenance and unknowns.

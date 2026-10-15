@@ -28,7 +28,9 @@ export async function inspectLayoutContract(page, contract, options = {}) {
   for (const rule of contract.rules) {
     if (rule.widths !== undefined && (!Array.isArray(rule.widths) || !rule.widths.length || new Set(rule.widths).size !== rule.widths.length || rule.widths.some(value => !Number.isInteger(value) || value < 1))) { issues.push({ status: 'FAIL', problem: `Invalid widths for ${rule.id}` }); continue; }
     if (rule.states !== undefined && (!Array.isArray(rule.states) || !rule.states.length || new Set(rule.states).size !== rule.states.length || rule.states.some(value => typeof value !== 'string' || !value.trim()))) { issues.push({ status: 'FAIL', problem: `Invalid states for ${rule.id}` }); continue; }
+    if (rule.modes !== undefined && (!Array.isArray(rule.modes) || !rule.modes.length || new Set(rule.modes).size !== rule.modes.length || rule.modes.some(value => typeof value !== 'string' || !value.trim()))) { issues.push({ status: 'FAIL', problem: `Invalid modes for ${rule.id}` }); continue; }
     if (rule.widths && !rule.widths.includes(width)) continue;
+    if (rule.modes && !rule.modes.includes(identity.mode)) continue;
     if (rule.states && !rule.states.includes(state)) { pendingStates.push({ id: rule.id, states: rule.states, status: 'UNVERIFIED' }); continue; }
     let observed = {};
     try {

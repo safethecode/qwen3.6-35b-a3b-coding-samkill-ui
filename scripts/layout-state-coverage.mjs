@@ -15,7 +15,7 @@ export function aggregateLayoutStates(contract, captures, scope = {}) {
   if (!scope || !unique(scope.widths, width) || !unique(scope.states, text) || !unique(scope.modes, text) || !Array.isArray(captures) || !Array.isArray(contract?.rules) || !contract.rules.length || contract.rules.length > 64 || !unique(contract.rules.map(r => r?.id), text)) {
     issues.push({ status: 'UNVERIFIED', problem: 'Coverage needs a valid contract and nonempty unique widths, states and modes' }); return finish();
   }
-  for (const rule of contract.rules) if (rule.widths !== undefined && !unique(rule.widths, width) || rule.states !== undefined && !unique(rule.states, text)) { issues.push({ status: 'UNVERIFIED', id: rule.id, problem: 'Invalid declared width/state scope' }); return finish(); }
+  for (const rule of contract.rules) if (rule.widths !== undefined && !unique(rule.widths, width) || rule.states !== undefined && !unique(rule.states, text) || rule.modes !== undefined && !unique(rule.modes, text)) { issues.push({ status: 'UNVERIFIED', id: rule.id, problem: 'Invalid declared width/state/mode scope' }); return finish(); }
   const fingerprint = layoutContractFingerprint(contract), accepted = [];
   for (const capture of captures) {
     if (!capture || !width(capture.width) || !text(capture.state) || !text(capture.mode) || capture.contractSha256 !== fingerprint || !Array.isArray(capture.results) || !capture.results.every(r => r && text(r.id) && text(r.kind) && ['PASS', 'FAIL', 'UNVERIFIED'].includes(r.status)) || !Array.isArray(capture.issues) || !capture.issues.every(i => i && ['FAIL', 'UNVERIFIED'].includes(i.status))) { issues.push({ status: 'UNVERIFIED', problem: 'Capture identity, contract digest or inspection shape is invalid' }); continue; }
@@ -29,8 +29,8 @@ export function aggregateLayoutStates(contract, captures, scope = {}) {
     if (!observations) issues.push({ ...cell, problem: 'Requested state/width/mode has not been captured' });
   }
   for (const rule of contract.rules) {
-    const widths = rule.widths || scope.widths, states = rule.states || scope.states;
-    for (const w of widths) for (const s of states) for (const m of scope.modes) {
+    const widths = rule.widths || scope.widths, states = rule.states || scope.states, modes = rule.modes || scope.modes;
+    for (const w of widths) for (const s of states) for (const m of modes) {
       const matches = accepted.filter(c => c.width === w && c.state === s && c.mode === m);
       let status = 'PASS';
       if (!matches.length) status = 'UNVERIFIED';
