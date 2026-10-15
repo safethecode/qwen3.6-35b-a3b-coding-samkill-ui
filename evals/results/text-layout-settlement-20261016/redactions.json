@@ -1,0 +1,16 @@
+{
+  "redactions": [
+    {
+      "path": "text-layout-settlement-green.log",
+      "originalSha256": "bdc667e153fa279f9ea6e07c7f1e57471596ba5103787fadf1eac1ea31088a73",
+      "publishedSha256": "9382de0f3598845240b1f3d3db06f3b6565784188e177788dd2eaa79a6a51622",
+      "reason": "Native reference imagepayload and/or private hostpath removed; original private bytes preserved; sanitized file is not an exact replayable inference request"
+    },
+    {
+      "path": "text-layout-settlement-red.log",
+      "originalSha256": "89fe8d5dc0a2fd1a4e3f220c97a1d3fbfebd9f9a3f91ad7eca46f44879724b99",
+      "publishedSha256": "f83fa52e30dad658eec014d159a566d0b94187e5df441ffc28c73679978e1cbb",
+      "reason": "Native reference imagepayload and/or private hostpath removed; original private bytes preserved; sanitized file is not an exact replayable inference request"
+    }
+  ]
+}

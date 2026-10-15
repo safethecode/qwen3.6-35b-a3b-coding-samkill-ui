@@ -1,0 +1,52 @@
+✖ stress capture waits for actual observer reflow and contains the settled last action (391.9881ms)
+✖ layout that keeps changing exhausts its bounded frame budget as unverified (366.4716ms)
+ℹ tests 2
+ℹ suites 0
+ℹ pass 0
+ℹ fail 2
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1081.8874
+
+✖ failing tests:
+
+test at test\text-layout-settlement.test.mjs:6:1
+✖ stress capture waits for actual observer reflow and contains the settled last action (391.9881ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  + actual - expected
+  
+  + undefined
+  - 'SETTLED'
+  
+      at file:///REPOSITORY/test/text-layout-settlement.test.mjs:14:14
+      at Module.inspectTextStress (file:///REPOSITORY/scripts/text-stress.mjs:100:13)
+      at async TestContext.<anonymous> (file:///REPOSITORY/test/text-layout-settlement.test.mjs:13:21)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: 'SETTLED',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at test\text-layout-settlement.test.mjs:24:1
+✖ layout that keeps changing exhausts its bounded frame budget as unverified (366.4716ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  + actual - expected
+  
+  + 'undefined'
+  - 'function'
+  
+      at TestContext.<anonymous> (file:///REPOSITORY/test/text-layout-settlement.test.mjs:28:12)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 'undefined',
+    expected: 'function',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

@@ -1,0 +1,10 @@
+✔ stress capture waits for actual observer reflow and contains the settled last action (691.1245ms)
+✔ layout that keeps changing exhausts its bounded frame budget as unverified (656.5294ms)
+ℹ tests 2
+ℹ suites 0
+ℹ pass 2
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1730.5366

@@ -1,0 +1,29 @@
+✖ stress capture waits for actual observer reflow and contains the settled last action (666.7292ms)
+✔ layout that keeps changing exhausts its bounded frame budget as unverified (660.2941ms)
+ℹ tests 2
+ℹ suites 0
+ℹ pass 1
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1643.7786
+
+✖ failing tests:
+
+test at test\text-layout-settlement.test.mjs:6:1
+✖ stress capture waits for actual observer reflow and contains the settled last action (666.7292ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  '' !== null
+  
+      at TestContext.<anonymous> (file:///REPOSITORY/test/text-layout-settlement.test.mjs:20:12)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: '',
+    expected: null,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

@@ -1,0 +1,61 @@
+{
+  "algorithm": "sha256",
+  "scope": "Exact published bytes; index excludes itself. Functional evidence does not establish visual approval.",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 26,
+      "sha256": "155348a89d5e749f50d336f8f164a39bf8415179177b36e8b51766f3ab9a16d3"
+    },
+    {
+      "path": "after-report.json",
+      "bytes": 1021280,
+      "sha256": "8856a7a3beb56dbe72e967cc35ff16aeac4bc121a707f97efdd0075a4565a053"
+    },
+    {
+      "path": "after-settled-capture.png",
+      "bytes": 68664,
+      "sha256": "7ecc5a6d88db7f45231f028f51b476e5a4ff511b94027b6ccc7c266e0ddcbc3d"
+    },
+    {
+      "path": "before-premature-capture.png",
+      "bytes": 65074,
+      "sha256": "f75d03126a66d9a098060dc4e37a3818b553fbdaa29ce007759fd4a4d86f5a5e"
+    },
+    {
+      "path": "before-report.json",
+      "bytes": 1019600,
+      "sha256": "fefa35be4385086e464ee223660617b9fb08376e84c9bb9f999e8055cd3cb12b"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1959,
+      "sha256": "22785b1f742a4b6f072674efc82c056d788756ac0db9c6a5811fd31ba54fad6d"
+    },
+    {
+      "path": "redactions.json",
+      "bytes": 868,
+      "sha256": "313f616ff494d8d5bb6b0bf1741a28ed1454bfd9f5de973cc06638cb3a502d7e"
+    },
+    {
+      "path": "text-layout-settlement-final.log",
+      "bytes": 318,
+      "sha256": "6e4d69e275ab97c84d5d1efb61989525051ebc975a4ae82d78c3d5c05fcaa64d"
+    },
+    {
+      "path": "text-layout-settlement-full-tests.log",
+      "bytes": 18440,
+      "sha256": "687200714e498a224c4414cd38d1a8788d51e3dcc17657a53f48beca9b725f37"
+    },
+    {
+      "path": "text-layout-settlement-green.log",
+      "bytes": 991,
+      "sha256": "9382de0f3598845240b1f3d3db06f3b6565784188e177788dd2eaa79a6a51622"
+    },
+    {
+      "path": "text-layout-settlement-red.log",
+      "bytes": 1902,
+      "sha256": "f83fa52e30dad658eec014d159a566d0b94187e5df441ffc28c73679978e1cbb"
+    }
+  ]
+}
