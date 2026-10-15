@@ -2,7 +2,7 @@ import { inferenceFetch, inferenceTimeout } from './inference-http.mjs';
 import { readFile, writeFile, mkdir } from 'node:fs/promises';
 import { resolve, sep } from 'node:path';
 import { pathToFileURL } from 'node:url';
-import { validateComponentPlan, validateComponent } from './component-plan.mjs';
+import { validateComponentPlan, validateComponent, validateViewportCss } from './component-plan.mjs';
 import { sourceBinding } from './source-binding.mjs';
 import { harnessBinding } from './harness-binding.mjs';
 import { inferenceOptions } from './inference-options.mjs';
@@ -53,6 +53,7 @@ export async function repairComponent(target, evidence, id, before, failure, opt
   }
   if (/<!--|\/\*/.test(after.html + after.css)) throw new Error('Comments are not allowed');
   validateComponent(element, after);
+  validateViewportCss(plan, after.css);
   await validateAssetReferences(target, { file: 'index.html' }, after.html);
   await validateAssetReferences(target, { file: 'styles.css' }, after.css);
   if (JSON.stringify(await sourceBinding(target)) !== JSON.stringify(sourceHashes) || JSON.stringify(await harnessBinding()) !== JSON.stringify(harnessHashes)) throw new Error('Source or harness changed during repair');

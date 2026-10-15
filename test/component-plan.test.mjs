@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { validateComponentPlan, validateComponent, assembleComponents, scopeComponentCss } from '../scripts/component-plan.mjs';
+import { validateComponentPlan, validateComponent, assembleComponents, scopeComponentCss, validateViewportCss } from '../scripts/component-plan.mjs';
 import { generateComponents } from '../scripts/generate-components.mjs';
 import { mkdtemp, mkdir, writeFile, readFile } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
@@ -9,6 +9,14 @@ import { join } from 'node:path';
 const plan = { shared: 'Preserve reference grouping.', sharedCss: '.frame{max-width:390px;margin:auto}', reference: { status: 'inspected', source: 'supplied reference' }, assembly: '<main class="frame">{{E1}}{{E2}}</main>', elements: [{ id: 'E1', prompt: 'Title', assets: [], sample: '<main class="frame">{{E1}}</main>' }, { id: 'E2', prompt: 'Search', assets: [], sample: '<main class="frame">{{E2}}</main>' }] };
 const title = { html: '<h1 data-ui-unit="E1">Title</h1>', css: '[data-ui-unit="E1"]{font-size:20px}' };
 const search = { html: '<div data-ui-unit="E2"><label for="search">Search</label><input id="search"></div>', css: '[data-ui-unit="E2"] input{min-width:0}' };
+
+test('mobile-only generation rejects unrequested desktop variants in shared and component CSS', () => {
+  const mobile = { ...plan, viewport: { mode: 'mobile-only', maxWidth: 390 } };
+  assert.doesNotThrow(() => validateViewportCss(mobile, '[data-ui-unit="E1"]{display:block}'));
+  assert.throws(() => validateViewportCss(mobile, '@media(min-width:701px){[data-ui-unit="E1"]{font-size:28px}}'), /mobile-only/);
+  assert.throws(() => validateComponentPlan({ ...mobile, sharedCss: '@media(min-width:701px){.frame{display:grid}}' }), /mobile-only/);
+  assert.doesNotThrow(() => validateViewportCss(plan, '@media(min-width:701px){.frame{display:grid}}'));
+});
 
 test('semantic slots assemble exactly the same validated component source used by samples', () => {
   validateComponentPlan(plan);

@@ -4,6 +4,14 @@ import { validateShellLabels } from './service-interface.mjs';
 
 const slots = template => [...template.matchAll(/\{\{([A-Za-z0-9_-]+)\}\}/g)].map(match => match[1]);
 
+export function validateViewportCss(plan, source) {
+  if (plan.viewport?.mode !== 'mobile-only') return;
+  if (!Number.isInteger(plan.viewport.maxWidth) || plan.viewport.maxWidth < 240 || plan.viewport.maxWidth > 600) throw new Error('Invalid mobile-only preview width');
+  postcss.parse(source).walkAtRules('media', rule => {
+    for (const match of rule.params.matchAll(/min-width\s*:\s*(\d+(?:\.\d+)?)px/g)) if (Number(match[1]) > plan.viewport.maxWidth) throw new Error(`Unrequested desktop variant violates mobile-only scope: ${rule.params}`);
+  });
+}
+
 export function scopeComponentCss(element, html, source) {
   const root = parseFragment(html).childNodes.find(node => node.tagName);
   const classes = (root?.attrs?.find(attr => attr.name === 'class')?.value || '').split(/\s+/).filter(Boolean);
@@ -35,6 +43,7 @@ export function validateComponentPlan(plan) {
     if (element.html !== undefined) validateComponent(element, { html: element.html, css: `[data-ui-unit="${element.id}"]{min-width:0}` });
   }
   postcss.parse(plan.sharedCss);
+  validateViewportCss(plan, plan.sharedCss);
   return plan;
 }
 

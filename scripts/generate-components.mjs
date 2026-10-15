@@ -3,7 +3,7 @@ import { access, mkdir, readFile, writeFile } from 'node:fs/promises';
 import { resolve, sep } from 'node:path';
 import { pathToFileURL } from 'node:url';
 import { createHash } from 'node:crypto';
-import { validateComponentPlan, validateComponent, assembleComponents, scopeComponentCss } from './component-plan.mjs';
+import { validateComponentPlan, validateComponent, assembleComponents, scopeComponentCss, validateViewportCss } from './component-plan.mjs';
 import { sourceBinding } from './source-binding.mjs';
 import { harnessBinding } from './harness-binding.mjs';
 import { localFontCss } from './local-font.mjs';
@@ -54,6 +54,7 @@ export async function generateComponents(target, evidence, options = {}) {
           request.format = { type: 'object', properties: { css: { type: 'string' } }, required: ['css'], additionalProperties: false };
         } else request.messages[1].content += `\nFINAL ELEMENT BOUNDARY\n${element.prompt}`;
         request.messages[0].content += ' Never use + or ~ selector combinators, including between descendants inside the component. For spacing between repeated groups, use a parent gap or :not(:first-child) instead. The validator rejects all sibling combinators, not only selectors that escape the root.';
+        request.messages[0].content += ` Platform contract: ${JSON.stringify(plan.viewport || { mode: 'unspecified' })}. A mobile-only screen keeps the same vertical mobile composition in a wide window. Do not introduce desktop-only layout or typography.`;
         request.messages[1].content = `APPLICABLE SOURCE GUIDES\n${guideContexts[element.id].text}\n\nDECLARED CROSS-COMPONENT RELATIONS\n${layoutContract ? JSON.stringify(layoutContract) : 'UNVERIFIED: no layout contract supplied. Do not invent missing screen purpose or claim complete decomposition.'}\nPreserve relations owned by the shared assembly; implement only this element. State-specific rules describe their named state, not all states simultaneously.\n\n${request.messages[1].content}`;
         const response = await (options.fetcher || inferenceFetch)(`${process.env.OLLAMA_URL || 'http://127.0.0.1:11434'}/api/chat`, { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify(request), signal: AbortSignal.timeout(requestTimeoutMs) });
         if (!response.ok) throw new Error(`Ollama HTTP ${response.status}`);
@@ -63,6 +64,7 @@ export async function generateComponents(target, evidence, options = {}) {
         const output = JSON.parse(result.message?.content || 'null');
         rejectedCode = JSON.stringify(output).slice(0, 16000);
         const clean = removeComments(element.html ?? output.html, output.css, '');
+        validateViewportCss(plan, clean.css);
         const component = validateComponent(element, { html: clean.html, css: scopeComponentCss(element, clean.html, clean.css) });
         await validateAssetReferences(target, { file: 'index.html' }, component.html);
         await validateAssetReferences(target, { file: 'styles.css' }, component.css);
