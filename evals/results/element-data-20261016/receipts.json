@@ -1,0 +1,35 @@
+{
+  "archivedAt": "2026-10-15T19:29:40.824Z",
+  "implementationCommit": "ff00c04",
+  "logs": [
+    {
+      "source": "Private original element-data-pointer-red.log",
+      "published": "pointer-red.log",
+      "originalSha256": "b855fb79b4426e235af5465f4829b0570248e123ea508197370c6205f5b22261",
+      "publishedSha256": "b4928c36b8222d65ba3c3d185e82c11a50e19aa09b768a551b72a373a9a1410e",
+      "processing": "Absolute local stack paths redacted when present; test outcome and failure text preserved."
+    },
+    {
+      "source": "Private original element-data-full-tests-final.log",
+      "published": "full-tests.log",
+      "originalSha256": "971b24acd6faf43bef1981ddc337f7f20b0263b6196ce4aca4e98e82a9bb2aeb",
+      "publishedSha256": "971b24acd6faf43bef1981ddc337f7f20b0263b6196ce4aca4e98e82a9bb2aeb",
+      "processing": "Absolute local stack paths redacted when present; test outcome and failure text preserved."
+    },
+    {
+      "source": "Private original component-data-context-red-v2.log",
+      "published": "data-context-red.log",
+      "originalSha256": "6c0cc69a8f2104db1bdc984ec3d474e2cb632a56d38c7be9e2417015eadd9796",
+      "publishedSha256": "9ccd31f73a80ef051d9ba068067a4c6afd1fcdef2f32b06d853cbe89920fffc6",
+      "processing": "Absolute local stack paths redacted when present; test outcome and failure text preserved."
+    },
+    {
+      "source": "Private original component-data-context-green.log",
+      "published": "initial-focused-green.log",
+      "originalSha256": "d685cb01f0077e41ecae19aa5cb0b4028350071bc8a301ced1b5b006e033a142",
+      "publishedSha256": "d685cb01f0077e41ecae19aa5cb0b4028350071bc8a301ced1b5b006e033a142",
+      "processing": "Absolute local stack paths redacted when present; test outcome and failure text preserved."
+    }
+  ],
+  "limitation": "Log archive hashes recorded at archive time; these are not invented original execution-time source bindings. Feature files were tested before the verified implementation commit. No UI reference/commercial quality or independent skill-pressure pass claimed."
+}

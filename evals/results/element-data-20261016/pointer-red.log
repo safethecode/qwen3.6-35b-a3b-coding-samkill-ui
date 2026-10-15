@@ -1,0 +1,33 @@
+Generating component room, attempt 1
+✔ generation receives selected actual record fields and binds their source bytes (61.2307ms)
+✔ missing data pointer rejects generation before any inference instead of inventing a shape (4.5925ms)
+✖ array pointers accept only canonical indices while object keys retain their literal names (10.8041ms)
+✔ data context cannot read outside target or accept duplicate ownership IDs (8.1298ms)
+Generating component room, attempt 1
+✔ JSON pointer escaping retains literal field ownership (34.2889ms)
+Generating component room, attempt 1
+✔ a data file outside the default design inventory cannot change during inference unnoticed (17.8584ms)
+ℹ tests 6
+ℹ suites 0
+ℹ pass 5
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 497.7337
+
+✖ failing tests:
+
+test at test\component-data-context.test.mjs:46:1
+✖ array pointers accept only canonical indices while object keys retain their literal names (10.8041ms)
+  AssertionError [ERR_ASSERTION]: Missing expected rejection.
+      at async TestContext.<anonymous> (file:PRIVATE_LOCAL_STACK)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: /pointer/i,
+    operator: 'rejects',
+    diff: 'simple'
+  }

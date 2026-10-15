@@ -1,0 +1,93 @@
+Generating component room, attempt 1
+Generating component room, attempt 2
+✖ generation receives selected actual record fields and binds their source bytes (36.0664ms)
+Generating component room, attempt 1
+✖ missing data pointer rejects generation before any inference instead of inventing a shape (39.7791ms)
+Generating component room, attempt 1
+✖ data context cannot read outside target or accept duplicate ownership IDs (32.9682ms)
+Generating component room, attempt 1
+✖ JSON pointer escaping retains literal field ownership (34.5152ms)
+Generating component room, attempt 1
+✖ a data file outside the default design inventory cannot change during inference unnoticed (50.6ms)
+ℹ tests 5
+ℹ suites 0
+ℹ pass 0
+ℹ fail 5
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 565.8512
+
+✖ failing tests:
+
+test at test\component-data-context.test.mjs:20:1
+✖ generation receives selected actual record fields and binds their source bytes (36.0664ms)
+  AssertionError [ERR_ASSERTION]: Actual rate.id must reach the model
+      at fetcher (file:PRIVATE_LOCAL_STACK)
+      at generateComponents (file:PRIVATE_LOCAL_STACK)
+      at async TestContext.<anonymous> (file:PRIVATE_LOCAL_STACK)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at test\component-data-context.test.mjs:38:1
+✖ missing data pointer rejects generation before any inference instead of inventing a shape (39.7791ms)
+  AssertionError [ERR_ASSERTION]: Missing expected rejection.
+      at async TestContext.<anonymous> (file:PRIVATE_LOCAL_STACK)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: /data|pointer/i,
+    operator: 'rejects',
+    diff: 'simple'
+  }
+
+test at test\component-data-context.test.mjs:45:1
+✖ data context cannot read outside target or accept duplicate ownership IDs (32.9682ms)
+  AssertionError [ERR_ASSERTION]: Missing expected rejection.
+      at async TestContext.<anonymous> (file:PRIVATE_LOCAL_STACK)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: /data|source|duplicate|path/i,
+    operator: 'rejects',
+    diff: 'simple'
+  }
+
+test at test\component-data-context.test.mjs:54:1
+✖ JSON pointer escaping retains literal field ownership (34.5152ms)
+  AssertionError [ERR_ASSERTION]: Delivered data identity must be retained
+      at TestContext.<anonymous> (file:PRIVATE_LOCAL_STACK)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at test\component-data-context.test.mjs:62:1
+✖ a data file outside the default design inventory cannot change during inference unnoticed (50.6ms)
+  AssertionError [ERR_ASSERTION]: Missing expected rejection.
+      at async TestContext.<anonymous> (file:PRIVATE_LOCAL_STACK)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: /data.*changed|changed.*data/i,
+    operator: 'rejects',
+    diff: 'simple'
+  }

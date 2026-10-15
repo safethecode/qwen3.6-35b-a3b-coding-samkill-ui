@@ -1,0 +1,219 @@
+
+> qwen3-samkill-ui@0.1.0 test
+> node --test test/*.test.mjs
+
+✔ invented fonts and image data fail before dependent generation stages (43.8189ms)
+✔ missing asset errors identify only unambiguous supplied filename matches (22.8986ms)
+✔ asset suggestions retain actual filename case and reject ambiguous case variants (20.1981ms)
+✔ catalog approval cannot omit actual styles or a bundled guide (78.3928ms)
+✔ full catalog plans preserve unknowns and existing observations rather than minting passes (165.0958ms)
+✔ embedded CSS comments are removed without changing compound selectors or strings (8.0494ms)
+✔ comment detection preserves comment-like text inside strings (6.8532ms)
+✔ comment removal preserves strings, tokens and JavaScript line breaks (2.7798ms)
+Generating component room, attempt 1
+✔ generation receives selected actual record fields and binds their source bytes (1046.8348ms)
+✔ missing data pointer rejects generation before any inference instead of inventing a shape (62.6521ms)
+✔ array pointers accept only canonical indices while object keys retain their literal names (36.4176ms)
+✔ data context cannot read outside target or accept duplicate ownership IDs (100.9978ms)
+Generating component room, attempt 1
+✔ JSON pointer escaping retains literal field ownership (177.1326ms)
+Generating component room, attempt 1
+✔ a data file outside the default design inventory cannot change during inference unnoticed (51.8868ms)
+✔ mobile-only generation rejects unrequested desktop variants in shared and component CSS (6.0664ms)
+✔ semantic slots assemble exactly the same validated component source used by samples (9.0336ms)
+✔ component boundaries reject global style, hidden labels, scripts and undeclared media (2.1814ms)
+✔ host selector scoping preserves component roots and children without document escapes (4.8476ms)
+Generating component E1, attempt 1
+Generating component E2, attempt 1
+Generating component E2, attempt 2
+Generating component E2, attempt 1
+✔ component generation resumes fixed element outputs and rejects changed decomposition (1290.3155ms)
+✔ bounded component repair reuses HTML across sample and assembly without touching behavior (356.3997ms)
+✔ invalid scope and stale source are rejected before any repair writes (1184.4926ms)
+✔ component repairs deliver applicable guide text and preserve source hashes (275.169ms)
+✔ component repair forwards valid role metrics and rejects invalid intent before inference (133.6555ms)
+✔ a CSS fragment boundary protects unchanged rules in the same semantic component (109.9772ms)
+✔ scope maps distinguish the attribute owner from actual descendant classes and IDs (6.1261ms)
+✔ unknown markup is explicit and a mismatched fixed owner is rejected (2.1439ms)
+✔ scope context accepts every valid component ID shape without narrowing plan compatibility (1.0283ms)
+✔ the real generation and repair context carries grounded scope data alongside complete guide text (9.9028ms)
+✔ computed roles catch dropped custom properties and ignored declarations after real CSS parsing (1627.4793ms)
+✔ computed contract rejects absent,ambiguous,hidden and invalid property evidence (751.9498ms)
+✔ split JavaScript cannot silently render into nonexistent shell containers (15.3722ms)
+✔ message moves between contexts without simultaneous visible alerts (1.8976ms)
+✔ empty message hides both contexts and clears stale content (0.2941ms)
+✔ repeating a stable message produces no writes (0.3013ms)
+✔ invalid context, message or duplicate key cannot mutate existing state (1.4263ms)
+✔ repair scheduling prioritizes broken execution and rotates away from stalled checks (1.0285ms)
+✔ rotating from stalled behavior to layout drops unrelated retry context and broad file scope (1.0098ms)
+✔ generated source must be complete, match its assigned file and parse before saving (4.6137ms)
+✔ browser runtime code joins the immutable execution binding (128.8477ms)
+✔ explicit icon paint variants preserve official geometry and reject tampered paint (64.8938ms)
+✔ official asset export verifies geometry and licensing and preserves existing directories (56.2563ms)
+✔ inference transport waits for delayed headers and the complete chunked JSON body (119.4794ms)
+✔ explicit timeout aborts both a waiting response and an incomplete body (115.353ms)
+✔ HTTP failures, invalid JSON and disconnected responses cannot become success (28.7274ms)
+✔ inference transport requires a caller cancellation signal and HTTP protocol (2.9318ms)
+✔ inference deadlines default to ten minutes and overrides remain bounded (0.5561ms)
+✔ resource overrides are optional, explicit and bounded (1.685ms)
+✔ real state captures resolve pending coverage only after every state and retain failed editing geometry (1521.5507ms)
+✔ first-line control contract rejects controls centered in a tall wrapped row (748.8157ms)
+✔ first-line control inspection cannot pass with no visible rows or unvisited states (502.3672ms)
+✔ primary action must occupy the remainder of its two-control row (568.4483ms)
+✔ mobile-only preview rejects expansion on a desktop viewport (460.6713ms)
+✔ declared surfaces, navigation and state hierarchy reject the flattened detail regression (609.5569ms)
+✔ sameRow rejects stacked actions and invisible subjects (530.0756ms)
+✔ sample width gate checks assembled width and inset against the actual sample (657.4619ms)
+✔ layout contracts reject misplaced actions, crowded rows and duplicate owned content (496.9486ms)
+✔ every declared state, requested width and text mode needs a matching capture (4.0646ms)
+✔ a real failed observation survives later passing captures and pending notices (0.8756ms)
+✔ changed contracts, duplicate or absent rule results and invalid scopes cannot pass (1.1962ms)
+✔ explicit matrix cells are required even if all rules have narrower applicability (0.3247ms)
+✔ invalid scope or contract cannot discard a reported failed observation (0.2887ms)
+✔ provided falsy rule scopes and malformed receipts cannot masquerade as unscoped observations (0.5453ms)
+Generating service unit shell, attempt 1
+Generating service unit state, attempt 1
+Generating service unit behavior, attempt 1
+Generating service unit forms, attempt 1
+Generating service unit layout, attempt 1
+Generating service unit responsive, attempt 1
+✔ font preparation derives custom platform identity before generation and binds the supplied bytes (2258.8217ms)
+✔ a matching system family cannot satisfy a file-delivery role (557.8986ms)
+✔ loaded image with a positive box still fails when inset removes all paint (1284.6316ms)
+✔ passing evaluation cannot accept a concurrently changed source snapshot (2.5094ms)
+✔ failed requests that never wrote source preserve edits made during inference (1.713ms)
+✔ rollback only restores source still owned by the rejected candidate (0.3214ms)
+✔ patches reject no-ops, ambiguous matches and escaping targets without mutation (2.0817ms)
+✔ consistent nested replacement contexts are merged without weakening exact matching (0.6005ms)
+EOF received✔ noninteractive children receive EOF and their output is retained (187.509ms)
+{"ok":false}✔ failed child diagnostics are retained separately from structured stdout (154.9827ms)
+fixture failure
+✔ repairs cannot trade a previously passing behavior for another pass (1.8426ms)
+✔ repair timeouts consume the bounded retry budget without claiming completion (3.0109ms)
+✔ a passing first review cannot finish when independent confirmation fails (0.3997ms)
+✔ regressing candidates roll back, stalls escalate and two independent passing views complete (1.4386ms)
+✔ inspection errors restore applied edits and stale confirmation never completes (0.4473ms)
+✔ a rejected audit cannot lower the regression baseline for subsequent repairs (0.5019ms)
+✔ invalid model patches are bounded retries, not successful repairs or unhandled errors (0.4495ms)
+✔ completion requires every criterion, adequate confidence and no unresolved issues (1.8306ms)
+✔ visual progress rejects tradeoffs and stalls switch from patches to complete affected files (0.8448ms)
+✔ reading width takes precedence over first-line support alignment only when inline space is insufficient (1314.6375ms)
+✔ flow cannot pass through hidden, undersized, overlapping or detached actions (834.7191ms)
+✔ flow requires actual visible rows and explicit valid reading and target dimensions (794.9176ms)
+✔ unused body space or transformed text cannot lower the independently declared reading requirement (628.1758ms)
+✔ native checkbox margins participate in both the independent allowance and the preferred wrap basis (481.8886ms)
+✔ reference assets retain bytes and provenance without copying implementation or private paths (45.8815ms)
+Applied 1 validated patches from mock
+✔ a JavaScript repair sees the existing DOM and CSS while retaining its write scope (45.9459ms)
+✔ syntactically broken patches are rejected before changing application files (15.7654ms)
+Applied 1 validated file replacements from mock
+✔ quality escalation explicitly requests validated complete affected files (65.8484ms)
+✔ bounded repair overrides full-file escalation and rejects invalid source atomically (89.0107ms)
+✔ ordinary typography repairs never cut a declaration at the source window boundary (21.379ms)
+✔ ordinary CSS units retain related inherited typography and repair retry context (2.7718ms)
+✔ reflow repair selects a complete active narrow grid rule with its media context (2.3394ms)
+✔ grid rule units preserve original indentation for exact whole-rule patches (15.2462ms)
+✔ repair units bound source, rotate stalled work and preserve exact source substrings (15.3255ms)
+✔ JavaScript repair excerpts preserve complete statements instead of cutting identifiers (9.1149ms)
+✔ unit repairs reject writes outside the selected source window or file (0.2865ms)
+✔ markup repair can inspect the renderer without gaining permission to rewrite it (0.993ms)
+✔ form and search repairs include both markup and behavior; stalled repairs broaden scope (2.3893ms)
+✔ a coherent repair can update markup and behavior atomically (1.8605ms)
+✔ repair context contains current source, excludes rejected code and ends with the actual task (5.277ms)
+✔ complete-file fallback validates every source before any mutation (5.8024ms)
+✔ one icon approval cannot resolve fonts or contrast sharing its evidence file (2.3821ms)
+✔ a new run cannot reuse a stale passing report after evaluator failure (24.5337ms)
+✔ sampling supports explicit reproducible temperatures and rejects invalid values (2.6338ms)
+Generating service unit shell, attempt 1
+Generating service unit state, attempt 1
+Generating service unit state, attempt 2
+Generating service unit state, attempt 1
+Generating service unit behavior, attempt 1
+Generating service unit forms, attempt 1
+Generating service unit layout, attempt 1
+Generating service unit responsive, attempt 1
+✔ interrupted service generation resumes only unchanged, validated completed stages (270.1822ms)
+✔ changed contracts invalidate resumable generation checkpoints (36.9218ms)
+Generating service unit shell, attempt 1
+Generating service unit shell, attempt 2
+Generating service unit state, attempt 1
+Generating service unit state, attempt 2
+✔ missing field labels are repaired in the shell before any implementation unit (46.3548ms)
+Generating service unit shell, attempt 1
+Generating service unit shell, attempt 2
+Generating service unit state, attempt 1
+Generating service unit state, attempt 2
+✔ interface retry receives rejected source and the exact error (30.726ms)
+Generating service unit shell, attempt 1
+Generating service unit state, attempt 1
+Generating service unit layout, attempt 1
+Generating service unit layout, attempt 2
+✔ static translation stages do not request product behavior and cannot resume as an interactive flow (69.1805ms)
+Generating service unit shell, attempt 1
+Generating service unit state, attempt 1
+Generating service unit layout, attempt 1
+Generating service unit responsive, attempt 1
+✔ static lifecycle calls the renderer and disables sample actions without asking the model for forms (85.6374ms)
+Generating service unit shell, attempt 1
+Generating service unit state, attempt 1
+Generating service unit state, attempt 2
+Generating service unit layout, attempt 1
+Generating service unit layout, attempt 2
+✔ JavaScript retries name the required language and do not repeat the HTML construction checklist (30.983ms)
+Generating service unit shell, attempt 1
+Generating service unit state, attempt 1
+Generating service unit layout, attempt 1
+Generating service unit responsive, attempt 1
+Generating service unit shell, attempt 1
+Generating service unit state, attempt 1
+Generating service unit layout, attempt 1
+Generating service unit responsive, attempt 1
+✔ contract typography normalization is explicit and preserves model output evidence (370.8168ms)
+✔ generic services do not inherit resume storage and paper contracts (1.9783ms)
+✔ malformed option closing tags cannot silently discard a booking time (6.191ms)
+✔ stage boundary rejects renamed fields, wrong element types and duplicate IDs (1.2759ms)
+✔ generation rejects placeholder-only fields before later units build on the shell (2.1516ms)
+✔ measured reductions preserve useful partial repairs without declaring a failing check passed (1.2603ms)
+✔ small repairs can remain staged until the whole failing check improves (0.3695ms)
+✔ a new passing check cannot hide worse typography or lost required content (0.2753ms)
+✔ old results cannot be attributed to changed evaluator or fixture hashes (2.0967ms)
+✔ completed generation with a transient evaluation failure resumes evaluation only (0.4178ms)
+✔ study resume rejects changed sampling settings (0.2905ms)
+✔ changed source cannot receive a report bound to its previous hash (2.2956ms)
+✔ service work is split into independently parsed pieces and assembled without rewriting prior stages (11.6033ms)
+✔ static lifecycle requires a callable renderer and preserves its checkpoint bootstrap (2.4953ms)
+✔ installation preserves model, MCP and other agents and refuses duplicate replacement (1066.5255ms)
+✔ JSONC is left untouched (80.053ms)
+✔ component styling receives complete applicable guides with source hashes (32.4282ms)
+✔ direct model stages receive the linked local decomposition guide as source-bound text (8.2078ms)
+✔ all active catalog rules remain available and stage prompts carry original font and icon rules (399.3247ms)
+✔ thin snapshots restore exact source bytes and preserve an existing destination (464.752ms)
+✔ snapshot corruption and path escape fail before destination creation (169.564ms)
+✔ a linked design parent cannot redirect snapshot overlays into original data (142.8921ms)
+✔ font and icon asset edits invalidate the quality source binding (96.8144ms)
+✔ extra local styles scripts and fonts are bound outside assets (40.3887ms)
+✔ new evaluation output does not invalidate unchanged application sources (343.9987ms)
+✔ spacing audit distinguishes hard off-grid values from structural review notes (1.8725ms)
+✔ icon gaps, existing tokens and unresolved roles preserve upstream distinctions (0.3466ms)
+✔ source audit covers responsive spacing and does not exempt newly named arbitrary tokens (6.3428ms)
+✔ calculated spacing remains unresolved instead of treating a term as a fixed off-grid gap (0.3861ms)
+✔ a failed repair process restores the previously accepted source (264.8012ms)
+Generating service unit shell, attempt 1
+Generating service unit state, attempt 1
+Generating service unit state, attempt 2
+✔ generation forwards predeclared font roles and refuses resume after typography intent changes (86.3077ms)
+✔ malformed role metrics are rejected before service inference (37.3409ms)
+✔ invalid predeclared font roles fail before inference (7.935ms)
+✔ typography normalization clamps used font tokens without changing unrelated numbers (14.7815ms)
+✔ control defaults precede explicit control typography (0.8673ms)
+✔ font correction does not enlarge spacing through a shared token (0.8711ms)
+✔ vision review uses ordered images and no writer history; truncated or missing evidence fails closed (37.6998ms)
+✔ repair receives actual visible actions alongside the expected failing action (1.4365ms)
+ℹ tests 151
+ℹ suites 0
+ℹ pass 151
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 6988.4877

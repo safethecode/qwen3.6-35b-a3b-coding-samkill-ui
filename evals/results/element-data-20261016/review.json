@@ -1,0 +1,14 @@
+{
+  "basis": "Independent read-only code review returned in this work session, followed by primary-agent red/green fix.",
+  "initialFocusedTests": "10/10 passed before additional pointer regression",
+  "finding": {
+    "severity": "P2",
+    "defect": "Object.hasOwn(array,\"length\") accepted synthetic non-JSON array data",
+    "reproduced": "failure-catalog.json /rules/length returned75",
+    "fix": "Array traversal requires a canonical nonnegative numeric index; object keys length/01/- remain literal valid members.",
+    "regression": "pointer-red.log preserves expected missing rejection; full-tests.log includes the new passing regression."
+  },
+  "finalPrimaryVerification": "151/151 npm test, Chrome path explicitly configured; no skipped or cancelled tests.",
+  "noOtherMaterialFindings": true,
+  "limits": "Reviewer did not independently rerun the final151-test suite or certify UI appearance."
+}

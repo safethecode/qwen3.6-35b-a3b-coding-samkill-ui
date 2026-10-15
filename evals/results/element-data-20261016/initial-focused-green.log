@@ -1,0 +1,28 @@
+Generating component room, attempt 1
+✔ generation receives selected actual record fields and binds their source bytes (69.4573ms)
+✔ missing data pointer rejects generation before any inference instead of inventing a shape (5.4865ms)
+✔ data context cannot read outside target or accept duplicate ownership IDs (14.344ms)
+Generating component room, attempt 1
+✔ JSON pointer escaping retains literal field ownership (43.5755ms)
+Generating component room, attempt 1
+✔ a data file outside the default design inventory cannot change during inference unnoticed (20.2181ms)
+✔ mobile-only generation rejects unrequested desktop variants in shared and component CSS (2.932ms)
+✔ semantic slots assemble exactly the same validated component source used by samples (5.1507ms)
+✔ component boundaries reject global style, hidden labels, scripts and undeclared media (1.3992ms)
+✔ host selector scoping preserves component roots and children without document escapes (1.5197ms)
+Generating component E1, attempt 1
+Generating component E2, attempt 1
+Generating component E2, attempt 2
+Generating component E2, attempt 1
+✔ component generation resumes fixed element outputs and rejects changed decomposition (119.4319ms)
+✔ component styling receives complete applicable guides with source hashes (6.0309ms)
+✔ direct model stages receive the linked local decomposition guide as source-bound text (4.3095ms)
+✔ all active catalog rules remain available and stage prompts carry original font and icon rules (16.7483ms)
+ℹ tests 13
+ℹ suites 0
+ℹ pass 13
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 523.7572
