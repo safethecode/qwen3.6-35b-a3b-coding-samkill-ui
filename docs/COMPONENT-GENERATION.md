@@ -34,8 +34,6 @@ This is a reusable repair primitive, not an automatic visual defect selector or 
 
 Repair requests also receive the complete applicable decomposition, typography, guardrail, mobile and spacing guides; SVG-bearing components receive icon guidance too. The request record retains their source hashes. This is the same guide routing as generation, not proof of compliance. Keep diagnosis and the writable region bounded even when the applicable guides are supplied.
 
-## Long-running local inference
-
 ## Prescribed computed CSS roles
 
 For a property already fixed by the design contract, a layout rule may use `kind: "computedStyle"`, one visible `subject` selector and a `properties` object of canonical browser-computed strings, such as `{ "border-radius": "24px", "flex-wrap": "wrap" }`. Choose the expectations before generation or repair and scope them by the existing `states` and `widths` fields when needed. The inspector rejects unsupported property/value pairs and mismatched computed values after inheritance, custom-property resolution and the cascade. It requires exactly one visible subject; an absent or ambiguous selector cannot pass. Values such as colors must use their canonical computed serialization. These checks supplement geometry, stress and direct reference review; they do not approve appearance or diagnose whether a mismatch comes from the host contract, native control or model.
