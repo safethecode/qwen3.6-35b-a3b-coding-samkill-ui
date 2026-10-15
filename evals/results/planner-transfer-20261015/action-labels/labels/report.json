@@ -1,0 +1,89 @@
+{
+  "status": "SCOPED_VISIBLE_ACTION_LABELS_ONLY",
+  "sourceHashes": {
+    "index.html": "f66c1447eab47c59cb642527fb934a7717551d4429d104d3d33874f0897bac1c",
+    "styles.css": "c46d44b7594548c6e28f64a87d379af1581a67e940c85f990a21f9d4c84eb516",
+    "app.js": "2daa04f05fc76c4c901607e0a06dbfc45b9aba51a7734e8575e3f3fde15706de",
+    "DESIGN.md": "01554d209ba008b7b3c6182a4614e77359927c3811404acfad29ed9953aca78b",
+    "REFERENCE.md": "9f04811d7f04c3d0ae81da3cf35c30457499108f6a3e7df93c9ab9b872a9078c",
+    "assets/fonts/METADATA.pb": "9b8b27c0dd1adbb0057d1fbe9534207ab3606114ace6755453d14668912471a1",
+    "assets/fonts/NotoSansKR.ttf": "194018e6b2b293a7964f037b25c0249ce1418bc9ab3c971060a03aa57861e252",
+    "assets/fonts/OFL.txt": "1c05c68c34f9708415aada51f17e1b0092d2cea709bf4a94cd38114f9e73d7d9",
+    "assets/icons/LICENSE": "b495047bd93a9b06913511076f504daba17d5bbeb3e0650f3bb53a4220329c57",
+    "assets/icons/Plus.svg": "3d4f93d0e5a8eb932e4d1f0d71122d01917e7624439adc35dddcd5352d7a228f",
+    "assets/icons/Trash2-neutral.svg": "4e249e5c0f31edddd39895daffe23cf7bc80d405fb1a1f21749683d391de419a",
+    "assets/icons/X.svg": "f27abfc353abc2497a1d9752e21e2e2e32eeeb4271401f2a067c4d1fcced7a23",
+    "assets/icons/manifest.json": "9edbf06ed93bfae58ae18083d15f36a7bbada2a99e7fd8156667b865c7d42ee2",
+    "design/typography.json": "534c3deed77d20d1d9839d0eceda9925e0cdb26b2f632ba652d29bb5e1909cee",
+    "design/component-plan.json": "294338b96eb371258a3b4213e99e914ca8f6546159ad7fb2e4e6c14ff27f2f19",
+    "design/layout-contract.json": "9ee84432ec65ec95f593887fe8a7bd4479dde09a7e91df25b35199204420d3cc",
+    "render.js": "c79a79d230aadde3e5e89bf8a3e5c4b55c1a10f19a259062802c65d3773c67e5",
+    "sample-editor.html": "6986f9ac088f35c49edd8bce742b4fb33dd43c64d2f6bbe003e7b7e2edf117ef",
+    "sample-tasks.html": "30e9ac90bd73754e82db4424df60366bb429d13c84c5af65a83df94cbbc272de",
+    "sample-week.html": "bc2a5478593a394f124d388ae299191f89f0f7a1781e745f3de21567f2a6c3f8",
+    "store.js": "2300e692f886294a8d328b7d3f72fdac9c72b57eac8c6d2c79d95fd9bd25f0ce"
+  },
+  "checks": [
+    {
+      "width": 296,
+      "mode": "normal",
+      "status": "PASS"
+    },
+    {
+      "width": 296,
+      "mode": "text-200",
+      "status": "PASS"
+    },
+    {
+      "width": 296,
+      "mode": "text-spacing",
+      "status": "PASS"
+    },
+    {
+      "width": 320,
+      "mode": "normal",
+      "status": "PASS"
+    },
+    {
+      "width": 320,
+      "mode": "text-200",
+      "status": "PASS"
+    },
+    {
+      "width": 320,
+      "mode": "text-spacing",
+      "status": "PASS"
+    },
+    {
+      "width": 390,
+      "mode": "normal",
+      "status": "PASS"
+    },
+    {
+      "width": 390,
+      "mode": "text-200",
+      "status": "PASS"
+    },
+    {
+      "width": 390,
+      "mode": "text-spacing",
+      "status": "PASS"
+    },
+    {
+      "width": 1440,
+      "mode": "normal",
+      "status": "PASS"
+    },
+    {
+      "width": 1440,
+      "mode": "text-200",
+      "status": "PASS"
+    },
+    {
+      "width": 1440,
+      "mode": "text-spacing",
+      "status": "PASS"
+    }
+  ],
+  "limitation": "Visible action strings, matching accessible names, computed typography and targets only; whole-design quality, clipping, icon semantics and state recovery require their separate evidence."
+}

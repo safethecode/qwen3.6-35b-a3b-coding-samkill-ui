@@ -1,0 +1,2488 @@
+{
+  "schema_version": 1,
+  "results": [
+    {
+      "id": "ORC-F01",
+      "status": "not-applicable",
+      "reason": "No sidebar: a single bounded mobile canvas and one native dialog.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/review.md",
+          "sha256": "2bf6aea4482161f7f5dbb8e70075117ef6f9f76903c58591332c627ed8d87863"
+        }
+      ]
+    },
+    {
+      "id": "ORC-F02",
+      "status": "not-applicable",
+      "reason": "No sidebar or sidebar-only accent region.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/review.md",
+          "sha256": "2bf6aea4482161f7f5dbb8e70075117ef6f9f76903c58591332c627ed8d87863"
+        }
+      ]
+    },
+    {
+      "id": "ORC-F03",
+      "status": "pass",
+      "reason": "Dark primary action and selected day use white>=600 text; direct normal/form screenshots and CSS inspected.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/review.md",
+          "sha256": "2bf6aea4482161f7f5dbb8e70075117ef6f9f76903c58591332c627ed8d87863"
+        },
+        {
+          "kind": "code",
+          "path": "index.html",
+          "sha256": "aba6b6fc457f61e67f3a30b9aec3550be1832bba913e3c1b2b5b99bc79741369"
+        },
+        {
+          "kind": "code",
+          "path": "styles.css",
+          "sha256": "a6227a38ed9e94fe65b65b51f1cd02c1dc50528b3baa02d00e53afccbf6a4229"
+        },
+        {
+          "kind": "code",
+          "path": "app.js",
+          "sha256": "2daa04f05fc76c4c901607e0a06dbfc45b9aba51a7734e8575e3f3fde15706de"
+        },
+        {
+          "kind": "code",
+          "path": "render.js",
+          "sha256": "c79a79d230aadde3e5e89bf8a3e5c4b55c1a10f19a259062802c65d3773c67e5"
+        },
+        {
+          "kind": "code",
+          "path": "store.js",
+          "sha256": "2300e692f886294a8d328b7d3f72fdac9c72b57eac8c6d2c79d95fd9bd25f0ce"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/390-filled.png",
+          "sha256": "73e70f97822362f0afb9b5556a009351d73097ac52c8c45f92c180b99f875e0f"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/296-long-text-200.png",
+          "sha256": "b57c109188ceda491dfeaa85a78530c7775ce8d27467837fb16e83111286a3f6"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/296-form-text-200.png",
+          "sha256": "143dca5493935b54c01f44220b960a624cda3b072514b8dcd33b0eb96deb2a52"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/read-failed-form.png",
+          "sha256": "4209579202f13d16028e738d1e6635b0a19ceeb7b8e21ff29e6d928905e5ece0"
+        }
+      ]
+    },
+    {
+      "id": "ORC-F04",
+      "status": "pass",
+      "reason": "Each category has one scoped add opener, the dialog has one submit action; their targets/states differ.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/review.md",
+          "sha256": "2bf6aea4482161f7f5dbb8e70075117ef6f9f76903c58591332c627ed8d87863"
+        },
+        {
+          "kind": "code",
+          "path": "index.html",
+          "sha256": "aba6b6fc457f61e67f3a30b9aec3550be1832bba913e3c1b2b5b99bc79741369"
+        },
+        {
+          "kind": "code",
+          "path": "styles.css",
+          "sha256": "a6227a38ed9e94fe65b65b51f1cd02c1dc50528b3baa02d00e53afccbf6a4229"
+        },
+        {
+          "kind": "code",
+          "path": "app.js",
+          "sha256": "2daa04f05fc76c4c901607e0a06dbfc45b9aba51a7734e8575e3f3fde15706de"
+        },
+        {
+          "kind": "code",
+          "path": "render.js",
+          "sha256": "c79a79d230aadde3e5e89bf8a3e5c4b55c1a10f19a259062802c65d3773c67e5"
+        },
+        {
+          "kind": "code",
+          "path": "store.js",
+          "sha256": "2300e692f886294a8d328b7d3f72fdac9c72b57eac8c6d2c79d95fd9bd25f0ce"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/390-filled.png",
+          "sha256": "73e70f97822362f0afb9b5556a009351d73097ac52c8c45f92c180b99f875e0f"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/296-long-text-200.png",
+          "sha256": "b57c109188ceda491dfeaa85a78530c7775ce8d27467837fb16e83111286a3f6"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/296-form-text-200.png",
+          "sha256": "143dca5493935b54c01f44220b960a624cda3b072514b8dcd33b0eb96deb2a52"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/read-failed-form.png",
+          "sha256": "4209579202f13d16028e738d1e6635b0a19ceeb7b8e21ff29e6d928905e5ece0"
+        }
+      ]
+    },
+    {
+      "id": "ORC-F05",
+      "status": "not-applicable",
+      "reason": "Simple title/completion checklists, no visual card grid or three-attribute tabular record view.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/review.md",
+          "sha256": "2bf6aea4482161f7f5dbb8e70075117ef6f9f76903c58591332c627ed8d87863"
+        }
+      ]
+    },
+    {
+      "id": "ORC-F06",
+      "status": "pass",
+      "reason": "Red appears only for errors; selected/completed states remain neutral.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/review.md",
+          "sha256": "2bf6aea4482161f7f5dbb8e70075117ef6f9f76903c58591332c627ed8d87863"
+        },
+        {
+          "kind": "code",
+          "path": "index.html",
+          "sha256": "aba6b6fc457f61e67f3a30b9aec3550be1832bba913e3c1b2b5b99bc79741369"
+        },
+        {
+          "kind": "code",
+          "path": "styles.css",
+          "sha256": "a6227a38ed9e94fe65b65b51f1cd02c1dc50528b3baa02d00e53afccbf6a4229"
+        },
+        {
+          "kind": "code",
+          "path": "app.js",
+          "sha256": "2daa04f05fc76c4c901607e0a06dbfc45b9aba51a7734e8575e3f3fde15706de"
+        },
+        {
+          "kind": "code",
+          "path": "render.js",
+          "sha256": "c79a79d230aadde3e5e89bf8a3e5c4b55c1a10f19a259062802c65d3773c67e5"
+        },
+        {
+          "kind": "code",
+          "path": "store.js",
+          "sha256": "2300e692f886294a8d328b7d3f72fdac9c72b57eac8c6d2c79d95fd9bd25f0ce"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/390-filled.png",
+          "sha256": "73e70f97822362f0afb9b5556a009351d73097ac52c8c45f92c180b99f875e0f"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/296-long-text-200.png",
+          "sha256": "b57c109188ceda491dfeaa85a78530c7775ce8d27467837fb16e83111286a3f6"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/296-form-text-200.png",
+          "sha256": "143dca5493935b54c01f44220b960a624cda3b072514b8dcd33b0eb96deb2a52"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/read-failed-form.png",
+          "sha256": "4209579202f13d16028e738d1e6635b0a19ceeb7b8e21ff29e6d928905e5ece0"
+        }
+      ]
+    },
+    {
+      "id": "ORC-F07",
+      "status": "pass",
+      "reason": "Main/form purpose headings22px, not landing-sized32–40px.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/review.md",
+          "sha256": "2bf6aea4482161f7f5dbb8e70075117ef6f9f76903c58591332c627ed8d87863"
+        },
+        {
+          "kind": "code",
+          "path": "index.html",
+          "sha256": "aba6b6fc457f61e67f3a30b9aec3550be1832bba913e3c1b2b5b99bc79741369"
+        },
+        {
+          "kind": "code",
+          "path": "styles.css",
+          "sha256": "a6227a38ed9e94fe65b65b51f1cd02c1dc50528b3baa02d00e53afccbf6a4229"
+        },
+        {
+          "kind": "code",
+          "path": "app.js",
+          "sha256": "2daa04f05fc76c4c901607e0a06dbfc45b9aba51a7734e8575e3f3fde15706de"
+        },
+        {
+          "kind": "code",
+          "path": "render.js",
+          "sha256": "c79a79d230aadde3e5e89bf8a3e5c4b55c1a10f19a259062802c65d3773c67e5"
+        },
+        {
+          "kind": "code",
+          "path": "store.js",
+          "sha256": "2300e692f886294a8d328b7d3f72fdac9c72b57eac8c6d2c79d95fd9bd25f0ce"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/390-filled.png",
+          "sha256": "73e70f97822362f0afb9b5556a009351d73097ac52c8c45f92c180b99f875e0f"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/296-long-text-200.png",
+          "sha256": "b57c109188ceda491dfeaa85a78530c7775ce8d27467837fb16e83111286a3f6"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/296-form-text-200.png",
+          "sha256": "143dca5493935b54c01f44220b960a624cda3b072514b8dcd33b0eb96deb2a52"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/read-failed-form.png",
+          "sha256": "4209579202f13d16028e738d1e6635b0a19ceeb7b8e21ff29e6d928905e5ece0"
+        }
+      ]
+    },
+    {
+      "id": "ORC-F08",
+      "status": "unknown",
+      "reason": "Original ORC-F08 checks retained. Full scoped review remains incomplete; DOM/state counters alone are insufficient. See concrete remaining work in design/evidence/review.md.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/review.md",
+          "sha256": "2bf6aea4482161f7f5dbb8e70075117ef6f9f76903c58591332c627ed8d87863"
+        }
+      ]
+    },
+    {
+      "id": "ORC-F09",
+      "status": "not-applicable",
+      "reason": "No multi-column layout at any width; max390px vertical mobile scope.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/review.md",
+          "sha256": "2bf6aea4482161f7f5dbb8e70075117ef6f9f76903c58591332c627ed8d87863"
+        }
+      ]
+    },
+    {
+      "id": "ORC-F10",
+      "status": "unknown",
+      "reason": "Original ORC-F10 checks retained. Full scoped review remains incomplete; DOM/state counters alone are insufficient. See concrete remaining work in design/evidence/review.md.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/review.md",
+          "sha256": "2bf6aea4482161f7f5dbb8e70075117ef6f9f76903c58591332c627ed8d87863"
+        }
+      ]
+    },
+    {
+      "id": "ORC-F11",
+      "status": "unknown",
+      "reason": "Original ORC-F11 checks retained. Full scoped review remains incomplete; DOM/state counters alone are insufficient. See concrete remaining work in design/evidence/review.md.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/review.md",
+          "sha256": "2bf6aea4482161f7f5dbb8e70075117ef6f9f76903c58591332c627ed8d87863"
+        }
+      ]
+    },
+    {
+      "id": "ORC-F12",
+      "status": "unknown",
+      "reason": "Original ORC-F12 checks retained. Full scoped review remains incomplete; DOM/state counters alone are insufficient. See concrete remaining work in design/evidence/review.md.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/review.md",
+          "sha256": "2bf6aea4482161f7f5dbb8e70075117ef6f9f76903c58591332c627ed8d87863"
+        }
+      ]
+    },
+    {
+      "id": "ORC-F13",
+      "status": "pass",
+      "reason": "Native buttons and clickable labels use pointer styling; no clickable div substitutes.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/review.md",
+          "sha256": "2bf6aea4482161f7f5dbb8e70075117ef6f9f76903c58591332c627ed8d87863"
+        },
+        {
+          "kind": "code",
+          "path": "index.html",
+          "sha256": "aba6b6fc457f61e67f3a30b9aec3550be1832bba913e3c1b2b5b99bc79741369"
+        },
+        {
+          "kind": "code",
+          "path": "styles.css",
+          "sha256": "a6227a38ed9e94fe65b65b51f1cd02c1dc50528b3baa02d00e53afccbf6a4229"
+        },
+        {
+          "kind": "code",
+          "path": "app.js",
+          "sha256": "2daa04f05fc76c4c901607e0a06dbfc45b9aba51a7734e8575e3f3fde15706de"
+        },
+        {
+          "kind": "code",
+          "path": "render.js",
+          "sha256": "c79a79d230aadde3e5e89bf8a3e5c4b55c1a10f19a259062802c65d3773c67e5"
+        },
+        {
+          "kind": "code",
+          "path": "store.js",
+          "sha256": "2300e692f886294a8d328b7d3f72fdac9c72b57eac8c6d2c79d95fd9bd25f0ce"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/390-filled.png",
+          "sha256": "73e70f97822362f0afb9b5556a009351d73097ac52c8c45f92c180b99f875e0f"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/296-long-text-200.png",
+          "sha256": "b57c109188ceda491dfeaa85a78530c7775ce8d27467837fb16e83111286a3f6"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/296-form-text-200.png",
+          "sha256": "143dca5493935b54c01f44220b960a624cda3b072514b8dcd33b0eb96deb2a52"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/read-failed-form.png",
+          "sha256": "4209579202f13d16028e738d1e6635b0a19ceeb7b8e21ff29e6d928905e5ece0"
+        },
+        {
+          "kind": "interaction",
+          "path": "design/evidence/workflow.json",
+          "sha256": "bb252857ae4e3b8917625ef8bf665fc9faade7241ff6e130070e41458eb0b004"
+        },
+        {
+          "kind": "interaction",
+          "path": "design/evidence/read-recovery.json",
+          "sha256": "1e630f55d24d75476c5c005eb53229a5aa9d3137c9abd531f2b45cd45fe7fbe2"
+        },
+        {
+          "kind": "interaction",
+          "path": "design/evidence/firstline.json",
+          "sha256": "58110f349f84e6eafcd22e80d812d79abe0354c8e974fec4698c011874b31197"
+        }
+      ]
+    },
+    {
+      "id": "ORC-F14",
+      "status": "pass",
+      "reason": "Semantic header/main/section/list/label/button/form/dialog; layout/focus wrappers have concrete roles.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/review.md",
+          "sha256": "2bf6aea4482161f7f5dbb8e70075117ef6f9f76903c58591332c627ed8d87863"
+        },
+        {
+          "kind": "code",
+          "path": "index.html",
+          "sha256": "aba6b6fc457f61e67f3a30b9aec3550be1832bba913e3c1b2b5b99bc79741369"
+        },
+        {
+          "kind": "code",
+          "path": "styles.css",
+          "sha256": "a6227a38ed9e94fe65b65b51f1cd02c1dc50528b3baa02d00e53afccbf6a4229"
+        },
+        {
+          "kind": "code",
+          "path": "app.js",
+          "sha256": "2daa04f05fc76c4c901607e0a06dbfc45b9aba51a7734e8575e3f3fde15706de"
+        },
+        {
+          "kind": "code",
+          "path": "render.js",
+          "sha256": "c79a79d230aadde3e5e89bf8a3e5c4b55c1a10f19a259062802c65d3773c67e5"
+        },
+        {
+          "kind": "code",
+          "path": "store.js",
+          "sha256": "2300e692f886294a8d328b7d3f72fdac9c72b57eac8c6d2c79d95fd9bd25f0ce"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/390-filled.png",
+          "sha256": "73e70f97822362f0afb9b5556a009351d73097ac52c8c45f92c180b99f875e0f"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/296-long-text-200.png",
+          "sha256": "b57c109188ceda491dfeaa85a78530c7775ce8d27467837fb16e83111286a3f6"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/296-form-text-200.png",
+          "sha256": "143dca5493935b54c01f44220b960a624cda3b072514b8dcd33b0eb96deb2a52"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/read-failed-form.png",
+          "sha256": "4209579202f13d16028e738d1e6635b0a19ceeb7b8e21ff29e6d928905e5ece0"
+        }
+      ]
+    },
+    {
+      "id": "ORC-F16",
+      "status": "unknown",
+      "reason": "Original ORC-F16 checks retained. Full scoped review remains incomplete; DOM/state counters alone are insufficient. See concrete remaining work in design/evidence/review.md.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/review.md",
+          "sha256": "2bf6aea4482161f7f5dbb8e70075117ef6f9f76903c58591332c627ed8d87863"
+        }
+      ]
+    },
+    {
+      "id": "ORC-F15",
+      "status": "pass",
+      "reason": "Repeated groups/controls remain neutral; no rainbow tags or avatar color assignment.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/review.md",
+          "sha256": "2bf6aea4482161f7f5dbb8e70075117ef6f9f76903c58591332c627ed8d87863"
+        },
+        {
+          "kind": "code",
+          "path": "index.html",
+          "sha256": "aba6b6fc457f61e67f3a30b9aec3550be1832bba913e3c1b2b5b99bc79741369"
+        },
+        {
+          "kind": "code",
+          "path": "styles.css",
+          "sha256": "a6227a38ed9e94fe65b65b51f1cd02c1dc50528b3baa02d00e53afccbf6a4229"
+        },
+        {
+          "kind": "code",
+          "path": "app.js",
+          "sha256": "2daa04f05fc76c4c901607e0a06dbfc45b9aba51a7734e8575e3f3fde15706de"
+        },
+        {
+          "kind": "code",
+          "path": "render.js",
+          "sha256": "c79a79d230aadde3e5e89bf8a3e5c4b55c1a10f19a259062802c65d3773c67e5"
+        },
+        {
+          "kind": "code",
+          "path": "store.js",
+          "sha256": "2300e692f886294a8d328b7d3f72fdac9c72b57eac8c6d2c79d95fd9bd25f0ce"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/390-filled.png",
+          "sha256": "73e70f97822362f0afb9b5556a009351d73097ac52c8c45f92c180b99f875e0f"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/296-long-text-200.png",
+          "sha256": "b57c109188ceda491dfeaa85a78530c7775ce8d27467837fb16e83111286a3f6"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/296-form-text-200.png",
+          "sha256": "143dca5493935b54c01f44220b960a624cda3b072514b8dcd33b0eb96deb2a52"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/read-failed-form.png",
+          "sha256": "4209579202f13d16028e738d1e6635b0a19ceeb7b8e21ff29e6d928905e5ece0"
+        }
+      ]
+    },
+    {
+      "id": "ORC-G01",
+      "status": "pass",
+      "reason": "No gradients; white background follows explicit current guide.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/review.md",
+          "sha256": "2bf6aea4482161f7f5dbb8e70075117ef6f9f76903c58591332c627ed8d87863"
+        },
+        {
+          "kind": "code",
+          "path": "index.html",
+          "sha256": "aba6b6fc457f61e67f3a30b9aec3550be1832bba913e3c1b2b5b99bc79741369"
+        },
+        {
+          "kind": "code",
+          "path": "styles.css",
+          "sha256": "a6227a38ed9e94fe65b65b51f1cd02c1dc50528b3baa02d00e53afccbf6a4229"
+        },
+        {
+          "kind": "code",
+          "path": "app.js",
+          "sha256": "2daa04f05fc76c4c901607e0a06dbfc45b9aba51a7734e8575e3f3fde15706de"
+        },
+        {
+          "kind": "code",
+          "path": "render.js",
+          "sha256": "c79a79d230aadde3e5e89bf8a3e5c4b55c1a10f19a259062802c65d3773c67e5"
+        },
+        {
+          "kind": "code",
+          "path": "store.js",
+          "sha256": "2300e692f886294a8d328b7d3f72fdac9c72b57eac8c6d2c79d95fd9bd25f0ce"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/390-filled.png",
+          "sha256": "73e70f97822362f0afb9b5556a009351d73097ac52c8c45f92c180b99f875e0f"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/296-long-text-200.png",
+          "sha256": "b57c109188ceda491dfeaa85a78530c7775ce8d27467837fb16e83111286a3f6"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/296-form-text-200.png",
+          "sha256": "143dca5493935b54c01f44220b960a624cda3b072514b8dcd33b0eb96deb2a52"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/read-failed-form.png",
+          "sha256": "4209579202f13d16028e738d1e6635b0a19ceeb7b8e21ff29e6d928905e5ece0"
+        }
+      ]
+    },
+    {
+      "id": "ORC-G02",
+      "status": "pass",
+      "reason": "Shadows serve focus indication only, with no hover depth.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/review.md",
+          "sha256": "2bf6aea4482161f7f5dbb8e70075117ef6f9f76903c58591332c627ed8d87863"
+        },
+        {
+          "kind": "code",
+          "path": "index.html",
+          "sha256": "aba6b6fc457f61e67f3a30b9aec3550be1832bba913e3c1b2b5b99bc79741369"
+        },
+        {
+          "kind": "code",
+          "path": "styles.css",
+          "sha256": "a6227a38ed9e94fe65b65b51f1cd02c1dc50528b3baa02d00e53afccbf6a4229"
+        },
+        {
+          "kind": "code",
+          "path": "app.js",
+          "sha256": "2daa04f05fc76c4c901607e0a06dbfc45b9aba51a7734e8575e3f3fde15706de"
+        },
+        {
+          "kind": "code",
+          "path": "render.js",
+          "sha256": "c79a79d230aadde3e5e89bf8a3e5c4b55c1a10f19a259062802c65d3773c67e5"
+        },
+        {
+          "kind": "code",
+          "path": "store.js",
+          "sha256": "2300e692f886294a8d328b7d3f72fdac9c72b57eac8c6d2c79d95fd9bd25f0ce"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/390-filled.png",
+          "sha256": "73e70f97822362f0afb9b5556a009351d73097ac52c8c45f92c180b99f875e0f"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/296-long-text-200.png",
+          "sha256": "b57c109188ceda491dfeaa85a78530c7775ce8d27467837fb16e83111286a3f6"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/296-form-text-200.png",
+          "sha256": "143dca5493935b54c01f44220b960a624cda3b072514b8dcd33b0eb96deb2a52"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/read-failed-form.png",
+          "sha256": "4209579202f13d16028e738d1e6635b0a19ceeb7b8e21ff29e6d928905e5ece0"
+        }
+      ]
+    },
+    {
+      "id": "ORC-G03",
+      "status": "pass",
+      "reason": "Fields6px/action8px/dialog8px; larger radii only scoped category pills/day circles.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/review.md",
+          "sha256": "2bf6aea4482161f7f5dbb8e70075117ef6f9f76903c58591332c627ed8d87863"
+        },
+        {
+          "kind": "code",
+          "path": "index.html",
+          "sha256": "aba6b6fc457f61e67f3a30b9aec3550be1832bba913e3c1b2b5b99bc79741369"
+        },
+        {
+          "kind": "code",
+          "path": "styles.css",
+          "sha256": "a6227a38ed9e94fe65b65b51f1cd02c1dc50528b3baa02d00e53afccbf6a4229"
+        },
+        {
+          "kind": "code",
+          "path": "app.js",
+          "sha256": "2daa04f05fc76c4c901607e0a06dbfc45b9aba51a7734e8575e3f3fde15706de"
+        },
+        {
+          "kind": "code",
+          "path": "render.js",
+          "sha256": "c79a79d230aadde3e5e89bf8a3e5c4b55c1a10f19a259062802c65d3773c67e5"
+        },
+        {
+          "kind": "code",
+          "path": "store.js",
+          "sha256": "2300e692f886294a8d328b7d3f72fdac9c72b57eac8c6d2c79d95fd9bd25f0ce"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/390-filled.png",
+          "sha256": "73e70f97822362f0afb9b5556a009351d73097ac52c8c45f92c180b99f875e0f"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/296-long-text-200.png",
+          "sha256": "b57c109188ceda491dfeaa85a78530c7775ce8d27467837fb16e83111286a3f6"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/296-form-text-200.png",
+          "sha256": "143dca5493935b54c01f44220b960a624cda3b072514b8dcd33b0eb96deb2a52"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/read-failed-form.png",
+          "sha256": "4209579202f13d16028e738d1e6635b0a19ceeb7b8e21ff29e6d928905e5ece0"
+        }
+      ]
+    },
+    {
+      "id": "ORC-G04",
+      "status": "pass",
+      "reason": "One semantic red error family, otherwise neutral.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/review.md",
+          "sha256": "2bf6aea4482161f7f5dbb8e70075117ef6f9f76903c58591332c627ed8d87863"
+        },
+        {
+          "kind": "code",
+          "path": "index.html",
+          "sha256": "aba6b6fc457f61e67f3a30b9aec3550be1832bba913e3c1b2b5b99bc79741369"
+        },
+        {
+          "kind": "code",
+          "path": "styles.css",
+          "sha256": "a6227a38ed9e94fe65b65b51f1cd02c1dc50528b3baa02d00e53afccbf6a4229"
+        },
+        {
+          "kind": "code",
+          "path": "app.js",
+          "sha256": "2daa04f05fc76c4c901607e0a06dbfc45b9aba51a7734e8575e3f3fde15706de"
+        },
+        {
+          "kind": "code",
+          "path": "render.js",
+          "sha256": "c79a79d230aadde3e5e89bf8a3e5c4b55c1a10f19a259062802c65d3773c67e5"
+        },
+        {
+          "kind": "code",
+          "path": "store.js",
+          "sha256": "2300e692f886294a8d328b7d3f72fdac9c72b57eac8c6d2c79d95fd9bd25f0ce"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/390-filled.png",
+          "sha256": "73e70f97822362f0afb9b5556a009351d73097ac52c8c45f92c180b99f875e0f"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/296-long-text-200.png",
+          "sha256": "b57c109188ceda491dfeaa85a78530c7775ce8d27467837fb16e83111286a3f6"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/296-form-text-200.png",
+          "sha256": "143dca5493935b54c01f44220b960a624cda3b072514b8dcd33b0eb96deb2a52"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/read-failed-form.png",
+          "sha256": "4209579202f13d16028e738d1e6635b0a19ceeb7b8e21ff29e6d928905e5ece0"
+        }
+      ]
+    },
+    {
+      "id": "ORC-G05",
+      "status": "pass",
+      "reason": "No transform/opacity/shadow hover effects introduced.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/review.md",
+          "sha256": "2bf6aea4482161f7f5dbb8e70075117ef6f9f76903c58591332c627ed8d87863"
+        },
+        {
+          "kind": "code",
+          "path": "index.html",
+          "sha256": "aba6b6fc457f61e67f3a30b9aec3550be1832bba913e3c1b2b5b99bc79741369"
+        },
+        {
+          "kind": "code",
+          "path": "styles.css",
+          "sha256": "a6227a38ed9e94fe65b65b51f1cd02c1dc50528b3baa02d00e53afccbf6a4229"
+        },
+        {
+          "kind": "code",
+          "path": "app.js",
+          "sha256": "2daa04f05fc76c4c901607e0a06dbfc45b9aba51a7734e8575e3f3fde15706de"
+        },
+        {
+          "kind": "code",
+          "path": "render.js",
+          "sha256": "c79a79d230aadde3e5e89bf8a3e5c4b55c1a10f19a259062802c65d3773c67e5"
+        },
+        {
+          "kind": "code",
+          "path": "store.js",
+          "sha256": "2300e692f886294a8d328b7d3f72fdac9c72b57eac8c6d2c79d95fd9bd25f0ce"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/390-filled.png",
+          "sha256": "73e70f97822362f0afb9b5556a009351d73097ac52c8c45f92c180b99f875e0f"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/296-long-text-200.png",
+          "sha256": "b57c109188ceda491dfeaa85a78530c7775ce8d27467837fb16e83111286a3f6"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/296-form-text-200.png",
+          "sha256": "143dca5493935b54c01f44220b960a624cda3b072514b8dcd33b0eb96deb2a52"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/read-failed-form.png",
+          "sha256": "4209579202f13d16028e738d1e6635b0a19ceeb7b8e21ff29e6d928905e5ece0"
+        },
+        {
+          "kind": "interaction",
+          "path": "design/evidence/workflow.json",
+          "sha256": "bb252857ae4e3b8917625ef8bf665fc9faade7241ff6e130070e41458eb0b004"
+        },
+        {
+          "kind": "interaction",
+          "path": "design/evidence/read-recovery.json",
+          "sha256": "1e630f55d24d75476c5c005eb53229a5aa9d3137c9abd531f2b45cd45fe7fbe2"
+        },
+        {
+          "kind": "interaction",
+          "path": "design/evidence/firstline.json",
+          "sha256": "58110f349f84e6eafcd22e80d812d79abe0354c8e974fec4698c011874b31197"
+        }
+      ]
+    },
+    {
+      "id": "ORC-G06",
+      "status": "pass",
+      "reason": "Visited document states use14/16/22px; no fourth default size after label repair.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/review.md",
+          "sha256": "2bf6aea4482161f7f5dbb8e70075117ef6f9f76903c58591332c627ed8d87863"
+        },
+        {
+          "kind": "code",
+          "path": "index.html",
+          "sha256": "aba6b6fc457f61e67f3a30b9aec3550be1832bba913e3c1b2b5b99bc79741369"
+        },
+        {
+          "kind": "code",
+          "path": "styles.css",
+          "sha256": "a6227a38ed9e94fe65b65b51f1cd02c1dc50528b3baa02d00e53afccbf6a4229"
+        },
+        {
+          "kind": "code",
+          "path": "app.js",
+          "sha256": "2daa04f05fc76c4c901607e0a06dbfc45b9aba51a7734e8575e3f3fde15706de"
+        },
+        {
+          "kind": "code",
+          "path": "render.js",
+          "sha256": "c79a79d230aadde3e5e89bf8a3e5c4b55c1a10f19a259062802c65d3773c67e5"
+        },
+        {
+          "kind": "code",
+          "path": "store.js",
+          "sha256": "2300e692f886294a8d328b7d3f72fdac9c72b57eac8c6d2c79d95fd9bd25f0ce"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/390-filled.png",
+          "sha256": "73e70f97822362f0afb9b5556a009351d73097ac52c8c45f92c180b99f875e0f"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/296-long-text-200.png",
+          "sha256": "b57c109188ceda491dfeaa85a78530c7775ce8d27467837fb16e83111286a3f6"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/296-form-text-200.png",
+          "sha256": "143dca5493935b54c01f44220b960a624cda3b072514b8dcd33b0eb96deb2a52"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/read-failed-form.png",
+          "sha256": "4209579202f13d16028e738d1e6635b0a19ceeb7b8e21ff29e6d928905e5ece0"
+        }
+      ]
+    },
+    {
+      "id": "ORC-G07",
+      "status": "unknown",
+      "reason": "Original ORC-G07 checks retained. Full scoped review remains incomplete; DOM/state counters alone are insufficient. See concrete remaining work in design/evidence/review.md.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/review.md",
+          "sha256": "2bf6aea4482161f7f5dbb8e70075117ef6f9f76903c58591332c627ed8d87863"
+        }
+      ]
+    },
+    {
+      "id": "ORC-G08",
+      "status": "unknown",
+      "reason": "Original ORC-G08 checks retained. Full scoped review remains incomplete; DOM/state counters alone are insufficient. See concrete remaining work in design/evidence/review.md.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/review.md",
+          "sha256": "2bf6aea4482161f7f5dbb8e70075117ef6f9f76903c58591332c627ed8d87863"
+        }
+      ]
+    },
+    {
+      "id": "ORC-G09",
+      "status": "pass",
+      "reason": "No decorative hero, illustration, KPI, divider or brand filler.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/review.md",
+          "sha256": "2bf6aea4482161f7f5dbb8e70075117ef6f9f76903c58591332c627ed8d87863"
+        },
+        {
+          "kind": "code",
+          "path": "index.html",
+          "sha256": "aba6b6fc457f61e67f3a30b9aec3550be1832bba913e3c1b2b5b99bc79741369"
+        },
+        {
+          "kind": "code",
+          "path": "styles.css",
+          "sha256": "a6227a38ed9e94fe65b65b51f1cd02c1dc50528b3baa02d00e53afccbf6a4229"
+        },
+        {
+          "kind": "code",
+          "path": "app.js",
+          "sha256": "2daa04f05fc76c4c901607e0a06dbfc45b9aba51a7734e8575e3f3fde15706de"
+        },
+        {
+          "kind": "code",
+          "path": "render.js",
+          "sha256": "c79a79d230aadde3e5e89bf8a3e5c4b55c1a10f19a259062802c65d3773c67e5"
+        },
+        {
+          "kind": "code",
+          "path": "store.js",
+          "sha256": "2300e692f886294a8d328b7d3f72fdac9c72b57eac8c6d2c79d95fd9bd25f0ce"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/390-filled.png",
+          "sha256": "73e70f97822362f0afb9b5556a009351d73097ac52c8c45f92c180b99f875e0f"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/296-long-text-200.png",
+          "sha256": "b57c109188ceda491dfeaa85a78530c7775ce8d27467837fb16e83111286a3f6"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/296-form-text-200.png",
+          "sha256": "143dca5493935b54c01f44220b960a624cda3b072514b8dcd33b0eb96deb2a52"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/read-failed-form.png",
+          "sha256": "4209579202f13d16028e738d1e6635b0a19ceeb7b8e21ff29e6d928905e5ece0"
+        }
+      ]
+    },
+    {
+      "id": "ORC-G10",
+      "status": "not-applicable",
+      "reason": "No sidebar/content mood split.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/review.md",
+          "sha256": "2bf6aea4482161f7f5dbb8e70075117ef6f9f76903c58591332c627ed8d87863"
+        }
+      ]
+    },
+    {
+      "id": "ORC-G11",
+      "status": "pass",
+      "reason": "Dark-control text is white and>=600 in inspected states.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/review.md",
+          "sha256": "2bf6aea4482161f7f5dbb8e70075117ef6f9f76903c58591332c627ed8d87863"
+        },
+        {
+          "kind": "code",
+          "path": "index.html",
+          "sha256": "aba6b6fc457f61e67f3a30b9aec3550be1832bba913e3c1b2b5b99bc79741369"
+        },
+        {
+          "kind": "code",
+          "path": "styles.css",
+          "sha256": "a6227a38ed9e94fe65b65b51f1cd02c1dc50528b3baa02d00e53afccbf6a4229"
+        },
+        {
+          "kind": "code",
+          "path": "app.js",
+          "sha256": "2daa04f05fc76c4c901607e0a06dbfc45b9aba51a7734e8575e3f3fde15706de"
+        },
+        {
+          "kind": "code",
+          "path": "render.js",
+          "sha256": "c79a79d230aadde3e5e89bf8a3e5c4b55c1a10f19a259062802c65d3773c67e5"
+        },
+        {
+          "kind": "code",
+          "path": "store.js",
+          "sha256": "2300e692f886294a8d328b7d3f72fdac9c72b57eac8c6d2c79d95fd9bd25f0ce"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/390-filled.png",
+          "sha256": "73e70f97822362f0afb9b5556a009351d73097ac52c8c45f92c180b99f875e0f"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/296-long-text-200.png",
+          "sha256": "b57c109188ceda491dfeaa85a78530c7775ce8d27467837fb16e83111286a3f6"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/296-form-text-200.png",
+          "sha256": "143dca5493935b54c01f44220b960a624cda3b072514b8dcd33b0eb96deb2a52"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/read-failed-form.png",
+          "sha256": "4209579202f13d16028e738d1e6635b0a19ceeb7b8e21ff29e6d928905e5ece0"
+        }
+      ]
+    },
+    {
+      "id": "ORC-G12",
+      "status": "pass",
+      "reason": "Same scoped-action inventory as ORC-F04.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/review.md",
+          "sha256": "2bf6aea4482161f7f5dbb8e70075117ef6f9f76903c58591332c627ed8d87863"
+        },
+        {
+          "kind": "code",
+          "path": "index.html",
+          "sha256": "aba6b6fc457f61e67f3a30b9aec3550be1832bba913e3c1b2b5b99bc79741369"
+        },
+        {
+          "kind": "code",
+          "path": "styles.css",
+          "sha256": "a6227a38ed9e94fe65b65b51f1cd02c1dc50528b3baa02d00e53afccbf6a4229"
+        },
+        {
+          "kind": "code",
+          "path": "app.js",
+          "sha256": "2daa04f05fc76c4c901607e0a06dbfc45b9aba51a7734e8575e3f3fde15706de"
+        },
+        {
+          "kind": "code",
+          "path": "render.js",
+          "sha256": "c79a79d230aadde3e5e89bf8a3e5c4b55c1a10f19a259062802c65d3773c67e5"
+        },
+        {
+          "kind": "code",
+          "path": "store.js",
+          "sha256": "2300e692f886294a8d328b7d3f72fdac9c72b57eac8c6d2c79d95fd9bd25f0ce"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/390-filled.png",
+          "sha256": "73e70f97822362f0afb9b5556a009351d73097ac52c8c45f92c180b99f875e0f"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/296-long-text-200.png",
+          "sha256": "b57c109188ceda491dfeaa85a78530c7775ce8d27467837fb16e83111286a3f6"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/296-form-text-200.png",
+          "sha256": "143dca5493935b54c01f44220b960a624cda3b072514b8dcd33b0eb96deb2a52"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/read-failed-form.png",
+          "sha256": "4209579202f13d16028e738d1e6635b0a19ceeb7b8e21ff29e6d928905e5ece0"
+        }
+      ]
+    },
+    {
+      "id": "ORC-G13",
+      "status": "not-applicable",
+      "reason": "No card grid for tabular data.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/review.md",
+          "sha256": "2bf6aea4482161f7f5dbb8e70075117ef6f9f76903c58591332c627ed8d87863"
+        }
+      ]
+    },
+    {
+      "id": "ORC-G14",
+      "status": "pass",
+      "reason": "Errors red, ordinary controls/selection neutral.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/review.md",
+          "sha256": "2bf6aea4482161f7f5dbb8e70075117ef6f9f76903c58591332c627ed8d87863"
+        },
+        {
+          "kind": "code",
+          "path": "index.html",
+          "sha256": "aba6b6fc457f61e67f3a30b9aec3550be1832bba913e3c1b2b5b99bc79741369"
+        },
+        {
+          "kind": "code",
+          "path": "styles.css",
+          "sha256": "a6227a38ed9e94fe65b65b51f1cd02c1dc50528b3baa02d00e53afccbf6a4229"
+        },
+        {
+          "kind": "code",
+          "path": "app.js",
+          "sha256": "2daa04f05fc76c4c901607e0a06dbfc45b9aba51a7734e8575e3f3fde15706de"
+        },
+        {
+          "kind": "code",
+          "path": "render.js",
+          "sha256": "c79a79d230aadde3e5e89bf8a3e5c4b55c1a10f19a259062802c65d3773c67e5"
+        },
+        {
+          "kind": "code",
+          "path": "store.js",
+          "sha256": "2300e692f886294a8d328b7d3f72fdac9c72b57eac8c6d2c79d95fd9bd25f0ce"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/390-filled.png",
+          "sha256": "73e70f97822362f0afb9b5556a009351d73097ac52c8c45f92c180b99f875e0f"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/296-long-text-200.png",
+          "sha256": "b57c109188ceda491dfeaa85a78530c7775ce8d27467837fb16e83111286a3f6"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/296-form-text-200.png",
+          "sha256": "143dca5493935b54c01f44220b960a624cda3b072514b8dcd33b0eb96deb2a52"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/read-failed-form.png",
+          "sha256": "4209579202f13d16028e738d1e6635b0a19ceeb7b8e21ff29e6d928905e5ece0"
+        }
+      ]
+    },
+    {
+      "id": "ORC-G15",
+      "status": "pass",
+      "reason": "Page title22px, within24px maximum.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/review.md",
+          "sha256": "2bf6aea4482161f7f5dbb8e70075117ef6f9f76903c58591332c627ed8d87863"
+        },
+        {
+          "kind": "code",
+          "path": "index.html",
+          "sha256": "aba6b6fc457f61e67f3a30b9aec3550be1832bba913e3c1b2b5b99bc79741369"
+        },
+        {
+          "kind": "code",
+          "path": "styles.css",
+          "sha256": "a6227a38ed9e94fe65b65b51f1cd02c1dc50528b3baa02d00e53afccbf6a4229"
+        },
+        {
+          "kind": "code",
+          "path": "app.js",
+          "sha256": "2daa04f05fc76c4c901607e0a06dbfc45b9aba51a7734e8575e3f3fde15706de"
+        },
+        {
+          "kind": "code",
+          "path": "render.js",
+          "sha256": "c79a79d230aadde3e5e89bf8a3e5c4b55c1a10f19a259062802c65d3773c67e5"
+        },
+        {
+          "kind": "code",
+          "path": "store.js",
+          "sha256": "2300e692f886294a8d328b7d3f72fdac9c72b57eac8c6d2c79d95fd9bd25f0ce"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/390-filled.png",
+          "sha256": "73e70f97822362f0afb9b5556a009351d73097ac52c8c45f92c180b99f875e0f"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/296-long-text-200.png",
+          "sha256": "b57c109188ceda491dfeaa85a78530c7775ce8d27467837fb16e83111286a3f6"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/296-form-text-200.png",
+          "sha256": "143dca5493935b54c01f44220b960a624cda3b072514b8dcd33b0eb96deb2a52"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/read-failed-form.png",
+          "sha256": "4209579202f13d16028e738d1e6635b0a19ceeb7b8e21ff29e6d928905e5ece0"
+        }
+      ]
+    },
+    {
+      "id": "ORC-G16",
+      "status": "unknown",
+      "reason": "Original ORC-G16 checks retained. Full scoped review remains incomplete; DOM/state counters alone are insufficient. See concrete remaining work in design/evidence/review.md.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/review.md",
+          "sha256": "2bf6aea4482161f7f5dbb8e70075117ef6f9f76903c58591332c627ed8d87863"
+        }
+      ]
+    },
+    {
+      "id": "ORC-G17",
+      "status": "not-applicable",
+      "reason": "No multi-column dashboard.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/review.md",
+          "sha256": "2bf6aea4482161f7f5dbb8e70075117ef6f9f76903c58591332c627ed8d87863"
+        }
+      ]
+    },
+    {
+      "id": "ORC-G18",
+      "status": "unknown",
+      "reason": "Original ORC-G18 checks retained. Full scoped review remains incomplete; DOM/state counters alone are insufficient. See concrete remaining work in design/evidence/review.md.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/review.md",
+          "sha256": "2bf6aea4482161f7f5dbb8e70075117ef6f9f76903c58591332c627ed8d87863"
+        }
+      ]
+    },
+    {
+      "id": "ORC-G19",
+      "status": "unknown",
+      "reason": "Original ORC-G19 checks retained. Full scoped review remains incomplete; DOM/state counters alone are insufficient. See concrete remaining work in design/evidence/review.md.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/review.md",
+          "sha256": "2bf6aea4482161f7f5dbb8e70075117ef6f9f76903c58591332c627ed8d87863"
+        }
+      ]
+    },
+    {
+      "id": "ORC-G20",
+      "status": "unknown",
+      "reason": "Original ORC-G20 checks retained. Full scoped review remains incomplete; DOM/state counters alone are insufficient. See concrete remaining work in design/evidence/review.md.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/review.md",
+          "sha256": "2bf6aea4482161f7f5dbb8e70075117ef6f9f76903c58591332c627ed8d87863"
+        }
+      ]
+    },
+    {
+      "id": "ORC-G21",
+      "status": "pass",
+      "reason": "Same native-control/pointer inventory as ORC-F13.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/review.md",
+          "sha256": "2bf6aea4482161f7f5dbb8e70075117ef6f9f76903c58591332c627ed8d87863"
+        },
+        {
+          "kind": "code",
+          "path": "index.html",
+          "sha256": "aba6b6fc457f61e67f3a30b9aec3550be1832bba913e3c1b2b5b99bc79741369"
+        },
+        {
+          "kind": "code",
+          "path": "styles.css",
+          "sha256": "a6227a38ed9e94fe65b65b51f1cd02c1dc50528b3baa02d00e53afccbf6a4229"
+        },
+        {
+          "kind": "code",
+          "path": "app.js",
+          "sha256": "2daa04f05fc76c4c901607e0a06dbfc45b9aba51a7734e8575e3f3fde15706de"
+        },
+        {
+          "kind": "code",
+          "path": "render.js",
+          "sha256": "c79a79d230aadde3e5e89bf8a3e5c4b55c1a10f19a259062802c65d3773c67e5"
+        },
+        {
+          "kind": "code",
+          "path": "store.js",
+          "sha256": "2300e692f886294a8d328b7d3f72fdac9c72b57eac8c6d2c79d95fd9bd25f0ce"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/390-filled.png",
+          "sha256": "73e70f97822362f0afb9b5556a009351d73097ac52c8c45f92c180b99f875e0f"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/296-long-text-200.png",
+          "sha256": "b57c109188ceda491dfeaa85a78530c7775ce8d27467837fb16e83111286a3f6"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/296-form-text-200.png",
+          "sha256": "143dca5493935b54c01f44220b960a624cda3b072514b8dcd33b0eb96deb2a52"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/read-failed-form.png",
+          "sha256": "4209579202f13d16028e738d1e6635b0a19ceeb7b8e21ff29e6d928905e5ece0"
+        },
+        {
+          "kind": "interaction",
+          "path": "design/evidence/workflow.json",
+          "sha256": "bb252857ae4e3b8917625ef8bf665fc9faade7241ff6e130070e41458eb0b004"
+        },
+        {
+          "kind": "interaction",
+          "path": "design/evidence/read-recovery.json",
+          "sha256": "1e630f55d24d75476c5c005eb53229a5aa9d3137c9abd531f2b45cd45fe7fbe2"
+        },
+        {
+          "kind": "interaction",
+          "path": "design/evidence/firstline.json",
+          "sha256": "58110f349f84e6eafcd22e80d812d79abe0354c8e974fec4698c011874b31197"
+        }
+      ]
+    },
+    {
+      "id": "ORC-G22",
+      "status": "pass",
+      "reason": "No decorative status/entity color cycling.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/review.md",
+          "sha256": "2bf6aea4482161f7f5dbb8e70075117ef6f9f76903c58591332c627ed8d87863"
+        },
+        {
+          "kind": "code",
+          "path": "index.html",
+          "sha256": "aba6b6fc457f61e67f3a30b9aec3550be1832bba913e3c1b2b5b99bc79741369"
+        },
+        {
+          "kind": "code",
+          "path": "styles.css",
+          "sha256": "a6227a38ed9e94fe65b65b51f1cd02c1dc50528b3baa02d00e53afccbf6a4229"
+        },
+        {
+          "kind": "code",
+          "path": "app.js",
+          "sha256": "2daa04f05fc76c4c901607e0a06dbfc45b9aba51a7734e8575e3f3fde15706de"
+        },
+        {
+          "kind": "code",
+          "path": "render.js",
+          "sha256": "c79a79d230aadde3e5e89bf8a3e5c4b55c1a10f19a259062802c65d3773c67e5"
+        },
+        {
+          "kind": "code",
+          "path": "store.js",
+          "sha256": "2300e692f886294a8d328b7d3f72fdac9c72b57eac8c6d2c79d95fd9bd25f0ce"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/390-filled.png",
+          "sha256": "73e70f97822362f0afb9b5556a009351d73097ac52c8c45f92c180b99f875e0f"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/296-long-text-200.png",
+          "sha256": "b57c109188ceda491dfeaa85a78530c7775ce8d27467837fb16e83111286a3f6"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/296-form-text-200.png",
+          "sha256": "143dca5493935b54c01f44220b960a624cda3b072514b8dcd33b0eb96deb2a52"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/read-failed-form.png",
+          "sha256": "4209579202f13d16028e738d1e6635b0a19ceeb7b8e21ff29e6d928905e5ece0"
+        }
+      ]
+    },
+    {
+      "id": "ORC-G23",
+      "status": "unknown",
+      "reason": "Original ORC-G23 checks retained. Full scoped review remains incomplete; DOM/state counters alone are insufficient. See concrete remaining work in design/evidence/review.md.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/review.md",
+          "sha256": "2bf6aea4482161f7f5dbb8e70075117ef6f9f76903c58591332c627ed8d87863"
+        }
+      ]
+    },
+    {
+      "id": "ORC-G24",
+      "status": "pass",
+      "reason": "Concrete semantic markup; wrappers own layout and field focus, not div-only navigation.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/review.md",
+          "sha256": "2bf6aea4482161f7f5dbb8e70075117ef6f9f76903c58591332c627ed8d87863"
+        },
+        {
+          "kind": "code",
+          "path": "index.html",
+          "sha256": "aba6b6fc457f61e67f3a30b9aec3550be1832bba913e3c1b2b5b99bc79741369"
+        },
+        {
+          "kind": "code",
+          "path": "styles.css",
+          "sha256": "a6227a38ed9e94fe65b65b51f1cd02c1dc50528b3baa02d00e53afccbf6a4229"
+        },
+        {
+          "kind": "code",
+          "path": "app.js",
+          "sha256": "2daa04f05fc76c4c901607e0a06dbfc45b9aba51a7734e8575e3f3fde15706de"
+        },
+        {
+          "kind": "code",
+          "path": "render.js",
+          "sha256": "c79a79d230aadde3e5e89bf8a3e5c4b55c1a10f19a259062802c65d3773c67e5"
+        },
+        {
+          "kind": "code",
+          "path": "store.js",
+          "sha256": "2300e692f886294a8d328b7d3f72fdac9c72b57eac8c6d2c79d95fd9bd25f0ce"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/390-filled.png",
+          "sha256": "73e70f97822362f0afb9b5556a009351d73097ac52c8c45f92c180b99f875e0f"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/296-long-text-200.png",
+          "sha256": "b57c109188ceda491dfeaa85a78530c7775ce8d27467837fb16e83111286a3f6"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/296-form-text-200.png",
+          "sha256": "143dca5493935b54c01f44220b960a624cda3b072514b8dcd33b0eb96deb2a52"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/read-failed-form.png",
+          "sha256": "4209579202f13d16028e738d1e6635b0a19ceeb7b8e21ff29e6d928905e5ece0"
+        }
+      ]
+    },
+    {
+      "id": "ORC-A01",
+      "status": "pass",
+      "reason": "Radius roles vary: pills/circles versus6px fields/8px action/dialog.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/review.md",
+          "sha256": "2bf6aea4482161f7f5dbb8e70075117ef6f9f76903c58591332c627ed8d87863"
+        },
+        {
+          "kind": "code",
+          "path": "index.html",
+          "sha256": "aba6b6fc457f61e67f3a30b9aec3550be1832bba913e3c1b2b5b99bc79741369"
+        },
+        {
+          "kind": "code",
+          "path": "styles.css",
+          "sha256": "a6227a38ed9e94fe65b65b51f1cd02c1dc50528b3baa02d00e53afccbf6a4229"
+        },
+        {
+          "kind": "code",
+          "path": "app.js",
+          "sha256": "2daa04f05fc76c4c901607e0a06dbfc45b9aba51a7734e8575e3f3fde15706de"
+        },
+        {
+          "kind": "code",
+          "path": "render.js",
+          "sha256": "c79a79d230aadde3e5e89bf8a3e5c4b55c1a10f19a259062802c65d3773c67e5"
+        },
+        {
+          "kind": "code",
+          "path": "store.js",
+          "sha256": "2300e692f886294a8d328b7d3f72fdac9c72b57eac8c6d2c79d95fd9bd25f0ce"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/390-filled.png",
+          "sha256": "73e70f97822362f0afb9b5556a009351d73097ac52c8c45f92c180b99f875e0f"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/296-long-text-200.png",
+          "sha256": "b57c109188ceda491dfeaa85a78530c7775ce8d27467837fb16e83111286a3f6"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/296-form-text-200.png",
+          "sha256": "143dca5493935b54c01f44220b960a624cda3b072514b8dcd33b0eb96deb2a52"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/read-failed-form.png",
+          "sha256": "4209579202f13d16028e738d1e6635b0a19ceeb7b8e21ff29e6d928905e5ece0"
+        }
+      ]
+    },
+    {
+      "id": "ORC-A02",
+      "status": "unknown",
+      "reason": "Original ORC-A02 checks retained. Full scoped review remains incomplete; DOM/state counters alone are insufficient. See concrete remaining work in design/evidence/review.md.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/review.md",
+          "sha256": "2bf6aea4482161f7f5dbb8e70075117ef6f9f76903c58591332c627ed8d87863"
+        }
+      ]
+    },
+    {
+      "id": "ORC-A03",
+      "status": "unknown",
+      "reason": "Original ORC-A03 checks retained. Full scoped review remains incomplete; DOM/state counters alone are insufficient. See concrete remaining work in design/evidence/review.md.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/review.md",
+          "sha256": "2bf6aea4482161f7f5dbb8e70075117ef6f9f76903c58591332c627ed8d87863"
+        }
+      ]
+    },
+    {
+      "id": "ORC-A04",
+      "status": "unknown",
+      "reason": "Original ORC-A04 checks retained. Full scoped review remains incomplete; DOM/state counters alone are insufficient. See concrete remaining work in design/evidence/review.md.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/review.md",
+          "sha256": "2bf6aea4482161f7f5dbb8e70075117ef6f9f76903c58591332c627ed8d87863"
+        }
+      ]
+    },
+    {
+      "id": "ORC-A05",
+      "status": "not-applicable",
+      "reason": "No hero/sidebar/footer composition; mobile task rows already use asymmetric checkbox/text/action roles.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/review.md",
+          "sha256": "2bf6aea4482161f7f5dbb8e70075117ef6f9f76903c58591332c627ed8d87863"
+        }
+      ]
+    },
+    {
+      "id": "ORC-A06",
+      "status": "not-applicable",
+      "reason": "No Korean commerce catalogue price/rating/seller fields; actual task metadata is preserved and no filler is added.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/review.md",
+          "sha256": "2bf6aea4482161f7f5dbb8e70075117ef6f9f76903c58591332c627ed8d87863"
+        }
+      ]
+    },
+    {
+      "id": "ORC-A07",
+      "status": "fail",
+      "reason": "The row now uses official Trash2 rather than X, but add/delete still have no visible text labels. Accessible names and correct icons do not satisfy this catalog rule requiring visible labels. Keep FAIL; no exception or weakened check is declared.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/review.md",
+          "sha256": "2bf6aea4482161f7f5dbb8e70075117ef6f9f76903c58591332c627ed8d87863"
+        },
+        {
+          "kind": "code",
+          "path": "index.html",
+          "sha256": "aba6b6fc457f61e67f3a30b9aec3550be1832bba913e3c1b2b5b99bc79741369"
+        },
+        {
+          "kind": "code",
+          "path": "styles.css",
+          "sha256": "a6227a38ed9e94fe65b65b51f1cd02c1dc50528b3baa02d00e53afccbf6a4229"
+        },
+        {
+          "kind": "code",
+          "path": "app.js",
+          "sha256": "2daa04f05fc76c4c901607e0a06dbfc45b9aba51a7734e8575e3f3fde15706de"
+        },
+        {
+          "kind": "code",
+          "path": "render.js",
+          "sha256": "c79a79d230aadde3e5e89bf8a3e5c4b55c1a10f19a259062802c65d3773c67e5"
+        },
+        {
+          "kind": "code",
+          "path": "store.js",
+          "sha256": "2300e692f886294a8d328b7d3f72fdac9c72b57eac8c6d2c79d95fd9bd25f0ce"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/390-filled.png",
+          "sha256": "73e70f97822362f0afb9b5556a009351d73097ac52c8c45f92c180b99f875e0f"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/296-long-text-200.png",
+          "sha256": "b57c109188ceda491dfeaa85a78530c7775ce8d27467837fb16e83111286a3f6"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/296-form-text-200.png",
+          "sha256": "143dca5493935b54c01f44220b960a624cda3b072514b8dcd33b0eb96deb2a52"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/read-failed-form.png",
+          "sha256": "4209579202f13d16028e738d1e6635b0a19ceeb7b8e21ff29e6d928905e5ece0"
+        }
+      ]
+    },
+    {
+      "id": "ORC-A08",
+      "status": "not-applicable",
+      "reason": "No photographic or illustration content required; only licensed local font and official functional icons.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/review.md",
+          "sha256": "2bf6aea4482161f7f5dbb8e70075117ef6f9f76903c58591332c627ed8d87863"
+        }
+      ]
+    },
+    {
+      "id": "ORC-A09",
+      "status": "not-applicable",
+      "reason": "No card grid.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/review.md",
+          "sha256": "2bf6aea4482161f7f5dbb8e70075117ef6f9f76903c58591332c627ed8d87863"
+        }
+      ]
+    },
+    {
+      "id": "ORC-A10",
+      "status": "unknown",
+      "reason": "Original ORC-A10 checks retained. Full scoped review remains incomplete; DOM/state counters alone are insufficient. See concrete remaining work in design/evidence/review.md.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/review.md",
+          "sha256": "2bf6aea4482161f7f5dbb8e70075117ef6f9f76903c58591332c627ed8d87863"
+        }
+      ]
+    },
+    {
+      "id": "RUI-01",
+      "status": "unknown",
+      "reason": "Original RUI-01 checks retained. Full scoped review remains incomplete; DOM/state counters alone are insufficient. See concrete remaining work in design/evidence/review.md.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/review.md",
+          "sha256": "2bf6aea4482161f7f5dbb8e70075117ef6f9f76903c58591332c627ed8d87863"
+        }
+      ]
+    },
+    {
+      "id": "RUI-02",
+      "status": "unknown",
+      "reason": "Original RUI-02 checks retained. Full scoped review remains incomplete; DOM/state counters alone are insufficient. See concrete remaining work in design/evidence/review.md.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/review.md",
+          "sha256": "2bf6aea4482161f7f5dbb8e70075117ef6f9f76903c58591332c627ed8d87863"
+        }
+      ]
+    },
+    {
+      "id": "RUI-03",
+      "status": "unknown",
+      "reason": "Original RUI-03 checks retained. Full scoped review remains incomplete; DOM/state counters alone are insufficient. See concrete remaining work in design/evidence/review.md.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/review.md",
+          "sha256": "2bf6aea4482161f7f5dbb8e70075117ef6f9f76903c58591332c627ed8d87863"
+        }
+      ]
+    },
+    {
+      "id": "RUI-04",
+      "status": "pass",
+      "reason": "73 actual workflow assertions plus15 store cases and2 browser read-recovery transitions pass. Failed initial reads preserve disk/input, do not show a confirmed-empty claim, and recover on explicit successful reload. Ordinary write retries remain exercised. Native storage-property access policies are outside this scoped result.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/review.md",
+          "sha256": "2bf6aea4482161f7f5dbb8e70075117ef6f9f76903c58591332c627ed8d87863"
+        },
+        {
+          "kind": "interaction",
+          "path": "design/evidence/workflow.json",
+          "sha256": "bb252857ae4e3b8917625ef8bf665fc9faade7241ff6e130070e41458eb0b004"
+        },
+        {
+          "kind": "interaction",
+          "path": "design/evidence/read-recovery.json",
+          "sha256": "1e630f55d24d75476c5c005eb53229a5aa9d3137c9abd531f2b45cd45fe7fbe2"
+        },
+        {
+          "kind": "interaction",
+          "path": "design/evidence/firstline.json",
+          "sha256": "58110f349f84e6eafcd22e80d812d79abe0354c8e974fec4698c011874b31197"
+        }
+      ]
+    },
+    {
+      "id": "RUI-05",
+      "status": "unknown",
+      "reason": "Original RUI-05 checks retained. Full scoped review remains incomplete; DOM/state counters alone are insufficient. See concrete remaining work in design/evidence/review.md.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/review.md",
+          "sha256": "2bf6aea4482161f7f5dbb8e70075117ef6f9f76903c58591332c627ed8d87863"
+        }
+      ]
+    },
+    {
+      "id": "RUI-06",
+      "status": "unknown",
+      "reason": "Original RUI-06 checks retained. Full scoped review remains incomplete; DOM/state counters alone are insufficient. See concrete remaining work in design/evidence/review.md.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/review.md",
+          "sha256": "2bf6aea4482161f7f5dbb8e70075117ef6f9f76903c58591332c627ed8d87863"
+        }
+      ]
+    },
+    {
+      "id": "RUI-07",
+      "status": "unknown",
+      "reason": "Original RUI-07 checks retained. Full scoped review remains incomplete; DOM/state counters alone are insufficient. See concrete remaining work in design/evidence/review.md.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/review.md",
+          "sha256": "2bf6aea4482161f7f5dbb8e70075117ef6f9f76903c58591332c627ed8d87863"
+        }
+      ]
+    },
+    {
+      "id": "RUI-08",
+      "status": "pass",
+      "reason": "No invented logo/wordmark/slogan; the date heading is functional.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/review.md",
+          "sha256": "2bf6aea4482161f7f5dbb8e70075117ef6f9f76903c58591332c627ed8d87863"
+        },
+        {
+          "kind": "code",
+          "path": "index.html",
+          "sha256": "aba6b6fc457f61e67f3a30b9aec3550be1832bba913e3c1b2b5b99bc79741369"
+        },
+        {
+          "kind": "code",
+          "path": "styles.css",
+          "sha256": "a6227a38ed9e94fe65b65b51f1cd02c1dc50528b3baa02d00e53afccbf6a4229"
+        },
+        {
+          "kind": "code",
+          "path": "app.js",
+          "sha256": "2daa04f05fc76c4c901607e0a06dbfc45b9aba51a7734e8575e3f3fde15706de"
+        },
+        {
+          "kind": "code",
+          "path": "render.js",
+          "sha256": "c79a79d230aadde3e5e89bf8a3e5c4b55c1a10f19a259062802c65d3773c67e5"
+        },
+        {
+          "kind": "code",
+          "path": "store.js",
+          "sha256": "2300e692f886294a8d328b7d3f72fdac9c72b57eac8c6d2c79d95fd9bd25f0ce"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/390-filled.png",
+          "sha256": "73e70f97822362f0afb9b5556a009351d73097ac52c8c45f92c180b99f875e0f"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/296-long-text-200.png",
+          "sha256": "b57c109188ceda491dfeaa85a78530c7775ce8d27467837fb16e83111286a3f6"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/296-form-text-200.png",
+          "sha256": "143dca5493935b54c01f44220b960a624cda3b072514b8dcd33b0eb96deb2a52"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/read-failed-form.png",
+          "sha256": "4209579202f13d16028e738d1e6635b0a19ceeb7b8e21ff29e6d928905e5ece0"
+        }
+      ]
+    },
+    {
+      "id": "RUI-09",
+      "status": "unknown",
+      "reason": "Original RUI-09 checks retained. Full scoped review remains incomplete; DOM/state counters alone are insufficient. See concrete remaining work in design/evidence/review.md.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/review.md",
+          "sha256": "2bf6aea4482161f7f5dbb8e70075117ef6f9f76903c58591332c627ed8d87863"
+        }
+      ]
+    },
+    {
+      "id": "RUI-10",
+      "status": "pass",
+      "reason": "Category add controls and full-width form submission have distinct roles; no CTA styled as a filter.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/review.md",
+          "sha256": "2bf6aea4482161f7f5dbb8e70075117ef6f9f76903c58591332c627ed8d87863"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/390-filled.png",
+          "sha256": "73e70f97822362f0afb9b5556a009351d73097ac52c8c45f92c180b99f875e0f"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/296-long-text-200.png",
+          "sha256": "b57c109188ceda491dfeaa85a78530c7775ce8d27467837fb16e83111286a3f6"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/296-form-text-200.png",
+          "sha256": "143dca5493935b54c01f44220b960a624cda3b072514b8dcd33b0eb96deb2a52"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/read-failed-form.png",
+          "sha256": "4209579202f13d16028e738d1e6635b0a19ceeb7b8e21ff29e6d928905e5ece0"
+        }
+      ]
+    },
+    {
+      "id": "RUI-11",
+      "status": "pass",
+      "reason": "No demo notices, slogans or unrelated helper copy in product UI.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/review.md",
+          "sha256": "2bf6aea4482161f7f5dbb8e70075117ef6f9f76903c58591332c627ed8d87863"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/390-filled.png",
+          "sha256": "73e70f97822362f0afb9b5556a009351d73097ac52c8c45f92c180b99f875e0f"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/296-long-text-200.png",
+          "sha256": "b57c109188ceda491dfeaa85a78530c7775ce8d27467837fb16e83111286a3f6"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/296-form-text-200.png",
+          "sha256": "143dca5493935b54c01f44220b960a624cda3b072514b8dcd33b0eb96deb2a52"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/read-failed-form.png",
+          "sha256": "4209579202f13d16028e738d1e6635b0a19ceeb7b8e21ff29e6d928905e5ece0"
+        }
+      ]
+    },
+    {
+      "id": "RUI-12",
+      "status": "pass",
+      "reason": "Official Lucide Plus and Trash2-neutral source, geometry/license/manifest verified. Trash2 denotes actual removal, is visibly rendered at20px in a44px target, has a task-specific accessible name and passed actual edge deletion/focus/reload checks. Original X asset remains unused historical material.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/review.md",
+          "sha256": "2bf6aea4482161f7f5dbb8e70075117ef6f9f76903c58591332c627ed8d87863"
+        },
+        {
+          "kind": "code",
+          "path": "index.html",
+          "sha256": "aba6b6fc457f61e67f3a30b9aec3550be1832bba913e3c1b2b5b99bc79741369"
+        },
+        {
+          "kind": "code",
+          "path": "styles.css",
+          "sha256": "a6227a38ed9e94fe65b65b51f1cd02c1dc50528b3baa02d00e53afccbf6a4229"
+        },
+        {
+          "kind": "code",
+          "path": "app.js",
+          "sha256": "2daa04f05fc76c4c901607e0a06dbfc45b9aba51a7734e8575e3f3fde15706de"
+        },
+        {
+          "kind": "code",
+          "path": "render.js",
+          "sha256": "c79a79d230aadde3e5e89bf8a3e5c4b55c1a10f19a259062802c65d3773c67e5"
+        },
+        {
+          "kind": "code",
+          "path": "store.js",
+          "sha256": "2300e692f886294a8d328b7d3f72fdac9c72b57eac8c6d2c79d95fd9bd25f0ce"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/390-filled.png",
+          "sha256": "73e70f97822362f0afb9b5556a009351d73097ac52c8c45f92c180b99f875e0f"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/296-long-text-200.png",
+          "sha256": "b57c109188ceda491dfeaa85a78530c7775ce8d27467837fb16e83111286a3f6"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/296-form-text-200.png",
+          "sha256": "143dca5493935b54c01f44220b960a624cda3b072514b8dcd33b0eb96deb2a52"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/read-failed-form.png",
+          "sha256": "4209579202f13d16028e738d1e6635b0a19ceeb7b8e21ff29e6d928905e5ece0"
+        }
+      ]
+    },
+    {
+      "id": "RUI-13",
+      "status": "unknown",
+      "reason": "Original RUI-13 checks retained. Full scoped review remains incomplete; DOM/state counters alone are insufficient. See concrete remaining work in design/evidence/review.md.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/review.md",
+          "sha256": "2bf6aea4482161f7f5dbb8e70075117ef6f9f76903c58591332c627ed8d87863"
+        }
+      ]
+    },
+    {
+      "id": "RUI-14",
+      "status": "pass",
+      "reason": "No section bars/tab underlines/hr; borders/rings only native fields and focus.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/review.md",
+          "sha256": "2bf6aea4482161f7f5dbb8e70075117ef6f9f76903c58591332c627ed8d87863"
+        },
+        {
+          "kind": "code",
+          "path": "index.html",
+          "sha256": "aba6b6fc457f61e67f3a30b9aec3550be1832bba913e3c1b2b5b99bc79741369"
+        },
+        {
+          "kind": "code",
+          "path": "styles.css",
+          "sha256": "a6227a38ed9e94fe65b65b51f1cd02c1dc50528b3baa02d00e53afccbf6a4229"
+        },
+        {
+          "kind": "code",
+          "path": "app.js",
+          "sha256": "2daa04f05fc76c4c901607e0a06dbfc45b9aba51a7734e8575e3f3fde15706de"
+        },
+        {
+          "kind": "code",
+          "path": "render.js",
+          "sha256": "c79a79d230aadde3e5e89bf8a3e5c4b55c1a10f19a259062802c65d3773c67e5"
+        },
+        {
+          "kind": "code",
+          "path": "store.js",
+          "sha256": "2300e692f886294a8d328b7d3f72fdac9c72b57eac8c6d2c79d95fd9bd25f0ce"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/390-filled.png",
+          "sha256": "73e70f97822362f0afb9b5556a009351d73097ac52c8c45f92c180b99f875e0f"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/296-long-text-200.png",
+          "sha256": "b57c109188ceda491dfeaa85a78530c7775ce8d27467837fb16e83111286a3f6"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/296-form-text-200.png",
+          "sha256": "143dca5493935b54c01f44220b960a624cda3b072514b8dcd33b0eb96deb2a52"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/read-failed-form.png",
+          "sha256": "4209579202f13d16028e738d1e6635b0a19ceeb7b8e21ff29e6d928905e5ece0"
+        }
+      ]
+    },
+    {
+      "id": "RUI-15",
+      "status": "not-applicable",
+      "reason": "No chat/composer or competing list/chat tasks.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/review.md",
+          "sha256": "2bf6aea4482161f7f5dbb8e70075117ef6f9f76903c58591332c627ed8d87863"
+        }
+      ]
+    },
+    {
+      "id": "RUI-16",
+      "status": "unknown",
+      "reason": "Original RUI-16 checks retained. Full scoped review remains incomplete; DOM/state counters alone are insufficient. See concrete remaining work in design/evidence/review.md.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/review.md",
+          "sha256": "2bf6aea4482161f7f5dbb8e70075117ef6f9f76903c58591332c627ed8d87863"
+        }
+      ]
+    },
+    {
+      "id": "RUI-17",
+      "status": "unknown",
+      "reason": "Original RUI-17 checks retained. Full scoped review remains incomplete; DOM/state counters alone are insufficient. See concrete remaining work in design/evidence/review.md.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/review.md",
+          "sha256": "2bf6aea4482161f7f5dbb8e70075117ef6f9f76903c58591332c627ed8d87863"
+        }
+      ]
+    },
+    {
+      "id": "RUI-18",
+      "status": "unknown",
+      "reason": "Original RUI-18 checks retained. Full scoped review remains incomplete; DOM/state counters alone are insufficient. See concrete remaining work in design/evidence/review.md.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/review.md",
+          "sha256": "2bf6aea4482161f7f5dbb8e70075117ef6f9f76903c58591332c627ed8d87863"
+        }
+      ]
+    },
+    {
+      "id": "RUI-19",
+      "status": "not-applicable",
+      "reason": "No destination tabs; week buttons are date filtering, not page destinations.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/review.md",
+          "sha256": "2bf6aea4482161f7f5dbb8e70075117ef6f9f76903c58591332c627ed8d87863"
+        }
+      ]
+    },
+    {
+      "id": "RUI-20",
+      "status": "pass",
+      "reason": "Form purpose heading22/700 remains distinct from14px labels and16px values.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/review.md",
+          "sha256": "2bf6aea4482161f7f5dbb8e70075117ef6f9f76903c58591332c627ed8d87863"
+        },
+        {
+          "kind": "code",
+          "path": "index.html",
+          "sha256": "aba6b6fc457f61e67f3a30b9aec3550be1832bba913e3c1b2b5b99bc79741369"
+        },
+        {
+          "kind": "code",
+          "path": "styles.css",
+          "sha256": "a6227a38ed9e94fe65b65b51f1cd02c1dc50528b3baa02d00e53afccbf6a4229"
+        },
+        {
+          "kind": "code",
+          "path": "app.js",
+          "sha256": "2daa04f05fc76c4c901607e0a06dbfc45b9aba51a7734e8575e3f3fde15706de"
+        },
+        {
+          "kind": "code",
+          "path": "render.js",
+          "sha256": "c79a79d230aadde3e5e89bf8a3e5c4b55c1a10f19a259062802c65d3773c67e5"
+        },
+        {
+          "kind": "code",
+          "path": "store.js",
+          "sha256": "2300e692f886294a8d328b7d3f72fdac9c72b57eac8c6d2c79d95fd9bd25f0ce"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/390-filled.png",
+          "sha256": "73e70f97822362f0afb9b5556a009351d73097ac52c8c45f92c180b99f875e0f"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/296-long-text-200.png",
+          "sha256": "b57c109188ceda491dfeaa85a78530c7775ce8d27467837fb16e83111286a3f6"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/296-form-text-200.png",
+          "sha256": "143dca5493935b54c01f44220b960a624cda3b072514b8dcd33b0eb96deb2a52"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/read-failed-form.png",
+          "sha256": "4209579202f13d16028e738d1e6635b0a19ceeb7b8e21ff29e6d928905e5ece0"
+        }
+      ]
+    },
+    {
+      "id": "RUI-21",
+      "status": "unknown",
+      "reason": "Original RUI-21 checks retained. Full scoped review remains incomplete; DOM/state counters alone are insufficient. See concrete remaining work in design/evidence/review.md.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/review.md",
+          "sha256": "2bf6aea4482161f7f5dbb8e70075117ef6f9f76903c58591332c627ed8d87863"
+        }
+      ]
+    },
+    {
+      "id": "RUI-22",
+      "status": "unknown",
+      "reason": "Original RUI-22 checks retained. Full scoped review remains incomplete; DOM/state counters alone are insufficient. See concrete remaining work in design/evidence/review.md.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/review.md",
+          "sha256": "2bf6aea4482161f7f5dbb8e70075117ef6f9f76903c58591332c627ed8d87863"
+        }
+      ]
+    },
+    {
+      "id": "RUI-23",
+      "status": "unknown",
+      "reason": "Original RUI-23 checks retained. Full scoped review remains incomplete; DOM/state counters alone are insufficient. See concrete remaining work in design/evidence/review.md.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/review.md",
+          "sha256": "2bf6aea4482161f7f5dbb8e70075117ef6f9f76903c58591332c627ed8d87863"
+        }
+      ]
+    },
+    {
+      "id": "RUI-24",
+      "status": "pass",
+      "reason": "Heading sets selected-day context; date buttons select that context. No decorative duplicate badges/counts.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/review.md",
+          "sha256": "2bf6aea4482161f7f5dbb8e70075117ef6f9f76903c58591332c627ed8d87863"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/390-filled.png",
+          "sha256": "73e70f97822362f0afb9b5556a009351d73097ac52c8c45f92c180b99f875e0f"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/296-long-text-200.png",
+          "sha256": "b57c109188ceda491dfeaa85a78530c7775ce8d27467837fb16e83111286a3f6"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/296-form-text-200.png",
+          "sha256": "143dca5493935b54c01f44220b960a624cda3b072514b8dcd33b0eb96deb2a52"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/read-failed-form.png",
+          "sha256": "4209579202f13d16028e738d1e6635b0a19ceeb7b8e21ff29e6d928905e5ece0"
+        }
+      ]
+    },
+    {
+      "id": "RUI-25",
+      "status": "pass",
+      "reason": "Category titles/space and native modal distinguish tasks; no forced cardification of all regions.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/review.md",
+          "sha256": "2bf6aea4482161f7f5dbb8e70075117ef6f9f76903c58591332c627ed8d87863"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/390-filled.png",
+          "sha256": "73e70f97822362f0afb9b5556a009351d73097ac52c8c45f92c180b99f875e0f"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/296-long-text-200.png",
+          "sha256": "b57c109188ceda491dfeaa85a78530c7775ce8d27467837fb16e83111286a3f6"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/296-form-text-200.png",
+          "sha256": "143dca5493935b54c01f44220b960a624cda3b072514b8dcd33b0eb96deb2a52"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/read-failed-form.png",
+          "sha256": "4209579202f13d16028e738d1e6635b0a19ceeb7b8e21ff29e6d928905e5ece0"
+        }
+      ]
+    },
+    {
+      "id": "PROJECT-GUIDE-design-md",
+      "status": "unknown",
+      "reason": "Original PROJECT-GUIDE-design-md checks retained. Full scoped review remains incomplete; DOM/state counters alone are insufficient. See concrete remaining work in design/evidence/review.md.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/review.md",
+          "sha256": "2bf6aea4482161f7f5dbb8e70075117ef6f9f76903c58591332c627ed8d87863"
+        }
+      ]
+    },
+    {
+      "id": "PROJECT-GUIDE-onboarding-flow",
+      "status": "not-applicable",
+      "reason": "No signup/onboarding/consent flow is requested in this personal task planner.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/review.md",
+          "sha256": "2bf6aea4482161f7f5dbb8e70075117ef6f9f76903c58591332c627ed8d87863"
+        }
+      ]
+    },
+    {
+      "id": "PROJECT-GUIDE-reference-decompose",
+      "status": "unknown",
+      "reason": "Original PROJECT-GUIDE-reference-decompose checks retained. Full scoped review remains incomplete; DOM/state counters alone are insufficient. See concrete remaining work in design/evidence/review.md.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/review.md",
+          "sha256": "2bf6aea4482161f7f5dbb8e70075117ef6f9f76903c58591332c627ed8d87863"
+        }
+      ]
+    },
+    {
+      "id": "PROJECT-GUIDE-reference-review",
+      "status": "unknown",
+      "reason": "Original PROJECT-GUIDE-reference-review checks retained. Full scoped review remains incomplete; DOM/state counters alone are insufficient. See concrete remaining work in design/evidence/review.md.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/review.md",
+          "sha256": "2bf6aea4482161f7f5dbb8e70075117ef6f9f76903c58591332c627ed8d87863"
+        }
+      ]
+    },
+    {
+      "id": "PROJECT-GUIDE-reference-to-ui",
+      "status": "unknown",
+      "reason": "Original PROJECT-GUIDE-reference-to-ui checks retained. Full scoped review remains incomplete; DOM/state counters alone are insufficient. See concrete remaining work in design/evidence/review.md.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/review.md",
+          "sha256": "2bf6aea4482161f7f5dbb8e70075117ef6f9f76903c58591332c627ed8d87863"
+        }
+      ]
+    },
+    {
+      "id": "PROJECT-GUIDE-samkill-ui",
+      "status": "unknown",
+      "reason": "Original PROJECT-GUIDE-samkill-ui checks retained. Full scoped review remains incomplete; DOM/state counters alone are insufficient. See concrete remaining work in design/evidence/review.md.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/review.md",
+          "sha256": "2bf6aea4482161f7f5dbb8e70075117ef6f9f76903c58591332c627ed8d87863"
+        }
+      ]
+    },
+    {
+      "id": "PROJECT-GUIDE-uibowl-research",
+      "status": "unknown",
+      "reason": "Original PROJECT-GUIDE-uibowl-research checks retained. Full scoped review remains incomplete; DOM/state counters alone are insufficient. See concrete remaining work in design/evidence/review.md.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/review.md",
+          "sha256": "2bf6aea4482161f7f5dbb8e70075117ef6f9f76903c58591332c627ed8d87863"
+        }
+      ]
+    },
+    {
+      "id": "PROJECT-GUIDE-ux-copy",
+      "status": "unknown",
+      "reason": "Original PROJECT-GUIDE-ux-copy checks retained. Full scoped review remains incomplete; DOM/state counters alone are insufficient. See concrete remaining work in design/evidence/review.md.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/review.md",
+          "sha256": "2bf6aea4482161f7f5dbb8e70075117ef6f9f76903c58591332c627ed8d87863"
+        }
+      ]
+    },
+    {
+      "id": "PROJECT-LONG-ACTION-OWNERSHIP",
+      "status": "pass",
+      "reason": "All visible short/120-character task rows keep checkbox and delete centered within2px of the first line at296/320/390/1440 in normal,200%text and separate text-spacing modes. Official44px delete target and44px capsule verified. Direct296px enlarged screenshot inspected.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/review.md",
+          "sha256": "2bf6aea4482161f7f5dbb8e70075117ef6f9f76903c58591332c627ed8d87863"
+        },
+        {
+          "kind": "code",
+          "path": "index.html",
+          "sha256": "aba6b6fc457f61e67f3a30b9aec3550be1832bba913e3c1b2b5b99bc79741369"
+        },
+        {
+          "kind": "code",
+          "path": "styles.css",
+          "sha256": "a6227a38ed9e94fe65b65b51f1cd02c1dc50528b3baa02d00e53afccbf6a4229"
+        },
+        {
+          "kind": "code",
+          "path": "app.js",
+          "sha256": "2daa04f05fc76c4c901607e0a06dbfc45b9aba51a7734e8575e3f3fde15706de"
+        },
+        {
+          "kind": "code",
+          "path": "render.js",
+          "sha256": "c79a79d230aadde3e5e89bf8a3e5c4b55c1a10f19a259062802c65d3773c67e5"
+        },
+        {
+          "kind": "code",
+          "path": "store.js",
+          "sha256": "2300e692f886294a8d328b7d3f72fdac9c72b57eac8c6d2c79d95fd9bd25f0ce"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/390-filled.png",
+          "sha256": "73e70f97822362f0afb9b5556a009351d73097ac52c8c45f92c180b99f875e0f"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/296-long-text-200.png",
+          "sha256": "b57c109188ceda491dfeaa85a78530c7775ce8d27467837fb16e83111286a3f6"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/296-form-text-200.png",
+          "sha256": "143dca5493935b54c01f44220b960a624cda3b072514b8dcd33b0eb96deb2a52"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/read-failed-form.png",
+          "sha256": "4209579202f13d16028e738d1e6635b0a19ceeb7b8e21ff29e6d928905e5ece0"
+        }
+      ]
+    },
+    {
+      "id": "PROJECT-INITIAL-READ-INTEGRITY",
+      "status": "pass",
+      "reason": "Actual failed-read/create/reload browser sequence preserves original raw storage and input, restores the old record and permits a new create after successful reload;15 store cases and4 renderer states pass.",
+      "evidence": [
+        {
+          "kind": "spec",
+          "path": "design/evidence/review.md",
+          "sha256": "2bf6aea4482161f7f5dbb8e70075117ef6f9f76903c58591332c627ed8d87863"
+        },
+        {
+          "kind": "code",
+          "path": "index.html",
+          "sha256": "aba6b6fc457f61e67f3a30b9aec3550be1832bba913e3c1b2b5b99bc79741369"
+        },
+        {
+          "kind": "code",
+          "path": "styles.css",
+          "sha256": "a6227a38ed9e94fe65b65b51f1cd02c1dc50528b3baa02d00e53afccbf6a4229"
+        },
+        {
+          "kind": "code",
+          "path": "app.js",
+          "sha256": "2daa04f05fc76c4c901607e0a06dbfc45b9aba51a7734e8575e3f3fde15706de"
+        },
+        {
+          "kind": "code",
+          "path": "render.js",
+          "sha256": "c79a79d230aadde3e5e89bf8a3e5c4b55c1a10f19a259062802c65d3773c67e5"
+        },
+        {
+          "kind": "code",
+          "path": "store.js",
+          "sha256": "2300e692f886294a8d328b7d3f72fdac9c72b57eac8c6d2c79d95fd9bd25f0ce"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/390-filled.png",
+          "sha256": "73e70f97822362f0afb9b5556a009351d73097ac52c8c45f92c180b99f875e0f"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/296-long-text-200.png",
+          "sha256": "b57c109188ceda491dfeaa85a78530c7775ce8d27467837fb16e83111286a3f6"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/296-form-text-200.png",
+          "sha256": "143dca5493935b54c01f44220b960a624cda3b072514b8dcd33b0eb96deb2a52"
+        },
+        {
+          "kind": "visual",
+          "path": "design/evidence/read-failed-form.png",
+          "sha256": "4209579202f13d16028e738d1e6635b0a19ceeb7b8e21ff29e6d928905e5ece0"
+        },
+        {
+          "kind": "interaction",
+          "path": "design/evidence/workflow.json",
+          "sha256": "bb252857ae4e3b8917625ef8bf665fc9faade7241ff6e130070e41458eb0b004"
+        },
+        {
+          "kind": "interaction",
+          "path": "design/evidence/read-recovery.json",
+          "sha256": "1e630f55d24d75476c5c005eb53229a5aa9d3137c9abd531f2b45cd45fe7fbe2"
+        },
+        {
+          "kind": "interaction",
+          "path": "design/evidence/firstline.json",
+          "sha256": "58110f349f84e6eafcd22e80d812d79abe0354c8e974fec4698c011874b31197"
+        }
+      ]
+    }
+  ],
+  "catalog_sha256": "82e459f06fb4113a1c2caa89ac2c28e95c29c186a0190bb8bf0c2a5caf74329f",
+  "contract_sha256": "bb067cb3a8ded357b719286998fac9ab180a50a397eb055e59d446b087ce2839",
+  "target_sha256": "a9d697f13ea0b60551337b80c62f78ca777273c6aebaf7a790bd351432a95923"
+}

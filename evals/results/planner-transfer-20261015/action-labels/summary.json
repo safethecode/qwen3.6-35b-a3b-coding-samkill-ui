@@ -1,0 +1,96 @@
+{
+  "status": "INCOMPLETE_REFERENCE_PARITY",
+  "sourceHashes": {
+    "index.html": "f66c1447eab47c59cb642527fb934a7717551d4429d104d3d33874f0897bac1c",
+    "styles.css": "a305ee818d454b1342e899e55c515501fc0139a1391abd8d5ce7ed75b839ac80",
+    "app.js": "2daa04f05fc76c4c901607e0a06dbfc45b9aba51a7734e8575e3f3fde15706de",
+    "DESIGN.md": "01554d209ba008b7b3c6182a4614e77359927c3811404acfad29ed9953aca78b",
+    "REFERENCE.md": "9f04811d7f04c3d0ae81da3cf35c30457499108f6a3e7df93c9ab9b872a9078c",
+    "assets/fonts/METADATA.pb": "9b8b27c0dd1adbb0057d1fbe9534207ab3606114ace6755453d14668912471a1",
+    "assets/fonts/NotoSansKR.ttf": "194018e6b2b293a7964f037b25c0249ce1418bc9ab3c971060a03aa57861e252",
+    "assets/fonts/OFL.txt": "1c05c68c34f9708415aada51f17e1b0092d2cea709bf4a94cd38114f9e73d7d9",
+    "assets/icons/LICENSE": "b495047bd93a9b06913511076f504daba17d5bbeb3e0650f3bb53a4220329c57",
+    "assets/icons/Plus.svg": "3d4f93d0e5a8eb932e4d1f0d71122d01917e7624439adc35dddcd5352d7a228f",
+    "assets/icons/Trash2-neutral.svg": "4e249e5c0f31edddd39895daffe23cf7bc80d405fb1a1f21749683d391de419a",
+    "assets/icons/X.svg": "f27abfc353abc2497a1d9752e21e2e2e32eeeb4271401f2a067c4d1fcced7a23",
+    "assets/icons/manifest.json": "9edbf06ed93bfae58ae18083d15f36a7bbada2a99e7fd8156667b865c7d42ee2",
+    "design/typography.json": "534c3deed77d20d1d9839d0eceda9925e0cdb26b2f632ba652d29bb5e1909cee",
+    "design/component-plan.json": "3833e739bb698d64869ac3936dea42d80354f7b5b2e612bbe6390b34c9bb529f",
+    "design/layout-contract.json": "9ee84432ec65ec95f593887fe8a7bd4479dde09a7e91df25b35199204420d3cc",
+    "render.js": "c79a79d230aadde3e5e89bf8a3e5c4b55c1a10f19a259062802c65d3773c67e5",
+    "sample-editor.html": "6986f9ac088f35c49edd8bce742b4fb33dd43c64d2f6bbe003e7b7e2edf117ef",
+    "sample-tasks.html": "f3fc66220565048d03c7c0f0e12cdff35a13ffb60a8543ab61da092708cd647c",
+    "sample-week.html": "bc2a5478593a394f124d388ae299191f89f0f7a1781e745f3de21567f2a6c3f8",
+    "store.js": "2300e692f886294a8d328b7d3f72fdac9c72b57eac8c6d2c79d95fd9bd25f0ce"
+  },
+  "checkerHashes": {
+    "check-action-labels.mjs": "ef2f410faec0c4b2e2557f4a071013fcefe518e9088ba15d55d7d17cf2128cb9",
+    "check-action-labels-v1.mjs": "595f6ca2b17dbf0f969eef6aded7920065ffa6ad863518fe9ae82d55a5f996cf",
+    "check-task-handoff.mjs": "76b75f14182342017df645155e9513f0dacb2baed59ea2a3e96f6f851654ae05",
+    "check-firstline.mjs": "4bfc46eccd28265e15e4a3a14f0caad77cb59f9a37d9c537103861184a9f2f46",
+    "check-planner.mjs": "be7773739b06167270dbe7848fa2c06a7d07b585f3ac7a1f5cb3d5b6759239a9",
+    "check-read-recovery.mjs": "e3b1a3ae0de806368ee144e6beafac4801e67162579982c2ee2bea722e9c87d1",
+    "check-renderer.mjs": "222c298dc848f3e7eec49ef72aa70c287ea7c80b82f0b29f71d6709da142e093",
+    "check-store.mjs": "f4ab6e551dab732fdb473088548987b56555c869b9a5b0a92ed5164049b25bc4"
+  },
+  "visibleLabels": {
+    "baselineWidthsFailed": 4,
+    "currentModeWidthChecksPassed": 12
+  },
+  "workflow": {
+    "passed": 73,
+    "failed": 0
+  },
+  "renderer": {
+    "passed": 4,
+    "failed": 0
+  },
+  "readRecovery": {
+    "passed": 2,
+    "failed": 0
+  },
+  "handoff": {
+    "passed": 2,
+    "failed": 0
+  },
+  "firstLine": {
+    "failed": 0,
+    "widths": [
+      296,
+      320,
+      390,
+      1440
+    ],
+    "modes": [
+      "normal",
+      "text-200",
+      "text-spacing"
+    ]
+  },
+  "assistance": [
+    "Host exact5slot markup/control contract and bounded acceptance",
+    "Actual local Qwen label/CSS generation and one-declaration wrapping repair",
+    "Host propagation of unchanged local button markup into omitted sample/plan consumers; original failed handoff retained"
+  ],
+  "limits": [
+    "Original strict catalog and whole-guide assessment remain incomplete",
+    "Permanent row action density needs further review",
+    "Native popup/device/AT and repeated independent representative generation remain unverified"
+  ],
+  "store": {
+    "passed": 15,
+    "failed": 0
+  },
+  "catalog": {
+    "status": "UNVERIFIED",
+    "exitCode": 2,
+    "entries": 85,
+    "scopedPass": 41,
+    "notApplicable": 14,
+    "unknown": 28,
+    "failedIds": [
+      "ORC-F08",
+      "ORC-G16"
+    ]
+  }
+}
