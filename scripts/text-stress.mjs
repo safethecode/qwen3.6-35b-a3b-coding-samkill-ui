@@ -1,3 +1,17 @@
+export async function settleTextLayout(page) {
+  return page.evaluate(async () => {
+    let previous = '', stable = 0;
+    for (let frame = 1; frame <= 12; frame++) {
+      await new Promise(resolve => requestAnimationFrame(resolve));
+      const geometry = JSON.stringify([...document.querySelectorAll('body,body *')].map(node => { const b = node.getBoundingClientRect(); return [b.x, b.y, b.width, b.height, node.scrollWidth, node.scrollHeight]; }));
+      stable = geometry === previous && document.fonts.status === 'loaded' ? stable + 1 : 0;
+      if (stable >= 2) return { status: 'SETTLED', frames: frame, scope: 'Two consecutive unchanged geometry frames and loaded fonts;not network,paint or visual-quality approval' };
+      previous = geometry;
+    }
+    return { status: 'UNVERIFIED', frames: 12, scope: 'Geometry or fonts did not settle within the bounded frame budget;recapture required' };
+  });
+}
+
 export async function inspectTextStress(page, capture = async () => {}) {
   const reports = [];
   const nodes = await page.locator('body,body *').elementHandles();
@@ -9,6 +23,7 @@ export async function inspectTextStress(page, capture = async () => {}) {
         const sizes = await Promise.all(nodes.map(node => node.evaluate(element => parseFloat(getComputedStyle(element).fontSize))));
         await Promise.all(nodes.map((node, index) => node.evaluate((element, size) => element.style.setProperty('font-size', `${size * 2}px`, 'important'), sizes[index])));
       } else spacing = await page.addStyleTag({ content: 'body,body *{line-height:1.5!important;letter-spacing:.12em!important;word-spacing:.16em!important}p{margin-bottom:2em!important}' });
+      const layoutSettlement = await settleTextLayout(page);
       const geometry = await page.evaluate(() => {
         const visible = element => element.checkVisibility({ checkOpacity: true, checkVisibilityCSS: true }) && element.getBoundingClientRect().width > 0;
         const describe = element => ({ tag: element.tagName, id: element.id, class: String(element.className), text: element.textContent.trim().slice(0, 100), width: element.clientWidth, scrollWidth: element.scrollWidth, height: element.clientHeight, scrollHeight: element.scrollHeight, overflow: getComputedStyle(element).overflow });
@@ -96,7 +111,7 @@ export async function inspectTextStress(page, capture = async () => {}) {
           clippingCandidates: elements.filter(element => element.textContent.trim() && (element.scrollWidth > element.clientWidth + 1 || element.scrollHeight > element.clientHeight + 1)).slice(0, 50).map(describe)
         };
       });
-      reports.push({ mode, ...geometry, visual: 'UNVERIFIED', method: 'Chromium computed-font 200% enlargement or separate text-spacing override; not real-device zoom. Clipping candidates need visual review.' });
+      reports.push({ mode, ...geometry, layoutSettlement, visual: 'UNVERIFIED', method: 'Chromium computed-font 200% enlargement or separate text-spacing override; not real-device zoom. Clipping candidates need visual review.' });
       await capture(mode, reports.at(-1));
     } finally {
       if (spacing) await spacing.evaluate(element => element.remove());
@@ -106,4 +121,3 @@ export async function inspectTextStress(page, capture = async () => {}) {
   await Promise.all(nodes.map(node => node.dispose()));
   return reports;
 }
-

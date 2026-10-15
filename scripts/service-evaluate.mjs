@@ -138,6 +138,7 @@ export async function evaluateService(target, evidence, fixture, options = {}) {
         await writeFile(resolve(evidence, stressEvidence), JSON.stringify(reports, null, 2));
         reviewRequired.push(...reviewFindings([{ status: 'UNVERIFIED', problem: 'Enlarged text and spacing require visual clipping, overlap and content-access review; zero horizontal overflow is not layout approval' }], stressEvidence, 'layout'));
         for (const report of reports) {
+          if (report.layoutSettlement.status !== 'SETTLED') reviewRequired.push(...reviewFindings([{ status: 'UNVERIFIED', problem: `${report.mode}: layout/fonts did not settle before capture; fresh settled evidence is required` }], stressEvidence, 'layout'));
           const name = `${report.mode}-${width}`;
           measurements[name] = report.overflowPx;
           await check(name, async () => assert.equal(report.overflowPx, 0, `Horizontal overflow under ${report.mode}. Preserve text and controls; do not hide overflow or shrink enlarged text. Investigate measured layout constraints: ${JSON.stringify([...report.gridPressure, ...report.flexPressure].slice(0, 2))}. Observed geometry: ${JSON.stringify(report)}`));
