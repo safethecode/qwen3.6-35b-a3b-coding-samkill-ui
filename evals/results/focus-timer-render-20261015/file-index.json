@@ -481,10 +481,6 @@
       "sha256": "e42fcb1c32d701e971b9587cd5362b68c4e645291b13742a4c072af2d7c555e1"
     },
     {
-      "path": "file-index.json",
-      "sha256": "e8fe4a22ebaa38516e00269333e4ea933e3b85ce5c0879b6a3fecaf0e69a2e83"
-    },
-    {
       "path": "materialize.mjs",
       "sha256": "20a02c7a1ff581a71c924f185c955325076e3cfb22aa6051d218a8b4f44b3090"
     },
