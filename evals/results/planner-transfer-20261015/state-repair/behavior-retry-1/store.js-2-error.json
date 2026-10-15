@@ -1,0 +1,3 @@
+{
+  "error": "empty state and full persistence sequence: Cannot read properties of undefined (reading 'completed')\nwrong collection type: Expected values to be strictly equal:\n\n'object' !== 'string'\n\ninvalid input does not write: Missing expected exception.\nfailed toggle preserves memory and disk: Missing expected exception.\nfailed remove preserves memory and disk: Missing expected exception."
+}

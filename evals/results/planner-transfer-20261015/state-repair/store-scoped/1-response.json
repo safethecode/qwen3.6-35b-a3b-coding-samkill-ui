@@ -1,0 +1,18 @@
+{
+  "elapsedMs": 47256,
+  "model": "qwen3.6:35b-a3b-coding",
+  "created_at": "2026-10-15T07:01:13.6302162Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\n\"code\": \"function createStore(storage = localStorage) {\\n  const STORAGE_KEY = 'weekly-tasks-v1';\\n  let tasks = [];\\n  let error = null;\\n\\n  function dateKey(d) {\\n    return d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0');\\n  }\\n\\n  function validDate(s) {\\n    if (typeof s !== 'string' || !/^\\\\d{4}-\\\\d{2}-\\\\d{2}$/.test(s)) return false;\\n    const d = new Date(s + 'T00:00:00');\\n    return isFinite(d) && dateKey(d) === s;\\n  }\\n\\n  function isValidRecord(r) {\\n    if (!r || typeof r !== 'object') return false;\\n    if (typeof r.id !== 'string' || !/^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i.test(r.id)) return false;\\n    if (typeof r.title !== 'string' || r.title.length < 1 || r.title.length > 120) return false;\\n    if (r.title !== r.title.trim()) return false;\\n    if (r.category !== 'study' && r.category !== 'life') return false;\\n    if (!validDate(r.date)) return false;\\n    if (typeof r.completed !== 'boolean') return false;\\n    return true;\\n  }\\n\\n  function load() {\\n    try {\\n      const raw = storage.getItem(STORAGE_KEY);\\n      if (raw === null) {\\n        tasks = [];\\n        error = null;\\n        return;\\n      }\\n      const parsed = JSON.parse(raw);\\n      if (!Array.isArray(parsed)) throw new Error('parse');\\n      if (parsed.length > 0 && !parsed.every(isValidRecord)) throw new Error('invalid');\\n      tasks = parsed;\\n      error = null;\\n    } catch (e) {\\n      tasks = [];\\n      error = '저장소 로드 오류';\\n    }\\n  }\\n\\n  function commit(next) {\\n    try {\\n      storage.setItem(STORAGE_KEY, JSON.stringify(next));\\n      tasks = next;\\n      error = null;\\n    } catch (e) {\\n      error = '저장소 저장 오류';\\n      throw new Error('저장 실패');\\n    }\\n  }\\n\\n  load();\\n\\n  return {\\n    get tasks() { return tasks; },\\n    get error() { return error; },\\n    add(title, category, date) {\\n      const trimmed = title.trim();\\n      if (trimmed.length < 1 || trimmed.length > 120) return null;\\n      if (category !== 'study' && category !== 'life') return null;\\n      if (!validDate(date)) return null;\\n      const newTask = {\\n        id: crypto.randomUUID(),\\n        title: trimmed,\\n        category: category,\\n        date: date,\\n        completed: false\\n      };\\n      const next = [...tasks, newTask];\\n      commit(next);\\n      return newTask;\\n    },\\n    toggle(id) {\\n      const idx = tasks.findIndex(t => t.id === id);\\n      if (idx === -1) return;\\n      const next = tasks.map((t, i) => i === idx ? { ...t, completed: !t.completed } : t);\\n      commit(next);\\n    },\\n    remove(id) {\\n      const next = tasks.filter(t => t.id !== id);\\n      if (next.length === tasks.length) return;\\n      commit(next);\\n    }\\n  };\\n}\"\n}"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 47248932500,
+  "load_duration": 9300700,
+  "prompt_eval_count": 1717,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration": 17600443000,
+  "eval_count": 881,
+  "eval_duration": 29418009000
+}

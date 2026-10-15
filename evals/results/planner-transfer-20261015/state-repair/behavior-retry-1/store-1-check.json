@@ -1,0 +1,60 @@
+{
+  "status": "FAIL",
+  "sourceSha256": "15bd8f2cf800255db4b4e4f39c5f14716c4b361346e3f898c85d1531f97d506f",
+  "checks": [
+    {
+      "name": "local date and Monday week across year",
+      "status": "PASS"
+    },
+    {
+      "name": "empty state and full persistence sequence",
+      "status": "FAIL",
+      "detail": "Expected values to be strictly equal:\n\nfalse !== true\n"
+    },
+    {
+      "name": "malformed JSON",
+      "status": "PASS"
+    },
+    {
+      "name": "wrong collection type",
+      "status": "FAIL",
+      "detail": "Expected values to be strictly equal:\n\n'object' !== 'string'\n"
+    },
+    {
+      "name": "impossible saved date",
+      "status": "FAIL",
+      "detail": "Expected values to be strictly equal:\n\n'object' !== 'string'\n"
+    },
+    {
+      "name": "invalid saved identifier",
+      "status": "FAIL",
+      "detail": "Expected values to be strictly equal:\n\n'object' !== 'string'\n"
+    },
+    {
+      "name": "duplicate identifiers",
+      "status": "FAIL",
+      "detail": "Expected values to be strictly equal:\n\n'object' !== 'string'\n"
+    },
+    {
+      "name": "read failure is visible",
+      "status": "PASS"
+    },
+    {
+      "name": "invalid input does not write",
+      "status": "FAIL",
+      "detail": "Missing expected exception."
+    },
+    {
+      "name": "failed add preserves memory and disk",
+      "status": "PASS"
+    },
+    {
+      "name": "failed toggle preserves memory and disk",
+      "status": "PASS"
+    },
+    {
+      "name": "failed remove preserves memory and disk",
+      "status": "PASS"
+    }
+  ]
+}

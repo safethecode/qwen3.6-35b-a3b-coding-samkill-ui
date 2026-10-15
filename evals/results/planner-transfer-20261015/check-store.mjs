@@ -31,6 +31,7 @@ export async function checkStore(filename) {
     ['malformed JSON', '{'], ['wrong collection type', '{}'],
     ['impossible saved date', JSON.stringify([{ ...record, date: '2026-02-30' }])],
     ['invalid saved identifier', JSON.stringify([{ ...record, id: '' }])],
+    ['blank saved title', JSON.stringify([{ ...record, title: '   ' }])],
     ['duplicate identifiers', JSON.stringify([record, record])]
   ]) check(name, () => {
     const storage = memory(raw), store = createStore(storage);

@@ -1,0 +1,20 @@
+{
+  "package": "lucide",
+  "version": "1.51.0",
+  "source": "https://github.com/lucide-icons/lucide",
+  "licenseSha256": "b495047bd93a9b06913511076f504daba17d5bbeb3e0650f3bb53a4220329c57",
+  "icons": [
+    {
+      "name": "Plus",
+      "file": "Plus.svg",
+      "sha256": "3d4f93d0e5a8eb932e4d1f0d71122d01917e7624439adc35dddcd5352d7a228f",
+      "geometrySha256": "3ed1784e53a9252aa47f2392c529dc2078803a22e84522f68ec8165c23f05bb0"
+    },
+    {
+      "name": "X",
+      "file": "X.svg",
+      "sha256": "f27abfc353abc2497a1d9752e21e2e2e32eeeb4271401f2a067c4d1fcced7a23",
+      "geometrySha256": "7bf13b1e2e2ab7bb7226b828a7b6ded9a6482211bdeafc7a1e61ea450232d212"
+    }
+  ]
+}

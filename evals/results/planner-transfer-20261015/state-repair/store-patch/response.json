@@ -1,0 +1,18 @@
+{
+  "elapsedMs": 25563,
+  "model": "qwen3.6:35b-a3b-coding",
+  "created_at": "2026-10-15T07:03:48.8739506Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\n  \"edits\": [\n    {\n      \"old\": \"    if (typeof r.title !== 'string' || r.title.length < 1 || r.title.length > 120) return false;\",\n      \"new\": \"    if (typeof r.title !== 'string' || r.title.trim().length < 1 || r.title.length > 120) return false;\"\n    },\n    {\n      \"old\": \"      if (trimmed.length < 1 || trimmed.length > 120) return null;\",\n      \"new\": \"      if (trimmed.length < 1 || trimmed.length > 120) throw new Error('제목은 1자 이상 120자 이하여야 합니다.');\\n      if (!['study', 'life'].includes(category)) throw new Error('카테고리는 study 또는 life여야 합니다.');\\n      if (!validDate(date)) throw new Error('유효하지 않은 날짜 형식입니다.');\\n      return null;\"\n    },\n    {\n      \"old\": \"      if (!['study', 'life'].includes(category)) return null;\\n      if (!validDate(date)) return null;\",\n      \"new\": \"\"\n    },\n    {\n      \"old\": \"      if (idx === -1) return null;\\n      const next = tasks.filter(t => t.id !== id);\\n      commit(next);\\n      return tasks[idx];\",\n      \"new\": \"      if (idx === -1) return null;\\n      const next = tasks.filter(t => t.id !== id);\\n      commit(next);\\n      return next[idx];\"\n    }\n  ]\n}"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 25557361700,
+  "load_duration": 7257300,
+  "prompt_eval_count": 1300,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration": 14188571000,
+  "eval_count": 361,
+  "eval_duration": 11249243000
+}

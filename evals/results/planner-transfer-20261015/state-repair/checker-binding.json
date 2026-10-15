@@ -1,0 +1,15 @@
+{
+  "v1": "87d641ad8e0f772f5aa8a37a043217bab766517dd39fbc3072dc8adb06045571",
+  "current": "d557f50b42f6aeae045b4a1678725a0340b90affd66d94d22828f591cb1a57a9",
+  "regressions": {
+    "unit": {
+      "passed": 113,
+      "failed": 0
+    },
+    "browser": {
+      "passed": 44,
+      "failed": 0
+    }
+  },
+  "note": "Initial regression invocation without explicit Chrome path stalled during browser launch and was stopped; full rerun used the available Chrome binary. Generated-source whitespace and bundled license bytes are intentionally preserved."
+}

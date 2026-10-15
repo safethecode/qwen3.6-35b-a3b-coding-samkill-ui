@@ -1,0 +1,55 @@
+{
+  "status": "FAIL",
+  "sourceSha256": "b49cfed76c16cead2af941d1913abbe39c173a0160597d2702a99b61bfcb5159",
+  "checks": [
+    {
+      "name": "local date and Monday week across year",
+      "status": "PASS"
+    },
+    {
+      "name": "empty state and full persistence sequence",
+      "status": "PASS"
+    },
+    {
+      "name": "malformed JSON",
+      "status": "PASS"
+    },
+    {
+      "name": "wrong collection type",
+      "status": "PASS"
+    },
+    {
+      "name": "impossible saved date",
+      "status": "PASS"
+    },
+    {
+      "name": "invalid saved identifier",
+      "status": "PASS"
+    },
+    {
+      "name": "duplicate identifiers",
+      "status": "PASS"
+    },
+    {
+      "name": "read failure is visible",
+      "status": "PASS"
+    },
+    {
+      "name": "invalid input does not write",
+      "status": "FAIL",
+      "detail": "Missing expected exception."
+    },
+    {
+      "name": "failed add preserves memory and disk",
+      "status": "PASS"
+    },
+    {
+      "name": "failed toggle preserves memory and disk",
+      "status": "PASS"
+    },
+    {
+      "name": "failed remove preserves memory and disk",
+      "status": "PASS"
+    }
+  ]
+}
