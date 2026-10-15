@@ -1,0 +1,18 @@
+{
+  "elapsedMs": 96124,
+  "model": "qwen3.6:35b-a3b-coding",
+  "created_at": "2026-10-15T06:47:47.3221957Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\n\"code\": \"import { weekDates } from './store.js';\\n\\nconst WEEKDAYS = ['월', '화', '수', '목', '금', '토', '일'];\\nconst MONTHS = ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'];\\n\\nfunction formatLocalDate(iso) {\\n  const d = new Date(iso + 'T00:00:00');\\n  const month = MONTHS[d.getMonth()];\\n  const day = d.getDate();\\n  const weekday = WEEKDAYS[d.getDay()];\\n  return `${month} ${day}일 ${weekday}`;\\n}\\n\\nexport function renderPlanner({ tasks, selectedDate, error }) {\\n  const headerEl = document.querySelector('.planner-header');\\n  const weekStrip = document.getElementById('week-days');\\n  const selectedDateEl = document.getElementById('selected-date');\\n  const emptyState = document.getElementById('empty-state');\\n  const pageError = document.getElementById('page-error');\\n  const studyList = document.getElementById('study-items');\\n  const lifeList = document.getElementById('life-items');\\n  const template = document.getElementById('task-template');\\n\\n  if (!selectedDateEl || !weekStrip || !emptyState || !pageError || !studyList || !lifeList || !template) return;\\n\\n  selectedDateEl.textContent = formatLocalDate(selectedDate);\\n  pageError.textContent = error || '';\\n\\n  const weekDatesArr = weekDates(selectedDate);\\n  weekStrip.innerHTML = '';\\n  weekDatesArr.forEach(date => {\\n    const btn = document.createElement('button');\\n    btn.type = 'button';\\n    btn.className = 'day-button';\\n    btn.dataset.date = date;\\n    btn.setAttribute('aria-label', formatLocalDate(date));\\n    btn.setAttribute('aria-pressed', date === selectedDate ? 'true' : 'false');\\n    btn.innerHTML = `<span class=\\\"weekday\\\">${WEEKDAYS[(weekDatesArr.indexOf(date) + 1) % 7]}</span><span class=\\\"day-number\\\">${new Date(date + 'T00:00:00').getDate()}</span>`;\\n    weekStrip.appendChild(btn);\\n  });\\n\\n  const dayTasks = tasks.filter(t => t.date === selectedDate);\\n  const hasTasks = dayTasks.length > 0;\\n  emptyState.hidden = hasTasks;\\n\\n  studyList.innerHTML = '';\\n  lifeList.innerHTML = '';\\n\\n  dayTasks.forEach(task => {\\n    const clone = template.content.cloneNode(true);\\n    const li = clone.querySelector('li');\\n    li.dataset.id = task.id;\\n    const checkbox = li.querySelector('.task-check');\\n    checkbox.checked = task.completed;\\n    const nameSpan = li.querySelector('.task-name');\\n    nameSpan.textContent = task.title;\\n    const deleteBtn = li.querySelector('.delete-task');\\n    deleteBtn.setAttribute('aria-label', `\\\"${task.title}\\\" 삭제`);\\n    if (task.completed) {\\n      li.classList.add('is-complete');\\n    } else {\\n      li.classList.remove('is-complete');\\n    }\\n    const list = task.category === 'study' ? studyList : lifeList;\\n    if (list) {\\n      list.appendChild(clone);\\n    }\\n  });\\n}\"\n}"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 96122950800,
+  "load_duration": 8878200,
+  "prompt_eval_count": 6136,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration": 63549111000,
+  "eval_count": 787,
+  "eval_duration": 32429354000
+}

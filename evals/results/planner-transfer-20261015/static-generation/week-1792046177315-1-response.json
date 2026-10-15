@@ -1,0 +1,33 @@
+{
+  "binding": "7b48df63bac52c70982450ec39522ee4ebf3931e04b45ed826ea80ecb7c11eac",
+  "settings": {
+    "model": "qwen3.6:35b-a3b-coding",
+    "think": false,
+    "options": {
+      "num_ctx": 16384,
+      "temperature": 0.7,
+      "top_p": 0.8,
+      "top_k": 20,
+      "repeat_penalty": 1.05,
+      "num_gpu": 16,
+      "num_batch": 128,
+      "num_predict": 2048
+    }
+  },
+  "elapsedMs": 153873,
+  "model": "qwen3.6:35b-a3b-coding",
+  "created_at": "2026-10-15T06:36:17.3111507Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\n\"css\": \".planner-header {\\n  padding: 24px var(--screen-inset) 0;\\n}\\n\\n.planner-header h1 {\\n  font-size: 22px;\\n  font-weight: 700;\\n  line-height: 1.5;\\n  text-align: left;\\n  margin-bottom: 16px;\\n  color: var(--text);\\n}\\n\\n.week-strip {\\n  display: flex;\\n  gap: 4px;\\n  overflow-x: auto;\\n  width: 100%;\\n  padding: 4px 0;\\n  /* Hide scrollbar for cleaner mobile look while maintaining scroll functionality */\\n  -ms-overflow-style: none;\\n  scrollbar-width: none;\\n}\\n\\n.week-strip::-webkit-scrollbar {\\n  display: none;\\n}\\n\\n.day-button {\\n  flex: 0 0 44px;\\n  min-height: 64px;\\n  background: transparent;\\n  border: none;\\n  cursor: pointer;\\n  display: flex;\\n  flex-direction: column;\\n  align-items: center;\\n  justify-content: center;\\n  gap: 4px;\\n  padding: 0;\\n  font-family: inherit;\\n}\\n\\n.day-button .weekday {\\n  font-size: 14px;\\n  font-weight: 500;\\n  color: var(--muted);\\n  line-height: 1;\\n}\\n\\n.day-button .day-number {\\n  display: flex;\\n  align-items: center;\\n  justify-content: center;\\n  width: 32px;\\n  height: 32px;\\n  border-radius: 50%;\\n  font-size: 16px;\\n  font-weight: 600;\\n  color: var(--text);\\n  background-color: transparent;\\n}\\n\\n/* Selected State */\\n.day-button[aria-pressed=\\\"true\\\"] .day-number {\\n  background-color: var(--text);\\n  color: #fff;\\n  font-weight: 700;\\n}\\n\\n.day-button[aria-pressed=\\\"true\\\"] .weekday {\\n  color: var(--text);\\n}\\n\\n/* Focus State */\\n.day-button:focus-visible {\\n  outline: none;\\n}\\n\\n.day-button:focus-visible .day-number {\\n  box-shadow: 0 0 0 2px var(--surface), 0 0 0 4px var(--focus);\\n}\\n\\n/* Hide native scrollbar for week-strip */\\n.week-strip::-webkit-scrollbar {\\n  display: none;\\n}\"\n}"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 153862294400,
+  "load_duration": 17531869100,
+  "prompt_eval_count": 10046,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration": 104273434000,
+  "eval_count": 592,
+  "eval_duration": 31999741000
+}

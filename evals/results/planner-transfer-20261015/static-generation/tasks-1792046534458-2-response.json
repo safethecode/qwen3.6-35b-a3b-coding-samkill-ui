@@ -1,0 +1,33 @@
+{
+  "binding": "7b48df63bac52c70982450ec39522ee4ebf3931e04b45ed826ea80ecb7c11eac",
+  "settings": {
+    "model": "qwen3.6:35b-a3b-coding",
+    "think": false,
+    "options": {
+      "num_ctx": 16384,
+      "temperature": 0.7,
+      "top_p": 0.8,
+      "top_k": 20,
+      "repeat_penalty": 1.05,
+      "num_gpu": 16,
+      "num_batch": 128,
+      "num_predict": 2048
+    }
+  },
+  "elapsedMs": 184793,
+  "model": "qwen3.6:35b-a3b-coding",
+  "created_at": "2026-10-15T06:42:14.4575372Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\n  \"css\": \"/* Category Heading Pill */\\n.task-category .category-heading {\\n  background-color: var(--quiet);\\n  border-radius: 16px;\\n  padding: 4px 12px;\\n  display: inline-flex;\\n}\\n\\n.task-category .category-heading h2 {\\n  font-size: 14px;\\n  font-weight: 600;\\n  margin: 0;\\n  line-height: 1;\\n}\\n\\n/* Add Task Button */\\n.add-task {\\n  width: 44px;\\n  height: 44px;\\n  min-width: 44px;\\n  border: none;\\n  background: transparent;\\n  padding: 0;\\n  display: flex;\\n  align-items: center;\\n  justify-content: center;\\n  cursor: pointer;\\n}\\n\\n.add-task img {\\n  width: 20px;\\n  height: 20px;\\n  display: block;\\n}\\n\\n/* Task Lists */\\n.task-list {\\n  margin-top: 8px;\\n  padding: 0;\\n  list-style: none;\\n}\\n\\n/* Dynamic Task Row */\\n.task-row {\\n  min-height: 56px;\\n  display: flex;\\n  align-items: center;\\n  gap: 8px;\\n}\\n\\n/* Task Toggle / Label */\\n.task-toggle {\\n  display: flex;\\n  align-items: flex-start;\\n  gap: 12px;\\n  padding: 8px 0;\\n  min-height: 44px;\\n  cursor: pointer;\\n  flex: 1;\\n  min-width: 0;\\n}\\n\\n/* Native Checkbox */\\n.task-check {\\n  width: 20px;\\n  height: 20px;\\n  min-width: 20px;\\n  flex-shrink: 0;\\n  margin-top: 2px;\\n  accent-color: var(--focus);\\n  cursor: pointer;\\n}\\n\\n/* Task Title */\\n.task-name {\\n  font-size: 16px;\\n  font-weight: 500;\\n  line-height: 1.6;\\n  word-break: keep-all;\\n  overflow-wrap: break-word;\\n  color: var(--text);\\n}\\n\\n/* Completed State */\\n.task-row.is-complete .task-name {\\n  color: var(--muted);\\n  text-decoration: line-through;\\n  opacity: 1;\\n}\\n\\n/* Delete Button */\\n.delete-task {\\n  width: 44px;\\n  height: 44px;\\n  min-width: 44px;\\n  border: none;\\n  background: transparent;\\n  padding: 0;\\n  display: flex;\\n  align-items: center;\\n  justify-content: center;\\n  cursor: pointer;\\n}\\n\\n.delete-task img {\\n  width: 20px;\\n  height: 20px;\\n  display: block;\\n}\\n\\n/* Empty State */\\n#empty-state {\\n  font-size: 14px;\\n  font-weight: 500;\\n  color: var(--muted);\\n  line-height: 1.6;\\n  padding-bottom: 24px;\\n  text-align: center;\\n}\\n\\n/* Page Error */\\n#page-error {\\n  font-size: 14px;\\n  font-weight: 500;\\n  color: #d32f2f;\\n  margin-top: 16px;\\n}\\n\\n#page-error:empty {\\n  display: none;\\n}\"\n}"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 184790789200,
+  "load_duration": 9393100,
+  "prompt_eval_count": 12303,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration": 129283069000,
+  "eval_count": 832,
+  "eval_duration": 55434616000
+}

@@ -1,0 +1,62 @@
+{
+  "status": "FAIL",
+  "sourceSha256": "a971a70850ec98923c4b9635ff9aeebc4b63110f2c4326fdcff03e03c4ce8769",
+  "checks": [
+    {
+      "name": "local date and Monday week across year",
+      "status": "PASS"
+    },
+    {
+      "name": "empty state and full persistence sequence",
+      "status": "PASS"
+    },
+    {
+      "name": "malformed JSON",
+      "status": "PASS"
+    },
+    {
+      "name": "wrong collection type",
+      "status": "FAIL",
+      "detail": "Expected values to be strictly equal:\n\n'object' !== 'string'\n"
+    },
+    {
+      "name": "impossible saved date",
+      "status": "FAIL",
+      "detail": "Expected values to be strictly equal:\n\n'object' !== 'string'\n"
+    },
+    {
+      "name": "invalid saved identifier",
+      "status": "FAIL",
+      "detail": "Expected values to be strictly equal:\n\n'object' !== 'string'\n"
+    },
+    {
+      "name": "duplicate identifiers",
+      "status": "FAIL",
+      "detail": "Expected values to be strictly equal:\n\n'object' !== 'string'\n"
+    },
+    {
+      "name": "read failure is visible",
+      "status": "PASS"
+    },
+    {
+      "name": "invalid input does not write",
+      "status": "FAIL",
+      "detail": "Missing expected exception."
+    },
+    {
+      "name": "failed add preserves memory and disk",
+      "status": "FAIL",
+      "detail": "Expected values to be strictly equal:\n+ actual - expected\n\n+ '[{\"id\":\"4a725fc8-3214-4c94-b040-ce6e4cac9a58\",\"title\":\"복습하기\",\"category\":\"study\",\"date\":\"2026-10-15\",\"completed\":false},{\"id\":\"b7a2f3ef-5c4d-40f2-93f7-692190f4b72f\",\"title\":\"산책하기\",\"category\":\"life\",\"date\":\"2026-10-15\",\"completed\":false}]'\n- '[{\"id\":\"4a725fc8-3214-4c94-b040-ce6e4cac9a58\",\"title\":\"복습하기\",\"category\":\"study\",\"date\":\"2026-10-15\",\"completed\":false}]'\n"
+    },
+    {
+      "name": "failed toggle preserves memory and disk",
+      "status": "FAIL",
+      "detail": "Expected values to be strictly equal:\n+ actual - expected\n\n+ '[{\"id\":\"4a725fc8-3214-4c94-b040-ce6e4cac9a58\",\"title\":\"복습하기\",\"category\":\"study\",\"date\":\"2026-10-15\",\"completed\":true}]'\n- '[{\"id\":\"4a725fc8-3214-4c94-b040-ce6e4cac9a58\",\"title\":\"복습하기\",\"category\":\"study\",\"date\":\"2026-10-15\",\"completed\":false}]'\n"
+    },
+    {
+      "name": "failed remove preserves memory and disk",
+      "status": "FAIL",
+      "detail": "Expected values to be strictly equal:\n+ actual - expected\n\n+ '[]'\n- '[{\"id\":\"4a725fc8-3214-4c94-b040-ce6e4cac9a58\",\"title\":\"복습하기\",\"category\":\"study\",\"date\":\"2026-10-15\",\"completed\":false}]'\n"
+    }
+  ]
+}

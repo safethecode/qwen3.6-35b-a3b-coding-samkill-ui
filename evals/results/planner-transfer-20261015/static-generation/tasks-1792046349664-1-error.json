@@ -1,0 +1,6 @@
+{
+  "binding": "7b48df63bac52c70982450ec39522ee4ebf3931e04b45ed826ea80ecb7c11eac",
+  "elapsedMs": 172339,
+  "error": "Component sibling combinators are not supported: .task-check:checked + .task-name. Use parent gap or :not(:first-child) for repeated-group spacing, without + or ~.",
+  "errorName": "Error"
+}

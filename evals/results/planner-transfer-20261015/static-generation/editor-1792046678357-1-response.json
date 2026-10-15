@@ -1,0 +1,33 @@
+{
+  "binding": "7b48df63bac52c70982450ec39522ee4ebf3931e04b45ed826ea80ecb7c11eac",
+  "settings": {
+    "model": "qwen3.6:35b-a3b-coding",
+    "think": false,
+    "options": {
+      "num_ctx": 16384,
+      "temperature": 0.7,
+      "top_p": 0.8,
+      "top_k": 20,
+      "repeat_penalty": 1.05,
+      "num_gpu": 16,
+      "num_batch": 128,
+      "num_predict": 2048
+    }
+  },
+  "elapsedMs": 143893,
+  "model": "qwen3.6:35b-a3b-coding",
+  "created_at": "2026-10-15T06:44:38.3572255Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\n  \"css\": \".task-form-panel {\\n  padding: 24px;\\n}\\n\\n.editor-heading {\\n  display: flex;\\n  align-items: center;\\n  justify-content: space-between;\\n  margin-bottom: 16px;\\n}\\n\\n.editor-heading h2 {\\n  font-size: 22px;\\n  font-weight: 700;\\n  line-height: 1.2;\\n  margin: 0;\\n}\\n\\n#close-task {\\n  flex-shrink: 0;\\n  font-size: 14px;\\n  font-weight: 600;\\n  min-height: 44px;\\n  padding: 8px;\\n  background: transparent;\\n  border: none;\\n  color: var(--text);\\n  cursor: pointer;\\n}\\n\\n#close-task:focus-visible {\\n  outline-offset: 2px;\\n}\\n\\n#task-form {\\n  margin-top: 24px;\\n  display: flex;\\n  flex-direction: column;\\n  gap: 16px;\\n}\\n\\n.form-field label {\\n  display: block;\\n  font-size: 15px;\\n  font-weight: 600;\\n  line-height: 1.5;\\n  margin-bottom: 8px;\\n  color: var(--text);\\n}\\n\\n.field-control {\\n  background-color: var(--surface);\\n  border: 1px solid var(--quiet);\\n  border-radius: 6px;\\n}\\n\\n.field-control:focus-within {\\n  box-shadow: inset 0 0 0 2px var(--focus);\\n  border-color: transparent;\\n}\\n\\n@media (forced-colors: active) {\\n  .field-control:focus-within {\\n    outline: 2px solid ButtonText;\\n    box-shadow: none;\\n  }\\n}\\n\\n#task-name,\\n#task-category {\\n  width: 100%;\\n  min-height: 48px;\\n  padding: 12px;\\n  background-color: transparent;\\n  border: none;\\n  outline: none;\\n  color: var(--text);\\n  font-size: 16px;\\n  font-weight: 500;\\n  line-height: 1.5;\\n  appearance: auto;\\n}\\n\\n#task-name {\\n  box-sizing: border-box;\\n}\\n\\n#task-category {\\n  cursor: pointer;\\n}\\n\\n#task-error {\\n  display: none;\\n  margin-top: 0;\\n  color: #d32f2f;\\n  font-size: 14px;\\n  font-weight: 500;\\n  line-height: 1.5;\\n}\\n\\n#save-task {\\n  width: 100%;\\n  min-height: 52px;\\n  margin-top: 24px;\\n  padding: 16px;\\n  background-color: var(--text);\\n  color: #ffffff;\\n  font-size: 16px;\\n  font-weight: 700;\\n  line-height: 1.5;\\n  border-radius: 8px;\\n  border: none;\\n  cursor: pointer;\\n  text-align: center;\\n}\\n\\n#save-task:focus-visible {\\n  outline-offset: 2px;\\n}\"\n}"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 143891831300,
+  "load_duration": 9273400,
+  "prompt_eval_count": 9950,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration": 102691564000,
+  "eval_count": 765,
+  "eval_duration": 41136544000
+}
