@@ -36,4 +36,10 @@ Repair requests also receive the complete applicable decomposition, typography, 
 
 ## Long-running local inference
 
+## Prescribed computed CSS roles
+
+For a property already fixed by the design contract, a layout rule may use `kind: "computedStyle"`, one visible `subject` selector and a `properties` object of canonical browser-computed strings, such as `{ "border-radius": "24px", "flex-wrap": "wrap" }`. Choose the expectations before generation or repair and scope them by the existing `states` and `widths` fields when needed. The inspector rejects unsupported property/value pairs and mismatched computed values after inheritance, custom-property resolution and the cascade. It requires exactly one visible subject; an absent or ambiguous selector cannot pass. Values such as colors must use their canonical computed serialization. These checks supplement geometry, stress and direct reference review; they do not approve appearance or diagnose whether a mismatch comes from the host contract, native control or model.
+
+## Long-running local inference
+
 Generation and component repair use a Node HTTP/HTTPS transport with an explicit total deadline instead of the implicit fetch response-header timeout. The default deadline is 600,000 milliseconds. Set `QWEN_REQUEST_TIMEOUT_MS` to an integer between 1,000 and 1,800,000 to override it. Existing smaller per-unit repair deadlines remain the default for the general repair runner. Component generation records its deadline in the input binding; changing it invalidates checkpoint reuse. Requests remain bounded and truncated model output is still rejected. A transport fix does not establish visual quality or guarantee that a model finishes within the chosen deadline.

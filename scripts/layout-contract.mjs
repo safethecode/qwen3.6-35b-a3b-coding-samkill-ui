@@ -116,6 +116,14 @@ export async function inspectLayoutContract(page, contract, options = {}) {
           if (!Number.isFinite(tolerance) || tolerance < 0 || tolerance > 4) throw new Error('Fill tolerance must be between zero and four pixels');
           observed.expectedWidth = observed.row.innerWidth - observed.reference.width - observed.row.gap;
           if (!observed.row.directChildren || observed.row.children !== 2 || observed.expectedWidth <= 0 || Math.abs(observed.subject.width - observed.expectedWidth) > tolerance || !inside(observed.subject, observed.container)) throw new Error('Primary action does not fill the remaining space in its declared two-control row');
+        } else if (rule.kind === 'computedStyle') {
+          if (!rule.properties || typeof rule.properties !== 'object' || Array.isArray(rule.properties) || !Object.keys(rule.properties).length || Object.keys(rule.properties).length > 32 || Object.entries(rule.properties).some(([property, value]) => !/^(?:--)?[a-z][a-z0-9-]*$/.test(property) || typeof value !== 'string' || !value.trim())) throw new Error('Computed styles require 1–32 named properties with nonempty canonical computed strings');
+          observed.computed = await page.locator(rule.subject).evaluate((element, properties) => {
+            const style = getComputedStyle(element);
+            return Object.entries(properties).map(([property, expected]) => ({ property, expected, supported: property.startsWith('--') || CSS.supports(property, expected), actual: style.getPropertyValue(property).trim() }));
+          }, rule.properties);
+          const mismatch = observed.computed.find(item => !item.supported || item.actual !== item.expected);
+          if (mismatch) throw new Error(`Computed ${mismatch.property} is ${JSON.stringify(mismatch.actual)}, expected ${JSON.stringify(mismatch.expected)}${mismatch.supported ? '' : '; unsupported property/value'}`);
         } else if (rule.kind === 'maxWidth') {
           if (!Number.isFinite(rule.maximum) || rule.maximum <= 0) throw new Error('Maximum rendered width must be positive');
           if (observed.subject.width > rule.maximum + .5) throw new Error(`Screen exceeds declared mobile width: ${observed.subject.width} > ${rule.maximum}`);
