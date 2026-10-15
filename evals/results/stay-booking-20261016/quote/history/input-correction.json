@@ -1,0 +1,116 @@
+{
+  "at": "2026-10-15T17:29:32.028Z",
+  "hostInputError": "The v1 prose and generation prompt wrongly assigned cleaningFee to room despite the supplied actual catalog and accepted query contract storing it on rate. The model followed that contradictory prose. This fee-owner failure is not attributed solely to model capability.",
+  "preserved": "Originalv1contract,request,response,3/9report and originalmodule remainunchanged. Checker expected totals were already valid and are not relaxed.",
+  "unchangedModelDefects": [
+    "Null/missing/extra selection schema guard omitted",
+    "Invalid trip classified unavailable despite explicit invalid contract",
+    "Singleton catalog did not retain only chosen room/rate,so valid flex choice vanished"
+  ],
+  "actualFixtureOwnership": [
+    {
+      "stayId": "afternoon",
+      "roomId": "afternoon-standard",
+      "rateId": "afternoon-standard-basic",
+      "cleaningFeeOwner": "rate",
+      "cleaningFee": 20000,
+      "serviceBpsOwner": "rate",
+      "serviceBps": 500,
+      "capacityOwner": "room"
+    },
+    {
+      "stayId": "afternoon",
+      "roomId": "afternoon-standard",
+      "rateId": "afternoon-standard-flex",
+      "cleaningFeeOwner": "rate",
+      "cleaningFee": 20000,
+      "serviceBpsOwner": "rate",
+      "serviceBps": 500,
+      "capacityOwner": "room"
+    },
+    {
+      "stayId": "afternoon",
+      "roomId": "afternoon-family",
+      "rateId": "afternoon-family-flex",
+      "cleaningFeeOwner": "rate",
+      "cleaningFee": 30000,
+      "serviceBpsOwner": "rate",
+      "serviceBps": 500,
+      "capacityOwner": "room"
+    },
+    {
+      "stayId": "walk",
+      "roomId": "walk-standard",
+      "rateId": "walk-standard-basic",
+      "cleaningFeeOwner": "rate",
+      "cleaningFee": 20000,
+      "serviceBpsOwner": "rate",
+      "serviceBps": 500,
+      "capacityOwner": "room"
+    },
+    {
+      "stayId": "walk",
+      "roomId": "walk-standard",
+      "rateId": "walk-standard-flex",
+      "cleaningFeeOwner": "rate",
+      "cleaningFee": 20000,
+      "serviceBpsOwner": "rate",
+      "serviceBps": 500,
+      "capacityOwner": "room"
+    },
+    {
+      "stayId": "walk",
+      "roomId": "walk-family",
+      "rateId": "walk-family-flex",
+      "cleaningFeeOwner": "rate",
+      "cleaningFee": 30000,
+      "serviceBpsOwner": "rate",
+      "serviceBps": 500,
+      "capacityOwner": "room"
+    },
+    {
+      "stayId": "smallroom",
+      "roomId": "smallroom-standard",
+      "rateId": "smallroom-standard-basic",
+      "cleaningFeeOwner": "rate",
+      "cleaningFee": 20000,
+      "serviceBpsOwner": "rate",
+      "serviceBps": 500,
+      "capacityOwner": "room"
+    },
+    {
+      "stayId": "smallroom",
+      "roomId": "smallroom-standard",
+      "rateId": "smallroom-standard-flex",
+      "cleaningFeeOwner": "rate",
+      "cleaningFee": 20000,
+      "serviceBpsOwner": "rate",
+      "serviceBps": 500,
+      "capacityOwner": "room"
+    },
+    {
+      "stayId": "smallroom",
+      "roomId": "smallroom-family",
+      "rateId": "smallroom-family-flex",
+      "cleaningFeeOwner": "rate",
+      "cleaningFee": 30000,
+      "serviceBpsOwner": "rate",
+      "serviceBps": 500,
+      "capacityOwner": "room"
+    }
+  ],
+  "validSelectedFlexProbe": {
+    "ok": true,
+    "offers": [
+      {
+        "stayId": "afternoon",
+        "roomId": "afternoon-standard",
+        "rateId": "afternoon-standard-flex",
+        "nightly": 148000,
+        "total": 330800,
+        "nights": 2
+      }
+    ]
+  },
+  "scope": "Prospective host contract correction before boundedrepair;not retrospective fullinputvalidationclaim"
+}

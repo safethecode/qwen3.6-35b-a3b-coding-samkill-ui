@@ -1,0 +1,51 @@
+{
+  "status": "FAIL",
+  "moduleSha256": "880b3be0f1ecff42c328a9d69a8b034c74799c5e6484a118676f3073f77817fb",
+  "checkerSha256": "8d301e60d8d82f32eb4375824c9aba12ea3f18549a62e7d3a8bf70df1b971845",
+  "catalogSha256": "fdbd4f494677ad11b668f9c09eb15f87f3e3ad7fe181f78a1d21bd75685895b5",
+  "checks": [
+    {
+      "name": "complete selectedidentity andpricefacts",
+      "status": "FAIL",
+      "detail": "Expected values to be strictly deep-equal:\n+ actual - expected\n\n  {\n    breakfast: false,\n    capacity: 2,\n+   cleaningFee: undefined,\n-   cleaningFee: 20000,\n    end: '2026-11-08',\n    freeCancellation: false,\n    guests: 2,\n    nightly: 128000,\n    nights: 2,\n    rateId: 'afternoon-standard-basic',\n    roomId: 'afternoon-standard',\n+   serviceFee: NaN,\n-   serviceFee: 12800,\n    start: '2026-11-06',\n    stayId: 'afternoon',\n    total: 288800\n  }\n"
+    },
+    {
+      "name": "selectedflexrate ispreservedratherthan silentlychoosingcheapest",
+      "status": "FAIL",
+      "detail": "Cannot read properties of undefined (reading 'rateId')"
+    },
+    {
+      "name": "familyroomcapacity,inclusionsandonecleaningfee",
+      "status": "FAIL",
+      "detail": "Expected values to be strictly equal:\n+ actual - expected\n\n+ undefined\n- 30000\n"
+    },
+    {
+      "name": "fullIDownership andunknownselections cannotfallback",
+      "status": "PASS"
+    },
+    {
+      "name": "capacityandexclusivecheckout closureboundaries",
+      "status": "PASS"
+    },
+    {
+      "name": "strictselection shape,typeandprimitivevalues",
+      "status": "FAIL",
+      "detail": "Cannot destructure property 'stayId' of 'selection' as it is null."
+    },
+    {
+      "name": "invalidcalendar,past,longrangeandexplicit today",
+      "status": "FAIL",
+      "detail": "Expected values to be strictly deep-equal:\n+ actual - expected\n\n  {\n+   error: 'UNAVAILABLE_SELECTION',\n-   error: 'INVALID_SELECTION',\n    ok: false\n  }\n"
+    },
+    {
+      "name": "otherproperties retainexact chosenrate and arithmetic",
+      "status": "FAIL",
+      "detail": "Cannot read properties of undefined (reading 'nightly')"
+    },
+    {
+      "name": "catalogandselectionimmutability withfreshindependentquoteobjects",
+      "status": "PASS"
+    }
+  ],
+  "limits": "Pureselectedratequoteonly. Browserroomselection/review/request/change/cancelandreferencequalityremainunfinished."
+}

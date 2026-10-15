@@ -1,0 +1,45 @@
+{
+  "status": "SCOPED_QUOTE_DEPENDENCY_ONLY",
+  "moduleSha256": "db99f129b9d66bab2edffc99e39d0b2bbbe16934cdc5b321ac6738c275ee7091",
+  "checkerSha256": "8d301e60d8d82f32eb4375824c9aba12ea3f18549a62e7d3a8bf70df1b971845",
+  "catalogSha256": "fdbd4f494677ad11b668f9c09eb15f87f3e3ad7fe181f78a1d21bd75685895b5",
+  "checks": [
+    {
+      "name": "complete selectedidentity andpricefacts",
+      "status": "PASS"
+    },
+    {
+      "name": "selectedflexrate ispreservedratherthan silentlychoosingcheapest",
+      "status": "PASS"
+    },
+    {
+      "name": "familyroomcapacity,inclusionsandonecleaningfee",
+      "status": "PASS"
+    },
+    {
+      "name": "fullIDownership andunknownselections cannotfallback",
+      "status": "PASS"
+    },
+    {
+      "name": "capacityandexclusivecheckout closureboundaries",
+      "status": "PASS"
+    },
+    {
+      "name": "strictselection shape,typeandprimitivevalues",
+      "status": "PASS"
+    },
+    {
+      "name": "invalidcalendar,past,longrangeandexplicit today",
+      "status": "PASS"
+    },
+    {
+      "name": "otherproperties retainexact chosenrate and arithmetic",
+      "status": "PASS"
+    },
+    {
+      "name": "catalogandselectionimmutability withfreshindependentquoteobjects",
+      "status": "PASS"
+    }
+  ],
+  "limits": "Pureselectedratequoteonly. Browserroomselection/review/request/change/cancelandreferencequalityremainunfinished."
+}

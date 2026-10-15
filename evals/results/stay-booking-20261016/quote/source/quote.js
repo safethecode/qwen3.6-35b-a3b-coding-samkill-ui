@@ -1,0 +1,116 @@
+import { isBookableRange } from "./dates.js";
+import { selectOffers } from "./query.js";
+
+function buildQuote(catalog, selection, today) {
+    if (!Array.isArray(catalog)) return { ok: false, error: "INVALID_SELECTION" };
+    if (selection === null || typeof selection !== "object" || Array.isArray(selection)) return { ok: false, error: "INVALID_SELECTION" };
+    const keys = Object.keys(selection);
+    if (keys.length !== 6) return { ok: false, error: "INVALID_SELECTION" };
+    if (!keys.includes("stayId") || !keys.includes("roomId") || !keys.includes("rateId") || !keys.includes("start") || !keys.includes("end") || !keys.includes("guests")) return { ok: false, error: "INVALID_SELECTION" };
+    const { stayId, roomId, rateId, start, end, guests } = selection;
+    if (typeof stayId !== "string" || stayId === "") return { ok: false, error: "INVALID_SELECTION" };
+    if (typeof roomId !== "string" || roomId === "") return { ok: false, error: "INVALID_SELECTION" };
+    if (typeof rateId !== "string" || rateId === "") return { ok: false, error: "INVALID_SELECTION" };
+    if (typeof start !== "string" || typeof end !== "string") return { ok: false, error: "INVALID_SELECTION" };
+    if (!isBookableRange(start, end, today)) return { ok: false, error: "INVALID_SELECTION" };
+    if (typeof guests !== "number" || !Number.isInteger(guests) || guests < 1 || guests > 8) return { ok: false, error: "INVALID_SELECTION" };
+
+    let property = null;
+    for (const p of catalog) {
+        if (p.id === stayId) { property = p; break; }
+    }
+    if (!property) return { ok: false, error: "UNAVAILABLE_SELECTION" };
+
+    let room = null;
+    for (const r of property.rooms) {
+        if (r.id === roomId) { room = r; break; }
+    }
+    if (!room) return { ok: false, error: "UNAVAILABLE_SELECTION" };
+
+    if (room.capacity < guests) return { ok: false, error: "UNAVAILABLE_SELECTION" };
+
+    const closedDates = new Set(room.closedDates || []);
+    let d = new Date(Date.UTC(
+        parseInt(start.slice(0, 4), 10),
+        parseInt(start.slice(5, 7), 10) - 1,
+        parseInt(start.slice(8, 10), 10)
+    ));
+    const endDateObj = new Date(Date.UTC(
+        parseInt(end.slice(0, 4), 10),
+        parseInt(end.slice(5, 7), 10) - 1,
+        parseInt(end.slice(8, 10), 10)
+    ));
+
+    while (d < endDateObj) {
+        const y = d.getUTCFullYear();
+        const m = String(d.getUTCMonth() + 1).padStart(2, "0");
+        const day = String(d.getUTCDate()).padStart(2, "0");
+        if (closedDates.has(`${y}-${m}-${day}`)) return { ok: false, error: "UNAVAILABLE_SELECTION" };
+        d.setUTCDate(d.getUTCDate() + 1);
+    }
+
+    let rate = null;
+    for (const rt of room.rates) {
+        if (rt.id === rateId) { rate = rt; break; }
+    }
+    if (!rate) return { ok: false, error: "UNAVAILABLE_SELECTION" };
+
+    const clonedProperty = JSON.parse(JSON.stringify(property));
+    const selectedRoomIndex = clonedProperty.rooms.findIndex(r => r.id === roomId);
+    clonedProperty.rooms = [JSON.parse(JSON.stringify(clonedProperty.rooms[selectedRoomIndex]))];
+    const selectedRateIndex = clonedProperty.rooms[0].rates.findIndex(r => r.id === rateId);
+    clonedProperty.rooms[0].rates = [clonedProperty.rooms[0].rates[selectedRateIndex]];
+    const singletonCatalog = [clonedProperty];
+    const query = {
+        city: "",
+        start: start,
+        end: end,
+        guests: guests,
+        type: "all",
+        minPrice: 0,
+        maxPrice: 1000000,
+        freeCancellation: false,
+        amenities: [],
+        sort: "recommended"
+    };
+
+    const offerResult = selectOffers(singletonCatalog, query, today);
+    if (!offerResult.ok || !Array.isArray(offerResult.offers)) return { ok: false, error: "UNAVAILABLE_SELECTION" };
+
+    let selectedOffer = null;
+    for (const off of offerResult.offers) {
+        if (off.roomId === roomId && off.rateId === rateId) {
+            selectedOffer = off;
+            break;
+        }
+    }
+
+    if (!selectedOffer) return { ok: false, error: "UNAVAILABLE_SELECTION" };
+
+    const nightly = selectedOffer.nightly;
+    const nights = selectedOffer.nights;
+    const cleaningFee = rate.cleaningFee;
+    const serviceFee = selectedOffer.total - (nightly * nights) - cleaningFee;
+
+    return {
+        ok: true,
+        quote: {
+            stayId: stayId,
+            roomId: roomId,
+            rateId: rateId,
+            start: start,
+            end: end,
+            guests: guests,
+            nights: nights,
+            nightly: nightly,
+            cleaningFee: cleaningFee,
+            serviceFee: serviceFee,
+            total: selectedOffer.total,
+            freeCancellation: rate.freeCancellation,
+            breakfast: rate.breakfast,
+            capacity: room.capacity
+        }
+    };
+}
+
+export { buildQuote };
