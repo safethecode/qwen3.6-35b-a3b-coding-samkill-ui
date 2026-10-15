@@ -1,10 +1,12 @@
 {
   "status": "INCOMPLETE_REFERENCE_PARITY",
-  "source": "icon-refinement/source",
-  "summary": "icon-refinement/summary.json",
-  "workflow": "icon-refinement/final-workflow/report.json",
-  "catalog": "icon-refinement/catalog-check.json",
+  "source": "list-ownership/source",
+  "summary": "list-ownership/summary.json",
+  "workflow": "list-ownership/copy-refinement/workflow/report.json",
+  "catalog": "list-ownership/catalog-check.json",
   "assisted": true,
-  "previousSource": "edit-mode/source",
-  "historicalSource": "final/source"
+  "previousSource": "icon-refinement/source",
+  "historicalSource": "final/source",
+  "priorPreviousSource": "edit-mode/source",
+  "latestScopedChange": "Existing list action moved out of date header;explicit scope/exit labels,original calendar focus preserved. Severe enlarged editing wrap and reference parity unfinished."
 }

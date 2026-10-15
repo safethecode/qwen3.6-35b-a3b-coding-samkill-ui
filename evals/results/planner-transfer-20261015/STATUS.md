@@ -1,5 +1,7 @@
 # Independent service transfer
 
+Latest scoped candidate: [task-list ownership and explicit labels](list-ownership/README.md), [current source](list-ownership/source/index.html), [actual reading](list-ownership/copy-refinement/filled/390-reading.png). Actual local CSS and copy repairs move existing management out of date navigation and preserve calendar focus. Fresh15mode checks,24layout cells,24exact-role captures,73workflows,432icon pairs,15store,4renderer,2recovery and2handoff checks pass. Full85entry catalog remains UNVERIFIED/exit2:45scoped passes,14NA,24unknown and2existing narrow mobile exceptions. Severe enlarged editing wrap and representative reference quality remain unfinished.133unit/51shared-browser checks are scoped regression evidence. Earlier “current” snapshots below are retained historical stages.
+
 INCOMPLETE. A new weekly personal task planner uses freshly inspected UI Bowl main-screen references and frozen inputs. The initial AI recommendation sheet was rejected as the wrong core surface. The valid main screen is primary; the date-picker example is observed only. Social/profile/advertising/AI surfaces are out of this product.
 
 Host supplies HTML, shared layout, native dialog shell and licensed font/official icons. Actual Ollama qwen3.6:35b-a3b-coding generates component CSS and behavior, with bounded local repairs and disclosed host assembly. Initial static generation and failed store/renderer attempts remain preserved. [State repair](state-repair/README.md) passes13 semantic checks; no complete UI claim follows from that result.
@@ -42,7 +44,7 @@ Fresh exact-source receipts pass12 visible-label mode/width checks,73 workflows,
 
 The85-entry catalog remains UNVERIFIED/exit2:41scoped passes,14not applicable,24unknown,4confirmed icon size/color failures and2narrow mobile explicit-management exceptions to the literal hover-only recipe. Default action noise improves, but icons stay20px beside32px enlarged labels and Trash paint differs from its text. Full reference/commercial quality and repeated representative unattended reproduction remain unfinished.
 
-## Current scalable-icon candidate
+## Preceding scalable-icon candidate
 
 [Actual default screen](icon-refinement/filled-final/390-reading.png), [editing](icon-refinement/filled-final/390-editing.png), [form](icon-refinement/filled-final/390-form.png), [runnable source](icon-refinement/source/index.html), [source-bound summary](icon-refinement/summary.json). Actual local Qwen supplied two bounded CSS values: official icon boxes now track16→32px labels as20→36px, and action parent colors match verified neutral icon paint. Host official variant export and consumer propagation are disclosed; all JavaScript bytes are unchanged.
 

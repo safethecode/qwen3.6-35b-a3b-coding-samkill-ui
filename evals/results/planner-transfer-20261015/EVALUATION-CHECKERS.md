@@ -18,3 +18,10 @@ Historical receipts keep their original checker and source hashes. Scores from d
 - `check-task-handoff.mjs`: canonical owned task markup, including the dynamic row template, must agree across actual assembly, standalone sample and component plan. A correct assembly cannot approve stale downstream sample/plan consumers.
 
 Browser commands require Playwright and a local Chromium/Chrome executable through `CHROME_PATH` when the default browser is unavailable. Checkers exit nonzero on failed assertions. Scoped success does not certify reference parity, independent generation, native popup behavior, real-device zoom or assistive technology.
+
+- `check-edit-mode-v4.mjs`: frozen14check explicit-mode contract before requiring management to belong to the list.
+- `check-edit-mode-v5.mjs`: frozen15check ownership/tab-order contract with earlier generic visible labels.
+- `check-edit-mode.mjs`: current15check ownership plus explicit 목록 편집/편집 마치기 labels;actual reading/editing state×width×text captures remain required. The earlier source fails ownership;the pre-copy source fails the declared copy checks.
+- `check-heading-roles.v1.mjs`: frozen first exact-role diagnostic before explicit spacing metric context.
+- `check-heading-roles.mjs`: current actual24cell heading/control role audit using predeclared intent when available. A reviewer-derived post-generation role file remains a diagnostic,not original-input evidence. Real200%text/spacing modes are activated and recorded;unknown fonts/metrics cannot pass.
+- `list-ownership/materialize-snapshot.mjs`: restores exact bound historical source from shared current files and changed-file snapshots. Rejects existing destinations,linked trees,path recursion and hash mismatch;four actual22file snapshots and3filesystem fixtures verified. Not a UI-quality gate.
