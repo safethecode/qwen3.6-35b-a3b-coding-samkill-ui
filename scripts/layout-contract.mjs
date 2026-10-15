@@ -68,6 +68,42 @@ export async function inspectLayoutContract(page, contract, options = {}) {
             });
           }, rule);
           if (observed.rows.some(row => row.controls.some(control => !control.contained || Math.abs(control.centerOffset) > tolerance))) throw new Error('Supporting controls drift from their owned first text line or escape the row');
+        } else if (rule.kind === 'readingActionFlow') {
+          const tolerance = rule.tolerance === undefined ? 2 : rule.tolerance;
+          if (['rows', 'text', 'body', 'action'].some(key => typeof rule[key] !== 'string' || !rule[key].trim()) || ['minimumTextEm', 'minimumTarget'].some(key => !Number.isFinite(rule[key]) || rule[key] <= 0) || !Number.isFinite(rule.reservedInlineWidth) || rule.reservedInlineWidth < 0 || !Number.isFinite(rule.minGap) || rule.minGap < 0 || !Number.isFinite(rule.maxBelowGap) || rule.maxBelowGap < rule.minGap || !Number.isFinite(tolerance) || tolerance < 0 || tolerance > 4) throw new Error('Reading/action flow requires concrete selectors, positive reading/target dimensions, independent nontext allowance, bounded gaps and tolerance0–4px');
+          observed.rows = await page.locator(rule.subject).evaluate((root, rule) => {
+            const visible = element => element.checkVisibility({ checkOpacity: true, checkVisibilityCSS: true }) && element.getBoundingClientRect().width > 0;
+            const inside = (a, b) => a.left >= b.left - .5 && a.right <= b.right + .5 && a.top >= b.top - .5 && a.bottom <= b.bottom + .5;
+            const rows = [...root.querySelectorAll(rule.rows)].filter(visible);
+            if (!rows.length) throw new Error('Reading/action flow requires at least one visible row');
+            return rows.map((row, index) => {
+              const one = selector => { const elements = row.querySelectorAll(selector); if (elements.length !== 1 || !visible(elements[0])) throw new Error('Expected one visible owned body, text and action per row'); return elements[0]; };
+              const body = one(rule.body), text = one(rule.text), action = one(rule.action);
+              if (body.parentElement !== row || action.parentElement !== row || !body.contains(text)) throw new Error('Reading body and supporting action must belong directly to their row');
+              for (const subject of [text, action]) for (let element = subject; element; element = element.parentElement) {
+                const style = getComputedStyle(element);
+                if (['transform', 'translate', 'rotate', 'scale'].some(property => style[property] !== 'none') || !['1', 'normal'].includes(style.zoom)) throw new Error('Reading/action flow cannot certify transformed or CSS-zoomed geometry');
+              }
+              const rb = row.getBoundingClientRect(), bb = body.getBoundingClientRect(), tb = text.getBoundingClientRect(), ab = action.getBoundingClientRect(), rs = getComputedStyle(row), ts = getComputedStyle(text);
+              const fontSize = parseFloat(ts.fontSize), lineHeight = parseFloat(ts.lineHeight);
+              if (!Number.isFinite(fontSize) || fontSize <= 0 || !Number.isFinite(lineHeight) || lineHeight <= 0 || ts.writingMode !== 'horizontal-tb' || ts.direction !== 'ltr') throw new Error('Reading/action flow requires resolved horizontal LTR typography');
+              const start = rb.left + parseFloat(rs.borderLeftWidth) + parseFloat(rs.paddingLeft), end = rb.right - parseFloat(rs.borderRightWidth) - parseFloat(rs.paddingRight);
+              const textInset = tb.left - bb.left + parseFloat(ts.borderLeftWidth) + parseFloat(ts.paddingLeft), textEndInset = bb.right - tb.right + parseFloat(ts.borderRightWidth) + parseFloat(ts.paddingRight);
+              const available = end - start - rule.reservedInlineWidth, minimumTextWidth = Math.min(rule.minimumTextEm * fontSize, available), textWidth = tb.width - parseFloat(ts.borderLeftWidth) - parseFloat(ts.borderRightWidth) - parseFloat(ts.paddingLeft) - parseFloat(ts.paddingRight);
+              const inlinePossible = available - ab.width - rule.minGap >= rule.minimumTextEm * fontSize - .5;
+              const inline = ab.left >= bb.right + rule.minGap - .5 && ab.top < bb.bottom - .5;
+              const belowGap = ab.top - bb.bottom, below = belowGap >= rule.minGap - .5 && belowGap <= rule.maxBelowGap + .5;
+              const firstLineCenter = tb.top + parseFloat(ts.borderTopWidth) + parseFloat(ts.paddingTop) + lineHeight / 2;
+              return { index, fontSize, textWidth, minimumTextWidth, available, nonTextWidth: textInset + textEndInset, inlinePossible, placement: inline ? 'inline' : below ? 'below' : 'invalid', centerOffset: ab.top + ab.height / 2 - firstLineCenter, belowGap, targetWidth: ab.width, targetHeight: ab.height, contained: inside(bb, rb) && inside(tb, bb) && inside(ab, rb), actionAtEnd: Math.abs(ab.right - end) <= .5 };
+            });
+          }, rule);
+          for (const row of observed.rows) {
+            if (row.available <= 0 || row.textWidth < row.minimumTextWidth - .5) throw new Error('Supporting action leaves insufficient primary reading width');
+            if (row.nonTextWidth > rule.reservedInlineWidth + .5) throw new Error('Undeclared blank body space exceeds the independent nontext allowance');
+            if (!row.contained || row.targetWidth < rule.minimumTarget - .5 || row.targetHeight < rule.minimumTarget - .5 || row.placement === 'invalid' || !row.actionAtEnd) throw new Error('Supporting action overlaps, escapes, loses its target or has an invalid owned gap');
+            if (row.placement === 'inline' && Math.abs(row.centerOffset) > tolerance) throw new Error('Inline supporting action drifts from the first text line');
+            if (row.placement === 'below' && row.inlinePossible) throw new Error('Supporting action wraps unnecessarily despite sufficient declared reading width');
+          }
         } else if (rule.kind === 'fillRemainder') {
           observed.reference = await box(rule.reference);
           observed.container = await box(rule.container);
