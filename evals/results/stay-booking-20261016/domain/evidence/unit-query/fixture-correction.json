@@ -1,0 +1,5 @@
+{
+  "status": "HOST_ORACLE_CORRECTION_NOT_MODEL_CRITERIA_RELAXATION",
+  "original": "check-query-v1.mjs.txt;unit-query/checks;unit-query/binding-repair/checks",
+  "reason": "The original budget assertion omitted smallroom-family-flex at the inclusive168000maximum. The originalcontract explicitly filters individual rates and retains a stay with any qualifying room/rate. The model correctly included this alternative. New assertion checks all3identities/prices and exact room/rate,retains all11groups and changes no source orfiltercriterion. Original raw2/11 and repair10/11 reports preserved;corrected replay11/11. Validexport-list date rejection separately retained ashostvalidatorbug."
+}

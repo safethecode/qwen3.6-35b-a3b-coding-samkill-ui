@@ -1,0 +1,62 @@
+{
+  "status": "FAIL",
+  "moduleSha256": "fb303900f5071b9a32e5420ce4833f44ea34e733561f90708ef57566f291a860",
+  "catalogSha256": "fdbd4f494677ad11b668f9c09eb15f87f3e3ad7fe181f78a1d21bd75685895b5",
+  "checkerSha256": "c1da94fd8bf263be756cc2131961748941128dc22abe7c26baf5a3729c1ad028",
+  "checks": [
+    {
+      "name": "propertyorder andcheapest exactroom/rateidentity",
+      "status": "FAIL",
+      "detail": "Expected values to be strictly equal:\n\nfalse !== true\n"
+    },
+    {
+      "name": "integerKRW subtotal,onecleaningfee andservicefee",
+      "status": "FAIL",
+      "detail": "Cannot read properties of undefined (reading '0')"
+    },
+    {
+      "name": "nightly min/maxinclusive andsortstable",
+      "status": "FAIL",
+      "detail": "Cannot read properties of undefined (reading 'map')"
+    },
+    {
+      "name": "capacity selectsfamily room andratewithoutlosingidentity",
+      "status": "FAIL",
+      "detail": "Cannot read properties of undefined (reading 'length')"
+    },
+    {
+      "name": "freecancellationselectsqualifyingrate ratherthandroppingproperty",
+      "status": "FAIL",
+      "detail": "Cannot read properties of undefined (reading 'map')"
+    },
+    {
+      "name": "staytypeandallrequestedamenitiesintersect",
+      "status": "FAIL",
+      "detail": "Cannot read properties of undefined (reading 'map')"
+    },
+    {
+      "name": "roomclosureischeckininclusive/checkout-exclusive",
+      "status": "FAIL",
+      "detail": "Cannot read properties of undefined (reading 'every')"
+    },
+    {
+      "name": "emptyresultsremainvalid andcitytrimisintentional",
+      "status": "FAIL",
+      "detail": "Expected values to be strictly deep-equal:\n+ actual - expected\n\n  {\n+   error: 'INVALID_QUERY',\n+   ok: false\n-   offers: [],\n-   ok: true\n  }\n"
+    },
+    {
+      "name": "invalidqueryschema andvalues returntypederror",
+      "status": "PASS"
+    },
+    {
+      "name": "todayanddatewindowvalidated beforeselection",
+      "status": "PASS"
+    },
+    {
+      "name": "inputimmutability andstableequalprices",
+      "status": "FAIL",
+      "detail": "Cannot read properties of undefined (reading 'map')"
+    }
+  ],
+  "limits": "Independentcatalog/queryarithmeticdependencyonly. ComplexUIandconnectedflows/referencequalityunfinished."
+}

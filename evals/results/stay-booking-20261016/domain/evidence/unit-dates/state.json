@@ -1,0 +1,6 @@
+{
+  "status": "FAILED_DATE_REQUEST_OR_VALIDATION",
+  "pid": 43508,
+  "updatedAtUtc": "2026-10-15T16:03:30.748Z",
+  "error": "Expected values to be strictly deep-equal:\n+ actual - expected\n\n  [\n+   undefined\n-   'countNights',\n-   'isBookableRange',\n-   'parseStayDate'\n  ]\n"
+}

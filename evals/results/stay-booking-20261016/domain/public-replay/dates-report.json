@@ -1,0 +1,44 @@
+{
+  "status": "SCOPED_DATE_MODEL_ONLY",
+  "sourceSha256": "bb814d23499e375aaeb818698dae5ba96f1dc34687ee45625e61b2ada62d7095",
+  "checkerSha256": "ad810c31a1e28f00e609b378f2f29d1ef682989682b09c1f0c1b0f0df9544424",
+  "checks": [
+    {
+      "name": "exact export contract",
+      "status": "PASS"
+    },
+    {
+      "name": "UTCmidnight parse and leapdate",
+      "status": "PASS"
+    },
+    {
+      "name": "invalid rolledcalendar dates and yearwindow",
+      "status": "PASS"
+    },
+    {
+      "name": "exact string schema without whitespace,padding,suffix or coercion",
+      "status": "PASS"
+    },
+    {
+      "name": "one night,month rollover and leaprange",
+      "status": "PASS"
+    },
+    {
+      "name": "spring/fall DST cannot change day counts",
+      "status": "PASS"
+    },
+    {
+      "name": "inclusive28night maximum,same/reverse/invalid rejection",
+      "status": "PASS"
+    },
+    {
+      "name": "bookability uses explicittoday and allowscheckintoday",
+      "status": "PASS"
+    },
+    {
+      "name": "invalidtoday/range rejectasstrictfalse",
+      "status": "PASS"
+    }
+  ],
+  "limits": "Date dependency only;not booking,visual or commercialquality approval."
+}

@@ -1,0 +1,54 @@
+{
+  "status": "FAIL",
+  "moduleSha256": "8708472cd57a32910602013769e023c666a7603e8030be36031ac0738c2a4a5f",
+  "catalogSha256": "fdbd4f494677ad11b668f9c09eb15f87f3e3ad7fe181f78a1d21bd75685895b5",
+  "checkerSha256": "c1da94fd8bf263be756cc2131961748941128dc22abe7c26baf5a3729c1ad028",
+  "checks": [
+    {
+      "name": "propertyorder andcheapest exactroom/rateidentity",
+      "status": "PASS"
+    },
+    {
+      "name": "integerKRW subtotal,onecleaningfee andservicefee",
+      "status": "PASS"
+    },
+    {
+      "name": "nightly min/maxinclusive andsortstable",
+      "status": "FAIL",
+      "detail": "Expected values to be strictly deep-equal:\n+ actual - expected\n\n  [\n    'walk',\n+   'smallroom',\n    'afternoon'\n  ]\n"
+    },
+    {
+      "name": "capacity selectsfamily room andratewithoutlosingidentity",
+      "status": "PASS"
+    },
+    {
+      "name": "freecancellationselectsqualifyingrate ratherthandroppingproperty",
+      "status": "PASS"
+    },
+    {
+      "name": "staytypeandallrequestedamenitiesintersect",
+      "status": "PASS"
+    },
+    {
+      "name": "roomclosureischeckininclusive/checkout-exclusive",
+      "status": "PASS"
+    },
+    {
+      "name": "emptyresultsremainvalid andcitytrimisintentional",
+      "status": "PASS"
+    },
+    {
+      "name": "invalidqueryschema andvalues returntypederror",
+      "status": "PASS"
+    },
+    {
+      "name": "todayanddatewindowvalidated beforeselection",
+      "status": "PASS"
+    },
+    {
+      "name": "inputimmutability andstableequalprices",
+      "status": "PASS"
+    }
+  ],
+  "limits": "Independentcatalog/queryarithmeticdependencyonly. ComplexUIandconnectedflows/referencequalityunfinished."
+}

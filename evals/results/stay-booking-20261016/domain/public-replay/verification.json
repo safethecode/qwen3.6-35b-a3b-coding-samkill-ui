@@ -1,0 +1,17 @@
+{
+  "at": "2026-10-15T16:48:01.569Z",
+  "replay": "Exact published modules/catalog/checker bytes; dates9/9,offers11/11",
+  "privacy": "No private user paths,OAuthcredentials or signedURLs found in published artifact",
+  "whitespace": {
+    "status": "PRESERVED_IMMUTABLE_EVIDENCE",
+    "paths": [
+      "evals/results/stay-booking-20261016/domain/evidence/unit-query/binding-repair/after-query.js.txt",
+      "evals/results/stay-booking-20261016/domain/evidence/unit-query/binding-repair/before-query.js.txt",
+      "evals/results/stay-booking-20261016/domain/evidence/unit-query/module.js.txt",
+      "evals/results/stay-booking-20261016/domain/evidence/unit-query/raw-module.js.txt",
+      "evals/results/stay-booking-20261016/domain/source/query.js"
+    ],
+    "reason": "Original model/comment-normalized source contains whitespace-only lines. Preserved bytes are hash-bound to raw generation and four actual Qwen patches;trimming would silently change accepted source. These are not new handwritten code whitespace defects."
+  },
+  "limits": "Focused dependency replay only;no reference-quality or complete-product claim"
+}

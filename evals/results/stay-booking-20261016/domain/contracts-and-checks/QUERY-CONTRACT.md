@@ -1,0 +1,9 @@
+# Stay offer selection v1
+
+Only query.js. ImportisBookableRange/countNights/parseStayDatefrom'./dates.js'. ExportexactlyselectOffers(catalog,query,today),nootherexports. DateAPIaccepted9groups;readonly. NoDOM/storage/network/ambientclock/comments. Do not mutateanycatalog/queryarray/object. Invalidinput returns{ok:false,error:'INVALID_QUERY'},neverthrow. Validoutputexactly{ok:true,offers:Array}.
+
+Queryexactfields:city:string,start:string,end:string,guests:integer1..8,type:'all'|'호텔'|'펜션',minPrice/maxPrice:safeintegers0..1000000andmin<=max,freeCancellation:boolean,amenities:Arrayofdistinctstringsfromwifi/parking/kitchen,sort:'recommended'|'price-asc'|'price-desc'. Extra/missingfields invalid. City''meansanycity;otherwise exacttrimmedcitymatch. Start/end/today must satisfyisBookableRange. Catalog is anarray of the fixedvalidatedobjects in catalog.json;its schema is supplied asdata. For invalidnonarraycatalog returnINVALID_QUERY.
+
+Filterstaycity/type/alleachrequestedamenities. Filterroomcapacity>=guests. Skiproom whenanyclosedDates date fallsstartinclusive/endexclusive;checkoutdayclosuredoesnotblockpreviousstay. FilterratesbyfreeCancellationwhentrueandinclusivemin/maxnightlyprice. Property qualifiesifanyroom/ratequalifies. Chooseitscheapest qualifyingnightlyrate;tiesretainroom/ratesourceorder. OutputoneofferperqualifiedpropertywithEXACTkeysstayId,roomId,rateId,nightly,total,nights. Calculate nights=countNights;subtotal=nightly*nights;total=subtotal+rate.cleaningFee+Math.floor(subtotal*rate.serviceBps/10000). Noadditivefeepernight,nofeesintheper-nightfilter,nodiscount/fakeurgency.
+
+Sortrecommendedpreservescatalogorder;price-asc/desc sortbynightly,stabletiespreservecatalogorder. Emptyresultsis{ok:true,offers:[]},notanerror. Actualavailabilityisfixedlocalfixture,notlivehoteldata;nofetch. Room/rateidentitymustsurvivepricing/comparisonandlaterrequestreview.

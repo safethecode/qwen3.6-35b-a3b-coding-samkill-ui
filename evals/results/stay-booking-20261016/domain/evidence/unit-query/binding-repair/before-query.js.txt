@@ -1,0 +1,123 @@
+import { parseStayDate, countNights, isBookableRange } from './dates.js';
+
+function isValid(query) {
+  if (typeof query !== 'object' || query === null) return false;
+  const keys = ['city', 'start', 'end', 'guests', 'type', 'minPrice', 'maxPrice', 'freeCancellation', 'amenities', 'sort'];
+  const actualKeys = Object.keys(query);
+  if (actualKeys.length !== keys.length) return false;
+  for (const k of keys) {
+    if (!actualKeys.includes(k)) return false;
+  }
+
+  if (typeof query.city !== 'string') return false;
+  if (query.type !== 'all' && query.type !== '호텔' && query.type !== '펜션') return false;
+  if (typeof query.guests !== 'number' || !Number.isInteger(query.guests) || query.guests < 1 || query.guests > 8) return false;
+  
+  const startMs = parseStayDate(query.start);
+  const endMs = parseStayDate(query.end);
+  if (startMs === null || endMs === null) return false;
+  if (!isBookableRange(query.start, query.end, query.today)) return false;
+
+  if (typeof query.minPrice !== 'number' || typeof query.maxPrice !== 'number') return false;
+  if (!Number.isInteger(query.minPrice) || !Number.isInteger(query.maxPrice)) return false;
+  if (query.minPrice < 0 || query.minPrice > 1000000 || query.maxPrice < 0 || query.maxPrice > 1000000) return false;
+  if (query.minPrice > query.maxPrice) return false;
+
+  if (typeof query.freeCancellation !== 'boolean') return false;
+
+  if (!Array.isArray(query.amenities)) return false;
+  const validAmenities = ['wifi', 'parking', 'kitchen'];
+  for (const a of query.amenities) {
+    if (typeof a !== 'string' || !validAmenities.includes(a)) return false;
+  }
+  if (new Set(query.amenities).size !== query.amenities.length) return false;
+
+  if (query.sort !== 'recommended' && query.sort !== 'price-asc' && query.sort !== 'price-desc') return false;
+
+  return true;
+}
+
+export function selectOffers(catalog, query, today) {
+  if (!Array.isArray(catalog) || !isValid(query)) {
+    return { ok: false, error: 'INVALID_QUERY' };
+  }
+
+  const nights = countNights(query.start, query.end);
+  if (nights === null) return { ok: false, error: 'INVALID_QUERY' };
+
+  const validAmenities = ['wifi', 'parking', 'kitchen'];
+  const requiredAmenities = new Set(query.amenities);
+
+  const offers = [];
+
+  for (const prop of catalog) {
+    if (query.city !== '' && query.city.trim() !== prop.city.trim()) continue;
+    if (query.type !== 'all' && prop.type !== query.type) continue;
+
+    let bestOffer = null;
+
+    for (const room of prop.rooms) {
+      if (room.capacity < query.guests) continue;
+
+                                                            
+      let isClosed = false;
+      for (const cd of room.closedDates) {
+        const cdMs = parseStayDate(cd);
+        if (cdMs === null) continue;
+        const startMs = parseStayDate(query.start);
+                                         
+        if (cdMs >= startMs && cdMs < parseStayDate(query.end)) {
+          isClosed = true;
+          break;
+        }
+      }
+      if (isClosed) continue;
+
+                        
+      const roomAmenities = new Set(room.amenities);
+      let hasAllAmenities = true;
+      for (const req of requiredAmenities) {
+        if (!roomAmenities.has(req)) {
+          hasAllAmenities = false;
+          break;
+        }
+      }
+      if (!hasAllAmenities) continue;
+
+                    
+      for (const rate of room.rates) {
+        if (query.freeCancellation && !rate.freeCancellation) continue;
+        if (rate.nightly < query.minPrice || rate.nightly > query.maxPrice) continue;
+
+        const subtotal = rate.nightly * nights;
+        const serviceFee = Math.floor(subtotal * rate.serviceBps / 10000);
+        const total = subtotal + rate.cleaningFee + serviceFee;
+
+        if (bestOffer === null || rate.nightly < bestOffer.nightly) {
+          bestOffer = {
+            stayId: prop.id,
+            roomId: room.id,
+            rateId: rate.id,
+            nightly: rate.nightly,
+            total: total,
+            nights: nights
+          };
+        }
+      }
+    }
+
+    if (bestOffer) {
+      offers.push(bestOffer);
+    }
+  }
+
+         
+  if (query.sort === 'price-asc') {
+    offers.sort((a, b) => a.nightly - b.nightly);
+  } else if (query.sort === 'price-desc') {
+    offers.sort((a, b) => b.nightly - a.nightly);
+  }
+                                        
+
+  return { ok: true, offers: offers };
+}

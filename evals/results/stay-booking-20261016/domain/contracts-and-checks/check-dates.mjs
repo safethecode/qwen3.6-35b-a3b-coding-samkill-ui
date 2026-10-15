@@ -1,0 +1,17 @@
+import{readFile,writeFile,mkdir}from'node:fs/promises';
+import{pathToFileURL}from'node:url';
+import{resolve}from'node:path';
+import{createHash}from'node:crypto';
+import assert from'node:assert/strict';
+const[file,out]=process.argv.slice(2);await mkdir(out,{recursive:true});const api=await import(pathToFileURL(resolve(file))),checks=[];
+const check=(name,fn)=>{try{fn();checks.push({name,status:'PASS'})}catch(e){checks.push({name,status:'FAIL',detail:e.message.slice(0,1400)})}};
+check('exact export contract',()=>assert.deepEqual(Object.keys(api).sort(),['parseStayDate','countNights','isBookableRange'].sort()));
+check('UTCmidnight parse and leapdate',()=>{assert.equal(api.parseStayDate('2028-02-29'),Date.UTC(2028,1,29));assert.equal(api.parseStayDate('2000-01-01'),Date.UTC(2000,0,1));assert.equal(api.parseStayDate('2099-12-31'),Date.UTC(2099,11,31))});
+check('invalid rolledcalendar dates and yearwindow',()=>{for(const s of['2027-02-29','2026-04-31','2026-13-01','2026-00-01','2026-01-00','1999-12-31','2100-01-01'])assert.equal(api.parseStayDate(s),null,s)});
+check('exact string schema without whitespace,padding,suffix or coercion',()=>{for(const s of['2026-1-01','2026-01-1','2026-01-01\n',' 2026-01-01','2026-01-01T00:00:00Z','2026-01-01+09:00','',null,undefined,1,{},[],new String('2026-01-01')])assert.equal(api.parseStayDate(s),null,String(s))});
+check('one night,month rollover and leaprange',()=>{assert.equal(api.countNights('2026-10-31','2026-11-01'),1);assert.equal(api.countNights('2028-02-28','2028-03-01'),2)});
+check('spring/fall DST cannot change day counts',()=>{assert.equal(api.countNights('2026-03-07','2026-03-10'),3);assert.equal(api.countNights('2026-10-31','2026-11-03'),3)});
+check('inclusive28night maximum,same/reverse/invalid rejection',()=>{assert.equal(api.countNights('2026-11-01','2026-11-29'),28);for(const[a,b]of[['2026-11-01','2026-11-30'],['2026-11-01','2026-11-01'],['2026-11-02','2026-11-01'],['bad','2026-11-01'],['2026-11-01',null]])assert.equal(api.countNights(a,b),null)});
+check('bookability uses explicittoday and allowscheckintoday',()=>{assert.equal(api.isBookableRange('2026-11-01','2026-11-02','2026-11-01'),true);assert.equal(api.isBookableRange('2026-11-01','2026-11-02','2026-10-31'),true);assert.equal(api.isBookableRange('2026-11-01','2026-11-02','2026-11-02'),false)});
+check('invalidtoday/range rejectasstrictfalse',()=>{for(const args of[['2026-11-01','2026-11-01','2026-10-31'],['2026-11-01','2026-11-30','2026-10-31'],['2026-11-01','2026-11-02','bad'],[null,'2026-11-02','2026-11-01']])assert.equal(api.isBookableRange(...args),false)});
+const report={status:checks.every(c=>c.status==='PASS')?'SCOPED_DATE_MODEL_ONLY':'FAIL',sourceSha256:createHash('sha256').update(await readFile(file)).digest('hex'),checkerSha256:createHash('sha256').update(await readFile(new URL(import.meta.url))).digest('hex'),checks,limits:'Date dependency only;not booking,visual or commercialquality approval.'};await writeFile(out+'/report.json',JSON.stringify(report,null,2));console.log(JSON.stringify({pass:checks.filter(c=>c.status==='PASS').length,total:checks.length}));process.exitCode=report.status==='FAIL'?1:0;

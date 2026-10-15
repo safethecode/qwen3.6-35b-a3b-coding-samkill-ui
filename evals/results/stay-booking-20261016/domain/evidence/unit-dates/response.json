@@ -1,0 +1,18 @@
+{
+  "elapsedMs": 41431,
+  "model": "qwen3.6:35b-a3b-coding",
+  "created_at": "2026-10-15T16:03:30.7359966Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\n\"code\": \"function parseStayDate(value) {\\n  if (typeof value !== 'string' || value.length !== 10) return null;\\n  const match = value.match(/^(\\\\d{4})-(\\\\d{2})-(\\\\d{2})$/);\\n  if (!match) return null;\\n  const year = parseInt(match[1], 10);\\n  const month = parseInt(match[2], 10);\\n  const day = parseInt(match[3], 10);\\n  if (year < 2000 || year > 2099) return null;\\n  if (month < 1 || month > 12) return null;\\n  if (day < 1 || day > 31) return null;\\n  const d = new Date(Date.UTC(year, month - 1, day));\\n  if (d.getUTCFullYear() !== year || d.getUTCMonth() !== month - 1 || d.getUTCDate() !== day) {\\n    return null;\\n  }\\n  return d.getTime();\\n}\\n\\nfunction countNights(start, end) {\\n  const s = parseStayDate(start);\\n  const e = parseStayDate(end);\\n  if (s === null || e === null) return null;\\n  if (e <= s) return null;\\n  const diff = (e - s) / 86400000;\\n  if (diff < 1 || diff > 28) return null;\\n  return Math.floor(diff);\\n}\\n\\nfunction isBookableRange(start, end, today) {\\n  const s = parseStayDate(start);\\n  const e = parseStayDate(end);\\n  const t = parseStayDate(today);\\n  if (s === null || e === null || t === null) return false;\\n  if (s < t) return false;\\n  if (countNights(start, end) === null) return false;\\n  return true;\\n}\\n\\nexport { parseStayDate, countNights, isBookableRange };\"\n}"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 41426551300,
+  "load_duration": 16519186900,
+  "prompt_eval_count": 941,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration": 10261749000,
+  "eval_count": 465,
+  "eval_duration": 14634474000
+}
