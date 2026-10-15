@@ -19,8 +19,8 @@ try {
       for (const category of ['study', 'life']) { await page.locator(`[data-add-category=${category}]`).click(); await page.locator('#task-name').fill('기록할 할 일'); await page.locator('#save-task').click(); }
       const inspect = async mode => {
         for (const [selector, label] of [['.add-task', '추가'], ['.delete-task', '삭제']]) {
-          const controls = await page.locator(selector).evaluateAll(buttons => buttons.map(b => { const box = b.getBoundingClientRect(), style = getComputedStyle(b); return { text: b.innerText.trim(), name: b.getAttribute('aria-label'), width: box.width, height: box.height, size: parseFloat(style.fontSize), weight: parseFloat(style.fontWeight) }; }));
-          for (const control of controls) { assert.ok(control.text.includes(label), `${selector} lacks visible ${label} text`); assert.ok(control.name?.includes(control.text), 'Accessible name must preserve visible action text'); assert.ok(control.width >= 44 && control.height >= 44); assert.ok(control.size >= 14 && control.weight >= 500); }
+          const controls = await page.locator(selector).evaluateAll(buttons => buttons.map(b => { const box = b.getBoundingClientRect(), style = getComputedStyle(b); return { text: b.innerText.trim(), name: b.getAttribute('aria-label'), width: box.width, height: box.height, size: parseFloat(style.fontSize), weight: parseFloat(style.fontWeight), whiteSpace: style.whiteSpace }; }));
+          for (const control of controls) { assert.ok(control.text.includes(label), `${selector} lacks visible ${label} text`); assert.ok(control.name?.includes(control.text), 'Accessible name must preserve visible action text'); assert.ok(control.width >= 44 && control.height >= 44); assert.ok(control.size >= 14 && control.weight >= 500); assert.notEqual(control.whiteSpace, 'nowrap', 'Action labels must retain the contracted natural wrapping'); }
         }
         checks.push({ width, mode, status: 'PASS' });
         await page.screenshot({ path: `${output}/${width}-${mode}.png`, fullPage: true });
