@@ -1,0 +1,5 @@
+import { COPY } from './copy.js';
+import { translateError } from './error-copy.js';
+export function errorMessage(view) {
+MODEL_WRITABLE_STATEMENTS
+}

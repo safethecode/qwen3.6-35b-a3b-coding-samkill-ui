@@ -1,0 +1,51 @@
+import { setAttr, setBool, setText } from './render-dom.js';
+import { COPY } from './copy.js';
+export function renderErrors(view) {
+  const mainRegion = document.getElementById('main-error-region');
+  const mainError = document.getElementById('main-error');
+  const configRegion = document.getElementById('config-error-region');
+  const configError = document.getElementById('config-error');
+const { readReady, session, error, fieldInvalid, configOpen } = view;
+let mainMessage = '';
+let configMessage = '';
+
+if (error) {
+  switch (error) {
+    case 'READ_FAILED':
+      mainMessage = COPY.readError;
+      break;
+    case 'WRITE_FAILED':
+      mainMessage = COPY.writeError;
+      break;
+    case 'INVALID_CLOCK':
+      mainMessage = COPY.clockError;
+      break;
+    default:
+      mainMessage = COPY.transitionError;
+      break;
+  }
+} else if (configOpen && readReady && session) {
+  const phase = session.phase;
+  if (phase === 'running' || phase === 'paused') {
+    configMessage = COPY.unavailableConfig;
+  }
+}
+
+const hasMainMessage = mainMessage.length > 0;
+const hasConfigMessage = configMessage.length > 0;
+
+setBool(mainRegion, 'hidden', !hasMainMessage && !configOpen);
+setBool(configRegion, 'hidden', !hasConfigMessage && configOpen);
+
+if (hasMainMessage) {
+  setText(mainError, mainMessage);
+} else if (!configOpen) {
+  setText(mainError, '');
+}
+
+if (hasConfigMessage) {
+  setText(configError, configMessage);
+} else if (configOpen) {
+  setText(configError, '');
+}
+}

@@ -1,0 +1,18 @@
+{
+  "elapsedMs": 26479,
+  "model": "qwen3.6:35b-a3b-coding",
+  "created_at": "2026-10-15T14:33:11.7249607Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\n  \"code\": \"import { setAttr, setBool, setText } from './render-dom.js';\\nimport { COPY } from './copy.js';\\n\\nfunction isUnknown(view) {\\n  return !view.readReady || !view.session;\\n}\\n\\nfunction renderPrimaryLabel(view, phase) {\\n  let label = COPY.start;\\n  if (phase === 'running') {\\n    label = COPY.pause;\\n  } else if (phase === 'paused') {\\n    label = COPY.resume;\\n  } else if (phase === 'completed') {\\n    label = COPY.restart;\\n  }\\n  setText(view.primaryLabel, label);\\n}\\n\\nfunction renderPrimaryIcon(view, phase) {\\n  const iconSrc = phase === 'running' ? 'assets/icons/Pause-light.svg' : 'assets/icons/Play-light.svg';\\n  setAttr(view.primaryIcon, 'src', iconSrc);\\n}\\n\\nfunction renderConfigureVisibility(view, phase) {\\n  const isVisible = phase === 'ready' || phase === 'completed' || isUnknown(view);\\n  setBool(view.configure, 'hidden', !isVisible);\\n  if (isVisible) {\\n    setBool(view.configure, 'disabled', phase !== 'ready' && phase !== 'completed' && !isUnknown(view));\\n  }\\n}\\n\\nfunction renderResetVisibility(view, phase) {\\n  const isVisible = phase === 'running' || phase === 'paused';\\n  setBool(view.reset, 'hidden', !isVisible);\\n}\\n\\nfunction renderPrimaryEnabled(view, phase) {\\n  const enabled = phase === 'ready' || phase === 'running' || phase === 'paused' || phase === 'completed';\\n  setBool(view.primaryAction, 'disabled', !enabled);\\n}\\n\\nexport function renderActions(view) {\\n  const { session, readReady } = view;\\n  const phase = session && readReady ? session.phase : null;\\n  const unknown = isUnknown(view);\\n\\n  renderPrimaryLabel(view, unknown ? 'ready' : phase);\\n  renderPrimaryIcon(view, unknown ? 'ready' : phase);\\n  renderConfigureVisibility(view, unknown ? 'ready' : phase);\\n  renderResetVisibility(view, unknown ? 'ready' : phase);\\n  renderPrimaryEnabled(view, unknown ? 'ready' : phase);\\n}\"\n}"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 26473776700,
+  "load_duration": 5863200,
+  "prompt_eval_count": 904,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration": 9665071000,
+  "eval_count": 512,
+  "eval_duration": 16710791000
+}

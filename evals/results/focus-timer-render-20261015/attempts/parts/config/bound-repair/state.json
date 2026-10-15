@@ -1,0 +1,7 @@
+{
+  "status": "FAILED_BOUND_RENDER_SLOT",
+  "id": "config",
+  "pid": 43372,
+  "updatedAtUtc": "2026-10-15T14:55:43.465Z",
+  "error": "Expected values to be strictly equal:\n\n'length' !== 'stop'\n"
+}

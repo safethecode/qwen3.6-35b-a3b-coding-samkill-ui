@@ -1,0 +1,72 @@
+{
+  "status": "SCOPED_PURE_MESSAGE_PROJECTION_ONLY",
+  "moduleSha256": "5b69683358d9e577ebeaf9ec183a5919b69183b803fe99b7f7fdae6a92a9c7b6",
+  "checkerSha256": "7ef8a150b53911e220394a4326ff17a16c05c68d7d56d4c35e922411e9b626da",
+  "checks": [
+    {
+      "name": "ready",
+      "status": "PASS"
+    },
+    {
+      "name": "read-main",
+      "status": "PASS"
+    },
+    {
+      "name": "write-main",
+      "status": "PASS"
+    },
+    {
+      "name": "clock-main",
+      "status": "PASS"
+    },
+    {
+      "name": "transition-main",
+      "status": "PASS"
+    },
+    {
+      "name": "record-main",
+      "status": "PASS"
+    },
+    {
+      "name": "ready-config",
+      "status": "PASS"
+    },
+    {
+      "name": "read-config",
+      "status": "PASS"
+    },
+    {
+      "name": "write-config",
+      "status": "PASS"
+    },
+    {
+      "name": "running-config",
+      "status": "PASS"
+    },
+    {
+      "name": "paused-config",
+      "status": "PASS"
+    },
+    {
+      "name": "running-write-config",
+      "status": "PASS"
+    },
+    {
+      "name": "running-main",
+      "status": "PASS"
+    },
+    {
+      "name": "completed-config",
+      "status": "PASS"
+    },
+    {
+      "name": "unconfirmed-running",
+      "status": "PASS"
+    },
+    {
+      "name": "no-session-clock",
+      "status": "PASS"
+    }
+  ],
+  "limits": "Pure copy/state projection only;generic host DOMruntime has independent tests. Actual11ownedDOMviews/full8consumer/controller/CSS/reference/catalog still required."
+}

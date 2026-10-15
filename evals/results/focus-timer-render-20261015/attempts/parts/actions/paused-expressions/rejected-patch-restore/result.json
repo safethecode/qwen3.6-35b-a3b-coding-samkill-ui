@@ -1,0 +1,5 @@
+{
+  "status": "RESTORED_REJECTED_LOCAL_PATCH",
+  "reason": "Both returned identifiers running were undeclared,causing2/11 versus preceding10/11. Original failed response/after-source retained. Restore only our last three argument edits;no user source touched.",
+  "restoredSha256": "a9e5a783c33a5e5c0ded50a4aab40145df5d1b9efacd3817d53d4ec1f5a8c9d8"
+}

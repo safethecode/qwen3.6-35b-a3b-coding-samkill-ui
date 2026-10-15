@@ -1,0 +1,608 @@
+{
+  "files": [
+    {
+      "path": ".gitattributes",
+      "sha256": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da"
+    },
+    {
+      "path": "attempts/accepted.json",
+      "sha256": "140463caf5ac882ba2427f266c4bee9bff7630a19ece7923d5534af033d7eb9a"
+    },
+    {
+      "path": "attempts/aria-bool-helper/actions.log",
+      "sha256": "d90e4add887d3413c7cb2ff6e28bde90d007a60e8141c5c132c6db3f1c33ca53"
+    },
+    {
+      "path": "attempts/aria-bool-helper/after-render-dom.js.txt",
+      "sha256": "98c4e731d01b86b4e72e7dc967e764475e5227ce02d60d9659027a5df0601ef5"
+    },
+    {
+      "path": "attempts/aria-bool-helper/before-render-dom.js.txt",
+      "sha256": "4336fa965c2bf37c7dc0f78642ea16b2c6857e869222cf068085df740fedc4ca"
+    },
+    {
+      "path": "attempts/aria-bool-helper/checks-actions/report.json",
+      "sha256": "70554c31010ba9f4c754bbdee270d8ff0ddd8682d41c1be9fd417ae7b65a114a"
+    },
+    {
+      "path": "attempts/aria-bool-helper/checks-config/report.json",
+      "sha256": "d905a73bb8ac95784826240918a29df7fd0cf7e2a76a3b0c74617609dcf63780"
+    },
+    {
+      "path": "attempts/aria-bool-helper/checks-time/report.json",
+      "sha256": "278eabf6b1a41e5a5964cbbd46bfabdc147612d57ab1b0796f321ac0f17887e3"
+    },
+    {
+      "path": "attempts/aria-bool-helper/config.log",
+      "sha256": "e1b87a51159b80f168c6b7c066215f6e174d9a43e27ae286592e78e7e8b3afe9"
+    },
+    {
+      "path": "attempts/aria-bool-helper/driver.mjs.txt",
+      "sha256": "7dc49193a977785d57f263028d3dd6f97c186217849a505d791f73222ae5309a"
+    },
+    {
+      "path": "attempts/aria-bool-helper/prospective-contract.json",
+      "sha256": "db3e7b3691de7132933c6741b7569f2579c0cef6842077d4eee984af32765b97"
+    },
+    {
+      "path": "attempts/aria-bool-helper/request.json",
+      "sha256": "dbc9483961e50416ecad8bdfa82b0160ea921e0da615b0140e42854de8cf1c79"
+    },
+    {
+      "path": "attempts/aria-bool-helper/response.json",
+      "sha256": "84d891ca5bed5ea7806e26aff3ae07ead8f74e5de32bb883b60e230069324b77"
+    },
+    {
+      "path": "attempts/aria-bool-helper/result.json",
+      "sha256": "0a8f1919e9e1988c26643ffe5e327ed6a22ada8322aa81049eb6dc4e8a40df95"
+    },
+    {
+      "path": "attempts/aria-bool-helper/state.json",
+      "sha256": "9d7c52c2283c6318ec88fa923245cd4bf8d16866715356f68838f2e9e4c25862"
+    },
+    {
+      "path": "attempts/aria-bool-helper/time.log",
+      "sha256": "c096837e595febc44043769b3e38820a7e000196ad606e6b64591395831c2c21"
+    },
+    {
+      "path": "attempts/comment-normalization/check.log",
+      "sha256": "ae26d350010609c0108b7f75d0a95c378716e5b62a421aaadd240c035b4cc42a"
+    },
+    {
+      "path": "attempts/comment-normalization/checks/report.json",
+      "sha256": "8dc01b3bff4ebf12da697ead6d6ec77c65ed0e7d5b3dc0e4bb0474b98ffc2078"
+    },
+    {
+      "path": "attempts/comment-normalization/raw-render.js.txt",
+      "sha256": "51cc0df3bae804dbac790af7ec382c5a36894589c8133df305c8ee046e18cb72"
+    },
+    {
+      "path": "attempts/comment-normalization/render.js.txt",
+      "sha256": "4bc1de342fcf89393770f8bb79e2280ad792ab06a10d7fa157700d313fc3bbdf"
+    },
+    {
+      "path": "attempts/comment-normalization/result.json",
+      "sha256": "24e025a46935741b9ffc1835d97d59c46fe9c790e6686222f136bb4d06a89610"
+    },
+    {
+      "path": "attempts/driver.mjs.txt",
+      "sha256": "29df6ad61138a909f5e4fbb64fa508e5955a0ca4a11559e05cfdc063d965aafc"
+    },
+    {
+      "path": "attempts/error-message/driver.mjs.txt",
+      "sha256": "b88dcea9fd6554e52d615eb0d43adce0166f66025d946051f1f55b6d176c6a45"
+    },
+    {
+      "path": "attempts/error-message/errors-region/report.json",
+      "sha256": "29cbfd5ed16b1441a5b7eaa8cbbd8645d4da05c2eb50730f7612c9234ca55d51"
+    },
+    {
+      "path": "attempts/error-message/errors-region.log",
+      "sha256": "7dbb0838228215a0d8aed4c40995aff66eb52cc8b9249dceda6e1153f0007457"
+    },
+    {
+      "path": "attempts/error-message/frame.js.txt",
+      "sha256": "279b5db0069fd28c7e23082e4dcfe240ff4530afbb48a6b4255f90e9fd78746b"
+    },
+    {
+      "path": "attempts/error-message/full-renderer/report.json",
+      "sha256": "7eb9a4b31cf0967acd8b5c01aa0cdae991e0c52c09dc3737a194ae0b72033ce5"
+    },
+    {
+      "path": "attempts/error-message/full-renderer.log",
+      "sha256": "d7ca98c46599b8727a8a5576acda7653b4bc8545d46c3f28ceb184213764c66e"
+    },
+    {
+      "path": "attempts/error-message/module.js.txt",
+      "sha256": "5b69683358d9e577ebeaf9ec183a5919b69183b803fe99b7f7fdae6a92a9c7b6"
+    },
+    {
+      "path": "attempts/error-message/pure-message/report.json",
+      "sha256": "910c09089c82f75e6ea4206fa78ef7d2a33236727734e1349865ef0df411d945"
+    },
+    {
+      "path": "attempts/error-message/pure-message.log",
+      "sha256": "cd0232b819bb776534cc2b3a980aa04d206d78806675970760fa919197891c4a"
+    },
+    {
+      "path": "attempts/error-message/request.json",
+      "sha256": "a9a7397b0cc24d2457969a331124cd1a25946957d48481383e427b7a98b7861d"
+    },
+    {
+      "path": "attempts/error-message/response.json",
+      "sha256": "60679b8e28ac4b40d80c2bc86cd034c5e47a040909945e0a1d28df33954044f7"
+    },
+    {
+      "path": "attempts/error-message/result.json",
+      "sha256": "be9c27fc192119a945e7c6e59ed22d7dafcdf8500b5f3a177b9f0752350ba5e9"
+    },
+    {
+      "path": "attempts/error-message/state.json",
+      "sha256": "6f64f4390b71d6532d7a364530cc59592968209e999d824736325ad74b93a25f"
+    },
+    {
+      "path": "attempts/exclusive-message-input/before-render-errors.js.txt",
+      "sha256": "4d246943bcfae7a47e09f41dc3477bae04494c715eedb2aab2867735e31258b0"
+    },
+    {
+      "path": "attempts/exclusive-message-input/contract.json",
+      "sha256": "7adaf25c205a1f858f678f924b36d770d8c5f346730b1508b7f4aeec50cc838f"
+    },
+    {
+      "path": "attempts/function-repair/driver.mjs.txt",
+      "sha256": "d2b552a11dd672a2d89fe08ab13cf509ce00e89e092e31a55c7001d5fbc9140b"
+    },
+    {
+      "path": "attempts/function-repair/request.json",
+      "sha256": "7c63b309f2c373e3515dcf471e2e305456c3ee5ad1fa75a1374e1f58ea0daa4d"
+    },
+    {
+      "path": "attempts/function-repair/response.json",
+      "sha256": "ad75f8be031ed2772eaab6fd4b6d441c98240648656ad3403f8078b3212d4bc9"
+    },
+    {
+      "path": "attempts/function-repair/state.json",
+      "sha256": "4fe8d9be562e4434b2874da8427e4a2bd1936774a9da7dab650c7c4ca32e79a1"
+    },
+    {
+      "path": "attempts/parts/actions/accepted.json",
+      "sha256": "09c64b1fbf10745a6b824dd58b59660e34825eed009257064ffb5ac0e5fbee55"
+    },
+    {
+      "path": "attempts/parts/actions/bound-repair/after-module.js.txt",
+      "sha256": "a9e5a783c33a5e5c0ded50a4aab40145df5d1b9efacd3817d53d4ec1f5a8c9d8"
+    },
+    {
+      "path": "attempts/parts/actions/bound-repair/before-module.js.txt",
+      "sha256": "29737ed3054a1e0b4fa7fadab82bb7b01fa346175593995eb5193e248f65b0ee"
+    },
+    {
+      "path": "attempts/parts/actions/bound-repair/check.log",
+      "sha256": "b3f2b34851a546dbbe2d3e89887a9e77244a972351feeb778d9751472fc27494"
+    },
+    {
+      "path": "attempts/parts/actions/bound-repair/checks/report.json",
+      "sha256": "ab71780489bde71e65beb012e485d045a9b38380b0a417a1f9791d7213a6c6b0"
+    },
+    {
+      "path": "attempts/parts/actions/bound-repair/driver.mjs.txt",
+      "sha256": "a25cd3480afe3b4524c54d71f002b9cef931f829652afeb09f9542d9258cdf98"
+    },
+    {
+      "path": "attempts/parts/actions/bound-repair/frame.js.txt",
+      "sha256": "189e6cf466cfcade0ae0b8cc1a72258d800cf4bde881e410045f859fd88c7be4"
+    },
+    {
+      "path": "attempts/parts/actions/bound-repair/request.json",
+      "sha256": "3c7356455d3cb6c7af2bb048da2cecb6354a462ab7cc17a3e5cf935bba4659a1"
+    },
+    {
+      "path": "attempts/parts/actions/bound-repair/response.json",
+      "sha256": "143a05b97c3d203368910a4d219775ff2af01e6103ec57da48ef9829201f5002"
+    },
+    {
+      "path": "attempts/parts/actions/bound-repair/result.json",
+      "sha256": "1d2c6da87b7274f3e461b1960950761472561197bbba4d6a5fee3576b145ef0c"
+    },
+    {
+      "path": "attempts/parts/actions/bound-repair/state.json",
+      "sha256": "155b4d1dcb0aa615006ea992d021fd6d211c9c31af0f3eec0e3ee9bb28ddf260"
+    },
+    {
+      "path": "attempts/parts/actions/check.log",
+      "sha256": "ab13b6c43256f508114fd4fca8e8fbe1d784d3a8232d1c7aaba67fd8f73d22ff"
+    },
+    {
+      "path": "attempts/parts/actions/checks/report.json",
+      "sha256": "fff612d625d3e0043858725bd9bb0d530ca8619a7decd868c787621b84535319"
+    },
+    {
+      "path": "attempts/parts/actions/driver.mjs.txt",
+      "sha256": "2e20ebd50af3449cb18257c9452273b1d136f038aefdb3d69b548cec2e68d9e8"
+    },
+    {
+      "path": "attempts/parts/actions/module.js.txt",
+      "sha256": "29737ed3054a1e0b4fa7fadab82bb7b01fa346175593995eb5193e248f65b0ee"
+    },
+    {
+      "path": "attempts/parts/actions/paused-expressions/after-module.js.txt",
+      "sha256": "c895a7b5c4fa7bdda6d392107146a0a67358fddedf0707115f28dc71904e7d66"
+    },
+    {
+      "path": "attempts/parts/actions/paused-expressions/before-module.js.txt",
+      "sha256": "a9e5a783c33a5e5c0ded50a4aab40145df5d1b9efacd3817d53d4ec1f5a8c9d8"
+    },
+    {
+      "path": "attempts/parts/actions/paused-expressions/check.log",
+      "sha256": "961cc4f761187df222b5c29ab5685360606d5213ab062a58e0c2c2b0c5f613fc"
+    },
+    {
+      "path": "attempts/parts/actions/paused-expressions/checks/report.json",
+      "sha256": "d8c8000e9d3674d471f0cf0eaccaee7f1db356f994083e42b2083cda2cfedd8f"
+    },
+    {
+      "path": "attempts/parts/actions/paused-expressions/driver.mjs.txt",
+      "sha256": "1691d75b75b34961fcdb5f8fa13eb38811ec2b0049264e8b74ec365162ad14c9"
+    },
+    {
+      "path": "attempts/parts/actions/paused-expressions/rejected-patch-restore/current-failed.js.txt",
+      "sha256": "c895a7b5c4fa7bdda6d392107146a0a67358fddedf0707115f28dc71904e7d66"
+    },
+    {
+      "path": "attempts/parts/actions/paused-expressions/rejected-patch-restore/result.json",
+      "sha256": "1154989ba952d3e9535f237fcfa7076442f9c5250873d5be0b8845a9036500c3"
+    },
+    {
+      "path": "attempts/parts/actions/paused-expressions/request.json",
+      "sha256": "63e49f12a447fa41ad95776eabf3113a5811aa303d8648003a232fc65a15e487"
+    },
+    {
+      "path": "attempts/parts/actions/paused-expressions/response.json",
+      "sha256": "e672908f52dfed9c7f05a995c3b43b63cc84a3cc15e7b18b7d476a6b400baef9"
+    },
+    {
+      "path": "attempts/parts/actions/paused-expressions/result.json",
+      "sha256": "c3e77217355a75711c68940afad5309c8186ace23b9d478706bee7986aacad81"
+    },
+    {
+      "path": "attempts/parts/actions/paused-expressions/state.json",
+      "sha256": "5b0d422d98507dd61d5f2d3eb9a446e93307e2fede9ef8f6bcd3b40644b27683"
+    },
+    {
+      "path": "attempts/parts/actions/paused-thinking/after-module.js.txt",
+      "sha256": "3b123a261accffb6bc9789be4fd853267067b9830324cb701ee445e7fc461851"
+    },
+    {
+      "path": "attempts/parts/actions/paused-thinking/before-module.js.txt",
+      "sha256": "a9e5a783c33a5e5c0ded50a4aab40145df5d1b9efacd3817d53d4ec1f5a8c9d8"
+    },
+    {
+      "path": "attempts/parts/actions/paused-thinking/check.log",
+      "sha256": "d90e4add887d3413c7cb2ff6e28bde90d007a60e8141c5c132c6db3f1c33ca53"
+    },
+    {
+      "path": "attempts/parts/actions/paused-thinking/checks/report.json",
+      "sha256": "e099987b118e0d2b0615e9804b28b5b3c828f3b97dd3fab1142d626a010d43c0"
+    },
+    {
+      "path": "attempts/parts/actions/paused-thinking/driver.mjs.txt",
+      "sha256": "179b885914ab8b70ff1ab81e22842098c7e6673c050ec4c48acc56d08ff46554"
+    },
+    {
+      "path": "attempts/parts/actions/paused-thinking/request.json",
+      "sha256": "355e2f69a22640a285fbc324bf44b4c59e1d5ccb21a3a8bfe40cd919967f1041"
+    },
+    {
+      "path": "attempts/parts/actions/paused-thinking/response.json",
+      "sha256": "8049399ee7474d1a1b53ed9583f3fd999db0004787aafd37f2db29e9a98ad76f"
+    },
+    {
+      "path": "attempts/parts/actions/paused-thinking/result.json",
+      "sha256": "09c64b1fbf10745a6b824dd58b59660e34825eed009257064ffb5ac0e5fbee55"
+    },
+    {
+      "path": "attempts/parts/actions/paused-thinking/state.json",
+      "sha256": "b47b6731ebced0f1697211ea73854b2df57a258f8629340bdef591a4ca3a1678"
+    },
+    {
+      "path": "attempts/parts/actions/raw-module.js.txt",
+      "sha256": "29737ed3054a1e0b4fa7fadab82bb7b01fa346175593995eb5193e248f65b0ee"
+    },
+    {
+      "path": "attempts/parts/actions/request.json",
+      "sha256": "f748e72bcc91d71068325635ad6066498da9c00e8668693683b8f02781d889d8"
+    },
+    {
+      "path": "attempts/parts/actions/response.json",
+      "sha256": "47c2d986fe226a0f38d4b4d683cdb1a20b378c8735d3097da147b2a4b0e623b8"
+    },
+    {
+      "path": "attempts/parts/actions/result.json",
+      "sha256": "768afa2b2c25393a8a359cf2f838b42e2303052abb4cdb7d3d7b114aa0f3897d"
+    },
+    {
+      "path": "attempts/parts/actions/state.json",
+      "sha256": "1ea262761345447276a62fc3c9b73132987a7e984c15e4059b9cf523926fbb66"
+    },
+    {
+      "path": "attempts/parts/config/bound-repair/driver.mjs.txt",
+      "sha256": "1aaf216a1804947faafb8aabbdefd61aefa30d5ad9b970460755d5a99a81e372"
+    },
+    {
+      "path": "attempts/parts/config/bound-repair/frame.js.txt",
+      "sha256": "88c8a47b61f10085543ce44e7e387bbb2c48124f29f74f72245ec75efa6d69e3"
+    },
+    {
+      "path": "attempts/parts/config/bound-repair/request.json",
+      "sha256": "c6f2b8ba351db0a9986aa96747593bc165c08955587509c8a266915a5ce5aeb2"
+    },
+    {
+      "path": "attempts/parts/config/bound-repair/response.json",
+      "sha256": "34d7efbc22147f0eabea107cbde622ffd3112b6497bdb77a0acf72a02fc35568"
+    },
+    {
+      "path": "attempts/parts/config/bound-repair/state.json",
+      "sha256": "c02b86656a530a8a70d474d6a6ab2c70d9bcba169b4ed8349d0ebecd02532b2b"
+    },
+    {
+      "path": "attempts/parts/config/bound-repair-instruct-profile/after-module.js.txt",
+      "sha256": "363da6995918379a0c6d5727112a575a21881edf7a0143259c0c6f36e6231be8"
+    },
+    {
+      "path": "attempts/parts/config/bound-repair-instruct-profile/check.log",
+      "sha256": "b99a9752d4782534e0d700e097ada3bdecc9ec93f91242d81164d9bab477f86d"
+    },
+    {
+      "path": "attempts/parts/config/bound-repair-instruct-profile/checks/report.json",
+      "sha256": "113664b144cfd84629fd4ace7065fc7ca57c1d28ed6dd0ca8ec1dc753744304a"
+    },
+    {
+      "path": "attempts/parts/config/bound-repair-instruct-profile/driver.mjs.txt",
+      "sha256": "f3be55dc7b26af6aabc3c4fed8771ec5fe2c127a985f15d49b0276725b0e4d02"
+    },
+    {
+      "path": "attempts/parts/config/bound-repair-instruct-profile/frame.js.txt",
+      "sha256": "88c8a47b61f10085543ce44e7e387bbb2c48124f29f74f72245ec75efa6d69e3"
+    },
+    {
+      "path": "attempts/parts/config/bound-repair-instruct-profile/request.json",
+      "sha256": "2af7528902545f78a1b78c89eb1a37e8f5c2755cc45de4b6f1f6185b56ce8cbb"
+    },
+    {
+      "path": "attempts/parts/config/bound-repair-instruct-profile/response.json",
+      "sha256": "4402931ee49a48754ff9126ea907ddc4ad4f579bfe322fa472fd3adf3de535ec"
+    },
+    {
+      "path": "attempts/parts/config/bound-repair-instruct-profile/result.json",
+      "sha256": "31a0718529ac7b21b7f21d5e0ba24ac5cd4cd4e005da1cc415aa12651273936c"
+    },
+    {
+      "path": "attempts/parts/config/bound-repair-instruct-profile/state.json",
+      "sha256": "4be38b4422055a857be2d8e5b9c2dfb63aae5b859ba973a1e96e8256b8e2581e"
+    },
+    {
+      "path": "attempts/parts/errors/bound-repair-instruct-profile/after-module.js.txt",
+      "sha256": "4d246943bcfae7a47e09f41dc3477bae04494c715eedb2aab2867735e31258b0"
+    },
+    {
+      "path": "attempts/parts/errors/bound-repair-instruct-profile/check.log",
+      "sha256": "9f063f7f3c0c0b713e278f012005ff0dfda77e560955e90fa17ce8bbb6356653"
+    },
+    {
+      "path": "attempts/parts/errors/bound-repair-instruct-profile/checks/report.json",
+      "sha256": "4f0b08eab3a1e5801be194ec3e7e6a56af469854e909d540949613e41759e076"
+    },
+    {
+      "path": "attempts/parts/errors/bound-repair-instruct-profile/driver.mjs.txt",
+      "sha256": "f3be55dc7b26af6aabc3c4fed8771ec5fe2c127a985f15d49b0276725b0e4d02"
+    },
+    {
+      "path": "attempts/parts/errors/bound-repair-instruct-profile/frame.js.txt",
+      "sha256": "20f3aad0eb9ac29106bbd8be9d230fa945a95f1aa8f4486febe80d1c412f5c97"
+    },
+    {
+      "path": "attempts/parts/errors/bound-repair-instruct-profile/request.json",
+      "sha256": "b7d98755c3a2a5be76ab8028a04e546939d4ac946b581bb1ece3bd9ed32323fd"
+    },
+    {
+      "path": "attempts/parts/errors/bound-repair-instruct-profile/response.json",
+      "sha256": "16d25ae607d8870a44706d13f70ccac83f6e9842d8138b9c26f0c3e7bf6f38dd"
+    },
+    {
+      "path": "attempts/parts/errors/bound-repair-instruct-profile/result.json",
+      "sha256": "4b5b30f04abe67f4dadf764199c51cf3491037d9185a45701dbbf7406f6e05b0"
+    },
+    {
+      "path": "attempts/parts/errors/bound-repair-instruct-profile/state.json",
+      "sha256": "b67964c68969f079e41dbc616f17a536a14ba8b80b6e0081e7d1a52ae4ff6574"
+    },
+    {
+      "path": "attempts/parts/time/accepted.json",
+      "sha256": "bf70a4025efa8b3ec1ca079269a2d7ed8021e6c58e7cf49d5780f318642d5a9a"
+    },
+    {
+      "path": "attempts/parts/time/driver.mjs.txt",
+      "sha256": "fa05f22dcfb5ea3003bcfeaf32cc67425ee9199c17e9300a273b3792749e93fd"
+    },
+    {
+      "path": "attempts/parts/time/export-recovery/check.log",
+      "sha256": "c096837e595febc44043769b3e38820a7e000196ad606e6b64591395831c2c21"
+    },
+    {
+      "path": "attempts/parts/time/export-recovery/checks/report.json",
+      "sha256": "2c2e83f81fd994530dafd3b4cf8603804c5d2df36531ae07127197d8a7f56f56"
+    },
+    {
+      "path": "attempts/parts/time/export-recovery/module.js.txt",
+      "sha256": "e2492883a3e7ef70321c479403b4c5607fb4d33a20d653bba67a561d5a41b4c3"
+    },
+    {
+      "path": "attempts/parts/time/export-recovery/result.json",
+      "sha256": "bf70a4025efa8b3ec1ca079269a2d7ed8021e6c58e7cf49d5780f318642d5a9a"
+    },
+    {
+      "path": "attempts/parts/time/request.json",
+      "sha256": "2fc5bb6448b6bffdc9ac1e509ccdf92b4784acb39481ec0ce151a148eb28ff53"
+    },
+    {
+      "path": "attempts/parts/time/response.json",
+      "sha256": "fe9121fbc9ada53d3ed392bb0dec8208032594c011c64cb9600009dcd56e9958"
+    },
+    {
+      "path": "attempts/parts/time/state.json",
+      "sha256": "f9253682c7635eb7103bfc8732b7779419b2c19f5b2ab45bf5487d6876b52256"
+    },
+    {
+      "path": "attempts/request.json",
+      "sha256": "10404ec63bd225a1c8921de31d3a8724ebb37d0032f8849ef94c41b9e991657c"
+    },
+    {
+      "path": "attempts/response.json",
+      "sha256": "ba482ea6cf22c8619d8bf388b600fc2ff23bad3ce099975eafae045020f28465"
+    },
+    {
+      "path": "attempts/state.json",
+      "sha256": "2dd0408ef83f88e99015872b62a5036c093e41fe8b3d7fc60468377362f209f8"
+    },
+    {
+      "path": "browser-harness.mjs",
+      "sha256": "6a1c01279beef97a8512ec0268108ff89b83db48f7a0352e9584570f663c73e1"
+    },
+    {
+      "path": "check-error-message.mjs",
+      "sha256": "7ef8a150b53911e220394a4326ff17a16c05c68d7d56d4c35e922411e9b626da"
+    },
+    {
+      "path": "check-render-part.mjs",
+      "sha256": "0238fc34180323ae1c22837569e4aaf3852845a207e53cdbcbf75ae68b94116c"
+    },
+    {
+      "path": "check-render.mjs",
+      "sha256": "e42fcb1c32d701e971b9587cd5362b68c4e645291b13742a4c072af2d7c555e1"
+    },
+    {
+      "path": "file-index.json",
+      "sha256": "e8fe4a22ebaa38516e00269333e4ea933e3b85ce5c0879b6a3fecaf0e69a2e83"
+    },
+    {
+      "path": "materialize.mjs",
+      "sha256": "20a02c7a1ff581a71c924f185c955325076e3cfb22aa6051d218a8b4f44b3090"
+    },
+    {
+      "path": "MODULE-CONTRACT-v4.md",
+      "sha256": "4dd055fdeaa8031d36399c25d0322eb0ecb9eab475a0e41af52eb348142d9b2c"
+    },
+    {
+      "path": "MODULE-CONTRACT-v5.md",
+      "sha256": "63d0446627dd0d70c552be068cccfeb1df7e748ecac49b66584c958748e6758b"
+    },
+    {
+      "path": "README.md",
+      "sha256": "b562839875317c67966ecef2a8a260796543c4574d581148233e42668f9f6eab"
+    },
+    {
+      "path": "render-parts.json",
+      "sha256": "ed6cb18c5ecea48a6060ac6750148002ea4a3e5c06d286eecfd16de8e04f81b8"
+    },
+    {
+      "path": "repair-actions-expressions.mjs",
+      "sha256": "1691d75b75b34961fcdb5f8fa13eb38811ec2b0049264e8b74ec365162ad14c9"
+    },
+    {
+      "path": "repair-actions-thinking.mjs",
+      "sha256": "179b885914ab8b70ff1ab81e22842098c7e6673c050ec4c48acc56d08ff46554"
+    },
+    {
+      "path": "repair-aria-bool-helper.mjs",
+      "sha256": "7dc49193a977785d57f263028d3dd6f97c186217849a505d791f73222ae5309a"
+    },
+    {
+      "path": "repair-render-function.mjs",
+      "sha256": "d2b552a11dd672a2d89fe08ab13cf509ce00e89e092e31a55c7001d5fbc9140b"
+    },
+    {
+      "path": "replay.mjs",
+      "sha256": "7774c378dd8a22713b01a72e9ea13806012b691e6332a66a82c1f525c2325792"
+    },
+    {
+      "path": "run-bound-render-part.mjs",
+      "sha256": "f3be55dc7b26af6aabc3c4fed8771ec5fe2c127a985f15d49b0276725b0e4d02"
+    },
+    {
+      "path": "run-error-message.mjs",
+      "sha256": "b88dcea9fd6554e52d615eb0d43adce0166f66025d946051f1f55b6d176c6a45"
+    },
+    {
+      "path": "run-render-part.mjs",
+      "sha256": "2e20ebd50af3449cb18257c9452273b1d136f038aefdb3d69b548cec2e68d9e8"
+    },
+    {
+      "path": "source/design/component-plan.json",
+      "sha256": "d46129b252e2a4b6f154499afb9041409fb20c2cbbd0fb94ada50dfa27c5f71a"
+    },
+    {
+      "path": "source/DESIGN.md",
+      "sha256": "3d68c6e795ccb3dda5a06ec768a217cab3f414c27d956db780a19e7201b68c9e"
+    },
+    {
+      "path": "source/error-copy.js",
+      "sha256": "c361c4a6d487001b13373bb951e3435117c079e8fb315940aa14d9e6381d3f66"
+    },
+    {
+      "path": "source/error-message.js",
+      "sha256": "5b69683358d9e577ebeaf9ec183a5919b69183b803fe99b7f7fdae6a92a9c7b6"
+    },
+    {
+      "path": "source/render-actions.js",
+      "sha256": "3b123a261accffb6bc9789be4fd853267067b9830324cb701ee445e7fc461851"
+    },
+    {
+      "path": "source/render-config.js",
+      "sha256": "363da6995918379a0c6d5727112a575a21881edf7a0143259c0c6f36e6231be8"
+    },
+    {
+      "path": "source/render-dom.js",
+      "sha256": "98c4e731d01b86b4e72e7dc967e764475e5227ce02d60d9659027a5df0601ef5"
+    },
+    {
+      "path": "source/render-errors.js",
+      "sha256": "40cb0e8ed941fd27a82aab84032096c04726c0282878b0f828e2aa6ef146e802"
+    },
+    {
+      "path": "source/render-time.js",
+      "sha256": "e2492883a3e7ef70321c479403b4c5607fb4d33a20d653bba67a561d5a41b4c3"
+    },
+    {
+      "path": "source/render.js",
+      "sha256": "550be3dbd3298ec79980c7f105eb0ce7be2a727b82af020eba7541744718a528"
+    },
+    {
+      "path": "source/runtime-dom.js",
+      "sha256": "3e167057a81288549bfaa21b94ee19bf14483fb30c4dd7c79e408b16396c85c7"
+    },
+    {
+      "path": "source/UI-STATUS.md",
+      "sha256": "6d7bb09b4d08d5c0ebe7492c58d491ef59e56c6c2e9fde2548eeab734141731a"
+    },
+    {
+      "path": "summary.json",
+      "sha256": "44eceba3aca76a24ce27e56d475ab01e7fbd083d91e97de908d47176d476ec95"
+    },
+    {
+      "path": "verification/model/report.json",
+      "sha256": "2def353eb4468ed94f51147276395a777168d0082a01ee85cac4baad0e8e1c96"
+    },
+    {
+      "path": "verification/previous-renderer-accepted.json",
+      "sha256": "be9c27fc192119a945e7c6e59ed22d7dafcdf8500b5f3a177b9f0752350ba5e9"
+    },
+    {
+      "path": "verification/renderer/report.json",
+      "sha256": "59589befa74d4fd9596f6f94b1c0680b544aef1420c29be3a1000058ca12dda8"
+    },
+    {
+      "path": "verification/store/report.json",
+      "sha256": "c4f22a8a6a7226ee741ee5ed4afeb8381ae49c77f6d07f2f0b5a31faf52cf98c"
+    }
+  ]
+}

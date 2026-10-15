@@ -1,0 +1,8 @@
+import { setAttr, setBool, setText } from './render-dom.js';
+import { COPY } from './copy.js';
+export function renderConfig(view) {
+  const durationInput = document.getElementById('duration-input');
+  const durationError = document.getElementById('duration-error');
+  const apply = document.getElementById('apply-duration');
+MODEL_WRITABLE_STATEMENTS
+}

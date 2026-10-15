@@ -1,0 +1,18 @@
+{
+  "elapsedMs": 5249,
+  "model": "qwen3.6:35b-a3b-coding",
+  "created_at": "2026-10-15T14:57:34.6778471Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\n  \"code\": \"if (view.fieldInvalid) {\\n  setText(durationError, COPY.invalidDuration);\\n} else {\\n  setText(durationError, '');\\n}\\nsetBool(durationInput, 'aria-invalid', !!view.fieldInvalid);\\nconst isReady = view.readReady && view.session;\\nconst isPhaseReady = isReady && view.session.phase === 'ready';\\nconst isPhaseCompleted = isReady && view.session.phase === 'completed';\\nconst canApply = isReady && (isPhaseReady || isPhaseCompleted);\\nsetBool(apply, 'disabled', !canApply);\"\n}"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 5243485300,
+  "load_duration": 5343700,
+  "prompt_eval_count": 994,
+  "prompt_eval_cached_count": 988,
+  "prompt_eval_duration": 409370000,
+  "eval_count": 132,
+  "eval_duration": 4668218000
+}

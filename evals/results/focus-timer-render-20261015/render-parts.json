@@ -1,0 +1,59 @@
+{
+  "status": "PREDECLARED_NEW_RENDERER_INPUT_NOT_IMPLEMENTED",
+  "parts": [
+    {
+      "id": "time",
+      "name": "renderTime",
+      "owners": [
+        "screen-title",
+        "time-readout",
+        "minutes",
+        "seconds",
+        "completed",
+        "completed-title",
+        "completed-duration",
+        "unknown-time",
+        "paused-status"
+      ]
+    },
+    {
+      "id": "actions",
+      "name": "renderActions",
+      "owners": [
+        "configure-duration",
+        "primary-action",
+        "primary-icon",
+        "primary-label",
+        "reset-session"
+      ]
+    },
+    {
+      "id": "config",
+      "name": "renderConfig",
+      "owners": [
+        "duration-input",
+        "duration-error",
+        "apply-duration"
+      ]
+    },
+    {
+      "id": "errors",
+      "name": "renderErrors",
+      "owners": [
+        "main-error-region",
+        "main-error",
+        "config-error-region",
+        "config-error"
+      ]
+    }
+  ],
+  "view": {
+    "readReady": "boolean",
+    "session": "null or {phase:ready|running|paused|completed,remainingMs:number,durationMinutes:integer,minutes:integer,seconds:integer}",
+    "error": "null or READ_FAILED|WRITE_FAILED|INVALID_CLOCK|INVALID_TRANSITION",
+    "fieldInvalid": "boolean",
+    "configOpen": "boolean"
+  },
+  "stateField": "session.phase,never session.state. minutes and seconds are already display numbers;never divide them by60.",
+  "preserve": "Existing full8group check-render.mjs remains unchanged. Completeapp/CSS/catalog/reference evidence still required. Each generated module can touch ONLY its owned ID set;no form value,focus/storage/timer/dialog mutation. Stable rendered state has0mutations."
+}

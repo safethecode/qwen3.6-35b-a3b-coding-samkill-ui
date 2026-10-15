@@ -1,0 +1,9 @@
+import { setAttr, setBool, setText } from './render-dom.js';
+import { COPY } from './copy.js';
+export function renderErrors(view) {
+  const mainRegion = document.getElementById('main-error-region');
+  const mainError = document.getElementById('main-error');
+  const configRegion = document.getElementById('config-error-region');
+  const configError = document.getElementById('config-error');
+MODEL_WRITABLE_STATEMENTS
+}

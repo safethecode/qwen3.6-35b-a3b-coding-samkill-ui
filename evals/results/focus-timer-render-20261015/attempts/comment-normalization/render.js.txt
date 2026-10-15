@@ -1,0 +1,207 @@
+import { COPY } from './copy.js';
+
+const STATE_HIDDEN = 'hidden';
+const STATE_VISIBLE = '';
+
+function setVisibility(element, isVisible) {
+  if (isVisible) {
+    element.hidden = false;
+  } else {
+    element.hidden = true;
+  }
+}
+
+export function renderTimer(view) {
+  const { readReady, session, error, fieldInvalid, configOpen } = view;
+
+  const screenTitle = document.getElementById('screen-title');
+  const timeReadout = document.getElementById('time-readout');
+  const minutesEl = document.getElementById('minutes');
+  const secondsEl = document.getElementById('seconds');
+  const completedSection = document.getElementById('completed');
+  const completedTitle = document.getElementById('completed-title');
+  const completedDuration = document.getElementById('completed-duration');
+  const unknownTime = document.getElementById('unknown-time');
+  const pausedStatus = document.getElementById('paused-status');
+  const configureBtn = document.getElementById('configure-duration');
+  const mainErrorRegion = document.getElementById('main-error-region');
+  const mainError = document.getElementById('main-error');
+  const reloadSessionBtn = document.getElementById('reload-session');
+  const primaryAction = document.getElementById('primary-action');
+  const primaryIcon = document.getElementById('primary-icon');
+  const primaryLabel = document.getElementById('primary-label');
+  const resetSession = document.getElementById('reset-session');
+  const durationInput = document.getElementById('duration-input');
+  const durationError = document.getElementById('duration-error');
+  const configErrorRegion = document.getElementById('config-error-region');
+  const configError = document.getElementById('config-error');
+  const reloadConfigBtn = document.getElementById('reload-config-session');
+  const applyDuration = document.getElementById('apply-duration');
+
+  if (!screenTitle) return;
+  screenTitle.textContent = COPY.screenTitle;
+
+  let currentPhase = null;
+  let displayMinutes = '--';
+  let displaySeconds = '--';
+  let isCompleted = false;
+
+  if (readReady && session) {
+    currentPhase = session.phase;
+    if (currentPhase === 'completed') {
+      isCompleted = true;
+    } else {
+      const totalSeconds = Math.ceil(session.remainingMs / 1000);
+      displayMinutes = String(Math.floor(totalSeconds / 60)).padStart(2, '0');
+      displaySeconds = String(totalSeconds % 60).padStart(2, '0');
+    }
+  }
+
+                 
+  const hasTimeReadout = readReady && session && currentPhase !== 'completed';
+  setVisibility(timeReadout, hasTimeReadout);
+  if (hasTimeReadout) {
+    if (minutesEl.textContent !== displayMinutes) {
+      minutesEl.textContent = displayMinutes;
+    }
+    if (secondsEl.textContent !== displaySeconds) {
+      secondsEl.textContent = displaySeconds;
+    }
+  }
+
+                      
+  setVisibility(completedSection, isCompleted);
+  if (isCompleted) {
+    if (completedTitle.textContent !== COPY.completedTitle) {
+      completedTitle.textContent = COPY.completedTitle;
+    }
+    const durationText = COPY.configuredDuration.replace('N', session.durationMinutes);
+    if (completedDuration.textContent !== durationText) {
+      completedDuration.textContent = durationText;
+    }
+  }
+
+                 
+  const showUnknown = readReady && !session;
+  setVisibility(unknownTime, showUnknown);
+
+                  
+  const showPaused = readReady && session && session.phase === 'paused';
+  setVisibility(pausedStatus, showPaused);
+
+                     
+  configureBtn.textContent = COPY.configure;
+  const showConfigure = readReady && (currentPhase === 'ready' || isCompleted || showUnknown);
+  setVisibility(configureBtn, showConfigure);
+  configureBtn.disabled = showUnknown;
+
+                  
+  setVisibility(mainErrorRegion, false);
+  setVisibility(configErrorRegion, false);
+  mainError.textContent = '';
+  configError.textContent = '';
+
+  let errorToShow = null;
+  if (error) {
+    if (configOpen) {
+      if (readReady && session && (session.phase === 'running' || session.phase === 'paused')) {
+        errorToShow = COPY.unavailableConfig;
+      } else {
+        errorToShow = translateError(error);
+      }
+    } else {
+      errorToShow = translateError(error);
+    }
+  }
+
+  if (errorToShow) {
+    if (configOpen) {
+      setVisibility(configErrorRegion, true);
+      configError.textContent = errorToShow;
+      if (reloadConfigBtn) reloadConfigBtn.textContent = COPY.reload;
+    } else {
+      setVisibility(mainErrorRegion, true);
+      mainError.textContent = errorToShow;
+      if (reloadSessionBtn) reloadSessionBtn.textContent = COPY.reload;
+    }
+  }
+
+                   
+  let actionText = '';
+  let iconSrc = '';
+  let isDisabled = false;
+
+  if (!readReady || showUnknown) {
+    isDisabled = true;
+  } else {
+    switch (currentPhase) {
+      case 'ready':
+        actionText = COPY.start;
+        iconSrc = 'assets/icons/Play-light.svg';
+        break;
+      case 'running':
+        actionText = COPY.pause;
+        iconSrc = 'assets/icons/Pause-light.svg';
+        break;
+      case 'paused':
+        actionText = COPY.resume;
+        iconSrc = 'assets/icons/Play-light.svg';
+        break;
+      case 'completed':
+        actionText = COPY.restart;
+        iconSrc = 'assets/icons/Play-light.svg';
+        break;
+      default:
+        isDisabled = true;
+        break;
+    }
+  }
+
+  primaryAction.disabled = isDisabled;
+  if (primaryLabel.textContent !== actionText) {
+    primaryLabel.textContent = actionText;
+  }
+  if (primaryIcon.src !== iconSrc) {
+    primaryIcon.src = iconSrc;
+  }
+
+                  
+  const showReset = readReady && session && (currentPhase === 'running' || currentPhase === 'paused');
+  setVisibility(resetSession, showReset);
+  if (resetSession) resetSession.textContent = COPY.reset;
+
+                              
+  if (durationError) {
+    if (fieldInvalid) {
+      setVisibility(durationError, true);
+      durationError.textContent = COPY.invalidDuration;
+      durationInput.setAttribute('aria-invalid', 'true');
+    } else {
+      setVisibility(durationError, false);
+      durationError.textContent = '';
+      durationInput.removeAttribute('aria-invalid');
+    }
+  }
+
+                 
+  const showApply = readReady && (currentPhase === 'ready' || isCompleted);
+  applyDuration.disabled = !showApply;
+  if (applyDuration) applyDuration.textContent = COPY.apply;
+
+                        
+  if (reloadSessionBtn && !mainErrorRegion.hidden) {
+    reloadSessionBtn.textContent = COPY.reload;
+  }
+  if (reloadConfigBtn && !configErrorRegion.hidden) {
+    reloadConfigBtn.textContent = COPY.reload;
+  }
+}
+
+function translateError(code) {
+  switch (code) {
+    case 'READ_FAILED': return COPY.readError;
+    case 'WRITE_FAILED': return COPY.writeError;
+    case 'INVALID_CLOCK': return COPY.clockError;
+    default: return COPY.transitionError;
+  }
+}

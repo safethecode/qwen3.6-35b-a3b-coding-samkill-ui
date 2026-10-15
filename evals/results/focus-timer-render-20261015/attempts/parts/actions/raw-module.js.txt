@@ -1,0 +1,53 @@
+import { setAttr, setBool, setText } from './render-dom.js';
+import { COPY } from './copy.js';
+
+function isUnknown(view) {
+  return !view.readReady || !view.session;
+}
+
+function renderPrimaryLabel(view, phase) {
+  let label = COPY.start;
+  if (phase === 'running') {
+    label = COPY.pause;
+  } else if (phase === 'paused') {
+    label = COPY.resume;
+  } else if (phase === 'completed') {
+    label = COPY.restart;
+  }
+  setText(view.primaryLabel, label);
+}
+
+function renderPrimaryIcon(view, phase) {
+  const iconSrc = phase === 'running' ? 'assets/icons/Pause-light.svg' : 'assets/icons/Play-light.svg';
+  setAttr(view.primaryIcon, 'src', iconSrc);
+}
+
+function renderConfigureVisibility(view, phase) {
+  const isVisible = phase === 'ready' || phase === 'completed' || isUnknown(view);
+  setBool(view.configure, 'hidden', !isVisible);
+  if (isVisible) {
+    setBool(view.configure, 'disabled', phase !== 'ready' && phase !== 'completed' && !isUnknown(view));
+  }
+}
+
+function renderResetVisibility(view, phase) {
+  const isVisible = phase === 'running' || phase === 'paused';
+  setBool(view.reset, 'hidden', !isVisible);
+}
+
+function renderPrimaryEnabled(view, phase) {
+  const enabled = phase === 'ready' || phase === 'running' || phase === 'paused' || phase === 'completed';
+  setBool(view.primaryAction, 'disabled', !enabled);
+}
+
+export function renderActions(view) {
+  const { session, readReady } = view;
+  const phase = session && readReady ? session.phase : null;
+  const unknown = isUnknown(view);
+
+  renderPrimaryLabel(view, unknown ? 'ready' : phase);
+  renderPrimaryIcon(view, unknown ? 'ready' : phase);
+  renderConfigureVisibility(view, unknown ? 'ready' : phase);
+  renderResetVisibility(view, unknown ? 'ready' : phase);
+  renderPrimaryEnabled(view, unknown ? 'ready' : phase);
+}

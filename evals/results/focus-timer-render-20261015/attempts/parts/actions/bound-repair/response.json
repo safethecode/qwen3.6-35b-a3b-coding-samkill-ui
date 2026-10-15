@@ -1,0 +1,18 @@
+{
+  "elapsedMs": 22818,
+  "model": "qwen3.6:35b-a3b-coding",
+  "created_at": "2026-10-15T14:37:09.2717951Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\"code\":\"const isReady = view.readReady === true;\\nconst phase = view.session ? view.session.phase : null;\\nconst isKnown = isReady && phase !== null;\\n\\nif (!isKnown) {\\n  setAttr(primaryIcon, 'src', 'assets/icons/Play-light.svg');\\n  setText(primaryLabel, COPY.start);\\n  setBool(primaryAction, 'disabled', true);\\n  setBool(configure, 'disabled', true);\\n  setBool(configure, 'hidden', false);\\n  setBool(reset, 'hidden', true);\\n} else {\\n  setBool(reset, 'hidden', phase !== 'running');\\n  setBool(configure, 'hidden', phase === 'running');\\n  setBool(configure, 'disabled', phase !== 'ready' && phase !== 'completed');\\n  setBool(configure, 'hidden', phase === 'running');\\n\\n  if (phase === 'ready') {\\n    setAttr(primaryIcon, 'src', 'assets/icons/Play-light.svg');\\n    setText(primaryLabel, COPY.start);\\n    setBool(primaryAction, 'disabled', false);\\n  } else if (phase === 'running') {\\n    setAttr(primaryIcon, 'src', 'assets/icons/Pause-light.svg');\\n    setText(primaryLabel, COPY.pause);\\n    setBool(primaryAction, 'disabled', false);\\n  } else if (phase === 'paused') {\\n    setAttr(primaryIcon, 'src', 'assets/icons/Play-light.svg');\\n    setText(primaryLabel, COPY.resume);\\n    setBool(primaryAction, 'disabled', false);\\n  } else if (phase === 'completed') {\\n    setAttr(primaryIcon, 'src', 'assets/icons/Play-light.svg');\\n    setText(primaryLabel, COPY.restart);\\n    setBool(primaryAction, 'disabled', false);\\n  }\\n}\"}"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 22812294600,
+  "load_duration": 7599900,
+  "prompt_eval_count": 918,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration": 9506187000,
+  "eval_count": 410,
+  "eval_duration": 13206817000
+}

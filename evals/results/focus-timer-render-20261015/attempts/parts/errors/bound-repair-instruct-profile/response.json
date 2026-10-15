@@ -1,0 +1,18 @@
+{
+  "elapsedMs": 22800,
+  "model": "qwen3.6:35b-a3b-coding",
+  "created_at": "2026-10-15T15:03:10.2447017Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\n\"code\": \"const { readReady, session, error, fieldInvalid, configOpen } = view;\\nlet mainMessage = '';\\nlet configMessage = '';\\n\\nif (error) {\\n  switch (error) {\\n    case 'READ_FAILED':\\n      mainMessage = COPY.readError;\\n      break;\\n    case 'WRITE_FAILED':\\n      mainMessage = COPY.writeError;\\n      break;\\n    case 'INVALID_CLOCK':\\n      mainMessage = COPY.clockError;\\n      break;\\n    default:\\n      mainMessage = COPY.transitionError;\\n      break;\\n  }\\n} else if (configOpen && readReady && session) {\\n  const phase = session.phase;\\n  if (phase === 'running' || phase === 'paused') {\\n    configMessage = COPY.unavailableConfig;\\n  }\\n}\\n\\nconst hasMainMessage = mainMessage.length > 0;\\nconst hasConfigMessage = configMessage.length > 0;\\n\\nsetBool(mainRegion, 'hidden', !hasMainMessage && !configOpen);\\nsetBool(configRegion, 'hidden', !hasConfigMessage && configOpen);\\n\\nif (hasMainMessage) {\\n  setText(mainError, mainMessage);\\n} else if (!configOpen) {\\n  setText(mainError, '');\\n}\\n\\nif (hasConfigMessage) {\\n  setText(configError, configMessage);\\n} else if (configOpen) {\\n  setText(configError, '');\\n}\"\n}"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 22794408900,
+  "load_duration": 34838300,
+  "prompt_eval_count": 1083,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration": 11330176000,
+  "eval_count": 328,
+  "eval_duration": 11290348000
+}

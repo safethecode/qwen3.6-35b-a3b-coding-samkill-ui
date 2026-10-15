@@ -1,0 +1,44 @@
+import { setAttr, setBool, setText } from './render-dom.js';
+import { COPY } from './copy.js';
+export function renderActions(view) {
+  const primaryAction = document.getElementById('primary-action');
+  const primaryIcon = document.getElementById('primary-icon');
+  const primaryLabel = document.getElementById('primary-label');
+  const configure = document.getElementById('configure-duration');
+  const reset = document.getElementById('reset-session');
+const isReady = view.readReady === true;
+const phase = view.session ? view.session.phase : null;
+const isKnown = isReady && phase !== null;
+
+if (!isKnown) {
+  setAttr(primaryIcon, 'src', 'assets/icons/Play-light.svg');
+  setText(primaryLabel, COPY.start);
+  setBool(primaryAction, 'disabled', true);
+  setBool(configure, 'disabled', true);
+  setBool(configure, 'hidden', false);
+  setBool(reset, 'hidden', true);
+} else {
+  setBool(reset, 'hidden', phase !== 'running' && phase !== 'paused');
+  setBool(configure, 'hidden', phase === 'running' || phase === 'paused');
+  setBool(configure, 'disabled', phase !== 'ready' && phase !== 'completed');
+  setBool(configure, 'hidden', phase === 'running' || phase === 'paused');
+
+  if (phase === 'ready') {
+    setAttr(primaryIcon, 'src', 'assets/icons/Play-light.svg');
+    setText(primaryLabel, COPY.start);
+    setBool(primaryAction, 'disabled', false);
+  } else if (phase === 'running') {
+    setAttr(primaryIcon, 'src', 'assets/icons/Pause-light.svg');
+    setText(primaryLabel, COPY.pause);
+    setBool(primaryAction, 'disabled', false);
+  } else if (phase === 'paused') {
+    setAttr(primaryIcon, 'src', 'assets/icons/Play-light.svg');
+    setText(primaryLabel, COPY.resume);
+    setBool(primaryAction, 'disabled', false);
+  } else if (phase === 'completed') {
+    setAttr(primaryIcon, 'src', 'assets/icons/Play-light.svg');
+    setText(primaryLabel, COPY.restart);
+    setBool(primaryAction, 'disabled', false);
+  }
+}
+}

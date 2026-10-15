@@ -1,0 +1,10 @@
+import { setAttr, setBool, setText } from './render-dom.js';
+import { COPY } from './copy.js';
+export function renderActions(view) {
+  const primaryAction = document.getElementById('primary-action');
+  const primaryIcon = document.getElementById('primary-icon');
+  const primaryLabel = document.getElementById('primary-label');
+  const configure = document.getElementById('configure-duration');
+  const reset = document.getElementById('reset-session');
+MODEL_WRITABLE_STATEMENTS
+}

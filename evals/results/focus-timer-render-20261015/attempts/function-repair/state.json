@@ -1,0 +1,6 @@
+{
+  "status": "FAILED_RENDER_FUNCTION",
+  "pid": 35700,
+  "updatedAtUtc": "2026-10-15T14:23:02.578Z",
+  "error": "Function signature or outer scope differs"
+}

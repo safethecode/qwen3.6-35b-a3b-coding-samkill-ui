@@ -1,0 +1,8 @@
+{
+  "status": "PREDECLARED_SHARED_BOOLEAN_DOM_ADAPTER_EXTENSION",
+  "function": "setBool(el,prop,value)",
+  "unchanged": "hidden/disabled and other existing boolean properties retain Boolean coercion and stable only-if-different assignment.",
+  "extension": "aria-* keys are string-valued DOMattributes,not arbitrary JSproperties. For thosekeys use existing stable setAttr(el,prop,Boolean(value));no update on repeated equal values. Return without also setting a JSexpando. Only booleanARIAstates,not mixed/tri-state semantics.",
+  "observedFailure": "Actual config10/11;setBool(durationInput,aria-invalid,true) created an expando and getAttribute stayednull. Existing original11part/full8consumer tests unchanged;alltime/actions/config regions must replay after sharedhelperchanges.",
+  "assistance": "Host selects general DOMbinding contract;actual Qwen supplies helper branch. No per-product state algorithm changed."
+}
