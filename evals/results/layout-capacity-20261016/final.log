@@ -1,0 +1,29 @@
+✖ extended bounded contracts check every rule beyond64 and preserve failures (608.3678ms)
+✔ extended contracts retain later-state unknowns and reject excess or duplicate rules (553.2339ms)
+ℹ tests 2
+ℹ suites 0
+ℹ pass 1
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1488.6005
+
+✖ failing tests:
+
+test at test\layout-rule-capacity.test.mjs:9:1
+✖ extended bounded contracts check every rule beyond64 and preserve failures (608.3678ms)
+  AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+  
+    assert.ok(failed.issues.some(i => i.status === 'FAIL' && i.id === 'later-measurement'))
+  
+      at TestContext.<anonymous> (file:///REPOSITORY/test/layout-rule-capacity.test.mjs:20:12)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }

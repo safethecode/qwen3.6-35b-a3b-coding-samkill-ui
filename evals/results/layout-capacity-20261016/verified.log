@@ -1,0 +1,10 @@
+✔ extended bounded contracts check every rule beyond64 and preserve failures (628.2456ms)
+✔ extended contracts retain later-state unknowns and reject excess or duplicate rules (525.9174ms)
+ℹ tests 2
+ℹ suites 0
+ℹ pass 2
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1471.8582

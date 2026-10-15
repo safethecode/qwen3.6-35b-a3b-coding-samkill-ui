@@ -1,0 +1,22 @@
+{
+  "redactions": [
+    {
+      "path": "final.log",
+      "originalSha256": "a930d3881edfab235645da01846b26c43ec2d8b28eb6d5ebbccea7d85317f846",
+      "publishedSha256": "83367f3cd1baea905c81b0b3bb3c33080ab47beb4324d857af03ac30efc40d68",
+      "reason": "Native reference imagepayload and/or private hostpath removed; original private bytes preserved; sanitized file is not an exact replayable inference request"
+    },
+    {
+      "path": "first.log",
+      "originalSha256": "27c122b129f303cc270b3bd77bdb7a9b3af0a245ba041b0f698813a7fbe410cb",
+      "publishedSha256": "dfce190f1d960329c481f20bb2bc380c2ca60d4592cef1a2608077ff23bc1abb",
+      "reason": "Native reference imagepayload and/or private hostpath removed; original private bytes preserved; sanitized file is not an exact replayable inference request"
+    },
+    {
+      "path": "red.log",
+      "originalSha256": "09a37f3e123e890b879f251941f436a357ec3ced5dc2b544efc966173f9a3e03",
+      "publishedSha256": "50739fd04951de1b205c993e7ca7fb63c8679a9c8c0e1ad0ec8b4bde2e0023db",
+      "reason": "Native reference imagepayload and/or private hostpath removed; original private bytes preserved; sanitized file is not an exact replayable inference request"
+    }
+  ]
+}

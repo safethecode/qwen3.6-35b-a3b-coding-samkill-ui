@@ -1,5 +1,7 @@
 import { createHash } from 'node:crypto';
 
+export const MAX_LAYOUT_RULES = 128;
+
 export const layoutContractFingerprint = contract => createHash('sha256').update(JSON.stringify(contract ?? null)).digest('hex');
 
 export function aggregateLayoutStates(contract, captures, scope = {}) {
@@ -12,7 +14,7 @@ export function aggregateLayoutStates(contract, captures, scope = {}) {
     for (const result of Array.isArray(capture?.results) ? capture.results : []) if (result?.status === 'FAIL') issues.push({ status: 'FAIL', id: result.id, width: capture.width, state: capture.state, mode: capture.mode, problem: 'A reported inspection failure remains in this capture batch' });
     for (const issue of Array.isArray(capture?.issues) ? capture.issues : []) if (issue?.status === 'FAIL') issues.push({ ...issue, width: capture.width, state: capture.state, mode: capture.mode });
   }
-  if (!scope || !unique(scope.widths, width) || !unique(scope.states, text) || !unique(scope.modes, text) || !Array.isArray(captures) || !Array.isArray(contract?.rules) || !contract.rules.length || contract.rules.length > 64 || !unique(contract.rules.map(r => r?.id), text)) {
+  if (!scope || !unique(scope.widths, width) || !unique(scope.states, text) || !unique(scope.modes, text) || !Array.isArray(captures) || !Array.isArray(contract?.rules) || !contract.rules.length || contract.rules.length > MAX_LAYOUT_RULES || !unique(contract.rules.map(r => r?.id), text)) {
     issues.push({ status: 'UNVERIFIED', problem: 'Coverage needs a valid contract and nonempty unique widths, states and modes' }); return finish();
   }
   for (const rule of contract.rules) if (rule.widths !== undefined && !unique(rule.widths, width) || rule.states !== undefined && !unique(rule.states, text) || rule.modes !== undefined && !unique(rule.modes, text)) { issues.push({ status: 'UNVERIFIED', id: rule.id, problem: 'Invalid declared width/state/mode scope' }); return finish(); }

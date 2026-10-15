@@ -1,6 +1,6 @@
 import { readFile } from 'node:fs/promises';
 import { resolve } from 'node:path';
-import { layoutContractFingerprint } from './layout-state-coverage.mjs';
+import { layoutContractFingerprint, MAX_LAYOUT_RULES } from './layout-state-coverage.mjs';
 import { inspectReadableToken } from './readable-token.mjs';
 
 export const readLayoutContract = target => readFile(resolve(target, 'design/layout-contract.json'), 'utf8').then(JSON.parse).catch(error => { if (error.code === 'ENOENT') return null; throw error; });
@@ -14,7 +14,7 @@ export async function inspectLayoutContract(page, contract, options = {}) {
   const state = options.state || 'initial';
   const identity = { width, state, mode: options.mode || 'normal', contractSha256: layoutContractFingerprint(contract) };
   if (!contract) return { ...identity, results, issues: [{ status: 'UNVERIFIED', problem: 'Reference layout ownership and grouping contract is missing' }], scope };
-  if (!Array.isArray(contract.rules) || !contract.rules.length || contract.rules.length > 64 || contract.rules.some(rule => !rule || typeof rule.id !== 'string' || !rule.id.trim()) || new Set(contract.rules.map(rule => rule.id)).size !== contract.rules.length) return { ...identity, results, issues: [{ status: 'FAIL', problem: 'Layout contract requires 1–64 uniquely identified rules' }], scope };
+  if (!Array.isArray(contract.rules) || !contract.rules.length || contract.rules.length > MAX_LAYOUT_RULES || contract.rules.some(rule => !rule || typeof rule.id !== 'string' || !rule.id.trim()) || new Set(contract.rules.map(rule => rule.id)).size !== contract.rules.length) return { ...identity, results, issues: [{ status: 'FAIL', problem: `Layout contract requires 1–${MAX_LAYOUT_RULES} uniquely identified rules` }], scope };
   const box = async (selector, surface = page) => {
     if (typeof selector !== 'string' || !selector.trim()) throw new Error('A concrete selector is required');
     const locator = surface.locator(selector);
