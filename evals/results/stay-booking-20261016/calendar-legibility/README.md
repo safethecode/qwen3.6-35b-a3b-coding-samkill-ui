@@ -1,5 +1,7 @@
 # Calendar legibility correction
 
+This is the source-bound C5 checkpoint at e69356f. The [C7 gutter follow-up](../calendar-gutter/README.md) addresses its retained V-C5-05 in the current runnable source. Original receipts and failure classifications below remain unchanged.
+
 The earlier calendar passed cell bounds while enlarged date labels visibly ran together. This correction preserves 32px dates at 200% text, reserves space between neighboring labels and gives the bounded mobile grid one actual scroll owner per axis. It also keeps Cancel outside short-height scrolling, makes the footer reachable and retains weekday/month context during focus and horizontal panning. It is an assisted product correction, not reference/commercial parity.
 
 [Current runnable source](../request-consumers/source) connects search and trip calendar drafts to their callers. From the repository root:

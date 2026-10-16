@@ -1,0 +1,23 @@
+Generating component room, attempt 1
+✔ generation receives selected actual record fields and binds their source bytes (63.1654ms)
+✔ missing data pointer rejects generation before any inference instead of inventing a shape (11.3757ms)
+✔ array pointers accept only canonical indices while object keys retain their literal names (5.2864ms)
+✔ data context cannot read outside target or accept duplicate ownership IDs (9.9634ms)
+Generating component room, attempt 1
+✔ JSON pointer escaping retains literal field ownership (40.1915ms)
+Generating component room, attempt 1
+✔ a data file outside the default design inventory cannot change during inference unnoticed (21.4567ms)
+✔ component styling receives complete applicable guides with source hashes (6.4024ms)
+✔ direct model stages receive the linked local decomposition guide as source-bound text (3.3711ms)
+✔ all active catalog rules remain available and stage prompts carry original font and icon rules (20.5982ms)
+✔ packaged layout API exactly mirrors its canonical contract section (3.4872ms)
+✔ installed decomposition guide resolves its contract link inside the skill package (82.8001ms)
+✔ source bindings include the packaged layout API bytes (21.4845ms)
+ℹ tests 12
+ℹ suites 0
+ℹ pass 12
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 555.7636

@@ -1,0 +1,3 @@
+#date-calendar[data-scroll-mode=flow] .calendar-month-label {
+    left: var(--page-inset)
+}
