@@ -18,6 +18,8 @@ Use real font files and verify actual rendered families, glyph fallback and weig
 
 ## Bounded implementation
 
+For file-tool handoffs, declare the actual project root, owned input/output files and read-only media roots separately. An attached reference's parent directory is not an application source directory. If the model reads the wrong root, preserve the rejected call and correct that path contract without widening permissions. Verify the required tool result and saved artifact before accepting a completion message; a normal process exit does not prove a write occurred.
+
 The repository's explicit static pilot is `node scripts/generate-components.mjs TARGET EVIDENCE`, with `design/component-plan.json` and typography prepared first. See the repository's `docs/COMPONENT-GENERATION.md` for its schema. It generates one element at a time and assembles accepted fragments without a model rewrite. Fixed semantic HTML may request CSS only. Record host-supplied markup, shared CSS, fonts and selector scoping as assistance. This CLI is not an automatic OpenCode route and does not implement a complete product workflow by itself.
 
 Render each element in a sample with the same available width and horizontal inset as its assembled slot. Review samples and the full page at desktop and mobile widths. Repair one owned region while retaining correct neighbors; rerun affected checks and the assembled view. The pilot's resume requires unchanged inputs; do not claim changed-plan checkpoints remain valid. Complete all requested interactions separately, including empty, error and recovery states.

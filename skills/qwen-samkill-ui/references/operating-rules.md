@@ -22,6 +22,8 @@ These rules consolidate failures observed in this repository. They apply to both
 ## Local execution and repair
 
 - Confirm the actual backend, model, quantization and request settings. Keep Ollama available and inspect active clients before starting inference. Run one inference job at a time.
+- Match the configuration actually loaded by the client, its outgoing model/options/image payload and the backend's loaded model/context. An API experiment cannot prove which model an interactive client uses. For native vision, verify that an image-summary hook preserves attachments for the selected model; a capability label alone is insufficient.
+- Distinguish the project root from read-only reference/image roots in the tool handoff. Resolve project files against the declared project root and supply exact owned input/output paths when ambiguous. A mistaken external path is a contract or model failure to repair, not a reason to broaden access rules. A tool denial, missing output or failed write leaves the task incomplete even if the process exits zero or prints a completion marker.
 - Retain original responses and exact source/harness bindings. Distinguish model generation, local-model repair, host markup/layout and host behavior changes. Never attribute manual edits to Qwen.
 - Split long generation into semantic units with stable shared contracts and resumable checkpoints. Repair only diagnosed failures with bounded patches; reject scope escapes, overlapping patches and changed input bindings.
 - Use explicit bounded transport deadlines; repeated five-minute disconnects require diagnosis rather than repeating the same request. Thinking mode is an experiment, not presumed quality improvement; compare completed output, time and failures.
