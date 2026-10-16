@@ -1,0 +1,21 @@
+{
+  "at": "2026-10-16T06:18:23.769Z",
+  "defaultModel": "ollama/qwen-ui-35b",
+  "configHashes": [
+    {
+      "before": "9b3d47c7329b13eae98497bfca03504e8956b25dbc1eb5766f53ea9a8f098e31",
+      "after": "26d75f8c11bb5a8135ffc5036dc65e91c5b667baca2463ebdf09341de8c0ea59"
+    },
+    {
+      "before": "9b3d47c7329b13eae98497bfca03504e8956b25dbc1eb5766f53ea9a8f098e31",
+      "after": "26d75f8c11bb5a8135ffc5036dc65e91c5b667baca2463ebdf09341de8c0ea59"
+    }
+  ],
+  "legacyBackedUpAndDisabled": true,
+  "managedPluginHashes": {
+    "plugin.mjs": "55428c96f44994a1e33ba857baf4f9b11e9772605ed118c21659cd7f5e376aa4",
+    "config.mjs": "147207c88fc78999e9a3c93d4255eefd205c93967e34a882586b3476a0393dd3",
+    "auto-vision-core.mjs": "5424adc709a92ccb4784f35a6730e4b0d93a2117b90dd75f146bbfda02035d1f",
+    "vision-bridge.mjs": "7386ce0d27a77ba66a837cef4d3aa2ded855b6e77ac50ea9793a50e286b8e9a8"
+  }
+}

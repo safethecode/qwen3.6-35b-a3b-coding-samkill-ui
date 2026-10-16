@@ -1,5 +1,9 @@
 # Quality gate verification
 
+## Actual client delivery — 2026-10-16
+
+The [native Qwen client study](results/client-native-vision-20261016/README.md) corrects a current execution mismatch: OpenCode defaulted to the older30B alias while direct experiments used35B. The loaded defaults now select the measured35.5B Q4_K_M weights with32K backend context and bounded ten-minute client deadlines. The image bridge preserves native attachments for the selected image-capable model. Actual OpenCode image/read/write continuation passes in an isolated fixture and after an explicitly assisted path repair in the installed session. A misrouted project-file read and false completion marker remain failed evidence. No application UI was generated in this phase; reference parity and the complete product gate remain INCOMPLETE.
+
 ## Current connected checkpoint — 2026-10-16
 
 The latest [calendar legibility correction](results/stay-booking-20261016/calendar-legibility/README.md) preserves enlarged dates and fixes tested short-height scroll recovery. Its subsequent [sticky gutter correction](results/stay-booking-20261016/calendar-gutter/README.md) improves six failures to zero across72actual panned-label conditions;four main-contract flow-state cases and the15-stage product replay also pass. The existing79relations,seven calendar relations and one gutter relation remain distinct scopes. Full87-relation/product75-rule approval,device/AT execution and repeated complex-product reference parity remain unfinished. Earlier checkpoints below retain their original source/harness classifications.

@@ -1,0 +1,29 @@
+{
+  "at": "2026-10-16T06:04:21.666Z",
+  "source": "qwen3.6:35b-a3b-coding",
+  "model": "qwen-ui-35b",
+  "sourceModelDigest": "017eda0b7c34529c494d9e0fba88519bed43aa7ed3b18a4f70c648d53e50db3c",
+  "modelDigest": "4f095c6ea2d0d07d864c5c290edb166d77fa24292ae988d41dd3132230376447",
+  "ggufBlobSha256": "d372de8e934898a59e6ccfabc3368474711384d8f1fd4d22d87a3f0a45400cdc",
+  "details": {
+    "parent_model": "qwen3.6:35b-a3b-coding",
+    "format": "gguf",
+    "family": "qwen35moe",
+    "families": [
+      "qwen35moe"
+    ],
+    "parameter_size": "35.5B",
+    "quantization_level": "Q4_K_M",
+    "runner": "llamacpp"
+  },
+  "capabilities": [
+    "completion",
+    "vision",
+    "tools",
+    "thinking"
+  ],
+  "parameters": "top_p                          0.95\ndraft_num_predict              2\nnum_batch                      128\nnum_ctx                        32768\nnum_gpu                        16\npresence_penalty               0\nmin_p                          0\nnum_predict                    8192\nrepeat_penalty                 1\ntemperature                    0.6\ntop_k                          20",
+  "templateSha256": "b507b9c2f6ca642bffcd06665ea7c91f235fd32daeefdf875a0f938db05fb315",
+  "sameTemplate": true,
+  "assistance": "Existing35.5BQ4_K_Mweightsreused,no download. Serverctx32768/predict8192/GPU16/batch128;hardwarebudgetisthismachine,notportabledefault."
+}

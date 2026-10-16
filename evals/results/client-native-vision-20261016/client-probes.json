@@ -1,0 +1,747 @@
+{
+  "at": "2026-10-16T06:27:25.686Z",
+  "reference": {
+    "index": 6,
+    "id": "cm7ec3e36005kl70cvvg601te",
+    "ui_url": "https://uibowl.io/name/%EC%97%AC%EA%B8%B0%EC%96%B4%EB%95%8C?patterns=%EC%98%88%EC%95%BD%C2%B7%EA%B2%B0%EC%A0%9C&imgId=cm7ec3e36005kl70cvvg601te",
+    "file": "references/screen-6.png",
+    "width": 1125,
+    "height": 2436,
+    "bytes": 44767,
+    "sha256": "ed9fe3e07e71ae6ec5d23862f3acb8c95a8422916fb30741deb253d6aeb67638"
+  },
+  "expected": {
+    "markerSource": "Host-created project input, read through actual tool; marker value absent from user prompt",
+    "paymentMethodCount": 9,
+    "cta": "10,057원 결제하기"
+  },
+  "probes": [
+    {
+      "name": "opencode-native",
+      "status": "FAIL",
+      "at": "2026-10-16T06:12:32.184Z",
+      "processExitCode": 4294967295,
+      "requestCount": 0,
+      "bindingsUnchanged": {
+        "profiles/opencode-qwen36.json": true,
+        "../opencode-auto-vision/src/plugin.mjs": true,
+        "../opencode-auto-vision/src/auto-vision-core.mjs": true,
+        "../opencode-auto-vision/src/config.mjs": true,
+        "../opencode-auto-vision/src/vision-bridge.mjs": true
+      },
+      "bindings": {
+        "at": "2026-10-16T06:10:49.180Z",
+        "model": "qwen-ui-35b",
+        "modelDigest": "4f095c6ea2d0d07d864c5c290edb166d77fa24292ae988d41dd3132230376447",
+        "bindings": {
+          "profiles/opencode-qwen36.json": "13cca79214eda974685170c20b00421139589949c7121d615e5b40de9e696220",
+          "../opencode-auto-vision/src/plugin.mjs": "55428c96f44994a1e33ba857baf4f9b11e9772605ed118c21659cd7f5e376aa4",
+          "../opencode-auto-vision/src/auto-vision-core.mjs": "5424adc709a92ccb4784f35a6730e4b0d93a2117b90dd75f146bbfda02035d1f",
+          "../opencode-auto-vision/src/config.mjs": "147207c88fc78999e9a3c93d4255eefd205c93967e34a882586b3476a0393dd3",
+          "../opencode-auto-vision/src/vision-bridge.mjs": "7386ce0d27a77ba66a837cef4d3aa2ded855b6e77ac50ea9793a50e286b8e9a8"
+        },
+        "configSha256": "53d6de10e315926e6cce152ba4c735eba2e54e9cb237a8c75ef8da3c37208884",
+        "wrapperSha256": "7e9a7ca8f572bf9e8f6cb1d3d4ac17982f9852cf609a15dc554433ad5fe8f0a5",
+        "probeOutputLimit": 1024,
+        "scope": "Actual OpenCode plugin, native image payload, tool read/write; not visual parity"
+      },
+      "requests": [],
+      "steps": [],
+      "lastText": "",
+      "observation": null,
+      "tokenEvents": [],
+      "privateRawReceipts": [],
+      "limitations": [
+        "MCP connections disabled for the isolated fixture",
+        "No UI generated, visual parity not assessed",
+        "Image-native transport is not exact OCR/layout approval"
+      ]
+    },
+    {
+      "name": "opencode-native-eof",
+      "status": "FAIL",
+      "at": "2026-10-16T06:15:47.791Z",
+      "processExitCode": 4294967295,
+      "requestCount": 5,
+      "bindingsUnchanged": {
+        "profiles/opencode-qwen36.json": true,
+        "../opencode-auto-vision/src/plugin.mjs": true,
+        "../opencode-auto-vision/src/auto-vision-core.mjs": true,
+        "../opencode-auto-vision/src/config.mjs": true,
+        "../opencode-auto-vision/src/vision-bridge.mjs": true
+      },
+      "bindings": {
+        "at": "2026-10-16T06:12:51.406Z",
+        "model": "qwen-ui-35b",
+        "modelDigest": "4f095c6ea2d0d07d864c5c290edb166d77fa24292ae988d41dd3132230376447",
+        "bindings": {
+          "profiles/opencode-qwen36.json": "13cca79214eda974685170c20b00421139589949c7121d615e5b40de9e696220",
+          "../opencode-auto-vision/src/plugin.mjs": "55428c96f44994a1e33ba857baf4f9b11e9772605ed118c21659cd7f5e376aa4",
+          "../opencode-auto-vision/src/auto-vision-core.mjs": "5424adc709a92ccb4784f35a6730e4b0d93a2117b90dd75f146bbfda02035d1f",
+          "../opencode-auto-vision/src/config.mjs": "147207c88fc78999e9a3c93d4255eefd205c93967e34a882586b3476a0393dd3",
+          "../opencode-auto-vision/src/vision-bridge.mjs": "7386ce0d27a77ba66a837cef4d3aa2ded855b6e77ac50ea9793a50e286b8e9a8"
+        },
+        "configSha256": "d29ce1452040cfe1b13fc321e533b3dfaa05f529df4096f74b6b9bda257927ca",
+        "wrapperSha256": "2dfa22078c635328588644a4266367039f02b81871454ff7a659601a791f9a40",
+        "probeOutputLimit": 1024,
+        "scope": "Actual OpenCode plugin, native image payload, tool read/write; not visual parity"
+      },
+      "requests": [
+        {
+          "file": "request-1-private.json",
+          "model": "qwen-ui-35b",
+          "reasoningEffort": "none",
+          "outputBudget": 1024,
+          "images": [
+            {
+              "sha256": "d782149fd7e9371a752f17a5d438b01ff6973bc782d090aa5966e6da8923adb0",
+              "bytes": 339186,
+              "sameBytesAsReference": false,
+              "width": 924,
+              "height": 2000,
+              "interpretation": "Actual PNG pixels sent through OpenCode; client preprocessing differs from native source bytes. This is not a textual image summary or an unmodified-byte claim."
+            }
+          ]
+        },
+        {
+          "file": "request-2-private.json",
+          "model": "qwen-ui-35b",
+          "reasoningEffort": "none",
+          "outputBudget": 1024,
+          "images": [
+            {
+              "sha256": "d782149fd7e9371a752f17a5d438b01ff6973bc782d090aa5966e6da8923adb0",
+              "bytes": 339186,
+              "sameBytesAsReference": false,
+              "width": 924,
+              "height": 2000,
+              "interpretation": "Actual PNG pixels sent through OpenCode; client preprocessing differs from native source bytes. This is not a textual image summary or an unmodified-byte claim."
+            }
+          ]
+        },
+        {
+          "file": "request-3-private.json",
+          "model": "qwen-ui-35b",
+          "reasoningEffort": "none",
+          "outputBudget": 1024,
+          "images": [
+            {
+              "sha256": "d782149fd7e9371a752f17a5d438b01ff6973bc782d090aa5966e6da8923adb0",
+              "bytes": 339186,
+              "sameBytesAsReference": false,
+              "width": 924,
+              "height": 2000,
+              "interpretation": "Actual PNG pixels sent through OpenCode; client preprocessing differs from native source bytes. This is not a textual image summary or an unmodified-byte claim."
+            }
+          ]
+        },
+        {
+          "file": "request-4-private.json",
+          "model": "qwen-ui-35b",
+          "reasoningEffort": "none",
+          "outputBudget": 1024,
+          "images": [
+            {
+              "sha256": "d782149fd7e9371a752f17a5d438b01ff6973bc782d090aa5966e6da8923adb0",
+              "bytes": 339186,
+              "sameBytesAsReference": false,
+              "width": 924,
+              "height": 2000,
+              "interpretation": "Actual PNG pixels sent through OpenCode; client preprocessing differs from native source bytes. This is not a textual image summary or an unmodified-byte claim."
+            }
+          ]
+        },
+        {
+          "file": "request-5-private.json",
+          "model": "qwen-ui-35b",
+          "reasoningEffort": "none",
+          "outputBudget": 1024,
+          "images": [
+            {
+              "sha256": "d782149fd7e9371a752f17a5d438b01ff6973bc782d090aa5966e6da8923adb0",
+              "bytes": 339186,
+              "sameBytesAsReference": false,
+              "width": 924,
+              "height": 2000,
+              "interpretation": "Actual PNG pixels sent through OpenCode; client preprocessing differs from native source bytes. This is not a textual image summary or an unmodified-byte claim."
+            }
+          ]
+        }
+      ],
+      "steps": [],
+      "lastText": "",
+      "observation": null,
+      "tokenEvents": [],
+      "privateRawReceipts": [
+        {
+          "file": "request-1-private.json",
+          "sha256": "0b9dc1befa0e76e730e2607b0108a03743b79f5f749eff2148603b9707c3e5cb",
+          "bytes": 458513,
+          "publication": "Private: native image payload or local tool paths retained outside Git"
+        },
+        {
+          "file": "request-2-private.json",
+          "sha256": "0b9dc1befa0e76e730e2607b0108a03743b79f5f749eff2148603b9707c3e5cb",
+          "bytes": 458513,
+          "publication": "Private: native image payload or local tool paths retained outside Git"
+        },
+        {
+          "file": "request-3-private.json",
+          "sha256": "0b9dc1befa0e76e730e2607b0108a03743b79f5f749eff2148603b9707c3e5cb",
+          "bytes": 458513,
+          "publication": "Private: native image payload or local tool paths retained outside Git"
+        },
+        {
+          "file": "request-4-private.json",
+          "sha256": "0b9dc1befa0e76e730e2607b0108a03743b79f5f749eff2148603b9707c3e5cb",
+          "bytes": 458513,
+          "publication": "Private: native image payload or local tool paths retained outside Git"
+        },
+        {
+          "file": "request-5-private.json",
+          "sha256": "0b9dc1befa0e76e730e2607b0108a03743b79f5f749eff2148603b9707c3e5cb",
+          "bytes": 458513,
+          "publication": "Private: native image payload or local tool paths retained outside Git"
+        }
+      ],
+      "limitations": [
+        "MCP connections disabled for the isolated fixture",
+        "No UI generated, visual parity not assessed",
+        "Image-native transport is not exact OCR/layout approval"
+      ]
+    },
+    {
+      "name": "opencode-native-stream",
+      "status": "PASS_SCOPED_ISOLATED_CLIENT",
+      "at": "2026-10-16T06:17:52.829Z",
+      "processExitCode": 0,
+      "requestCount": 3,
+      "bindingsUnchanged": {
+        "profiles/opencode-qwen36.json": true,
+        "../opencode-auto-vision/src/plugin.mjs": true,
+        "../opencode-auto-vision/src/auto-vision-core.mjs": true,
+        "../opencode-auto-vision/src/config.mjs": true,
+        "../opencode-auto-vision/src/vision-bridge.mjs": true
+      },
+      "bindings": {
+        "at": "2026-10-16T06:16:06.335Z",
+        "model": "qwen-ui-35b",
+        "modelDigest": "4f095c6ea2d0d07d864c5c290edb166d77fa24292ae988d41dd3132230376447",
+        "bindings": {
+          "profiles/opencode-qwen36.json": "13cca79214eda974685170c20b00421139589949c7121d615e5b40de9e696220",
+          "../opencode-auto-vision/src/plugin.mjs": "55428c96f44994a1e33ba857baf4f9b11e9772605ed118c21659cd7f5e376aa4",
+          "../opencode-auto-vision/src/auto-vision-core.mjs": "5424adc709a92ccb4784f35a6730e4b0d93a2117b90dd75f146bbfda02035d1f",
+          "../opencode-auto-vision/src/config.mjs": "147207c88fc78999e9a3c93d4255eefd205c93967e34a882586b3476a0393dd3",
+          "../opencode-auto-vision/src/vision-bridge.mjs": "7386ce0d27a77ba66a837cef4d3aa2ded855b6e77ac50ea9793a50e286b8e9a8"
+        },
+        "configSha256": "46470ef89b4d1dec4675b7c03b23b301ac919837a355da1211369a6064c193e4",
+        "wrapperSha256": "74650fb831578d436bda60f7723a318d1a33c6bccab999bdb9b7b091cdb0c60b",
+        "probeOutputLimit": 1024,
+        "scope": "Actual OpenCode plugin, native image payload, tool read/write; not visual parity"
+      },
+      "requests": [
+        {
+          "file": "request-1-private.json",
+          "model": "qwen-ui-35b",
+          "reasoningEffort": "none",
+          "outputBudget": 1024,
+          "images": [
+            {
+              "sha256": "d782149fd7e9371a752f17a5d438b01ff6973bc782d090aa5966e6da8923adb0",
+              "bytes": 339186,
+              "sameBytesAsReference": false,
+              "width": 924,
+              "height": 2000,
+              "interpretation": "Actual PNG pixels sent through OpenCode; client preprocessing differs from native source bytes. This is not a textual image summary or an unmodified-byte claim."
+            }
+          ]
+        },
+        {
+          "file": "request-2-private.json",
+          "model": "qwen-ui-35b",
+          "reasoningEffort": "none",
+          "outputBudget": 1024,
+          "images": [
+            {
+              "sha256": "d782149fd7e9371a752f17a5d438b01ff6973bc782d090aa5966e6da8923adb0",
+              "bytes": 339186,
+              "sameBytesAsReference": false,
+              "width": 924,
+              "height": 2000,
+              "interpretation": "Actual PNG pixels sent through OpenCode; client preprocessing differs from native source bytes. This is not a textual image summary or an unmodified-byte claim."
+            }
+          ]
+        },
+        {
+          "file": "request-3-private.json",
+          "model": "qwen-ui-35b",
+          "reasoningEffort": "none",
+          "outputBudget": 1024,
+          "images": [
+            {
+              "sha256": "d782149fd7e9371a752f17a5d438b01ff6973bc782d090aa5966e6da8923adb0",
+              "bytes": 339186,
+              "sameBytesAsReference": false,
+              "width": 924,
+              "height": 2000,
+              "interpretation": "Actual PNG pixels sent through OpenCode; client preprocessing differs from native source bytes. This is not a textual image summary or an unmodified-byte claim."
+            }
+          ]
+        }
+      ],
+      "steps": [
+        {
+          "tool": "read",
+          "status": "completed",
+          "inputFile": "secret.txt",
+          "outputCharacters": 183,
+          "error": ""
+        },
+        {
+          "tool": "write",
+          "status": "completed",
+          "inputFile": "observation.json",
+          "outputCharacters": 24,
+          "error": ""
+        }
+      ],
+      "lastText": "PROBE_COMPLETE",
+      "observation": {
+        "marker": "CLIENT-TOOL-61849",
+        "paymentMethodCount": 9,
+        "cta": "10,057원 결제하기"
+      },
+      "tokenEvents": [
+        {
+          "reason": "tool-calls",
+          "tokens": {
+            "total": 3518,
+            "input": 3437,
+            "output": 81,
+            "reasoning": 0,
+            "cache": {
+              "write": 0,
+              "read": 0
+            }
+          }
+        },
+        {
+          "reason": "tool-calls",
+          "tokens": {
+            "total": 3901,
+            "input": 177,
+            "output": 291,
+            "reasoning": 0,
+            "cache": {
+              "write": 0,
+              "read": 3433
+            }
+          }
+        },
+        {
+          "reason": "stop",
+          "tokens": {
+            "total": 3923,
+            "input": 313,
+            "output": 4,
+            "reasoning": 0,
+            "cache": {
+              "write": 0,
+              "read": 3606
+            }
+          }
+        }
+      ],
+      "privateRawReceipts": [
+        {
+          "file": "request-1-private.json",
+          "sha256": "6e6fbb31072bda70a4594097207c5d2014a38a01d8798a4d1b30bd9eed47d237",
+          "bytes": 458513,
+          "publication": "Private: native image payload or local tool paths retained outside Git"
+        },
+        {
+          "file": "request-2-private.json",
+          "sha256": "954adb60b3448667c13fb928def6c536859a71fa75a3cd4366c989d451b80ce4",
+          "bytes": 459144,
+          "publication": "Private: native image payload or local tool paths retained outside Git"
+        },
+        {
+          "file": "request-3-private.json",
+          "sha256": "70068eaa98464bcc8f038e2bd8cc9493eeaaede725b3be9c4a0b2de29682fc16",
+          "bytes": 460266,
+          "publication": "Private: native image payload or local tool paths retained outside Git"
+        },
+        {
+          "file": "response-1-private.txt",
+          "sha256": "a0f18e7865c9c3e3aac922a4df1a2ee02d1d16673f3c55ec781f7ac2e80d5ce8",
+          "bytes": 5627,
+          "publication": "Private: native image payload or local tool paths retained outside Git"
+        },
+        {
+          "file": "response-2-private.txt",
+          "sha256": "56edb162ed486f76fa6ecdf3f9a91b2acb34b81f6e54b792a1b140b2f95de69f",
+          "bytes": 34113,
+          "publication": "Private: native image payload or local tool paths retained outside Git"
+        },
+        {
+          "file": "response-3-private.txt",
+          "sha256": "1e3aed4de946829e3b3c681d242b10f60e02c93d38bc968123c7548003537fc4",
+          "bytes": 1360,
+          "publication": "Private: native image payload or local tool paths retained outside Git"
+        }
+      ],
+      "limitations": [
+        "MCP connections disabled for the isolated fixture",
+        "No UI generated, visual parity not assessed",
+        "Image-native transport is not exact OCR/layout approval"
+      ]
+    },
+    {
+      "name": "opencode-installed",
+      "status": "FAIL",
+      "at": "2026-10-16T06:21:24.189Z",
+      "processExitCode": 0,
+      "requestCount": 2,
+      "bindingsUnchanged": {
+        "profiles/opencode-qwen36.json": true,
+        "../opencode-auto-vision/src/plugin.mjs": true,
+        "../opencode-auto-vision/src/auto-vision-core.mjs": true,
+        "../opencode-auto-vision/src/config.mjs": true,
+        "../opencode-auto-vision/src/vision-bridge.mjs": true
+      },
+      "bindings": {
+        "at": "2026-10-16T06:19:41.603Z",
+        "model": "qwen-ui-35b",
+        "modelDigest": "4f095c6ea2d0d07d864c5c290edb166d77fa24292ae988d41dd3132230376447",
+        "bindings": {
+          "profiles/opencode-qwen36.json": "13cca79214eda974685170c20b00421139589949c7121d615e5b40de9e696220",
+          "../opencode-auto-vision/src/plugin.mjs": "55428c96f44994a1e33ba857baf4f9b11e9772605ed118c21659cd7f5e376aa4",
+          "../opencode-auto-vision/src/auto-vision-core.mjs": "5424adc709a92ccb4784f35a6730e4b0d93a2117b90dd75f146bbfda02035d1f",
+          "../opencode-auto-vision/src/config.mjs": "147207c88fc78999e9a3c93d4255eefd205c93967e34a882586b3476a0393dd3",
+          "../opencode-auto-vision/src/vision-bridge.mjs": "7386ce0d27a77ba66a837cef4d3aa2ded855b6e77ac50ea9793a50e286b8e9a8"
+        },
+        "configSha256": "5972db3d768a8b7dc2c292467a3da6cc586d1256c5375a406792418c40c9c944",
+        "activeConfigSha256": "26d75f8c11bb5a8135ffc5036dc65e91c5b667baca2463ebdf09341de8c0ea59",
+        "installedEntrySha256": "54bd1d156a2d8a72c3410f8e1531f3dac5a84ae6b0a262c21bb4c068b8ce3feb",
+        "probeOutputLimit": 1024,
+        "scope": "Actual OpenCode plugin, native image payload, tool read/write; not visual parity"
+      },
+      "requests": [
+        {
+          "file": "request-1-private.json",
+          "model": "qwen-ui-35b",
+          "reasoningEffort": "none",
+          "outputBudget": 1024,
+          "images": [
+            {
+              "sha256": "d782149fd7e9371a752f17a5d438b01ff6973bc782d090aa5966e6da8923adb0",
+              "bytes": 339186,
+              "sameBytesAsReference": false,
+              "width": 924,
+              "height": 2000,
+              "interpretation": "Actual PNG pixels sent through OpenCode; client preprocessing differs from native source bytes. This is not a textual image summary or an unmodified-byte claim."
+            }
+          ]
+        },
+        {
+          "file": "request-2-private.json",
+          "model": "qwen-ui-35b",
+          "reasoningEffort": "none",
+          "outputBudget": 1024,
+          "images": [
+            {
+              "sha256": "d782149fd7e9371a752f17a5d438b01ff6973bc782d090aa5966e6da8923adb0",
+              "bytes": 339186,
+              "sameBytesAsReference": false,
+              "width": 924,
+              "height": 2000,
+              "interpretation": "Actual PNG pixels sent through OpenCode; client preprocessing differs from native source bytes. This is not a textual image summary or an unmodified-byte claim."
+            }
+          ]
+        }
+      ],
+      "steps": [
+        {
+          "tool": "read",
+          "status": "error",
+          "inputFile": "secret.txt",
+          "error": "External reference-directory path denied; no access-rule relaxation"
+        }
+      ],
+      "lastText": "I cannot read the `secret.txt` file because the tool is blocked by access rules. However, I can inspect the screenshot directly and provide the values I can observe:\n\nBased on the screenshot:\n- **paymentMethodCount**: 9 payment methods are visible (pay, toss pay, 신용/체크 카드, 퀵계좌이체, N pay, PAYCO, 법인 카드, 휴대폰 결제, 간편 계좌이체)\n- **cta**: \"10,057원 결제하기\"\n\nSince I cannot access `secret.txt`, I cannot provide the `marker` value. Therefore I cannot complete the task as specified.\n\nPROBE_COMPLETE",
+      "observation": null,
+      "tokenEvents": [
+        {
+          "reason": "tool-calls",
+          "tokens": {
+            "total": 3997,
+            "input": 3937,
+            "output": 60,
+            "reasoning": 0,
+            "cache": {
+              "write": 0,
+              "read": 0
+            }
+          }
+        },
+        {
+          "reason": "stop",
+          "tokens": {
+            "total": 4578,
+            "input": 509,
+            "output": 136,
+            "reasoning": 0,
+            "cache": {
+              "write": 0,
+              "read": 3933
+            }
+          }
+        }
+      ],
+      "privateRawReceipts": [
+        {
+          "file": "request-1-private.json",
+          "sha256": "b426df4bb5ade3c61187e1c0b0f2127c11927e988f2e71942822db3b62a3591f",
+          "bytes": 461009,
+          "publication": "Private: native image payload or local tool paths retained outside Git"
+        },
+        {
+          "file": "request-2-private.json",
+          "sha256": "989ca2139fa02989e0e7a6a823199a61e116c93453c5dc009c92ddbaa41e4b37",
+          "bytes": 463534,
+          "publication": "Private: native image payload or local tool paths retained outside Git"
+        },
+        {
+          "file": "response-1-private.txt",
+          "sha256": "88944f8314543c6a5a54fc1a75340c5f394b49faf3a214820e1e78a6a9e7639f",
+          "bytes": 1207,
+          "publication": "Private: native image payload or local tool paths retained outside Git"
+        },
+        {
+          "file": "response-2-private.txt",
+          "sha256": "a39e8be976c159b54a13bf4c45da13bcfd2800a04aba80750403291e1666e98f",
+          "bytes": 27671,
+          "publication": "Private: native image payload or local tool paths retained outside Git"
+        }
+      ],
+      "limitations": [
+        "MCP connections disabled for the isolated fixture",
+        "No UI generated, visual parity not assessed",
+        "Image-native transport is not exact OCR/layout approval"
+      ]
+    },
+    {
+      "name": "opencode-installed-correction",
+      "status": "PASS_SCOPED_HOST_PATH_REPAIR",
+      "at": "2026-10-16T06:23:51.409Z",
+      "processExitCode": 0,
+      "requestCount": 3,
+      "bindingsUnchanged": {
+        "profiles/opencode-qwen36.json": true,
+        "../opencode-auto-vision/src/plugin.mjs": true,
+        "../opencode-auto-vision/src/auto-vision-core.mjs": true,
+        "../opencode-auto-vision/src/config.mjs": true,
+        "../opencode-auto-vision/src/vision-bridge.mjs": true
+      },
+      "bindings": {
+        "at": "2026-10-16T06:22:30.603Z",
+        "model": "qwen-ui-35b",
+        "modelDigest": "4f095c6ea2d0d07d864c5c290edb166d77fa24292ae988d41dd3132230376447",
+        "bindings": {
+          "profiles/opencode-qwen36.json": "13cca79214eda974685170c20b00421139589949c7121d615e5b40de9e696220",
+          "../opencode-auto-vision/src/plugin.mjs": "55428c96f44994a1e33ba857baf4f9b11e9772605ed118c21659cd7f5e376aa4",
+          "../opencode-auto-vision/src/auto-vision-core.mjs": "5424adc709a92ccb4784f35a6730e4b0d93a2117b90dd75f146bbfda02035d1f",
+          "../opencode-auto-vision/src/config.mjs": "147207c88fc78999e9a3c93d4255eefd205c93967e34a882586b3476a0393dd3",
+          "../opencode-auto-vision/src/vision-bridge.mjs": "7386ce0d27a77ba66a837cef4d3aa2ded855b6e77ac50ea9793a50e286b8e9a8"
+        },
+        "configSha256": "df21651a1c4cc9cd97c07a9362702f369fc78cb2d25048da898e3f0cc8b27d54",
+        "activeConfigSha256": "26d75f8c11bb5a8135ffc5036dc65e91c5b667baca2463ebdf09341de8c0ea59",
+        "installedEntrySha256": "54bd1d156a2d8a72c3410f8e1531f3dac5a84ae6b0a262c21bb4c068b8ce3feb",
+        "probeOutputLimit": 1024,
+        "scope": "Actual OpenCode plugin, native image payload, tool read/write; not visual parity"
+      },
+      "requests": [
+        {
+          "file": "request-1-private.json",
+          "model": "qwen-ui-35b",
+          "reasoningEffort": "none",
+          "outputBudget": 1024,
+          "images": [
+            {
+              "sha256": "d782149fd7e9371a752f17a5d438b01ff6973bc782d090aa5966e6da8923adb0",
+              "bytes": 339186,
+              "sameBytesAsReference": false,
+              "width": 924,
+              "height": 2000,
+              "interpretation": "Actual PNG pixels sent through OpenCode; client preprocessing differs from native source bytes. This is not a textual image summary or an unmodified-byte claim."
+            },
+            {
+              "sha256": "d782149fd7e9371a752f17a5d438b01ff6973bc782d090aa5966e6da8923adb0",
+              "bytes": 339186,
+              "sameBytesAsReference": false,
+              "width": 924,
+              "height": 2000,
+              "interpretation": "Actual PNG pixels sent through OpenCode; client preprocessing differs from native source bytes. This is not a textual image summary or an unmodified-byte claim."
+            }
+          ]
+        },
+        {
+          "file": "request-2-private.json",
+          "model": "qwen-ui-35b",
+          "reasoningEffort": "none",
+          "outputBudget": 1024,
+          "images": [
+            {
+              "sha256": "d782149fd7e9371a752f17a5d438b01ff6973bc782d090aa5966e6da8923adb0",
+              "bytes": 339186,
+              "sameBytesAsReference": false,
+              "width": 924,
+              "height": 2000,
+              "interpretation": "Actual PNG pixels sent through OpenCode; client preprocessing differs from native source bytes. This is not a textual image summary or an unmodified-byte claim."
+            },
+            {
+              "sha256": "d782149fd7e9371a752f17a5d438b01ff6973bc782d090aa5966e6da8923adb0",
+              "bytes": 339186,
+              "sameBytesAsReference": false,
+              "width": 924,
+              "height": 2000,
+              "interpretation": "Actual PNG pixels sent through OpenCode; client preprocessing differs from native source bytes. This is not a textual image summary or an unmodified-byte claim."
+            }
+          ]
+        },
+        {
+          "file": "request-3-private.json",
+          "model": "qwen-ui-35b",
+          "reasoningEffort": "none",
+          "outputBudget": 1024,
+          "images": [
+            {
+              "sha256": "d782149fd7e9371a752f17a5d438b01ff6973bc782d090aa5966e6da8923adb0",
+              "bytes": 339186,
+              "sameBytesAsReference": false,
+              "width": 924,
+              "height": 2000,
+              "interpretation": "Actual PNG pixels sent through OpenCode; client preprocessing differs from native source bytes. This is not a textual image summary or an unmodified-byte claim."
+            },
+            {
+              "sha256": "d782149fd7e9371a752f17a5d438b01ff6973bc782d090aa5966e6da8923adb0",
+              "bytes": 339186,
+              "sameBytesAsReference": false,
+              "width": 924,
+              "height": 2000,
+              "interpretation": "Actual PNG pixels sent through OpenCode; client preprocessing differs from native source bytes. This is not a textual image summary or an unmodified-byte claim."
+            }
+          ]
+        }
+      ],
+      "steps": [
+        {
+          "tool": "read",
+          "status": "completed",
+          "inputFile": "secret.txt",
+          "outputCharacters": 183,
+          "error": ""
+        },
+        {
+          "tool": "write",
+          "status": "completed",
+          "inputFile": "observation.json",
+          "outputCharacters": 24,
+          "error": ""
+        }
+      ],
+      "lastText": "PROBE_COMPLETE",
+      "observation": {
+        "marker": "CLIENT-TOOL-61849",
+        "paymentMethodCount": 9,
+        "cta": "10,057원 결제하기"
+      },
+      "tokenEvents": [
+        {
+          "reason": "tool-calls",
+          "tokens": {
+            "total": 6731,
+            "input": 2234,
+            "output": 59,
+            "reasoning": 0,
+            "cache": {
+              "write": 0,
+              "read": 4438
+            }
+          }
+        },
+        {
+          "reason": "tool-calls",
+          "tokens": {
+            "total": 6931,
+            "input": 155,
+            "output": 108,
+            "reasoning": 0,
+            "cache": {
+              "write": 0,
+              "read": 6668
+            }
+          }
+        },
+        {
+          "reason": "stop",
+          "tokens": {
+            "total": 6953,
+            "input": 130,
+            "output": 4,
+            "reasoning": 0,
+            "cache": {
+              "write": 0,
+              "read": 6819
+            }
+          }
+        }
+      ],
+      "privateRawReceipts": [
+        {
+          "file": "request-1-private.json",
+          "sha256": "1ec30ca685d505059fee107ad72154f7274873368e4afa6bc2c68ebea471d721",
+          "bytes": 917542,
+          "publication": "Private: native image payload or local tool paths retained outside Git"
+        },
+        {
+          "file": "request-2-private.json",
+          "sha256": "77e08774e8fa0b49c7468105fab9cdb231703e01731676d72bcf657b0e195883",
+          "bytes": 918065,
+          "publication": "Private: native image payload or local tool paths retained outside Git"
+        },
+        {
+          "file": "request-3-private.json",
+          "sha256": "2f86aac9418b7200242c89bb310765546c78d0e4e3643ea3b6e440f668399af5",
+          "bytes": 918552,
+          "publication": "Private: native image payload or local tool paths retained outside Git"
+        },
+        {
+          "file": "response-1-private.txt",
+          "sha256": "976d30011ac8ecb7ba8755513333061796bf3ab3b96c623f3f0bafa53e726f54",
+          "bytes": 1195,
+          "publication": "Private: native image payload or local tool paths retained outside Git"
+        },
+        {
+          "file": "response-2-private.txt",
+          "sha256": "67ae2b2bea1081ad0bad5f25cdc08759a29d03289425f559b2834c5d902875f7",
+          "bytes": 1341,
+          "publication": "Private: native image payload or local tool paths retained outside Git"
+        },
+        {
+          "file": "response-3-private.txt",
+          "sha256": "3d63d565471ac8f59e899d711121a23ac3ae4af795a0838186456777b820ecb4",
+          "bytes": 1364,
+          "publication": "Private: native image payload or local tool paths retained outside Git"
+        }
+      ],
+      "limitations": [
+        "Host supplied exact owned file paths after a denied misrouted read",
+        "Continued the same failed session; not a fresh unattended pass",
+        "The reference was reattached, producing two copies in each outgoing request",
+        "1024-token probe budget; not the profile8192-token budget"
+      ]
+    }
+  ],
+  "assistance": "Host authored fixture, custom bounded probe agent, output validation and local serialized capture proxy. Required image facts were not supplied to the model. Two failed harness attempts are retained separately from the installed-client wrong-root model failure."
+}

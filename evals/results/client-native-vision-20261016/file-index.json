@@ -1,0 +1,51 @@
+{
+  "algorithm": "sha256",
+  "scope": "Exact published bytes; index excludes itself. Functional evidence does not establish visual approval.",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 8,
+      "sha256": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da"
+    },
+    {
+      "path": "checks.json",
+      "bytes": 6812,
+      "sha256": "553030a1d6076052206bc1fa1bfe24b392bdc416488cd42fb17efa3f549694a1"
+    },
+    {
+      "path": "client-probes.json",
+      "bytes": 31106,
+      "sha256": "4e579caa5a366b1c3315a7618234c164067018a553aece7eba8727b781a5ced0"
+    },
+    {
+      "path": "config-application.json",
+      "bytes": 890,
+      "sha256": "892e60b15f9091344ad520229226482f67254b5f40731bad0d221dbbd2c572fa"
+    },
+    {
+      "path": "configuration-summary.json",
+      "bytes": 2769,
+      "sha256": "2fbb862d1f4a65373a0610a9d0f02f8a608f81ce15650c64de1efa3dcf271e0e"
+    },
+    {
+      "path": "initial-perception.json",
+      "bytes": 4676,
+      "sha256": "7bd54e2c35e3d2386df3068e0e46199120681e8ac7bbe049eb18633aed035bff"
+    },
+    {
+      "path": "model-profile.json",
+      "bytes": 1377,
+      "sha256": "b297f445d513aa25eb7d969dd07f8eff7edf94f90db42a8678df367a7e5741ef"
+    },
+    {
+      "path": "README.md",
+      "bytes": 5574,
+      "sha256": "3f3964b6b88b42789000951e6271656fd258543f4e057983d0b6c37b90a9c3bb"
+    },
+    {
+      "path": "skill-sync.json",
+      "bytes": 9520,
+      "sha256": "420b486de0b89e02ca144337d115f18d77ea919e8b24f436a75d38cb6ff0f995"
+    }
+  ]
+}

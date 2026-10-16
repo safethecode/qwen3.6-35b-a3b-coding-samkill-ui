@@ -1,0 +1,89 @@
+{
+  "at": "2026-10-16T06:29:39.469Z",
+  "configs": [
+    {
+      "role": "active-environment-selected",
+      "beforeHash": "9b3d47c7329b13eae98497bfca03504e8956b25dbc1eb5766f53ea9a8f098e31",
+      "afterHash": "26d75f8c11bb5a8135ffc5036dc65e91c5b667baca2463ebdf09341de8c0ea59",
+      "before": {
+        "model": "ollama/qwen-local-dev",
+        "smallModel": "ollama/qwen-local-dev",
+        "visualModel": "ollama/qwen-local-dev"
+      },
+      "after": {
+        "model": "ollama/qwen-ui-35b",
+        "smallModel": "ollama/qwen-ui-35b",
+        "visualModel": "ollama/qwen-ui-35b",
+        "context": 32768,
+        "outputBudget": 8192,
+        "timeout": 600000,
+        "headerTimeout": 600000
+      },
+      "unchanged": {
+        "mcp": true,
+        "permissions": true,
+        "tools": true,
+        "allExistingModelEntries": true
+      }
+    },
+    {
+      "role": "global-fallback",
+      "beforeHash": "9b3d47c7329b13eae98497bfca03504e8956b25dbc1eb5766f53ea9a8f098e31",
+      "afterHash": "26d75f8c11bb5a8135ffc5036dc65e91c5b667baca2463ebdf09341de8c0ea59",
+      "before": {
+        "model": "ollama/qwen-local-dev",
+        "smallModel": "ollama/qwen-local-dev",
+        "visualModel": "ollama/qwen-local-dev"
+      },
+      "after": {
+        "model": "ollama/qwen-ui-35b",
+        "smallModel": "ollama/qwen-ui-35b",
+        "visualModel": "ollama/qwen-ui-35b",
+        "context": 32768,
+        "outputBudget": 8192,
+        "timeout": 600000,
+        "headerTimeout": 600000
+      },
+      "unchanged": {
+        "mcp": true,
+        "permissions": true,
+        "tools": true,
+        "allExistingModelEntries": true
+      }
+    }
+  ],
+  "priorDirectEndpointProbe": {
+    "model": "qwen3.6:35b-a3b-coding",
+    "modelDigest": "017eda0b7c34529c494d9e0fba88519bed43aa7ed3b18a4f70c648d53e50db3c",
+    "checks": [
+      {
+        "endpoint": "native",
+        "status": "PASS",
+        "actualToolCalls": 1,
+        "returnedMarker": "LOCAL-PROBE-9047",
+        "backendModels": [
+          {
+            "name": "qwen3.6:35b-a3b-coding",
+            "context_length": 16384,
+            "size_vram": 8320314244
+          }
+        ]
+      },
+      {
+        "endpoint": "compat",
+        "status": "PASS",
+        "actualToolCalls": 1,
+        "returnedMarker": "LOCAL-PROBE-9047",
+        "backendModels": [
+          {
+            "name": "qwen3.6:35b-a3b-coding",
+            "context_length": 4096,
+            "size_vram": 9329851759
+          }
+        ]
+      }
+    ],
+    "rawReportSha256": "077fcbb33c78cad23e81015c95bb9f13c4f69555c3841f8a7023abb58707a2fd"
+  },
+  "scope": "Private configuration files retained as backups. Only selected model/options and invariant checks are public. MCP names, credentials and custom paths are omitted."
+}
