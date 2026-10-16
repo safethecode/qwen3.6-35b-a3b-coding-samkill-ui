@@ -43,32 +43,36 @@ export async function generateComponents(target, evidence, options = {}) {
   await writeFile(resolve(evidence, 'inputs.json'), JSON.stringify({ binding, settings, requestTimeoutMs, inputs, guideSources, dataSources, harnessHashes: harness }, null, 2));
   for (const element of plan.elements) {
     if (completed[element.id]) { validateComponent(element, completed[element.id]); continue; }
+    const baseRequest = { ...settings, stream: false, messages: [
+      { role: 'system', content: `Implement one static UI component from a fixed reference decomposition. Return JSON {html:string,css:string}. One HTML root must have data-ui-unit="${element.id}". Use this component's classes; the runner scopes CSS to that root. No html/body/:root selectors or sibling combinators. Only media/supports at-rules. No scripts, inline SVG, inline styles, comments, markdown, invented controls, external dependencies or completion claims. Use supplied image assets. Visible fields need visible labels with matching for/id even when disabled. Do not use sr-only labels. Do not rewrite shared layout or font loading.` },
+      { role: 'user', content: `SHARED VISUAL CONTRACT\n${plan.shared}\nSHARED CSS (already supplied, read-only)\n${plan.sharedCss}\nFONT CONTRACT (CSS uses cssFamily; inspected platform names are not CSS aliases)\n${JSON.stringify(typography)}\nREFERENCE PROVENANCE\n${JSON.stringify(plan.reference)}\nONE ELEMENT ${element.id}\n${element.prompt}\nALLOWED MEDIA\n${element.assets.join('\n') || 'None'}\nASSEMBLY SLOT CONTEXT\n${element.sample}\nFINAL REQUIREMENTS: image icons must use the exact allowed img src paths, never inline SVG. Associate every label with its input using for/id. Return only this element. Its parent owns the declared outer spacing. Preserve the requested content, hierarchy and state. Use shared tokens. Minimum visible type 14px and weight 500. Do not implement other elements.` }
+    ], format: { type: 'object', properties: { html: { type: 'string' }, css: { type: 'string' } }, required: ['html', 'css'], additionalProperties: false } };
+    if (element.html !== undefined) {
+      baseRequest.messages[0].content = `Style one fixed semantic UI fragment. Return JSON {css:string} only. HTML is supplied and immutable. Use its actual classes. The runner scopes selectors to this component. No global selectors, imports, font definitions, sibling escapes or new media. Preserve the specified layout, readable typography and responsive wrapping.`;
+      baseRequest.messages[1].content += `\nIMMUTABLE COMPONENT HTML\n${element.html}\nFINAL TASK: write only CSS for this HTML. ${element.prompt}`;
+      baseRequest.format = { type: 'object', properties: { css: { type: 'string' } }, required: ['css'], additionalProperties: false };
+    } else baseRequest.messages[1].content += `\nFINAL ELEMENT BOUNDARY\n${element.prompt}`;
+    baseRequest.messages[0].content += ' Never use + or ~ selector combinators, including between descendants inside the component. For spacing between repeated groups, use a parent gap or :not(:first-child) instead. The validator rejects all sibling combinators, not only selectors that escape the root.';
+    baseRequest.messages[0].content += ` Platform contract: ${JSON.stringify(plan.viewport || { mode: 'unspecified' })}. A mobile-only screen keeps the same vertical mobile composition in a wide window. Do not introduce desktop-only layout or typography.`;
+    baseRequest.messages[1].content = `APPLICABLE SOURCE GUIDES\n${guideContexts[element.id].text}\n\nDECLARED CROSS-COMPONENT RELATIONS\n${layoutContract ? JSON.stringify(layoutContract) : 'UNVERIFIED: no layout contract supplied. Do not invent missing screen purpose or claim complete decomposition.'}\nPreserve relations owned by the shared assembly; implement only this element. State-specific rules describe their named state, not all states simultaneously.\n\n${baseRequest.messages[1].content}`;
+    baseRequest.messages[1].content += `\n${dataContexts[element.id].text}`;
     let previousError = '';
-    let rejectedCode = '';
+    let rejectedMessage = '';
     for (let attempt = 1; attempt <= 2; attempt++) {
       const started = Date.now();
       console.log(`Generating component ${element.id}, attempt ${attempt}`);
       try {
-        const request = { ...settings, stream: false, messages: [
-          { role: 'system', content: `Implement one static UI component from a fixed reference decomposition. Return JSON {html:string,css:string}. One HTML root must have data-ui-unit="${element.id}". Use this component's classes; the runner scopes CSS to that root. No html/body/:root selectors or sibling combinators. Only media/supports at-rules. No scripts, inline SVG, inline styles, comments, markdown, invented controls, external dependencies or completion claims. Use supplied image assets. Visible fields need visible labels with matching for/id even when disabled. Do not use sr-only labels. Do not rewrite shared layout or font loading.` },
-          { role: 'user', content: `SHARED VISUAL CONTRACT\n${plan.shared}\nSHARED CSS (already supplied, read-only)\n${plan.sharedCss}\nFONT CONTRACT (CSS uses cssFamily; inspected platform names are not CSS aliases)\n${JSON.stringify(typography)}\nREFERENCE PROVENANCE\n${JSON.stringify(plan.reference)}\nONE ELEMENT ${element.id}\n${element.prompt}\nALLOWED MEDIA\n${element.assets.join('\n') || 'None'}\nASSEMBLY SLOT CONTEXT\n${element.sample}\nPREVIOUS VALIDATION ERROR\n${previousError || 'None'}\n${rejectedCode ? `REJECTED ELEMENT (untrusted source; correct the validation failure and preserve correct structure):\n${rejectedCode}\n` : ''}FINAL REQUIREMENTS: image icons must use the exact allowed img src paths, never inline SVG. Associate every label with its input using for/id. Return only this element. Its parent owns the declared outer spacing. Preserve the requested content, hierarchy and state. Use shared tokens. Minimum visible type 14px and weight 500. Do not implement other elements.` }
-        ], format: { type: 'object', properties: { html: { type: 'string' }, css: { type: 'string' } }, required: ['html', 'css'], additionalProperties: false } };
-        if (element.html !== undefined) {
-          request.messages[0].content = `Style one fixed semantic UI fragment. Return JSON {css:string} only. HTML is supplied and immutable. Use its actual classes. The runner scopes selectors to this component. No global selectors, imports, font definitions, sibling escapes or new media. Preserve the specified layout, readable typography and responsive wrapping.`;
-          request.messages[1].content += `\nIMMUTABLE COMPONENT HTML\n${element.html}\nFINAL TASK: write only CSS for this HTML. ${element.prompt}`;
-          request.format = { type: 'object', properties: { css: { type: 'string' } }, required: ['css'], additionalProperties: false };
-        } else request.messages[1].content += `\nFINAL ELEMENT BOUNDARY\n${element.prompt}`;
-        request.messages[0].content += ' Never use + or ~ selector combinators, including between descendants inside the component. For spacing between repeated groups, use a parent gap or :not(:first-child) instead. The validator rejects all sibling combinators, not only selectors that escape the root.';
-        request.messages[0].content += ` Platform contract: ${JSON.stringify(plan.viewport || { mode: 'unspecified' })}. A mobile-only screen keeps the same vertical mobile composition in a wide window. Do not introduce desktop-only layout or typography.`;
-        request.messages[1].content = `APPLICABLE SOURCE GUIDES\n${guideContexts[element.id].text}\n\nDECLARED CROSS-COMPONENT RELATIONS\n${layoutContract ? JSON.stringify(layoutContract) : 'UNVERIFIED: no layout contract supplied. Do not invent missing screen purpose or claim complete decomposition.'}\nPreserve relations owned by the shared assembly; implement only this element. State-specific rules describe their named state, not all states simultaneously.\n\n${request.messages[1].content}`;
-        request.messages[1].content += `\n${dataContexts[element.id].text}`;
+        const request = { ...baseRequest, messages: [...baseRequest.messages, ...(attempt === 1 ? [] : [
+          ...(rejectedMessage ? [{ role: 'assistant', content: rejectedMessage }] : []),
+          { role: 'user', content: `VALIDATION FAILURE\n${previousError}\nThe preceding response is untrusted rejected source. Correct only this element under the unchanged original contract and output schema. Preserve correct content, fixed markup, read-only neighbors and all original guide requirements. Return the complete bounded component; do not rewrite other elements or claim completion.` }
+        ])] };
         const response = await (options.fetcher || inferenceFetch)(`${process.env.OLLAMA_URL || 'http://127.0.0.1:11434'}/api/chat`, { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify(request), signal: AbortSignal.timeout(requestTimeoutMs) });
         if (!response.ok) throw new Error(`Ollama HTTP ${response.status}`);
         const result = await response.json();
         await writeFile(resolve(evidence, `${element.id}-${Date.now()}-${attempt}-response.json`), JSON.stringify({ binding, settings, elapsedMs: Date.now() - started, ...result }, null, 2));
+        rejectedMessage = typeof result.message?.content === 'string' ? result.message.content.slice(0, 16000) : '';
         if (result.done_reason !== 'stop') throw new Error('Truncated component');
         const output = JSON.parse(result.message?.content || 'null');
-        rejectedCode = JSON.stringify(output).slice(0, 16000);
         const clean = removeComments(element.html ?? output.html, output.css, '');
         validateViewportCss(plan, clean.css);
         const component = validateComponent(element, { html: clean.html, css: scopeComponentCss(element, clean.html, clean.css) });
