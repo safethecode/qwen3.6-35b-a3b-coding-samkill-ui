@@ -1,0 +1,7 @@
+{
+  "at": "2026-10-16T04:14:51.654Z",
+  "file": "references/decomposed-layout.md",
+  "previousSha256": "de40d516df95a7b124ba46795a5af4c4e0a72842b5cced6d9e2aaf62fb2d2478",
+  "currentSha256": "6431f5b7b860cfbe7864182c477491943dcfc74e668824d4c51f56d92dea0fda",
+  "assistance": "Host backed up one known repository version and updated only that managed guide;other installed files untouched;existing chats do not automatically reload"
+}

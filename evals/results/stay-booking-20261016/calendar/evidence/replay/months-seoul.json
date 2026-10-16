@@ -1,0 +1,8 @@
+{
+  "at": "2026-10-16T04:20:41.065Z",
+  "timezone": "Asia/Seoul",
+  "months": 1200,
+  "dates": 36525,
+  "status": "PASS",
+  "scope": "Every supported month/day and five month shifts;does not approve other calendar behavior or visual quality"
+}

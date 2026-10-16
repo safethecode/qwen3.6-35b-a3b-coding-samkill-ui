@@ -1,0 +1,17 @@
+PASS real leap month and weekday geometry
+PASS ordinary complete month includes every ISO day once
+PASS past entire month is disabled without losing dates
+PASS century leap and nonleap rules stay valid
+PASS invalid month/today arguments reject rather than normalize
+PASS month shifts cross years and keep padded keys
+PASS bad shifts never coerce inputs
+PASS first click selects only start without mutating frozen draft
+PASS second click completes valid range
+PASS same or earlier date restarts incomplete range
+PASS completed range starts a new independent selection
+PASS past,malformed and impossible click preserves start/end
+PASS maximum28nights completes;29nights preserves pending selection
+PASS real DST transitions remain UTC calendar days
+PASS malformed drafts and invalid today fail closed
+PASS supported last year remains selectable without an artificial horizon
+{"unit":"all","groups":16,"failures":0,"scope":"Pure date semantics only;no UI,reference,accessibility or product completion approval"}

@@ -1,0 +1,326 @@
+{
+  "algorithm": "sha256",
+  "scope": "Exact published bytes; index excludes itself. Functional evidence does not establish visual approval.",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 26,
+      "sha256": "155348a89d5e749f50d336f8f164a39bf8415179177b36e8b51766f3ab9a16d3"
+    },
+    {
+      "path": "captures/before-calendar-css.png",
+      "bytes": 48555,
+      "sha256": "9126122eedf468539bf83f6dc76b9da9864e388cce3c91977db0e74f31342018"
+    },
+    {
+      "path": "captures/calendar-390.png",
+      "bytes": 39481,
+      "sha256": "e0d837877b11ee0e791079eef48b85cd81afbe92b089f065c71d59eb817df499"
+    },
+    {
+      "path": "captures/calendar-blank-390.png",
+      "bytes": 39559,
+      "sha256": "adff4b2b73edce1ccff32f98c9c8f6fb84a9ff0b3bd05ee9e6c1fe2c2fc88866"
+    },
+    {
+      "path": "captures/calendar-error-text200-296.png",
+      "bytes": 55265,
+      "sha256": "06cc8cc20e0dd6f3d1adca6cd5dec3a39a5dbb6513d58bd7c5ed1dd305885a69"
+    },
+    {
+      "path": "captures/calendar-text200-296.png",
+      "bytes": 48326,
+      "sha256": "bfdc720ee43e707904d48e191722cb906618adde40c30b36a170eed1a8955cf3"
+    },
+    {
+      "path": "captures/failed-first-css-390.png",
+      "bytes": 43129,
+      "sha256": "b8657062f0e99a061d9b33ef25deb90202ea48a967c983b165ef01bb224f907c"
+    },
+    {
+      "path": "captures/search-caller-390.png",
+      "bytes": 66353,
+      "sha256": "0580f0b0c8beb6dc771c938f1d5b030be5496d200641f80f6830ec9209ec9990"
+    },
+    {
+      "path": "checks/browser-harness.mjs",
+      "bytes": 2979,
+      "sha256": "bd13ed1b2269b9ac6b030dae713a985371d86fcc30ca820b6291f569f3ab3084"
+    },
+    {
+      "path": "checks/controller.mjs",
+      "bytes": 11736,
+      "sha256": "94c1c9fed1adc247e29255a7363796a5345491e136e0a0686f10b001e8ac8bb2"
+    },
+    {
+      "path": "checks/core-regression.mjs",
+      "bytes": 9875,
+      "sha256": "87613593fd80b59c4f8d15720e08561b2a80567d290e53436fb0f929e985f9c8"
+    },
+    {
+      "path": "checks/focus.mjs",
+      "bytes": 1938,
+      "sha256": "69f16fb5b9d68e87e6040fd64e26621059ac76985e68d367f1297d05e0f13a63"
+    },
+    {
+      "path": "checks/integration.mjs",
+      "bytes": 7288,
+      "sha256": "9b6fc333668a51090bee3a53f3c4cbecd4fc243d7f4872e6a1c5f31587f87731"
+    },
+    {
+      "path": "checks/model.mjs",
+      "bytes": 6346,
+      "sha256": "3e3a6bad3db3dc38a095dcd72c6b3420598cb652b09291a4d241bdde2ef3ee5e"
+    },
+    {
+      "path": "checks/months.mjs",
+      "bytes": 1320,
+      "sha256": "affbb8f8fc8b9e8244019e2c01ec9919f6a65fbe7b66279639a34bac338f3b17"
+    },
+    {
+      "path": "checks/product-render.mjs",
+      "bytes": 4266,
+      "sha256": "58d24e94b7473855fb4defc799b440363c37590cd7cb2127c3589b863b0cfd9f"
+    },
+    {
+      "path": "checks/renderer.mjs",
+      "bytes": 6756,
+      "sha256": "8adbbcf44dc8b7cd75545f5d639788e40b6ced2a44dde731829b3a09327d98ac"
+    },
+    {
+      "path": "checks/request-regression.mjs",
+      "bytes": 24016,
+      "sha256": "58fa0ef34d8d2ca6c8475d16baae157f983cc96f4b294cbd2d8ca756a3db267f"
+    },
+    {
+      "path": "checks/room-regression.mjs",
+      "bytes": 9933,
+      "sha256": "e84a83d02a7f7f9527af7cf779535dbb6061fbae79e334a776e0817220674705"
+    },
+    {
+      "path": "checks/style.mjs",
+      "bytes": 9016,
+      "sha256": "5ece7e8785eff50ca2fa81ba3bb708b6821a94164797a67cf3eecb05c5fccdad"
+    },
+    {
+      "path": "evidence/attribution-original.json",
+      "bytes": 593,
+      "sha256": "0655a317b6968aafae41ffb742e513cc86b29dd6679fea3aba8aae1ce8fe747d"
+    },
+    {
+      "path": "evidence/attribution.json",
+      "bytes": 1467,
+      "sha256": "bcc7a6530248b3f447a510a484a3867b24228c274bc926686ad2574a0f878157"
+    },
+    {
+      "path": "evidence/CONTRACT.md",
+      "bytes": 4955,
+      "sha256": "a937eae982fb7807c77d4adc0761bbbc19a2ccc3ec1ab172c904d2275f81053f"
+    },
+    {
+      "path": "evidence/controller.json",
+      "bytes": 23330,
+      "sha256": "6fad52cdfb4fc1acb36df66e35b218655a07687f82c0c1a6d6b609055a9eaec2"
+    },
+    {
+      "path": "evidence/core-regression.json",
+      "bytes": 23542,
+      "sha256": "36a6ffb75662a7274fb687debc8d245f6c0ea55185d2df209ee962f3e97aaa40"
+    },
+    {
+      "path": "evidence/css-attribution.json",
+      "bytes": 1124,
+      "sha256": "539cc2208343e620f261150f3b355fe09ac978141ac9228c213cf017f73c8a49"
+    },
+    {
+      "path": "evidence/focus.json",
+      "bytes": 4147,
+      "sha256": "479e6ead0f7da7ff9ec904637b29c08b1596dcba452003a9dea9b03bb7ca994a"
+    },
+    {
+      "path": "evidence/font-296-text200-error.json",
+      "bytes": 86357,
+      "sha256": "9532abf4ec957ab7e04f8fd88eb809528db038a0746f9333f79b11454bd2fc78"
+    },
+    {
+      "path": "evidence/font-296-text200-product.json",
+      "bytes": 109921,
+      "sha256": "d06a77eef177f4cf4a1df2f53a01404200d16aa3640e7f94eaff3df38d7f0050"
+    },
+    {
+      "path": "evidence/font-390-range.json",
+      "bytes": 85180,
+      "sha256": "908ea4f97378179001e758fd58b1a1cfe8d2787370f23f5ccee65db8216daa0d"
+    },
+    {
+      "path": "evidence/generation-baseline.json",
+      "bytes": 22326,
+      "sha256": "a7ba46b998d17748898647b7722c2134fda9f4612609d0703f178e9b32fb632e"
+    },
+    {
+      "path": "evidence/installed-skill-sync.json",
+      "bytes": 432,
+      "sha256": "e52363d550754879ef379ce9470bbe10c8780607df28e31294f4d25cd9069657"
+    },
+    {
+      "path": "evidence/integration.json",
+      "bytes": 22465,
+      "sha256": "a268dd2767778116efab5783e5bc669a8fa56ae2535ce4856188a83cdcc41a33"
+    },
+    {
+      "path": "evidence/invalid-first-integration.json",
+      "bytes": 409,
+      "sha256": "df5474562a8ae0dcf527af84e648971246cb9e9020af12b01b018ebb7b76c0c9"
+    },
+    {
+      "path": "evidence/local-attempts.json",
+      "bytes": 656645,
+      "sha256": "c4ec008d2c272ffc0bf5db32fd19bc4325f16f5c05989ef63bab5a60ae6a5352"
+    },
+    {
+      "path": "evidence/model.log",
+      "bytes": 1026,
+      "sha256": "82fd946a5729eb9861f58a6a86109f41116ab1cdb4b329d4c43c26e9d2146488"
+    },
+    {
+      "path": "evidence/months-los-angeles.json",
+      "bytes": 252,
+      "sha256": "f0316f7ee9c97e4e8d19f2851b6d3030dfc617f8f5791fb798702ea8e2461692"
+    },
+    {
+      "path": "evidence/months-seoul.json",
+      "bytes": 243,
+      "sha256": "41368cb6940d3ec7578e29e2dc3e71c537da70e2058a9b13d51d772d644803fc"
+    },
+    {
+      "path": "evidence/phase-evidence.md",
+      "bytes": 3182,
+      "sha256": "11af72220f8361fccb29b46d79cb0dcce8fcfaa3818f134384bb6bb25eaacaae"
+    },
+    {
+      "path": "evidence/product-render.json",
+      "bytes": 39845,
+      "sha256": "136ecee39a9772103a2f131c40ac02aa27ff41a88f053ed76cbd1a0ae879030f"
+    },
+    {
+      "path": "evidence/reference-viewport-note.md",
+      "bytes": 1104,
+      "sha256": "e5bb77933f5893101cdb682670f568bdf9616575cb1df1f66a2d0acd39fe0e6e"
+    },
+    {
+      "path": "evidence/reference.json",
+      "bytes": 2252,
+      "sha256": "8ec975ad886cd353c2251811063db439a6403c0c6c325c8577050def7962ea1e"
+    },
+    {
+      "path": "evidence/renderer.json",
+      "bytes": 969,
+      "sha256": "3856ddb4c2a6489b01329620d8f3c51009ae54997fdd16fa77e20382a8f79f21"
+    },
+    {
+      "path": "evidence/replay/controller.json",
+      "bytes": 23330,
+      "sha256": "33e3bb3cd7b8f5cbdfe5f95e489b639b0137775d003f4893f76e7502cfecf8fc"
+    },
+    {
+      "path": "evidence/replay/core.json",
+      "bytes": 23542,
+      "sha256": "68f8d3660beb29d340d1d25d1fec63da3b1b8618db74b3d0d7f60565200e9d25"
+    },
+    {
+      "path": "evidence/replay/focus.json",
+      "bytes": 4147,
+      "sha256": "24641282bb4b936005ce3489388b329cf30a50151c85e7250d57472f39667a75"
+    },
+    {
+      "path": "evidence/replay/integration.json",
+      "bytes": 22465,
+      "sha256": "76dd92ebdf4c39cb5fb158f6f60b21bd5456976951ea9ec950d3f8b43184cdf7"
+    },
+    {
+      "path": "evidence/replay/months-los-angeles.json",
+      "bytes": 252,
+      "sha256": "a30406d4ea01fdeba1ea7da21c049e2442f6085799ce0d369c4829ca8eb2f90f"
+    },
+    {
+      "path": "evidence/replay/months-seoul.json",
+      "bytes": 243,
+      "sha256": "6d0660b525219c84e68e10229779185619b8e7459a58f81217d6f32a6230dfc3"
+    },
+    {
+      "path": "evidence/replay/product-render.json",
+      "bytes": 39845,
+      "sha256": "2dbdff024d3d2ceb256517ad20b621dbf14e84c18afadf0dd90d6372d20dae44"
+    },
+    {
+      "path": "evidence/replay/renderer.json",
+      "bytes": 969,
+      "sha256": "993c022135f4671d03ae8264784f36a03cb79bad6f5e85ad7201be3a147ebadb"
+    },
+    {
+      "path": "evidence/replay/report.json",
+      "bytes": 24296,
+      "sha256": "c9df772c2a5b779a56b1ac9503265da99d6516f5d33160bf50ab1188d5f8bf15"
+    },
+    {
+      "path": "evidence/replay/requests.json",
+      "bytes": 26043,
+      "sha256": "63d5fa04923894fdae286dd3b408ec49e05684b8d98200b750da02330e1d9bf9"
+    },
+    {
+      "path": "evidence/replay/rooms.json",
+      "bytes": 23136,
+      "sha256": "d175ff826b16e851185f145ae2d2418cb395fe189e9101893020c42d83065e96"
+    },
+    {
+      "path": "evidence/replay/style.json",
+      "bytes": 27524,
+      "sha256": "a6b0a2bd741f20071b8024fa2042f5b73d1e05861cda00488e7879ea25d89f45"
+    },
+    {
+      "path": "evidence/repository-tests.json",
+      "bytes": 413,
+      "sha256": "f9f049ce99eabd14c3ede56a432e5fee4ccbe98456640915fbc71df651e495e8"
+    },
+    {
+      "path": "evidence/request-regression.json",
+      "bytes": 26043,
+      "sha256": "3aa00b137b728f2c4cb5028d56eabda890db4a84060fd6074068e21276b900dd"
+    },
+    {
+      "path": "evidence/room-regression.json",
+      "bytes": 23136,
+      "sha256": "d175ff826b16e851185f145ae2d2418cb395fe189e9101893020c42d83065e96"
+    },
+    {
+      "path": "evidence/style.json",
+      "bytes": 27524,
+      "sha256": "51c49b1562aa22d997bab82b67aa1d967a19bc9cb145c1da5a6dcaf3f82b2817"
+    },
+    {
+      "path": "evidence/UI-CONTRACT.md",
+      "bytes": 7761,
+      "sha256": "7a2b02e1a3638bcc54111947b39ca26ede628eb8f356f53a513e9f69a08b51d0"
+    },
+    {
+      "path": "evidence/visual-review.md",
+      "bytes": 1438,
+      "sha256": "aefe1d814acab7de9d5b9df6298e798495d8443774074d4398183aa60919bc5a"
+    },
+    {
+      "path": "fixtures/calendar-shell.html",
+      "bytes": 2014,
+      "sha256": "831b128ac45e2fa4bc7f65d20b2db221e0432c2ec8dff3e1bbc8ecac27def75d"
+    },
+    {
+      "path": "README.md",
+      "bytes": 5640,
+      "sha256": "d32eebaee354a2619131fdb0e6a0151dff7d48472a31ec5059cddbb06e2669fe"
+    },
+    {
+      "path": "replay.mjs",
+      "bytes": 3065,
+      "sha256": "2e8e55738c48f2def6a366e9b6013f751dfde6e34930d1b332015d7c23bb6f89"
+    }
+  ]
+}

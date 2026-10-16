@@ -1,0 +1,14 @@
+{
+  "at": "2026-10-16T04:07:17.099Z",
+  "source": "Actual Qwen originalCSS + actual Qwen bounded override;host corrections below",
+  "hostChanges": [
+    "Remove misowned caption declarations copied from cancel role",
+    "Put cancel typography/padding on actual cancel control;preserve whole Korean words with nonshrinking secondary control",
+    "Natural weekday height under200%text",
+    "Restore visible nonempty error,hide only empty error",
+    "Caption inset aligned with month/weekday track,padding bottom16",
+    "Middle range10% action overwhite is rounded to solidRGB248,232,238 for explicit inspectable contrast;derived one-use color exception from existing #b51d51/#fff,not observed native state"
+  ],
+  "reason": "Qwen r1 passed geometry/roles for12blank captures butrangecontrast remainedUNVERIFIED from unsupported color(srgb) computed format;direct render also showed header word fragmentation,misowned captionpadding and unconditionalhiddenerror. Do not call r1 a fullpass or hostfix Qwen-generated.",
+  "limits": "Selected appearance is chosen,not native-observed;no wholeproduct or commercialapproval"
+}

@@ -1,0 +1,198 @@
+{
+  "at": "2026-10-16T04:11:42.582Z",
+  "checks": [
+    {
+      "date": "2026-11-06",
+      "key": "ArrowLeft",
+      "shift": false,
+      "expected": "2026-11-05",
+      "actual": "2026-11-05",
+      "status": "PASS"
+    },
+    {
+      "date": "2026-11-06",
+      "key": "ArrowRight",
+      "shift": false,
+      "expected": "2026-11-07",
+      "actual": "2026-11-07",
+      "status": "PASS"
+    },
+    {
+      "date": "2026-11-06",
+      "key": "ArrowUp",
+      "shift": false,
+      "expected": "2026-10-30",
+      "actual": "2026-10-30",
+      "status": "PASS"
+    },
+    {
+      "date": "2026-11-06",
+      "key": "ArrowDown",
+      "shift": false,
+      "expected": "2026-11-13",
+      "actual": "2026-11-13",
+      "status": "PASS"
+    },
+    {
+      "date": "2026-11-14",
+      "key": "Home",
+      "shift": false,
+      "expected": "2026-11-08",
+      "actual": "2026-11-08",
+      "status": "PASS"
+    },
+    {
+      "date": "2026-11-08",
+      "key": "End",
+      "shift": false,
+      "expected": "2026-11-14",
+      "actual": "2026-11-14",
+      "status": "PASS"
+    },
+    {
+      "date": "2026-12-31",
+      "key": "ArrowRight",
+      "shift": false,
+      "expected": "2027-01-01",
+      "actual": "2027-01-01",
+      "status": "PASS"
+    },
+    {
+      "date": "2027-01-01",
+      "key": "ArrowLeft",
+      "shift": false,
+      "expected": "2026-12-31",
+      "actual": "2026-12-31",
+      "status": "PASS"
+    },
+    {
+      "date": "2027-01-31",
+      "key": "PageDown",
+      "shift": false,
+      "expected": "2027-02-28",
+      "actual": "2027-02-28",
+      "status": "PASS"
+    },
+    {
+      "date": "2028-01-31",
+      "key": "PageDown",
+      "shift": false,
+      "expected": "2028-02-29",
+      "actual": "2028-02-29",
+      "status": "PASS"
+    },
+    {
+      "date": "2028-03-31",
+      "key": "PageUp",
+      "shift": false,
+      "expected": "2028-02-29",
+      "actual": "2028-02-29",
+      "status": "PASS"
+    },
+    {
+      "date": "2028-02-29",
+      "key": "PageUp",
+      "shift": true,
+      "expected": "2027-02-28",
+      "actual": "2027-02-28",
+      "status": "PASS"
+    },
+    {
+      "date": "2028-02-29",
+      "key": "PageDown",
+      "shift": true,
+      "expected": "2029-02-28",
+      "actual": "2029-02-28",
+      "status": "PASS"
+    },
+    {
+      "date": "2026-11-14",
+      "key": "PageDown",
+      "shift": true,
+      "expected": "2027-11-14",
+      "actual": "2027-11-14",
+      "status": "PASS"
+    },
+    {
+      "date": "2026-10-16",
+      "key": "ArrowLeft",
+      "shift": false,
+      "expected": "2026-10-16",
+      "actual": "2026-10-16",
+      "status": "PASS"
+    },
+    {
+      "date": "2026-10-16",
+      "key": "ArrowUp",
+      "shift": false,
+      "expected": "2026-10-16",
+      "actual": "2026-10-16",
+      "status": "PASS"
+    },
+    {
+      "date": "2026-10-16",
+      "key": "PageUp",
+      "shift": false,
+      "expected": "2026-10-16",
+      "actual": "2026-10-16",
+      "status": "PASS"
+    },
+    {
+      "date": "2026-10-16",
+      "key": "Home",
+      "shift": false,
+      "expected": "2026-10-16",
+      "actual": "2026-10-16",
+      "status": "PASS"
+    },
+    {
+      "date": "2099-12-31",
+      "key": "ArrowRight",
+      "shift": false,
+      "expected": "2099-12-31",
+      "actual": "2099-12-31",
+      "status": "PASS"
+    },
+    {
+      "date": "2099-12-31",
+      "key": "PageDown",
+      "shift": false,
+      "expected": "2099-12-31",
+      "actual": "2099-12-31",
+      "status": "PASS"
+    },
+    {
+      "date": "2099-12-01",
+      "key": "PageDown",
+      "shift": true,
+      "expected": "2099-12-31",
+      "actual": "2099-12-31",
+      "status": "PASS"
+    },
+    {
+      "date": "2026-11-06",
+      "key": "Enter",
+      "shift": false,
+      "expected": null,
+      "actual": null,
+      "status": "PASS"
+    },
+    {
+      "date": "2026-11-06",
+      "key": " ",
+      "shift": false,
+      "expected": null,
+      "actual": null,
+      "status": "PASS"
+    },
+    {
+      "date": "2026-11-06",
+      "key": "Tab",
+      "shift": false,
+      "expected": null,
+      "actual": null,
+      "status": "PASS"
+    }
+  ],
+  "failures": 0
+}

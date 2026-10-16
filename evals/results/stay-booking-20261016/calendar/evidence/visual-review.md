@@ -1,0 +1,7 @@
+# Isolated calendar review
+
+Status: scoped improvements inspected;overall reference parity INCOMPLETE. Reviewed R-CAL native1125x2436 and actual390/296 renders at matched displayed widths,including selected/unselected and200%text. The new panel preserves seven aligned columns,vertical consecutive months,caption/date hierarchy,quiet struck past dates and distinct bottom action. Actual blank/range geometry/role/font/stress receipts24/24 pass after explicit host CSS corrections. FirstQwenCSS24/24 failed;Qwenboundedrepair12/24 blank pass and12 range contrastUNVERIFIED;host fixes are not Qwen output.
+
+Native image starts visibleDecemberrows at17;causeunknown. Native flexible-date modes,tabs,search context andskip/next are outside this isolated existing-product adaptation;their absence cannot be scored as exact reproduction success. Selected endpoint/range colors,Notofont,webmontharrows andCancel/Apply are chosen adaptations. Original CSS/DPR/nativefont/selectedstate/device/ATremainunknown. Current widget is suitable for integration testing,not commercial approval.
+
+Host fixed misowned captionpadding,headerwordfragmentation,cancelrole,weekdaygrowth andhiddenerrors. SolidrangeRGB248/232/238 is a declared one-use derivation of existing action10% overwhite,not a native token;it keeps contrast inspectable. Recheck after any palette change. All prior failures retained. Product integration andsource-bound final replay remain.

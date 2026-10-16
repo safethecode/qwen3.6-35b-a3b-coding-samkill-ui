@@ -1,0 +1,5 @@
+{
+  "at": "2026-10-16T04:10:09.577Z",
+  "status": "INVALID_BATCH_NOT_ACCEPTED",
+  "reason": "Host copied isolated calendar.css into source during the initial red integration run. Its final source-binding assertion correctly rejected the batch. No test counts or independent evidence claimed from that batch. Missing launcher feature was established before implementation;final source-bound replay required."
+}
