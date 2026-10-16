@@ -1,0 +1,16 @@
+{
+  "algorithm": "sha256",
+  "scope": "Exact published bytes; index excludes itself. Functional evidence does not establish visual approval.",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 8,
+      "sha256": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3509,
+      "sha256": "5c169551468c4e7e0ae9beac52539189c1296d1fd0e450d20f9f509c5b001403"
+    }
+  ]
+}
