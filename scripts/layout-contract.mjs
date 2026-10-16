@@ -2,6 +2,7 @@ import { readFile } from 'node:fs/promises';
 import { resolve } from 'node:path';
 import { layoutContractFingerprint, MAX_LAYOUT_RULES } from './layout-state-coverage.mjs';
 import { inspectReadableToken } from './readable-token.mjs';
+import { inspectMonochromePaint } from './monochrome-paint.mjs';
 
 export const readLayoutContract = target => readFile(resolve(target, 'design/layout-contract.json'), 'utf8').then(JSON.parse).catch(error => { if (error.code === 'ENOENT') return null; throw error; });
 
@@ -184,6 +185,10 @@ export async function inspectLayoutContract(page, contract, options = {}) {
           observed.container = await box(rule.container);
           const owns = await page.locator(rule.container).evaluate((container, selector) => container.contains(document.querySelector(selector)), rule.subject);
           if (!owns || !inside(observed.subject, observed.container)) throw new Error('Action/content is outside its declared owner');
+        } else if (rule.kind === 'monochromePaint') {
+          const paint = await inspectMonochromePaint(page, rule);
+          observed = { ...observed, ...paint.observed };
+          if (paint.status !== 'PASS') throw Object.assign(new Error(paint.detail), { verificationStatus: paint.status });
         } else if (rule.kind === 'readableToken') {
           const token = await inspectReadableToken(page, rule);
           observed = { ...observed, ...token.observed };
