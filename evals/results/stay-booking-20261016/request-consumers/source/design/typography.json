@@ -208,8 +208,8 @@
         "Noto Sans KR Thin"
       ],
       "requireCustomFont": true,
-      "fontSizePx": 22,
-      "fontWeight": 700,
+      "fontSizePx": 18,
+      "fontWeight": 600,
       "lineHeightRatio": 1.5,
       "states": [
         "rooms",

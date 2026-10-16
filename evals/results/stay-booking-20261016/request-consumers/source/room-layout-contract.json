@@ -91,6 +91,35 @@
       "states": [
         "rate-selected"
       ]
+    },
+    {
+      "id": "C1-room-leading-target",
+      "kind": "computedStyle",
+      "subject": ".room-topbar",
+      "states": [
+        "rooms",
+        "selected"
+      ],
+      "properties": {
+        "margin-left": "-20px",
+        "margin-right": "-20px"
+      }
+    },
+    {
+      "id": "C1-room-task-card-role",
+      "kind": "computedStyle",
+      "subject": "#detail-title",
+      "states": [
+        "rooms",
+        "selected"
+      ],
+      "properties": {
+        "font-size": "18px",
+        "font-weight": "600"
+      },
+      "modes": [
+        "normal"
+      ]
     }
   ],
   "scope": "Pre-style mechanical relationships only; samewidth direct positive-anchor review remains separate."

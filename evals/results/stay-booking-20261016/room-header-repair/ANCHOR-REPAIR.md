@@ -1,0 +1,11 @@
+# Room header anchor correction
+
+The actual296x640 Dailyhotel room native was inspected again at the same display width as the candidate. Its task heading is visually close in scale to the room-card title. The previous host STYLE-CONTRACT prescribed22/700 for the task while18/600 for the card title; that introduced stronger header hierarchy than the observed relationship. This is a correction to an assisted input, not proof the model alone ignored a correct prompt. Original native CSS/font/DPR remain unknown.
+
+Before this local request, choose the task heading to match the existing room-title role:18px/600/1.5, with all minimum font/weight and official-font requirements retained. Keep body/metadata/card/price/modal roles and text unchanged. Preserve the old source and original22-role success reports as historical evidence. New strict18-role checks must fail before generation.
+
+The room topbar additionally repeats the existing20px main inset outside a44px back target whose12px internal padding already places the official20px icon near the content alignment. Topbar horizontal margins should cancel that parent inset. Preserve target/icon geometry, vertical padding8, lower margin16, title/content insets20, favorite meaning/state, real return path and all other source. Do not invent branding, controls or text.
+
+Spacing scope before change: main outer inset20 structural existing token; topbar margins inline0, block bottom16 and padding block8; back control padding12 and44minimum; heading margin bottom16; card padding12 and listgap24; toolsgap8 and bottom16; metadata gap4/iconlabel8; price margin16/padding12. The proposed margin compensation only removes duplicated leading/trailing inset; no token definition or other scoped spacing changes.
+
+Only three CSS VALUE slots writable: topbar margin-inline, task font-size, task font-weight. Host owns selectors and typed assembly. Actual Qwen gets the native image, current rendered image, relevant full reference-synthesis and typography guides and this contract. Expected browser result: leading44target starts at body edge, exact task18/600, all prior69 relations and behavior unchanged. New normal/narrow/wide/enlarged/spacing and actual edge/return/favorite checks required. This narrow correction is not reference parity.

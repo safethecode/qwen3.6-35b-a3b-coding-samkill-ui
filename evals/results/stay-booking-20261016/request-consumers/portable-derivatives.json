@@ -73,6 +73,18 @@
       "originalDriverSha256": "e84a83d02a7f7f9527af7cf779535dbb6061fbae79e334a776e0817220674705",
       "publishedDriverSha256": "e84a83d02a7f7f9527af7cf779535dbb6061fbae79e334a776e0817220674705",
       "changes": "Portable import/root/helper paths only"
+    },
+    {
+      "path": "checks/check-room-positive-anchors.mjs",
+      "originalDriverSha256": "2a3079acfb7689205346e3f5e3de510c9002028b8f4a45e90452896571095e4d",
+      "publishedDriverSha256": "aa4fbec189be5d463b30f8808ca62c79eb62f69fe24737382b8674f5e7896c81",
+      "changes": "Portable shared script import paths only; actual target/output arguments retained"
+    },
+    {
+      "path": "checks/check-all-header-leading.mjs",
+      "originalDriverSha256": "2b8259fb74b7b9d3d74b67690a2de33d04f1b8bb3397c9535e62887f79ee9f46",
+      "publishedDriverSha256": "2b8259fb74b7b9d3d74b67690a2de33d04f1b8bb3397c9535e62887f79ee9f46",
+      "changes": "Portable shared script import paths only; actual target/output arguments retained"
     }
   ]
 }

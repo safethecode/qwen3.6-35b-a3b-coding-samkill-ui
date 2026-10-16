@@ -278,3 +278,6 @@
 #review-view .icon-button { align-self: flex-start; }
 
 #rate-dialog .sheet-heading > div { flex: 1; min-width: 0; } #rate-dialog .sheet-heading [data-cancel] { flex-shrink: 0; word-break: keep-all; } #rate-dialog .sheet-heading h2 { word-break: keep-all; overflow-wrap: break-word; }
+
+.room-topbar{margin-inline:calc(var(--page-inset) * -1)}
+#detail-view .room-heading h1{font-size:18px;font-weight:600}

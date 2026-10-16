@@ -1,0 +1,23 @@
+{
+  "guides": [
+    {
+      "path": "skills/qwen-samkill-ui/references/upstream/reference-to-ui/references/reference-synthesis.md",
+      "sourceSha256": "f61501b8959c7281912fe61bd5bb565add6a1e430db1124958606137cdcca55d",
+      "deliveredSha256": "f61501b8959c7281912fe61bd5bb565add6a1e430db1124958606137cdcca55d",
+      "scope": "Full actual guide text"
+    },
+    {
+      "path": "skills/qwen-samkill-ui/references/upstream/reference-to-ui/references/typography.md",
+      "sourceSha256": "d1003eda3338b973d1399e492bf1adea0e8eced6c054fb65cf0de480b88431d7",
+      "deliveredSha256": "d1003eda3338b973d1399e492bf1adea0e8eced6c054fb65cf0de480b88431d7",
+      "scope": "Full actual guide text"
+    },
+    {
+      "path": "skills/qwen-samkill-ui/references/upstream/reference-to-ui/references/spacing-audit.md",
+      "sourceSha256": "30565c3fbc3e06cdb2e53aab78955b28142774a44c7e24eb34b661ef85135539",
+      "deliveredSha256": "30565c3fbc3e06cdb2e53aab78955b28142774a44c7e24eb34b661ef85135539",
+      "scope": "Full actual guide text"
+    }
+  ],
+  "scope": "Header hierarchy and inset correction only; no full product guide coverage claim"
+}

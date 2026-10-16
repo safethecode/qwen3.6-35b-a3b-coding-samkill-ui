@@ -756,6 +756,35 @@
         "request-detail",
         "request-outcome"
       ]
+    },
+    {
+      "id": "C1-room-leading-target",
+      "kind": "computedStyle",
+      "subject": ".room-topbar",
+      "states": [
+        "rooms",
+        "selected"
+      ],
+      "properties": {
+        "margin-left": "-20px",
+        "margin-right": "-20px"
+      }
+    },
+    {
+      "id": "C1-room-task-card-role",
+      "kind": "computedStyle",
+      "subject": "#detail-title",
+      "states": [
+        "rooms",
+        "selected"
+      ],
+      "properties": {
+        "font-size": "18px",
+        "font-weight": "600"
+      },
+      "modes": [
+        "normal"
+      ]
     }
   ],
   "scope": "Active B1/B2/B3 assisted-product mechanical contract. Native normal date pairing and16pxheader are normal-only;token readability applies to allactual captured modes. Missingotherstates/guides/nativehiddenbehavior stayunknown. Not fullreference/commercial approval."

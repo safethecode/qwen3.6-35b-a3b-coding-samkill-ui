@@ -23,6 +23,11 @@
       "sha256": "7ec9643030ec3380cfd2cd5e77c41b260971e3f02d9e3e69f0eb32142bd1c256"
     },
     {
+      "path": "checks/check-all-header-leading.mjs",
+      "bytes": 3029,
+      "sha256": "2b8259fb74b7b9d3d74b67690a2de33d04f1b8bb3397c9535e62887f79ee9f46"
+    },
+    {
       "path": "checks/check-cancel-date-layout.mjs",
       "bytes": 3574,
       "sha256": "e0855dcee53c2cb10dd8774d410cbea9d7699c0aa27ef5a29a0381677c5c0b6f"
@@ -63,19 +68,24 @@
       "sha256": "c581e48a05a6ffe2663331a38363a78996a80809ca7437081527ccf4849d577d"
     },
     {
+      "path": "checks/check-room-positive-anchors.mjs",
+      "bytes": 3166,
+      "sha256": "aa4fbec189be5d463b30f8808ca62c79eb62f69fe24737382b8674f5e7896c81"
+    },
+    {
       "path": "checks/check-room-workflows-v3.mjs",
       "bytes": 9933,
       "sha256": "e84a83d02a7f7f9527af7cf779535dbb6061fbae79e334a776e0817220674705"
     },
     {
       "path": "portable-derivatives.json",
-      "bytes": 4082,
-      "sha256": "d4d80fac9441be80e4a37e075e8d85ba710e4d1590c041df392bf6d84c07e199"
+      "bytes": 4813,
+      "sha256": "ea46aa15e8656e670f5748019fb34db0ed867d03ead056ab0b6bec764f0efd6e"
     },
     {
       "path": "README.md",
-      "bytes": 4012,
-      "sha256": "72cb7329e2c3947e5f45c4492eb8325a6b8e0cc2e94cde869cca1ae95920011f"
+      "bytes": 4666,
+      "sha256": "edec31d3be15a5e7a4fad2465290d1bcc0e21b54498009bd1cf45e8b7d467e11"
     },
     {
       "path": "serve.mjs",
@@ -304,8 +314,8 @@
     },
     {
       "path": "source/DESIGN.md",
-      "bytes": 6307,
-      "sha256": "c9eea76cb84032f2e758a3d64c8729826868ba04b7ca2a92654356c6f7b675da"
+      "bytes": 6706,
+      "sha256": "a64dc2cb692470e2be17678c7d564e8801c24428491f51923b4eaee2a8c7122c"
     },
     {
       "path": "source/design/booking-plan.json",
@@ -314,8 +324,8 @@
     },
     {
       "path": "source/design/component-plan.json",
-      "bytes": 61882,
-      "sha256": "69e07b38d89ff49b73dfb72efc4695cb344547c3e713f92a574cad5a0be4ab7e"
+      "bytes": 62005,
+      "sha256": "b6a07da346ffdad3eb5a6276ce1621fa544ca25c0fba487c78ee539bcd074707"
     },
     {
       "path": "source/design/flow.md",
@@ -329,13 +339,13 @@
     },
     {
       "path": "source/design/layout-contract.json",
-      "bytes": 18215,
-      "sha256": "aff7775c6091e0f07dfc7d24dd862cbd744f943be6dd31fbc6a5126626dfe5dd"
+      "bytes": 18797,
+      "sha256": "d9941095a8eac24b0d538008d21880e3ae5bca7104f6397c806c09e119dda5f4"
     },
     {
       "path": "source/design/typography.json",
       "bytes": 20604,
-      "sha256": "8402dc4dc2e0cb9b326dd2313f0ac71211140c2be8dce7066ddee3d11c2602bb"
+      "sha256": "edda4761f2d444d1f0ae955031f3e19e7b4c2a9150e4f9ca58ac77be828cd0a0"
     },
     {
       "path": "source/guest-editor-instance.js",
@@ -399,8 +409,8 @@
     },
     {
       "path": "source/room-layout-contract.json",
-      "bytes": 2505,
-      "sha256": "8ad1ab9583aa90aabe700c245fe1d2a4b42a5be464f3b3e3e915f98829279d0d"
+      "bytes": 3088,
+      "sha256": "c7796dc3e96cd2210fd3e83e9a982e48478ca0f9de7d8e70fe8e4b2405c5495b"
     },
     {
       "path": "source/room-rates-view.js",
@@ -429,8 +439,8 @@
     },
     {
       "path": "source/rooms.css",
-      "bytes": 7899,
-      "sha256": "ba85fbc57c56ea0baca9121388e7e3f7eaea26c66c17c37c2674c22a363b245b"
+      "bytes": 8019,
+      "sha256": "ac085d113092eb6d8b82254818e882cbe87aaefc927003a78be143be36d9a581"
     },
     {
       "path": "source/stored-quote.js",
@@ -439,8 +449,8 @@
     },
     {
       "path": "source/STYLE-CONTRACT.md",
-      "bytes": 6386,
-      "sha256": "0d5e05e6951e6c45be9a3d7b88e26b0fa38a24a3abc2b5d0465cee08ed85488c"
+      "bytes": 6663,
+      "sha256": "21167294dfddde57e2a3a9eaab1745f10da40159e7bb564295a7f0db24d1b613"
     },
     {
       "path": "source/styles.css",
@@ -459,8 +469,8 @@
     },
     {
       "path": "verify.mjs",
-      "bytes": 2645,
-      "sha256": "1d3d41531f8aa4d94faf28f4542012da158512d9b9144f24c2e305c9ea59d530"
+      "bytes": 2711,
+      "sha256": "64268c29327db2a59b2a6d9406d2bf4ce1f51289ada0b2b05a395c5c120b2434"
     }
   ]
 }
