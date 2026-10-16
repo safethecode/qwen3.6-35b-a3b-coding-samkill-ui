@@ -72,6 +72,10 @@ Text fitting inside individual controls does not establish separation from neigh
 
 Verify sticky labels against their owned content: a prior section title must not remain visibly isolated after its readable rows have left the viewport. Reveal the focused section and its weekday/column context without moving a pointer target between focus and click dispatch. A focus handler that scrolls to a title can cancel a real click even when programmatic activation passes. Keep actual pointer selection,error transitions,keyboard focus and resize tests alongside layout measurements;do not approve an orphan title from containment alone.
 
+When a responsive or short-height state changes the actual scroll owner,recheck sticky offsets against that owner's padding and margins. The same `left:0` can preserve a gutter in one owner and erase it in another. Keep the existing gutter token and verify the label's actual position after panning;computed offset or parent containment alone does not prove aligned content.
+
+If a bounded CSS repair still corrupts a known selector,freeze the actual selector and property in the host contract and request only a typed value slot. Validate the returned value before assembling it with a CSS parser;reject extra properties,tokens,important or selector fragments. Preserve the failed full-rule output and disclose the host assembly. A successful value slot proves that constrained edit only,not independent styling or reference discovery.
+
 For source-backed JSON examples, the component runner accepts per-element `dataSources` with `id`, a project-relative `file` and a JSON `pointer`. It delivers the selected actual records and binds both source bytes and delivered values. Missing records fail before inference rather than becoming invented helpers or fields. Bounded behavior callers can use the same `readElementDataContext` API. Its limits, pointer syntax and receipts are in the repository's `docs/COMPONENT-GENERATION.md`; data delivery does not prove correct use of the fields or replace semantic tests.
 
 ## Executable layout contract
