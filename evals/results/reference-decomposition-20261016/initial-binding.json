@@ -1,0 +1,323 @@
+{
+  "state": {
+    "status": "OBSERVATION_SHAPE_ACCEPTED_PIXEL_REVIEW_PENDING",
+    "pid": 41264,
+    "at": "2026-10-16T06:28:54.372Z",
+    "exitCode": 0
+  },
+  "result": {
+    "status": "OBSERVATION_SHAPE_ACCEPTED_PIXEL_REVIEW_PENDING",
+    "modelDigest": "4f095c6ea2d0d07d864c5c290edb166d77fa24292ae988d41dd3132230376447",
+    "imageSha256": "ed9fe3e07e71ae6ec5d23862f3acb8c95a8422916fb30741deb253d6aeb67638",
+    "scope": "Facts-only shape and model identity. Coordinates, exact OCR, reference fidelity, full decomposition and implementation remain unapproved.",
+    "sourceHashes": {
+      "index.html": "83a0061c2ac842e615a0ef663a322b32a3e469b4591fec1c9003327624b1a1c9",
+      "styles.css": "33c05015a78ffc6dafba173db6779f2bfd6d7217f91fe5af98d54369fa8e2165",
+      "app.js": "b11b4cd921dc54a5940408ae2910563622817d6f2b8ba7d39879417b08e02935",
+      "DESIGN.md": "ffa6d745d73f373100e345786ba427c1f22a3bfca488b33647d7c1712a75057e",
+      "assets/fonts/METADATA.pb": "9b8b27c0dd1adbb0057d1fbe9534207ab3606114ace6755453d14668912471a1",
+      "assets/fonts/NotoColorEmoji-OFL.txt": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2",
+      "assets/fonts/NotoColorEmoji.ttf": "0ae57fe58645638523ba35f388d93739d292539a9acb84df5700c81b1e1a28d2",
+      "assets/fonts/NotoEmoji-METADATA.pb": "88d5f22b863f40f1e0f14484e018cd93c5e0d899e80523d84351483b2bd3d993",
+      "assets/fonts/NotoEmoji-OFL.txt": "500bb1ccf43df7bbb522112f9133a52b16e1c35e809632f5d8609b179152de5b",
+      "assets/fonts/NotoEmoji.ttf": "de6c18832938afc99caf132b39d6a30a19bac7f2e812e28db2535b4608d27551",
+      "assets/fonts/NotoSansKR.ttf": "194018e6b2b293a7964f037b25c0249ce1418bc9ab3c971060a03aa57861e252",
+      "assets/fonts/OFL.txt": "1c05c68c34f9708415aada51f17e1b0092d2cea709bf4a94cd38114f9e73d7d9",
+      "assets/icons/BedDouble.svg": "92e030f21feb28a69e5b40cd8835e8eddc9990aa1e7edf75f6f5bc496373f3fa",
+      "assets/icons/CalendarDays.svg": "0602d1be0b8814686858660f26ece24e8403a97ffac66ae80725107efd97a93c",
+      "assets/icons/Check.svg": "3a5b45878e79ab641ff6ac8dd83f9c8d711c297856aba532af3fc3db2dfd9c96",
+      "assets/icons/ChevronDown.svg": "eeddd7b0466147fae6f92fff1c5ca91ee737da38714572eb4ed53e9a01caf58a",
+      "assets/icons/ChevronLeft.svg": "526ea8730c4ac9176a3df836141daf948df6edd8f2f35976a616f353fcc23081",
+      "assets/icons/ChevronRight.svg": "1db358b44dd0b76c26b8f0e81b3c36134a56bf2287acf197355c1c5419cbd75e",
+      "assets/icons/ClipboardList.svg": "0e0ef2b7bdb17d1a93959e0f4341fcdf70e68ab89a812f17b98f7b2a0fe85331",
+      "assets/icons/Heart.svg": "26421e91f4de871a545ed11defec7f59d7e6caea37f8da7cd14d3e046c1f4468",
+      "assets/icons/LICENSE": "b495047bd93a9b06913511076f504daba17d5bbeb3e0650f3bb53a4220329c57",
+      "assets/icons/MapPin.svg": "006d6b63bfa711de039a1e1128ee4b7749241aa11bf8293d8ff63bc2229a83dc",
+      "assets/icons/Minus.svg": "30e89246d91856aed7f2edccf9b2d296e939a98bb948532c2c744d48cab3970d",
+      "assets/icons/Plus.svg": "3d4f93d0e5a8eb932e4d1f0d71122d01917e7624439adc35dddcd5352d7a228f",
+      "assets/icons/Search.svg": "91afdeccb52714821640ad95dd03d1b66d3c678a1b08f5a53d706f9c28448b5d",
+      "assets/icons/SlidersHorizontal.svg": "042dbb407d9c877d79450ce7a920450813fbf1666835f16d8d7e3bbd459064d1",
+      "assets/icons/Star.svg": "0da3143d6e4af43fec84ef03382242d03d0e7a6d7a1cf2a42b8597e497fb86d3",
+      "assets/icons/Users.svg": "01824f8e3f0fd8152511dbcdcce74dd7818ffa7ad1f34bea0e1a2b052a51b9ec",
+      "assets/icons/UsersRound.svg": "447d5029f1e2b98525187bb4730dec3a142030f72a284f69571007deace19c4b",
+      "assets/icons/X.svg": "f27abfc353abc2497a1d9752e21e2e2e32eeeb4271401f2a067c4d1fcced7a23",
+      "assets/icons/manifest.json": "e3f0fafbe866004dc30ec5392ffd0130b25b7c7582c54731d08d18b83243d304",
+      "assets/photo-alternatives/provenance.json": "362b243a664fd969f2eda14e5afcec24bb175a0cd1435bb3810acfcc8cd6d799",
+      "assets/photo-alternatives/room-light.jpg": "9df877531d7d29254a641e92e42abb21406f1c72c3b946e1131a2824db246e56",
+      "assets/photo-alternatives/room-spacious.jpg": "469149c94d0f04077af0675580166a5f2d829eb23e27196b501a4eeadda91a0b",
+      "assets/photos/family-blue.jpg": "c37245f942ebfa8b17e52b2a537459250fcade0fe52a5e82bacd446134b8b0b2",
+      "assets/photos/family-light.jpg": "5ea08a543d58f4fea48b3ae7b830f1ed76dc1d2549c3863d268b7e14cc9e130b",
+      "assets/photos/provenance.json": "c358b38f9874c160f53b9505d237aed7e81a45ccec55190156f932e4612b3dec",
+      "assets/photos/room-neutral.jpg": "64cc4eff5cf6e123025b651ed5a14c8d1afebfccbc48286c1c77193a9468d7b3",
+      "assets/photos/room-warm.jpg": "f6cc627e9506037ca888eb7bddb59bcc2f1119d797d58ecd360f300d2020640c",
+      "assets/room-photo-provenance.json": "a0f0df333723150e663e66d129c155e2c916abc380f67c09df22f321a0d61b72",
+      "design/typography.json": "0311de3920e0e7850773c9f01c8bebb080be5bd62fecbd38c228a011092fb35c",
+      "design/component-plan.json": "6695573e324d46007a6938a3012eac677764e1b6a4cd6548486531ba94cb7157",
+      "design/layout-contract.json": "75e22609368cd51d5cb985884e6ed782837acce8b4108d96fcd05973bf25159b",
+      "booking-fixtures.json": "f280a73796116fcbe58974ee90ad96ef4e4a627310ee10295b2a34dbe5535cbf",
+      "booking.css": "aa85ad5ff34b7356e6d2f7358e88939d6cef24404b98283233b40950b8a8e923",
+      "calendar-controller.js": "28445f1fa206b1ead7a63cd4fcba17b1b76198f8addd165b8154aca98a693b65",
+      "calendar-focus.js": "4bdfc0b0bbfd142fabc2cc06790bc1ffbf6f65080f6b3e5672d048e4d090490a",
+      "calendar-instance.js": "6348283378de7b6bd842ac0d3d1e29562cec116558a795dd0d0de103e470d8e6",
+      "calendar-model.js": "b420bac1d76c8a5a3e5d0d666b1b8eccfa2c45aa8acdd3f5b137d78908eac16b",
+      "calendar-renderer.js": "aa520b967651306df57a96115b2107fe7171c9e42c1dd82399a4fc5b47600298",
+      "calendar.css": "2f413d2111d764cf20f04ee5735c0e26f8ce8637063584989b9cb85780edb66b",
+      "catalog.js": "3fb70ac22209c5384df1e0aa0cfe51cddad4c9f7045a8f4cd1c50e5ac1d664f8",
+      "catalog.json": "ba21b198d7964d70e3dddbd7ee0fb889809d5d34397485de9614f905136d8a97",
+      "controllers.js": "8b61cde3d93cf9b94694c44f8c6c57c927b14d9f26e57ba2292af87c2eabc5ac",
+      "core-runtime.js": "8f7455dc8af0f8b4074f777307fb90ee8d68e326c8a25639a6ba3c42a423e750",
+      "dates.js": "bb814d23499e375aaeb818698dae5ba96f1dc34687ee45625e61b2ada62d7095",
+      "guest-editor-instance.js": "db03a1661d831dd001b541d22ddc47a9b3cd00bd9a90af8bd1f3fb35bf1ce66a",
+      "guest-editor.css": "41680a495827cab4bf89540f229567a6c36544006a62a690a7c469f85de64d42",
+      "guest-editor.js": "924943c581f80170e7f92f449e9fd1eb734f9772b781f704d0cc1ba71944afba",
+      "query.js": "8708472cd57a32910602013769e023c666a7603e8030be36031ac0738c2a4a5f",
+      "quote.js": "db99f129b9d66bab2edffc99e39d0b2bbbe16934cdc5b321ac6738c275ee7091",
+      "request-pages.css": "226cf9723ce6e3027c7663f74af57a6f4d8344fbcd651fc14ff32b15baf5baae",
+      "request-reducer.js": "b94db34b38eb24fded225e7e61060d151fdb94b7df77a53155ac03c7bf1f184e",
+      "request-storage.js": "3e0be4388d3ca507aefa98781269fd7a051f92ef69bb89334d2faab4bb054fcf",
+      "request-store.js": "6686bb61f7319dd5f535c6ecb16d0a4a714d945615744cfe82e6581119ca9ad7",
+      "request-ui.js": "5691a6d061a85291dc73f7c059ba630ad7fe4fe08707ca50d950a2f409262738",
+      "room-cards.js": "f1a6b15bfe2980ed36616313fb010c24e7589d555950d6fc89dfee7adeb4ffb2",
+      "room-layout-contract.json": "567fb122100e5b157c7e899b0d88fbdf9fe813d658c3af9963fd4b4a40470372",
+      "room-rates-view.js": "99c0f3e1451fa51c9b35d7c56b26cd5c142298f25bac41546f7788a4c7e86466",
+      "room-rates.js": "a56f7bb987d632be03b1dafb16226320b2167a9858a5bde81b209c3583ba4740",
+      "room-renderer.js": "8d2775899b4ce890900c519901fab4e73bbcf9c97f1d4a3892f3bf7cf9e49c75",
+      "room-runtime.js": "f2b420a0f3100ad17a9375c20fba7380278845427323153813d25ccc8b9a70c2",
+      "rooms.css": "e95e3493adb00dc1c9577d77ce3295cbc4fbbc5a049046017e835ace59ea9b37",
+      "stored-quote.js": "b5cf4f1c722ef525897982d9073ac42423a6f5927b9409ca12651b8350869a36",
+      "trip-layout.js": "508b9df91731c8c9096923e80bffd8dc57bfa9030c66554530d17ee0938de372"
+    },
+    "harnessHashes": {
+      "AGENTS.md": "3eb9af77f4551532cd6973c81dac432515d406857ff1c6097c512eeb085eb75b",
+      "evals/service-cases.mjs": "32e9f476eae3539437bccad4892bfc839bb4ab12dc3e3842fb6c2a7c49d35e4e",
+      "package-lock.json": "97f0b672e3c84a57a0c8a3a291170929b80ef3025a88318aa99b7b4ad9cbdee6",
+      "runtime/exclusive-message.mjs": "3e167057a81288549bfaa21b94ee19bf14483fb30c4dd7c79e408b16396c85c7",
+      "scripts/asset-references.mjs": "669299f3a8b72b22648f4909d50a91d94c00af8eb444834c74d3cc075b892d5e",
+      "scripts/benchmark.mjs": "a97bfa6c6021884cfdb45ac631f853d115fc4245ae218dd6edcb3f68bab7f861",
+      "scripts/catalog-gate.mjs": "99b62ae18ae16ec185cc7a553c958a90810af60d73166d4d3346e7f5df8856dd",
+      "scripts/catalog-plan.mjs": "f1cf03229d42e1f56887d3ecced5df8c1ff9da70bdffb7ff1b747e0c3178a2d8",
+      "scripts/catalog.mjs": "bdd1e96da8c9d42ab7e89b4de5f3bde67ba338d9ac25f2eef7607c2e997e8bc6",
+      "scripts/comments.mjs": "1f376069d9f134fe6b974d9611ec1e8ecbe7a3efcd1ed021a0c31434d713a118",
+      "scripts/component-plan.mjs": "da75b9bd5393c6924670c838b2e24abed7c6229b1a7949f33b03deaeacc7f760",
+      "scripts/component-scope.mjs": "bd7d6505250627eac125f9f8dd40ec5ee32e88213c67b946015b907653260439",
+      "scripts/controls.mjs": "e63842a8286a6d1a317f95072df778a08ae6379a0053d7e353d6408e227e0740",
+      "scripts/design-checks.mjs": "b32ac2d270a0a6494c6d3e195348e481e02146d355df3de0147bd6349cf53f5c",
+      "scripts/dom-references.mjs": "f98202274d55fa641fdb94349fabbd7557ddee2c1a379a90a595eed22e41baf0",
+      "scripts/element-data.mjs": "6a0dd1c19380df4fa34222ffc5de0361f97cef1a0ad10ad71191f4afef437917",
+      "scripts/evaluate.mjs": "cc8381180b7225fbbdcff66cd620eae97433f26f654a91505c87f9daf82f00ef",
+      "scripts/feedback.mjs": "f681d661b20130f1246804eb465d0e45313fb8b96dd9a10e57c6a89392016c33",
+      "scripts/font-rendering.mjs": "3dbc464fd328f7a52b7e97ec908709d65ced937922347c85dbf7345885e396a3",
+      "scripts/generate-components.mjs": "6c909897534bfc8ca2a7db2809ef513f253d1c2487e68e67917e455ef31479fd",
+      "scripts/generate-service.mjs": "76d22f572ff7952d273aee02984d82969669d7d8a561a8d8f7fb64c6a048dd33",
+      "scripts/generate.mjs": "04c2126929a1cf378898e9b57163ce79198c47c84228f3ef9d3ca130dee2eda0",
+      "scripts/harness-binding.mjs": "244ee6cff34fe9e66efc662528a60e0c7525830392fb02aa981379d8aaeae4ce",
+      "scripts/icon-assets.mjs": "988a013be916847143e2242b34f07101a9c433826d3b80f4562db10c333a4791",
+      "scripts/icon-check.mjs": "dc7c96dcf3e2e7198d04ac9380d73017f12363e9bea792070a864e24a5ab4b80",
+      "scripts/icons.mjs": "105ad7cf37f100e0e922bbe086bbd5eb40e8e0389860fa75edbceefeaf58a679",
+      "scripts/inference-http.mjs": "bb410beb0fdbf74888567dbdc489198bf66490231cae92ff2dae3877ebefa52c",
+      "scripts/inference-options.mjs": "5554438d5a454be997f1b24cadf666a0a4c6fb6990fc095c04cefc03bcd664f3",
+      "scripts/iterate.mjs": "0396f6eaf1bca6114fba1d56684c1eabcc2c845820e80249ffd5ca37f588ec4f",
+      "scripts/label-check.mjs": "ef1ad24758761e19d108de19a720f1e0510ebd203a78edd9a0b01e08218e3f6d",
+      "scripts/layout-contract.mjs": "752503ced30426fb505affbb0d3491dda216447f29ed82da26c063a2cf3f1227",
+      "scripts/layout-state-coverage.mjs": "03238adacd6cf86871139b18cbc2afa6f889210c4d5bf2483f2495fd4f0d6403",
+      "scripts/local-font.mjs": "b3aa5c07856bf905ad1d34d7f55d58ae38a4fe6cf995e524ad2e3cb834c41a9b",
+      "scripts/media-visibility.mjs": "b30e3221e77ab64b58346ffd3f202a33d3d06df92663e99ec65f4a87a923480e",
+      "scripts/monochrome-paint.mjs": "d3069c56511cf1e8edf16c61d05eed222e603901454811be2b3546ae2faafdba",
+      "scripts/owned-rollback.mjs": "e7ae6ea4ba450f14a621dfe5e4c958e7ff619e33dd7f16332e6a776e937e879e",
+      "scripts/patches.mjs": "69e4e775435a4475772ab927912c1af87fc0e9600ca5c1966ff713b3f8bed948",
+      "scripts/process.mjs": "581bbc80176812e90a13b43e1957a5b2c94f92ddd64956b58e9ba9b09049d817",
+      "scripts/progress.mjs": "b4521023cf4fa5ca61350365db23b9222234d13aa5a971a2bcce920a3062d754",
+      "scripts/quality-loop.mjs": "4d8168ba213788ab413be20d3574c5cf5eaa8516031b57267a4d95ff30ec001b",
+      "scripts/quality-policy.mjs": "29fe2de8114a08a610ec2c7061f8a69a7e712ecf796d5c5a163cc37602fb9b35",
+      "scripts/quality.mjs": "810669c1cd79d72e4d4739f94756aff56958da4217689e04c2a44f6571a86724",
+      "scripts/readable-token.mjs": "a9635c692d9c978589c109d7f897416df5b7ffb6786c91914bc5c88ab207463b",
+      "scripts/reference-assets.mjs": "647cf0c06f2715817b181eefb907a0815ef62cc39a8b77ce23938c221da5831e",
+      "scripts/reference-capture.mjs": "e9f80432bc4865a4775a1deefd5b7b4c9165c143aa6a68f2adbd189dfc423157",
+      "scripts/refine.mjs": "3f233369b6ac5c353ed4e971672a2066aaba8e564397f79f7256373e3df9b52c",
+      "scripts/repair-component.mjs": "27852ef233760ef2e78ed24698cf428a296c7b0f437dedcd3ed49943a859d96a",
+      "scripts/repair-units.mjs": "659bc56e101e358adcfd4cf96b69cbc2fcf506d228c56db6da58cb30a70b58a6",
+      "scripts/repair.mjs": "566a74a4355b98fabe994c9ffa3323c28390c11d611b99a01415cc87a25841b8",
+      "scripts/replacements.mjs": "ef0d1207a43697ef603d9889319f81edd1b88686376a01dfdc564ef4190cb46f",
+      "scripts/review-findings.mjs": "2050e8b80eeb933d813f64cbeef0d873aab8c9fb9e5d2474309660fed4af26c6",
+      "scripts/run-state.mjs": "a5555d9729d6a5ef53408f490112154e35249d726463de2acf28efed316f205c",
+      "scripts/sampling.mjs": "7cefe8e0f243ca5b8d9ef60d93aaa35ed1e61913d9fcb25112740abb2f8f69c8",
+      "scripts/service-benchmark.mjs": "d72bc81fe06a87994d3d3f7f703f68839867f98b2f82c6483ce77ce4cb3e81d3",
+      "scripts/service-evaluate.mjs": "e82aca5cba89cb6329af4dd6c56ca2acfcd2c36b3aff492309244fb86258e71e",
+      "scripts/service-gallery.mjs": "78621a605a0b9869a12fb4e34f243a5c5ad3407db0d1f8a298e823f59cabcf74",
+      "scripts/service-interface.mjs": "b0cc323f9bf6e1f0b47ae24495ae14c29c57645ca49491450980a7ca99bd5569",
+      "scripts/service-progress.mjs": "4f1d99b8a23ea26ed984d07983d9a542d555acf6c7907c07da66df6b9815bb34",
+      "scripts/service-repair.mjs": "08ddc619c826136dd1c25f986eec6608e86980cadc6f3297f75e9b874b4ff4e4",
+      "scripts/service-resume.mjs": "1956218819ba5d2cc0263cc11c71d911a19c5f871e2194bebf8a7f45ded498d2",
+      "scripts/service-revalidate.mjs": "bba83ba00a9e8bf53ee1133e3c7f2da44f8bf4b50bd34ae66908edb69bc231c7",
+      "scripts/service-stages.mjs": "3a9fb2ffb89e201511e14680655003b4746dc9d0f477454d48f30f168b278bc5",
+      "scripts/setup.mjs": "8a9e96c393a64bf7bfb28462945b537b277725bc0b0d951b3dfed4c370a4e363",
+      "scripts/skill-context.mjs": "d99bda5203efdde31f7c5cb73a88357344a619d4154465911071ffd4857033f9",
+      "scripts/source-binding.mjs": "2f7062615198054611124c97531c983ecff7e440962309d035c40935a6617da7",
+      "scripts/spacing-audit.mjs": "2442eed07972748e1ecb18c8af76cf50ce68f0e05953e3e0a5b04a286c146154",
+      "scripts/stacked-content.mjs": "33d78907983e41a23e9dbabd3fc162bea16564f9ed563f0989964cdb8bffae34",
+      "scripts/text-gap.mjs": "8383f3e67940addf119a2fc120a4aa591c3dcb65f7bbd6f206e79440d68d1cc7",
+      "scripts/text-stress.mjs": "142026482c120ff98bf8f2b6159b769bfa1bb1f4845de626dd80ce192d3fa91c",
+      "scripts/transaction.mjs": "fa9bf159634f106d8d68410dcdeb2e9135893ee00e096ae2b48736968bc801de",
+      "scripts/typography-check.mjs": "b89a5f727df9fc45b197f829e524a1c384c960a9ea1d0ea92a1085aabc11c0d4",
+      "scripts/typography-metrics.mjs": "c97db775ed5829ac175d689afd0c962f1c4282cf2d9ad31d7885d4ef8effde80",
+      "scripts/typography.mjs": "51d6b7cc8fcf6ee615569ce31134c53b99aceeac533f94880a1111e6c12d65df",
+      "scripts/visibility.mjs": "fa748f7755f974823270b34f3e9a94e8d9913a4a8e22a631d561a0ac76f4f9d5",
+      "scripts/vision-review.mjs": "44d988922e8468b8086f62d6900747f0a1d27315f0ae07658848ceb4df239ae8",
+      "scripts/workflow-state.mjs": "d2cbbdcc14238eedd7c91b805cca0eade24cc38f4c0b9c23001c065494e15a56",
+      "skills/qwen-samkill-ui/SKILL.md": "d00fcadbb712d14479270f92ff49102a202ef32db351645816ac988868c8d353",
+      "skills/qwen-samkill-ui/references/decomposed-layout.md": "0f0860096d5ea88320abd5fcb67226ca34374a04659698ed9481a6aa4c6a9d66",
+      "skills/qwen-samkill-ui/references/layout-contract-api.md": "72faf0f7c71f4041d046d8a48aaf4395004302a0b10b34394292e1c0c1d64bbd",
+      "skills/qwen-samkill-ui/references/operating-rules.md": "bf0211bf4d076b66d7c78ab6849be58e36038f6afc0ee940486d3bb48ad042f6",
+      "skills/qwen-samkill-ui/references/service-contracts.md": "b78d62d4fd20046490b927ea4f0f43b36b3837717023a419efee0ca8282fe22d",
+      "skills/qwen-samkill-ui/references/upstream/design-md/guide.md": "06e3ed239bfd26723e5a2ca8b2dd049e50775e952243db803051860ae00dee76",
+      "skills/qwen-samkill-ui/references/upstream/design-md/references/document-contract.md": "84a919c4238a77164e625d61191d0de46cbabd41599a66eab852718e6a1cde61",
+      "skills/qwen-samkill-ui/references/upstream/onboarding-flow/guide.md": "1cea6902c39a49281da5ed1e0c4980788ec4fa914813065362a7c05caf571f44",
+      "skills/qwen-samkill-ui/references/upstream/onboarding-flow/references/flow-contract.md": "141799d53fe392690cbfcf16e35f4436db7e59ec44297e6a93861d5bc08cb705",
+      "skills/qwen-samkill-ui/references/upstream/reference-decompose/guide.md": "75b42c9d969e681167ee4bf1cdcc852da19901e4bd3005ea7d5a4ec6bb46fceb",
+      "skills/qwen-samkill-ui/references/upstream/reference-decompose/references/element-contract.md": "7269c5580b61c1af3ddd7631cd1cce6145e1238905fa6c022308cdf340abafdd",
+      "skills/qwen-samkill-ui/references/upstream/reference-review/guide.md": "6018495454ca3652463541feca21507c61a61c8d93407552f17866775dbfe900",
+      "skills/qwen-samkill-ui/references/upstream/reference-review/references/change-review.md": "835a677ff3307b05eda95c4d9aae578fe21f6040fed786d86867d4a2de1537eb",
+      "skills/qwen-samkill-ui/references/upstream/reference-review/references/design-gate.md": "e7d4d49ca8cc4cf9ac5657d40a0e2ae790ab08dc899eaadd0c57f8c85a74e922",
+      "skills/qwen-samkill-ui/references/upstream/reference-review/references/deslop-triage.md": "19b4b368b6381214ebcf43c2e8c13482482a9b80ef8e7b87656066bc67080d69",
+      "skills/qwen-samkill-ui/references/upstream/reference-review/references/failure-catalog.json": "82e459f06fb4113a1c2caa89ac2c28e95c29c186a0190bb8bf0c2a5caf74329f",
+      "skills/qwen-samkill-ui/references/upstream/reference-review/references/feedback-regression.md": "dbb395f3bb69064bdd27d5530161176f02c91f72eb52059312d8ef0d98070e9b",
+      "skills/qwen-samkill-ui/references/upstream/reference-review/references/review-criteria.md": "a1c23982ec119e90f7942c245fff8ba21b8a76e2ad3be67e2a4a14244e17097f",
+      "skills/qwen-samkill-ui/references/upstream/reference-review/references/state-stress.md": "5dbdc14b7e7d86a18f98a38f420ac5cf710575168f7b2668bed9db60908170b5",
+      "skills/qwen-samkill-ui/references/upstream/reference-to-ui/guide.md": "567526f1bf26f8cb75907be57b2c4c4f3968923e3b497697caf5e7891f684c62",
+      "skills/qwen-samkill-ui/references/upstream/reference-to-ui/references/anti-slop-code.md": "3dee460457dba58eeb7e5e9b0bd70ab91987aad85ef1ea389bf92e10d1b2a130",
+      "skills/qwen-samkill-ui/references/upstream/reference-to-ui/references/application-format.md": "0766ac025e38b30fbe6288b3f46deddffb8616eb8488041d86aec21add7a875a",
+      "skills/qwen-samkill-ui/references/upstream/reference-to-ui/references/dashboard.md": "a2e8952a72052e87d3cece16c2a8514d7fa033f36642e76d8d9de66fad2c91b0",
+      "skills/qwen-samkill-ui/references/upstream/reference-to-ui/references/design-guardrails.md": "dcdc36114b7332cef376c4b87d77524df064877d76f5607502f4ad65ae9beec9",
+      "skills/qwen-samkill-ui/references/upstream/reference-to-ui/references/design-tokens.md": "e8f6a508a6c81ce0519c1217fea1a68c6ee3d3ba9f64b1bd0627fa62953f8b7d",
+      "skills/qwen-samkill-ui/references/upstream/reference-to-ui/references/icon-controls.md": "c20876adeda380825867f3fd7ffa1381125623756c865d2bc1ace07a9d39692e",
+      "skills/qwen-samkill-ui/references/upstream/reference-to-ui/references/mobile.md": "8d3b261b27f5523b713a68fa445b37603d72eb0dc12887bd55fa16db4f9d6e03",
+      "skills/qwen-samkill-ui/references/upstream/reference-to-ui/references/primary-color.md": "7754a8f5796f72415161570643dd2fcea0cbf8e0e995598ad2d3155b24d4c57f",
+      "skills/qwen-samkill-ui/references/upstream/reference-to-ui/references/product-reasoning.md": "947cbbbe96401e2072c723c6b8ebf13c33621ea663f6bc8a66ef149638218ac3",
+      "skills/qwen-samkill-ui/references/upstream/reference-to-ui/references/reference-synthesis.md": "f61501b8959c7281912fe61bd5bb565add6a1e430db1124958606137cdcca55d",
+      "skills/qwen-samkill-ui/references/upstream/reference-to-ui/references/spacing-audit.md": "30565c3fbc3e06cdb2e53aab78955b28142774a44c7e24eb34b661ef85135539",
+      "skills/qwen-samkill-ui/references/upstream/reference-to-ui/references/typography.md": "d1003eda3338b973d1399e492bf1adea0e8eced6c054fb65cf0de480b88431d7",
+      "skills/qwen-samkill-ui/references/upstream/reference-to-ui/references/ui-composition.md": "8294a96f3e12501e25de75c395da5362359ba9697dfd76a9a1e7947650e43a8d",
+      "skills/qwen-samkill-ui/references/upstream/samkill-ui/guide.md": "fab042a57a7e9c2bb6e93a1e0ec3c11a6acaace4f1f9dd7981bf70f6cce3888e",
+      "skills/qwen-samkill-ui/references/upstream/uibowl-research/guide.md": "e69173ad106db14f3cdd9a319d9dfa5353db7065476e8a9c8503768b2220f209",
+      "skills/qwen-samkill-ui/references/upstream/uibowl-research/references/component-anatomy.md": "b7388c780937fd607d649cd96ab433bff3f0355fd1b30ba7f6c4e9f61d983106",
+      "skills/qwen-samkill-ui/references/upstream/uibowl-research/references/observation-format.md": "73d42bbbec0316530391f72983b76572eec0cda0d2844553cf1a5e1114ec1fe1",
+      "skills/qwen-samkill-ui/references/upstream/uibowl-research/references/research-plan.md": "85f3d74be7cc8b16ac9bb9ab99ed5ae66886f8da63874fe27b787a934c2de0cf",
+      "skills/qwen-samkill-ui/references/upstream/uibowl-research/references/search-examples.md": "6890636ac9f3dbc68904e39ef842d4e2d27874f025a1b86838f2700776ddfd81",
+      "skills/qwen-samkill-ui/references/upstream/ux-copy/guide.md": "2352e5db7e12be3f00eb32da92425b16611278519760f6bb6c24e6263ebb719b",
+      "skills/qwen-samkill-ui/references/upstream/ux-copy/references/copy-contract.md": "4f31283c5563ee7c9b883009a8843a01c490f03d586f9d18a15085285860f45f",
+      "skills/qwen-samkill-ui/references/upstream/ux-copy/references/korean-writing.md": "7672b1baddd7fc11ec7fc518f89f41558cb2606526030e8edcdbcb588ff47b2f"
+    },
+    "inputHashes": {
+      "runs/vision-decompose-20261016/run-facts.mjs": "4ef25f28b989143acf1d2ce0ec4334fd02516e96a5c973defebcdd5682e5afcd",
+      "runs/vision-decompose-20261016/facts-model-before.json": "9d55acb9ef62582a890b978bf5ffd2ac722014e08897381cd28a29c73e178e39",
+      "runs/vision-decompose-20261016/references/screen-6.png": "ed9fe3e07e71ae6ec5d23862f3acb8c95a8422916fb30741deb253d6aeb67638",
+      "skills/qwen-samkill-ui/references/upstream/reference-decompose/guide.md": "75b42c9d969e681167ee4bf1cdcc852da19901e4bd3005ea7d5a4ec6bb46fceb",
+      "skills/qwen-samkill-ui/references/upstream/uibowl-research/references/component-anatomy.md": "b7388c780937fd607d649cd96ab433bff3f0355fd1b30ba7f6c4e9f61d983106",
+      "runs/stay-booking-transfer-20261016/rooms/local-stage.mjs": "d8b74c67bf58bb1b402d5eca1401ad5f12aae7383d117abfb3c32742ed007329"
+    }
+  },
+  "settings": {
+    "model": "qwen-ui-35b",
+    "stream": false,
+    "think": false,
+    "options": {
+      "num_ctx": 32768,
+      "num_gpu": 16,
+      "num_batch": 128,
+      "num_predict": 2048,
+      "temperature": 0.2,
+      "top_p": 0.8,
+      "top_k": 20,
+      "min_p": 0,
+      "presence_penalty": 0,
+      "repeat_penalty": 1,
+      "seed": 1616
+    },
+    "format": {
+      "type": "object",
+      "properties": {
+        "purpose": {
+          "type": "string"
+        },
+        "observations": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "group": {
+                "type": "string"
+              },
+              "role": {
+                "type": "string"
+              },
+              "visibleText": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "observed": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "id",
+              "group",
+              "role",
+              "visibleText",
+              "observed"
+            ],
+            "additionalProperties": false
+          },
+          "minItems": 8,
+          "maxItems": 12
+        },
+        "relations": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "minItems": 5
+        },
+        "unknowns": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "minItems": 5
+        }
+      },
+      "required": [
+        "purpose",
+        "observations",
+        "relations",
+        "unknowns"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "assistance": "Host selected a previously inspected native UI Bowl image and supplied full applicable guides plus facts-only phase schema. No expected image facts, screenshot summaries or candidate source were given. Coordinates deferred prospectively, not retro-converted from failed normalized-box output. Current product source bound for provenance only.",
+  "privateRequestSha256": "f4798a6480d130f35b3a25d4937a839788777865a8464b7d5bd978d67eeb212d",
+  "rawResponseSha256": "0b88d903bb203d59c0488489a730c392bbdf6d7ef5ab3c3e0b0afcd3f18d8739",
+  "messages": [
+    {
+      "role": "system",
+      "content": "Inspect the actual attached mobile screenshot. Report only visible facts in the requested JSON. The screen purpose is the end user task visible in the screenshot, not your analysis task or the guide purpose. Do not copy guide examples as image content. English descriptions; transcribe readable Korean verbatim. No code or implementation choices."
+    },
+    {
+      "role": "user",
+      "content": "APPLICABLE DECOMPOSITION AND COMPONENT GUIDES\nGUIDE skills/qwen-samkill-ui/references/upstream/reference-decompose/guide.md\n---\r\nname: reference-decompose\r\ndescription: Use when a UI reference or screenshot has been obtained for design or implementation, when translating visual elements into implementation prompts, or when user feedback identifies a mismatch between a reference and its reconstruction.\r\n---\r\n\r\n# 레퍼런스를 구현 언어로 분해하기\r\n\r\n실제 이미지를 확보한 직후, 제품에 맞게 바꾸거나 코드를 만들기 전에 실행한다. 화면을 요소 목록으로만 설명하지 않고 **요소의 계약 + 요소 사이의 관계 + 조립 순서**로 번역한다. 검색은 `uibowl-research`, 제품 적용은 `reference-to-ui`, 결과 판독은 `reference-review`와 연결한다. 이미 유효한 분석이 있으면 재작성하지 않고 바뀐 영역만 보완한다.\r\n\r\n## 범위\r\n\r\n- 분석: 출처·이미지를 확인하고 아래 계약을 작성한다. 검색 목록만 요청한 작업에 강제하지 않는다. 읽기 전용/명세 전용이면 구현하지 않는다.\r\n- 재현 실험: 사용자가 실제 구현을 포함한 프롬프트 검증이나 요소별 구현을 요청하면 원본, 요소 표본, 프롬프트, 조립 화면을 함께 제공한다. 제품 각색과 분리하고 실제 구현 범위를 명시한다.\r\n- 제품 적용: 분석 후 채택·변경 결정을 Q-ID로 연결한다. 모든 레퍼런스를 별도 앱으로 재현할 필요는 없다.\r\n\r\n대상 AGENTS와 DESIGN.md를 읽는다. 사용자 기준과 원본이 충돌하면 원본 관찰을 유지한 채 적용 차이를 따로 기록한다. 한 화면의 사진 크기·색·배치를 공통 프리셋으로 만들지 않는다.\r\n\r\n## 번역 계약\r\n\r\n[요소·프롬프트 계약](references/element-contract.md)을 사용한다. 원본을 직접 보고 R-ID와 영역을 고정한 뒤 화면 → 의미 있는 묶음 → 개별 요소/변형으로 분해한다. 이미지 접근이 안 되면 `not-inspected`로 남기며 태그나 상식으로 빈칸을 채우지 않는다.\r\n\r\n각색·조합 작업은 [화면 스타일 계약](references/element-contract.md#각색-전-화면-스타일-계약)을 먼저 공유 입력에 넣는다. 원본 색 이름 대신 색·표면·그림·간격이 만드는 관계를 관찰하고, 커스텀 값은 그 관계와 연결한다.\r\n\r\nE-ID마다 역할, 부모/형제, 박스와 사방 여유, 정렬, 실제 내용과 줄바꿈, 글자/색/아이콘/경계, 관찰된 상태, 미확인, 조립 관계를 작성한다. 공통 속성은 공유 계약에 한 번 두고 변형에는 차이만 적는다. 상세 측정은 [컴포넌트 분석](../uibowl-research/references/component-anatomy.md)을 따른다.\r\n\r\n원본 관찰(O), 구현 선택(D), 검증(Q/V)을 섞지 않는다. image-px와 CSS-px를 구별하고 배율은 비교 조건으로 기록한다. 원본 CSS/DPR를 모른다고 관계까지 unknown으로 만들거나 추정값을 실측으로 바꾸지 않는다.\r\n\r\n효과의 구현 방법까지 분석할 때는 `실측 값 | 그 값에서 계산한 관계 | 의도/기술 가설`을 구별한다. 라이브 페이지에서는 배경→이미지/효과→오버레이→내용과 pseudo-element의 겹침 순서, 적용된 스타일, 클리핑·opacity를 확인하고 각 층이 무슨 효과를 만드는지 설명한다. 정지 이미지만 있다면 가능한 재현 방식이며 실제 CSS·라이브러리의 복원이라고 하지 않는다. 픽셀 샘플도 해당 이미지 위치의 색일 뿐 원본 토큰이나 전체 대비 인증이 아니다. 원본 분석 요청을 이유로 효과를 실제 제품에 추가하지 않는다. 이 보완은 [Jakub explain-interface](https://github.com/jakubkrehel/skills/tree/267330e1adfc66a718fb65fa6918c1f06d0a689e/skills/explain-interface)의 근거 구별과 층별 설명을 참고한다.\r\n\r\n## 프롬프트로 재현해 확인하기\r\n\r\n실험에서는 **공유 계약 + 선택한 E-ID의 프롬프트 + 명시된 에셋 + 조립 계약**을 구현 입력 묶음으로 고정한다. 요소 설명만 떼어 주면서 누락된 공유 값을 알아서 채우게 하지 않는다. 프롬프트 버전·입력 파일·출력 파일·원본을 봤는지를 기록한다. 독립 구현 평가를 사용하면 원본은 분석 담당만 보고 구현 담당은 고정 입력만 받는다. 같은 에이전트가 원본을 봤다면 비공개 재현 평가로 부르지 않는다.\r\n\r\n독립 요소와 조립 화면은 같은 컴포넌트·토큰을 사용한다. 사용자에게 원본 영역 → E-ID → 실제 입력 프롬프트 → 구현 표본 → 조립 결과를 대응시켜 보여준다. 사진 에셋만 분리해 사용하는 것과 UI 전체를 이미지로 덮는 것을 구별한다. 정지 이미지에 없는 동작은 미확인으로 유지하고, 동작 구현이 요청된 경우에만 별도 결정으로 설계한다.\r\n\r\n같은 표시 폭에서 먼저 구조·비율·밀도, 다음 세부 표현을 대조한다. 프롬프트를 수정하기 전 최초 입력과 렌더를 보존한다. 구현이 계약을 어겼는지, 계약이 원본을 잘못 읽었는지, 입력이 모호했는지를 나눠 최소 수정한다. 수정 후 실제 렌더로 다시 확인한다.\r\n\r\n## 사용자 교정을 쌓기\r\n\r\n[재발 점검](../reference-review/references/feedback-regression.md)으로 교정을 의미/관계/스타일/동작/검증 누락으로 구별하고 공유 계약의 적용처를 찾는다. 특정 px·색만 추가하는 대신 왜 이전 번역이 실패했는지, 어느 화면/상태에 다시 적용할지를 입력에 반영한다.\r\n\r\n사용자가 지적하면 [교정 기록 형식](references/element-contract.md#교정-기록)에 원문 요지, E-ID/관계, 기대/실제, 원인 가설, 수정 프롬프트, 재렌더 결과를 순서대로 추가한다. 원인 확인 전 스킬의 새 보편 규칙으로 확정하지 않는다. 재사용할 해석 원리는 적용 조건과 반례를 함께 스킬에 보완하고, 해당 화면의 좌표·색은 사례에 남긴다.\r\n\r\n이전 실패·프롬프트·증거는 보존한다. 사용자의 미응답은 품질 승인이 아니다. 이번 실험의 판독과 실제 제품의 전체 시각·행동 게이트를 구별하고 검증하지 않은 정확도나 범용성을 주장하지 않는다.\r\n\r\n## 재현 입력의 동결과 레이어 경계\r\n\r\n프롬프트 효과를 시험할 때 분석 시점 입력을 먼저 보존한다. 구현 후 DOM에서 역추출한 계약은 재조립에는 유용하지만 최초 프롬프트가 충분했다는 증거로 쓰지 않는다. 사진·도해 crop에는 기존 프레임이나 합성 문구가 남아 있는지 확인하고 새 도형과 겹치는 범위를 기록한다. 글자 수정은 역할별 최종 family와 인라인 강조 값을 기준으로 하며 과거 선언 문자열만 검색해 다른 역할의 서체까지 덮어쓰지 않는다.\r\n\r\n상세페이지 판매형 분석에서는 요소 외에 각 묶음의 설득 역할(관심·공감·차이·의심 해소·구성·선택)을 기록한다. 큰 숫자나 모델 사진이 있는지만 나열하지 말고, 앞의 질문과 뒤의 근거를 어떻게 연결하는지 분해한다. 원본의 순서와 신규 제품에 적용할 순서는 구별한다.\r\n\n\nGUIDE skills/qwen-samkill-ui/references/upstream/uibowl-research/references/component-anatomy.md\n# 컴포넌트 상세 분석\r\n\r\nUI 설계/구현 인계와 세부 분석 요청에 사용한다. 주 화면의 서로 다른 유형·크기·중요도·보이는 상태를 목록으로 만든다. 버튼, 입력, 카드/행, 제목/본문, 내비게이션, 탭, 배지, 구분선, 이미지, 오버레이 중 실제 존재하는 항목을 다룬다. 모든 반복 행을 다시 분석하지 않고 대표 항목과 차이를 기록한다. 화면에서 잘렸거나 보지 못한 부분은 분석 범위 밖이라고 명시한다.\r\n\r\n## 측정 원칙\r\n\r\n- 근거 종류: 직접 이미지, 사용자 관찰, DOM computed style, 실제 SVG/디자인 파일 등. 직접 확인하지 않은 자료를 실측으로 부르지 않는다.\r\n- 값의 종류: `measured / estimated / unknown`. 단위는 `image-px / CSS-px / rem / ratio` 등 좌표계를 포함한다. 추정이면 범위나 대략값을 쓰고 정확한 소수점을 만들어내지 않는다.\r\n- 미리보기 배율, 원본 크기, CSS viewport, 기기 배율은 각각 구분한다. 충분한 변환 근거 없이 이미지 px를 CSS px로 옮기지 않는다. 원본 너비만으로 잘린 영역·배율·기기 DPR을 추정하지 않는다.\r\n- 화면 경계부터 보이는 글자까지의 거리는 **시각적 거리**다. DOM 없이는 padding, margin, gap, line box, 아이콘 내부 빈 공간 중 무엇이 만든 거리인지 확정할 수 없다.\r\n- 글자의 잉크 높이는 font-size나 line-height가 아니다. 보이는 아이콘 크기는 SVG viewBox나 터치 영역 크기가 아니다.\r\n- 래스터에서 뽑은 색은 그 이미지의 합성 결과다. 압축·안티앨리어싱·투명도·그라디언트가 있는 픽셀을 원본 CSS 색/토큰으로 단정하지 않는다. 샘플 위치/방법이 없으면 ‘흰색으로 보임’처럼 기록하고 HEX를 꾸미지 않는다.\r\n- 정지 화면으로 hover/focus/pressed/disabled의 색과 동작을 복원하지 않는다. 보이는 상태만 관찰하고 나머지는 후속 설계 대상으로 남긴다.\r\n\r\n## 요소별 필수 관찰 항목\r\n\r\n| 묶음 | 기록할 속성 |\r\n|---|---|\r\n| 식별/범위 | E-ID, R/O-ID, 역할, 위치/영역, 유형/변형/상태, 분석 여부 |\r\n| 박스/배치 | 폭·높이, 정렬, 부모와의 관계, 다른 요소와 간격, full-width/내용 폭으로 보이는지; 실제 sizing 규칙은 별도 근거 |\r\n| 여백 | 위/오른쪽/아래/왼쪽 내부 시각 거리, 외부 거리, 자식 간 gap, 행/열/섹션 간격. CSS padding/margin은 확인된 경우만 이름 붙임 |\r\n| 글자 | 실제 라벨, 정렬, 크기·굵기·줄높이·자간의 관찰 범위, 줄 수, 줄바꿈/잘림, 글자색. 폰트 패밀리·실제 로드 서체는 확인한 범위만 |\r\n| 색상 한 쌍과 표면 | 배경 + 글자 + 아이콘 + 테두리 색, 반경, 테두리 두께/스타일, 그림자, 투명도. 각 상태를 분리하고 대비 확인 여부 표시 |\r\n| 아이콘 | 윤곽/채움/혼합, 선 굵기, 끝/모서리의 둥글기, 광학적 크기·박스 크기, 색, 글자와 gap·수직 정렬, 앞/뒤 위치. SVG 확인 전 패밀리·stroke 수치 단정 금지 |\r\n| 행동/상태 | 보이는 선택·비활성·로딩 등, 알려진 행동, 미관찰 상태/터치 영역/키보드 동작 |\r\n| 인계 | 채택할 규칙, 배제할 선택, 토큰화할 후보 역할, 미확인 값과 다음 확인 방법 |\r\n\r\n해당 요소에 없는 속성은 `not-applicable`과 이유, 존재 여부/값을 모르면 `unknown`으로 쓴다. 배경색만 기록하고 버튼 글자색을 생략한 분석은 불완전하다. 같은 배경이라도 글자·아이콘 색과 굵기가 달라지면 다른 표현이다.\r\n\r\n## 기록 형태\r\n\r\n요소 목록: `E-ID | 역할/변형/상태 | 출처·영역 | inspected / user-reported / not-inspected | 상세 기록 위치`.\r\n\r\n각 요소: `속성 | 관찰값 | measured/estimated/unknown | 단위·배율 | 근거/측정 방법 | 토큰 후보 역할`.\r\n\r\n토큰 후보는 `action.primary.background`, `action.primary.foreground`, `control.padding.inline`, `icon.control.stroke` 같은 **의미 후보**다. 기존 토큰을 읽기 전 이미 존재한다고 주장하지 않는다. 불확실한 관찰값은 디자인 토큰의 확정값이 아니다.\r\n\r\n## 가상 예시\r\n\r\n사용자 관찰: 600×1200 미리보기, 파란 CTA에 흰 글자와 흰 윤곽 화살표, 둥근 선 끝. 좌우 경계에서 내용까지 약 24 image-px, 아이콘-글자 약 8 image-px, 글자 잉크 높이 약 14 image-px. 원본·배율·DOM 미상.\r\n\r\nE1/primary/default: 배경 파랑, 글자/아이콘 흰색은 user-reported estimated; 정확한 HEX/대비 미상. 좌우 시각 거리는 약 24 image-px이고 상하 거리·실제 CSS padding은 unknown. 아이콘 간격 약 8 image-px는 CSS gap 확정값이 아니다. 폰트 크기/줄높이는 unknown이다. 아이콘은 outline/rounded caps로 관찰됐고 패밀리·선 굵기·박스 크기·join은 unknown이다. hover 등 다른 상태도 unknown이다.\r\n\r\n인계: 해당 표현을 보존하되 기존 토큰을 확인한 후 필요한 값을 `chosen`으로 결정한다. 라이브러리의 기본 채움 화살표나 검은 글자를 자동 적용하지 않는다. 구현에서 CSS 단위·글자 박스·실제 렌더를 확인하고 원본과 같은 표시 조건으로 비교한다.\r\n\nCURRENT BOUNDED PHASE: visible facts and semantic ownership only. Full decomposition still needs a separately validated geometry phase and implementation handoff. Do not return coordinates, CSS values, guessed fonts, guessed asset origins or hidden interactions in this phase. Describe 8–12 distinct visible elements/groups with stable E-IDs, their owned visible words, surface/group relationship, hierarchy, alignment and actual selection state. Separate OS chrome from product content. Include at least5 observed relationships and at least5 unknowns. Do not infer content above/below the crop or a whole workflow from this single screenshot. A visible row/checkbox proves its displayed state, not unseen click behavior. Keep facts concise. Do not say quality passes.",
+      "images": [
+        {
+          "privateNativeImageSha256": "ed9fe3e07e71ae6ec5d23862f3acb8c95a8422916fb30741deb253d6aeb67638",
+          "bytes": 44767,
+          "omitted": true
+        }
+      ]
+    }
+  ],
+  "scope": "Sanitized exact message text; native image payload replaced with its actual hash/length. Private request retained. Shape acceptance is not semantic/reference approval."
+}
