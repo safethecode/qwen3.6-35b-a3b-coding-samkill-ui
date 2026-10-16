@@ -27,7 +27,18 @@ On Windows, use `opencode.cmd` interactively if PowerShell blocks the `.ps1` shi
 
 ## Local model configuration
 
-The example model is Qwen3 Coder 30B. Hardware requirements and speed depend on quantization, context and GPU memory. Start with an already working Ollama model if available.
+The current 35B profile uses [Qwen3.6](https://ollama.com/library/qwen3.6), whose Ollama entry supports images and tools. Hardware requirements and speed depend on quantization, context and GPU memory. A source model already installed locally can be reused; the measured custom 35.5B Q4_K_M coding tag is distinct from the official source below, so its results are not transferred to untested weights.
+
+```sh
+ollama pull qwen3.6:35b
+ollama create qwen-ui-35b -f profiles/Modelfile.qwen36
+```
+
+Merge [the OpenCode 35B profile](profiles/opencode-qwen36.json) into the configuration actually loaded by OpenCode, preserving existing providers, agents, MCP and plugin settings. `OPENCODE_CONFIG` can select a different file from the global default. This profile pairs the server's 32768 context with the client's 32768 declaration, 8192 output budget, image/tool capabilities and bounded ten-minute request/header deadlines. Merely changing the display name or client context cannot change Ollama's server context. Confirm the loaded model and context through `/api/ps` after a real client request.
+
+The timeout fields follow [OpenCode's provider configuration](https://docs.opencode.ai/docs/config/); longer transport budgets do not complete an oversized task. Continue splitting implementation and repairs into complete bounded units. The profile's `reasoningEffort` requests nonthinking for the compatible client path; verify the outgoing request on your installed client instead of assuming unsupported options take effect. Native vision also needs image attachments to reach the model. An unconditional image-summary plugin can strip them even when the model supports vision.
+
+The original 30B/9B profiles and commands below remain for reproducing the historical fixture. They are not the current 35B setup or evidence of reference parity.
 
 ```sh
 ollama pull qwen3-coder:30b
