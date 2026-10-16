@@ -1,6 +1,8 @@
 # Connected accommodation requests
 
-This is a frozen, working local UI checkpoint, not a reference-quality approval. It connects accommodation discovery, search/filter/favorites, room/rate selection, price review, guest editing, request creation, request history/detail and cancellation. The historical TodoMate planner remains below reference quality; this more complex product does not turn its failure into a pass.
+The current source includes the [source-bound calendar legibility correction](../calendar-legibility/README.md). Earlier receipts retain their original source hashes and are historical after this correction.
+
+This is a working local UI checkpoint, not a reference-quality approval. It connects accommodation discovery, search/filter/favorites, room/rate selection, price review, guest editing, request creation, request history/detail and cancellation. The historical TodoMate planner remains below reference quality; this more complex product does not turn its failure into a pass.
 
 ## Run the UI
 

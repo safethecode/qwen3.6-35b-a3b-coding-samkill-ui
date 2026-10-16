@@ -891,7 +891,97 @@
         "rooms",
         "selected"
       ]
+    },
+    {
+      "id": "calendar-mobile-panel",
+      "kind": "maxWidth",
+      "subject": "#date-calendar",
+      "maximum": 390,
+      "states": [
+        "calendar-blank",
+        "calendar-range",
+        "calendar-error",
+        "calendar-footer",
+        "calendar-error-footer"
+      ]
+    },
+    {
+      "id": "calendar-horizontal-text-gap",
+      "kind": "textGap",
+      "subject": "#date-calendar",
+      "groups": "#calendar-months tbody tr",
+      "text": ".calendar-day",
+      "axis": "inline",
+      "minimum": 8,
+      "states": [
+        "calendar-blank",
+        "calendar-range",
+        "calendar-error",
+        "calendar-footer",
+        "calendar-error-footer"
+      ]
+    },
+    {
+      "id": "calendar-vertical-text-gap",
+      "kind": "textGap",
+      "subject": "#date-calendar",
+      "groups": "#calendar-months tbody",
+      "text": ".calendar-day",
+      "axis": "block",
+      "minimum": 8,
+      "states": [
+        "calendar-blank",
+        "calendar-range",
+        "calendar-error",
+        "calendar-footer",
+        "calendar-error-footer"
+      ]
+    },
+    {
+      "id": "calendar-header-contained",
+      "kind": "contained",
+      "subject": "#date-calendar .calendar-header",
+      "container": "#date-calendar",
+      "states": [
+        "calendar-blank",
+        "calendar-range",
+        "calendar-error",
+        "calendar-footer",
+        "calendar-error-footer"
+      ]
+    },
+    {
+      "id": "calendar-cancel-contained",
+      "kind": "contained",
+      "subject": "#calendar-cancel",
+      "container": "#date-calendar",
+      "states": [
+        "calendar-blank",
+        "calendar-range",
+        "calendar-error",
+        "calendar-footer",
+        "calendar-error-footer"
+      ]
+    },
+    {
+      "id": "calendar-apply-reachable",
+      "kind": "contained",
+      "subject": "#calendar-apply",
+      "container": "#date-calendar",
+      "states": [
+        "calendar-footer",
+        "calendar-error-footer"
+      ]
+    },
+    {
+      "id": "calendar-error-reachable",
+      "kind": "contained",
+      "subject": "#calendar-error",
+      "container": "#date-calendar",
+      "states": [
+        "calendar-error-footer"
+      ]
     }
   ],
-  "scope": "Active B1/B2/B3 assisted-product mechanical contract. Native normal date pairing and16pxheader are normal-only;token readability applies to allactual captured modes. Missingotherstates/guides/nativehiddenbehavior stayunknown. Not fullreference/commercial approval."
+  "scope": "Active B1/B2/B3 assisted-product mechanical contract. Native normal date pairing and16pxheader are normal-only;token readability applies to allactual captured modes. Missingotherstates/guides/nativehiddenbehavior stayunknown. Not fullreference/commercial approval. Calendar repair relations are prospective for the enlarged-glyph/short-height correction;previous79relations are preserved. Required calendar states must be activated and aggregated separately;this is not full product or catalog approval."
 }

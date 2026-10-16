@@ -104,8 +104,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 6912,
-      "sha256": "f75db400acba807a9f738caf61397a72d871b01916ee5bae79e2821b7dbc8753"
+      "bytes": 7113,
+      "sha256": "7d5358e30efef8d6874f8736f57f8384a41ab42ed3972e1e11426cb30cd0cbe7"
     },
     {
       "path": "serve.mjs",
@@ -309,8 +309,8 @@
     },
     {
       "path": "source/calendar-controller.js",
-      "bytes": 3615,
-      "sha256": "90c5e634d8699921739228ba12b8797be249a6b5954cbd90baccef046d54caac"
+      "bytes": 6474,
+      "sha256": "28445f1fa206b1ead7a63cd4fcba17b1b76198f8addd165b8154aca98a693b65"
     },
     {
       "path": "source/calendar-focus.js",
@@ -329,13 +329,13 @@
     },
     {
       "path": "source/calendar-renderer.js",
-      "bytes": 4120,
-      "sha256": "c664d6aefe676967b1638a435abe11d39bbf2fb494133191e85b2c4240c6b586"
+      "bytes": 4266,
+      "sha256": "aa520b967651306df57a96115b2107fe7171c9e42c1dd82399a4fc5b47600298"
     },
     {
       "path": "source/calendar.css",
-      "bytes": 4966,
-      "sha256": "aced1fe8de8ca7feee0ac8e5ffb8af66d0da6135e8c6851b6bc4c553cb98eaa5"
+      "bytes": 6685,
+      "sha256": "57dc24678d48497d4591cdb3c1233a7d9e3620d1c048b07a69fa894aec5ec3ac"
     },
     {
       "path": "source/catalog.js",
@@ -364,8 +364,8 @@
     },
     {
       "path": "source/DESIGN.md",
-      "bytes": 9238,
-      "sha256": "6347332b5c8efaced508885f1ffa5f6b723fd1a751fb07492af57a312c7ced6c"
+      "bytes": 9350,
+      "sha256": "7ffdcbfd75c0afd53e865ef4237ee3780d18ba5fd0c809307d682e9f67af2f2e"
     },
     {
       "path": "source/design/booking-plan.json",
@@ -374,8 +374,8 @@
     },
     {
       "path": "source/design/component-plan.json",
-      "bytes": 63471,
-      "sha256": "b8691db3110d79f9c509e374fb2f00e2a65f4155f91a07056387136a38c1369a"
+      "bytes": 43976,
+      "sha256": "429d3f040e46d11412911b837a92deb8b943fc12e8a9cec11607f2c21c748669"
     },
     {
       "path": "source/design/flow.md",
@@ -389,8 +389,8 @@
     },
     {
       "path": "source/design/layout-contract.json",
-      "bytes": 21825,
-      "sha256": "81f592b5424517cbc5c0ae5002f6f4db6cceb12ac6ba58ee41dd5f1dd8a1bd7e"
+      "bytes": 24254,
+      "sha256": "3b72fd122966d1f1a9720bf437e347a4583f3e1e9a2d09fe259a50958bdd1949"
     },
     {
       "path": "source/design/typography.json",
@@ -414,8 +414,8 @@
     },
     {
       "path": "source/index.html",
-      "bytes": 22145,
-      "sha256": "076c7264f77f78c2cf06bd440a1e5dca8f46f7a3ccb5289f394799fe26382890"
+      "bytes": 22312,
+      "sha256": "83a0061c2ac842e615a0ef663a322b32a3e469b4591fec1c9003327624b1a1c9"
     },
     {
       "path": "source/query.js",

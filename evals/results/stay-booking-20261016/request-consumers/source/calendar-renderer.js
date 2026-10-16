@@ -10,7 +10,10 @@ export function renderCalendarMonths(container,{month,today,draft,focusDate}){
     const table = document.createElement('table');
     const caption = document.createElement('caption');
     caption.className = 'calendar-month-title';
-    caption.textContent = monthData.label;
+    const monthLabel = document.createElement('span');
+    monthLabel.className = 'calendar-month-label';
+    monthLabel.textContent = monthData.label;
+    caption.appendChild(monthLabel);
     table.appendChild(caption);
     const thead = document.createElement('thead');
     const trHead = document.createElement('tr');
