@@ -1,0 +1,23 @@
+{
+  "guides": [
+    {
+      "path": "skills/qwen-samkill-ui/references/decomposed-layout.md",
+      "sourceSha256": "17937518fc26dc1da3bf9dc1f7fdebe9840be9e0ecb68f65e8407645b68ce323",
+      "deliveredSha256": "17937518fc26dc1da3bf9dc1f7fdebe9840be9e0ecb68f65e8407645b68ce323",
+      "scope": "Full actual guide text"
+    },
+    {
+      "path": "skills/qwen-samkill-ui/references/upstream/reference-to-ui/references/typography.md",
+      "sourceSha256": "d1003eda3338b973d1399e492bf1adea0e8eced6c054fb65cf0de480b88431d7",
+      "deliveredSha256": "d1003eda3338b973d1399e492bf1adea0e8eced6c054fb65cf0de480b88431d7",
+      "scope": "Full actual guide text"
+    },
+    {
+      "path": "skills/qwen-samkill-ui/references/upstream/reference-to-ui/references/spacing-audit.md",
+      "sourceSha256": "30565c3fbc3e06cdb2e53aab78955b28142774a44c7e24eb34b661ef85135539",
+      "deliveredSha256": "30565c3fbc3e06cdb2e53aab78955b28142774a44c7e24eb34b661ef85135539",
+      "scope": "Full actual guide text"
+    }
+  ],
+  "scope": "Phase-specific guide delivery only. Entry skill remains host-read/bound; this is not all-guide compliance or visual approval."
+}

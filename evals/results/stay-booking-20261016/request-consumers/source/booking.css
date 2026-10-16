@@ -59,3 +59,7 @@
 #review-view .booking-date{background-color:transparent;border-radius:0px}
 
 #review-view .booking-header{padding-inline:0}
+
+#review-view .booking-date strong{font-size:14px}
+#review-view .booking-dates{padding:12px}
+#review-view .booking-date{padding:0}

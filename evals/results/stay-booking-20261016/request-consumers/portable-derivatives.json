@@ -91,6 +91,12 @@
       "originalDriverSha256": "20a3b7f9540535f5c75b273d24de1b1313b701a0ebe5b1febb1c9e532e046323",
       "publishedDriverSha256": "bef8957e68733d64f7e4807e5cc086cbe243d4b60d871234155c2013d8af1247",
       "changes": "Portable browser helper path only"
+    },
+    {
+      "path": "checks/check-associated-visual-feedback.mjs",
+      "originalDriverSha256": "3bf2725a06a231287f3fb163004cbb1c1b4e9b84b0f9e95457d0a8736b2c4b32",
+      "publishedDriverSha256": "6befc062643bf523e340862d9dcb52c1d761b9b924195d6c2def1796605cba15",
+      "changes": "Portable import/helper paths only"
     }
   ]
 }

@@ -1,0 +1,10 @@
+{
+  "redactions": [
+    {
+      "path": "request.json",
+      "originalSha256": "6edb8979d5293437e9ad4999064502ee0fa91e197e0b544c0e918f27af92210e",
+      "publishedSha256": "6f59d8c105e999163f54b14dc50ec404a7c9d7285621d5a57cae1b46b8eb64c9",
+      "reason": "Native/candidate image payloads omitted with explicit roles and hashes; candidate PNG retained separately, original request preserved privately."
+    }
+  ]
+}

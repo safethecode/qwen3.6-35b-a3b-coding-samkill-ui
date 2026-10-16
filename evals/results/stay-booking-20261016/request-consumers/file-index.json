@@ -28,6 +28,11 @@
       "sha256": "2b8259fb74b7b9d3d74b67690a2de33d04f1b8bb3397c9535e62887f79ee9f46"
     },
     {
+      "path": "checks/check-associated-visual-feedback.mjs",
+      "bytes": 4446,
+      "sha256": "6befc062643bf523e340862d9dcb52c1d761b9b924195d6c2def1796605cba15"
+    },
+    {
       "path": "checks/check-cancel-date-layout.mjs",
       "bytes": 3574,
       "sha256": "e0855dcee53c2cb10dd8774d410cbea9d7699c0aa27ef5a29a0381677c5c0b6f"
@@ -84,13 +89,13 @@
     },
     {
       "path": "portable-derivatives.json",
-      "bytes": 5130,
-      "sha256": "c8c82a14305bc78a2584641ed389afbd0cb17264a1469748fe90c347249157dc"
+      "bytes": 5454,
+      "sha256": "74c5378d2c3882fa37aed25ef57b1608100569b1c6e51415b29e3f9977720e80"
     },
     {
       "path": "README.md",
-      "bytes": 5134,
-      "sha256": "37367875aa816afdaf328b58591142c7fae995576df8d846c58e4a5a0ff1fbfe"
+      "bytes": 5743,
+      "sha256": "169d7a2faddd5e8b70e53d5f8c0d5be582cadbcc565dafb86a548fa121382b24"
     },
     {
       "path": "serve.mjs",
@@ -289,8 +294,8 @@
     },
     {
       "path": "source/booking.css",
-      "bytes": 5552,
-      "sha256": "7f420f42805c33506ba145c851f178e5528b72b3566f415c001dd43f1f46f1c2"
+      "bytes": 5683,
+      "sha256": "aa85ad5ff34b7356e6d2f7358e88939d6cef24404b98283233b40950b8a8e923"
     },
     {
       "path": "source/catalog.js",
@@ -319,8 +324,8 @@
     },
     {
       "path": "source/DESIGN.md",
-      "bytes": 7032,
-      "sha256": "6787bd914f77222a1e969004d484484239567b2e744693bcc2e19655a6a64fe5"
+      "bytes": 7394,
+      "sha256": "75a1fc64ef05704e3545b866280279a05f3b9850bfed7dc3ac2c5ca4a63b5a9b"
     },
     {
       "path": "source/design/booking-plan.json",
@@ -329,8 +334,8 @@
     },
     {
       "path": "source/design/component-plan.json",
-      "bytes": 62047,
-      "sha256": "89d45ba5e975b06e2892180f6917f62babb918f4de713638c4ab56416f7d5f6d"
+      "bytes": 62182,
+      "sha256": "e0a06d1c9bc2ae115cc41fa9caf3dd145aa6fb5d03c22bc68987cf7668315c4b"
     },
     {
       "path": "source/design/flow.md",
@@ -344,13 +349,13 @@
     },
     {
       "path": "source/design/layout-contract.json",
-      "bytes": 19885,
-      "sha256": "7baf67ede4a40425fc60e08fdbc8fa661dd299b1aae9aca8aada69ed2e51185c"
+      "bytes": 20917,
+      "sha256": "2a9206561528a9363ce964229ca9393e4ec8663946a3f5408096dbd79f8ad9be"
     },
     {
       "path": "source/design/typography.json",
       "bytes": 20604,
-      "sha256": "edda4761f2d444d1f0ae955031f3e19e7b4c2a9150e4f9ca58ac77be828cd0a0"
+      "sha256": "b3a7ab3ebbf24c1fdf70a7791bdd01a0b2afb4dceb8fb7f94743d284acf4a91b"
     },
     {
       "path": "source/guest-editor-instance.js",
@@ -474,8 +479,8 @@
     },
     {
       "path": "verify.mjs",
-      "bytes": 2711,
-      "sha256": "64268c29327db2a59b2a6d9406d2bf4ce1f51289ada0b2b05a395c5c120b2434"
+      "bytes": 2837,
+      "sha256": "cd448557f4eba73f390cf6560271ebd23b34078d8b3b43acfec5e224f1403ff4"
     }
   ]
 }

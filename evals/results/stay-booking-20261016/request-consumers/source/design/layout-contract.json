@@ -821,6 +821,48 @@
         "rooms",
         "selected"
       ]
+    },
+    {
+      "id": "feedback-date-parent-insets",
+      "kind": "computedStyle",
+      "subject": "#review-view .booking-dates",
+      "properties": {
+        "padding-top": "12px",
+        "padding-right": "12px",
+        "padding-bottom": "12px",
+        "padding-left": "12px"
+      },
+      "states": [
+        "booking"
+      ]
+    },
+    {
+      "id": "feedback-date-child-insets-0",
+      "kind": "computedStyle",
+      "subject": "#review-view .booking-date:first-child",
+      "properties": {
+        "padding-top": "0px",
+        "padding-right": "0px",
+        "padding-bottom": "0px",
+        "padding-left": "0px"
+      },
+      "states": [
+        "booking"
+      ]
+    },
+    {
+      "id": "feedback-date-child-insets-1",
+      "kind": "computedStyle",
+      "subject": "#review-view .booking-date:last-child",
+      "properties": {
+        "padding-top": "0px",
+        "padding-right": "0px",
+        "padding-bottom": "0px",
+        "padding-left": "0px"
+      },
+      "states": [
+        "booking"
+      ]
     }
   ],
   "scope": "Active B1/B2/B3 assisted-product mechanical contract. Native normal date pairing and16pxheader are normal-only;token readability applies to allactual captured modes. Missingotherstates/guides/nativehiddenbehavior stayunknown. Not fullreference/commercial approval."

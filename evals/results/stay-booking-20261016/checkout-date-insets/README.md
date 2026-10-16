@@ -1,0 +1,15 @@
+# Compact checkout dates and owned insets
+
+The user identified oversized check-in/out values and insufficient inner whitespace. Direct comparison at the same 296px display width confirms that the earlier chosen 16px values dominated this compact summary. Original native CSS, font and DPR remain unknown. This repair chooses 14px/600/1.5 for date values, retains 14px/500 labels and nights, and preserves the 14px floor for core information. It introduces no 12px exception or global body, control or price shrink.
+
+The old parent had no padding, while each child's 12px padding fell to 4px in a narrow container. The single quiet parent now owns 12px on every edge; transparent children own zero. The existing 4px label gap, 8px grid gap, 20px page inset, complete dates, normal pairing and enlarged reflow remain. Natural panel height is 70px in the ordinary state. These are chosen implementation values, not recovered native CSS.
+
+Actual Ollama Qwen3.6 35B returned three CSS values in 124.2 seconds after receiving the full local decomposition, typography and spacing-audit guides plus native and candidate images. The host diagnosed the conflict, declared the exact role and insets, and assembled bounded values. Runtime changes are limited to those three declarations. Markup, behavior, data, assets and unrelated styles are unchanged. All prior 74 relations remain, with three inset checks added before inference. Original failures and input/source hashes are retained.
+
+Twelve prospective date captures fail before repair. All 36 final combined icon/date captures pass without clipping or pressure findings. The date subset covers 12 normal, 200% text and text-spacing captures at 296, 320, 390 and 1440px viewport widths. Direct normal/enlarged inspection at 296px and normal inspection at 390px confirm quieter date type and visible parent insets. A separate read-only review found no material issue in this scope.
+
+Fourteen fresh portable verification jobs pass against the published source. They include actual font roles, font-failure recovery, 35 request workflows, guest routing, discovery and room flows, 24 header interactions, 16 room-label control interactions and 132 request-state captures. Counts overlap and are not a quality score. See verification/state.json and its per-job reports. This artifact distributes the before/after date PNGs and verification reports; the full private run retains the other state PNGs.
+
+The local skill now requires measuring text roles, line boxes, gaps and padding together, with one inset owner and natural growth. Guide delivery receipts prove that the applicable texts reached this request; they do not prove compliance with every guide or catalog item. Sanitized model inputs omit native image payloads and private paths, retaining explicit hashes and image roles. Original bytes remain private.
+
+Full 75-rule/eight-guide coverage, repeated independent reproduction and transfer quality, request editing and a custom calendar remain unfinished. The historical planner remains below reference quality. This is a scoped correction, not overall commercial or reference parity.

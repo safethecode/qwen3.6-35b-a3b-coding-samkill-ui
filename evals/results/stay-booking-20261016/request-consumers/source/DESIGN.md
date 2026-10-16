@@ -45,3 +45,5 @@ Task-header back targets own the leading edge; the icon ink aligns with the cont
 The C1 prospective room-header correction matches the task heading to the existing room-card18/600 role. The original host-prescribed22/700 task hierarchy was stronger than the native relationship. Room topbar horizontal margins cancel the inherited main inset around the unchanged44px target. All other typography, spacing tokens and prior relations remain. Fresh scoped verification is required.
 
 Related room-title text and its official trailing chevron align to the complete label-block center,including wrapped labels,enlargement andspacing stress. Preserve44px targets andall other spacing/typography. This corrects the prior flex-start host instruction; it is not a universal alignment preset for unrelated controls.
+
+Compact read-only checkout dates use explicit14/600/1.5 values and14/500 labels/nights. The single quiet parent owns12px insets;transparent child dates own0padding. Other body/control/price roles remain. This responds to user-observed reference mismatch;originalCSS/font/DPR remain unknown. Keep natural height,normal pairing and enlarged complete-date reflow.
