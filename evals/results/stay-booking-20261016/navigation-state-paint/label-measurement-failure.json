@@ -1,0 +1,12 @@
+{
+  "at": "2026-10-16T02:02:11.576Z",
+  "stage": "New v3 label pixel measurement",
+  "captures": 36,
+  "labelFailures": 108,
+  "iconFailures": 0,
+  "diagnosis": "Single-alpha SVG RGB ray falsely rejects Windows subpixel text AA. Actual Noto core colors match expectedgray/pink exactly; fringes vary coverage by RGBchannel. No product change warranted.",
+  "evidence": "label-diagnostic/report.json andpaint-green-v3/report.json",
+  "review": "Independentread-onlyreview reproduced expectedgraycore32pixels andfringes[102,119,178]/[176,119,106]",
+  "v4": "KeepstrictSVGpaint method; solid Koreanlabelmeasurementallowsper-channelcoverageonactualwhitesurface,requires>=5expectedforegroundcorepixels,no pixelsdarkerthanforeground,uniformtext/noeffects context,plusrealblack-labelcounterfactual",
+  "preserved": "v3driver,36failingcaptures,report unchanged"
+}

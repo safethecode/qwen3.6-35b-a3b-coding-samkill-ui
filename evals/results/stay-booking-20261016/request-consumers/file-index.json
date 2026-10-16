@@ -63,6 +63,11 @@
       "sha256": "698cec0b45b6432c9fcf2ef3b6c6a10c87e5b1234565c37f8c1605d5784dda8a"
     },
     {
+      "path": "checks/check-navigation-paint.mjs",
+      "bytes": 7135,
+      "sha256": "0f8cd11b5e5c60ebb63352fb044364ff38f267e6a920d8a487ae52efd2c90f49"
+    },
+    {
       "path": "checks/check-price-hierarchy.mjs",
       "bytes": 3589,
       "sha256": "e3ec89cea78904212cb4156762347d3a05604e5e6a11833a09094969d0a1ebe6"
@@ -94,13 +99,13 @@
     },
     {
       "path": "portable-derivatives.json",
-      "bytes": 5767,
-      "sha256": "af130eb1788eb45524d6aa8dbec8814cde18d770fab8f7d550d464f45598d498"
+      "bytes": 6724,
+      "sha256": "ee090a58d6ef01fd644134d926bd408b4933ee2f52f2ab3978e06e8e5b866549"
     },
     {
       "path": "README.md",
-      "bytes": 6379,
-      "sha256": "4f529a108bbc80b5f98fde6e1b34e89978470c4b185aa938551134e1aeaa14ab"
+      "bytes": 6912,
+      "sha256": "f75db400acba807a9f738caf61397a72d871b01916ee5bae79e2821b7dbc8753"
     },
     {
       "path": "serve.mjs",
@@ -329,8 +334,8 @@
     },
     {
       "path": "source/DESIGN.md",
-      "bytes": 7779,
-      "sha256": "d87d6345c68387933f8327b275284b534f52d2766a9bf11f941b0afaba49340e"
+      "bytes": 8174,
+      "sha256": "3b6e99419f63b0209eeb8d33821ddc2baa56b9097f335001d5d69bac8de4c0fa"
     },
     {
       "path": "source/design/booking-plan.json",
@@ -339,8 +344,8 @@
     },
     {
       "path": "source/design/component-plan.json",
-      "bytes": 62236,
-      "sha256": "dd8507828b97300b7e197adc791eb648a642d8626dd6376d4bd70fba45ecb4cb"
+      "bytes": 63471,
+      "sha256": "b8691db3110d79f9c509e374fb2f00e2a65f4155f91a07056387136a38c1369a"
     },
     {
       "path": "source/design/flow.md",
@@ -379,8 +384,8 @@
     },
     {
       "path": "source/index.html",
-      "bytes": 18601,
-      "sha256": "d1f1a71fc1280e64269edf3c682a55295a33e9e434b47d9ca0e992deed5730c3"
+      "bytes": 19718,
+      "sha256": "0a1b2cfab1945227ea1c5c47734c16d43f87f37b1c6009834f04671231cbdad8"
     },
     {
       "path": "source/query.js",
@@ -469,8 +474,8 @@
     },
     {
       "path": "source/styles.css",
-      "bytes": 9657,
-      "sha256": "bb23bc6427d0b1d9d769a569873b3e1d2003483ca6bbbd32ed3c01a523334d2a"
+      "bytes": 9692,
+      "sha256": "620fde01d3e609d8595cf431e02b6ce4ffcd7a1510199d804e1625d2155209e7"
     },
     {
       "path": "source/trip-layout.js",
@@ -484,8 +489,8 @@
     },
     {
       "path": "verify.mjs",
-      "bytes": 2890,
-      "sha256": "4bf5967969b7a4aaf57bd83569cb518795dd26364b21c8a4e1f49eda14df6ed4"
+      "bytes": 2945,
+      "sha256": "a3ceb71a860d5021f47ba3c75694d488b22c42b4ac29659eaf9944af4f7205d2"
     }
   ]
 }

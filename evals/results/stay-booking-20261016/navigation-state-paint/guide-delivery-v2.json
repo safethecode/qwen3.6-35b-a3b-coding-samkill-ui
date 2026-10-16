@@ -1,0 +1,34 @@
+{
+  "guides": [
+    {
+      "path": "skills/qwen-samkill-ui/references/decomposed-layout.md",
+      "sourceSha256": "2ce9966e660bd08ff1b2218e0aad040e78e567b6d12716e5de20114c9c31139c",
+      "deliveredSha256": "2ce9966e660bd08ff1b2218e0aad040e78e567b6d12716e5de20114c9c31139c",
+      "scope": "Full actual guide text"
+    },
+    {
+      "path": "skills/qwen-samkill-ui/references/upstream/reference-to-ui/references/icon-controls.md",
+      "sourceSha256": "c20876adeda380825867f3fd7ffa1381125623756c865d2bc1ace07a9d39692e",
+      "deliveredSha256": "c20876adeda380825867f3fd7ffa1381125623756c865d2bc1ace07a9d39692e",
+      "scope": "Full actual guide text"
+    }
+  ],
+  "assets": [
+    {
+      "path": "runs/nav-state-20261016/source/assets/icons/Search.svg",
+      "name": "Search",
+      "sha256": "91afdeccb52714821640ad95dd03d1b66d3c678a1b08f5a53d706f9c28448b5d"
+    },
+    {
+      "path": "runs/nav-state-20261016/source/assets/icons/Heart.svg",
+      "name": "Heart",
+      "sha256": "26421e91f4de871a545ed11defec7f59d7e6caea37f8da7cd14d3e046c1f4468"
+    },
+    {
+      "path": "runs/nav-state-20261016/source/assets/icons/ClipboardList.svg",
+      "name": "ClipboardList",
+      "sha256": "0e0ef2b7bdb17d1a93959e0f4341fcdf70e68ab89a812f17b98f7b2a0fe85331"
+    }
+  ],
+  "limits": "Host explicit shell/asset-validation assistance; not whole guide/catalog compliance."
+}

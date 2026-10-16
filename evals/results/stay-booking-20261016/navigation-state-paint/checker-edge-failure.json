@@ -1,0 +1,9 @@
+{
+  "at": "2026-10-16T01:46:51.093Z",
+  "stage": "Host checker before production repair",
+  "error": "Rounded nav corners caused parent nav to intercept a2px,2px corner click",
+  "change": "Use actual mid-edge points inside the existing rounded target; preserve44px size andallpaint/keyboard checks",
+  "productionChanged": false,
+  "preservedDriver": "check-navigation-paint-v1.mjs",
+  "partialCaptures": "red"
+}

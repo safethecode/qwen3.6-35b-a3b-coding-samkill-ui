@@ -1,0 +1,6 @@
+{
+  "status": "FAILED_STAGE",
+  "pid": 48904,
+  "at": "2026-10-16T01:52:13.255Z",
+  "error": "Expected values to be strictly deep-equal:\n+ actual - expected\n\n  {\n    'data-destination': 'browse',\n+   class: 'nav-item',\n    href: '#browse'\n  }\n"
+}

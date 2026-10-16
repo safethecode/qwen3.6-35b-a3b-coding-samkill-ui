@@ -1,0 +1,9 @@
+# Navigation icon and text state color
+
+Confirmed ORC-F11/G19 failure: all three external SVG img elements paint black although their computed color inherits the selected action or unselected muted label color. The fresh pixel checker captures36route/text-mode/width images and108incorrecticonpaint cases on the exact price checkpoint. CSS color on img is a false proof of SVG paint.
+
+This is chosen local product navigation,not native tab reproduction. Keep three real anchors,href/data-destination labels,aria-current runtime ownership,visible Korean labels,44px targets,20px icon slots,4px icon-label margin,focus,edge/Enter navigation andall79previousrelations. Existing selected label colors/background/font weights remain. No route,storage,price,form,othermarkup orasset-file changes.
+
+The host prewires the existing navigation img selector to include svg with identical width,height,display,margin declarations. Qwen returns only navHtml for the existing nav. Replace each external img with an inline copy of its actual pinned official Lucide SVG: Search,Heart,ClipboardList. Only the root width andheight become20; every other root attribute,viewBox,path andgeometry must exactly match the supplied source. Keep aria-hidden=true andfocusable=false; do not invent paths,filters,variants,icons,logos ornewvisiblecopy. The host validates the entire semantic shell andofficial shape tree before replacing the nav once. No partial output is accepted.
+
+Actual currentColor SVG paint must match action color when aria-current=page andmuted color otherwise. VerifyactualPNGpixels,notonlycomputedcolor,for everytab,normal/200percent/spacing and296/320/390/1440. Retain the failing before capture. Test real icon/label/mid-edge/keyboard navigation andfocus/routing; roundedcorneroutside-link points are not painted link targets. Whole connected consumer checks remain required; no native/full75/commercialparity claim.

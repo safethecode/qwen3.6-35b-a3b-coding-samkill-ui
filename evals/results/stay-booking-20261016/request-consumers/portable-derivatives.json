@@ -103,6 +103,21 @@
       "originalDriverSha256": "28d07f2e501bb0bf1f985f1f39fddf689f58109a605252914af94476a14e1ce2",
       "publishedDriverSha256": "e3ec89cea78904212cb4156762347d3a05604e5e6a11833a09094969d0a1ebe6",
       "changes": "Portable import/helper paths only"
+    },
+    {
+      "path": "checks/check-navigation-paint.mjs",
+      "originalDriverSha256": "9649e2942555932ccde65ee206857cec585efadfb98627da7fe4a2029e2c6210",
+      "publishedDriverSha256": "0f8cd11b5e5c60ebb63352fb044364ff38f267e6a920d8a487ae52efd2c90f49",
+      "changes": "Portable import/helper paths only; v5 additionally clicks actual icon andlabel,with same v4pixelmethods. The full16job replay used priorv4;focusedv5replay rechecks sameunchangedsource/harness."
+    }
+  ],
+  "previousVersions": [
+    {
+      "path": "checks/check-navigation-paint.mjs",
+      "originalDriverSha256": "9862027285443e9c56167fa5616da77fd2a47244459aea68442f7dc7690eba3d",
+      "publishedDriverSha256": "44e118e6b6f2b81e27175f0e9416e86020f414ff9a5284c1b7d15d26c1a0cd7e",
+      "changes": "Portable import/helper paths only; actualPNG SVGandlabel methods unchanged",
+      "scope": "Original full16job replay driver; exactbytes retained in navigation-state evidence"
     }
   ]
 }

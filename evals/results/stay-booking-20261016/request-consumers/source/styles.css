@@ -264,7 +264,8 @@ overflow-wrap: break-word;}
   box-sizing: border-box;
 }
 
-[data-ui-unit="navigation"] a img {
+[data-ui-unit="navigation"] a img,
+[data-ui-unit="navigation"] a svg {
   width: 20px;
   height: 20px;
   display: block;

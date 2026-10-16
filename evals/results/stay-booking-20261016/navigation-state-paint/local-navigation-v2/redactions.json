@@ -1,0 +1,10 @@
+{
+  "redactions": [
+    {
+      "path": "request.json",
+      "originalSha256": "db2f53a89592351630eaafc65c6be07b43a7a1daea9641eb0cdd2109011ca159",
+      "publishedSha256": "c0d9873df420213b645759216d07aa24aa98d661a74017d537cd6a836d0920ea",
+      "reason": "Actual candidate image payload omitted with matching publishedPNG/hash; no native reference image was supplied to this repair; private original retained."
+    }
+  ]
+}
