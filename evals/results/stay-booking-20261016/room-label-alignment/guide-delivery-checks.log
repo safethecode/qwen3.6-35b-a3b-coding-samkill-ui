@@ -1,0 +1,14 @@
+✔ component styling receives complete applicable guides with source hashes (5.8457ms)
+✔ direct model stages receive the linked local decomposition guide as source-bound text (3.8142ms)
+✔ all active catalog rules remain available and stage prompts carry original font and icon rules (16.8479ms)
+✔ packaged layout API exactly mirrors its canonical contract section (3.0839ms)
+✔ installed decomposition guide resolves its contract link inside the skill package (79.6833ms)
+✔ source bindings include the packaged layout API bytes (19.6587ms)
+ℹ tests 6
+ℹ suites 0
+ℹ pass 6
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 181.966

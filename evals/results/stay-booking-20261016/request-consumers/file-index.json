@@ -73,19 +73,24 @@
       "sha256": "aa4fbec189be5d463b30f8808ca62c79eb62f69fe24737382b8674f5e7896c81"
     },
     {
+      "path": "checks/check-room-title-controls.mjs",
+      "bytes": 2213,
+      "sha256": "bef8957e68733d64f7e4807e5cc086cbe243d4b60d871234155c2013d8af1247"
+    },
+    {
       "path": "checks/check-room-workflows-v3.mjs",
       "bytes": 9933,
       "sha256": "e84a83d02a7f7f9527af7cf779535dbb6061fbae79e334a776e0817220674705"
     },
     {
       "path": "portable-derivatives.json",
-      "bytes": 4813,
-      "sha256": "ea46aa15e8656e670f5748019fb34db0ed867d03ead056ab0b6bec764f0efd6e"
+      "bytes": 5130,
+      "sha256": "c8c82a14305bc78a2584641ed389afbd0cb17264a1469748fe90c347249157dc"
     },
     {
       "path": "README.md",
-      "bytes": 4666,
-      "sha256": "edec31d3be15a5e7a4fad2465290d1bcc0e21b54498009bd1cf45e8b7d467e11"
+      "bytes": 5134,
+      "sha256": "37367875aa816afdaf328b58591142c7fae995576df8d846c58e4a5a0ff1fbfe"
     },
     {
       "path": "serve.mjs",
@@ -314,8 +319,8 @@
     },
     {
       "path": "source/DESIGN.md",
-      "bytes": 6706,
-      "sha256": "a64dc2cb692470e2be17678c7d564e8801c24428491f51923b4eaee2a8c7122c"
+      "bytes": 7032,
+      "sha256": "6787bd914f77222a1e969004d484484239567b2e744693bcc2e19655a6a64fe5"
     },
     {
       "path": "source/design/booking-plan.json",
@@ -324,8 +329,8 @@
     },
     {
       "path": "source/design/component-plan.json",
-      "bytes": 62005,
-      "sha256": "b6a07da346ffdad3eb5a6276ce1621fa544ca25c0fba487c78ee539bcd074707"
+      "bytes": 62047,
+      "sha256": "89d45ba5e975b06e2892180f6917f62babb918f4de713638c4ab56416f7d5f6d"
     },
     {
       "path": "source/design/flow.md",
@@ -339,8 +344,8 @@
     },
     {
       "path": "source/design/layout-contract.json",
-      "bytes": 18797,
-      "sha256": "d9941095a8eac24b0d538008d21880e3ae5bca7104f6397c806c09e119dda5f4"
+      "bytes": 19885,
+      "sha256": "7baf67ede4a40425fc60e08fdbc8fa661dd299b1aae9aca8aada69ed2e51185c"
     },
     {
       "path": "source/design/typography.json",
@@ -409,8 +414,8 @@
     },
     {
       "path": "source/room-layout-contract.json",
-      "bytes": 3088,
-      "sha256": "c7796dc3e96cd2210fd3e83e9a982e48478ca0f9de7d8e70fe8e4b2405c5495b"
+      "bytes": 4176,
+      "sha256": "2ecadebd079579f179a8b6669fd91815c6a65c72d1f6905c3c9d8d7b3e077319"
     },
     {
       "path": "source/room-rates-view.js",
@@ -439,8 +444,8 @@
     },
     {
       "path": "source/rooms.css",
-      "bytes": 8019,
-      "sha256": "ac085d113092eb6d8b82254818e882cbe87aaefc927003a78be143be36d9a581"
+      "bytes": 8059,
+      "sha256": "0cacd7c4d68cd048d4e500666f9edf22309ad3baca553d4fb703aafdbfda91cc"
     },
     {
       "path": "source/stored-quote.js",

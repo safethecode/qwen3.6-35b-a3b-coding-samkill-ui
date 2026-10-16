@@ -43,3 +43,5 @@ The date comparison is a single static quiet panel owned by its parent. Individu
 Task-header back targets own the leading edge; the icon ink aligns with the content inset through the existing internal target padding. Do not add the page inset again outside the 44 px target. Preserve the centered title and symmetric trailing track. This prospective alignment repair follows native comparison.
 
 The C1 prospective room-header correction matches the task heading to the existing room-card18/600 role. The original host-prescribed22/700 task hierarchy was stronger than the native relationship. Room topbar horizontal margins cancel the inherited main inset around the unchanged44px target. All other typography, spacing tokens and prior relations remain. Fresh scoped verification is required.
+
+Related room-title text and its official trailing chevron align to the complete label-block center,including wrapped labels,enlargement andspacing stress. Preserve44px targets andall other spacing/typography. This corrects the prior flex-start host instruction; it is not a universal alignment preset for unrelated controls.

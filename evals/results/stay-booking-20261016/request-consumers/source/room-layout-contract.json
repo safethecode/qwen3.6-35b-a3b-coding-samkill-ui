@@ -120,6 +120,42 @@
       "modes": [
         "normal"
       ]
+    },
+    {
+      "id": "related-title-icon-afternoon-standard",
+      "kind": "sameRow",
+      "subject": ".room-card[data-room-id=\"afternoon-standard\"] [data-room-name]",
+      "reference": ".room-card[data-room-id=\"afternoon-standard\"] .room-title-button img",
+      "tolerance": 1,
+      "states": [
+        "rooms",
+        "selected"
+      ]
+    },
+    {
+      "id": "related-title-icon-afternoon-family",
+      "kind": "sameRow",
+      "subject": ".room-card[data-room-id=\"afternoon-family\"] [data-room-name]",
+      "reference": ".room-card[data-room-id=\"afternoon-family\"] .room-title-button img",
+      "tolerance": 1,
+      "states": [
+        "rooms",
+        "selected"
+      ]
+    },
+    {
+      "id": "room-task-card-relative-emphasis",
+      "kind": "typeRelation",
+      "subject": "#detail-title",
+      "reference": ".room-card[data-room-id=\"afternoon-standard\"] [data-room-name]",
+      "minSizeRatio": 1,
+      "maxSizeRatio": 1,
+      "minWeightDifference": 0,
+      "maxWeightDifference": 0,
+      "states": [
+        "rooms",
+        "selected"
+      ]
     }
   ],
   "scope": "Pre-style mechanical relationships only; samewidth direct positive-anchor review remains separate."

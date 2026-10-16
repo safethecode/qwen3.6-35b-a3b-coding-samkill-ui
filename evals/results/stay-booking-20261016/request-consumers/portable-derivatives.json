@@ -85,6 +85,12 @@
       "originalDriverSha256": "2b8259fb74b7b9d3d74b67690a2de33d04f1b8bb3397c9535e62887f79ee9f46",
       "publishedDriverSha256": "2b8259fb74b7b9d3d74b67690a2de33d04f1b8bb3397c9535e62887f79ee9f46",
       "changes": "Portable shared script import paths only; actual target/output arguments retained"
+    },
+    {
+      "path": "checks/check-room-title-controls.mjs",
+      "originalDriverSha256": "20a3b7f9540535f5c75b273d24de1b1313b701a0ebe5b1febb1c9e532e046323",
+      "publishedDriverSha256": "bef8957e68733d64f7e4807e5cc086cbe243d4b60d871234155c2013d8af1247",
+      "changes": "Portable browser helper path only"
     }
   ]
 }

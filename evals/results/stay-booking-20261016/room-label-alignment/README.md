@@ -1,0 +1,11 @@
+# Related room text and icon alignment
+
+The user identified the room title and trailing chevron as misaligned. The previous host CSS contract explicitly used flex-start:18px/1.5 text has a27px line box while the official SVG slot is20px, so their centers differ3.5px before wrapping. The observed navigation associates the chevron with the complete room label; this case chooses label-block centering. Unrelated first-line row controls keep their own contract.
+
+Actual local Qwen returned one align-items value,center, in137.4seconds. Host chooses the single selector/property boundary and assembles the value. No size,padding,icon geometry,markup,data orbehavior changes. Two strict label/icon sameRow relations and the previously observed task/card typeRelation are declared before this local request; all71 previous relations remain.
+
+Twenty-four actual/wrapped-label captures across296/320/390/1440 andnormal/200-percent/spacing states improve from24alignment failures to0,without clipping or pressure defects. Actual text/icon/inner-edge clicks,correct rate sheet andfocus return pass16/16; room/rate workflows pass12/12. The portable control derivative independently passes16/16 against the published icon snapshot. Direct390px inspection confirms the visual alignment. Box metrics do not replace optical/native inspection or establish whole-product parity.
+
+The skill entry and local decomposition guide now require a semantic text/icon alignment reference and verification with wrapped/enlarged labels,official asset geometry and preserved hit targets. The companion text/inset guidance also records the separate checkout-date feedback; its actual styling remains a subsequent repair. Six routing/package checks pass and52managed installed skill files match; existing conversations do not reload automatically. Full local decomposition and applicable icon/typography guide text reached this actual model request with hashes.
+
+The combined before report also contains12date failures; those are intentionally not counted as icon repairs. Checkout-date correction and combined replay remain separate. Native reference pixels are excluded; candidate photos retain their existing licenses/provenance. Original guide inputs and actual model/host assistance remain recorded.
