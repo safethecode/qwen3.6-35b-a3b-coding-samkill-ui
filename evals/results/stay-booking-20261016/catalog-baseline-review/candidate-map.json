@@ -1,0 +1,35 @@
+[
+  {
+    "privatePath": "runs/room-composition-20261016/references/room-selection.jpg",
+    "omitted": "Native pixels are not distributed"
+  },
+  {
+    "privatePath": "runs/stay-booking-transfer-20261016/booking/references/checkout/reference-1.jpg",
+    "omitted": "Native pixels are not distributed"
+  },
+  {
+    "privatePath": "runs/portable-associated-feedback-20261016/room-positive/rooms-390.png",
+    "publishedPath": "candidate/room-positive/rooms-390.png",
+    "sha256": "1ede0ea17de6858c8f2bee39e1c340e21bfdd4a509aaa8b194b48059f22e10bd"
+  },
+  {
+    "privatePath": "runs/portable-associated-feedback-20261016/booking-render/form-full-390.png",
+    "publishedPath": "candidate/booking-render/form-full-390.png",
+    "sha256": "7e79fffd490f213cf401bef63098463ded0c2d673f39dd7cd8fd33e542a15d6a"
+  },
+  {
+    "privatePath": "runs/portable-associated-feedback-20261016/request-renders/list-390-normal.png",
+    "publishedPath": "candidate/request-renders/list-390-normal.png",
+    "sha256": "c0c8bcd41f811d8611c0a50e2caf6a8de6294b313811c9f2a4b880bc93cfced3"
+  },
+  {
+    "privatePath": "runs/portable-associated-feedback-20261016/request-renders/detail-390-normal.png",
+    "publishedPath": "candidate/request-renders/detail-390-normal.png",
+    "sha256": "5d876fa1d5303cbdb8c6f0a58835e4d0b793b196844b73128b5b6acda55980a4"
+  },
+  {
+    "privatePath": "runs/portable-associated-feedback-20261016/request-renders/cancel-296-text-200.png",
+    "publishedPath": "candidate/request-renders/cancel-296-text-200.png",
+    "sha256": "5ff19e555dbdff78fb9296aef386edd087872c0dfbc2a05cafdc33bda9d8a508"
+  }
+]

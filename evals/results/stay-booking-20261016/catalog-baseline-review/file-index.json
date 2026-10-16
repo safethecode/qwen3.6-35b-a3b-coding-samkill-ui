@@ -1,0 +1,61 @@
+{
+  "algorithm": "sha256",
+  "scope": "Exact published bytes; index excludes itself. Functional evidence does not establish visual approval.",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 8,
+      "sha256": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da"
+    },
+    {
+      "path": "candidate-map.json",
+      "bytes": 1602,
+      "sha256": "8a972beb1608aa43e7e94610f2e5ba1566a36fc52f77184b74e8b2ef90df204a"
+    },
+    {
+      "path": "candidate/booking-render/form-full-390.png",
+      "bytes": 35904,
+      "sha256": "7e79fffd490f213cf401bef63098463ded0c2d673f39dd7cd8fd33e542a15d6a"
+    },
+    {
+      "path": "candidate/request-renders/cancel-296-text-200.png",
+      "bytes": 71059,
+      "sha256": "5ff19e555dbdff78fb9296aef386edd087872c0dfbc2a05cafdc33bda9d8a508"
+    },
+    {
+      "path": "candidate/request-renders/detail-390-normal.png",
+      "bytes": 33514,
+      "sha256": "5d876fa1d5303cbdb8c6f0a58835e4d0b793b196844b73128b5b6acda55980a4"
+    },
+    {
+      "path": "candidate/request-renders/list-390-normal.png",
+      "bytes": 19436,
+      "sha256": "c0c8bcd41f811d8611c0a50e2caf6a8de6294b313811c9f2a4b880bc93cfced3"
+    },
+    {
+      "path": "candidate/room-positive/rooms-390.png",
+      "bytes": 183991,
+      "sha256": "1ede0ea17de6858c8f2bee39e1c340e21bfdd4a509aaa8b194b48059f22e10bd"
+    },
+    {
+      "path": "coverage.json",
+      "bytes": 100736,
+      "sha256": "39f4c9f794191d4cc1ae9275384f0c09a6db77123406a6ccaa0afa484fd86cdb"
+    },
+    {
+      "path": "publisher-verification.json",
+      "bytes": 370,
+      "sha256": "8e6fbbfe2e61715b4a0cac8d5b816f42e796caaec2281d0cfbd6a17282de198c"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2093,
+      "sha256": "e29fe07fd43a60afdf2e04b0af76e79f02b8deff395f3edba35ace55e9886351"
+    },
+    {
+      "path": "review.md",
+      "bytes": 27045,
+      "sha256": "8772f9224ae6e6354383c2325de33bd85c1f4782e09085c00468c7af5993b041"
+    }
+  ]
+}
