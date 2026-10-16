@@ -114,8 +114,8 @@
     },
     {
       "path": "source/app.js",
-      "bytes": 1996,
-      "sha256": "f1b17e685561d5c4c0597e726560031276576d170a10a22b4c76434c631fcbbd"
+      "bytes": 2117,
+      "sha256": "b11b4cd921dc54a5940408ae2910563622817d6f2b8ba7d39879417b08e02935"
     },
     {
       "path": "source/assets/fonts/METADATA.pb",
@@ -318,6 +318,11 @@
       "sha256": "4bdfc0b0bbfd142fabc2cc06790bc1ffbf6f65080f6b3e5672d048e4d090490a"
     },
     {
+      "path": "source/calendar-instance.js",
+      "bytes": 996,
+      "sha256": "6348283378de7b6bd842ac0d3d1e29562cec116558a795dd0d0de103e470d8e6"
+    },
+    {
       "path": "source/calendar-model.js",
       "bytes": 3881,
       "sha256": "b420bac1d76c8a5a3e5d0d666b1b8eccfa2c45aa8acdd3f5b137d78908eac16b"
@@ -349,8 +354,8 @@
     },
     {
       "path": "source/core-runtime.js",
-      "bytes": 12522,
-      "sha256": "217d878e1ed80762093d996d341560ebfdccaef3eef3eaf0eb679d7fd1391c2b"
+      "bytes": 12640,
+      "sha256": "8f7455dc8af0f8b4074f777307fb90ee8d68e326c8a25639a6ba3c42a423e750"
     },
     {
       "path": "source/dates.js",
@@ -359,8 +364,8 @@
     },
     {
       "path": "source/DESIGN.md",
-      "bytes": 8174,
-      "sha256": "3b6e99419f63b0209eeb8d33821ddc2baa56b9097f335001d5d69bac8de4c0fa"
+      "bytes": 9238,
+      "sha256": "6347332b5c8efaced508885f1ffa5f6b723fd1a751fb07492af57a312c7ced6c"
     },
     {
       "path": "source/design/booking-plan.json",
@@ -389,8 +394,8 @@
     },
     {
       "path": "source/design/typography.json",
-      "bytes": 20604,
-      "sha256": "6cbf14057a104fe6d1dcb4feb00c62e7ccc32212bf2fc5ec73256ae3a00ed2a1"
+      "bytes": 22191,
+      "sha256": "0311de3920e0e7850773c9f01c8bebb080be5bd62fecbd38c228a011092fb35c"
     },
     {
       "path": "source/guest-editor-instance.js",
@@ -409,8 +414,8 @@
     },
     {
       "path": "source/index.html",
-      "bytes": 19718,
-      "sha256": "0a1b2cfab1945227ea1c5c47734c16d43f87f37b1c6009834f04671231cbdad8"
+      "bytes": 22145,
+      "sha256": "076c7264f77f78c2cf06bd440a1e5dca8f46f7a3ccb5289f394799fe26382890"
     },
     {
       "path": "source/query.js",
@@ -499,8 +504,8 @@
     },
     {
       "path": "source/styles.css",
-      "bytes": 9692,
-      "sha256": "620fde01d3e609d8595cf431e02b6ce4ffcd7a1510199d804e1625d2155209e7"
+      "bytes": 10209,
+      "sha256": "33c05015a78ffc6dafba173db6779f2bfd6d7217f91fe5af98d54369fa8e2165"
     },
     {
       "path": "source/trip-layout.js",

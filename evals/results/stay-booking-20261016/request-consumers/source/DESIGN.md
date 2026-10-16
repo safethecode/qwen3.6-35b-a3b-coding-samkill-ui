@@ -51,3 +51,10 @@ Compact read-only checkout dates use explicit14/600/1.5 values and14/500 labels/
 Repeated room-list preview prices use16/600 beneath their18/600 identity labels, preserving the observed subordinate price relationship. Selected quote totals remain18/700 and checkout totals remain18/700; do not reuse one monetary role across these purposes. All content, surfaces, padding, official assets, behavior and previous77 relations remain. Native CSS/font/DPR are unknown.
 
 Monochrome navigation icons and visible labels share selected action/unselected muted state colors. Inline official SVG retains exact geometry,20px slots anddecorative accessibility semantics;labels,targets,focus,routes andall79 existingrelations remain. CSS color on an external SVG img is not proof of its actual paint. This is a chosen local navigation repair,not a native tab reproduction.
+
+
+## Calendar adaptation
+
+Search and room-trip drafts have one official CalendarDays launcher each;native labeled date inputs remain editable. The child dialog owns a private1–28night draft and one vertically scrolling two-month grid. Cancel/Escape discard;Apply updates the caller's two draft inputs only. Parent submit owns query/rate changes. Route exits close child and caller before restoring destination focus. Checkout dates remain read-only. Mobile cap390 applies at every browser width.
+
+The freshly inspected Airbnb UI Bowl calendar is a composition reference,not proof of native selected states or hidden interactions. Existing Noto Sans KR,white surface and text/action/spacing tokens remain. Middle-rangeRGB248/232/238 is a one-use chosen derivation of action10% overwhite;recheck if palette changes. Native CSS/DPR/fonts,selected-range rendering,device/AT andcommercial parity remain unverified. Host lifecycle/keyboard/integration and explicit guards/CSS corrections are disclosed separately from actual Qwen date bodies,renderer andCSS attempts.

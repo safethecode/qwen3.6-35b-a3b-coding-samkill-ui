@@ -1,3 +1,4 @@
+import {dismissCalendar} from './calendar-instance.js';
 import { renderRequestList, renderRequestDetail, dismissRequestDialog } from './request-ui.js';
 import { guestEditor } from './guest-editor-instance.js';
 import { renderRoomView, renderQuoteReview, roomState, resetRoomScope, updateBottomSurface } from './room-runtime.js';
@@ -95,6 +96,7 @@ export function navigate(destination) {
   syncRoute();
 }
 export function syncRoute() {
+  const calendarWasOpen=dismissCalendar();
   const previousRoute = state.route, previousRequestId = state.requestId;
   restoreQuery();
   const destination = location.hash.slice(1) || 'browse';
@@ -122,7 +124,7 @@ export function syncRoute() {
   if (guestWasOpen) guestEditor.dismiss();
   const dismissedRequestId = dismissRequestDialog(state.route, state.requestId);
   render();
-  if (guestWasOpen || dismissedRequestId || previousRoute === 'request-detail' && state.route === 'requests') {
+  if (calendarWasOpen || guestWasOpen || dismissedRequestId || previousRoute === 'request-detail' && state.route === 'requests') {
     const candidates = state.route === 'detail'
       ? [id('detail-rooms').querySelector('[data-open-room][data-room-id="' + roomState.selection?.roomId + '"]'), id('edit-trip'), id('return-results')]
       : state.route === 'request-detail' ? [id('request-detail-view').querySelector('h1')]

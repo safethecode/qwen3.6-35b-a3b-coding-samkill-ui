@@ -1,3 +1,5 @@
+import {installCalendar} from './calendar-instance.js';
+import {today} from './core-runtime.js';
 import { installRequestEvents } from './request-ui.js';
 import { installTripLayout } from './trip-layout.js';
 import './guest-editor-instance.js';
@@ -27,6 +29,7 @@ const nav = document.querySelector('.bottom-navigation');
 const bottomObserver = new ResizeObserver(updateBottomSurface);
 bottomObserver.observe(nav);
 bottomObserver.observe(id('room-bottom'));
+installCalendar(today);
 syncRoute();
 
 installTripLayout();
