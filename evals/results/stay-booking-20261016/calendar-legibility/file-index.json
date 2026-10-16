@@ -194,13 +194,13 @@
     },
     {
       "path": "evidence/independent-coverage.json",
-      "bytes": 371842,
-      "sha256": "175af8774b47da74d748c62720e436042bf7fe1a38abd1b90662b43164ab5ce6"
+      "bytes": 423866,
+      "sha256": "2dd7b93ab74c025deada2084a87c80cefc02ea774994dbccfff3638a85ccacac"
     },
     {
       "path": "evidence/independent-review.md",
-      "bytes": 20955,
-      "sha256": "97bae5f05f03a08ac3857b6281ec7bbe654cadea153ce12e1fb1913a280f1f9a"
+      "bytes": 21815,
+      "sha256": "5e411b7b0157653a4190b0e01c42186f0b1d534ffdccfdda1369df90c1d567b8"
     },
     {
       "path": "evidence/installed-skill.json",

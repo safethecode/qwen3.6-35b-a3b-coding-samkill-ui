@@ -146,3 +146,9 @@ TextGap measures Range box separation and explicitly disclaims ink appearance/cl
 - All75 original IDs/check arrays retained; historical-context-only rows are not new current whole-rule approvals.
 - No new native claim. C5 counts are not quality proof.
 - No new blocker found in the inspected scope; this is not exhaustive device/AT/product approval.
+
+## C5 receipt reconciliation
+
+Fresh replay-final/report.json and portable-replay/report.json source hashes were independently compared with the original C5 review and current published runtime: all75 source entries match in each receipt. Final controller and both search/trip caller regression evidence is therefore supplied for these exact bytes; the earlier requested follow-up is satisfied only in that scope. Full receipts/status/steps/harness/checker hashes are retained in coverage.json.
+
+All original findings and limits remain unchanged. Parent subsequently identified confirmed V-C5-05 (short-height flow sticky label gutter); this receipt-only reconciliation does not inspect or resolve it. Calendar completion,device/AT,native parity,request editing,shared navigation paint and whole-product gate are not approved. No private C7 changes inspected.
