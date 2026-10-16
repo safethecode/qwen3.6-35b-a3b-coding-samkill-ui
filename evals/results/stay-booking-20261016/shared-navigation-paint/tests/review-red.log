@@ -1,0 +1,60 @@
+✔ actual icon paint rejects an external SVG whose CSS color falsely matches the selected label (620.9977ms)
+✔ plain solid text uses actual foreground cores and accepts browser subpixel antialiasing (691.0424ms)
+✔ paint expectations reject missing, ambiguous and hidden subjects or malformed contracts (440.1699ms)
+✔ unsupported backgrounds and paint effects stay unknown rather than passing from a few matching pixels (499.5675ms)
+✔ white or transparent suppressed paint cannot pass and a sparse glyph stays unknown (657.9639ms)
+✔ paint rules retain state and text-mode coverage instead of approving an unvisited selected state (573.4228ms)
+✔ the packaged paint API example can be retrieved and used in a real selected state (553.3239ms)
+✖ a sibling image behind a transparent icon cannot supply its foreground evidence (519.803ms)
+✔ unsupported text strokes cannot pass from foreground cores and lighter colored fringes (522.3762ms)
+✖ valid foregrounds below the pixel measurement threshold stay unknown instead of being called suppressed (504.9868ms)
+ℹ tests 10
+ℹ suites 0
+ℹ pass 8
+ℹ fail 2
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 5929.5679
+
+✖ failing tests:
+
+test at test\monochrome-paint.test.mjs:89:1
+✖ a sibling image behind a transparent icon cannot supply its foreground evidence (519.803ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  + actual - expected
+  
+  + 'PASS'
+  - 'UNVERIFIED'
+  
+      at [repository]/test/monochrome-paint.test.mjs:94:10
+      at async fixture ([repository]/test/monochrome-paint.test.mjs:17:5)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 'PASS',
+    expected: 'UNVERIFIED',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at test\monochrome-paint.test.mjs:102:1
+✖ valid foregrounds below the pixel measurement threshold stay unknown instead of being called suppressed (504.9868ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  + actual - expected
+  
+  + 'FAIL'
+  - 'UNVERIFIED'
+  
+      at [repository]/test/monochrome-paint.test.mjs:104:10
+      at async fixture ([repository]/test/monochrome-paint.test.mjs:17:5)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 'FAIL',
+    expected: 'UNVERIFIED',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

@@ -1,0 +1,80 @@
+✔ actual icon paint rejects an external SVG whose CSS color falsely matches the selected label (612.3134ms)
+✔ plain solid text uses actual foreground cores and accepts browser subpixel antialiasing (751.8109ms)
+✔ paint expectations reject missing, ambiguous and hidden subjects or malformed contracts (448.0511ms)
+✔ unsupported backgrounds and paint effects stay unknown rather than passing from a few matching pixels (501.488ms)
+✔ white or transparent suppressed paint cannot pass and a sparse glyph stays unknown (652.9819ms)
+✔ paint rules retain state and text-mode coverage instead of approving an unvisited selected state (564.5196ms)
+✔ the packaged paint API example can be retrieved and used in a real selected state (595.7286ms)
+✖ a sibling image behind a transparent icon cannot supply its foreground evidence (505.5376ms)
+✖ unsupported text strokes cannot pass from foreground cores and lighter colored fringes (512.5887ms)
+✖ valid foregrounds below the pixel measurement threshold stay unknown instead of being called suppressed (521.7877ms)
+ℹ tests 10
+ℹ suites 0
+ℹ pass 7
+ℹ fail 3
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 5999.9954
+
+✖ failing tests:
+
+test at test\monochrome-paint.test.mjs:89:1
+✖ a sibling image behind a transparent icon cannot supply its foreground evidence (505.5376ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  + actual - expected
+  
+  + 'PASS'
+  - 'UNVERIFIED'
+  
+      at [repository]/test/monochrome-paint.test.mjs:94:10
+      at async fixture ([repository]/test/monochrome-paint.test.mjs:17:5)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 'PASS',
+    expected: 'UNVERIFIED',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at test\monochrome-paint.test.mjs:97:1
+✖ unsupported text strokes cannot pass from foreground cores and lighter colored fringes (512.5887ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  + actual - expected
+  
+  + 'PASS'
+  - 'UNVERIFIED'
+  
+      at [repository]/test/monochrome-paint.test.mjs:99:10
+      at async fixture ([repository]/test/monochrome-paint.test.mjs:17:5)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 'PASS',
+    expected: 'UNVERIFIED',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at test\monochrome-paint.test.mjs:102:1
+✖ valid foregrounds below the pixel measurement threshold stay unknown instead of being called suppressed (521.7877ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  + actual - expected
+  
+  + 'FAIL'
+  - 'UNVERIFIED'
+  
+      at [repository]/test/monochrome-paint.test.mjs:104:10
+      at async fixture ([repository]/test/monochrome-paint.test.mjs:17:5)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 'FAIL',
+    expected: 'UNVERIFIED',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

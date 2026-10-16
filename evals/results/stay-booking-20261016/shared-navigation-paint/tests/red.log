@@ -1,0 +1,110 @@
+✖ actual icon paint rejects an external SVG whose CSS color falsely matches the selected label (420.5127ms)
+✖ plain solid text uses actual foreground cores and accepts browser subpixel antialiasing (353.2743ms)
+✔ paint expectations reject missing, ambiguous and hidden subjects or malformed contracts (441.4796ms)
+✖ unsupported backgrounds and paint effects stay unknown rather than passing from a few matching pixels (376.2893ms)
+✖ white or transparent suppressed paint cannot pass and a sparse glyph stays unknown (393.4074ms)
+✖ paint rules retain state and text-mode coverage instead of approving an unvisited selected state (392.5189ms)
+ℹ tests 6
+ℹ suites 0
+ℹ pass 1
+ℹ fail 5
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 2747.9972
+
+✖ failing tests:
+
+test at test\monochrome-paint.test.mjs:20:1
+✖ actual icon paint rejects an external SVG whose CSS color falsely matches the selected label (420.5127ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  'FAIL' !== 'PASS'
+  
+      at [repository]/test/monochrome-paint.test.mjs:21:10
+      at async fixture ([repository]/test/monochrome-paint.test.mjs:16:5)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 'FAIL',
+    expected: 'PASS',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at test\monochrome-paint.test.mjs:29:1
+✖ plain solid text uses actual foreground cores and accepts browser subpixel antialiasing (353.2743ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  'FAIL' !== 'PASS'
+  
+      at [repository]/test/monochrome-paint.test.mjs:31:10
+      at async fixture ([repository]/test/monochrome-paint.test.mjs:16:5)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 'FAIL',
+    expected: 'PASS',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at test\monochrome-paint.test.mjs:48:1
+✖ unsupported backgrounds and paint effects stay unknown rather than passing from a few matching pixels (376.2893ms)
+  AssertionError [ERR_ASSERTION]: background:#eee
+  + actual - expected
+  
+  + 'FAIL'
+  - 'UNVERIFIED'
+  
+      at [repository]/test/monochrome-paint.test.mjs:51:12
+      at async fixture ([repository]/test/monochrome-paint.test.mjs:16:5)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: 'FAIL',
+    expected: 'UNVERIFIED',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at test\monochrome-paint.test.mjs:58:1
+✖ white or transparent suppressed paint cannot pass and a sparse glyph stays unknown (393.4074ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  + actual - expected
+  
+  + 'FAIL'
+  - 'UNVERIFIED'
+  
+      at [repository]/test/monochrome-paint.test.mjs:64:10
+      at async fixture ([repository]/test/monochrome-paint.test.mjs:16:5)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 'FAIL',
+    expected: 'UNVERIFIED',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at test\monochrome-paint.test.mjs:67:1
+✖ paint rules retain state and text-mode coverage instead of approving an unvisited selected state (392.5189ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  'FAIL' !== 'PASS'
+  
+      at [repository]/test/monochrome-paint.test.mjs:72:10
+      at async fixture ([repository]/test/monochrome-paint.test.mjs:16:5)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 'FAIL',
+    expected: 'PASS',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

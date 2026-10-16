@@ -1,0 +1,43 @@
+✔ actual icon paint rejects an external SVG whose CSS color falsely matches the selected label (707.6496ms)
+✔ plain solid text uses actual foreground cores and accepts browser subpixel antialiasing (788.4412ms)
+✔ paint expectations reject missing, ambiguous and hidden subjects or malformed contracts (445.0082ms)
+✔ unsupported backgrounds and paint effects stay unknown rather than passing from a few matching pixels (496.389ms)
+✖ white or transparent suppressed paint cannot pass and a sparse glyph stays unknown (780.8656ms)
+✔ paint rules retain state and text-mode coverage instead of approving an unvisited selected state (681.6589ms)
+✔ the packaged paint API example can be retrieved and used in a real selected state (649.1804ms)
+✔ a sibling image behind a transparent icon cannot supply its foreground evidence (523.318ms)
+✔ unsupported text strokes cannot pass from foreground cores and lighter colored fringes (377.8269ms)
+✔ valid foregrounds below the pixel measurement threshold stay unknown instead of being called suppressed (370.7624ms)
+✔ packaged layout API exactly mirrors its canonical contract section (2.9786ms)
+✔ installed decomposition guide resolves its contract link inside the skill package (96.1095ms)
+✔ source bindings include the packaged layout API bytes (19.1977ms)
+ℹ tests 13
+ℹ suites 0
+ℹ pass 12
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 6178.6598
+
+✖ failing tests:
+
+test at test\monochrome-paint.test.mjs:59:1
+✖ white or transparent suppressed paint cannot pass and a sparse glyph stays unknown (780.8656ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  + actual - expected
+  
+  + 'FAIL'
+  - 'UNVERIFIED'
+  
+      at [repository]/test/monochrome-paint.test.mjs:65:10
+      at async fixture ([repository]/test/monochrome-paint.test.mjs:17:5)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 'FAIL',
+    expected: 'UNVERIFIED',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

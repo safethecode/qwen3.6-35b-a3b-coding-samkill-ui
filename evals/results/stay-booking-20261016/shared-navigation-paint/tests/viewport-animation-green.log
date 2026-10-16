@@ -1,0 +1,24 @@
+✔ actual icon paint rejects an external SVG whose CSS color falsely matches the selected label (679.6568ms)
+✔ plain solid text uses actual foreground cores and accepts browser subpixel antialiasing (789.194ms)
+✔ paint expectations reject missing, ambiguous and hidden subjects or malformed contracts (450.2397ms)
+✔ unsupported backgrounds and paint effects stay unknown rather than passing from a few matching pixels (530.8595ms)
+✔ white or transparent suppressed paint cannot pass and a sparse glyph stays unknown (680.2059ms)
+✔ paint rules retain state and text-mode coverage instead of approving an unvisited selected state (700.3957ms)
+✔ the packaged paint API example can be retrieved and used in a real selected state (653.9293ms)
+✔ a sibling image behind a transparent icon cannot supply its foreground evidence (526.2265ms)
+✔ unsupported text strokes cannot pass from foreground cores and lighter colored fringes (375.1049ms)
+✔ valid foregrounds below the pixel measurement threshold stay unknown instead of being called suppressed (365.9933ms)
+✔ background ownership probes restore exact inline styles without changing sibling content (523.6432ms)
+✔ a partially captured oversized owner cannot hide wrong paint beyond the viewport (518.9107ms)
+✔ running Web Animations API paint cannot pass from an early matching frame (372.1316ms)
+✔ packaged layout API exactly mirrors its canonical contract section (3.1916ms)
+✔ installed decomposition guide resolves its contract link inside the skill package (77.0701ms)
+✔ source bindings include the packaged layout API bytes (19.3352ms)
+ℹ tests 16
+ℹ suites 0
+ℹ pass 16
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 7512.6282

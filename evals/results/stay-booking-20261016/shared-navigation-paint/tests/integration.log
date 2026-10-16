@@ -1,0 +1,25 @@
+✔ official icon geometry and names are checked rather than trusting source labels (600.9485ms)
+✔ exported official image assets are accepted only with verified local provenance (486.3088ms)
+✔ quality CLI requires references and clears stale completion on preflight failure (465.6284ms)
+✔ startup publication failure releases the target lock (562.0289ms)
+✔ twelve passing visual chunks cannot bypass missing upstream catalog evidence (8831.4196ms)
+✔ service quality uses the declared service checks rather than the resume fixture (4171.7908ms)
+✔ service checks reject missing main content and mobile-only unreadable overflow (1288.1893ms)
+✔ all seven available rounds and three distinct service flows remain in the benchmark (0.5086ms)
+✔ a hidden duplicate heading does not hide a visible required action from the evaluator (1212.8311ms)
+✔ missing visible image assets fail even without JavaScript errors (1095.2588ms)
+✔ reference capture rejects a missing HTTP entry instead of saving blank evidence (782.6963ms)
+✔ a global completed label cannot pass a no-op ticket completion handler (2211.6841ms)
+✔ a static search-results heading cannot hide a nonfunctional search (7572.8696ms)
+✔ learning workflow selects a lesson before saving or completing it (1671.4979ms)
+✔ a no-op booking action cannot hide a skipped detail-to-form transition (1680.8243ms)
+✔ an initially visible booking button cannot substitute for a working detail action (1501.3389ms)
+✔ a real selected-item detail view can lead to a validated booking form (3356.9293ms)
+ℹ tests 17
+ℹ suites 0
+ℹ pass 17
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 22756.5056

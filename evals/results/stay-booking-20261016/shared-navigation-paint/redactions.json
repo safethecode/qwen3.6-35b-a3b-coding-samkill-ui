@@ -1,0 +1,56 @@
+[
+  {
+    "path": "tests/red.log",
+    "rawSha256": "bd04cc47a84b972cda46ab27900179705d4d7c9937df85e57248b1a871f150a5",
+    "publishedSha256": "2307702fba704cce8644276a955c0dd5e51edc8941823df4aa24b7a24ba2aa4c",
+    "redaction": "Repository absolute path and encoded file URL only; final tests differ from earlier development fixture versions"
+  },
+  {
+    "path": "tests/review-red.log",
+    "rawSha256": "a7de7c9c6622148db990c1a04afbe660e3c13b82e00b9cc13f76de819f042113",
+    "publishedSha256": "69e8455745e62e4175d6c9780a44ff559b8286891f5e6acaa03a413f8b5fd665",
+    "redaction": "Repository absolute path and encoded file URL only; final tests differ from earlier development fixture versions"
+  },
+  {
+    "path": "tests/review-red-v2.log",
+    "rawSha256": "213508b121ff961f671698765ceed24245ffec67483524ecc9f21124df534a12",
+    "publishedSha256": "2e81a7d6152a9111aa5221575e7fd70237769fbacee0035d89d669138c902dfc",
+    "redaction": "Repository absolute path and encoded file URL only; final tests differ from earlier development fixture versions"
+  },
+  {
+    "path": "tests/viewport-animation-red.log",
+    "rawSha256": "2895f1d78ca5f0a62ac6986c2d1a9a917978420595c2173ce8c45c25c19d2fea",
+    "publishedSha256": "fe445cdcfc8dad311504c94a53a72437d42207561b4d495f5c296156b9434d32",
+    "redaction": "Repository absolute path and encoded file URL only; final tests differ from earlier development fixture versions"
+  },
+  {
+    "path": "tests/green-v1.log",
+    "rawSha256": "d948e352d0f28314415fabb5ffe5a00399c186b8fbec49afc82a15c3366e960b",
+    "publishedSha256": "71e8d16123b7767a707c18b274729e46975ccc8f9ce6fae64836af8a1d6877b9",
+    "redaction": "Repository absolute path and encoded file URL only; final tests differ from earlier development fixture versions"
+  },
+  {
+    "path": "tests/review-green.log",
+    "rawSha256": "d0427ebe46e71c286a3aad39bb7ee4c5c1d3fbe998d236a2805a333182cbdf82",
+    "publishedSha256": "db016cbd70d025d64e0bded8f4d32eaf8051e2ff6b33ec9937d6a9133fb78d97",
+    "redaction": "Repository absolute path and encoded file URL only; final tests differ from earlier development fixture versions"
+  },
+  {
+    "path": "tests/viewport-animation-green.log",
+    "rawSha256": "4e66c05635ef857f88336ccf792a66907e45a285dd9b575b9a2d36385e921773",
+    "publishedSha256": "4e66c05635ef857f88336ccf792a66907e45a285dd9b575b9a2d36385e921773",
+    "redaction": "Repository absolute path and encoded file URL only; final tests differ from earlier development fixture versions"
+  },
+  {
+    "path": "tests/full-unit.log",
+    "rawSha256": "2dd219951a34d99d39697c60fff579e50760fcdf195b0e700b44c3344cc7ae8d",
+    "publishedSha256": "2dd219951a34d99d39697c60fff579e50760fcdf195b0e700b44c3344cc7ae8d",
+    "redaction": "Repository absolute path and encoded file URL only; final tests differ from earlier development fixture versions"
+  },
+  {
+    "path": "tests/integration.log",
+    "rawSha256": "a226278a5570f3c6820898707d30c6014fb2964fba2b30f52c834a6dbf8e56e3",
+    "publishedSha256": "a226278a5570f3c6820898707d30c6014fb2964fba2b30f52c834a6dbf8e56e3",
+    "redaction": "Repository absolute path and encoded file URL only; final tests differ from earlier development fixture versions"
+  }
+]

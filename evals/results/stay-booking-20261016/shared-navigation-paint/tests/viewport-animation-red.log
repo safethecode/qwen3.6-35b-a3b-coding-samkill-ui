@@ -1,0 +1,63 @@
+✔ actual icon paint rejects an external SVG whose CSS color falsely matches the selected label (689.1384ms)
+✔ plain solid text uses actual foreground cores and accepts browser subpixel antialiasing (778.8304ms)
+✔ paint expectations reject missing, ambiguous and hidden subjects or malformed contracts (430.7786ms)
+✔ unsupported backgrounds and paint effects stay unknown rather than passing from a few matching pixels (519.0924ms)
+✔ white or transparent suppressed paint cannot pass and a sparse glyph stays unknown (718.2834ms)
+✔ paint rules retain state and text-mode coverage instead of approving an unvisited selected state (656.4142ms)
+✔ the packaged paint API example can be retrieved and used in a real selected state (660.7901ms)
+✔ a sibling image behind a transparent icon cannot supply its foreground evidence (546.9956ms)
+✔ unsupported text strokes cannot pass from foreground cores and lighter colored fringes (382.6292ms)
+✔ valid foregrounds below the pixel measurement threshold stay unknown instead of being called suppressed (366.4378ms)
+✔ background ownership probes restore exact inline styles without changing sibling content (524.7947ms)
+✖ a partially captured oversized owner cannot hide wrong paint beyond the viewport (590.042ms)
+✖ running Web Animations API paint cannot pass from an early matching frame (530.6453ms)
+ℹ tests 13
+ℹ suites 0
+ℹ pass 11
+ℹ fail 2
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 7735.3911
+
+✖ failing tests:
+
+test at test\monochrome-paint.test.mjs:116:1
+✖ a partially captured oversized owner cannot hide wrong paint beyond the viewport (590.042ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  + actual - expected
+  
+  + 'PASS'
+  - 'UNVERIFIED'
+  
+      at [repository]/test/monochrome-paint.test.mjs:118:10
+      at async fixture ([repository]/test/monochrome-paint.test.mjs:17:5)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 'PASS',
+    expected: 'UNVERIFIED',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at test\monochrome-paint.test.mjs:121:1
+✖ running Web Animations API paint cannot pass from an early matching frame (530.6453ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  + actual - expected
+  
+  + 'PASS'
+  - 'UNVERIFIED'
+  
+      at [repository]/test/monochrome-paint.test.mjs:124:10
+      at async fixture ([repository]/test/monochrome-paint.test.mjs:17:5)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 'PASS',
+    expected: 'UNVERIFIED',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

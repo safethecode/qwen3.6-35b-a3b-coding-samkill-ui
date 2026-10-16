@@ -1,0 +1,136 @@
+{
+  "algorithm": "sha256",
+  "scope": "Exact published bytes; index excludes itself. Functional evidence does not establish visual approval.",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 26,
+      "sha256": "155348a89d5e749f50d336f8f164a39bf8415179177b36e8b51766f3ab9a16d3"
+    },
+    {
+      "path": "check-product.mjs",
+      "bytes": 4029,
+      "sha256": "84bcb8640e15119d0ca89c835e61a02d5d66312a49825955603a84f93517e870"
+    },
+    {
+      "path": "code-review.md",
+      "bytes": 2206,
+      "sha256": "8d3c332e0c63015c6755ddd96cb9394e6da4f38b6131cb99c9dbafd1408bd094"
+    },
+    {
+      "path": "executed-check.mjs",
+      "bytes": 4038,
+      "sha256": "a9c8ec6646a92bb6f732d6ea8a1bdb0c81afe3b5de4cc9d46cdfb7edad1f6f5a"
+    },
+    {
+      "path": "history/monochrome-paint-v1.mjs",
+      "bytes": 6001,
+      "sha256": "e4364306e1184fd838c13e9ecb5da3fde95f53a944f6b726316d01a2d35bbe93"
+    },
+    {
+      "path": "history/monochrome-paint-v2.mjs",
+      "bytes": 7904,
+      "sha256": "c32f62ae505fba0c1e24a0114158170f9729ca2a0a5e8e21b3a0c38ef9b17d30"
+    },
+    {
+      "path": "history/test-v3.mjs",
+      "bytes": 6287,
+      "sha256": "5317e65e9dff7640fab9cf0f6955c769bc06eb3a4362929b716d7b6fd299531c"
+    },
+    {
+      "path": "history/test-v4.mjs",
+      "bytes": 8496,
+      "sha256": "ff33a4424f9bc2c4556e1032d3ceadf3635f72936b621b1cf78ec3b8076a8bc2"
+    },
+    {
+      "path": "installed-skill.json",
+      "bytes": 1411,
+      "sha256": "35ad89860a27d74b4b900f295c00bc3cbe7bc5e6f18f3f6a045cff08f8c2c188"
+    },
+    {
+      "path": "plan.json",
+      "bytes": 1555,
+      "sha256": "b7df0eb89ba8601a20111c2bbefaacced048e53188f821ae2d49b889b9a89c9f"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3711,
+      "sha256": "961916473a80b929e502f1d713093b785df92969f9d9caa739be3ece94f22659"
+    },
+    {
+      "path": "redactions.json",
+      "bytes": 3201,
+      "sha256": "6ec1f22ef843f2c2ae82c0fda97f80b0311d361720d561d05ac78fddc916deab"
+    },
+    {
+      "path": "report.json",
+      "bytes": 22651,
+      "sha256": "e41f72f6994f60572fe503cf1e26f8cf9cab82fb9a0f2952867a123f2e08e74e"
+    },
+    {
+      "path": "reports/after.json",
+      "bytes": 542566,
+      "sha256": "98000fca14a915bfbd933d1f22bbe976a91420831281d041ab7dd697cb0ff262"
+    },
+    {
+      "path": "reports/before.json",
+      "bytes": 650861,
+      "sha256": "03ec3ab169a4100bcb8c934320111f2b43134e2698db2e6bd83a527dcec15c2c"
+    },
+    {
+      "path": "reports/label-fault.json",
+      "bytes": 172902,
+      "sha256": "53470ecc6aa5fbc773ae66b5421e06b03d481c7df4f9bf3a5bc53cad25969a41"
+    },
+    {
+      "path": "reports/portable.json",
+      "bytes": 542566,
+      "sha256": "a2c62395c0425db41b877bf6bc31b9dcf5b283db56699431d39bb713b89df658"
+    },
+    {
+      "path": "tests/full-unit.log",
+      "bytes": 21252,
+      "sha256": "2dd219951a34d99d39697c60fff579e50760fcdf195b0e700b44c3344cc7ae8d"
+    },
+    {
+      "path": "tests/green-v1.log",
+      "bytes": 1499,
+      "sha256": "71e8d16123b7767a707c18b274729e46975ccc8f9ce6fae64836af8a1d6877b9"
+    },
+    {
+      "path": "tests/integration.log",
+      "bytes": 1712,
+      "sha256": "a226278a5570f3c6820898707d30c6014fb2964fba2b30f52c834a6dbf8e56e3"
+    },
+    {
+      "path": "tests/red.log",
+      "bytes": 4363,
+      "sha256": "2307702fba704cce8644276a955c0dd5e51edc8941823df4aa24b7a24ba2aa4c"
+    },
+    {
+      "path": "tests/review-green.log",
+      "bytes": 2210,
+      "sha256": "db016cbd70d025d64e0bded8f4d32eaf8051e2ff6b33ec9937d6a9133fb78d97"
+    },
+    {
+      "path": "tests/review-red-v2.log",
+      "bytes": 3439,
+      "sha256": "2e81a7d6152a9111aa5221575e7fd70237769fbacee0035d89d669138c902dfc"
+    },
+    {
+      "path": "tests/review-red.log",
+      "bytes": 2705,
+      "sha256": "69e8455745e62e4175d6c9780a44ff559b8286891f5e6acaa03a413f8b5fd665"
+    },
+    {
+      "path": "tests/viewport-animation-green.log",
+      "bytes": 1758,
+      "sha256": "4e66c05635ef857f88336ccf792a66907e45a285dd9b575b9a2d36385e921773"
+    },
+    {
+      "path": "tests/viewport-animation-red.log",
+      "bytes": 2977,
+      "sha256": "fe445cdcfc8dad311504c94a53a72437d42207561b4d495f5c296156b9434d32"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "at": "2026-10-16T02:43:11.194Z",
+  "updates": [
+    {
+      "path": "references/decomposed-layout.md",
+      "beforeSha256": "2ce9966e660bd08ff1b2218e0aad040e78e567b6d12716e5de20114c9c31139c",
+      "afterSha256": "de40d516df95a7b124ba46795a5af4c4e0a72842b5cced6d9e2aaf62fb2d2478",
+      "backupPreserved": true
+    },
+    {
+      "path": "references/layout-contract-api.md",
+      "beforeSha256": "6c1967665519588b67c379538514adfcb5ed9986b3e7f87691997e70069aaca8",
+      "afterSha256": "4cd6d87767a748be319e781b4c51aee0f954efe3d374c9d6f745700a5f8551dd",
+      "backupPreserved": true
+    }
+  ],
+  "managedFiles": 52,
+  "allMatch": true,
+  "comments": [
+    {
+      "path": "scripts/monochrome-paint.mjs",
+      "html": 0,
+      "css": 0,
+      "js": 0
+    },
+    {
+      "path": "test/monochrome-paint.test.mjs",
+      "html": 0,
+      "css": 0,
+      "js": 0
+    }
+  ],
+  "verificationIncident": "Host originally passed filename as countComments CSS argument and omitted immediate PowerShell exit handling; comment check threw before receipt publication, while subsequent commit proceeded after already-passing full unit/integration tests. Corrected API call now verifies zero comments and installed bytes; no product/source change.",
+  "scope": "Two managed references updated after original-byte checks and preserved backups; other settings/MCP/models untouched; existing sessions do not auto-reload"
+}

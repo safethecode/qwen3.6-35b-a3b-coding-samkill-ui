@@ -1,0 +1,34 @@
+✔ actual icon paint rejects an external SVG whose CSS color falsely matches the selected label (613.8845ms)
+✔ plain solid text uses actual foreground cores and accepts browser subpixel antialiasing (707.1785ms)
+✖ paint expectations reject missing, ambiguous and hidden subjects or malformed contracts (546.7883ms)
+✔ unsupported backgrounds and paint effects stay unknown rather than passing from a few matching pixels (504.1798ms)
+✔ white or transparent suppressed paint cannot pass and a sparse glyph stays unknown (673.7804ms)
+✔ paint rules retain state and text-mode coverage instead of approving an unvisited selected state (571.9789ms)
+ℹ tests 6
+ℹ suites 0
+ℹ pass 5
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 3961.6011
+
+✖ failing tests:
+
+test at test\monochrome-paint.test.mjs:40:1
+✖ paint expectations reject missing, ambiguous and hidden subjects or malformed contracts (546.7883ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  'PASS' !== 'FAIL'
+  
+      at [repository]/test/monochrome-paint.test.mjs:45:10
+      at async fixture ([repository]/test/monochrome-paint.test.mjs:16:5)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 'PASS',
+    expected: 'FAIL',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
