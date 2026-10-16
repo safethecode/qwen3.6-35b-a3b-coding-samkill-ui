@@ -981,7 +981,27 @@
       "states": [
         "calendar-error-footer"
       ]
+    },
+    {
+      "id": "flow-month-label-inset",
+      "kind": "computedStyle",
+      "subject": "#date-calendar[data-scroll-mode=flow] .calendar-month:last-child .calendar-month-label",
+      "properties": {
+        "left": "20px"
+      },
+      "states": [
+        "calendar-gutter-flow"
+      ],
+      "modes": [
+        "text200"
+      ],
+      "widths": [
+        296,
+        320,
+        390,
+        1440
+      ]
     }
   ],
-  "scope": "Active B1/B2/B3 assisted-product mechanical contract. Native normal date pairing and16pxheader are normal-only;token readability applies to allactual captured modes. Missingotherstates/guides/nativehiddenbehavior stayunknown. Not fullreference/commercial approval. Calendar repair relations are prospective for the enlarged-glyph/short-height correction;previous79relations are preserved. Required calendar states must be activated and aggregated separately;this is not full product or catalog approval."
+  "scope": "Active B1/B2/B3 assisted-product mechanical contract. Native normal date pairing and16pxheader are normal-only;token readability applies to allactual captured modes. Missingotherstates/guides/nativehiddenbehavior stayunknown. Not fullreference/commercial approval. Calendar repair relations are prospective for the enlarged-glyph/short-height correction;previous79relations are preserved. Required calendar states must be activated and aggregated separately;this is not full product or catalog approval. V-C5-05 flowgutter relation requires its ownactual500px/enlarged/pannedstate and geometric gutter replay. Earlier calendar seven-rule matrix doesnot certify it."
 }

@@ -104,8 +104,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 7113,
-      "sha256": "7d5358e30efef8d6874f8736f57f8384a41ab42ed3972e1e11426cb30cd0cbe7"
+      "bytes": 7164,
+      "sha256": "803f39066e14304c5aa11d17fd72e0a7222b433b9999c7f0a027197dae8e878b"
     },
     {
       "path": "serve.mjs",
@@ -334,8 +334,8 @@
     },
     {
       "path": "source/calendar.css",
-      "bytes": 6685,
-      "sha256": "57dc24678d48497d4591cdb3c1233a7d9e3620d1c048b07a69fa894aec5ec3ac"
+      "bytes": 6778,
+      "sha256": "2f413d2111d764cf20f04ee5735c0e26f8ce8637063584989b9cb85780edb66b"
     },
     {
       "path": "source/catalog.js",
@@ -364,8 +364,8 @@
     },
     {
       "path": "source/DESIGN.md",
-      "bytes": 9350,
-      "sha256": "7ffdcbfd75c0afd53e865ef4237ee3780d18ba5fd0c809307d682e9f67af2f2e"
+      "bytes": 9505,
+      "sha256": "ffa6d745d73f373100e345786ba427c1f22a3bfca488b33647d7c1712a75057e"
     },
     {
       "path": "source/design/booking-plan.json",
@@ -375,7 +375,7 @@
     {
       "path": "source/design/component-plan.json",
       "bytes": 43976,
-      "sha256": "429d3f040e46d11412911b837a92deb8b943fc12e8a9cec11607f2c21c748669"
+      "sha256": "6695573e324d46007a6938a3012eac677764e1b6a4cd6548486531ba94cb7157"
     },
     {
       "path": "source/design/flow.md",
@@ -389,8 +389,8 @@
     },
     {
       "path": "source/design/layout-contract.json",
-      "bytes": 24254,
-      "sha256": "3b72fd122966d1f1a9720bf437e347a4583f3e1e9a2d09fe259a50958bdd1949"
+      "bytes": 24838,
+      "sha256": "75e22609368cd51d5cb985884e6ed782837acce8b4108d96fcd05973bf25159b"
     },
     {
       "path": "source/design/typography.json",

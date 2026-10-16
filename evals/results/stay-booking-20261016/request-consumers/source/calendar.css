@@ -17,3 +17,7 @@
 #date-calendar .calendar-weekdays{margin-bottom:0;padding:0 0 var(--label-gap)}#date-calendar .calendar-month-label{display:inline-block;position:sticky;left:0;background:var(--surface)}
 
 #date-calendar .calendar-body:focus-visible{outline:2px solid var(--text);outline-offset:-2px}
+
+#date-calendar[data-scroll-mode=flow] .calendar-month-label {
+    left: var(--page-inset)
+}

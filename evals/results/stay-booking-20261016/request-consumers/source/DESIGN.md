@@ -2,7 +2,7 @@
 
 ## Current scope
 
-This is one vertical mobile application, capped at 390 CSS px at every browser width. Discovery, search, filters, favorites, room/rate selection, trip details, price review, guest editing, and local request creation/list/detail/cancellation are connected. The custom calendar is connected to search/trip drafts;its enlarged legibility and short-height behavior require the current repair. Request editing,isolated component samples,complete catalog/guide coverage and repeated reference quality remain unfinished. No payment, vendor reservation, confirmation or refund is implemented. The fictional catalog and licensed generic room photographs are not real inventory or endorsements. Keep implementation notices out of the product.
+This is one vertical mobile application, capped at 390 CSS px at every browser width. Discovery, search, filters, favorites, room/rate selection, trip details, price review, guest editing, and local request creation/list/detail/cancellation are connected. The custom calendar is connected to search/trip drafts;its enlarged date separation and short-height browser recovery have source-bound C5 evidence. The panned short-height month-label gutter is under a separate bounded correction;real devices and assistive technology remain unverified. Request editing,isolated component samples,complete catalog/guide coverage and repeated reference quality remain unfinished. No payment, vendor reservation, confirmation or refund is implemented. The fictional catalog and licensed generic room photographs are not real inventory or endorsements. Keep implementation notices out of the product.
 
 ## Reference evidence
 
