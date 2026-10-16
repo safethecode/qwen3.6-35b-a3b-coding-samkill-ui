@@ -145,6 +145,34 @@ export async function inspectLayoutContract(page, contract, options = {}) {
           const surface = observed.surface;
           if (!surface.owned || surface.color === surface.containerColor || surface.color === 'transparent' || /rgba\([^)]*,\s*0\)$/.test(surface.color) || surface.padding.some(value => value < rule.minPadding)) throw new Error('Declared group needs its own visible surface and internal spacing');
           if (rule.forbidHorizontalBorders && (surface.horizontalBorders || surface.separators)) throw new Error('Declared surface grouping cannot use horizontal borders or separator bars');
+        } else if (rule.kind === 'typeRelation') {
+          const { minSizeRatio: min, maxSizeRatio: max, minWeightDifference: low, maxWeightDifference: high } = rule;
+          if (!Number.isFinite(min) || !Number.isFinite(max) || min <= 0 || max < min || (low !== undefined || high !== undefined) && (!Number.isFinite(low) || !Number.isFinite(high) || low < -999 || high > 999 || high < low)) throw new Error('Type relation needs ordered positive size ratios and optional paired weight-difference bounds');
+          observed.reference = await box(rule.reference);
+          if (await page.locator(rule.subject).evaluate((element, selector) => { const reference = document.querySelector(selector); return element === reference || element.contains(reference) || reference.contains(element); }, rule.reference)) throw new Error('Type relation needs two distinct nonoverlapping text owners');
+          const read = selector => page.locator(selector).evaluate(element => {
+            const style = getComputedStyle(element), size = parseFloat(style.fontSize), weight = parseFloat(style.fontWeight), problems = [];
+            for (let owner = element; owner; owner = owner.parentElement) {
+              const s = getComputedStyle(owner), zoom = s.zoom === 'normal' ? 1 : Number(s.zoom);
+              if (s.transform !== 'none' || Number.isFinite(zoom) && zoom !== 1 || s.scale && !['none', '1', '1 1'].includes(s.scale) || s.rotate && !['none', '0deg'].includes(s.rotate)) problems.push('Transformed or zoomed text needs separate painted-scale evidence');
+            }
+            for (const owner of [element, ...element.querySelectorAll('*')]) for (const pseudo of ['::before', '::after']) { const content = getComputedStyle(owner, pseudo).content; if (content && !['none', 'normal', '""', "''"].includes(content)) problems.push('Generated pseudo content needs separate typography evidence'); }
+            for (const owner of [element, ...element.querySelectorAll('*')]) for (const pseudo of ['::first-letter', '::first-line']) { const style = getComputedStyle(owner), part = getComputedStyle(owner, pseudo); if (part.fontSize !== style.fontSize || part.fontWeight !== style.fontWeight) problems.push('Pseudo typography is not represented by the owner metric'); }
+            const walker = document.createTreeWalker(element, NodeFilter.SHOW_TEXT); let text = 0;
+            while (walker.nextNode()) {
+              if (!walker.currentNode.textContent.trim()) continue;
+              const owner = walker.currentNode.parentElement, s = getComputedStyle(owner); text++;
+              if (!owner.checkVisibility({ checkOpacity: true, checkVisibilityCSS: true }) || parseFloat(s.fontSize) !== size || parseFloat(s.fontWeight) !== weight) problems.push('Text owner contains hidden or mixed-size/weight descendants');
+              for (let current = owner; current && current !== element; current = current.parentElement) { const c = getComputedStyle(current); if (c.transform !== 'none' || c.scale && !['none', '1', '1 1'].includes(c.scale) || c.rotate && !['none', '0deg'].includes(c.rotate) || Number.isFinite(Number(c.zoom)) && Number(c.zoom) !== 1) problems.push('Descendant text scale is not represented by the owner metric'); }
+            }
+            if (!text || !Number.isFinite(size) || size <= 0 || !Number.isFinite(weight) || weight < 1 || weight > 1000) problems.push('Uniform numeric DOM text metrics are unavailable');
+            return { size, weight, problems: [...new Set(problems)] };
+          });
+          const primary = await read(rule.subject), secondary = await read(rule.reference);
+          observed.typography = { primary, secondary, sizeRatio: primary.size / secondary.size, weightDifference: primary.weight - secondary.weight };
+          if (primary.problems.length || secondary.problems.length) throw Object.assign(new Error('Relative typography is not verified for mixed, hidden or scaled text'), { verificationStatus: 'UNVERIFIED' });
+          const { sizeRatio, weightDifference } = observed.typography;
+          if (sizeRatio < min - 1e-6 || sizeRatio > max + 1e-6 || low !== undefined && (weightDifference < low - 1e-6 || weightDifference > high + 1e-6)) throw new Error('Typography size ratio or weight difference exceeds its declared relationship');
         } else if (rule.kind === 'typeHierarchy') {
           if (!Number.isFinite(rule.minSizeDifference) || rule.minSizeDifference <= 0) throw new Error('Hierarchy requires a positive minimum size difference');
           observed.reference = await box(rule.reference);

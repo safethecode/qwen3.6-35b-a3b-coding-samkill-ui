@@ -1,0 +1,18 @@
+{
+  "origin": "Postimplementation regression contract for the previously recorded native task/card observation; not an original generation input",
+  "rules": [
+    {
+      "id": "room-task-card-relative-emphasis",
+      "kind": "typeRelation",
+      "subject": "#detail-title",
+      "reference": ".room-card[data-room-id=\"afternoon-standard\"] [data-room-name]",
+      "minSizeRatio": 1,
+      "maxSizeRatio": 1,
+      "minWeightDifference": 0,
+      "maxWeightDifference": 0,
+      "states": [
+        "rooms"
+      ]
+    }
+  ]
+}

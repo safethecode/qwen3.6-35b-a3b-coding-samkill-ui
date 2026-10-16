@@ -1,0 +1,75 @@
+✔ relative typography measures equal roles and rejects an overemphasized task heading (507.6328ms)
+✔ relative typography preserves real enlargement and cannot approve mixed or scaled owners (510.0511ms)
+✔ relative typography fails closed for invalid bounds, ambiguous owners and tautologies (528.0591ms)
+✔ the installed API example can be retrieved and executed against actual text owners (385.9866ms)
+✖ relative typography cannot compare an ancestor with the same contained reference text (397.1942ms)
+✖ generated pseudo text is unknown instead of a uniform owner pass (384.564ms)
+✖ individual CSS rotation is unknown even when the transform shorthand is none (380.0775ms)
+ℹ tests 7
+ℹ suites 0
+ℹ pass 4
+ℹ fail 3
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 3416.8359
+
+✖ failing tests:
+
+test at test\type-relation.test.mjs:24:1
+✖ relative typography cannot compare an ancestor with the same contained reference text (397.1942ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  'PASS' !== 'FAIL'
+  
+      at file:///REPOSITORY/test/type-relation.test.mjs:25:200
+      at async fixture (file:///REPOSITORY/test/type-relation.test.mjs:7:295)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 'PASS',
+    expected: 'FAIL',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at test\type-relation.test.mjs:27:1
+✖ generated pseudo text is unknown instead of a uniform owner pass (384.564ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  + actual - expected
+  
+  + 'PASS'
+  - 'UNVERIFIED'
+  
+      at file:///REPOSITORY/test/type-relation.test.mjs:28:108
+      at async fixture (file:///REPOSITORY/test/type-relation.test.mjs:7:295)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 'PASS',
+    expected: 'UNVERIFIED',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at test\type-relation.test.mjs:30:1
+✖ individual CSS rotation is unknown even when the transform shorthand is none (380.0775ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  + actual - expected
+  
+  + 'PASS'
+  - 'UNVERIFIED'
+  
+      at file:///REPOSITORY/test/type-relation.test.mjs:31:74
+      at async fixture (file:///REPOSITORY/test/type-relation.test.mjs:7:295)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 'PASS',
+    expected: 'UNVERIFIED',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

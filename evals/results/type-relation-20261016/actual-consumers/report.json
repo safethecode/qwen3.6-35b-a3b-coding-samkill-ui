@@ -1,0 +1,1273 @@
+{
+  "at": "2026-10-16T00:52:42.739Z",
+  "contract": {
+    "origin": "Postimplementation regression contract for the previously recorded native task/card observation; not an original generation input",
+    "rules": [
+      {
+        "id": "room-task-card-relative-emphasis",
+        "kind": "typeRelation",
+        "subject": "#detail-title",
+        "reference": ".room-card[data-room-id=\"afternoon-standard\"] [data-room-name]",
+        "minSizeRatio": 1,
+        "maxSizeRatio": 1,
+        "minWeightDifference": 0,
+        "maxWeightDifference": 0,
+        "states": [
+          "rooms"
+        ]
+      }
+    ]
+  },
+  "rows": [
+    {
+      "label": "before",
+      "width": 296,
+      "mode": "normal",
+      "capture": {
+        "width": 296,
+        "state": "rooms",
+        "mode": "normal",
+        "contractSha256": "d5b08899c199f8ecfbcc79c476227539cd8b448323145f91effedda5a8dc9c2d",
+        "results": [
+          {
+            "id": "room-task-card-relative-emphasis",
+            "kind": "typeRelation",
+            "status": "FAIL",
+            "detail": "Typography size ratio or weight difference exceeds its declared relationship",
+            "observed": {
+              "subject": {
+                "x": 20,
+                "y": 77,
+                "width": 256,
+                "height": 33
+              },
+              "reference": {
+                "x": 32,
+                "y": 426.359375,
+                "width": 104.40625,
+                "height": 27
+              },
+              "typography": {
+                "primary": {
+                  "size": 22,
+                  "weight": 700,
+                  "problems": []
+                },
+                "secondary": {
+                  "size": 18,
+                  "weight": 600,
+                  "problems": []
+                },
+                "sizeRatio": 1.2222222222222223,
+                "weightDifference": 100
+              }
+            }
+          }
+        ],
+        "issues": [
+          {
+            "status": "FAIL",
+            "problem": "room-task-card-relative-emphasis: Typography size ratio or weight difference exceeds its declared relationship"
+          }
+        ],
+        "pendingStates": [],
+        "scope": "Declared DOM ownership, rendered geometry, row grouping and sample width. These measurements do not certify visual equivalence or undeclared relationships."
+      }
+    },
+    {
+      "label": "before",
+      "width": 296,
+      "mode": "text-200",
+      "capture": {
+        "width": 296,
+        "state": "rooms",
+        "mode": "text-200",
+        "contractSha256": "d5b08899c199f8ecfbcc79c476227539cd8b448323145f91effedda5a8dc9c2d",
+        "results": [
+          {
+            "id": "room-task-card-relative-emphasis",
+            "kind": "typeRelation",
+            "status": "FAIL",
+            "detail": "Typography size ratio or weight difference exceeds its declared relationship",
+            "observed": {
+              "subject": {
+                "x": 20,
+                "y": 98,
+                "width": 256,
+                "height": 66
+              },
+              "reference": {
+                "x": 32,
+                "y": 648.359375,
+                "width": 204,
+                "height": 108
+              },
+              "typography": {
+                "primary": {
+                  "size": 44,
+                  "weight": 700,
+                  "problems": []
+                },
+                "secondary": {
+                  "size": 36,
+                  "weight": 600,
+                  "problems": []
+                },
+                "sizeRatio": 1.2222222222222223,
+                "weightDifference": 100
+              }
+            }
+          }
+        ],
+        "issues": [
+          {
+            "status": "FAIL",
+            "problem": "room-task-card-relative-emphasis: Typography size ratio or weight difference exceeds its declared relationship"
+          }
+        ],
+        "pendingStates": [],
+        "scope": "Declared DOM ownership, rendered geometry, row grouping and sample width. These measurements do not certify visual equivalence or undeclared relationships."
+      }
+    },
+    {
+      "label": "before",
+      "width": 296,
+      "mode": "text-spacing",
+      "capture": {
+        "width": 296,
+        "state": "rooms",
+        "mode": "text-spacing",
+        "contractSha256": "d5b08899c199f8ecfbcc79c476227539cd8b448323145f91effedda5a8dc9c2d",
+        "results": [
+          {
+            "id": "room-task-card-relative-emphasis",
+            "kind": "typeRelation",
+            "status": "FAIL",
+            "detail": "Typography size ratio or weight difference exceeds its declared relationship",
+            "observed": {
+              "subject": {
+                "x": 20,
+                "y": 77,
+                "width": 256,
+                "height": 33
+              },
+              "reference": {
+                "x": 32,
+                "y": 466.359375,
+                "width": 122.40625,
+                "height": 27
+              },
+              "typography": {
+                "primary": {
+                  "size": 22,
+                  "weight": 700,
+                  "problems": []
+                },
+                "secondary": {
+                  "size": 18,
+                  "weight": 600,
+                  "problems": []
+                },
+                "sizeRatio": 1.2222222222222223,
+                "weightDifference": 100
+              }
+            }
+          }
+        ],
+        "issues": [
+          {
+            "status": "FAIL",
+            "problem": "room-task-card-relative-emphasis: Typography size ratio or weight difference exceeds its declared relationship"
+          }
+        ],
+        "pendingStates": [],
+        "scope": "Declared DOM ownership, rendered geometry, row grouping and sample width. These measurements do not certify visual equivalence or undeclared relationships."
+      }
+    },
+    {
+      "label": "before",
+      "width": 320,
+      "mode": "normal",
+      "capture": {
+        "width": 320,
+        "state": "rooms",
+        "mode": "normal",
+        "contractSha256": "d5b08899c199f8ecfbcc79c476227539cd8b448323145f91effedda5a8dc9c2d",
+        "results": [
+          {
+            "id": "room-task-card-relative-emphasis",
+            "kind": "typeRelation",
+            "status": "FAIL",
+            "detail": "Typography size ratio or weight difference exceeds its declared relationship",
+            "observed": {
+              "subject": {
+                "x": 20,
+                "y": 77,
+                "width": 280,
+                "height": 33
+              },
+              "reference": {
+                "x": 32,
+                "y": 405.265625,
+                "width": 104.40625,
+                "height": 27
+              },
+              "typography": {
+                "primary": {
+                  "size": 22,
+                  "weight": 700,
+                  "problems": []
+                },
+                "secondary": {
+                  "size": 18,
+                  "weight": 600,
+                  "problems": []
+                },
+                "sizeRatio": 1.2222222222222223,
+                "weightDifference": 100
+              }
+            }
+          }
+        ],
+        "issues": [
+          {
+            "status": "FAIL",
+            "problem": "room-task-card-relative-emphasis: Typography size ratio or weight difference exceeds its declared relationship"
+          }
+        ],
+        "pendingStates": [],
+        "scope": "Declared DOM ownership, rendered geometry, row grouping and sample width. These measurements do not certify visual equivalence or undeclared relationships."
+      }
+    },
+    {
+      "label": "before",
+      "width": 320,
+      "mode": "text-200",
+      "capture": {
+        "width": 320,
+        "state": "rooms",
+        "mode": "text-200",
+        "contractSha256": "d5b08899c199f8ecfbcc79c476227539cd8b448323145f91effedda5a8dc9c2d",
+        "results": [
+          {
+            "id": "room-task-card-relative-emphasis",
+            "kind": "typeRelation",
+            "status": "FAIL",
+            "detail": "Typography size ratio or weight difference exceeds its declared relationship",
+            "observed": {
+              "subject": {
+                "x": 20,
+                "y": 98,
+                "width": 280,
+                "height": 66
+              },
+              "reference": {
+                "x": 32,
+                "y": 659.265625,
+                "width": 208.8125,
+                "height": 54
+              },
+              "typography": {
+                "primary": {
+                  "size": 44,
+                  "weight": 700,
+                  "problems": []
+                },
+                "secondary": {
+                  "size": 36,
+                  "weight": 600,
+                  "problems": []
+                },
+                "sizeRatio": 1.2222222222222223,
+                "weightDifference": 100
+              }
+            }
+          }
+        ],
+        "issues": [
+          {
+            "status": "FAIL",
+            "problem": "room-task-card-relative-emphasis: Typography size ratio or weight difference exceeds its declared relationship"
+          }
+        ],
+        "pendingStates": [],
+        "scope": "Declared DOM ownership, rendered geometry, row grouping and sample width. These measurements do not certify visual equivalence or undeclared relationships."
+      }
+    },
+    {
+      "label": "before",
+      "width": 320,
+      "mode": "text-spacing",
+      "capture": {
+        "width": 320,
+        "state": "rooms",
+        "mode": "text-spacing",
+        "contractSha256": "d5b08899c199f8ecfbcc79c476227539cd8b448323145f91effedda5a8dc9c2d",
+        "results": [
+          {
+            "id": "room-task-card-relative-emphasis",
+            "kind": "typeRelation",
+            "status": "FAIL",
+            "detail": "Typography size ratio or weight difference exceeds its declared relationship",
+            "observed": {
+              "subject": {
+                "x": 20,
+                "y": 77,
+                "width": 280,
+                "height": 33
+              },
+              "reference": {
+                "x": 32,
+                "y": 477.265625,
+                "width": 122.40625,
+                "height": 27
+              },
+              "typography": {
+                "primary": {
+                  "size": 22,
+                  "weight": 700,
+                  "problems": []
+                },
+                "secondary": {
+                  "size": 18,
+                  "weight": 600,
+                  "problems": []
+                },
+                "sizeRatio": 1.2222222222222223,
+                "weightDifference": 100
+              }
+            }
+          }
+        ],
+        "issues": [
+          {
+            "status": "FAIL",
+            "problem": "room-task-card-relative-emphasis: Typography size ratio or weight difference exceeds its declared relationship"
+          }
+        ],
+        "pendingStates": [],
+        "scope": "Declared DOM ownership, rendered geometry, row grouping and sample width. These measurements do not certify visual equivalence or undeclared relationships."
+      }
+    },
+    {
+      "label": "before",
+      "width": 390,
+      "mode": "normal",
+      "capture": {
+        "width": 390,
+        "state": "rooms",
+        "mode": "normal",
+        "contractSha256": "d5b08899c199f8ecfbcc79c476227539cd8b448323145f91effedda5a8dc9c2d",
+        "results": [
+          {
+            "id": "room-task-card-relative-emphasis",
+            "kind": "typeRelation",
+            "status": "FAIL",
+            "detail": "Typography size ratio or weight difference exceeds its declared relationship",
+            "observed": {
+              "subject": {
+                "x": 20,
+                "y": 77,
+                "width": 350,
+                "height": 33
+              },
+              "reference": {
+                "x": 32,
+                "y": 416.078125,
+                "width": 104.40625,
+                "height": 27
+              },
+              "typography": {
+                "primary": {
+                  "size": 22,
+                  "weight": 700,
+                  "problems": []
+                },
+                "secondary": {
+                  "size": 18,
+                  "weight": 600,
+                  "problems": []
+                },
+                "sizeRatio": 1.2222222222222223,
+                "weightDifference": 100
+              }
+            }
+          }
+        ],
+        "issues": [
+          {
+            "status": "FAIL",
+            "problem": "room-task-card-relative-emphasis: Typography size ratio or weight difference exceeds its declared relationship"
+          }
+        ],
+        "pendingStates": [],
+        "scope": "Declared DOM ownership, rendered geometry, row grouping and sample width. These measurements do not certify visual equivalence or undeclared relationships."
+      }
+    },
+    {
+      "label": "before",
+      "width": 390,
+      "mode": "text-200",
+      "capture": {
+        "width": 390,
+        "state": "rooms",
+        "mode": "text-200",
+        "contractSha256": "d5b08899c199f8ecfbcc79c476227539cd8b448323145f91effedda5a8dc9c2d",
+        "results": [
+          {
+            "id": "room-task-card-relative-emphasis",
+            "kind": "typeRelation",
+            "status": "FAIL",
+            "detail": "Typography size ratio or weight difference exceeds its declared relationship",
+            "observed": {
+              "subject": {
+                "x": 20,
+                "y": 98,
+                "width": 350,
+                "height": 66
+              },
+              "reference": {
+                "x": 32,
+                "y": 607.078125,
+                "width": 208.8125,
+                "height": 54
+              },
+              "typography": {
+                "primary": {
+                  "size": 44,
+                  "weight": 700,
+                  "problems": []
+                },
+                "secondary": {
+                  "size": 36,
+                  "weight": 600,
+                  "problems": []
+                },
+                "sizeRatio": 1.2222222222222223,
+                "weightDifference": 100
+              }
+            }
+          }
+        ],
+        "issues": [
+          {
+            "status": "FAIL",
+            "problem": "room-task-card-relative-emphasis: Typography size ratio or weight difference exceeds its declared relationship"
+          }
+        ],
+        "pendingStates": [],
+        "scope": "Declared DOM ownership, rendered geometry, row grouping and sample width. These measurements do not certify visual equivalence or undeclared relationships."
+      }
+    },
+    {
+      "label": "before",
+      "width": 390,
+      "mode": "text-spacing",
+      "capture": {
+        "width": 390,
+        "state": "rooms",
+        "mode": "text-spacing",
+        "contractSha256": "d5b08899c199f8ecfbcc79c476227539cd8b448323145f91effedda5a8dc9c2d",
+        "results": [
+          {
+            "id": "room-task-card-relative-emphasis",
+            "kind": "typeRelation",
+            "status": "FAIL",
+            "detail": "Typography size ratio or weight difference exceeds its declared relationship",
+            "observed": {
+              "subject": {
+                "x": 20,
+                "y": 77,
+                "width": 350,
+                "height": 33
+              },
+              "reference": {
+                "x": 32,
+                "y": 477.078125,
+                "width": 122.40625,
+                "height": 27
+              },
+              "typography": {
+                "primary": {
+                  "size": 22,
+                  "weight": 700,
+                  "problems": []
+                },
+                "secondary": {
+                  "size": 18,
+                  "weight": 600,
+                  "problems": []
+                },
+                "sizeRatio": 1.2222222222222223,
+                "weightDifference": 100
+              }
+            }
+          }
+        ],
+        "issues": [
+          {
+            "status": "FAIL",
+            "problem": "room-task-card-relative-emphasis: Typography size ratio or weight difference exceeds its declared relationship"
+          }
+        ],
+        "pendingStates": [],
+        "scope": "Declared DOM ownership, rendered geometry, row grouping and sample width. These measurements do not certify visual equivalence or undeclared relationships."
+      }
+    },
+    {
+      "label": "before",
+      "width": 1440,
+      "mode": "normal",
+      "capture": {
+        "width": 1440,
+        "state": "rooms",
+        "mode": "normal",
+        "contractSha256": "d5b08899c199f8ecfbcc79c476227539cd8b448323145f91effedda5a8dc9c2d",
+        "results": [
+          {
+            "id": "room-task-card-relative-emphasis",
+            "kind": "typeRelation",
+            "status": "FAIL",
+            "detail": "Typography size ratio or weight difference exceeds its declared relationship",
+            "observed": {
+              "subject": {
+                "x": 545,
+                "y": 77,
+                "width": 350,
+                "height": 33
+              },
+              "reference": {
+                "x": 557,
+                "y": 416.078125,
+                "width": 104.40625,
+                "height": 27
+              },
+              "typography": {
+                "primary": {
+                  "size": 22,
+                  "weight": 700,
+                  "problems": []
+                },
+                "secondary": {
+                  "size": 18,
+                  "weight": 600,
+                  "problems": []
+                },
+                "sizeRatio": 1.2222222222222223,
+                "weightDifference": 100
+              }
+            }
+          }
+        ],
+        "issues": [
+          {
+            "status": "FAIL",
+            "problem": "room-task-card-relative-emphasis: Typography size ratio or weight difference exceeds its declared relationship"
+          }
+        ],
+        "pendingStates": [],
+        "scope": "Declared DOM ownership, rendered geometry, row grouping and sample width. These measurements do not certify visual equivalence or undeclared relationships."
+      }
+    },
+    {
+      "label": "before",
+      "width": 1440,
+      "mode": "text-200",
+      "capture": {
+        "width": 1440,
+        "state": "rooms",
+        "mode": "text-200",
+        "contractSha256": "d5b08899c199f8ecfbcc79c476227539cd8b448323145f91effedda5a8dc9c2d",
+        "results": [
+          {
+            "id": "room-task-card-relative-emphasis",
+            "kind": "typeRelation",
+            "status": "FAIL",
+            "detail": "Typography size ratio or weight difference exceeds its declared relationship",
+            "observed": {
+              "subject": {
+                "x": 545,
+                "y": 98,
+                "width": 350,
+                "height": 66
+              },
+              "reference": {
+                "x": 557,
+                "y": 607.078125,
+                "width": 208.8125,
+                "height": 54
+              },
+              "typography": {
+                "primary": {
+                  "size": 44,
+                  "weight": 700,
+                  "problems": []
+                },
+                "secondary": {
+                  "size": 36,
+                  "weight": 600,
+                  "problems": []
+                },
+                "sizeRatio": 1.2222222222222223,
+                "weightDifference": 100
+              }
+            }
+          }
+        ],
+        "issues": [
+          {
+            "status": "FAIL",
+            "problem": "room-task-card-relative-emphasis: Typography size ratio or weight difference exceeds its declared relationship"
+          }
+        ],
+        "pendingStates": [],
+        "scope": "Declared DOM ownership, rendered geometry, row grouping and sample width. These measurements do not certify visual equivalence or undeclared relationships."
+      }
+    },
+    {
+      "label": "before",
+      "width": 1440,
+      "mode": "text-spacing",
+      "capture": {
+        "width": 1440,
+        "state": "rooms",
+        "mode": "text-spacing",
+        "contractSha256": "d5b08899c199f8ecfbcc79c476227539cd8b448323145f91effedda5a8dc9c2d",
+        "results": [
+          {
+            "id": "room-task-card-relative-emphasis",
+            "kind": "typeRelation",
+            "status": "FAIL",
+            "detail": "Typography size ratio or weight difference exceeds its declared relationship",
+            "observed": {
+              "subject": {
+                "x": 545,
+                "y": 77,
+                "width": 350,
+                "height": 33
+              },
+              "reference": {
+                "x": 557,
+                "y": 477.078125,
+                "width": 122.40625,
+                "height": 27
+              },
+              "typography": {
+                "primary": {
+                  "size": 22,
+                  "weight": 700,
+                  "problems": []
+                },
+                "secondary": {
+                  "size": 18,
+                  "weight": 600,
+                  "problems": []
+                },
+                "sizeRatio": 1.2222222222222223,
+                "weightDifference": 100
+              }
+            }
+          }
+        ],
+        "issues": [
+          {
+            "status": "FAIL",
+            "problem": "room-task-card-relative-emphasis: Typography size ratio or weight difference exceeds its declared relationship"
+          }
+        ],
+        "pendingStates": [],
+        "scope": "Declared DOM ownership, rendered geometry, row grouping and sample width. These measurements do not certify visual equivalence or undeclared relationships."
+      }
+    },
+    {
+      "label": "after",
+      "width": 296,
+      "mode": "normal",
+      "capture": {
+        "width": 296,
+        "state": "rooms",
+        "mode": "normal",
+        "contractSha256": "d5b08899c199f8ecfbcc79c476227539cd8b448323145f91effedda5a8dc9c2d",
+        "results": [
+          {
+            "id": "room-task-card-relative-emphasis",
+            "kind": "typeRelation",
+            "status": "PASS",
+            "observed": {
+              "subject": {
+                "x": 20,
+                "y": 77,
+                "width": 256,
+                "height": 27
+              },
+              "reference": {
+                "x": 32,
+                "y": 420.359375,
+                "width": 104.40625,
+                "height": 27
+              },
+              "typography": {
+                "primary": {
+                  "size": 18,
+                  "weight": 600,
+                  "problems": []
+                },
+                "secondary": {
+                  "size": 18,
+                  "weight": 600,
+                  "problems": []
+                },
+                "sizeRatio": 1,
+                "weightDifference": 0
+              }
+            }
+          }
+        ],
+        "issues": [],
+        "pendingStates": [],
+        "scope": "Declared DOM ownership, rendered geometry, row grouping and sample width. These measurements do not certify visual equivalence or undeclared relationships."
+      }
+    },
+    {
+      "label": "after",
+      "width": 296,
+      "mode": "text-200",
+      "capture": {
+        "width": 296,
+        "state": "rooms",
+        "mode": "text-200",
+        "contractSha256": "d5b08899c199f8ecfbcc79c476227539cd8b448323145f91effedda5a8dc9c2d",
+        "results": [
+          {
+            "id": "room-task-card-relative-emphasis",
+            "kind": "typeRelation",
+            "status": "PASS",
+            "observed": {
+              "subject": {
+                "x": 20,
+                "y": 98,
+                "width": 256,
+                "height": 54
+              },
+              "reference": {
+                "x": 32,
+                "y": 636.359375,
+                "width": 204,
+                "height": 108
+              },
+              "typography": {
+                "primary": {
+                  "size": 36,
+                  "weight": 600,
+                  "problems": []
+                },
+                "secondary": {
+                  "size": 36,
+                  "weight": 600,
+                  "problems": []
+                },
+                "sizeRatio": 1,
+                "weightDifference": 0
+              }
+            }
+          }
+        ],
+        "issues": [],
+        "pendingStates": [],
+        "scope": "Declared DOM ownership, rendered geometry, row grouping and sample width. These measurements do not certify visual equivalence or undeclared relationships."
+      }
+    },
+    {
+      "label": "after",
+      "width": 296,
+      "mode": "text-spacing",
+      "capture": {
+        "width": 296,
+        "state": "rooms",
+        "mode": "text-spacing",
+        "contractSha256": "d5b08899c199f8ecfbcc79c476227539cd8b448323145f91effedda5a8dc9c2d",
+        "results": [
+          {
+            "id": "room-task-card-relative-emphasis",
+            "kind": "typeRelation",
+            "status": "PASS",
+            "observed": {
+              "subject": {
+                "x": 20,
+                "y": 77,
+                "width": 256,
+                "height": 27
+              },
+              "reference": {
+                "x": 32,
+                "y": 460.359375,
+                "width": 122.40625,
+                "height": 27
+              },
+              "typography": {
+                "primary": {
+                  "size": 18,
+                  "weight": 600,
+                  "problems": []
+                },
+                "secondary": {
+                  "size": 18,
+                  "weight": 600,
+                  "problems": []
+                },
+                "sizeRatio": 1,
+                "weightDifference": 0
+              }
+            }
+          }
+        ],
+        "issues": [],
+        "pendingStates": [],
+        "scope": "Declared DOM ownership, rendered geometry, row grouping and sample width. These measurements do not certify visual equivalence or undeclared relationships."
+      }
+    },
+    {
+      "label": "after",
+      "width": 320,
+      "mode": "normal",
+      "capture": {
+        "width": 320,
+        "state": "rooms",
+        "mode": "normal",
+        "contractSha256": "d5b08899c199f8ecfbcc79c476227539cd8b448323145f91effedda5a8dc9c2d",
+        "results": [
+          {
+            "id": "room-task-card-relative-emphasis",
+            "kind": "typeRelation",
+            "status": "PASS",
+            "observed": {
+              "subject": {
+                "x": 20,
+                "y": 77,
+                "width": 280,
+                "height": 27
+              },
+              "reference": {
+                "x": 32,
+                "y": 399.265625,
+                "width": 104.40625,
+                "height": 27
+              },
+              "typography": {
+                "primary": {
+                  "size": 18,
+                  "weight": 600,
+                  "problems": []
+                },
+                "secondary": {
+                  "size": 18,
+                  "weight": 600,
+                  "problems": []
+                },
+                "sizeRatio": 1,
+                "weightDifference": 0
+              }
+            }
+          }
+        ],
+        "issues": [],
+        "pendingStates": [],
+        "scope": "Declared DOM ownership, rendered geometry, row grouping and sample width. These measurements do not certify visual equivalence or undeclared relationships."
+      }
+    },
+    {
+      "label": "after",
+      "width": 320,
+      "mode": "text-200",
+      "capture": {
+        "width": 320,
+        "state": "rooms",
+        "mode": "text-200",
+        "contractSha256": "d5b08899c199f8ecfbcc79c476227539cd8b448323145f91effedda5a8dc9c2d",
+        "results": [
+          {
+            "id": "room-task-card-relative-emphasis",
+            "kind": "typeRelation",
+            "status": "PASS",
+            "observed": {
+              "subject": {
+                "x": 20,
+                "y": 98,
+                "width": 280,
+                "height": 54
+              },
+              "reference": {
+                "x": 32,
+                "y": 647.265625,
+                "width": 208.8125,
+                "height": 54
+              },
+              "typography": {
+                "primary": {
+                  "size": 36,
+                  "weight": 600,
+                  "problems": []
+                },
+                "secondary": {
+                  "size": 36,
+                  "weight": 600,
+                  "problems": []
+                },
+                "sizeRatio": 1,
+                "weightDifference": 0
+              }
+            }
+          }
+        ],
+        "issues": [],
+        "pendingStates": [],
+        "scope": "Declared DOM ownership, rendered geometry, row grouping and sample width. These measurements do not certify visual equivalence or undeclared relationships."
+      }
+    },
+    {
+      "label": "after",
+      "width": 320,
+      "mode": "text-spacing",
+      "capture": {
+        "width": 320,
+        "state": "rooms",
+        "mode": "text-spacing",
+        "contractSha256": "d5b08899c199f8ecfbcc79c476227539cd8b448323145f91effedda5a8dc9c2d",
+        "results": [
+          {
+            "id": "room-task-card-relative-emphasis",
+            "kind": "typeRelation",
+            "status": "PASS",
+            "observed": {
+              "subject": {
+                "x": 20,
+                "y": 77,
+                "width": 280,
+                "height": 27
+              },
+              "reference": {
+                "x": 32,
+                "y": 471.265625,
+                "width": 122.40625,
+                "height": 27
+              },
+              "typography": {
+                "primary": {
+                  "size": 18,
+                  "weight": 600,
+                  "problems": []
+                },
+                "secondary": {
+                  "size": 18,
+                  "weight": 600,
+                  "problems": []
+                },
+                "sizeRatio": 1,
+                "weightDifference": 0
+              }
+            }
+          }
+        ],
+        "issues": [],
+        "pendingStates": [],
+        "scope": "Declared DOM ownership, rendered geometry, row grouping and sample width. These measurements do not certify visual equivalence or undeclared relationships."
+      }
+    },
+    {
+      "label": "after",
+      "width": 390,
+      "mode": "normal",
+      "capture": {
+        "width": 390,
+        "state": "rooms",
+        "mode": "normal",
+        "contractSha256": "d5b08899c199f8ecfbcc79c476227539cd8b448323145f91effedda5a8dc9c2d",
+        "results": [
+          {
+            "id": "room-task-card-relative-emphasis",
+            "kind": "typeRelation",
+            "status": "PASS",
+            "observed": {
+              "subject": {
+                "x": 20,
+                "y": 77,
+                "width": 350,
+                "height": 27
+              },
+              "reference": {
+                "x": 32,
+                "y": 410.078125,
+                "width": 104.40625,
+                "height": 27
+              },
+              "typography": {
+                "primary": {
+                  "size": 18,
+                  "weight": 600,
+                  "problems": []
+                },
+                "secondary": {
+                  "size": 18,
+                  "weight": 600,
+                  "problems": []
+                },
+                "sizeRatio": 1,
+                "weightDifference": 0
+              }
+            }
+          }
+        ],
+        "issues": [],
+        "pendingStates": [],
+        "scope": "Declared DOM ownership, rendered geometry, row grouping and sample width. These measurements do not certify visual equivalence or undeclared relationships."
+      }
+    },
+    {
+      "label": "after",
+      "width": 390,
+      "mode": "text-200",
+      "capture": {
+        "width": 390,
+        "state": "rooms",
+        "mode": "text-200",
+        "contractSha256": "d5b08899c199f8ecfbcc79c476227539cd8b448323145f91effedda5a8dc9c2d",
+        "results": [
+          {
+            "id": "room-task-card-relative-emphasis",
+            "kind": "typeRelation",
+            "status": "PASS",
+            "observed": {
+              "subject": {
+                "x": 20,
+                "y": 98,
+                "width": 350,
+                "height": 54
+              },
+              "reference": {
+                "x": 32,
+                "y": 595.078125,
+                "width": 208.8125,
+                "height": 54
+              },
+              "typography": {
+                "primary": {
+                  "size": 36,
+                  "weight": 600,
+                  "problems": []
+                },
+                "secondary": {
+                  "size": 36,
+                  "weight": 600,
+                  "problems": []
+                },
+                "sizeRatio": 1,
+                "weightDifference": 0
+              }
+            }
+          }
+        ],
+        "issues": [],
+        "pendingStates": [],
+        "scope": "Declared DOM ownership, rendered geometry, row grouping and sample width. These measurements do not certify visual equivalence or undeclared relationships."
+      }
+    },
+    {
+      "label": "after",
+      "width": 390,
+      "mode": "text-spacing",
+      "capture": {
+        "width": 390,
+        "state": "rooms",
+        "mode": "text-spacing",
+        "contractSha256": "d5b08899c199f8ecfbcc79c476227539cd8b448323145f91effedda5a8dc9c2d",
+        "results": [
+          {
+            "id": "room-task-card-relative-emphasis",
+            "kind": "typeRelation",
+            "status": "PASS",
+            "observed": {
+              "subject": {
+                "x": 20,
+                "y": 77,
+                "width": 350,
+                "height": 27
+              },
+              "reference": {
+                "x": 32,
+                "y": 471.078125,
+                "width": 122.40625,
+                "height": 27
+              },
+              "typography": {
+                "primary": {
+                  "size": 18,
+                  "weight": 600,
+                  "problems": []
+                },
+                "secondary": {
+                  "size": 18,
+                  "weight": 600,
+                  "problems": []
+                },
+                "sizeRatio": 1,
+                "weightDifference": 0
+              }
+            }
+          }
+        ],
+        "issues": [],
+        "pendingStates": [],
+        "scope": "Declared DOM ownership, rendered geometry, row grouping and sample width. These measurements do not certify visual equivalence or undeclared relationships."
+      }
+    },
+    {
+      "label": "after",
+      "width": 1440,
+      "mode": "normal",
+      "capture": {
+        "width": 1440,
+        "state": "rooms",
+        "mode": "normal",
+        "contractSha256": "d5b08899c199f8ecfbcc79c476227539cd8b448323145f91effedda5a8dc9c2d",
+        "results": [
+          {
+            "id": "room-task-card-relative-emphasis",
+            "kind": "typeRelation",
+            "status": "PASS",
+            "observed": {
+              "subject": {
+                "x": 545,
+                "y": 77,
+                "width": 350,
+                "height": 27
+              },
+              "reference": {
+                "x": 557,
+                "y": 410.078125,
+                "width": 104.40625,
+                "height": 27
+              },
+              "typography": {
+                "primary": {
+                  "size": 18,
+                  "weight": 600,
+                  "problems": []
+                },
+                "secondary": {
+                  "size": 18,
+                  "weight": 600,
+                  "problems": []
+                },
+                "sizeRatio": 1,
+                "weightDifference": 0
+              }
+            }
+          }
+        ],
+        "issues": [],
+        "pendingStates": [],
+        "scope": "Declared DOM ownership, rendered geometry, row grouping and sample width. These measurements do not certify visual equivalence or undeclared relationships."
+      }
+    },
+    {
+      "label": "after",
+      "width": 1440,
+      "mode": "text-200",
+      "capture": {
+        "width": 1440,
+        "state": "rooms",
+        "mode": "text-200",
+        "contractSha256": "d5b08899c199f8ecfbcc79c476227539cd8b448323145f91effedda5a8dc9c2d",
+        "results": [
+          {
+            "id": "room-task-card-relative-emphasis",
+            "kind": "typeRelation",
+            "status": "PASS",
+            "observed": {
+              "subject": {
+                "x": 545,
+                "y": 98,
+                "width": 350,
+                "height": 54
+              },
+              "reference": {
+                "x": 557,
+                "y": 595.078125,
+                "width": 208.8125,
+                "height": 54
+              },
+              "typography": {
+                "primary": {
+                  "size": 36,
+                  "weight": 600,
+                  "problems": []
+                },
+                "secondary": {
+                  "size": 36,
+                  "weight": 600,
+                  "problems": []
+                },
+                "sizeRatio": 1,
+                "weightDifference": 0
+              }
+            }
+          }
+        ],
+        "issues": [],
+        "pendingStates": [],
+        "scope": "Declared DOM ownership, rendered geometry, row grouping and sample width. These measurements do not certify visual equivalence or undeclared relationships."
+      }
+    },
+    {
+      "label": "after",
+      "width": 1440,
+      "mode": "text-spacing",
+      "capture": {
+        "width": 1440,
+        "state": "rooms",
+        "mode": "text-spacing",
+        "contractSha256": "d5b08899c199f8ecfbcc79c476227539cd8b448323145f91effedda5a8dc9c2d",
+        "results": [
+          {
+            "id": "room-task-card-relative-emphasis",
+            "kind": "typeRelation",
+            "status": "PASS",
+            "observed": {
+              "subject": {
+                "x": 545,
+                "y": 77,
+                "width": 350,
+                "height": 27
+              },
+              "reference": {
+                "x": 557,
+                "y": 471.078125,
+                "width": 122.40625,
+                "height": 27
+              },
+              "typography": {
+                "primary": {
+                  "size": 18,
+                  "weight": 600,
+                  "problems": []
+                },
+                "secondary": {
+                  "size": 18,
+                  "weight": 600,
+                  "problems": []
+                },
+                "sizeRatio": 1,
+                "weightDifference": 0
+              }
+            }
+          }
+        ],
+        "issues": [],
+        "pendingStates": [],
+        "scope": "Declared DOM ownership, rendered geometry, row grouping and sample width. These measurements do not certify visual equivalence or undeclared relationships."
+      }
+    }
+  ],
+  "driverSha256": "3019467f75a3d7671184b0ff45824bd6418ff5382b519484bc379c330b877201",
+  "limits": "Actual existing consumer CSS-metric regression across four widths/three modes. Historical input/source preserved, no new model run, no painted-font or reference-parity approval."
+}

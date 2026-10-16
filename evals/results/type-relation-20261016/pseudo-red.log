@@ -1,0 +1,60 @@
+✔ relative typography measures equal roles and rejects an overemphasized task heading (517.437ms)
+✔ relative typography preserves real enlargement and cannot approve mixed or scaled owners (503.3026ms)
+✔ relative typography fails closed for invalid bounds, ambiguous owners and tautologies (453.5449ms)
+✔ the installed API example can be retrieved and executed against actual text owners (388.6556ms)
+✔ relative typography cannot compare an ancestor with the same contained reference text (371.0997ms)
+✔ generated pseudo text is unknown instead of a uniform owner pass (376.1856ms)
+✔ individual CSS rotation is unknown even when the transform shorthand is none (388.6374ms)
+✖ pseudo first-letter typography cannot pass from the parent metric (377.639ms)
+✖ pseudo first-line typography cannot pass from the parent metric (384.1662ms)
+✔ weight-only limits and intentional negative differences are enforced independently of size (550.9357ms)
+ℹ tests 10
+ℹ suites 0
+ℹ pass 8
+ℹ fail 2
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 4635.4751
+
+✖ failing tests:
+
+test at test\type-relation.test.mjs:33:51
+✖ pseudo first-letter typography cannot pass from the parent metric (377.639ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  + actual - expected
+  
+  + 'PASS'
+  - 'UNVERIFIED'
+  
+      at file:///REPOSITORY/test/type-relation.test.mjs:34:96
+      at async fixture (file:///REPOSITORY/test/type-relation.test.mjs:7:295)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 'PASS',
+    expected: 'UNVERIFIED',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at test\type-relation.test.mjs:33:51
+✖ pseudo first-line typography cannot pass from the parent metric (384.1662ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  + actual - expected
+  
+  + 'PASS'
+  - 'UNVERIFIED'
+  
+      at file:///REPOSITORY/test/type-relation.test.mjs:34:96
+      at async fixture (file:///REPOSITORY/test/type-relation.test.mjs:7:295)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 'PASS',
+    expected: 'UNVERIFIED',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

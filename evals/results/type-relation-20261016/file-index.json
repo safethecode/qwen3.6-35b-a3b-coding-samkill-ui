@@ -1,0 +1,81 @@
+{
+  "algorithm": "sha256",
+  "scope": "Exact published bytes; index excludes itself. Functional evidence does not establish visual approval.",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 26,
+      "sha256": "155348a89d5e749f50d336f8f164a39bf8415179177b36e8b51766f3ab9a16d3"
+    },
+    {
+      "path": "actual-consumers/after-source-binding.json",
+      "bytes": 20677,
+      "sha256": "7c3e62b875abd2169a44b0a2d916e6b882f897e8c62a1d82e1da1b94f416995a"
+    },
+    {
+      "path": "actual-consumers/before-source-binding.json",
+      "bytes": 20677,
+      "sha256": "ec54b0d61f6fb8559eeb6f34af8411f08e7849cca334d0f00eb0721c2060bac1"
+    },
+    {
+      "path": "actual-consumers/contract.json",
+      "bytes": 532,
+      "sha256": "04650bba5203598e63e047a1c2aa71a6aaa224812d51c8e7fcadaf538368100d"
+    },
+    {
+      "path": "actual-consumers/report.json",
+      "bytes": 39607,
+      "sha256": "c42172c50e8a3033d310550df7f615fc7aa23512d2b0fe815e304ed46476a752"
+    },
+    {
+      "path": "focused-green.log",
+      "bytes": 1648,
+      "sha256": "5d596414f4e2b95de5a952591fa907c228459eb9abdfb9629ed26305d58c7f75"
+    },
+    {
+      "path": "full-suite.log",
+      "bytes": 19906,
+      "sha256": "1f5b05e7d7c49105bc34dffe11547620a7689907f8f2ff80a0d11cd3148a7ac6"
+    },
+    {
+      "path": "guide-red.log",
+      "bytes": 1230,
+      "sha256": "04adfa25f1f60808331dbc4745f49da66ae9d635e5e282ef8ff02fa786b1cead"
+    },
+    {
+      "path": "initial-red.log",
+      "bytes": 1855,
+      "sha256": "397a8ae4daf13d415f67d72779eef7c67ae5e750c7932f5df5f4ea4044ce277f"
+    },
+    {
+      "path": "installed-skill.json",
+      "bytes": 9199,
+      "sha256": "258303dd75c45b9ea0d88643cffc0f34b7f19e86ad096948d13829b0b0f2c7e0"
+    },
+    {
+      "path": "pseudo-red.log",
+      "bytes": 2545,
+      "sha256": "02c81339de77bc9477f66d5f917f788486e58fe195d89c633c12354335620217"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1672,
+      "sha256": "2b965140f09c91e1ba7ba6783a5d553a62a296b2fa323918a8c97880763acde4"
+    },
+    {
+      "path": "redactions.json",
+      "bytes": 2280,
+      "sha256": "a89010191b9937544083851d35fb16ebe7f19ea4c956edcbcb575a6b4b187652"
+    },
+    {
+      "path": "review-red.log",
+      "bytes": 2980,
+      "sha256": "dd5c21bfec54f5c203d42d39772e4cde89b7882ca48266151df98744a17d0a6c"
+    },
+    {
+      "path": "shared-browser.log",
+      "bytes": 5136,
+      "sha256": "f1ca0fe7b53621597631999280c24de9fab67be2072f86914a950abb29963933"
+    }
+  ]
+}

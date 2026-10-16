@@ -1,0 +1,52 @@
+{
+  "files": [
+    {
+      "path": "initial-red.log",
+      "originalSha256": "57cd856dcfd48b2362359462b32648f40dca3416ebe1358f99706f924f671dc4",
+      "publishedSha256": "397a8ae4daf13d415f67d72779eef7c67ae5e750c7932f5df5f4ea4044ce277f",
+      "scope": "Only machine path forms sanitized"
+    },
+    {
+      "path": "guide-red.log",
+      "originalSha256": "845ecb97ae9b2e12d75b2e8a83fc2619e276cca84896f7666ce1c8c3118bb0a1",
+      "publishedSha256": "04adfa25f1f60808331dbc4745f49da66ae9d635e5e282ef8ff02fa786b1cead",
+      "scope": "Only machine path forms sanitized"
+    },
+    {
+      "path": "review-red.log",
+      "originalSha256": "4b4f054eb97fd8bb8519418d113bf5b02ee02d737d1ce93f73cfa89efa0b261a",
+      "publishedSha256": "dd5c21bfec54f5c203d42d39772e4cde89b7882ca48266151df98744a17d0a6c",
+      "scope": "Only machine path forms sanitized"
+    },
+    {
+      "path": "pseudo-red.log",
+      "originalSha256": "2d9609896a2864472ab69f80a25a903f70d4717746dd9cb29a6c0d1011f5fb35",
+      "publishedSha256": "02c81339de77bc9477f66d5f917f788486e58fe195d89c633c12354335620217",
+      "scope": "Only machine path forms sanitized"
+    },
+    {
+      "path": "focused-green.log",
+      "originalSha256": "5d596414f4e2b95de5a952591fa907c228459eb9abdfb9629ed26305d58c7f75",
+      "publishedSha256": "5d596414f4e2b95de5a952591fa907c228459eb9abdfb9629ed26305d58c7f75",
+      "scope": "Only machine path forms sanitized"
+    },
+    {
+      "path": "full-suite.log",
+      "originalSha256": "1f5b05e7d7c49105bc34dffe11547620a7689907f8f2ff80a0d11cd3148a7ac6",
+      "publishedSha256": "1f5b05e7d7c49105bc34dffe11547620a7689907f8f2ff80a0d11cd3148a7ac6",
+      "scope": "Only machine path forms sanitized"
+    },
+    {
+      "path": "shared-browser.log",
+      "originalSha256": "f1ca0fe7b53621597631999280c24de9fab67be2072f86914a950abb29963933",
+      "publishedSha256": "f1ca0fe7b53621597631999280c24de9fab67be2072f86914a950abb29963933",
+      "scope": "Only machine path forms sanitized"
+    },
+    {
+      "path": "installed-skill.json",
+      "originalSha256": "258303dd75c45b9ea0d88643cffc0f34b7f19e86ad096948d13829b0b0f2c7e0",
+      "publishedSha256": "258303dd75c45b9ea0d88643cffc0f34b7f19e86ad096948d13829b0b0f2c7e0",
+      "scope": "Only machine path forms sanitized"
+    }
+  ]
+}
