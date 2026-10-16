@@ -63,6 +63,11 @@
       "sha256": "698cec0b45b6432c9fcf2ef3b6c6a10c87e5b1234565c37f8c1605d5784dda8a"
     },
     {
+      "path": "checks/check-price-hierarchy.mjs",
+      "bytes": 3589,
+      "sha256": "e3ec89cea78904212cb4156762347d3a05604e5e6a11833a09094969d0a1ebe6"
+    },
+    {
       "path": "checks/check-request-font-states.mjs",
       "bytes": 6403,
       "sha256": "6fda875641a16253bbe7165595cd8045e801bae9e3825d55c0f9ae6662f0fa1d"
@@ -89,13 +94,13 @@
     },
     {
       "path": "portable-derivatives.json",
-      "bytes": 5454,
-      "sha256": "74c5378d2c3882fa37aed25ef57b1608100569b1c6e51415b29e3f9977720e80"
+      "bytes": 5767,
+      "sha256": "af130eb1788eb45524d6aa8dbec8814cde18d770fab8f7d550d464f45598d498"
     },
     {
       "path": "README.md",
-      "bytes": 5743,
-      "sha256": "169d7a2faddd5e8b70e53d5f8c0d5be582cadbcc565dafb86a548fa121382b24"
+      "bytes": 6379,
+      "sha256": "4f529a108bbc80b5f98fde6e1b34e89978470c4b185aa938551134e1aeaa14ab"
     },
     {
       "path": "serve.mjs",
@@ -324,8 +329,8 @@
     },
     {
       "path": "source/DESIGN.md",
-      "bytes": 7394,
-      "sha256": "75a1fc64ef05704e3545b866280279a05f3b9850bfed7dc3ac2c5ca4a63b5a9b"
+      "bytes": 7779,
+      "sha256": "d87d6345c68387933f8327b275284b534f52d2766a9bf11f941b0afaba49340e"
     },
     {
       "path": "source/design/booking-plan.json",
@@ -334,8 +339,8 @@
     },
     {
       "path": "source/design/component-plan.json",
-      "bytes": 62182,
-      "sha256": "e0a06d1c9bc2ae115cc41fa9caf3dd145aa6fb5d03c22bc68987cf7668315c4b"
+      "bytes": 62236,
+      "sha256": "dd8507828b97300b7e197adc791eb648a642d8626dd6376d4bd70fba45ecb4cb"
     },
     {
       "path": "source/design/flow.md",
@@ -349,13 +354,13 @@
     },
     {
       "path": "source/design/layout-contract.json",
-      "bytes": 20917,
-      "sha256": "2a9206561528a9363ce964229ca9393e4ec8663946a3f5408096dbd79f8ad9be"
+      "bytes": 21825,
+      "sha256": "81f592b5424517cbc5c0ae5002f6f4db6cceb12ac6ba58ee41dd5f1dd8a1bd7e"
     },
     {
       "path": "source/design/typography.json",
       "bytes": 20604,
-      "sha256": "b3a7ab3ebbf24c1fdf70a7791bdd01a0b2afb4dceb8fb7f94743d284acf4a91b"
+      "sha256": "6cbf14057a104fe6d1dcb4feb00c62e7ccc32212bf2fc5ec73256ae3a00ed2a1"
     },
     {
       "path": "source/guest-editor-instance.js",
@@ -419,8 +424,8 @@
     },
     {
       "path": "source/room-layout-contract.json",
-      "bytes": 4176,
-      "sha256": "2ecadebd079579f179a8b6669fd91815c6a65c72d1f6905c3c9d8d7b3e077319"
+      "bytes": 5084,
+      "sha256": "567fb122100e5b157c7e899b0d88fbdf9fe813d658c3af9963fd4b4a40470372"
     },
     {
       "path": "source/room-rates-view.js",
@@ -449,8 +454,8 @@
     },
     {
       "path": "source/rooms.css",
-      "bytes": 8059,
-      "sha256": "0cacd7c4d68cd048d4e500666f9edf22309ad3baca553d4fb703aafdbfda91cc"
+      "bytes": 8111,
+      "sha256": "e95e3493adb00dc1c9577d77ce3295cbc4fbbc5a049046017e835ace59ea9b37"
     },
     {
       "path": "source/stored-quote.js",
@@ -479,8 +484,8 @@
     },
     {
       "path": "verify.mjs",
-      "bytes": 2837,
-      "sha256": "cd448557f4eba73f390cf6560271ebd23b34078d8b3b43acfec5e224f1403ff4"
+      "bytes": 2890,
+      "sha256": "4bf5967969b7a4aaf57bd83569cb518795dd26364b21c8a4e1f49eda14df6ed4"
     }
   ]
 }

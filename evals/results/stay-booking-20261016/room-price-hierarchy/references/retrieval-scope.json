@@ -1,0 +1,20 @@
+{
+  "firstQuery": {
+    "query": "객실",
+    "app_name": "데일리호텔",
+    "result": 0
+  },
+  "retry": {
+    "query": "상세정보 (PDP)",
+    "result": 1,
+    "inspected": "Representative plus gallery image2; wrong pre-date-selection state for available-price comparison"
+  },
+  "separateFlow": {
+    "query": "예약·결제",
+    "app_name": "데일리호텔",
+    "category": "여행",
+    "result": 1,
+    "inspected": "Actual supplied room-list representative only"
+  },
+  "limits": "Freshly retrieved same screen/pixels; not a new independent reference,not all gallery images. Native pixels,signed URLs andMAU omitted."
+}

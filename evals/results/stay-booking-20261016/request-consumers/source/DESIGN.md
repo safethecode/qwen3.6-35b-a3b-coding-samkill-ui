@@ -47,3 +47,5 @@ The C1 prospective room-header correction matches the task heading to the existi
 Related room-title text and its official trailing chevron align to the complete label-block center,including wrapped labels,enlargement andspacing stress. Preserve44px targets andall other spacing/typography. This corrects the prior flex-start host instruction; it is not a universal alignment preset for unrelated controls.
 
 Compact read-only checkout dates use explicit14/600/1.5 values and14/500 labels/nights. The single quiet parent owns12px insets;transparent child dates own0padding. Other body/control/price roles remain. This responds to user-observed reference mismatch;originalCSS/font/DPR remain unknown. Keep natural height,normal pairing and enlarged complete-date reflow.
+
+Repeated room-list preview prices use16/600 beneath their18/600 identity labels, preserving the observed subordinate price relationship. Selected quote totals remain18/700 and checkout totals remain18/700; do not reuse one monetary role across these purposes. All content, surfaces, padding, official assets, behavior and previous77 relations remain. Native CSS/font/DPR are unknown.

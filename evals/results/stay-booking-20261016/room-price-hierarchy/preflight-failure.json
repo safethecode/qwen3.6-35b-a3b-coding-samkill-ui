@@ -1,0 +1,9 @@
+{
+  "at": "2026-10-16T01:30:21.283Z",
+  "stage": "Host baseline failure classifier before inference",
+  "error": "Unexpected baseline failure outside price scope",
+  "cause": "Layout inspector stores rule identity in problem text; host assertion guessed id/ruleId fields",
+  "change": "Match actual exact problem text for only the two declared relationship failures; retain all72 baseline findings",
+  "inferenceStarted": false,
+  "preservedDriver": "run-price-repair-preflight-v1.mjs"
+}

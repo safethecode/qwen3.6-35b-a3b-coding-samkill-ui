@@ -1,0 +1,23 @@
+{
+  "guides": [
+    {
+      "path": "skills/qwen-samkill-ui/references/decomposed-layout.md",
+      "sourceSha256": "17937518fc26dc1da3bf9dc1f7fdebe9840be9e0ecb68f65e8407645b68ce323",
+      "deliveredSha256": "17937518fc26dc1da3bf9dc1f7fdebe9840be9e0ecb68f65e8407645b68ce323",
+      "scope": "Full actual guide text"
+    },
+    {
+      "path": "skills/qwen-samkill-ui/references/upstream/reference-to-ui/references/typography.md",
+      "sourceSha256": "d1003eda3338b973d1399e492bf1adea0e8eced6c054fb65cf0de480b88431d7",
+      "deliveredSha256": "d1003eda3338b973d1399e492bf1adea0e8eced6c054fb65cf0de480b88431d7",
+      "scope": "Full actual guide text"
+    },
+    {
+      "path": "skills/qwen-samkill-ui/references/upstream/reference-to-ui/references/reference-synthesis.md",
+      "sourceSha256": "f61501b8959c7281912fe61bd5bb565add6a1e430db1124958606137cdcca55d",
+      "deliveredSha256": "f61501b8959c7281912fe61bd5bb565add6a1e430db1124958606137cdcca55d",
+      "scope": "Full actual guide text"
+    }
+  ],
+  "limits": "Phase-specific delivery,not every guide or entry-skill compliance. Host contract assistance is explicit."
+}

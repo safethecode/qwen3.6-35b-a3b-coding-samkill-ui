@@ -1,0 +1,36 @@
+{
+  "at": "2026-10-16T01:28:55.864Z",
+  "upstream": {
+    "pinned": "167fc8d5982e361d86f598c80540d4eff460394d",
+    "currentRemoteMain": "167fc8d5982e361d86f598c80540d4eff460394d",
+    "status": "Compared; no new revision to adopt"
+  },
+  "scope": "Actual connected room price hierarchy; bounded repair, not independent generation",
+  "phases": [
+    {
+      "guide": "uibowl-research/guide.md",
+      "status": "applied",
+      "evidence": "references/receipt.json andreservation-receipt.json; directly inspected representatives, wrong preselection state retained separately"
+    },
+    {
+      "guide": "reference-decompose/guide.md andelement-contract.md",
+      "status": "applied",
+      "evidence": "CONTRACT.md O/D/Q and exact before-source frozen before new role/rules"
+    },
+    {
+      "guide": "reference-to-ui/references/typography.md",
+      "status": "read",
+      "next": "Full text delivery in local request andactual font inspection"
+    },
+    {
+      "guide": "reference-to-ui/references/reference-synthesis.md",
+      "status": "applied",
+      "evidence": "Native subordinate price/card identity relationship, not just feature/color similarity"
+    },
+    {
+      "guide": "reference-review/guide.md",
+      "status": "read",
+      "next": "Fresh after renders anddirect same-width comparison; fullcatalog remains unfinished"
+    }
+  ]
+}

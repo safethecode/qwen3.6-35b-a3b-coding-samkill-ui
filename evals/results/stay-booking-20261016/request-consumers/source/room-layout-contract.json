@@ -156,6 +156,34 @@
         "rooms",
         "selected"
       ]
+    },
+    {
+      "id": "listing-price-subordinate-afternoon-standard",
+      "kind": "typeRelation",
+      "subject": ".room-card[data-room-id=\"afternoon-standard\"] .room-price strong",
+      "reference": ".room-card[data-room-id=\"afternoon-standard\"] [data-room-name]",
+      "minSizeRatio": 0.8,
+      "maxSizeRatio": 0.9,
+      "minWeightDifference": 0,
+      "maxWeightDifference": 0,
+      "states": [
+        "rooms",
+        "selected"
+      ]
+    },
+    {
+      "id": "listing-price-subordinate-afternoon-family",
+      "kind": "typeRelation",
+      "subject": ".room-card[data-room-id=\"afternoon-family\"] .room-price strong",
+      "reference": ".room-card[data-room-id=\"afternoon-family\"] [data-room-name]",
+      "minSizeRatio": 0.8,
+      "maxSizeRatio": 0.9,
+      "minWeightDifference": 0,
+      "maxWeightDifference": 0,
+      "states": [
+        "rooms",
+        "selected"
+      ]
     }
   ],
   "scope": "Pre-style mechanical relationships only; samewidth direct positive-anchor review remains separate."

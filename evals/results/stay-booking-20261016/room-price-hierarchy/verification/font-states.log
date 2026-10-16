@@ -1,0 +1,1 @@
+{"pass":3,"total":3,"rows":[{"name":"mixed Korean Latin numeric and emoji input survives apply save reload with supplied fonts","pass":true},{"name":"delayed emoji font keeps typed content visible then renders supplied file","pass":true},{"name":"failed emoji font remains explicit FAIL while user input and controls survive","pass":true}]}

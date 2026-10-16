@@ -1,0 +1,18 @@
+{
+  "elapsedMs": 148270,
+  "model": "qwen3.6:35b-a3b-coding",
+  "created_at": "2026-10-16T01:32:51.6810147Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\n  \"fontSize\": \"16px\",\n  \"fontWeight\": \"600\"\n}"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 148260103200,
+  "load_duration": 18298496800,
+  "prompt_eval_count": 10815,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration": 128807572000,
+  "eval_count": 24,
+  "eval_duration": 1093618000
+}

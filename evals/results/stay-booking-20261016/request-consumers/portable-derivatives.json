@@ -97,6 +97,12 @@
       "originalDriverSha256": "3bf2725a06a231287f3fb163004cbb1c1b4e9b84b0f9e95457d0a8736b2c4b32",
       "publishedDriverSha256": "6befc062643bf523e340862d9dcb52c1d761b9b924195d6c2def1796605cba15",
       "changes": "Portable import/helper paths only"
+    },
+    {
+      "path": "checks/check-price-hierarchy.mjs",
+      "originalDriverSha256": "28d07f2e501bb0bf1f985f1f39fddf689f58109a605252914af94476a14e1ce2",
+      "publishedDriverSha256": "e3ec89cea78904212cb4156762347d3a05604e5e6a11833a09094969d0a1ebe6",
+      "changes": "Portable import/helper paths only"
     }
   ]
 }

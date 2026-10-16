@@ -1,0 +1,10 @@
+{
+  "at": "2026-10-16T01:34:31.838Z",
+  "stage": "New selected-state checker",
+  "actual": "148,000원",
+  "incorrectHostExpectation": "128,000원",
+  "cause": "The existing renderer correctly replaces the from-price with the chosen flex rate; the new host checker incorrectly reused the unselected amount",
+  "change": "Assert the existing 128000 unselected and148000 selected state values, retaining total330800. No product fix or weaker typography checks.",
+  "preservedDriver": "check-price-hierarchy-v1.mjs",
+  "preservedPartialCaptures": "selected-green"
+}
