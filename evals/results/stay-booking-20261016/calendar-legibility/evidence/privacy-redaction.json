@@ -1,0 +1,10 @@
+{
+  "scope": "Private profile prefixes in diagnostic logs/text redacted before publication. Original private bytes retained. Native images/signedURLs are not published.",
+  "records": [
+    {
+      "file": "failures/generated-text-false-pass.log",
+      "originalSha256": "1cc15739bcf75ada00073cb4a65554406c2f96b59436ab67af091ab35d57b5bd",
+      "publishedSha256": "daa29068bb0a747d4d775242b828d205addb4fc4e357187bda6160da69a01598"
+    }
+  ]
+}

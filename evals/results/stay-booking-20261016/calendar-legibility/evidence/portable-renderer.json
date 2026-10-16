@@ -1,0 +1,35 @@
+{
+  "at": "2026-10-16T05:06:36.701Z",
+  "checks": [
+    {
+      "name": "two consecutive complete months and exact seven-column rows",
+      "status": "PASS"
+    },
+    {
+      "name": "past dates disable actual buttons and blank cells have no controls",
+      "status": "PASS"
+    },
+    {
+      "name": "selected endpoints,middle range and accessible exact dates agree",
+      "status": "PASS"
+    },
+    {
+      "name": "pending range is one selected date and rerender removes old states",
+      "status": "PASS"
+    },
+    {
+      "name": "one roving tabstop follows explicit focus,selected start or first enabled",
+      "status": "PASS"
+    },
+    {
+      "name": "year rollover and last supported month preserve bounds",
+      "status": "PASS"
+    },
+    {
+      "name": "all-past view has no enabled roving target",
+      "status": "PASS"
+    }
+  ],
+  "failures": 0,
+  "scope": "Actual DOM renderer semantics only; no CSS,visual quality,AT or device approval"
+}

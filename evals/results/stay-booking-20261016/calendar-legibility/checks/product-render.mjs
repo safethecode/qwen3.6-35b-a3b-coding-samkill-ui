@@ -1,0 +1,21 @@
+import{readFile,writeFile,mkdir}from'node:fs/promises';import assert from'node:assert/strict';
+import{stayHarness}from'./browser-harness.mjs';import{inspectFontRendering}from'../../../../../scripts/font-rendering.mjs';import{sourceBinding}from'../../../../../scripts/source-binding.mjs';import{harnessBinding}from'../../../../../scripts/harness-binding.mjs';
+const[target,out]=process.argv.slice(2),h=await stayHarness(target),checks=[];await mkdir(out,{recursive:true});
+try{for(const width of[296,320,390,1440])for(const mode of['normal','text200','spacing'])for(const caller of['search','trip']){
+  const f=await h.open({width,hash:caller==='trip'?'stay/afternoon':'browse'}),p=f.page,name=`${width}-${mode}-${caller}`;
+  try{
+    if(mode==='text200')await p.evaluate(()=>{const nodes=[...document.querySelectorAll('body,body *')],sizes=nodes.map(n=>parseFloat(getComputedStyle(n).fontSize));nodes.forEach((n,i)=>n.style.setProperty('font-size',sizes[i]*2+'px','important'));const css=document.createElement('style');css.textContent='#date-calendar .calendar-day,#date-calendar .calendar-month-title{font-size:32px!important}';document.head.append(css);});
+    if(mode==='spacing')await p.addStyleTag({content:'body,body *{line-height:1.5!important;letter-spacing:.12em!important;word-spacing:.16em!important}p{margin-bottom:2em!important}'});
+    await p.locator(caller==='trip'?'#edit-trip':'#open-search').click();const launcher=p.locator(caller==='trip'?'#open-trip-calendar':'#open-search-calendar');await launcher.scrollIntoViewIfNeeded();
+    const alignment=await launcher.evaluate(n=>{const box=e=>{const r=e.getBoundingClientRect();return{x:r.x,y:r.y,w:r.width,h:r.height};},s=n.querySelector('svg'),t=n.querySelector('span');return{button:box(n),icon:box(s),label:box(t),iconStroke:getComputedStyle(s).stroke,labelColor:getComputedStyle(t).color,source:s.dataset.iconSource,name:s.dataset.iconName};});
+    assert.equal(alignment.source,'lucide@1.51.0');assert.equal(alignment.name,'CalendarDays');assert.equal(alignment.icon.w,20);assert.equal(alignment.icon.h,20);assert.equal(alignment.iconStroke,alignment.labelColor);assert.ok(Math.abs(alignment.icon.y+10-alignment.label.y-alignment.label.h/2)<1);assert.ok(alignment.button.w<=390&&alignment.button.h>=44);
+    await p.screenshot({path:out+'/'+name+'-caller.png'});await launcher.click();
+    const dialog=p.locator('#date-calendar');assert.equal(await dialog.evaluate(n=>n.open),true);const bounds=await dialog.boundingBox();assert.ok(bounds.width<=390.5&&bounds.x>=-.5&&bounds.y>=-.5&&bounds.y+bounds.height<=900.5);
+    const typography=JSON.parse(await readFile(target+'/design/typography.json','utf8')).roles.filter(x=>x.unit==='calendar').map(role=>({...role,selector:role.selector.split(',').filter(value=>value!=='#calendar-error').join(',')}));
+    const fonts=await inspectFontRendering(p,{roles:typography,textScale:mode==='text200'?2:1,...(mode==='spacing'?{lineHeightRatioOverride:1.5}:{})});
+    assert.deepEqual(fonts.issues,[]);await p.screenshot({path:out+'/'+name+'-calendar.png'});await writeFile(out+'/'+name+'-fonts.json',JSON.stringify(fonts,null,2));
+    await p.keyboard.press('Escape');assert.equal(await p.evaluate(()=>document.activeElement.id),caller==='trip'?'open-trip-calendar':'open-search-calendar');assert.deepEqual(f.errors,[]);checks.push({name,width,mode,caller,status:'PASS',alignment,bounds});
+  }catch(e){checks.push({name,width,mode,caller,status:'FAIL',detail:e.message.slice(0,1800)});}finally{await f.context.close();}
+}
+assert.deepEqual(await sourceBinding(target),h.sourceHashes);assert.deepEqual(await harnessBinding(),h.harnessHashes);await writeFile(out+'/report.json',JSON.stringify({at:new Date().toISOString(),sourceHashes:h.sourceHashes,harnessHashes:h.harnessHashes,checks,failures:checks.filter(x=>x.status==='FAIL').length,scope:'Actual integrated search/trip caller and calendar,exact rendered fonts,official icon geometry/computedforeground/alignment,stress andEscapefocus;native parity and all75rules not approved'},null,2));console.log(JSON.stringify({captures:checks.length*2,groups:checks.length,failures:checks.filter(x=>x.status==='FAIL').length}));process.exitCode=checks.some(x=>x.status==='FAIL')?1:0;
+}finally{await h.close();}

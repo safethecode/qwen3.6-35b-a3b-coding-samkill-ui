@@ -1,0 +1,3 @@
+#date-calendar .calendar-content { width: 100%; min-width: calc(14ch + 7 * var(--control-gap)); }
+#date-calendar .calendar-day { min-height: max(44px, calc(1.5em + var(--control-gap))); font-variant-numeric: tabular-nums; }
+#date-calendar .calendar-month-label { display: inline-block; position: sticky; left: 0; background: var(--surface); }

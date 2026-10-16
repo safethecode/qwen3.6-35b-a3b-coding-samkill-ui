@@ -1,0 +1,6666 @@
+{
+  "report": {
+    "width": 296,
+    "state": "calendar-error-footer",
+    "mode": "text200",
+    "contractSha256": "45a8fb79e64577e312e483a5bae8da75d1738ba5937040e0d3bca286a6e91fc3",
+    "results": [
+      {
+        "id": "calendar-mobile-panel",
+        "kind": "maxWidth",
+        "status": "PASS",
+        "observed": {
+          "subject": {
+            "x": 0,
+            "y": 16,
+            "width": 296,
+            "height": 884
+          }
+        }
+      },
+      {
+        "id": "calendar-horizontal-text-gap",
+        "kind": "textGap",
+        "status": "PASS",
+        "observed": {
+          "subject": {
+            "x": 0,
+            "y": 16,
+            "width": 296,
+            "height": 884
+          },
+          "axis": "inline",
+          "requiredMinimum": 8,
+          "tolerancePx": 0.05,
+          "groupCount": 10,
+          "ownerCount": 61,
+          "pairCount": 172,
+          "pairs": [
+            {
+              "groupIndex": 0,
+              "from": "1",
+              "to": "2",
+              "gap": 34.21875
+            },
+            {
+              "groupIndex": 0,
+              "from": "1",
+              "to": "3",
+              "gap": 86.71875
+            },
+            {
+              "groupIndex": 0,
+              "from": "2",
+              "to": "3",
+              "gap": 34.25
+            },
+            {
+              "groupIndex": 1,
+              "from": "4",
+              "to": "5",
+              "gap": 34.21875
+            },
+            {
+              "groupIndex": 1,
+              "from": "4",
+              "to": "6",
+              "gap": 86.6875
+            },
+            {
+              "groupIndex": 1,
+              "from": "4",
+              "to": "7",
+              "gap": 139.15625
+            },
+            {
+              "groupIndex": 1,
+              "from": "4",
+              "to": "8",
+              "gap": 191.625
+            },
+            {
+              "groupIndex": 1,
+              "from": "4",
+              "to": "9",
+              "gap": 244.09375
+            },
+            {
+              "groupIndex": 1,
+              "from": "4",
+              "to": "10",
+              "gap": 287.484375
+            },
+            {
+              "groupIndex": 1,
+              "from": "5",
+              "to": "6",
+              "gap": 34.21875
+            },
+            {
+              "groupIndex": 1,
+              "from": "5",
+              "to": "7",
+              "gap": 86.6875
+            },
+            {
+              "groupIndex": 1,
+              "from": "5",
+              "to": "8",
+              "gap": 139.15625
+            },
+            {
+              "groupIndex": 1,
+              "from": "5",
+              "to": "9",
+              "gap": 191.625
+            },
+            {
+              "groupIndex": 1,
+              "from": "5",
+              "to": "10",
+              "gap": 235.015625
+            },
+            {
+              "groupIndex": 1,
+              "from": "6",
+              "to": "7",
+              "gap": 34.21875
+            },
+            {
+              "groupIndex": 1,
+              "from": "6",
+              "to": "8",
+              "gap": 86.6875
+            },
+            {
+              "groupIndex": 1,
+              "from": "6",
+              "to": "9",
+              "gap": 139.15625
+            },
+            {
+              "groupIndex": 1,
+              "from": "6",
+              "to": "10",
+              "gap": 182.546875
+            },
+            {
+              "groupIndex": 1,
+              "from": "7",
+              "to": "8",
+              "gap": 34.21875
+            },
+            {
+              "groupIndex": 1,
+              "from": "7",
+              "to": "9",
+              "gap": 86.6875
+            },
+            {
+              "groupIndex": 1,
+              "from": "7",
+              "to": "10",
+              "gap": 130.078125
+            },
+            {
+              "groupIndex": 1,
+              "from": "8",
+              "to": "9",
+              "gap": 34.21875
+            },
+            {
+              "groupIndex": 1,
+              "from": "8",
+              "to": "10",
+              "gap": 77.609375
+            },
+            {
+              "groupIndex": 1,
+              "from": "9",
+              "to": "10",
+              "gap": 25.140625
+            },
+            {
+              "groupIndex": 2,
+              "from": "11",
+              "to": "12",
+              "gap": 15.984375
+            },
+            {
+              "groupIndex": 2,
+              "from": "11",
+              "to": "13",
+              "gap": 68.453125
+            },
+            {
+              "groupIndex": 2,
+              "from": "11",
+              "to": "14",
+              "gap": 120.921875
+            },
+            {
+              "groupIndex": 2,
+              "from": "11",
+              "to": "15",
+              "gap": 173.390625
+            },
+            {
+              "groupIndex": 2,
+              "from": "11",
+              "to": "16",
+              "gap": 225.859375
+            },
+            {
+              "groupIndex": 2,
+              "from": "11",
+              "to": "17",
+              "gap": 278.375
+            },
+            {
+              "groupIndex": 2,
+              "from": "12",
+              "to": "13",
+              "gap": 15.984375
+            },
+            {
+              "groupIndex": 2,
+              "from": "12",
+              "to": "14",
+              "gap": 68.453125
+            },
+            {
+              "groupIndex": 2,
+              "from": "12",
+              "to": "15",
+              "gap": 120.921875
+            },
+            {
+              "groupIndex": 2,
+              "from": "12",
+              "to": "16",
+              "gap": 173.390625
+            },
+            {
+              "groupIndex": 2,
+              "from": "12",
+              "to": "17",
+              "gap": 225.90625
+            },
+            {
+              "groupIndex": 2,
+              "from": "13",
+              "to": "14",
+              "gap": 15.984375
+            },
+            {
+              "groupIndex": 2,
+              "from": "13",
+              "to": "15",
+              "gap": 68.453125
+            },
+            {
+              "groupIndex": 2,
+              "from": "13",
+              "to": "16",
+              "gap": 120.921875
+            },
+            {
+              "groupIndex": 2,
+              "from": "13",
+              "to": "17",
+              "gap": 173.4375
+            },
+            {
+              "groupIndex": 2,
+              "from": "14",
+              "to": "15",
+              "gap": 15.984375
+            },
+            {
+              "groupIndex": 2,
+              "from": "14",
+              "to": "16",
+              "gap": 68.453125
+            },
+            {
+              "groupIndex": 2,
+              "from": "14",
+              "to": "17",
+              "gap": 120.96875
+            },
+            {
+              "groupIndex": 2,
+              "from": "15",
+              "to": "16",
+              "gap": 15.984375
+            },
+            {
+              "groupIndex": 2,
+              "from": "15",
+              "to": "17",
+              "gap": 68.5
+            },
+            {
+              "groupIndex": 2,
+              "from": "16",
+              "to": "17",
+              "gap": 16.03125
+            },
+            {
+              "groupIndex": 3,
+              "from": "18",
+              "to": "19",
+              "gap": 15.984375
+            },
+            {
+              "groupIndex": 3,
+              "from": "18",
+              "to": "20",
+              "gap": 68.453125
+            },
+            {
+              "groupIndex": 3,
+              "from": "18",
+              "to": "21",
+              "gap": 120.921875
+            },
+            {
+              "groupIndex": 3,
+              "from": "18",
+              "to": "22",
+              "gap": 173.390625
+            },
+            {
+              "groupIndex": 3,
+              "from": "18",
+              "to": "23",
+              "gap": 225.859375
+            },
+            {
+              "groupIndex": 3,
+              "from": "18",
+              "to": "24",
+              "gap": 278.375
+            },
+            {
+              "groupIndex": 3,
+              "from": "19",
+              "to": "20",
+              "gap": 15.984375
+            },
+            {
+              "groupIndex": 3,
+              "from": "19",
+              "to": "21",
+              "gap": 68.453125
+            },
+            {
+              "groupIndex": 3,
+              "from": "19",
+              "to": "22",
+              "gap": 120.921875
+            },
+            {
+              "groupIndex": 3,
+              "from": "19",
+              "to": "23",
+              "gap": 173.390625
+            },
+            {
+              "groupIndex": 3,
+              "from": "19",
+              "to": "24",
+              "gap": 225.90625
+            },
+            {
+              "groupIndex": 3,
+              "from": "20",
+              "to": "21",
+              "gap": 15.984375
+            },
+            {
+              "groupIndex": 3,
+              "from": "20",
+              "to": "22",
+              "gap": 68.453125
+            },
+            {
+              "groupIndex": 3,
+              "from": "20",
+              "to": "23",
+              "gap": 120.921875
+            },
+            {
+              "groupIndex": 3,
+              "from": "20",
+              "to": "24",
+              "gap": 173.4375
+            },
+            {
+              "groupIndex": 3,
+              "from": "21",
+              "to": "22",
+              "gap": 15.984375
+            },
+            {
+              "groupIndex": 3,
+              "from": "21",
+              "to": "23",
+              "gap": 68.453125
+            },
+            {
+              "groupIndex": 3,
+              "from": "21",
+              "to": "24",
+              "gap": 120.96875
+            },
+            {
+              "groupIndex": 3,
+              "from": "22",
+              "to": "23",
+              "gap": 15.984375
+            },
+            {
+              "groupIndex": 3,
+              "from": "22",
+              "to": "24",
+              "gap": 68.5
+            },
+            {
+              "groupIndex": 3,
+              "from": "23",
+              "to": "24",
+              "gap": 16.03125
+            },
+            {
+              "groupIndex": 4,
+              "from": "25",
+              "to": "26",
+              "gap": 15.984375
+            },
+            {
+              "groupIndex": 4,
+              "from": "25",
+              "to": "27",
+              "gap": 68.453125
+            },
+            {
+              "groupIndex": 4,
+              "from": "25",
+              "to": "28",
+              "gap": 120.921875
+            },
+            {
+              "groupIndex": 4,
+              "from": "25",
+              "to": "29",
+              "gap": 173.390625
+            },
+            {
+              "groupIndex": 4,
+              "from": "25",
+              "to": "30",
+              "gap": 225.859375
+            },
+            {
+              "groupIndex": 4,
+              "from": "25",
+              "to": "31",
+              "gap": 278.375
+            },
+            {
+              "groupIndex": 4,
+              "from": "26",
+              "to": "27",
+              "gap": 15.984375
+            },
+            {
+              "groupIndex": 4,
+              "from": "26",
+              "to": "28",
+              "gap": 68.453125
+            },
+            {
+              "groupIndex": 4,
+              "from": "26",
+              "to": "29",
+              "gap": 120.921875
+            },
+            {
+              "groupIndex": 4,
+              "from": "26",
+              "to": "30",
+              "gap": 173.390625
+            },
+            {
+              "groupIndex": 4,
+              "from": "26",
+              "to": "31",
+              "gap": 225.90625
+            },
+            {
+              "groupIndex": 4,
+              "from": "27",
+              "to": "28",
+              "gap": 15.984375
+            },
+            {
+              "groupIndex": 4,
+              "from": "27",
+              "to": "29",
+              "gap": 68.453125
+            },
+            {
+              "groupIndex": 4,
+              "from": "27",
+              "to": "30",
+              "gap": 120.921875
+            },
+            {
+              "groupIndex": 4,
+              "from": "27",
+              "to": "31",
+              "gap": 173.4375
+            },
+            {
+              "groupIndex": 4,
+              "from": "28",
+              "to": "29",
+              "gap": 15.984375
+            },
+            {
+              "groupIndex": 4,
+              "from": "28",
+              "to": "30",
+              "gap": 68.453125
+            },
+            {
+              "groupIndex": 4,
+              "from": "28",
+              "to": "31",
+              "gap": 120.96875
+            },
+            {
+              "groupIndex": 4,
+              "from": "29",
+              "to": "30",
+              "gap": 15.984375
+            },
+            {
+              "groupIndex": 4,
+              "from": "29",
+              "to": "31",
+              "gap": 68.5
+            },
+            {
+              "groupIndex": 4,
+              "from": "30",
+              "to": "31",
+              "gap": 16.03125
+            },
+            {
+              "groupIndex": 5,
+              "from": "1",
+              "to": "2",
+              "gap": 34.21875
+            },
+            {
+              "groupIndex": 5,
+              "from": "1",
+              "to": "3",
+              "gap": 86.6875
+            },
+            {
+              "groupIndex": 5,
+              "from": "1",
+              "to": "4",
+              "gap": 139.15625
+            },
+            {
+              "groupIndex": 5,
+              "from": "1",
+              "to": "5",
+              "gap": 191.625
+            },
+            {
+              "groupIndex": 5,
+              "from": "1",
+              "to": "6",
+              "gap": 244.09375
+            },
+            {
+              "groupIndex": 5,
+              "from": "1",
+              "to": "7",
+              "gap": 296.59375
+            },
+            {
+              "groupIndex": 5,
+              "from": "2",
+              "to": "3",
+              "gap": 34.21875
+            },
+            {
+              "groupIndex": 5,
+              "from": "2",
+              "to": "4",
+              "gap": 86.6875
+            },
+            {
+              "groupIndex": 5,
+              "from": "2",
+              "to": "5",
+              "gap": 139.15625
+            },
+            {
+              "groupIndex": 5,
+              "from": "2",
+              "to": "6",
+              "gap": 191.625
+            },
+            {
+              "groupIndex": 5,
+              "from": "2",
+              "to": "7",
+              "gap": 244.125
+            },
+            {
+              "groupIndex": 5,
+              "from": "3",
+              "to": "4",
+              "gap": 34.21875
+            },
+            {
+              "groupIndex": 5,
+              "from": "3",
+              "to": "5",
+              "gap": 86.6875
+            },
+            {
+              "groupIndex": 5,
+              "from": "3",
+              "to": "6",
+              "gap": 139.15625
+            },
+            {
+              "groupIndex": 5,
+              "from": "3",
+              "to": "7",
+              "gap": 191.65625
+            },
+            {
+              "groupIndex": 5,
+              "from": "4",
+              "to": "5",
+              "gap": 34.21875
+            },
+            {
+              "groupIndex": 5,
+              "from": "4",
+              "to": "6",
+              "gap": 86.6875
+            },
+            {
+              "groupIndex": 5,
+              "from": "4",
+              "to": "7",
+              "gap": 139.1875
+            },
+            {
+              "groupIndex": 5,
+              "from": "5",
+              "to": "6",
+              "gap": 34.21875
+            },
+            {
+              "groupIndex": 5,
+              "from": "5",
+              "to": "7",
+              "gap": 86.71875
+            },
+            {
+              "groupIndex": 5,
+              "from": "6",
+              "to": "7",
+              "gap": 34.25
+            },
+            {
+              "groupIndex": 6,
+              "from": "8",
+              "to": "9",
+              "gap": 34.21875
+            },
+            {
+              "groupIndex": 6,
+              "from": "8",
+              "to": "10",
+              "gap": 77.5625
+            },
+            {
+              "groupIndex": 6,
+              "from": "8",
+              "to": "11",
+              "gap": 130.03125
+            },
+            {
+              "groupIndex": 6,
+              "from": "8",
+              "to": "12",
+              "gap": 182.5
+            },
+            {
+              "groupIndex": 6,
+              "from": "8",
+              "to": "13",
+              "gap": 234.96875
+            },
+            {
+              "groupIndex": 6,
+              "from": "8",
+              "to": "14",
+              "gap": 287.484375
+            },
+            {
+              "groupIndex": 6,
+              "from": "9",
+              "to": "10",
+              "gap": 25.09375
+            },
+            {
+              "groupIndex": 6,
+              "from": "9",
+              "to": "11",
+              "gap": 77.5625
+            },
+            {
+              "groupIndex": 6,
+              "from": "9",
+              "to": "12",
+              "gap": 130.03125
+            },
+            {
+              "groupIndex": 6,
+              "from": "9",
+              "to": "13",
+              "gap": 182.5
+            },
+            {
+              "groupIndex": 6,
+              "from": "9",
+              "to": "14",
+              "gap": 235.015625
+            },
+            {
+              "groupIndex": 6,
+              "from": "10",
+              "to": "11",
+              "gap": 15.984375
+            },
+            {
+              "groupIndex": 6,
+              "from": "10",
+              "to": "12",
+              "gap": 68.453125
+            },
+            {
+              "groupIndex": 6,
+              "from": "10",
+              "to": "13",
+              "gap": 120.921875
+            },
+            {
+              "groupIndex": 6,
+              "from": "10",
+              "to": "14",
+              "gap": 173.4375
+            },
+            {
+              "groupIndex": 6,
+              "from": "11",
+              "to": "12",
+              "gap": 15.984375
+            },
+            {
+              "groupIndex": 6,
+              "from": "11",
+              "to": "13",
+              "gap": 68.453125
+            },
+            {
+              "groupIndex": 6,
+              "from": "11",
+              "to": "14",
+              "gap": 120.96875
+            },
+            {
+              "groupIndex": 6,
+              "from": "12",
+              "to": "13",
+              "gap": 15.984375
+            },
+            {
+              "groupIndex": 6,
+              "from": "12",
+              "to": "14",
+              "gap": 68.5
+            },
+            {
+              "groupIndex": 6,
+              "from": "13",
+              "to": "14",
+              "gap": 16.03125
+            },
+            {
+              "groupIndex": 7,
+              "from": "15",
+              "to": "16",
+              "gap": 15.984375
+            },
+            {
+              "groupIndex": 7,
+              "from": "15",
+              "to": "17",
+              "gap": 68.453125
+            },
+            {
+              "groupIndex": 7,
+              "from": "15",
+              "to": "18",
+              "gap": 120.921875
+            },
+            {
+              "groupIndex": 7,
+              "from": "15",
+              "to": "19",
+              "gap": 173.390625
+            },
+            {
+              "groupIndex": 7,
+              "from": "15",
+              "to": "20",
+              "gap": 225.859375
+            },
+            {
+              "groupIndex": 7,
+              "from": "15",
+              "to": "21",
+              "gap": 278.375
+            },
+            {
+              "groupIndex": 7,
+              "from": "16",
+              "to": "17",
+              "gap": 15.984375
+            },
+            {
+              "groupIndex": 7,
+              "from": "16",
+              "to": "18",
+              "gap": 68.453125
+            },
+            {
+              "groupIndex": 7,
+              "from": "16",
+              "to": "19",
+              "gap": 120.921875
+            },
+            {
+              "groupIndex": 7,
+              "from": "16",
+              "to": "20",
+              "gap": 173.390625
+            },
+            {
+              "groupIndex": 7,
+              "from": "16",
+              "to": "21",
+              "gap": 225.90625
+            },
+            {
+              "groupIndex": 7,
+              "from": "17",
+              "to": "18",
+              "gap": 15.984375
+            },
+            {
+              "groupIndex": 7,
+              "from": "17",
+              "to": "19",
+              "gap": 68.453125
+            },
+            {
+              "groupIndex": 7,
+              "from": "17",
+              "to": "20",
+              "gap": 120.921875
+            },
+            {
+              "groupIndex": 7,
+              "from": "17",
+              "to": "21",
+              "gap": 173.4375
+            },
+            {
+              "groupIndex": 7,
+              "from": "18",
+              "to": "19",
+              "gap": 15.984375
+            },
+            {
+              "groupIndex": 7,
+              "from": "18",
+              "to": "20",
+              "gap": 68.453125
+            },
+            {
+              "groupIndex": 7,
+              "from": "18",
+              "to": "21",
+              "gap": 120.96875
+            },
+            {
+              "groupIndex": 7,
+              "from": "19",
+              "to": "20",
+              "gap": 15.984375
+            },
+            {
+              "groupIndex": 7,
+              "from": "19",
+              "to": "21",
+              "gap": 68.5
+            },
+            {
+              "groupIndex": 7,
+              "from": "20",
+              "to": "21",
+              "gap": 16.03125
+            },
+            {
+              "groupIndex": 8,
+              "from": "22",
+              "to": "23",
+              "gap": 15.984375
+            },
+            {
+              "groupIndex": 8,
+              "from": "22",
+              "to": "24",
+              "gap": 68.453125
+            },
+            {
+              "groupIndex": 8,
+              "from": "22",
+              "to": "25",
+              "gap": 120.921875
+            },
+            {
+              "groupIndex": 8,
+              "from": "22",
+              "to": "26",
+              "gap": 173.390625
+            },
+            {
+              "groupIndex": 8,
+              "from": "22",
+              "to": "27",
+              "gap": 225.859375
+            },
+            {
+              "groupIndex": 8,
+              "from": "22",
+              "to": "28",
+              "gap": 278.375
+            },
+            {
+              "groupIndex": 8,
+              "from": "23",
+              "to": "24",
+              "gap": 15.984375
+            },
+            {
+              "groupIndex": 8,
+              "from": "23",
+              "to": "25",
+              "gap": 68.453125
+            },
+            {
+              "groupIndex": 8,
+              "from": "23",
+              "to": "26",
+              "gap": 120.921875
+            },
+            {
+              "groupIndex": 8,
+              "from": "23",
+              "to": "27",
+              "gap": 173.390625
+            },
+            {
+              "groupIndex": 8,
+              "from": "23",
+              "to": "28",
+              "gap": 225.90625
+            },
+            {
+              "groupIndex": 8,
+              "from": "24",
+              "to": "25",
+              "gap": 15.984375
+            },
+            {
+              "groupIndex": 8,
+              "from": "24",
+              "to": "26",
+              "gap": 68.453125
+            },
+            {
+              "groupIndex": 8,
+              "from": "24",
+              "to": "27",
+              "gap": 120.921875
+            },
+            {
+              "groupIndex": 8,
+              "from": "24",
+              "to": "28",
+              "gap": 173.4375
+            },
+            {
+              "groupIndex": 8,
+              "from": "25",
+              "to": "26",
+              "gap": 15.984375
+            },
+            {
+              "groupIndex": 8,
+              "from": "25",
+              "to": "27",
+              "gap": 68.453125
+            },
+            {
+              "groupIndex": 8,
+              "from": "25",
+              "to": "28",
+              "gap": 120.96875
+            },
+            {
+              "groupIndex": 8,
+              "from": "26",
+              "to": "27",
+              "gap": 15.984375
+            },
+            {
+              "groupIndex": 8,
+              "from": "26",
+              "to": "28",
+              "gap": 68.5
+            },
+            {
+              "groupIndex": 8,
+              "from": "27",
+              "to": "28",
+              "gap": 16.03125
+            },
+            {
+              "groupIndex": 9,
+              "from": "29",
+              "to": "30",
+              "gap": 15.984375
+            }
+          ],
+          "minimumMeasuredGap": 15.984375
+        }
+      },
+      {
+        "id": "calendar-vertical-text-gap",
+        "kind": "textGap",
+        "status": "PASS",
+        "observed": {
+          "subject": {
+            "x": 0,
+            "y": 16,
+            "width": 296,
+            "height": 884
+          },
+          "axis": "block",
+          "requiredMinimum": 8,
+          "tolerancePx": 0.05,
+          "groupCount": 2,
+          "ownerCount": 61,
+          "pairCount": 104,
+          "pairs": [
+            {
+              "groupIndex": 0,
+              "from": "1",
+              "to": "8",
+              "gap": 18
+            },
+            {
+              "groupIndex": 0,
+              "from": "1",
+              "to": "15",
+              "gap": 82
+            },
+            {
+              "groupIndex": 0,
+              "from": "1",
+              "to": "22",
+              "gap": 146
+            },
+            {
+              "groupIndex": 0,
+              "from": "1",
+              "to": "29",
+              "gap": 210
+            },
+            {
+              "groupIndex": 0,
+              "from": "2",
+              "to": "9",
+              "gap": 18
+            },
+            {
+              "groupIndex": 0,
+              "from": "2",
+              "to": "16",
+              "gap": 82
+            },
+            {
+              "groupIndex": 0,
+              "from": "2",
+              "to": "23",
+              "gap": 146
+            },
+            {
+              "groupIndex": 0,
+              "from": "2",
+              "to": "30",
+              "gap": 210
+            },
+            {
+              "groupIndex": 0,
+              "from": "3",
+              "to": "10",
+              "gap": 18
+            },
+            {
+              "groupIndex": 0,
+              "from": "3",
+              "to": "17",
+              "gap": 82
+            },
+            {
+              "groupIndex": 0,
+              "from": "3",
+              "to": "24",
+              "gap": 146
+            },
+            {
+              "groupIndex": 0,
+              "from": "3",
+              "to": "31",
+              "gap": 210
+            },
+            {
+              "groupIndex": 0,
+              "from": "4",
+              "to": "11",
+              "gap": 18
+            },
+            {
+              "groupIndex": 0,
+              "from": "4",
+              "to": "18",
+              "gap": 82
+            },
+            {
+              "groupIndex": 0,
+              "from": "4",
+              "to": "25",
+              "gap": 146
+            },
+            {
+              "groupIndex": 0,
+              "from": "5",
+              "to": "12",
+              "gap": 18
+            },
+            {
+              "groupIndex": 0,
+              "from": "5",
+              "to": "19",
+              "gap": 82
+            },
+            {
+              "groupIndex": 0,
+              "from": "5",
+              "to": "26",
+              "gap": 146
+            },
+            {
+              "groupIndex": 0,
+              "from": "6",
+              "to": "13",
+              "gap": 18
+            },
+            {
+              "groupIndex": 0,
+              "from": "6",
+              "to": "20",
+              "gap": 82
+            },
+            {
+              "groupIndex": 0,
+              "from": "6",
+              "to": "27",
+              "gap": 146
+            },
+            {
+              "groupIndex": 0,
+              "from": "7",
+              "to": "14",
+              "gap": 18
+            },
+            {
+              "groupIndex": 0,
+              "from": "7",
+              "to": "21",
+              "gap": 82
+            },
+            {
+              "groupIndex": 0,
+              "from": "7",
+              "to": "28",
+              "gap": 146
+            },
+            {
+              "groupIndex": 0,
+              "from": "8",
+              "to": "15",
+              "gap": 18
+            },
+            {
+              "groupIndex": 0,
+              "from": "8",
+              "to": "22",
+              "gap": 82
+            },
+            {
+              "groupIndex": 0,
+              "from": "8",
+              "to": "29",
+              "gap": 146
+            },
+            {
+              "groupIndex": 0,
+              "from": "9",
+              "to": "16",
+              "gap": 18
+            },
+            {
+              "groupIndex": 0,
+              "from": "9",
+              "to": "23",
+              "gap": 82
+            },
+            {
+              "groupIndex": 0,
+              "from": "9",
+              "to": "30",
+              "gap": 146
+            },
+            {
+              "groupIndex": 0,
+              "from": "10",
+              "to": "17",
+              "gap": 18
+            },
+            {
+              "groupIndex": 0,
+              "from": "10",
+              "to": "24",
+              "gap": 82
+            },
+            {
+              "groupIndex": 0,
+              "from": "10",
+              "to": "31",
+              "gap": 146
+            },
+            {
+              "groupIndex": 0,
+              "from": "11",
+              "to": "18",
+              "gap": 18
+            },
+            {
+              "groupIndex": 0,
+              "from": "11",
+              "to": "25",
+              "gap": 82
+            },
+            {
+              "groupIndex": 0,
+              "from": "12",
+              "to": "19",
+              "gap": 18
+            },
+            {
+              "groupIndex": 0,
+              "from": "12",
+              "to": "26",
+              "gap": 82
+            },
+            {
+              "groupIndex": 0,
+              "from": "13",
+              "to": "20",
+              "gap": 18
+            },
+            {
+              "groupIndex": 0,
+              "from": "13",
+              "to": "27",
+              "gap": 82
+            },
+            {
+              "groupIndex": 0,
+              "from": "14",
+              "to": "21",
+              "gap": 18
+            },
+            {
+              "groupIndex": 0,
+              "from": "14",
+              "to": "28",
+              "gap": 82
+            },
+            {
+              "groupIndex": 0,
+              "from": "15",
+              "to": "22",
+              "gap": 18
+            },
+            {
+              "groupIndex": 0,
+              "from": "15",
+              "to": "29",
+              "gap": 82
+            },
+            {
+              "groupIndex": 0,
+              "from": "16",
+              "to": "23",
+              "gap": 18
+            },
+            {
+              "groupIndex": 0,
+              "from": "16",
+              "to": "30",
+              "gap": 82
+            },
+            {
+              "groupIndex": 0,
+              "from": "17",
+              "to": "24",
+              "gap": 18
+            },
+            {
+              "groupIndex": 0,
+              "from": "17",
+              "to": "31",
+              "gap": 82
+            },
+            {
+              "groupIndex": 0,
+              "from": "18",
+              "to": "25",
+              "gap": 18
+            },
+            {
+              "groupIndex": 0,
+              "from": "19",
+              "to": "26",
+              "gap": 18
+            },
+            {
+              "groupIndex": 0,
+              "from": "20",
+              "to": "27",
+              "gap": 18
+            },
+            {
+              "groupIndex": 0,
+              "from": "21",
+              "to": "28",
+              "gap": 18
+            },
+            {
+              "groupIndex": 0,
+              "from": "22",
+              "to": "29",
+              "gap": 18
+            },
+            {
+              "groupIndex": 0,
+              "from": "23",
+              "to": "30",
+              "gap": 18
+            },
+            {
+              "groupIndex": 0,
+              "from": "24",
+              "to": "31",
+              "gap": 18
+            },
+            {
+              "groupIndex": 1,
+              "from": "1",
+              "to": "8",
+              "gap": 18
+            },
+            {
+              "groupIndex": 1,
+              "from": "1",
+              "to": "15",
+              "gap": 82
+            },
+            {
+              "groupIndex": 1,
+              "from": "1",
+              "to": "22",
+              "gap": 146
+            },
+            {
+              "groupIndex": 1,
+              "from": "1",
+              "to": "29",
+              "gap": 210
+            },
+            {
+              "groupIndex": 1,
+              "from": "2",
+              "to": "9",
+              "gap": 18
+            },
+            {
+              "groupIndex": 1,
+              "from": "2",
+              "to": "16",
+              "gap": 82
+            },
+            {
+              "groupIndex": 1,
+              "from": "2",
+              "to": "23",
+              "gap": 146
+            },
+            {
+              "groupIndex": 1,
+              "from": "2",
+              "to": "30",
+              "gap": 210
+            },
+            {
+              "groupIndex": 1,
+              "from": "3",
+              "to": "10",
+              "gap": 18
+            },
+            {
+              "groupIndex": 1,
+              "from": "3",
+              "to": "17",
+              "gap": 82
+            },
+            {
+              "groupIndex": 1,
+              "from": "3",
+              "to": "24",
+              "gap": 146
+            },
+            {
+              "groupIndex": 1,
+              "from": "4",
+              "to": "11",
+              "gap": 18
+            },
+            {
+              "groupIndex": 1,
+              "from": "4",
+              "to": "18",
+              "gap": 82
+            },
+            {
+              "groupIndex": 1,
+              "from": "4",
+              "to": "25",
+              "gap": 146
+            },
+            {
+              "groupIndex": 1,
+              "from": "5",
+              "to": "12",
+              "gap": 18
+            },
+            {
+              "groupIndex": 1,
+              "from": "5",
+              "to": "19",
+              "gap": 82
+            },
+            {
+              "groupIndex": 1,
+              "from": "5",
+              "to": "26",
+              "gap": 146
+            },
+            {
+              "groupIndex": 1,
+              "from": "6",
+              "to": "13",
+              "gap": 18
+            },
+            {
+              "groupIndex": 1,
+              "from": "6",
+              "to": "20",
+              "gap": 82
+            },
+            {
+              "groupIndex": 1,
+              "from": "6",
+              "to": "27",
+              "gap": 146
+            },
+            {
+              "groupIndex": 1,
+              "from": "7",
+              "to": "14",
+              "gap": 18
+            },
+            {
+              "groupIndex": 1,
+              "from": "7",
+              "to": "21",
+              "gap": 82
+            },
+            {
+              "groupIndex": 1,
+              "from": "7",
+              "to": "28",
+              "gap": 146
+            },
+            {
+              "groupIndex": 1,
+              "from": "8",
+              "to": "15",
+              "gap": 18
+            },
+            {
+              "groupIndex": 1,
+              "from": "8",
+              "to": "22",
+              "gap": 82
+            },
+            {
+              "groupIndex": 1,
+              "from": "8",
+              "to": "29",
+              "gap": 146
+            },
+            {
+              "groupIndex": 1,
+              "from": "9",
+              "to": "16",
+              "gap": 18
+            },
+            {
+              "groupIndex": 1,
+              "from": "9",
+              "to": "23",
+              "gap": 82
+            },
+            {
+              "groupIndex": 1,
+              "from": "9",
+              "to": "30",
+              "gap": 146
+            },
+            {
+              "groupIndex": 1,
+              "from": "10",
+              "to": "17",
+              "gap": 18
+            },
+            {
+              "groupIndex": 1,
+              "from": "10",
+              "to": "24",
+              "gap": 82
+            },
+            {
+              "groupIndex": 1,
+              "from": "11",
+              "to": "18",
+              "gap": 18
+            },
+            {
+              "groupIndex": 1,
+              "from": "11",
+              "to": "25",
+              "gap": 82
+            },
+            {
+              "groupIndex": 1,
+              "from": "12",
+              "to": "19",
+              "gap": 18
+            },
+            {
+              "groupIndex": 1,
+              "from": "12",
+              "to": "26",
+              "gap": 82
+            },
+            {
+              "groupIndex": 1,
+              "from": "13",
+              "to": "20",
+              "gap": 18
+            },
+            {
+              "groupIndex": 1,
+              "from": "13",
+              "to": "27",
+              "gap": 82
+            },
+            {
+              "groupIndex": 1,
+              "from": "14",
+              "to": "21",
+              "gap": 18
+            },
+            {
+              "groupIndex": 1,
+              "from": "14",
+              "to": "28",
+              "gap": 82
+            },
+            {
+              "groupIndex": 1,
+              "from": "15",
+              "to": "22",
+              "gap": 18
+            },
+            {
+              "groupIndex": 1,
+              "from": "15",
+              "to": "29",
+              "gap": 82
+            },
+            {
+              "groupIndex": 1,
+              "from": "16",
+              "to": "23",
+              "gap": 18
+            },
+            {
+              "groupIndex": 1,
+              "from": "16",
+              "to": "30",
+              "gap": 82
+            },
+            {
+              "groupIndex": 1,
+              "from": "17",
+              "to": "24",
+              "gap": 18
+            },
+            {
+              "groupIndex": 1,
+              "from": "18",
+              "to": "25",
+              "gap": 18
+            },
+            {
+              "groupIndex": 1,
+              "from": "19",
+              "to": "26",
+              "gap": 18
+            },
+            {
+              "groupIndex": 1,
+              "from": "20",
+              "to": "27",
+              "gap": 18
+            },
+            {
+              "groupIndex": 1,
+              "from": "21",
+              "to": "28",
+              "gap": 18
+            },
+            {
+              "groupIndex": 1,
+              "from": "22",
+              "to": "29",
+              "gap": 18
+            },
+            {
+              "groupIndex": 1,
+              "from": "23",
+              "to": "30",
+              "gap": 18
+            }
+          ],
+          "minimumMeasuredGap": 18
+        }
+      },
+      {
+        "id": "calendar-header-contained",
+        "kind": "contained",
+        "status": "PASS",
+        "observed": {
+          "subject": {
+            "x": 0,
+            "y": 16,
+            "width": 296,
+            "height": 148
+          },
+          "container": {
+            "x": 0,
+            "y": 16,
+            "width": 296,
+            "height": 884
+          }
+        }
+      },
+      {
+        "id": "calendar-cancel-contained",
+        "kind": "contained",
+        "status": "PASS",
+        "observed": {
+          "subject": {
+            "x": 201.109375,
+            "y": 16,
+            "width": 74.890625,
+            "height": 64
+          },
+          "container": {
+            "x": 0,
+            "y": 16,
+            "width": 296,
+            "height": 884
+          }
+        }
+      },
+      {
+        "id": "calendar-apply-reachable",
+        "kind": "contained",
+        "status": "PASS",
+        "observed": {
+          "subject": {
+            "x": 20,
+            "y": 800,
+            "width": 256,
+            "height": 80
+          },
+          "container": {
+            "x": 0,
+            "y": 16,
+            "width": 296,
+            "height": 884
+          }
+        }
+      },
+      {
+        "id": "calendar-error-reachable",
+        "kind": "contained",
+        "status": "PASS",
+        "observed": {
+          "subject": {
+            "x": 20,
+            "y": 708,
+            "width": 256,
+            "height": 84
+          },
+          "container": {
+            "x": 0,
+            "y": 16,
+            "width": 296,
+            "height": 884
+          }
+        }
+      }
+    ],
+    "issues": [],
+    "pendingStates": [],
+    "scope": "Declared DOM ownership, rendered geometry, row grouping and sample width. These measurements do not certify visual equivalence or undeclared relationships."
+  },
+  "fonts": {
+    "fonts": [
+      {
+        "nodeId": 34,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-Medium",
+            "isCustomFont": true,
+            "glyphCount": 23
+          },
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-SemiBold",
+            "isCustomFont": true,
+            "glyphCount": 2
+          }
+        ]
+      },
+      {
+        "nodeId": 35,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-SemiBold",
+            "isCustomFont": true,
+            "glyphCount": 2
+          }
+        ]
+      },
+      {
+        "nodeId": 37,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-Medium",
+            "isCustomFont": true,
+            "glyphCount": 23
+          }
+        ]
+      },
+      {
+        "nodeId": 32,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-SemiBold",
+            "isCustomFont": true,
+            "glyphCount": 2
+          }
+        ]
+      },
+      {
+        "nodeId": 40,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-SemiBold",
+            "isCustomFont": true,
+            "glyphCount": 2
+          }
+        ]
+      },
+      {
+        "nodeId": 30,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-Medium",
+            "isCustomFont": true,
+            "glyphCount": 5
+          }
+        ]
+      },
+      {
+        "nodeId": 42,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-Medium",
+            "isCustomFont": true,
+            "glyphCount": 5
+          }
+        ]
+      },
+      {
+        "nodeId": 44,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-Medium",
+            "isCustomFont": true,
+            "glyphCount": 2
+          }
+        ]
+      },
+      {
+        "nodeId": 45,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-Medium",
+            "isCustomFont": true,
+            "glyphCount": 2
+          }
+        ]
+      },
+      {
+        "nodeId": 48,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-Medium",
+            "isCustomFont": true,
+            "glyphCount": 3
+          }
+        ]
+      },
+      {
+        "nodeId": 61,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-Bold",
+            "isCustomFont": true,
+            "glyphCount": 8
+          }
+        ]
+      },
+      {
+        "nodeId": 69,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-Bold",
+            "isCustomFont": true,
+            "glyphCount": 8
+          }
+        ]
+      },
+      {
+        "nodeId": 79,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-SemiBold",
+            "isCustomFont": true,
+            "glyphCount": 1
+          }
+        ]
+      },
+      {
+        "nodeId": 82,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-SemiBold",
+            "isCustomFont": true,
+            "glyphCount": 1
+          }
+        ]
+      },
+      {
+        "nodeId": 77,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-Medium",
+            "isCustomFont": true,
+            "glyphCount": 46
+          }
+        ]
+      },
+      {
+        "nodeId": 84,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-SemiBold",
+            "isCustomFont": true,
+            "glyphCount": 5
+          }
+        ]
+      },
+      {
+        "nodeId": 96,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-SemiBold",
+            "isCustomFont": true,
+            "glyphCount": 5
+          }
+        ]
+      },
+      {
+        "nodeId": 85,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-Medium",
+            "isCustomFont": true,
+            "glyphCount": 10
+          }
+        ]
+      },
+      {
+        "nodeId": 87,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-Medium",
+            "isCustomFont": true,
+            "glyphCount": 15
+          }
+        ]
+      },
+      {
+        "nodeId": 91,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-Medium",
+            "isCustomFont": true,
+            "glyphCount": 2
+          },
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-Bold",
+            "isCustomFont": true,
+            "glyphCount": 8
+          }
+        ]
+      },
+      {
+        "nodeId": 98,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-Bold",
+            "isCustomFont": true,
+            "glyphCount": 8
+          }
+        ]
+      },
+      {
+        "nodeId": 100,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-Medium",
+            "isCustomFont": true,
+            "glyphCount": 2
+          }
+        ]
+      },
+      {
+        "nodeId": 92,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-Medium",
+            "isCustomFont": true,
+            "glyphCount": 21
+          }
+        ]
+      },
+      {
+        "nodeId": 105,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-SemiBold",
+            "isCustomFont": true,
+            "glyphCount": 1
+          }
+        ]
+      },
+      {
+        "nodeId": 108,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-SemiBold",
+            "isCustomFont": true,
+            "glyphCount": 1
+          }
+        ]
+      },
+      {
+        "nodeId": 103,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-Medium",
+            "isCustomFont": true,
+            "glyphCount": 46
+          }
+        ]
+      },
+      {
+        "nodeId": 110,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-SemiBold",
+            "isCustomFont": true,
+            "glyphCount": 6
+          }
+        ]
+      },
+      {
+        "nodeId": 122,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-SemiBold",
+            "isCustomFont": true,
+            "glyphCount": 6
+          }
+        ]
+      },
+      {
+        "nodeId": 111,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-Medium",
+            "isCustomFont": true,
+            "glyphCount": 10
+          }
+        ]
+      },
+      {
+        "nodeId": 113,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-Medium",
+            "isCustomFont": true,
+            "glyphCount": 15
+          }
+        ]
+      },
+      {
+        "nodeId": 117,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-Medium",
+            "isCustomFont": true,
+            "glyphCount": 2
+          },
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-Bold",
+            "isCustomFont": true,
+            "glyphCount": 8
+          }
+        ]
+      },
+      {
+        "nodeId": 124,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-Bold",
+            "isCustomFont": true,
+            "glyphCount": 8
+          }
+        ]
+      },
+      {
+        "nodeId": 126,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-Medium",
+            "isCustomFont": true,
+            "glyphCount": 2
+          }
+        ]
+      },
+      {
+        "nodeId": 118,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-Medium",
+            "isCustomFont": true,
+            "glyphCount": 21
+          }
+        ]
+      },
+      {
+        "nodeId": 131,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-SemiBold",
+            "isCustomFont": true,
+            "glyphCount": 1
+          }
+        ]
+      },
+      {
+        "nodeId": 134,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-SemiBold",
+            "isCustomFont": true,
+            "glyphCount": 1
+          }
+        ]
+      },
+      {
+        "nodeId": 129,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-Medium",
+            "isCustomFont": true,
+            "glyphCount": 46
+          }
+        ]
+      },
+      {
+        "nodeId": 136,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-SemiBold",
+            "isCustomFont": true,
+            "glyphCount": 8
+          }
+        ]
+      },
+      {
+        "nodeId": 148,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-SemiBold",
+            "isCustomFont": true,
+            "glyphCount": 8
+          }
+        ]
+      },
+      {
+        "nodeId": 137,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-Medium",
+            "isCustomFont": true,
+            "glyphCount": 10
+          }
+        ]
+      },
+      {
+        "nodeId": 139,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-Medium",
+            "isCustomFont": true,
+            "glyphCount": 15
+          }
+        ]
+      },
+      {
+        "nodeId": 143,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-Medium",
+            "isCustomFont": true,
+            "glyphCount": 2
+          },
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-Bold",
+            "isCustomFont": true,
+            "glyphCount": 7
+          }
+        ]
+      },
+      {
+        "nodeId": 150,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-Bold",
+            "isCustomFont": true,
+            "glyphCount": 7
+          }
+        ]
+      },
+      {
+        "nodeId": 152,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-Medium",
+            "isCustomFont": true,
+            "glyphCount": 2
+          }
+        ]
+      },
+      {
+        "nodeId": 144,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-Medium",
+            "isCustomFont": true,
+            "glyphCount": 21
+          }
+        ]
+      },
+      {
+        "nodeId": 315,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-Bold",
+            "isCustomFont": true,
+            "glyphCount": 4
+          }
+        ]
+      },
+      {
+        "nodeId": 319,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-Bold",
+            "isCustomFont": true,
+            "glyphCount": 4
+          }
+        ]
+      },
+      {
+        "nodeId": 316,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-SemiBold",
+            "isCustomFont": true,
+            "glyphCount": 4
+          }
+        ]
+      },
+      {
+        "nodeId": 324,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-SemiBold",
+            "isCustomFont": true,
+            "glyphCount": 4
+          }
+        ]
+      },
+      {
+        "nodeId": 317,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-SemiBold",
+            "isCustomFont": true,
+            "glyphCount": 4
+          }
+        ]
+      },
+      {
+        "nodeId": 328,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-SemiBold",
+            "isCustomFont": true,
+            "glyphCount": 4
+          }
+        ]
+      },
+      {
+        "nodeId": 11,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-SemiBold",
+            "isCustomFont": true,
+            "glyphCount": 20
+          }
+        ]
+      },
+      {
+        "nodeId": 336,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-Bold",
+            "isCustomFont": true,
+            "glyphCount": 5
+          },
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-SemiBold",
+            "isCustomFont": true,
+            "glyphCount": 2
+          }
+        ]
+      },
+      {
+        "nodeId": 353,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-Bold",
+            "isCustomFont": true,
+            "glyphCount": 5
+          }
+        ]
+      },
+      {
+        "nodeId": 355,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-SemiBold",
+            "isCustomFont": true,
+            "glyphCount": 2
+          }
+        ]
+      },
+      {
+        "nodeId": 337,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-SemiBold",
+            "isCustomFont": true,
+            "glyphCount": 3
+          }
+        ]
+      },
+      {
+        "nodeId": 357,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-Medium",
+            "isCustomFont": true,
+            "glyphCount": 2
+          }
+        ]
+      },
+      {
+        "nodeId": 340,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-SemiBold",
+            "isCustomFont": true,
+            "glyphCount": 3
+          }
+        ]
+      },
+      {
+        "nodeId": 343,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-SemiBold",
+            "isCustomFont": true,
+            "glyphCount": 4
+          }
+        ]
+      },
+      {
+        "nodeId": 346,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-SemiBold",
+            "isCustomFont": true,
+            "glyphCount": 9
+          }
+        ]
+      },
+      {
+        "nodeId": 377,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-SemiBold",
+            "isCustomFont": true,
+            "glyphCount": 9
+          }
+        ]
+      },
+      {
+        "nodeId": 347,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-SemiBold",
+            "isCustomFont": true,
+            "glyphCount": 3
+          }
+        ]
+      },
+      {
+        "nodeId": 351,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-SemiBold",
+            "isCustomFont": true,
+            "glyphCount": 7
+          }
+        ]
+      },
+      {
+        "nodeId": 552,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-Bold",
+            "isCustomFont": true,
+            "glyphCount": 4
+          },
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-SemiBold",
+            "isCustomFont": true,
+            "glyphCount": 2
+          }
+        ]
+      },
+      {
+        "nodeId": 554,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-Bold",
+            "isCustomFont": true,
+            "glyphCount": 4
+          }
+        ]
+      },
+      {
+        "nodeId": 556,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-SemiBold",
+            "isCustomFont": true,
+            "glyphCount": 2
+          }
+        ]
+      },
+      {
+        "nodeId": 568,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-Medium",
+            "isCustomFont": true,
+            "glyphCount": 1
+          }
+        ]
+      },
+      {
+        "nodeId": 570,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-Medium",
+            "isCustomFont": true,
+            "glyphCount": 1
+          }
+        ]
+      },
+      {
+        "nodeId": 572,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-Medium",
+            "isCustomFont": true,
+            "glyphCount": 1
+          }
+        ]
+      },
+      {
+        "nodeId": 574,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-Medium",
+            "isCustomFont": true,
+            "glyphCount": 1
+          }
+        ]
+      },
+      {
+        "nodeId": 576,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-Medium",
+            "isCustomFont": true,
+            "glyphCount": 1
+          }
+        ]
+      },
+      {
+        "nodeId": 578,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-Medium",
+            "isCustomFont": true,
+            "glyphCount": 1
+          }
+        ]
+      },
+      {
+        "nodeId": 580,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-Medium",
+            "isCustomFont": true,
+            "glyphCount": 1
+          }
+        ]
+      },
+      {
+        "nodeId": 585,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-SemiBold",
+            "isCustomFont": true,
+            "glyphCount": 9
+          }
+        ]
+      },
+      {
+        "nodeId": 588,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-SemiBold",
+            "isCustomFont": true,
+            "glyphCount": 9
+          }
+        ]
+      },
+      {
+        "nodeId": 590,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-Bold",
+            "isCustomFont": true,
+            "glyphCount": 7
+          }
+        ]
+      },
+      {
+        "nodeId": 591,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-Bold",
+            "isCustomFont": true,
+            "glyphCount": 1
+          }
+        ]
+      },
+      {
+        "nodeId": 593,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-Bold",
+            "isCustomFont": true,
+            "glyphCount": 1
+          }
+        ]
+      },
+      {
+        "nodeId": 595,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-Bold",
+            "isCustomFont": true,
+            "glyphCount": 1
+          }
+        ]
+      },
+      {
+        "nodeId": 597,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-Bold",
+            "isCustomFont": true,
+            "glyphCount": 1
+          }
+        ]
+      },
+      {
+        "nodeId": 599,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-Bold",
+            "isCustomFont": true,
+            "glyphCount": 1
+          }
+        ]
+      },
+      {
+        "nodeId": 601,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-Bold",
+            "isCustomFont": true,
+            "glyphCount": 1
+          }
+        ]
+      },
+      {
+        "nodeId": 603,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-Bold",
+            "isCustomFont": true,
+            "glyphCount": 1
+          }
+        ]
+      },
+      {
+        "nodeId": 617,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-Medium",
+            "isCustomFont": true,
+            "glyphCount": 1
+          }
+        ]
+      },
+      {
+        "nodeId": 619,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-Medium",
+            "isCustomFont": true,
+            "glyphCount": 1
+          }
+        ]
+      },
+      {
+        "nodeId": 621,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-Medium",
+            "isCustomFont": true,
+            "glyphCount": 1
+          }
+        ]
+      },
+      {
+        "nodeId": 630,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-Medium",
+            "isCustomFont": true,
+            "glyphCount": 1
+          }
+        ]
+      },
+      {
+        "nodeId": 632,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-Medium",
+            "isCustomFont": true,
+            "glyphCount": 1
+          }
+        ]
+      },
+      {
+        "nodeId": 634,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-Medium",
+            "isCustomFont": true,
+            "glyphCount": 1
+          }
+        ]
+      },
+      {
+        "nodeId": 636,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-Medium",
+            "isCustomFont": true,
+            "glyphCount": 1
+          }
+        ]
+      },
+      {
+        "nodeId": 638,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-Medium",
+            "isCustomFont": true,
+            "glyphCount": 1
+          }
+        ]
+      },
+      {
+        "nodeId": 640,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-Medium",
+            "isCustomFont": true,
+            "glyphCount": 1
+          }
+        ]
+      },
+      {
+        "nodeId": 642,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-Medium",
+            "isCustomFont": true,
+            "glyphCount": 2
+          }
+        ]
+      },
+      {
+        "nodeId": 651,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-Medium",
+            "isCustomFont": true,
+            "glyphCount": 2
+          }
+        ]
+      },
+      {
+        "nodeId": 653,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-Medium",
+            "isCustomFont": true,
+            "glyphCount": 2
+          }
+        ]
+      },
+      {
+        "nodeId": 655,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-Medium",
+            "isCustomFont": true,
+            "glyphCount": 2
+          }
+        ]
+      },
+      {
+        "nodeId": 657,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-Medium",
+            "isCustomFont": true,
+            "glyphCount": 2
+          }
+        ]
+      },
+      {
+        "nodeId": 659,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-Medium",
+            "isCustomFont": true,
+            "glyphCount": 2
+          }
+        ]
+      },
+      {
+        "nodeId": 661,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-Medium",
+            "isCustomFont": true,
+            "glyphCount": 2
+          }
+        ]
+      },
+      {
+        "nodeId": 663,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-Medium",
+            "isCustomFont": true,
+            "glyphCount": 2
+          }
+        ]
+      },
+      {
+        "nodeId": 672,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-Medium",
+            "isCustomFont": true,
+            "glyphCount": 2
+          }
+        ]
+      },
+      {
+        "nodeId": 674,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-Medium",
+            "isCustomFont": true,
+            "glyphCount": 2
+          }
+        ]
+      },
+      {
+        "nodeId": 676,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-Medium",
+            "isCustomFont": true,
+            "glyphCount": 2
+          }
+        ]
+      },
+      {
+        "nodeId": 678,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-Medium",
+            "isCustomFont": true,
+            "glyphCount": 2
+          }
+        ]
+      },
+      {
+        "nodeId": 680,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-Medium",
+            "isCustomFont": true,
+            "glyphCount": 2
+          }
+        ]
+      },
+      {
+        "nodeId": 682,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-Medium",
+            "isCustomFont": true,
+            "glyphCount": 2
+          }
+        ]
+      },
+      {
+        "nodeId": 684,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-Medium",
+            "isCustomFont": true,
+            "glyphCount": 2
+          }
+        ]
+      },
+      {
+        "nodeId": 693,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-Medium",
+            "isCustomFont": true,
+            "glyphCount": 2
+          }
+        ]
+      },
+      {
+        "nodeId": 695,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-Medium",
+            "isCustomFont": true,
+            "glyphCount": 2
+          }
+        ]
+      },
+      {
+        "nodeId": 697,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-Medium",
+            "isCustomFont": true,
+            "glyphCount": 2
+          }
+        ]
+      },
+      {
+        "nodeId": 699,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-Medium",
+            "isCustomFont": true,
+            "glyphCount": 2
+          }
+        ]
+      },
+      {
+        "nodeId": 701,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-Medium",
+            "isCustomFont": true,
+            "glyphCount": 2
+          }
+        ]
+      },
+      {
+        "nodeId": 703,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-Medium",
+            "isCustomFont": true,
+            "glyphCount": 2
+          }
+        ]
+      },
+      {
+        "nodeId": 705,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-Medium",
+            "isCustomFont": true,
+            "glyphCount": 2
+          }
+        ]
+      },
+      {
+        "nodeId": 708,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-SemiBold",
+            "isCustomFont": true,
+            "glyphCount": 9
+          }
+        ]
+      },
+      {
+        "nodeId": 711,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-SemiBold",
+            "isCustomFont": true,
+            "glyphCount": 9
+          }
+        ]
+      },
+      {
+        "nodeId": 713,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-Bold",
+            "isCustomFont": true,
+            "glyphCount": 7
+          }
+        ]
+      },
+      {
+        "nodeId": 714,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-Bold",
+            "isCustomFont": true,
+            "glyphCount": 1
+          }
+        ]
+      },
+      {
+        "nodeId": 716,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-Bold",
+            "isCustomFont": true,
+            "glyphCount": 1
+          }
+        ]
+      },
+      {
+        "nodeId": 718,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-Bold",
+            "isCustomFont": true,
+            "glyphCount": 1
+          }
+        ]
+      },
+      {
+        "nodeId": 720,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-Bold",
+            "isCustomFont": true,
+            "glyphCount": 1
+          }
+        ]
+      },
+      {
+        "nodeId": 722,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-Bold",
+            "isCustomFont": true,
+            "glyphCount": 1
+          }
+        ]
+      },
+      {
+        "nodeId": 724,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-Bold",
+            "isCustomFont": true,
+            "glyphCount": 1
+          }
+        ]
+      },
+      {
+        "nodeId": 726,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-Bold",
+            "isCustomFont": true,
+            "glyphCount": 1
+          }
+        ]
+      },
+      {
+        "nodeId": 740,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-Medium",
+            "isCustomFont": true,
+            "glyphCount": 1
+          }
+        ]
+      },
+      {
+        "nodeId": 742,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-Medium",
+            "isCustomFont": true,
+            "glyphCount": 1
+          }
+        ]
+      },
+      {
+        "nodeId": 744,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-Medium",
+            "isCustomFont": true,
+            "glyphCount": 1
+          }
+        ]
+      },
+      {
+        "nodeId": 746,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-Medium",
+            "isCustomFont": true,
+            "glyphCount": 1
+          }
+        ]
+      },
+      {
+        "nodeId": 748,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-Medium",
+            "isCustomFont": true,
+            "glyphCount": 1
+          }
+        ]
+      },
+      {
+        "nodeId": 750,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-Medium",
+            "isCustomFont": true,
+            "glyphCount": 1
+          }
+        ]
+      },
+      {
+        "nodeId": 752,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-Medium",
+            "isCustomFont": true,
+            "glyphCount": 1
+          }
+        ]
+      },
+      {
+        "nodeId": 761,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-Medium",
+            "isCustomFont": true,
+            "glyphCount": 1
+          }
+        ]
+      },
+      {
+        "nodeId": 763,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-Medium",
+            "isCustomFont": true,
+            "glyphCount": 1
+          }
+        ]
+      },
+      {
+        "nodeId": 765,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-Medium",
+            "isCustomFont": true,
+            "glyphCount": 2
+          }
+        ]
+      },
+      {
+        "nodeId": 767,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-Medium",
+            "isCustomFont": true,
+            "glyphCount": 2
+          }
+        ]
+      },
+      {
+        "nodeId": 769,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-Medium",
+            "isCustomFont": true,
+            "glyphCount": 2
+          }
+        ]
+      },
+      {
+        "nodeId": 771,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-Medium",
+            "isCustomFont": true,
+            "glyphCount": 2
+          }
+        ]
+      },
+      {
+        "nodeId": 773,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-Medium",
+            "isCustomFont": true,
+            "glyphCount": 2
+          }
+        ]
+      },
+      {
+        "nodeId": 782,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-Medium",
+            "isCustomFont": true,
+            "glyphCount": 2
+          }
+        ]
+      },
+      {
+        "nodeId": 784,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-Medium",
+            "isCustomFont": true,
+            "glyphCount": 2
+          }
+        ]
+      },
+      {
+        "nodeId": 786,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-Medium",
+            "isCustomFont": true,
+            "glyphCount": 2
+          }
+        ]
+      },
+      {
+        "nodeId": 788,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-Medium",
+            "isCustomFont": true,
+            "glyphCount": 2
+          }
+        ]
+      },
+      {
+        "nodeId": 790,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-Medium",
+            "isCustomFont": true,
+            "glyphCount": 2
+          }
+        ]
+      },
+      {
+        "nodeId": 792,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-Medium",
+            "isCustomFont": true,
+            "glyphCount": 2
+          }
+        ]
+      },
+      {
+        "nodeId": 794,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-Medium",
+            "isCustomFont": true,
+            "glyphCount": 2
+          }
+        ]
+      },
+      {
+        "nodeId": 803,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-Medium",
+            "isCustomFont": true,
+            "glyphCount": 2
+          }
+        ]
+      },
+      {
+        "nodeId": 805,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-Medium",
+            "isCustomFont": true,
+            "glyphCount": 2
+          }
+        ]
+      },
+      {
+        "nodeId": 807,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-Medium",
+            "isCustomFont": true,
+            "glyphCount": 2
+          }
+        ]
+      },
+      {
+        "nodeId": 809,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-Medium",
+            "isCustomFont": true,
+            "glyphCount": 2
+          }
+        ]
+      },
+      {
+        "nodeId": 811,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-Medium",
+            "isCustomFont": true,
+            "glyphCount": 2
+          }
+        ]
+      },
+      {
+        "nodeId": 813,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-Medium",
+            "isCustomFont": true,
+            "glyphCount": 2
+          }
+        ]
+      },
+      {
+        "nodeId": 815,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-Medium",
+            "isCustomFont": true,
+            "glyphCount": 2
+          }
+        ]
+      },
+      {
+        "nodeId": 824,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-Medium",
+            "isCustomFont": true,
+            "glyphCount": 2
+          }
+        ]
+      },
+      {
+        "nodeId": 826,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-Medium",
+            "isCustomFont": true,
+            "glyphCount": 2
+          }
+        ]
+      },
+      {
+        "nodeId": 560,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-Medium",
+            "isCustomFont": true,
+            "glyphCount": 33
+          },
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-SemiBold",
+            "isCustomFont": true,
+            "glyphCount": 4
+          }
+        ]
+      },
+      {
+        "nodeId": 828,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-Medium",
+            "isCustomFont": true,
+            "glyphCount": 15
+          }
+        ]
+      },
+      {
+        "nodeId": 830,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-Medium",
+            "isCustomFont": true,
+            "glyphCount": 18
+          }
+        ]
+      },
+      {
+        "nodeId": 832,
+        "fonts": [
+          {
+            "familyName": "Noto Sans KR Thin",
+            "postScriptName": "NotoSansKR-SemiBold",
+            "isCustomFont": true,
+            "glyphCount": 4
+          }
+        ]
+      }
+    ],
+    "roles": [
+      {
+        "selector": "#date-calendar-title",
+        "fontSizePx": 22,
+        "fontWeight": 700,
+        "lineHeightRatio": 1.5,
+        "families": [
+          "Noto Sans KR Thin"
+        ],
+        "requireCustomFont": true,
+        "actual": [
+          {
+            "nodeId": 554,
+            "fonts": [
+              {
+                "familyName": "Noto Sans KR Thin",
+                "postScriptName": "NotoSansKR-Bold",
+                "isCustomFont": true,
+                "glyphCount": 4
+              }
+            ]
+          }
+        ],
+        "metrics": [
+          {
+            "tag": "H2",
+            "id": "date-calendar-title",
+            "pseudo": null,
+            "text": "날짜 선택",
+            "fontSizePx": 44,
+            "fontWeight": 700,
+            "lineHeightRatio": 1.5
+          }
+        ]
+      },
+      {
+        "selector": "#date-calendar .calendar-month-label",
+        "fontSizePx": 16,
+        "fontWeight": 600,
+        "lineHeightRatio": 1.5,
+        "families": [
+          "Noto Sans KR Thin"
+        ],
+        "requireCustomFont": true,
+        "actual": [
+          {
+            "nodeId": 588,
+            "fonts": [
+              {
+                "familyName": "Noto Sans KR Thin",
+                "postScriptName": "NotoSansKR-SemiBold",
+                "isCustomFont": true,
+                "glyphCount": 9
+              }
+            ]
+          },
+          {
+            "nodeId": 711,
+            "fonts": [
+              {
+                "familyName": "Noto Sans KR Thin",
+                "postScriptName": "NotoSansKR-SemiBold",
+                "isCustomFont": true,
+                "glyphCount": 9
+              }
+            ]
+          }
+        ],
+        "metrics": [
+          {
+            "tag": "SPAN",
+            "id": "",
+            "pseudo": null,
+            "text": "2026년 10월",
+            "fontSizePx": 32,
+            "fontWeight": 600,
+            "lineHeightRatio": 1.5
+          },
+          {
+            "tag": "SPAN",
+            "id": "",
+            "pseudo": null,
+            "text": "2026년 11월",
+            "fontSizePx": 32,
+            "fontWeight": 600,
+            "lineHeightRatio": 1.5
+          }
+        ]
+      },
+      {
+        "selector": "#date-calendar .calendar-day",
+        "fontSizePx": 16,
+        "fontWeight": 500,
+        "lineHeightRatio": 1.5,
+        "families": [
+          "Noto Sans KR Thin"
+        ],
+        "requireCustomFont": true,
+        "actual": [
+          {
+            "nodeId": 617,
+            "fonts": [
+              {
+                "familyName": "Noto Sans KR Thin",
+                "postScriptName": "NotoSansKR-Medium",
+                "isCustomFont": true,
+                "glyphCount": 1
+              }
+            ]
+          },
+          {
+            "nodeId": 619,
+            "fonts": [
+              {
+                "familyName": "Noto Sans KR Thin",
+                "postScriptName": "NotoSansKR-Medium",
+                "isCustomFont": true,
+                "glyphCount": 1
+              }
+            ]
+          },
+          {
+            "nodeId": 621,
+            "fonts": [
+              {
+                "familyName": "Noto Sans KR Thin",
+                "postScriptName": "NotoSansKR-Medium",
+                "isCustomFont": true,
+                "glyphCount": 1
+              }
+            ]
+          },
+          {
+            "nodeId": 630,
+            "fonts": [
+              {
+                "familyName": "Noto Sans KR Thin",
+                "postScriptName": "NotoSansKR-Medium",
+                "isCustomFont": true,
+                "glyphCount": 1
+              }
+            ]
+          },
+          {
+            "nodeId": 632,
+            "fonts": [
+              {
+                "familyName": "Noto Sans KR Thin",
+                "postScriptName": "NotoSansKR-Medium",
+                "isCustomFont": true,
+                "glyphCount": 1
+              }
+            ]
+          },
+          {
+            "nodeId": 634,
+            "fonts": [
+              {
+                "familyName": "Noto Sans KR Thin",
+                "postScriptName": "NotoSansKR-Medium",
+                "isCustomFont": true,
+                "glyphCount": 1
+              }
+            ]
+          },
+          {
+            "nodeId": 636,
+            "fonts": [
+              {
+                "familyName": "Noto Sans KR Thin",
+                "postScriptName": "NotoSansKR-Medium",
+                "isCustomFont": true,
+                "glyphCount": 1
+              }
+            ]
+          },
+          {
+            "nodeId": 638,
+            "fonts": [
+              {
+                "familyName": "Noto Sans KR Thin",
+                "postScriptName": "NotoSansKR-Medium",
+                "isCustomFont": true,
+                "glyphCount": 1
+              }
+            ]
+          },
+          {
+            "nodeId": 640,
+            "fonts": [
+              {
+                "familyName": "Noto Sans KR Thin",
+                "postScriptName": "NotoSansKR-Medium",
+                "isCustomFont": true,
+                "glyphCount": 1
+              }
+            ]
+          },
+          {
+            "nodeId": 642,
+            "fonts": [
+              {
+                "familyName": "Noto Sans KR Thin",
+                "postScriptName": "NotoSansKR-Medium",
+                "isCustomFont": true,
+                "glyphCount": 2
+              }
+            ]
+          },
+          {
+            "nodeId": 651,
+            "fonts": [
+              {
+                "familyName": "Noto Sans KR Thin",
+                "postScriptName": "NotoSansKR-Medium",
+                "isCustomFont": true,
+                "glyphCount": 2
+              }
+            ]
+          },
+          {
+            "nodeId": 653,
+            "fonts": [
+              {
+                "familyName": "Noto Sans KR Thin",
+                "postScriptName": "NotoSansKR-Medium",
+                "isCustomFont": true,
+                "glyphCount": 2
+              }
+            ]
+          },
+          {
+            "nodeId": 655,
+            "fonts": [
+              {
+                "familyName": "Noto Sans KR Thin",
+                "postScriptName": "NotoSansKR-Medium",
+                "isCustomFont": true,
+                "glyphCount": 2
+              }
+            ]
+          },
+          {
+            "nodeId": 657,
+            "fonts": [
+              {
+                "familyName": "Noto Sans KR Thin",
+                "postScriptName": "NotoSansKR-Medium",
+                "isCustomFont": true,
+                "glyphCount": 2
+              }
+            ]
+          },
+          {
+            "nodeId": 659,
+            "fonts": [
+              {
+                "familyName": "Noto Sans KR Thin",
+                "postScriptName": "NotoSansKR-Medium",
+                "isCustomFont": true,
+                "glyphCount": 2
+              }
+            ]
+          },
+          {
+            "nodeId": 661,
+            "fonts": [
+              {
+                "familyName": "Noto Sans KR Thin",
+                "postScriptName": "NotoSansKR-Medium",
+                "isCustomFont": true,
+                "glyphCount": 2
+              }
+            ]
+          },
+          {
+            "nodeId": 663,
+            "fonts": [
+              {
+                "familyName": "Noto Sans KR Thin",
+                "postScriptName": "NotoSansKR-Medium",
+                "isCustomFont": true,
+                "glyphCount": 2
+              }
+            ]
+          },
+          {
+            "nodeId": 672,
+            "fonts": [
+              {
+                "familyName": "Noto Sans KR Thin",
+                "postScriptName": "NotoSansKR-Medium",
+                "isCustomFont": true,
+                "glyphCount": 2
+              }
+            ]
+          },
+          {
+            "nodeId": 674,
+            "fonts": [
+              {
+                "familyName": "Noto Sans KR Thin",
+                "postScriptName": "NotoSansKR-Medium",
+                "isCustomFont": true,
+                "glyphCount": 2
+              }
+            ]
+          },
+          {
+            "nodeId": 676,
+            "fonts": [
+              {
+                "familyName": "Noto Sans KR Thin",
+                "postScriptName": "NotoSansKR-Medium",
+                "isCustomFont": true,
+                "glyphCount": 2
+              }
+            ]
+          },
+          {
+            "nodeId": 678,
+            "fonts": [
+              {
+                "familyName": "Noto Sans KR Thin",
+                "postScriptName": "NotoSansKR-Medium",
+                "isCustomFont": true,
+                "glyphCount": 2
+              }
+            ]
+          },
+          {
+            "nodeId": 680,
+            "fonts": [
+              {
+                "familyName": "Noto Sans KR Thin",
+                "postScriptName": "NotoSansKR-Medium",
+                "isCustomFont": true,
+                "glyphCount": 2
+              }
+            ]
+          },
+          {
+            "nodeId": 682,
+            "fonts": [
+              {
+                "familyName": "Noto Sans KR Thin",
+                "postScriptName": "NotoSansKR-Medium",
+                "isCustomFont": true,
+                "glyphCount": 2
+              }
+            ]
+          },
+          {
+            "nodeId": 684,
+            "fonts": [
+              {
+                "familyName": "Noto Sans KR Thin",
+                "postScriptName": "NotoSansKR-Medium",
+                "isCustomFont": true,
+                "glyphCount": 2
+              }
+            ]
+          },
+          {
+            "nodeId": 693,
+            "fonts": [
+              {
+                "familyName": "Noto Sans KR Thin",
+                "postScriptName": "NotoSansKR-Medium",
+                "isCustomFont": true,
+                "glyphCount": 2
+              }
+            ]
+          },
+          {
+            "nodeId": 695,
+            "fonts": [
+              {
+                "familyName": "Noto Sans KR Thin",
+                "postScriptName": "NotoSansKR-Medium",
+                "isCustomFont": true,
+                "glyphCount": 2
+              }
+            ]
+          },
+          {
+            "nodeId": 697,
+            "fonts": [
+              {
+                "familyName": "Noto Sans KR Thin",
+                "postScriptName": "NotoSansKR-Medium",
+                "isCustomFont": true,
+                "glyphCount": 2
+              }
+            ]
+          },
+          {
+            "nodeId": 699,
+            "fonts": [
+              {
+                "familyName": "Noto Sans KR Thin",
+                "postScriptName": "NotoSansKR-Medium",
+                "isCustomFont": true,
+                "glyphCount": 2
+              }
+            ]
+          },
+          {
+            "nodeId": 701,
+            "fonts": [
+              {
+                "familyName": "Noto Sans KR Thin",
+                "postScriptName": "NotoSansKR-Medium",
+                "isCustomFont": true,
+                "glyphCount": 2
+              }
+            ]
+          },
+          {
+            "nodeId": 703,
+            "fonts": [
+              {
+                "familyName": "Noto Sans KR Thin",
+                "postScriptName": "NotoSansKR-Medium",
+                "isCustomFont": true,
+                "glyphCount": 2
+              }
+            ]
+          },
+          {
+            "nodeId": 705,
+            "fonts": [
+              {
+                "familyName": "Noto Sans KR Thin",
+                "postScriptName": "NotoSansKR-Medium",
+                "isCustomFont": true,
+                "glyphCount": 2
+              }
+            ]
+          },
+          {
+            "nodeId": 740,
+            "fonts": [
+              {
+                "familyName": "Noto Sans KR Thin",
+                "postScriptName": "NotoSansKR-Medium",
+                "isCustomFont": true,
+                "glyphCount": 1
+              }
+            ]
+          },
+          {
+            "nodeId": 742,
+            "fonts": [
+              {
+                "familyName": "Noto Sans KR Thin",
+                "postScriptName": "NotoSansKR-Medium",
+                "isCustomFont": true,
+                "glyphCount": 1
+              }
+            ]
+          },
+          {
+            "nodeId": 744,
+            "fonts": [
+              {
+                "familyName": "Noto Sans KR Thin",
+                "postScriptName": "NotoSansKR-Medium",
+                "isCustomFont": true,
+                "glyphCount": 1
+              }
+            ]
+          },
+          {
+            "nodeId": 746,
+            "fonts": [
+              {
+                "familyName": "Noto Sans KR Thin",
+                "postScriptName": "NotoSansKR-Medium",
+                "isCustomFont": true,
+                "glyphCount": 1
+              }
+            ]
+          },
+          {
+            "nodeId": 748,
+            "fonts": [
+              {
+                "familyName": "Noto Sans KR Thin",
+                "postScriptName": "NotoSansKR-Medium",
+                "isCustomFont": true,
+                "glyphCount": 1
+              }
+            ]
+          },
+          {
+            "nodeId": 750,
+            "fonts": [
+              {
+                "familyName": "Noto Sans KR Thin",
+                "postScriptName": "NotoSansKR-Medium",
+                "isCustomFont": true,
+                "glyphCount": 1
+              }
+            ]
+          },
+          {
+            "nodeId": 752,
+            "fonts": [
+              {
+                "familyName": "Noto Sans KR Thin",
+                "postScriptName": "NotoSansKR-Medium",
+                "isCustomFont": true,
+                "glyphCount": 1
+              }
+            ]
+          },
+          {
+            "nodeId": 761,
+            "fonts": [
+              {
+                "familyName": "Noto Sans KR Thin",
+                "postScriptName": "NotoSansKR-Medium",
+                "isCustomFont": true,
+                "glyphCount": 1
+              }
+            ]
+          },
+          {
+            "nodeId": 763,
+            "fonts": [
+              {
+                "familyName": "Noto Sans KR Thin",
+                "postScriptName": "NotoSansKR-Medium",
+                "isCustomFont": true,
+                "glyphCount": 1
+              }
+            ]
+          },
+          {
+            "nodeId": 765,
+            "fonts": [
+              {
+                "familyName": "Noto Sans KR Thin",
+                "postScriptName": "NotoSansKR-Medium",
+                "isCustomFont": true,
+                "glyphCount": 2
+              }
+            ]
+          },
+          {
+            "nodeId": 767,
+            "fonts": [
+              {
+                "familyName": "Noto Sans KR Thin",
+                "postScriptName": "NotoSansKR-Medium",
+                "isCustomFont": true,
+                "glyphCount": 2
+              }
+            ]
+          },
+          {
+            "nodeId": 769,
+            "fonts": [
+              {
+                "familyName": "Noto Sans KR Thin",
+                "postScriptName": "NotoSansKR-Medium",
+                "isCustomFont": true,
+                "glyphCount": 2
+              }
+            ]
+          },
+          {
+            "nodeId": 771,
+            "fonts": [
+              {
+                "familyName": "Noto Sans KR Thin",
+                "postScriptName": "NotoSansKR-Medium",
+                "isCustomFont": true,
+                "glyphCount": 2
+              }
+            ]
+          },
+          {
+            "nodeId": 773,
+            "fonts": [
+              {
+                "familyName": "Noto Sans KR Thin",
+                "postScriptName": "NotoSansKR-Medium",
+                "isCustomFont": true,
+                "glyphCount": 2
+              }
+            ]
+          },
+          {
+            "nodeId": 782,
+            "fonts": [
+              {
+                "familyName": "Noto Sans KR Thin",
+                "postScriptName": "NotoSansKR-Medium",
+                "isCustomFont": true,
+                "glyphCount": 2
+              }
+            ]
+          },
+          {
+            "nodeId": 784,
+            "fonts": [
+              {
+                "familyName": "Noto Sans KR Thin",
+                "postScriptName": "NotoSansKR-Medium",
+                "isCustomFont": true,
+                "glyphCount": 2
+              }
+            ]
+          },
+          {
+            "nodeId": 786,
+            "fonts": [
+              {
+                "familyName": "Noto Sans KR Thin",
+                "postScriptName": "NotoSansKR-Medium",
+                "isCustomFont": true,
+                "glyphCount": 2
+              }
+            ]
+          },
+          {
+            "nodeId": 788,
+            "fonts": [
+              {
+                "familyName": "Noto Sans KR Thin",
+                "postScriptName": "NotoSansKR-Medium",
+                "isCustomFont": true,
+                "glyphCount": 2
+              }
+            ]
+          },
+          {
+            "nodeId": 790,
+            "fonts": [
+              {
+                "familyName": "Noto Sans KR Thin",
+                "postScriptName": "NotoSansKR-Medium",
+                "isCustomFont": true,
+                "glyphCount": 2
+              }
+            ]
+          },
+          {
+            "nodeId": 792,
+            "fonts": [
+              {
+                "familyName": "Noto Sans KR Thin",
+                "postScriptName": "NotoSansKR-Medium",
+                "isCustomFont": true,
+                "glyphCount": 2
+              }
+            ]
+          },
+          {
+            "nodeId": 794,
+            "fonts": [
+              {
+                "familyName": "Noto Sans KR Thin",
+                "postScriptName": "NotoSansKR-Medium",
+                "isCustomFont": true,
+                "glyphCount": 2
+              }
+            ]
+          },
+          {
+            "nodeId": 803,
+            "fonts": [
+              {
+                "familyName": "Noto Sans KR Thin",
+                "postScriptName": "NotoSansKR-Medium",
+                "isCustomFont": true,
+                "glyphCount": 2
+              }
+            ]
+          },
+          {
+            "nodeId": 805,
+            "fonts": [
+              {
+                "familyName": "Noto Sans KR Thin",
+                "postScriptName": "NotoSansKR-Medium",
+                "isCustomFont": true,
+                "glyphCount": 2
+              }
+            ]
+          },
+          {
+            "nodeId": 807,
+            "fonts": [
+              {
+                "familyName": "Noto Sans KR Thin",
+                "postScriptName": "NotoSansKR-Medium",
+                "isCustomFont": true,
+                "glyphCount": 2
+              }
+            ]
+          },
+          {
+            "nodeId": 809,
+            "fonts": [
+              {
+                "familyName": "Noto Sans KR Thin",
+                "postScriptName": "NotoSansKR-Medium",
+                "isCustomFont": true,
+                "glyphCount": 2
+              }
+            ]
+          },
+          {
+            "nodeId": 811,
+            "fonts": [
+              {
+                "familyName": "Noto Sans KR Thin",
+                "postScriptName": "NotoSansKR-Medium",
+                "isCustomFont": true,
+                "glyphCount": 2
+              }
+            ]
+          },
+          {
+            "nodeId": 813,
+            "fonts": [
+              {
+                "familyName": "Noto Sans KR Thin",
+                "postScriptName": "NotoSansKR-Medium",
+                "isCustomFont": true,
+                "glyphCount": 2
+              }
+            ]
+          },
+          {
+            "nodeId": 815,
+            "fonts": [
+              {
+                "familyName": "Noto Sans KR Thin",
+                "postScriptName": "NotoSansKR-Medium",
+                "isCustomFont": true,
+                "glyphCount": 2
+              }
+            ]
+          },
+          {
+            "nodeId": 824,
+            "fonts": [
+              {
+                "familyName": "Noto Sans KR Thin",
+                "postScriptName": "NotoSansKR-Medium",
+                "isCustomFont": true,
+                "glyphCount": 2
+              }
+            ]
+          },
+          {
+            "nodeId": 826,
+            "fonts": [
+              {
+                "familyName": "Noto Sans KR Thin",
+                "postScriptName": "NotoSansKR-Medium",
+                "isCustomFont": true,
+                "glyphCount": 2
+              }
+            ]
+          }
+        ],
+        "metrics": [
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "pseudo": null,
+            "text": "1",
+            "fontSizePx": 32,
+            "fontWeight": 500,
+            "lineHeightRatio": 1.5
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "pseudo": null,
+            "text": "2",
+            "fontSizePx": 32,
+            "fontWeight": 500,
+            "lineHeightRatio": 1.5
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "pseudo": null,
+            "text": "3",
+            "fontSizePx": 32,
+            "fontWeight": 500,
+            "lineHeightRatio": 1.5
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "pseudo": null,
+            "text": "4",
+            "fontSizePx": 32,
+            "fontWeight": 500,
+            "lineHeightRatio": 1.5
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "pseudo": null,
+            "text": "5",
+            "fontSizePx": 32,
+            "fontWeight": 500,
+            "lineHeightRatio": 1.5
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "pseudo": null,
+            "text": "6",
+            "fontSizePx": 32,
+            "fontWeight": 500,
+            "lineHeightRatio": 1.5
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "pseudo": null,
+            "text": "7",
+            "fontSizePx": 32,
+            "fontWeight": 500,
+            "lineHeightRatio": 1.5
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "pseudo": null,
+            "text": "8",
+            "fontSizePx": 32,
+            "fontWeight": 500,
+            "lineHeightRatio": 1.5
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "pseudo": null,
+            "text": "9",
+            "fontSizePx": 32,
+            "fontWeight": 500,
+            "lineHeightRatio": 1.5
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "pseudo": null,
+            "text": "10",
+            "fontSizePx": 32,
+            "fontWeight": 500,
+            "lineHeightRatio": 1.5
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "pseudo": null,
+            "text": "11",
+            "fontSizePx": 32,
+            "fontWeight": 500,
+            "lineHeightRatio": 1.5
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "pseudo": null,
+            "text": "12",
+            "fontSizePx": 32,
+            "fontWeight": 500,
+            "lineHeightRatio": 1.5
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "pseudo": null,
+            "text": "13",
+            "fontSizePx": 32,
+            "fontWeight": 500,
+            "lineHeightRatio": 1.5
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "pseudo": null,
+            "text": "14",
+            "fontSizePx": 32,
+            "fontWeight": 500,
+            "lineHeightRatio": 1.5
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "pseudo": null,
+            "text": "15",
+            "fontSizePx": 32,
+            "fontWeight": 500,
+            "lineHeightRatio": 1.5
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "pseudo": null,
+            "text": "16",
+            "fontSizePx": 32,
+            "fontWeight": 500,
+            "lineHeightRatio": 1.5
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "pseudo": null,
+            "text": "17",
+            "fontSizePx": 32,
+            "fontWeight": 500,
+            "lineHeightRatio": 1.5
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "pseudo": null,
+            "text": "18",
+            "fontSizePx": 32,
+            "fontWeight": 500,
+            "lineHeightRatio": 1.5
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "pseudo": null,
+            "text": "19",
+            "fontSizePx": 32,
+            "fontWeight": 500,
+            "lineHeightRatio": 1.5
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "pseudo": null,
+            "text": "20",
+            "fontSizePx": 32,
+            "fontWeight": 500,
+            "lineHeightRatio": 1.5
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "pseudo": null,
+            "text": "21",
+            "fontSizePx": 32,
+            "fontWeight": 500,
+            "lineHeightRatio": 1.5
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "pseudo": null,
+            "text": "22",
+            "fontSizePx": 32,
+            "fontWeight": 500,
+            "lineHeightRatio": 1.5
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "pseudo": null,
+            "text": "23",
+            "fontSizePx": 32,
+            "fontWeight": 500,
+            "lineHeightRatio": 1.5
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "pseudo": null,
+            "text": "24",
+            "fontSizePx": 32,
+            "fontWeight": 500,
+            "lineHeightRatio": 1.5
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "pseudo": null,
+            "text": "25",
+            "fontSizePx": 32,
+            "fontWeight": 500,
+            "lineHeightRatio": 1.5
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "pseudo": null,
+            "text": "26",
+            "fontSizePx": 32,
+            "fontWeight": 500,
+            "lineHeightRatio": 1.5
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "pseudo": null,
+            "text": "27",
+            "fontSizePx": 32,
+            "fontWeight": 500,
+            "lineHeightRatio": 1.5
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "pseudo": null,
+            "text": "28",
+            "fontSizePx": 32,
+            "fontWeight": 500,
+            "lineHeightRatio": 1.5
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "pseudo": null,
+            "text": "29",
+            "fontSizePx": 32,
+            "fontWeight": 500,
+            "lineHeightRatio": 1.5
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "pseudo": null,
+            "text": "30",
+            "fontSizePx": 32,
+            "fontWeight": 500,
+            "lineHeightRatio": 1.5
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "pseudo": null,
+            "text": "31",
+            "fontSizePx": 32,
+            "fontWeight": 500,
+            "lineHeightRatio": 1.5
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "pseudo": null,
+            "text": "1",
+            "fontSizePx": 32,
+            "fontWeight": 500,
+            "lineHeightRatio": 1.5
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "pseudo": null,
+            "text": "2",
+            "fontSizePx": 32,
+            "fontWeight": 500,
+            "lineHeightRatio": 1.5
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "pseudo": null,
+            "text": "3",
+            "fontSizePx": 32,
+            "fontWeight": 500,
+            "lineHeightRatio": 1.5
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "pseudo": null,
+            "text": "4",
+            "fontSizePx": 32,
+            "fontWeight": 500,
+            "lineHeightRatio": 1.5
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "pseudo": null,
+            "text": "5",
+            "fontSizePx": 32,
+            "fontWeight": 500,
+            "lineHeightRatio": 1.5
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "pseudo": null,
+            "text": "6",
+            "fontSizePx": 32,
+            "fontWeight": 500,
+            "lineHeightRatio": 1.5
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "pseudo": null,
+            "text": "7",
+            "fontSizePx": 32,
+            "fontWeight": 500,
+            "lineHeightRatio": 1.5
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "pseudo": null,
+            "text": "8",
+            "fontSizePx": 32,
+            "fontWeight": 500,
+            "lineHeightRatio": 1.5
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "pseudo": null,
+            "text": "9",
+            "fontSizePx": 32,
+            "fontWeight": 500,
+            "lineHeightRatio": 1.5
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "pseudo": null,
+            "text": "10",
+            "fontSizePx": 32,
+            "fontWeight": 500,
+            "lineHeightRatio": 1.5
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "pseudo": null,
+            "text": "11",
+            "fontSizePx": 32,
+            "fontWeight": 500,
+            "lineHeightRatio": 1.5
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "pseudo": null,
+            "text": "12",
+            "fontSizePx": 32,
+            "fontWeight": 500,
+            "lineHeightRatio": 1.5
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "pseudo": null,
+            "text": "13",
+            "fontSizePx": 32,
+            "fontWeight": 500,
+            "lineHeightRatio": 1.5
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "pseudo": null,
+            "text": "14",
+            "fontSizePx": 32,
+            "fontWeight": 500,
+            "lineHeightRatio": 1.5
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "pseudo": null,
+            "text": "15",
+            "fontSizePx": 32,
+            "fontWeight": 500,
+            "lineHeightRatio": 1.5
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "pseudo": null,
+            "text": "16",
+            "fontSizePx": 32,
+            "fontWeight": 500,
+            "lineHeightRatio": 1.5
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "pseudo": null,
+            "text": "17",
+            "fontSizePx": 32,
+            "fontWeight": 500,
+            "lineHeightRatio": 1.5
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "pseudo": null,
+            "text": "18",
+            "fontSizePx": 32,
+            "fontWeight": 500,
+            "lineHeightRatio": 1.5
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "pseudo": null,
+            "text": "19",
+            "fontSizePx": 32,
+            "fontWeight": 500,
+            "lineHeightRatio": 1.5
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "pseudo": null,
+            "text": "20",
+            "fontSizePx": 32,
+            "fontWeight": 500,
+            "lineHeightRatio": 1.5
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "pseudo": null,
+            "text": "21",
+            "fontSizePx": 32,
+            "fontWeight": 500,
+            "lineHeightRatio": 1.5
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "pseudo": null,
+            "text": "22",
+            "fontSizePx": 32,
+            "fontWeight": 500,
+            "lineHeightRatio": 1.5
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "pseudo": null,
+            "text": "23",
+            "fontSizePx": 32,
+            "fontWeight": 500,
+            "lineHeightRatio": 1.5
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "pseudo": null,
+            "text": "24",
+            "fontSizePx": 32,
+            "fontWeight": 500,
+            "lineHeightRatio": 1.5
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "pseudo": null,
+            "text": "25",
+            "fontSizePx": 32,
+            "fontWeight": 500,
+            "lineHeightRatio": 1.5
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "pseudo": null,
+            "text": "26",
+            "fontSizePx": 32,
+            "fontWeight": 500,
+            "lineHeightRatio": 1.5
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "pseudo": null,
+            "text": "27",
+            "fontSizePx": 32,
+            "fontWeight": 500,
+            "lineHeightRatio": 1.5
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "pseudo": null,
+            "text": "28",
+            "fontSizePx": 32,
+            "fontWeight": 500,
+            "lineHeightRatio": 1.5
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "pseudo": null,
+            "text": "29",
+            "fontSizePx": 32,
+            "fontWeight": 500,
+            "lineHeightRatio": 1.5
+          },
+          {
+            "tag": "BUTTON",
+            "id": "",
+            "pseudo": null,
+            "text": "30",
+            "fontSizePx": 32,
+            "fontWeight": 500,
+            "lineHeightRatio": 1.5
+          }
+        ]
+      },
+      {
+        "selector": "#date-calendar .calendar-weekdays span",
+        "fontSizePx": 14,
+        "fontWeight": 500,
+        "lineHeightRatio": 1.5,
+        "families": [
+          "Noto Sans KR Thin"
+        ],
+        "requireCustomFont": true,
+        "actual": [
+          {
+            "nodeId": 568,
+            "fonts": [
+              {
+                "familyName": "Noto Sans KR Thin",
+                "postScriptName": "NotoSansKR-Medium",
+                "isCustomFont": true,
+                "glyphCount": 1
+              }
+            ]
+          },
+          {
+            "nodeId": 570,
+            "fonts": [
+              {
+                "familyName": "Noto Sans KR Thin",
+                "postScriptName": "NotoSansKR-Medium",
+                "isCustomFont": true,
+                "glyphCount": 1
+              }
+            ]
+          },
+          {
+            "nodeId": 572,
+            "fonts": [
+              {
+                "familyName": "Noto Sans KR Thin",
+                "postScriptName": "NotoSansKR-Medium",
+                "isCustomFont": true,
+                "glyphCount": 1
+              }
+            ]
+          },
+          {
+            "nodeId": 574,
+            "fonts": [
+              {
+                "familyName": "Noto Sans KR Thin",
+                "postScriptName": "NotoSansKR-Medium",
+                "isCustomFont": true,
+                "glyphCount": 1
+              }
+            ]
+          },
+          {
+            "nodeId": 576,
+            "fonts": [
+              {
+                "familyName": "Noto Sans KR Thin",
+                "postScriptName": "NotoSansKR-Medium",
+                "isCustomFont": true,
+                "glyphCount": 1
+              }
+            ]
+          },
+          {
+            "nodeId": 578,
+            "fonts": [
+              {
+                "familyName": "Noto Sans KR Thin",
+                "postScriptName": "NotoSansKR-Medium",
+                "isCustomFont": true,
+                "glyphCount": 1
+              }
+            ]
+          },
+          {
+            "nodeId": 580,
+            "fonts": [
+              {
+                "familyName": "Noto Sans KR Thin",
+                "postScriptName": "NotoSansKR-Medium",
+                "isCustomFont": true,
+                "glyphCount": 1
+              }
+            ]
+          }
+        ],
+        "metrics": [
+          {
+            "tag": "SPAN",
+            "id": "",
+            "pseudo": null,
+            "text": "일",
+            "fontSizePx": 28,
+            "fontWeight": 500,
+            "lineHeightRatio": 1.5
+          },
+          {
+            "tag": "SPAN",
+            "id": "",
+            "pseudo": null,
+            "text": "월",
+            "fontSizePx": 28,
+            "fontWeight": 500,
+            "lineHeightRatio": 1.5
+          },
+          {
+            "tag": "SPAN",
+            "id": "",
+            "pseudo": null,
+            "text": "화",
+            "fontSizePx": 28,
+            "fontWeight": 500,
+            "lineHeightRatio": 1.5
+          },
+          {
+            "tag": "SPAN",
+            "id": "",
+            "pseudo": null,
+            "text": "수",
+            "fontSizePx": 28,
+            "fontWeight": 500,
+            "lineHeightRatio": 1.5
+          },
+          {
+            "tag": "SPAN",
+            "id": "",
+            "pseudo": null,
+            "text": "목",
+            "fontSizePx": 28,
+            "fontWeight": 500,
+            "lineHeightRatio": 1.5
+          },
+          {
+            "tag": "SPAN",
+            "id": "",
+            "pseudo": null,
+            "text": "금",
+            "fontSizePx": 28,
+            "fontWeight": 500,
+            "lineHeightRatio": 1.5
+          },
+          {
+            "tag": "SPAN",
+            "id": "",
+            "pseudo": null,
+            "text": "토",
+            "fontSizePx": 28,
+            "fontWeight": 500,
+            "lineHeightRatio": 1.5
+          }
+        ]
+      },
+      {
+        "selector": "#calendar-selection",
+        "fontSizePx": 14,
+        "fontWeight": 500,
+        "lineHeightRatio": 1.5,
+        "families": [
+          "Noto Sans KR Thin"
+        ],
+        "requireCustomFont": true,
+        "actual": [
+          {
+            "nodeId": 828,
+            "fonts": [
+              {
+                "familyName": "Noto Sans KR Thin",
+                "postScriptName": "NotoSansKR-Medium",
+                "isCustomFont": true,
+                "glyphCount": 15
+              }
+            ]
+          }
+        ],
+        "metrics": [
+          {
+            "tag": "P",
+            "id": "calendar-selection",
+            "pseudo": null,
+            "text": "체크아웃 날짜를 선택해 주세요",
+            "fontSizePx": 28,
+            "fontWeight": 500,
+            "lineHeightRatio": 1.5
+          }
+        ]
+      },
+      {
+        "selector": "#calendar-apply,#calendar-cancel",
+        "fontSizePx": 16,
+        "fontWeight": 600,
+        "lineHeightRatio": 1.5,
+        "families": [
+          "Noto Sans KR Thin"
+        ],
+        "requireCustomFont": true,
+        "actual": [
+          {
+            "nodeId": 556,
+            "fonts": [
+              {
+                "familyName": "Noto Sans KR Thin",
+                "postScriptName": "NotoSansKR-SemiBold",
+                "isCustomFont": true,
+                "glyphCount": 2
+              }
+            ]
+          },
+          {
+            "nodeId": 832,
+            "fonts": [
+              {
+                "familyName": "Noto Sans KR Thin",
+                "postScriptName": "NotoSansKR-SemiBold",
+                "isCustomFont": true,
+                "glyphCount": 4
+              }
+            ]
+          }
+        ],
+        "metrics": [
+          {
+            "tag": "BUTTON",
+            "id": "calendar-cancel",
+            "pseudo": null,
+            "text": "취소",
+            "fontSizePx": 32,
+            "fontWeight": 600,
+            "lineHeightRatio": 1.5
+          },
+          {
+            "tag": "BUTTON",
+            "id": "calendar-apply",
+            "pseudo": null,
+            "text": "적용하기",
+            "fontSizePx": 32,
+            "fontWeight": 600,
+            "lineHeightRatio": 1.5
+          }
+        ]
+      },
+      {
+        "selector": "#calendar-error",
+        "fontSizePx": 14,
+        "fontWeight": 500,
+        "lineHeightRatio": 1.5,
+        "families": [
+          "Noto Sans KR Thin"
+        ],
+        "requireCustomFont": true,
+        "actual": [
+          {
+            "nodeId": 830,
+            "fonts": [
+              {
+                "familyName": "Noto Sans KR Thin",
+                "postScriptName": "NotoSansKR-Medium",
+                "isCustomFont": true,
+                "glyphCount": 18
+              }
+            ]
+          }
+        ],
+        "metrics": [
+          {
+            "tag": "P",
+            "id": "calendar-error",
+            "pseudo": null,
+            "text": "최대 28박까지 선택할 수 있어요.",
+            "fontSizePx": 28,
+            "fontWeight": 500,
+            "lineHeightRatio": 1.5
+          }
+        ]
+      }
+    ],
+    "webFonts": [
+      {
+        "family": "Noto Sans KR",
+        "status": "loaded",
+        "weight": "100 900",
+        "style": "normal"
+      },
+      {
+        "family": "Noto Emoji",
+        "status": "unloaded",
+        "weight": "300 700",
+        "style": "normal"
+      },
+      {
+        "family": "Noto Color Emoji",
+        "status": "unloaded",
+        "weight": "400",
+        "style": "normal"
+      }
+    ],
+    "surfaces": [
+      {
+        "tag": "STRONG",
+        "id": "destination-summary",
+        "pseudo": null,
+        "text": "강릉",
+        "declaredFamily": "\"Noto Sans KR\", sans-serif",
+        "ratio": 14.47155193414647,
+        "threshold": 3,
+        "uncertain": false,
+        "disabled": false
+      },
+      {
+        "tag": "SPAN",
+        "id": "trip-summary",
+        "pseudo": null,
+        "text": "11월 06일–11월 08일 · 게스트 2명",
+        "declaredFamily": "\"Noto Sans KR\", sans-serif",
+        "ratio": 5.457739607895736,
+        "threshold": 3,
+        "uncertain": false,
+        "disabled": false
+      },
+      {
+        "tag": "SPAN",
+        "id": "",
+        "pseudo": null,
+        "text": "필터",
+        "declaredFamily": "\"Noto Sans KR\", sans-serif",
+        "ratio": 14.47155193414647,
+        "threshold": 3,
+        "uncertain": false,
+        "disabled": false
+      },
+      {
+        "tag": "P",
+        "id": "result-count",
+        "pseudo": null,
+        "text": "숙소 3곳",
+        "declaredFamily": "\"Noto Sans KR\", sans-serif",
+        "ratio": 6.0293624973173605,
+        "threshold": 3,
+        "uncertain": false,
+        "disabled": false
+      },
+      {
+        "tag": "LABEL",
+        "id": "",
+        "pseudo": null,
+        "text": "정렬",
+        "declaredFamily": "\"Noto Sans KR\", sans-serif",
+        "ratio": 6.0293624973173605,
+        "threshold": 3,
+        "uncertain": false,
+        "disabled": false
+      },
+      {
+        "tag": "SELECT",
+        "id": "sort",
+        "pseudo": null,
+        "text": "recommended",
+        "declaredFamily": "\"Noto Sans KR\", sans-serif",
+        "ratio": 14.47155193414647,
+        "threshold": 3,
+        "uncertain": false,
+        "disabled": false
+      },
+      {
+        "tag": "H1",
+        "id": "",
+        "pseudo": null,
+        "text": "숙소 검색 결과",
+        "declaredFamily": "\"Noto Sans KR\", sans-serif",
+        "ratio": 15.98724724490193,
+        "threshold": 3,
+        "uncertain": false,
+        "disabled": false
+      },
+      {
+        "tag": "SPAN",
+        "id": "",
+        "pseudo": null,
+        "text": "찜",
+        "declaredFamily": "\"Noto Sans KR\", sans-serif",
+        "ratio": 15.98724724490193,
+        "threshold": 3,
+        "uncertain": false,
+        "disabled": false
+      },
+      {
+        "tag": "A",
+        "id": "",
+        "pseudo": null,
+        "text": "오후의 방",
+        "declaredFamily": "\"Noto Sans KR\", sans-serif",
+        "ratio": 15.98724724490193,
+        "threshold": 3,
+        "uncertain": false,
+        "disabled": false
+      },
+      {
+        "tag": "P",
+        "id": "",
+        "pseudo": null,
+        "text": "강릉 경포 · 호텔",
+        "declaredFamily": "\"Noto Sans KR\", sans-serif",
+        "ratio": 6.0293624973173605,
+        "threshold": 3,
+        "uncertain": false,
+        "disabled": false
+      },
+      {
+        "tag": "P",
+        "id": "",
+        "pseudo": null,
+        "text": "더블 침대 1개 · 최대 2명",
+        "declaredFamily": "\"Noto Sans KR\", sans-serif",
+        "ratio": 6.0293624973173605,
+        "threshold": 3,
+        "uncertain": false,
+        "disabled": false
+      },
+      {
+        "tag": "STRONG",
+        "id": "",
+        "pseudo": null,
+        "text": "128,000원",
+        "declaredFamily": "\"Noto Sans KR\", sans-serif",
+        "ratio": 15.98724724490193,
+        "threshold": 3,
+        "uncertain": false,
+        "disabled": false
+      },
+      {
+        "tag": "SPAN",
+        "id": "",
+        "pseudo": null,
+        "text": "/박",
+        "declaredFamily": "\"Noto Sans KR\", sans-serif",
+        "ratio": 15.98724724490193,
+        "threshold": 3,
+        "uncertain": false,
+        "disabled": false
+      },
+      {
+        "tag": "P",
+        "id": "",
+        "pseudo": null,
+        "text": "2박 총 288,800원 · 수수료 포함",
+        "declaredFamily": "\"Noto Sans KR\", sans-serif",
+        "ratio": 6.0293624973173605,
+        "threshold": 3,
+        "uncertain": false,
+        "disabled": false
+      },
+      {
+        "tag": "SPAN",
+        "id": "",
+        "pseudo": null,
+        "text": "찜",
+        "declaredFamily": "\"Noto Sans KR\", sans-serif",
+        "ratio": 15.98724724490193,
+        "threshold": 3,
+        "uncertain": false,
+        "disabled": false
+      },
+      {
+        "tag": "A",
+        "id": "",
+        "pseudo": null,
+        "text": "스테이 산책",
+        "declaredFamily": "\"Noto Sans KR\", sans-serif",
+        "ratio": 15.98724724490193,
+        "threshold": 3,
+        "uncertain": false,
+        "disabled": false
+      },
+      {
+        "tag": "P",
+        "id": "",
+        "pseudo": null,
+        "text": "강릉 안목 · 펜션",
+        "declaredFamily": "\"Noto Sans KR\", sans-serif",
+        "ratio": 6.0293624973173605,
+        "threshold": 3,
+        "uncertain": false,
+        "disabled": false
+      },
+      {
+        "tag": "P",
+        "id": "",
+        "pseudo": null,
+        "text": "더블 침대 1개 · 최대 2명",
+        "declaredFamily": "\"Noto Sans KR\", sans-serif",
+        "ratio": 6.0293624973173605,
+        "threshold": 3,
+        "uncertain": false,
+        "disabled": false
+      },
+      {
+        "tag": "STRONG",
+        "id": "",
+        "pseudo": null,
+        "text": "168,000원",
+        "declaredFamily": "\"Noto Sans KR\", sans-serif",
+        "ratio": 15.98724724490193,
+        "threshold": 3,
+        "uncertain": false,
+        "disabled": false
+      },
+      {
+        "tag": "SPAN",
+        "id": "",
+        "pseudo": null,
+        "text": "/박",
+        "declaredFamily": "\"Noto Sans KR\", sans-serif",
+        "ratio": 15.98724724490193,
+        "threshold": 3,
+        "uncertain": false,
+        "disabled": false
+      },
+      {
+        "tag": "P",
+        "id": "",
+        "pseudo": null,
+        "text": "2박 총 372,800원 · 수수료 포함",
+        "declaredFamily": "\"Noto Sans KR\", sans-serif",
+        "ratio": 6.0293624973173605,
+        "threshold": 3,
+        "uncertain": false,
+        "disabled": false
+      },
+      {
+        "tag": "SPAN",
+        "id": "",
+        "pseudo": null,
+        "text": "찜",
+        "declaredFamily": "\"Noto Sans KR\", sans-serif",
+        "ratio": 15.98724724490193,
+        "threshold": 3,
+        "uncertain": false,
+        "disabled": false
+      },
+      {
+        "tag": "A",
+        "id": "",
+        "pseudo": null,
+        "text": "교동의 작은 방",
+        "declaredFamily": "\"Noto Sans KR\", sans-serif",
+        "ratio": 15.98724724490193,
+        "threshold": 3,
+        "uncertain": false,
+        "disabled": false
+      },
+      {
+        "tag": "P",
+        "id": "",
+        "pseudo": null,
+        "text": "강릉 교동 · 호텔",
+        "declaredFamily": "\"Noto Sans KR\", sans-serif",
+        "ratio": 6.0293624973173605,
+        "threshold": 3,
+        "uncertain": false,
+        "disabled": false
+      },
+      {
+        "tag": "P",
+        "id": "",
+        "pseudo": null,
+        "text": "더블 침대 1개 · 최대 2명",
+        "declaredFamily": "\"Noto Sans KR\", sans-serif",
+        "ratio": 6.0293624973173605,
+        "threshold": 3,
+        "uncertain": false,
+        "disabled": false
+      },
+      {
+        "tag": "STRONG",
+        "id": "",
+        "pseudo": null,
+        "text": "98,000원",
+        "declaredFamily": "\"Noto Sans KR\", sans-serif",
+        "ratio": 15.98724724490193,
+        "threshold": 3,
+        "uncertain": false,
+        "disabled": false
+      },
+      {
+        "tag": "SPAN",
+        "id": "",
+        "pseudo": null,
+        "text": "/박",
+        "declaredFamily": "\"Noto Sans KR\", sans-serif",
+        "ratio": 15.98724724490193,
+        "threshold": 3,
+        "uncertain": false,
+        "disabled": false
+      },
+      {
+        "tag": "P",
+        "id": "",
+        "pseudo": null,
+        "text": "2박 총 225,800원 · 수수료 포함",
+        "declaredFamily": "\"Noto Sans KR\", sans-serif",
+        "ratio": 6.0293624973173605,
+        "threshold": 3,
+        "uncertain": false,
+        "disabled": false
+      },
+      {
+        "tag": "SPAN",
+        "id": "",
+        "pseudo": null,
+        "text": "숙소 찾기",
+        "declaredFamily": "\"Noto Sans KR\", sans-serif",
+        "ratio": 5.839557160983871,
+        "threshold": 3,
+        "uncertain": false,
+        "disabled": false
+      },
+      {
+        "tag": "SPAN",
+        "id": "",
+        "pseudo": null,
+        "text": "찜한 숙소",
+        "declaredFamily": "\"Noto Sans KR\", sans-serif",
+        "ratio": 6.0293624973173605,
+        "threshold": 3,
+        "uncertain": false,
+        "disabled": false
+      },
+      {
+        "tag": "SPAN",
+        "id": "",
+        "pseudo": null,
+        "text": "예약 요청",
+        "declaredFamily": "\"Noto Sans KR\", sans-serif",
+        "ratio": 6.0293624973173605,
+        "threshold": 3,
+        "uncertain": false,
+        "disabled": false
+      },
+      {
+        "tag": "H2",
+        "id": "search-title",
+        "pseudo": null,
+        "text": "여행 정보",
+        "declaredFamily": "\"Noto Sans KR\", sans-serif",
+        "ratio": 15.98724724490193,
+        "threshold": 3,
+        "uncertain": false,
+        "disabled": false
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "pseudo": null,
+        "text": "취소",
+        "declaredFamily": "\"Noto Sans KR\", sans-serif",
+        "ratio": 14.47155193414647,
+        "threshold": 3,
+        "uncertain": false,
+        "disabled": false
+      },
+      {
+        "tag": "LABEL",
+        "id": "",
+        "pseudo": null,
+        "text": "여행지",
+        "declaredFamily": "\"Noto Sans KR\", sans-serif",
+        "ratio": 15.98724724490193,
+        "threshold": 3,
+        "uncertain": false,
+        "disabled": false
+      },
+      {
+        "tag": "SELECT",
+        "id": "city",
+        "pseudo": null,
+        "text": "강릉",
+        "declaredFamily": "\"Noto Sans KR\", sans-serif",
+        "ratio": 14.47155193414647,
+        "threshold": 3,
+        "uncertain": false,
+        "disabled": false
+      },
+      {
+        "tag": "LABEL",
+        "id": "",
+        "pseudo": null,
+        "text": "체크인",
+        "declaredFamily": "\"Noto Sans KR\", sans-serif",
+        "ratio": 15.98724724490193,
+        "threshold": 3,
+        "uncertain": false,
+        "disabled": false
+      },
+      {
+        "tag": "INPUT",
+        "id": "check-in",
+        "pseudo": null,
+        "text": "",
+        "declaredFamily": "\"Noto Sans KR\", sans-serif",
+        "ratio": 14.47155193414647,
+        "threshold": 3,
+        "uncertain": false,
+        "disabled": false
+      },
+      {
+        "tag": "LABEL",
+        "id": "",
+        "pseudo": null,
+        "text": "체크아웃",
+        "declaredFamily": "\"Noto Sans KR\", sans-serif",
+        "ratio": 15.98724724490193,
+        "threshold": 3,
+        "uncertain": false,
+        "disabled": false
+      },
+      {
+        "tag": "INPUT",
+        "id": "check-out",
+        "pseudo": null,
+        "text": "",
+        "declaredFamily": "\"Noto Sans KR\", sans-serif",
+        "ratio": 14.47155193414647,
+        "threshold": 3,
+        "uncertain": false,
+        "disabled": false
+      },
+      {
+        "tag": "SPAN",
+        "id": "",
+        "pseudo": null,
+        "text": "달력에서 날짜 선택",
+        "declaredFamily": "\"Noto Sans KR\", sans-serif",
+        "ratio": 14.47155193414647,
+        "threshold": 3,
+        "uncertain": false,
+        "disabled": false
+      },
+      {
+        "tag": "LABEL",
+        "id": "",
+        "pseudo": null,
+        "text": "게스트",
+        "declaredFamily": "\"Noto Sans KR\", sans-serif",
+        "ratio": 15.98724724490193,
+        "threshold": 3,
+        "uncertain": false,
+        "disabled": false
+      },
+      {
+        "tag": "INPUT",
+        "id": "guests",
+        "pseudo": null,
+        "text": "2",
+        "declaredFamily": "\"Noto Sans KR\", sans-serif",
+        "ratio": 14.47155193414647,
+        "threshold": 3,
+        "uncertain": false,
+        "disabled": false
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "pseudo": null,
+        "text": "숙소 검색하기",
+        "declaredFamily": "\"Noto Sans KR\", sans-serif",
+        "ratio": 6.443074471490897,
+        "threshold": 3,
+        "uncertain": false,
+        "disabled": false
+      },
+      {
+        "tag": "H2",
+        "id": "date-calendar-title",
+        "pseudo": null,
+        "text": "날짜 선택",
+        "declaredFamily": "\"Noto Sans KR\", sans-serif",
+        "ratio": 15.98724724490193,
+        "threshold": 3,
+        "uncertain": false,
+        "disabled": false
+      },
+      {
+        "tag": "BUTTON",
+        "id": "calendar-cancel",
+        "pseudo": null,
+        "text": "취소",
+        "declaredFamily": "\"Noto Sans KR\", sans-serif",
+        "ratio": 15.98724724490193,
+        "threshold": 3,
+        "uncertain": false,
+        "disabled": false
+      },
+      {
+        "tag": "SPAN",
+        "id": "",
+        "pseudo": null,
+        "text": "일",
+        "declaredFamily": "\"Noto Sans KR\", sans-serif",
+        "ratio": 6.0293624973173605,
+        "threshold": 3,
+        "uncertain": false,
+        "disabled": false
+      },
+      {
+        "tag": "SPAN",
+        "id": "",
+        "pseudo": null,
+        "text": "월",
+        "declaredFamily": "\"Noto Sans KR\", sans-serif",
+        "ratio": 6.0293624973173605,
+        "threshold": 3,
+        "uncertain": false,
+        "disabled": false
+      },
+      {
+        "tag": "SPAN",
+        "id": "",
+        "pseudo": null,
+        "text": "화",
+        "declaredFamily": "\"Noto Sans KR\", sans-serif",
+        "ratio": 6.0293624973173605,
+        "threshold": 3,
+        "uncertain": false,
+        "disabled": false
+      },
+      {
+        "tag": "SPAN",
+        "id": "",
+        "pseudo": null,
+        "text": "수",
+        "declaredFamily": "\"Noto Sans KR\", sans-serif",
+        "ratio": 6.0293624973173605,
+        "threshold": 3,
+        "uncertain": false,
+        "disabled": false
+      },
+      {
+        "tag": "SPAN",
+        "id": "",
+        "pseudo": null,
+        "text": "목",
+        "declaredFamily": "\"Noto Sans KR\", sans-serif",
+        "ratio": 6.0293624973173605,
+        "threshold": 3,
+        "uncertain": false,
+        "disabled": false
+      },
+      {
+        "tag": "SPAN",
+        "id": "",
+        "pseudo": null,
+        "text": "금",
+        "declaredFamily": "\"Noto Sans KR\", sans-serif",
+        "ratio": 6.0293624973173605,
+        "threshold": 3,
+        "uncertain": false,
+        "disabled": false
+      },
+      {
+        "tag": "SPAN",
+        "id": "",
+        "pseudo": null,
+        "text": "토",
+        "declaredFamily": "\"Noto Sans KR\", sans-serif",
+        "ratio": 6.0293624973173605,
+        "threshold": 3,
+        "uncertain": false,
+        "disabled": false
+      },
+      {
+        "tag": "SPAN",
+        "id": "",
+        "pseudo": null,
+        "text": "2026년 10월",
+        "declaredFamily": "\"Noto Sans KR\", sans-serif",
+        "ratio": 15.98724724490193,
+        "threshold": 3,
+        "uncertain": false,
+        "disabled": false
+      },
+      {
+        "tag": "TH",
+        "id": "",
+        "pseudo": null,
+        "text": "일",
+        "declaredFamily": "\"Noto Sans KR\", sans-serif",
+        "ratio": 15.98724724490193,
+        "threshold": 3,
+        "uncertain": false,
+        "disabled": false
+      },
+      {
+        "tag": "TH",
+        "id": "",
+        "pseudo": null,
+        "text": "월",
+        "declaredFamily": "\"Noto Sans KR\", sans-serif",
+        "ratio": 15.98724724490193,
+        "threshold": 3,
+        "uncertain": false,
+        "disabled": false
+      },
+      {
+        "tag": "TH",
+        "id": "",
+        "pseudo": null,
+        "text": "화",
+        "declaredFamily": "\"Noto Sans KR\", sans-serif",
+        "ratio": 15.98724724490193,
+        "threshold": 3,
+        "uncertain": false,
+        "disabled": false
+      },
+      {
+        "tag": "TH",
+        "id": "",
+        "pseudo": null,
+        "text": "수",
+        "declaredFamily": "\"Noto Sans KR\", sans-serif",
+        "ratio": 15.98724724490193,
+        "threshold": 3,
+        "uncertain": false,
+        "disabled": false
+      },
+      {
+        "tag": "TH",
+        "id": "",
+        "pseudo": null,
+        "text": "목",
+        "declaredFamily": "\"Noto Sans KR\", sans-serif",
+        "ratio": 15.98724724490193,
+        "threshold": 3,
+        "uncertain": false,
+        "disabled": false
+      },
+      {
+        "tag": "TH",
+        "id": "",
+        "pseudo": null,
+        "text": "금",
+        "declaredFamily": "\"Noto Sans KR\", sans-serif",
+        "ratio": 15.98724724490193,
+        "threshold": 3,
+        "uncertain": false,
+        "disabled": false
+      },
+      {
+        "tag": "TH",
+        "id": "",
+        "pseudo": null,
+        "text": "토",
+        "declaredFamily": "\"Noto Sans KR\", sans-serif",
+        "ratio": 15.98724724490193,
+        "threshold": 3,
+        "uncertain": false,
+        "disabled": false
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "pseudo": null,
+        "text": "1",
+        "declaredFamily": "\"Noto Sans KR\", sans-serif",
+        "ratio": 6.0293624973173605,
+        "threshold": 3,
+        "uncertain": false,
+        "disabled": true
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "pseudo": null,
+        "text": "2",
+        "declaredFamily": "\"Noto Sans KR\", sans-serif",
+        "ratio": 6.0293624973173605,
+        "threshold": 3,
+        "uncertain": false,
+        "disabled": true
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "pseudo": null,
+        "text": "3",
+        "declaredFamily": "\"Noto Sans KR\", sans-serif",
+        "ratio": 6.0293624973173605,
+        "threshold": 3,
+        "uncertain": false,
+        "disabled": true
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "pseudo": null,
+        "text": "4",
+        "declaredFamily": "\"Noto Sans KR\", sans-serif",
+        "ratio": 6.0293624973173605,
+        "threshold": 3,
+        "uncertain": false,
+        "disabled": true
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "pseudo": null,
+        "text": "5",
+        "declaredFamily": "\"Noto Sans KR\", sans-serif",
+        "ratio": 6.0293624973173605,
+        "threshold": 3,
+        "uncertain": false,
+        "disabled": true
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "pseudo": null,
+        "text": "6",
+        "declaredFamily": "\"Noto Sans KR\", sans-serif",
+        "ratio": 6.0293624973173605,
+        "threshold": 3,
+        "uncertain": false,
+        "disabled": true
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "pseudo": null,
+        "text": "7",
+        "declaredFamily": "\"Noto Sans KR\", sans-serif",
+        "ratio": 6.0293624973173605,
+        "threshold": 3,
+        "uncertain": false,
+        "disabled": true
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "pseudo": null,
+        "text": "8",
+        "declaredFamily": "\"Noto Sans KR\", sans-serif",
+        "ratio": 6.0293624973173605,
+        "threshold": 3,
+        "uncertain": false,
+        "disabled": true
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "pseudo": null,
+        "text": "9",
+        "declaredFamily": "\"Noto Sans KR\", sans-serif",
+        "ratio": 6.0293624973173605,
+        "threshold": 3,
+        "uncertain": false,
+        "disabled": true
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "pseudo": null,
+        "text": "10",
+        "declaredFamily": "\"Noto Sans KR\", sans-serif",
+        "ratio": 6.0293624973173605,
+        "threshold": 3,
+        "uncertain": false,
+        "disabled": true
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "pseudo": null,
+        "text": "11",
+        "declaredFamily": "\"Noto Sans KR\", sans-serif",
+        "ratio": 6.0293624973173605,
+        "threshold": 3,
+        "uncertain": false,
+        "disabled": true
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "pseudo": null,
+        "text": "12",
+        "declaredFamily": "\"Noto Sans KR\", sans-serif",
+        "ratio": 6.0293624973173605,
+        "threshold": 3,
+        "uncertain": false,
+        "disabled": true
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "pseudo": null,
+        "text": "13",
+        "declaredFamily": "\"Noto Sans KR\", sans-serif",
+        "ratio": 6.0293624973173605,
+        "threshold": 3,
+        "uncertain": false,
+        "disabled": true
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "pseudo": null,
+        "text": "14",
+        "declaredFamily": "\"Noto Sans KR\", sans-serif",
+        "ratio": 6.0293624973173605,
+        "threshold": 3,
+        "uncertain": false,
+        "disabled": true
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "pseudo": null,
+        "text": "15",
+        "declaredFamily": "\"Noto Sans KR\", sans-serif",
+        "ratio": 6.0293624973173605,
+        "threshold": 3,
+        "uncertain": false,
+        "disabled": true
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "pseudo": null,
+        "text": "16",
+        "declaredFamily": "\"Noto Sans KR\", sans-serif",
+        "ratio": 6.443074471490897,
+        "threshold": 3,
+        "uncertain": false,
+        "disabled": false
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "pseudo": null,
+        "text": "17",
+        "declaredFamily": "\"Noto Sans KR\", sans-serif",
+        "ratio": 15.98724724490193,
+        "threshold": 3,
+        "uncertain": false,
+        "disabled": false
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "pseudo": null,
+        "text": "18",
+        "declaredFamily": "\"Noto Sans KR\", sans-serif",
+        "ratio": 15.98724724490193,
+        "threshold": 3,
+        "uncertain": false,
+        "disabled": false
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "pseudo": null,
+        "text": "19",
+        "declaredFamily": "\"Noto Sans KR\", sans-serif",
+        "ratio": 15.98724724490193,
+        "threshold": 3,
+        "uncertain": false,
+        "disabled": false
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "pseudo": null,
+        "text": "20",
+        "declaredFamily": "\"Noto Sans KR\", sans-serif",
+        "ratio": 15.98724724490193,
+        "threshold": 3,
+        "uncertain": false,
+        "disabled": false
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "pseudo": null,
+        "text": "21",
+        "declaredFamily": "\"Noto Sans KR\", sans-serif",
+        "ratio": 15.98724724490193,
+        "threshold": 3,
+        "uncertain": false,
+        "disabled": false
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "pseudo": null,
+        "text": "22",
+        "declaredFamily": "\"Noto Sans KR\", sans-serif",
+        "ratio": 15.98724724490193,
+        "threshold": 3,
+        "uncertain": false,
+        "disabled": false
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "pseudo": null,
+        "text": "23",
+        "declaredFamily": "\"Noto Sans KR\", sans-serif",
+        "ratio": 15.98724724490193,
+        "threshold": 3,
+        "uncertain": false,
+        "disabled": false
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "pseudo": null,
+        "text": "24",
+        "declaredFamily": "\"Noto Sans KR\", sans-serif",
+        "ratio": 15.98724724490193,
+        "threshold": 3,
+        "uncertain": false,
+        "disabled": false
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "pseudo": null,
+        "text": "25",
+        "declaredFamily": "\"Noto Sans KR\", sans-serif",
+        "ratio": 15.98724724490193,
+        "threshold": 3,
+        "uncertain": false,
+        "disabled": false
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "pseudo": null,
+        "text": "26",
+        "declaredFamily": "\"Noto Sans KR\", sans-serif",
+        "ratio": 15.98724724490193,
+        "threshold": 3,
+        "uncertain": false,
+        "disabled": false
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "pseudo": null,
+        "text": "27",
+        "declaredFamily": "\"Noto Sans KR\", sans-serif",
+        "ratio": 15.98724724490193,
+        "threshold": 3,
+        "uncertain": false,
+        "disabled": false
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "pseudo": null,
+        "text": "28",
+        "declaredFamily": "\"Noto Sans KR\", sans-serif",
+        "ratio": 15.98724724490193,
+        "threshold": 3,
+        "uncertain": false,
+        "disabled": false
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "pseudo": null,
+        "text": "29",
+        "declaredFamily": "\"Noto Sans KR\", sans-serif",
+        "ratio": 15.98724724490193,
+        "threshold": 3,
+        "uncertain": false,
+        "disabled": false
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "pseudo": null,
+        "text": "30",
+        "declaredFamily": "\"Noto Sans KR\", sans-serif",
+        "ratio": 15.98724724490193,
+        "threshold": 3,
+        "uncertain": false,
+        "disabled": false
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "pseudo": null,
+        "text": "31",
+        "declaredFamily": "\"Noto Sans KR\", sans-serif",
+        "ratio": 15.98724724490193,
+        "threshold": 3,
+        "uncertain": false,
+        "disabled": false
+      },
+      {
+        "tag": "SPAN",
+        "id": "",
+        "pseudo": null,
+        "text": "2026년 11월",
+        "declaredFamily": "\"Noto Sans KR\", sans-serif",
+        "ratio": 15.98724724490193,
+        "threshold": 3,
+        "uncertain": false,
+        "disabled": false
+      },
+      {
+        "tag": "TH",
+        "id": "",
+        "pseudo": null,
+        "text": "일",
+        "declaredFamily": "\"Noto Sans KR\", sans-serif",
+        "ratio": 15.98724724490193,
+        "threshold": 3,
+        "uncertain": false,
+        "disabled": false
+      },
+      {
+        "tag": "TH",
+        "id": "",
+        "pseudo": null,
+        "text": "월",
+        "declaredFamily": "\"Noto Sans KR\", sans-serif",
+        "ratio": 15.98724724490193,
+        "threshold": 3,
+        "uncertain": false,
+        "disabled": false
+      },
+      {
+        "tag": "TH",
+        "id": "",
+        "pseudo": null,
+        "text": "화",
+        "declaredFamily": "\"Noto Sans KR\", sans-serif",
+        "ratio": 15.98724724490193,
+        "threshold": 3,
+        "uncertain": false,
+        "disabled": false
+      },
+      {
+        "tag": "TH",
+        "id": "",
+        "pseudo": null,
+        "text": "수",
+        "declaredFamily": "\"Noto Sans KR\", sans-serif",
+        "ratio": 15.98724724490193,
+        "threshold": 3,
+        "uncertain": false,
+        "disabled": false
+      },
+      {
+        "tag": "TH",
+        "id": "",
+        "pseudo": null,
+        "text": "목",
+        "declaredFamily": "\"Noto Sans KR\", sans-serif",
+        "ratio": 15.98724724490193,
+        "threshold": 3,
+        "uncertain": false,
+        "disabled": false
+      },
+      {
+        "tag": "TH",
+        "id": "",
+        "pseudo": null,
+        "text": "금",
+        "declaredFamily": "\"Noto Sans KR\", sans-serif",
+        "ratio": 15.98724724490193,
+        "threshold": 3,
+        "uncertain": false,
+        "disabled": false
+      },
+      {
+        "tag": "TH",
+        "id": "",
+        "pseudo": null,
+        "text": "토",
+        "declaredFamily": "\"Noto Sans KR\", sans-serif",
+        "ratio": 15.98724724490193,
+        "threshold": 3,
+        "uncertain": false,
+        "disabled": false
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "pseudo": null,
+        "text": "1",
+        "declaredFamily": "\"Noto Sans KR\", sans-serif",
+        "ratio": 15.98724724490193,
+        "threshold": 3,
+        "uncertain": false,
+        "disabled": false
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "pseudo": null,
+        "text": "2",
+        "declaredFamily": "\"Noto Sans KR\", sans-serif",
+        "ratio": 15.98724724490193,
+        "threshold": 3,
+        "uncertain": false,
+        "disabled": false
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "pseudo": null,
+        "text": "3",
+        "declaredFamily": "\"Noto Sans KR\", sans-serif",
+        "ratio": 15.98724724490193,
+        "threshold": 3,
+        "uncertain": false,
+        "disabled": false
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "pseudo": null,
+        "text": "4",
+        "declaredFamily": "\"Noto Sans KR\", sans-serif",
+        "ratio": 15.98724724490193,
+        "threshold": 3,
+        "uncertain": false,
+        "disabled": false
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "pseudo": null,
+        "text": "5",
+        "declaredFamily": "\"Noto Sans KR\", sans-serif",
+        "ratio": 15.98724724490193,
+        "threshold": 3,
+        "uncertain": false,
+        "disabled": false
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "pseudo": null,
+        "text": "6",
+        "declaredFamily": "\"Noto Sans KR\", sans-serif",
+        "ratio": 15.98724724490193,
+        "threshold": 3,
+        "uncertain": false,
+        "disabled": false
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "pseudo": null,
+        "text": "7",
+        "declaredFamily": "\"Noto Sans KR\", sans-serif",
+        "ratio": 15.98724724490193,
+        "threshold": 3,
+        "uncertain": false,
+        "disabled": false
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "pseudo": null,
+        "text": "8",
+        "declaredFamily": "\"Noto Sans KR\", sans-serif",
+        "ratio": 15.98724724490193,
+        "threshold": 3,
+        "uncertain": false,
+        "disabled": false
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "pseudo": null,
+        "text": "9",
+        "declaredFamily": "\"Noto Sans KR\", sans-serif",
+        "ratio": 15.98724724490193,
+        "threshold": 3,
+        "uncertain": false,
+        "disabled": false
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "pseudo": null,
+        "text": "10",
+        "declaredFamily": "\"Noto Sans KR\", sans-serif",
+        "ratio": 15.98724724490193,
+        "threshold": 3,
+        "uncertain": false,
+        "disabled": false
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "pseudo": null,
+        "text": "11",
+        "declaredFamily": "\"Noto Sans KR\", sans-serif",
+        "ratio": 15.98724724490193,
+        "threshold": 3,
+        "uncertain": false,
+        "disabled": false
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "pseudo": null,
+        "text": "12",
+        "declaredFamily": "\"Noto Sans KR\", sans-serif",
+        "ratio": 15.98724724490193,
+        "threshold": 3,
+        "uncertain": false,
+        "disabled": false
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "pseudo": null,
+        "text": "13",
+        "declaredFamily": "\"Noto Sans KR\", sans-serif",
+        "ratio": 15.98724724490193,
+        "threshold": 3,
+        "uncertain": false,
+        "disabled": false
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "pseudo": null,
+        "text": "14",
+        "declaredFamily": "\"Noto Sans KR\", sans-serif",
+        "ratio": 15.98724724490193,
+        "threshold": 3,
+        "uncertain": false,
+        "disabled": false
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "pseudo": null,
+        "text": "15",
+        "declaredFamily": "\"Noto Sans KR\", sans-serif",
+        "ratio": 15.98724724490193,
+        "threshold": 3,
+        "uncertain": false,
+        "disabled": false
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "pseudo": null,
+        "text": "16",
+        "declaredFamily": "\"Noto Sans KR\", sans-serif",
+        "ratio": 15.98724724490193,
+        "threshold": 3,
+        "uncertain": false,
+        "disabled": false
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "pseudo": null,
+        "text": "17",
+        "declaredFamily": "\"Noto Sans KR\", sans-serif",
+        "ratio": 15.98724724490193,
+        "threshold": 3,
+        "uncertain": false,
+        "disabled": false
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "pseudo": null,
+        "text": "18",
+        "declaredFamily": "\"Noto Sans KR\", sans-serif",
+        "ratio": 15.98724724490193,
+        "threshold": 3,
+        "uncertain": false,
+        "disabled": false
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "pseudo": null,
+        "text": "19",
+        "declaredFamily": "\"Noto Sans KR\", sans-serif",
+        "ratio": 15.98724724490193,
+        "threshold": 3,
+        "uncertain": false,
+        "disabled": false
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "pseudo": null,
+        "text": "20",
+        "declaredFamily": "\"Noto Sans KR\", sans-serif",
+        "ratio": 15.98724724490193,
+        "threshold": 3,
+        "uncertain": false,
+        "disabled": false
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "pseudo": null,
+        "text": "21",
+        "declaredFamily": "\"Noto Sans KR\", sans-serif",
+        "ratio": 15.98724724490193,
+        "threshold": 3,
+        "uncertain": false,
+        "disabled": false
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "pseudo": null,
+        "text": "22",
+        "declaredFamily": "\"Noto Sans KR\", sans-serif",
+        "ratio": 15.98724724490193,
+        "threshold": 3,
+        "uncertain": false,
+        "disabled": false
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "pseudo": null,
+        "text": "23",
+        "declaredFamily": "\"Noto Sans KR\", sans-serif",
+        "ratio": 15.98724724490193,
+        "threshold": 3,
+        "uncertain": false,
+        "disabled": false
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "pseudo": null,
+        "text": "24",
+        "declaredFamily": "\"Noto Sans KR\", sans-serif",
+        "ratio": 15.98724724490193,
+        "threshold": 3,
+        "uncertain": false,
+        "disabled": false
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "pseudo": null,
+        "text": "25",
+        "declaredFamily": "\"Noto Sans KR\", sans-serif",
+        "ratio": 15.98724724490193,
+        "threshold": 3,
+        "uncertain": false,
+        "disabled": false
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "pseudo": null,
+        "text": "26",
+        "declaredFamily": "\"Noto Sans KR\", sans-serif",
+        "ratio": 15.98724724490193,
+        "threshold": 3,
+        "uncertain": false,
+        "disabled": false
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "pseudo": null,
+        "text": "27",
+        "declaredFamily": "\"Noto Sans KR\", sans-serif",
+        "ratio": 15.98724724490193,
+        "threshold": 3,
+        "uncertain": false,
+        "disabled": false
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "pseudo": null,
+        "text": "28",
+        "declaredFamily": "\"Noto Sans KR\", sans-serif",
+        "ratio": 15.98724724490193,
+        "threshold": 3,
+        "uncertain": false,
+        "disabled": false
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "pseudo": null,
+        "text": "29",
+        "declaredFamily": "\"Noto Sans KR\", sans-serif",
+        "ratio": 15.98724724490193,
+        "threshold": 3,
+        "uncertain": false,
+        "disabled": false
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "pseudo": null,
+        "text": "30",
+        "declaredFamily": "\"Noto Sans KR\", sans-serif",
+        "ratio": 15.98724724490193,
+        "threshold": 3,
+        "uncertain": false,
+        "disabled": false
+      },
+      {
+        "tag": "P",
+        "id": "calendar-selection",
+        "pseudo": null,
+        "text": "체크아웃 날짜를 선택해 주세요",
+        "declaredFamily": "\"Noto Sans KR\", sans-serif",
+        "ratio": 15.98724724490193,
+        "threshold": 3,
+        "uncertain": false,
+        "disabled": false
+      },
+      {
+        "tag": "P",
+        "id": "calendar-error",
+        "pseudo": null,
+        "text": "최대 28박까지 선택할 수 있어요.",
+        "declaredFamily": "\"Noto Sans KR\", sans-serif",
+        "ratio": 6.57428861557707,
+        "threshold": 3,
+        "uncertain": false,
+        "disabled": false
+      },
+      {
+        "tag": "BUTTON",
+        "id": "calendar-apply",
+        "pseudo": null,
+        "text": "적용하기",
+        "declaredFamily": "\"Noto Sans KR\", sans-serif",
+        "ratio": 5.457739607895736,
+        "threshold": 3,
+        "uncertain": false,
+        "disabled": true
+      }
+    ],
+    "issues": [],
+    "metricContext": {
+      "textScale": 2,
+      "lineHeightRatioOverride": null
+    },
+    "scope": "Actual Chromium platform fonts, declared role metrics and solid-background text contrast. Explicit caller stress overrides require matching real browser activation. Complex surfaces require separate rendered evidence; font-family declarations alone do not establish fidelity."
+  }
+}

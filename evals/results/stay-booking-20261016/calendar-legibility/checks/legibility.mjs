@@ -1,0 +1,24 @@
+import{readFile,writeFile,mkdir}from'node:fs/promises';import assert from'node:assert/strict';import{createHash}from'node:crypto';
+import{stayHarness}from'./browser-harness.mjs';import{sourceBinding}from'../../../../../scripts/source-binding.mjs';import{harnessBinding}from'../../../../../scripts/harness-binding.mjs';
+const[target,out]=process.argv.slice(2),h=await stayHarness(target),checks=[];await mkdir(out,{recursive:true});
+try{for(const width of[296,320,390,1440])for(const mode of['normal','text200','spacing'])for(const state of['blank','range','error']){
+  const f=await h.open({width}),p=f.page,name=`${width}-${mode}-${state}`;
+  try{
+    if(mode==='text200')await p.evaluate(()=>{const nodes=[...document.querySelectorAll('body,body *')],sizes=nodes.map(n=>parseFloat(getComputedStyle(n).fontSize));nodes.forEach((n,i)=>n.style.setProperty('font-size',sizes[i]*2+'px','important'));const style=document.createElement('style');style.textContent='#date-calendar .calendar-day,#date-calendar .calendar-month-title{font-size:32px!important}';document.head.append(style);});
+    if(mode==='spacing')await p.addStyleTag({content:'body,body *{line-height:1.5!important;letter-spacing:.12em!important;word-spacing:.16em!important}p{margin-bottom:2em!important}'});
+    await p.locator('#open-search').click();if(state!=='range'){await p.locator('#check-in').fill('');await p.locator('#check-out').fill('');}await p.locator('#open-search-calendar').click();await p.evaluate(()=>document.fonts.ready);
+    if(state==='error'){await p.locator('[data-date="2026-10-16"]').click();await p.locator('[data-date="2026-11-14"]').click();assert.match(await p.locator('#calendar-error').innerText(),/28박/);}
+    const data=await p.evaluate(()=>{
+      const box=n=>{const r=n.getBoundingClientRect();return{x:r.x,y:r.y,w:r.width,h:r.height,right:r.right,bottom:r.bottom};},range=n=>{const r=document.createRange();r.selectNodeContents(n);return box(r);},all=[...document.querySelectorAll('#date-calendar .calendar-day')],byDate=Object.fromEntries(all.map(n=>[n.dataset.date,n])),horizontal=[],vertical=[];
+      for(const node of all){const next=node.parentElement.nextElementSibling?.querySelector('button'),glyph=range(node);if(next)horizontal.push({from:node.dataset.date,to:next.dataset.date,gap:range(next).x-glyph.right});const d=new Date(node.dataset.date+'T00:00:00Z');d.setUTCDate(d.getUTCDate()+7);const below=byDate[d.toISOString().slice(0,10)];if(below&&below.closest('table')===node.closest('table'))vertical.push({from:node.dataset.date,to:below.dataset.date,gap:range(below).y-glyph.bottom});}
+      const viewport=document.querySelector('#date-calendar .calendar-viewport');return{horizontal,vertical,viewport:viewport?{...box(viewport),width:viewport.clientWidth,scrollWidth:viewport.scrollWidth,height:viewport.clientHeight,scrollHeight:viewport.scrollHeight}:null,dialog:box(document.getElementById('date-calendar')),pageOverflow:document.documentElement.scrollWidth>innerWidth,fonts:[...new Set(all.map(n=>getComputedStyle(n).fontSize))]};
+    });
+    const issues=[];if(data.horizontal.some(x=>x.gap<7.5))issues.push('Adjacent same-row date glyph gap below8px');if(data.vertical.some(x=>x.gap<7.5))issues.push('Adjacent week date glyph gap below8px');if(data.pageOverflow)issues.push('Whole page horizontal overflow');
+    if(mode==='text200'&&data.fonts.some(x=>x!=='32px'))issues.push('Date font was shrunk from32px');
+    if(data.viewport&&mode!=='text200'&&data.viewport.scrollWidth>data.viewport.width+1)issues.push('Unexpected normal/spacing horizontal calendar scrolling');
+    await writeFile(out+'/'+name+'.json',JSON.stringify(data,null,2));await p.screenshot({path:out+'/'+name+'.png'});
+    checks.push({name,width,mode,state,status:issues.length?'FAIL':'PASS',issues,minHorizontal:Math.min(...data.horizontal.map(x=>x.gap)),minVertical:Math.min(...data.vertical.map(x=>x.gap))});assert.deepEqual(f.errors,[]);
+  }catch(e){checks.push({name,width,mode,state,status:'FAIL',issues:[e.message]});}finally{await f.context.close();}
+}
+assert.deepEqual(await sourceBinding(target),h.sourceHashes);assert.deepEqual(await harnessBinding(),h.harnessHashes);await writeFile(out+'/report.json',JSON.stringify({at:new Date().toISOString(),sourceHashes:h.sourceHashes,harnessHashes:h.harnessHashes,checkerSha256:createHash('sha256').update(await readFile(new URL(import.meta.url))).digest('hex'),checks,failures:checks.filter(x=>x.status==='FAIL').length,scope:'Date glyph separation at chosen8px plus font preservation and page overflow;scroll/header/focus/edge/nativevisual checks remain separate'},null,2));console.log(JSON.stringify({groups:checks.length,failures:checks.filter(x=>x.status==='FAIL').length}));process.exitCode=checks.some(x=>x.status==='FAIL')?1:0;
+}finally{await h.close();}

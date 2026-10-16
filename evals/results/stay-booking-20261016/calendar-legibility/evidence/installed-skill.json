@@ -1,0 +1,263 @@
+{
+  "checkedAt": "2026-10-16T05:01:05.212Z",
+  "records": [
+    {
+      "file": "SKILL.md",
+      "status": "IDENTICAL",
+      "repositorySha256": "d00fcadbb712d14479270f92ff49102a202ef32db351645816ac988868c8d353"
+    },
+    {
+      "file": "references/decomposed-layout.md",
+      "status": "IDENTICAL",
+      "repositorySha256": "ef6e38f48018736150895d27377425d93009ceacad6c912ae636376e90b2ab6c"
+    },
+    {
+      "file": "references/document-collections.md",
+      "status": "IDENTICAL",
+      "repositorySha256": "dfcba1b8b3dcd1efecb6dd75b3b277924a81a55dda51d3cd451291ba8f80921f"
+    },
+    {
+      "file": "references/layout-contract-api.md",
+      "status": "IDENTICAL",
+      "repositorySha256": "72faf0f7c71f4041d046d8a48aaf4395004302a0b10b34394292e1c0c1d64bbd"
+    },
+    {
+      "file": "references/operating-rules.md",
+      "status": "IDENTICAL",
+      "repositorySha256": "375409a9c49b1a43600c985f8d8d6d54cc84c6325a077ba1d5831ca5b15b1dae"
+    },
+    {
+      "file": "references/service-contracts.md",
+      "status": "IDENTICAL",
+      "repositorySha256": "b78d62d4fd20046490b927ea4f0f43b36b3837717023a419efee0ca8282fe22d"
+    },
+    {
+      "file": "references/upstream/design-md/agents/openai.yaml",
+      "status": "IDENTICAL",
+      "repositorySha256": "374f69605abedfa9c1bf7d3e27bd7228891aa8ccc2c53f5f58bf2a0dc9840d8d"
+    },
+    {
+      "file": "references/upstream/design-md/guide.md",
+      "status": "IDENTICAL",
+      "repositorySha256": "06e3ed239bfd26723e5a2ca8b2dd049e50775e952243db803051860ae00dee76"
+    },
+    {
+      "file": "references/upstream/design-md/references/document-contract.md",
+      "status": "IDENTICAL",
+      "repositorySha256": "84a919c4238a77164e625d61191d0de46cbabd41599a66eab852718e6a1cde61"
+    },
+    {
+      "file": "references/upstream/onboarding-flow/agents/openai.yaml",
+      "status": "IDENTICAL",
+      "repositorySha256": "299345b774a15bb7001a7142272c7e914bbc424abedbd4f25297bac858c7c571"
+    },
+    {
+      "file": "references/upstream/onboarding-flow/guide.md",
+      "status": "IDENTICAL",
+      "repositorySha256": "1cea6902c39a49281da5ed1e0c4980788ec4fa914813065362a7c05caf571f44"
+    },
+    {
+      "file": "references/upstream/onboarding-flow/references/flow-contract.md",
+      "status": "IDENTICAL",
+      "repositorySha256": "141799d53fe392690cbfcf16e35f4436db7e59ec44297e6a93861d5bc08cb705"
+    },
+    {
+      "file": "references/upstream/reference-decompose/guide.md",
+      "status": "IDENTICAL",
+      "repositorySha256": "75b42c9d969e681167ee4bf1cdcc852da19901e4bd3005ea7d5a4ec6bb46fceb"
+    },
+    {
+      "file": "references/upstream/reference-decompose/references/element-contract.md",
+      "status": "IDENTICAL",
+      "repositorySha256": "7269c5580b61c1af3ddd7631cd1cce6145e1238905fa6c022308cdf340abafdd"
+    },
+    {
+      "file": "references/upstream/reference-review/agents/openai.yaml",
+      "status": "IDENTICAL",
+      "repositorySha256": "cae4d23c38cd168dc91bc28e677830b48c25f8dfe909f8e726ceaa4e63498a71"
+    },
+    {
+      "file": "references/upstream/reference-review/guide.md",
+      "status": "IDENTICAL",
+      "repositorySha256": "6018495454ca3652463541feca21507c61a61c8d93407552f17866775dbfe900"
+    },
+    {
+      "file": "references/upstream/reference-review/references/change-review.md",
+      "status": "IDENTICAL",
+      "repositorySha256": "835a677ff3307b05eda95c4d9aae578fe21f6040fed786d86867d4a2de1537eb"
+    },
+    {
+      "file": "references/upstream/reference-review/references/design-gate.md",
+      "status": "IDENTICAL",
+      "repositorySha256": "e7d4d49ca8cc4cf9ac5657d40a0e2ae790ab08dc899eaadd0c57f8c85a74e922"
+    },
+    {
+      "file": "references/upstream/reference-review/references/deslop-triage.md",
+      "status": "IDENTICAL",
+      "repositorySha256": "19b4b368b6381214ebcf43c2e8c13482482a9b80ef8e7b87656066bc67080d69"
+    },
+    {
+      "file": "references/upstream/reference-review/references/failure-catalog.json",
+      "status": "IDENTICAL",
+      "repositorySha256": "82e459f06fb4113a1c2caa89ac2c28e95c29c186a0190bb8bf0c2a5caf74329f"
+    },
+    {
+      "file": "references/upstream/reference-review/references/feedback-regression.md",
+      "status": "IDENTICAL",
+      "repositorySha256": "dbb395f3bb69064bdd27d5530161176f02c91f72eb52059312d8ef0d98070e9b"
+    },
+    {
+      "file": "references/upstream/reference-review/references/review-criteria.md",
+      "status": "IDENTICAL",
+      "repositorySha256": "a1c23982ec119e90f7942c245fff8ba21b8a76e2ad3be67e2a4a14244e17097f"
+    },
+    {
+      "file": "references/upstream/reference-review/references/state-stress.md",
+      "status": "IDENTICAL",
+      "repositorySha256": "5dbdc14b7e7d86a18f98a38f420ac5cf710575168f7b2668bed9db60908170b5"
+    },
+    {
+      "file": "references/upstream/reference-review/scripts/design_gate.py",
+      "status": "IDENTICAL",
+      "repositorySha256": "a83a50db1a88b3d1486f882c4a07387297507c337ca1dfcf43722d0b5aa4ed7c"
+    },
+    {
+      "file": "references/upstream/reference-to-ui/agents/openai.yaml",
+      "status": "IDENTICAL",
+      "repositorySha256": "195189f517d889cc82b837b9df41fc3caded4a2fe5efc6dd920917173c411484"
+    },
+    {
+      "file": "references/upstream/reference-to-ui/guide.md",
+      "status": "IDENTICAL",
+      "repositorySha256": "567526f1bf26f8cb75907be57b2c4c4f3968923e3b497697caf5e7891f684c62"
+    },
+    {
+      "file": "references/upstream/reference-to-ui/references/anti-slop-code.md",
+      "status": "IDENTICAL",
+      "repositorySha256": "3dee460457dba58eeb7e5e9b0bd70ab91987aad85ef1ea389bf92e10d1b2a130"
+    },
+    {
+      "file": "references/upstream/reference-to-ui/references/application-format.md",
+      "status": "IDENTICAL",
+      "repositorySha256": "0766ac025e38b30fbe6288b3f46deddffb8616eb8488041d86aec21add7a875a"
+    },
+    {
+      "file": "references/upstream/reference-to-ui/references/dashboard.md",
+      "status": "IDENTICAL",
+      "repositorySha256": "a2e8952a72052e87d3cece16c2a8514d7fa033f36642e76d8d9de66fad2c91b0"
+    },
+    {
+      "file": "references/upstream/reference-to-ui/references/design-guardrails.md",
+      "status": "IDENTICAL",
+      "repositorySha256": "dcdc36114b7332cef376c4b87d77524df064877d76f5607502f4ad65ae9beec9"
+    },
+    {
+      "file": "references/upstream/reference-to-ui/references/design-tokens.md",
+      "status": "IDENTICAL",
+      "repositorySha256": "e8f6a508a6c81ce0519c1217fea1a68c6ee3d3ba9f64b1bd0627fa62953f8b7d"
+    },
+    {
+      "file": "references/upstream/reference-to-ui/references/icon-controls.md",
+      "status": "IDENTICAL",
+      "repositorySha256": "c20876adeda380825867f3fd7ffa1381125623756c865d2bc1ace07a9d39692e"
+    },
+    {
+      "file": "references/upstream/reference-to-ui/references/mobile.md",
+      "status": "IDENTICAL",
+      "repositorySha256": "8d3b261b27f5523b713a68fa445b37603d72eb0dc12887bd55fa16db4f9d6e03"
+    },
+    {
+      "file": "references/upstream/reference-to-ui/references/primary-color.md",
+      "status": "IDENTICAL",
+      "repositorySha256": "7754a8f5796f72415161570643dd2fcea0cbf8e0e995598ad2d3155b24d4c57f"
+    },
+    {
+      "file": "references/upstream/reference-to-ui/references/product-reasoning.md",
+      "status": "IDENTICAL",
+      "repositorySha256": "947cbbbe96401e2072c723c6b8ebf13c33621ea663f6bc8a66ef149638218ac3"
+    },
+    {
+      "file": "references/upstream/reference-to-ui/references/reference-synthesis.md",
+      "status": "IDENTICAL",
+      "repositorySha256": "f61501b8959c7281912fe61bd5bb565add6a1e430db1124958606137cdcca55d"
+    },
+    {
+      "file": "references/upstream/reference-to-ui/references/spacing-audit.md",
+      "status": "IDENTICAL",
+      "repositorySha256": "30565c3fbc3e06cdb2e53aab78955b28142774a44c7e24eb34b661ef85135539"
+    },
+    {
+      "file": "references/upstream/reference-to-ui/references/typography.md",
+      "status": "IDENTICAL",
+      "repositorySha256": "d1003eda3338b973d1399e492bf1adea0e8eced6c054fb65cf0de480b88431d7"
+    },
+    {
+      "file": "references/upstream/reference-to-ui/references/ui-composition.md",
+      "status": "IDENTICAL",
+      "repositorySha256": "8294a96f3e12501e25de75c395da5362359ba9697dfd76a9a1e7947650e43a8d"
+    },
+    {
+      "file": "references/upstream/samkill-ui/agents/openai.yaml",
+      "status": "IDENTICAL",
+      "repositorySha256": "b8a57afd2aa7e56a78d91fe4027e2ad588199d7663625c6574312860b910418c"
+    },
+    {
+      "file": "references/upstream/samkill-ui/guide.md",
+      "status": "IDENTICAL",
+      "repositorySha256": "fab042a57a7e9c2bb6e93a1e0ec3c11a6acaace4f1f9dd7981bf70f6cce3888e"
+    },
+    {
+      "file": "references/upstream/uibowl-research/agents/openai.yaml",
+      "status": "IDENTICAL",
+      "repositorySha256": "5b8f7f09cc183f6ed9891de3c9a3e895b0b4d9a71840c842853552211a8f82da"
+    },
+    {
+      "file": "references/upstream/uibowl-research/guide.md",
+      "status": "IDENTICAL",
+      "repositorySha256": "e69173ad106db14f3cdd9a319d9dfa5353db7065476e8a9c8503768b2220f209"
+    },
+    {
+      "file": "references/upstream/uibowl-research/references/component-anatomy.md",
+      "status": "IDENTICAL",
+      "repositorySha256": "b7388c780937fd607d649cd96ab433bff3f0355fd1b30ba7f6c4e9f61d983106"
+    },
+    {
+      "file": "references/upstream/uibowl-research/references/observation-format.md",
+      "status": "IDENTICAL",
+      "repositorySha256": "73d42bbbec0316530391f72983b76572eec0cda0d2844553cf1a5e1114ec1fe1"
+    },
+    {
+      "file": "references/upstream/uibowl-research/references/research-plan.md",
+      "status": "IDENTICAL",
+      "repositorySha256": "85f3d74be7cc8b16ac9bb9ab99ed5ae66886f8da63874fe27b787a934c2de0cf"
+    },
+    {
+      "file": "references/upstream/uibowl-research/references/search-examples.md",
+      "status": "IDENTICAL",
+      "repositorySha256": "6890636ac9f3dbc68904e39ef842d4e2d27874f025a1b86838f2700776ddfd81"
+    },
+    {
+      "file": "references/upstream/ux-copy/agents/openai.yaml",
+      "status": "IDENTICAL",
+      "repositorySha256": "43fa5791c6c0dd786b6dbb780890d9fba24dee91e95d61c6de5f57800b11ea35"
+    },
+    {
+      "file": "references/upstream/ux-copy/guide.md",
+      "status": "IDENTICAL",
+      "repositorySha256": "2352e5db7e12be3f00eb32da92425b16611278519760f6bb6c24e6263ebb719b"
+    },
+    {
+      "file": "references/upstream/ux-copy/references/copy-contract.md",
+      "status": "IDENTICAL",
+      "repositorySha256": "4f31283c5563ee7c9b883009a8843a01c490f03d586f9d18a15085285860f45f"
+    },
+    {
+      "file": "references/upstream/ux-copy/references/korean-writing.md",
+      "status": "IDENTICAL",
+      "repositorySha256": "7672b1baddd7fc11ec7fc518f89f41558cb2606526030e8edcdbcb588ff47b2f"
+    }
+  ],
+  "counts": {
+    "IDENTICAL": 51
+  }
+}

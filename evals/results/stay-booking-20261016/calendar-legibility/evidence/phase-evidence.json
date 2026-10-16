@@ -1,0 +1,70 @@
+{
+  "scope": "Same-round bounded correction,not new independent UI reproduction. Earlier research/decomposition eight-guide evidence retained in calendar study and independent coverage.",
+  "sources": [
+    {
+      "path": "skills/qwen-samkill-ui/SKILL.md",
+      "sha256": "d00fcadbb712d14479270f92ff49102a202ef32db351645816ac988868c8d353"
+    },
+    {
+      "path": "skills/qwen-samkill-ui/references/operating-rules.md",
+      "sha256": "375409a9c49b1a43600c985f8d8d6d54cc84c6325a077ba1d5831ca5b15b1dae"
+    },
+    {
+      "path": "skills/qwen-samkill-ui/references/decomposed-layout.md",
+      "sha256": "ef6e38f48018736150895d27377425d93009ceacad6c912ae636376e90b2ab6c"
+    },
+    {
+      "path": "skills/qwen-samkill-ui/references/upstream/reference-to-ui/references/typography.md",
+      "sha256": "d1003eda3338b973d1399e492bf1adea0e8eced6c054fb65cf0de480b88431d7"
+    },
+    {
+      "path": "skills/qwen-samkill-ui/references/upstream/reference-to-ui/references/spacing-audit.md",
+      "sha256": "30565c3fbc3e06cdb2e53aab78955b28142774a44c7e24eb34b661ef85135539"
+    },
+    {
+      "path": "skills/qwen-samkill-ui/references/upstream/reference-review/guide.md",
+      "sha256": "6018495454ca3652463541feca21507c61a61c8d93407552f17866775dbfe900"
+    }
+  ],
+  "phases": [
+    {
+      "phase": "diagnosis",
+      "status": "verified-scoped",
+      "evidence": [
+        "before-legibility.json",
+        "../captures/before-296-text200-error.png"
+      ],
+      "outcome": "Cellfit passed but actual sibling glyph gap failed12/36. Source frozenbefore changes."
+    },
+    {
+      "phase": "implementation",
+      "status": "verified-scoped",
+      "evidence": [
+        "publication.json",
+        "layout.json",
+        "scroll.json",
+        "resize.json"
+      ],
+      "outcome": "Host fixed/flow ownership,date naturalheight/grid minwidth,monthcontext,realclicktiming. Existing spacingtoken definitions preserved;not a complete rendered spacingaudit."
+    },
+    {
+      "phase": "local-generation",
+      "status": "applied-with-retained-failure",
+      "evidence": [
+        "../failures/local-css.json",
+        "decomposed-unit.json"
+      ],
+      "outcome": "Broad CSS failed;3hostspecifiedrules completed andpassed36glyph+36scrollcases on separatehost-correctedbase. Actual full decomposition+typography text andsourcehashes in rawrequests. No independent design/generalizationclaim."
+    },
+    {
+      "phase": "review",
+      "status": "verified-scoped",
+      "evidence": [
+        "independent-review.md",
+        "independent-coverage.json",
+        "portable-replay.json"
+      ],
+      "outcome": "Directsame-roundnative/current capture review,original75IDs/eightguides retained. Fullproductparity/deviceAT unresolved."
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "retrieved": "2026-10-16T02:52:18.420Z",
+  "selected": {
+    "index": 2,
+    "id": "cmpt6zdib8ehkvsr19trusm0",
+    "ui_url": "https://uibowl.io/name/%EC%97%90%EC%96%B4%EB%B9%84%EC%95%A4%EB%B9%84?patterns=%EA%B2%80%EC%83%89&imgId=cmpt6zdib8ehkvsr19trusm0",
+    "type": "image",
+    "description": null,
+    "file": "screen-2.png",
+    "bytes": 358058,
+    "sha256": "6e5a119bb023fef2cb2e4a3281054e7cceb546656c1317266d23cdd62c6c48d1"
+  },
+  "gallery": [
+    {
+      "index": 0,
+      "id": "tyt691d1nl529p7pbhu61im5",
+      "ui_url": "https://uibowl.io/name/%EC%97%90%EC%96%B4%EB%B9%84%EC%95%A4%EB%B9%84?patterns=%EA%B2%80%EC%83%89&imgId=tyt691d1nl529p7pbhu61im5",
+      "sha256": "92c8f5470904bf75d0ad0eac355f44fb0deaf5b95d77453ec8a0e25081eb1954",
+      "bytes": 624370
+    },
+    {
+      "index": 1,
+      "id": "f03j5siwsnmoc8bu8q2ovei6",
+      "ui_url": "https://uibowl.io/name/%EC%97%90%EC%96%B4%EB%B9%84%EC%95%A4%EB%B9%84?patterns=%EA%B2%80%EC%83%89&imgId=f03j5siwsnmoc8bu8q2ovei6",
+      "sha256": "99107ae0ff1dc4ad12217e1a1f69b1c12d168ef1f61d8fcd3e5f249a055f9193",
+      "bytes": 241881
+    },
+    {
+      "index": 2,
+      "id": "cmpt6zdib8ehkvsr19trusm0",
+      "ui_url": "https://uibowl.io/name/%EC%97%90%EC%96%B4%EB%B9%84%EC%95%A4%EB%B9%84?patterns=%EA%B2%80%EC%83%89&imgId=cmpt6zdib8ehkvsr19trusm0",
+      "sha256": "6e5a119bb023fef2cb2e4a3281054e7cceb546656c1317266d23cdd62c6c48d1",
+      "bytes": 358058
+    },
+    {
+      "index": 3,
+      "id": "pwatrdkffvonqbxupkmows98",
+      "ui_url": "https://uibowl.io/name/%EC%97%90%EC%96%B4%EB%B9%84%EC%95%A4%EB%B9%84?patterns=%EA%B2%80%EC%83%89&imgId=pwatrdkffvonqbxupkmows98",
+      "sha256": "6a38cafe2574f6b7384a69b8a50755b6f24ed27c2c3599c65c7c948a66ff3fa9",
+      "bytes": 359178
+    },
+    {
+      "index": 4,
+      "id": "suv2e3ba0ivv4pzjdcizvicc",
+      "ui_url": "https://uibowl.io/name/%EC%97%90%EC%96%B4%EB%B9%84%EC%95%A4%EB%B9%84?patterns=%EA%B2%80%EC%83%89&imgId=suv2e3ba0ivv4pzjdcizvicc",
+      "sha256": "5c88848f2ebbbe37688ca942654f6202dded06e51f11eef573b02e678a01b0c9",
+      "bytes": 254436
+    }
+  ],
+  "scope": "Allfive native images inspected;onlyscreen2 provides calendar pixels. No native pixels or signedURLs published. Selected state,originalCSS/DPR/fonts unknown."
+}
