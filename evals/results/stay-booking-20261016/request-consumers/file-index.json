@@ -308,6 +308,16 @@
       "sha256": "aa85ad5ff34b7356e6d2f7358e88939d6cef24404b98283233b40950b8a8e923"
     },
     {
+      "path": "source/calendar-focus.js",
+      "bytes": 929,
+      "sha256": "4bdfc0b0bbfd142fabc2cc06790bc1ffbf6f65080f6b3e5672d048e4d090490a"
+    },
+    {
+      "path": "source/calendar-model.js",
+      "bytes": 3881,
+      "sha256": "b420bac1d76c8a5a3e5d0d666b1b8eccfa2c45aa8acdd3f5b137d78908eac16b"
+    },
+    {
       "path": "source/catalog.js",
       "bytes": 5375,
       "sha256": "3fb70ac22209c5384df1e0aa0cfe51cddad4c9f7045a8f4cd1c50e5ac1d664f8"
