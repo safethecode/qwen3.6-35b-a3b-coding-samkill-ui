@@ -3,6 +3,7 @@ import { resolve } from 'node:path';
 import { layoutContractFingerprint, MAX_LAYOUT_RULES } from './layout-state-coverage.mjs';
 import { inspectReadableToken } from './readable-token.mjs';
 import { inspectMonochromePaint } from './monochrome-paint.mjs';
+import { inspectTextGap } from './text-gap.mjs';
 
 export const readLayoutContract = target => readFile(resolve(target, 'design/layout-contract.json'), 'utf8').then(JSON.parse).catch(error => { if (error.code === 'ENOENT') return null; throw error; });
 
@@ -189,6 +190,10 @@ export async function inspectLayoutContract(page, contract, options = {}) {
           const paint = await inspectMonochromePaint(page, rule);
           observed = { ...observed, ...paint.observed };
           if (paint.status !== 'PASS') throw Object.assign(new Error(paint.detail), { verificationStatus: paint.status });
+        } else if (rule.kind === 'textGap') {
+          const gap = await inspectTextGap(page, rule);
+          observed = { ...observed, ...gap.observed };
+          if (gap.status !== 'PASS') throw Object.assign(new Error(gap.detail), { verificationStatus: gap.status });
         } else if (rule.kind === 'readableToken') {
           const token = await inspectReadableToken(page, rule);
           observed = { ...observed, ...token.observed };
