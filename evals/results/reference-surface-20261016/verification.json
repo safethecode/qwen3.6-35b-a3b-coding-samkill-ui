@@ -1,0 +1,17 @@
+{
+  "at": "2026-10-16T07:19:55.224Z",
+  "command": "npm test",
+  "exitCode": 0,
+  "tests": 213,
+  "pass": 213,
+  "fail": 0,
+  "rawLogSha256": "cee8d9ed93c96886e69479eb9940082667022ff3f4d5d8d9948034dd0a8ee506",
+  "review": "Independent read-only reviewer found no material issues in append-only retry code;8focused tests plus independent capped-history,element reset,immutable HTML and stale-binding checks passed. No model inference was run by the reviewer.",
+  "portableReplay": {
+    "cells": 12,
+    "coreFailures": 0,
+    "neighborFailures": 0,
+    "report": "checks/portable-replay/report.json"
+  },
+  "limits": "These checks do not approve native decomposition,complete product behavior,all75rules or reference parity."
+}

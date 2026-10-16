@@ -1,0 +1,6 @@
+{
+  "binding": "cfef5e44659aaf13f37e459eeaeeb52f6e9b93294b154e2d6ed8e8b61c46eb51",
+  "elapsedMs": 194503,
+  "error": "Component sibling combinators are not supported: [data-ui-unit=\"whole-agreement\"]#all-consent:focus-visible ~ .all-label. Use parent gap or :not(:first-child) for repeated-group spacing, without + or ~.",
+  "errorName": "Error"
+}

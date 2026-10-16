@@ -1,0 +1,216 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "sha256": "ed9fe3e07e71ae6ec5d23862f3acb8c95a8422916fb30741deb253d6aeb67638",
+    "bytes": 44767,
+    "width": 1125,
+    "height": 2436,
+    "encoding": {
+      "bitDepth": 8,
+      "colorType": 3,
+      "interlaced": false,
+      "paletteEntries": 24,
+      "conversion": "Indexed8 mapped through stored RGB8 palette; opaque alpha255 added",
+      "colorManagement": "Stored raster channel values; no color-profile transform applied"
+    },
+    "decoder": "playwright-core@1.58.2"
+  },
+  "samples": [
+    {
+      "id": "P01",
+      "x": 80,
+      "y": 1390,
+      "rgba": [
+        255,
+        255,
+        255,
+        255
+      ],
+      "unit": "image-px",
+      "valueKind": "measured-raster-pixel"
+    },
+    {
+      "id": "P02",
+      "x": 80,
+      "y": 1415,
+      "rgba": [
+        245,
+        245,
+        245,
+        255
+      ],
+      "unit": "image-px",
+      "valueKind": "measured-raster-pixel"
+    },
+    {
+      "id": "P03",
+      "x": 80,
+      "y": 1460,
+      "rgba": [
+        255,
+        255,
+        255,
+        255
+      ],
+      "unit": "image-px",
+      "valueKind": "measured-raster-pixel"
+    },
+    {
+      "id": "P04",
+      "x": 80,
+      "y": 1500,
+      "rgba": [
+        245,
+        245,
+        245,
+        255
+      ],
+      "unit": "image-px",
+      "valueKind": "measured-raster-pixel"
+    },
+    {
+      "id": "P05",
+      "x": 80,
+      "y": 1550,
+      "rgba": [
+        245,
+        245,
+        245,
+        255
+      ],
+      "unit": "image-px",
+      "valueKind": "measured-raster-pixel"
+    },
+    {
+      "id": "P06",
+      "x": 80,
+      "y": 1600,
+      "rgba": [
+        245,
+        245,
+        245,
+        255
+      ],
+      "unit": "image-px",
+      "valueKind": "measured-raster-pixel"
+    },
+    {
+      "id": "P07",
+      "x": 80,
+      "y": 1660,
+      "rgba": [
+        255,
+        255,
+        255,
+        255
+      ],
+      "unit": "image-px",
+      "valueKind": "measured-raster-pixel"
+    },
+    {
+      "id": "P08",
+      "x": 80,
+      "y": 1740,
+      "rgba": [
+        255,
+        255,
+        255,
+        255
+      ],
+      "unit": "image-px",
+      "valueKind": "measured-raster-pixel"
+    },
+    {
+      "id": "P09",
+      "x": 80,
+      "y": 1850,
+      "rgba": [
+        255,
+        255,
+        255,
+        255
+      ],
+      "unit": "image-px",
+      "valueKind": "measured-raster-pixel"
+    },
+    {
+      "id": "P10",
+      "x": 20,
+      "y": 1415,
+      "rgba": [
+        245,
+        245,
+        245,
+        255
+      ],
+      "unit": "image-px",
+      "valueKind": "measured-raster-pixel"
+    },
+    {
+      "id": "P11",
+      "x": 20,
+      "y": 1550,
+      "rgba": [
+        255,
+        255,
+        255,
+        255
+      ],
+      "unit": "image-px",
+      "valueKind": "measured-raster-pixel"
+    },
+    {
+      "id": "P12",
+      "x": 80,
+      "y": 2050,
+      "rgba": [
+        29,
+        139,
+        255,
+        255
+      ],
+      "unit": "image-px",
+      "valueKind": "measured-raster-pixel"
+    },
+    {
+      "id": "P13",
+      "x": 1030,
+      "y": 1680,
+      "rgba": [
+        255,
+        255,
+        255,
+        255
+      ],
+      "unit": "image-px",
+      "valueKind": "measured-raster-pixel"
+    },
+    {
+      "id": "P14",
+      "x": 1030,
+      "y": 1775,
+      "rgba": [
+        255,
+        255,
+        255,
+        255
+      ],
+      "unit": "image-px",
+      "valueKind": "measured-raster-pixel"
+    },
+    {
+      "id": "P15",
+      "x": 1030,
+      "y": 1870,
+      "rgba": [
+        255,
+        255,
+        255,
+        255
+      ],
+      "unit": "image-px",
+      "valueKind": "measured-raster-pixel"
+    }
+  ],
+  "scope": "Exact declared raster pixels only; not source CSS colors, element ownership, region uniformity or visual approval. Alpha is retained without a guessed background."
+}

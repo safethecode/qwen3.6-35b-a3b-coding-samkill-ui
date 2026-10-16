@@ -1,0 +1,23 @@
+{
+  "package": "lucide",
+  "version": "1.51.0",
+  "source": "https://github.com/lucide-icons/lucide",
+  "licenseSha256": "b495047bd93a9b06913511076f504daba17d5bbeb3e0650f3bb53a4220329c57",
+  "icons": [
+    {
+      "name": "ChevronRight",
+      "file": "ChevronRight.svg",
+      "sha256": "1db358b44dd0b76c26b8f0e81b3c36134a56bf2287acf197355c1c5419cbd75e",
+      "geometrySha256": "b387ceba6a952091d1f508996535301fdd96182f419295e1de03a83ff3ab1ed5"
+    },
+    {
+      "name": "ChevronRight",
+      "variant": "muted",
+      "fill": "none",
+      "stroke": "#999999",
+      "file": "ChevronRight-muted.svg",
+      "sha256": "f9f74a20058f9c2327d01fc5b7e55d9ad7dadc37c4130a4d7c80f88d3c9912b2",
+      "geometrySha256": "b387ceba6a952091d1f508996535301fdd96182f419295e1de03a83ff3ab1ed5"
+    }
+  ]
+}

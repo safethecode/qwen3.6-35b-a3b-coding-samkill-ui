@@ -1,0 +1,5 @@
+{
+  "status": "INVALID_HOST_CONTRACT",
+  "reason": "Host used JavaScript camelCase properties instead of required CSS kebab-case names. The12-cell check stayedFAIL. Corrected the field names only before a fresh capture;no value,criterion or product source changed.",
+  "at": "2026-10-16T07:11:15.591Z"
+}

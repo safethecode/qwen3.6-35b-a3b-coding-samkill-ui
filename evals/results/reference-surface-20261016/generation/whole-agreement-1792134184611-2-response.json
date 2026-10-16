@@ -1,0 +1,33 @@
+{
+  "binding": "cfef5e44659aaf13f37e459eeaeeb52f6e9b93294b154e2d6ed8e8b61c46eb51",
+  "settings": {
+    "model": "qwen-ui-35b",
+    "think": false,
+    "options": {
+      "num_ctx": 32768,
+      "temperature": 0.2,
+      "top_p": 0.8,
+      "top_k": 20,
+      "repeat_penalty": 1.05,
+      "num_gpu": 16,
+      "num_batch": 128,
+      "num_predict": 2048
+    }
+  },
+  "elapsedMs": 196244,
+  "model": "qwen-ui-35b",
+  "created_at": "2026-10-16T07:03:04.6109384Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\n  \"css\": \"[data-ui-unit=\\\"whole-agreement\\\"].consent-all {\\n  display: flex;\\n  align-items: center;\\n  gap: var(--space-2);\\n  padding-block: var(--space-3);\\n  padding-inline: var(--page-inset);\\n  min-height: 48px;\\n  width: 100%;\\n  border-radius: var(--radius);\\n  background-color: var(--quiet-surface);\\n  color: var(--text);\\n  box-sizing: border-box;\\n}\\n\\n[data-ui-unit=\\\"whole-agreement\\\"] .all-check {\\n  appearance: auto;\\n  width: var(--check-size);\\n  height: var(--check-size);\\n  margin: 0;\\n  accent-color: var(--selection);\\n  flex-shrink: 0;\\n}\\n\\n[data-ui-unit=\\\"whole-agreement\\\"] .all-label {\\n  font-size: 1rem;\\n  font-weight: 700;\\n  line-height: 1.5;\\n  min-width: 0;\\n}\\n\\n[data-ui-unit=\\\"whole-agreement\\\"].consent-all:focus-within {\\n  outline: 2px solid var(--focus);\\n  outline-offset: -2px;\\n}\"\n}"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 194628927400,
+  "load_duration": 13814900,
+  "prompt_eval_count": 16416,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration": 174454991000,
+  "eval_count": 285,
+  "eval_duration": 20075016000
+}

@@ -1,0 +1,18 @@
+{
+  "elapsedMs": 19372,
+  "model": "qwen-ui-35b",
+  "created_at": "2026-10-16T06:36:56.4645772Z",
+  "message": {
+    "role": "assistant",
+    "content": "{\n  \"coordinateSystem\": \"normalized-1000-xyxy\",\n  \"boxes\": [\n    {\n      \"id\": \"E4\",\n      \"left\": 50,\n      \"top\": 315,\n      \"right\": 950,\n      \"bottom\": 495\n    },\n    {\n      \"id\": \"E6\",\n      \"left\": 50,\n      \"top\": 605,\n      \"right\": 950,\n      \"bottom\": 665\n    },\n    {\n      \"id\": \"E8\",\n      \"left\": 50,\n      \"top\": 820,\n      \"right\": 950,\n      \"bottom\": 885\n    }\n  ]\n}"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 19364980900,
+  "load_duration": 27404800,
+  "prompt_eval_count": 8029,
+  "prompt_eval_cached_count": 7202,
+  "prompt_eval_duration": 10248388000,
+  "eval_count": 189,
+  "eval_duration": 8974097000
+}

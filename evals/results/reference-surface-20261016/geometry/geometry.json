@@ -1,0 +1,58 @@
+{
+  "raw": {
+    "coordinateSystem": "normalized-1000-xyxy",
+    "boxes": [
+      {
+        "id": "E4",
+        "left": 50,
+        "top": 315,
+        "right": 950,
+        "bottom": 495
+      },
+      {
+        "id": "E6",
+        "left": 50,
+        "top": 605,
+        "right": 950,
+        "bottom": 665
+      },
+      {
+        "id": "E8",
+        "left": 50,
+        "top": 820,
+        "right": 950,
+        "bottom": 885
+      }
+    ]
+  },
+  "imageSize": {
+    "width": 1125,
+    "height": 2436
+  },
+  "imagePx": [
+    {
+      "id": "E4",
+      "left": 56.25,
+      "top": 767.34,
+      "right": 1068.75,
+      "bottom": 1205.82,
+      "valueKind": "Model estimates converted using declared units, not native CSS measurements"
+    },
+    {
+      "id": "E6",
+      "left": 56.25,
+      "top": 1473.78,
+      "right": 1068.75,
+      "bottom": 1619.94,
+      "valueKind": "Model estimates converted using declared units, not native CSS measurements"
+    },
+    {
+      "id": "E8",
+      "left": 56.25,
+      "top": 1997.52,
+      "right": 1068.75,
+      "bottom": 2155.86,
+      "valueKind": "Model estimates converted using declared units, not native CSS measurements"
+    }
+  ]
+}

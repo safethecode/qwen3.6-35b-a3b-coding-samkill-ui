@@ -1,0 +1,19 @@
+{
+  "at": "2026-10-16T07:16:23.869Z",
+  "nativePayloadOmissions": [
+    {
+      "omittedNativeImage": true,
+      "bytes": 44767,
+      "sha256": "ed9fe3e07e71ae6ec5d23862f3acb8c95a8422916fb30741deb253d6aeb67638"
+    },
+    {
+      "omittedNativeImage": true,
+      "bytes": 44767,
+      "sha256": "ed9fe3e07e71ae6ec5d23862f3acb8c95a8422916fb30741deb253d6aeb67638"
+    }
+  ],
+  "scope": "Native screenshots are private;numeric sampled values and actual generated renders are included. Request text,full guides,model outputs and source/harness bindings are retained. Published checker changes import/default paths only;original exact modules are archived as text and SHA-verified against reports.",
+  "checkerOriginalSha256": "29b6d718b39e9c275b465b2347244637b5533236b6ea4a3c84bc46ad410ea91d",
+  "checkerBaselineSha256": "d240a3f7c612d06305fbe4ecdf61f194362b36d2b3214a37049a222f531355b8",
+  "checkerPublishedSha256": "121e1f6f71be98e182c21384865caf7f588fd26eafb277e8a2d49b3eb7b46151"
+}

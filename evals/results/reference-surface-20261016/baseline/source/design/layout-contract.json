@@ -1,0 +1,30 @@
+{
+  "rules": [
+    {
+      "id": "whole-contained",
+      "kind": "contained",
+      "subject": ".consent-all",
+      "container": "#agreement-frame"
+    },
+    {
+      "id": "whole-checkbox-alignment",
+      "kind": "sameRow",
+      "subject": ".all-check",
+      "reference": ".all-label",
+      "tolerance": 2
+    },
+    {
+      "id": "individuals-follow-whole",
+      "kind": "below",
+      "subject": "#individual-terms",
+      "reference": ".consent-all",
+      "minGap": 0
+    },
+    {
+      "id": "whole-and-rows-distinct",
+      "kind": "disjoint",
+      "subject": ".consent-all",
+      "reference": "#individual-terms"
+    }
+  ]
+}

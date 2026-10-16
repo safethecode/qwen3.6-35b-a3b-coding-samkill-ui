@@ -1,0 +1,83 @@
+{
+  "rules": [
+    {
+      "id": "whole-contained",
+      "kind": "contained",
+      "subject": ".consent-all",
+      "container": "#agreement-frame"
+    },
+    {
+      "id": "whole-checkbox-alignment",
+      "kind": "sameRow",
+      "subject": ".all-check",
+      "reference": ".all-label",
+      "tolerance": 2
+    },
+    {
+      "id": "individuals-follow-whole",
+      "kind": "below",
+      "subject": "#individual-terms",
+      "reference": ".consent-all",
+      "minGap": 0
+    },
+    {
+      "id": "whole-and-rows-distinct",
+      "kind": "disjoint",
+      "subject": ".consent-all",
+      "reference": "#individual-terms"
+    },
+    {
+      "id": "e6-declared-padding",
+      "kind": "computedStyle",
+      "subject": ".consent-all",
+      "properties": {
+        "padding-left": "16px",
+        "padding-right": "16px",
+        "padding-top": "12px",
+        "padding-bottom": "12px",
+        "border-top-left-radius": "8px"
+      }
+    },
+    {
+      "id": "e7-shared-inset",
+      "kind": "computedStyle",
+      "subject": ".term-list",
+      "properties": {
+        "padding-left": "16px",
+        "padding-right": "16px"
+      }
+    },
+    {
+      "id": "e7-first-line-native-controls",
+      "kind": "firstLineControls",
+      "subject": ".term-list",
+      "rows": ".term-label",
+      "text": ".term-copy",
+      "controls": [
+        "input"
+      ],
+      "tolerance": 2
+    },
+    {
+      "id": "e7-text-chevron-center-0",
+      "kind": "sameRow",
+      "subject": ".term-row:nth-child(1) .term-copy",
+      "reference": ".term-row:nth-child(1) .term-chevron",
+      "tolerance": 2
+    },
+    {
+      "id": "e7-text-chevron-center-1",
+      "kind": "sameRow",
+      "subject": ".term-row:nth-child(2) .term-copy",
+      "reference": ".term-row:nth-child(2) .term-chevron",
+      "tolerance": 2
+    },
+    {
+      "id": "e7-text-chevron-center-2",
+      "kind": "sameRow",
+      "subject": ".term-row:nth-child(3) .term-copy",
+      "reference": ".term-row:nth-child(3) .term-chevron",
+      "tolerance": 2
+    }
+  ]
+}

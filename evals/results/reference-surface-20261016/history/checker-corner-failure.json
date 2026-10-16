@@ -1,0 +1,5 @@
+{
+  "status": "CHECKER_FAILED",
+  "reason": "The original click was 2px from both edges, outside an 8px rounded corner painted label. This never completed the matrix. Corrected prospectively to the right-edge midpoint;no product or declared padding expectation changed.",
+  "at": "2026-10-16T07:05:37.465Z"
+}

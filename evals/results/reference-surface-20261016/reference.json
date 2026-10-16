@@ -1,0 +1,12 @@
+{
+  "index": 6,
+  "id": "cm7ec3e36005kl70cvvg601te",
+  "ui_url": "https://uibowl.io/name/%EC%97%AC%EA%B8%B0%EC%96%B4%EB%95%8C?patterns=%EC%98%88%EC%95%BD%C2%B7%EA%B2%B0%EC%A0%9C&imgId=cm7ec3e36005kl70cvvg601te",
+  "file": "references/screen-6.png",
+  "width": 1125,
+  "height": 2436,
+  "bytes": 44767,
+  "sha256": "ed9fe3e07e71ae6ec5d23862f3acb8c95a8422916fb30741deb253d6aeb67638",
+  "retrievedAt": "2026-10-16T05:34:18.060Z",
+  "directHostInspection": "Native image inspected before the first perception request and re-inspected before bounded facts repair. Original font/CSS/DPR/asset origins and hidden behavior unknown."
+}

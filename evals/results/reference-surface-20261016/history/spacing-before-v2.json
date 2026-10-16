@@ -1,0 +1,457 @@
+{
+  "scope": "#agreement-frame and all descendants",
+  "viewport": 390,
+  "unit": "CSS px",
+  "uniqueElements": 23,
+  "computedValues": 230,
+  "rows": [
+    {
+      "tag": "MAIN",
+      "id": "agreement-frame",
+      "class": "",
+      "spacing": {
+        "paddingTop": "20px",
+        "paddingRight": "20px",
+        "paddingBottom": "20px",
+        "paddingLeft": "20px",
+        "marginTop": "0px",
+        "marginRight": "0px",
+        "marginBottom": "0px",
+        "marginLeft": "0px",
+        "rowGap": "normal",
+        "columnGap": "normal"
+      }
+    },
+    {
+      "tag": "LABEL",
+      "id": "",
+      "class": "consent-all",
+      "spacing": {
+        "paddingTop": "12px",
+        "paddingRight": "20px",
+        "paddingBottom": "12px",
+        "paddingLeft": "20px",
+        "marginTop": "0px",
+        "marginRight": "0px",
+        "marginBottom": "0px",
+        "marginLeft": "0px",
+        "rowGap": "8px",
+        "columnGap": "8px"
+      }
+    },
+    {
+      "tag": "INPUT",
+      "id": "all-consent",
+      "class": "all-check",
+      "spacing": {
+        "paddingTop": "0px",
+        "paddingRight": "0px",
+        "paddingBottom": "0px",
+        "paddingLeft": "0px",
+        "marginTop": "0px",
+        "marginRight": "0px",
+        "marginBottom": "0px",
+        "marginLeft": "0px",
+        "rowGap": "normal",
+        "columnGap": "normal"
+      }
+    },
+    {
+      "tag": "SPAN",
+      "id": "",
+      "class": "all-label",
+      "spacing": {
+        "paddingTop": "0px",
+        "paddingRight": "0px",
+        "paddingBottom": "0px",
+        "paddingLeft": "0px",
+        "marginTop": "0px",
+        "marginRight": "0px",
+        "marginBottom": "0px",
+        "marginLeft": "0px",
+        "rowGap": "normal",
+        "columnGap": "normal"
+      }
+    },
+    {
+      "tag": "DIV",
+      "id": "individual-terms",
+      "class": "term-list",
+      "spacing": {
+        "paddingTop": "8px",
+        "paddingRight": "0px",
+        "paddingBottom": "0px",
+        "paddingLeft": "0px",
+        "marginTop": "0px",
+        "marginRight": "0px",
+        "marginBottom": "0px",
+        "marginLeft": "0px",
+        "rowGap": "normal",
+        "columnGap": "normal"
+      }
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "class": "term-row",
+      "spacing": {
+        "paddingTop": "0px",
+        "paddingRight": "0px",
+        "paddingBottom": "0px",
+        "paddingLeft": "0px",
+        "marginTop": "0px",
+        "marginRight": "0px",
+        "marginBottom": "0px",
+        "marginLeft": "0px",
+        "rowGap": "normal",
+        "columnGap": "normal"
+      }
+    },
+    {
+      "tag": "LABEL",
+      "id": "",
+      "class": "term-label",
+      "spacing": {
+        "paddingTop": "0px",
+        "paddingRight": "0px",
+        "paddingBottom": "0px",
+        "paddingLeft": "0px",
+        "marginTop": "0px",
+        "marginRight": "0px",
+        "marginBottom": "0px",
+        "marginLeft": "0px",
+        "rowGap": "8px",
+        "columnGap": "8px"
+      }
+    },
+    {
+      "tag": "INPUT",
+      "id": "term-0",
+      "class": "",
+      "spacing": {
+        "paddingTop": "0px",
+        "paddingRight": "0px",
+        "paddingBottom": "0px",
+        "paddingLeft": "0px",
+        "marginTop": "2px",
+        "marginRight": "0px",
+        "marginBottom": "0px",
+        "marginLeft": "0px",
+        "rowGap": "normal",
+        "columnGap": "normal"
+      }
+    },
+    {
+      "tag": "SPAN",
+      "id": "",
+      "class": "term-copy",
+      "spacing": {
+        "paddingTop": "0px",
+        "paddingRight": "0px",
+        "paddingBottom": "0px",
+        "paddingLeft": "0px",
+        "marginTop": "0px",
+        "marginRight": "0px",
+        "marginBottom": "0px",
+        "marginLeft": "0px",
+        "rowGap": "normal",
+        "columnGap": "normal"
+      }
+    },
+    {
+      "tag": "SPAN",
+      "id": "",
+      "class": "term-chevron",
+      "spacing": {
+        "paddingTop": "0px",
+        "paddingRight": "0px",
+        "paddingBottom": "0px",
+        "paddingLeft": "0px",
+        "marginTop": "0px",
+        "marginRight": "0px",
+        "marginBottom": "0px",
+        "marginLeft": "0px",
+        "rowGap": "normal",
+        "columnGap": "normal"
+      }
+    },
+    {
+      "tag": "IMG",
+      "id": "",
+      "class": "",
+      "spacing": {
+        "paddingTop": "0px",
+        "paddingRight": "0px",
+        "paddingBottom": "0px",
+        "paddingLeft": "0px",
+        "marginTop": "0px",
+        "marginRight": "0px",
+        "marginBottom": "0px",
+        "marginLeft": "0px",
+        "rowGap": "normal",
+        "columnGap": "normal"
+      }
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "class": "term-row",
+      "spacing": {
+        "paddingTop": "0px",
+        "paddingRight": "0px",
+        "paddingBottom": "0px",
+        "paddingLeft": "0px",
+        "marginTop": "0px",
+        "marginRight": "0px",
+        "marginBottom": "0px",
+        "marginLeft": "0px",
+        "rowGap": "normal",
+        "columnGap": "normal"
+      }
+    },
+    {
+      "tag": "LABEL",
+      "id": "",
+      "class": "term-label",
+      "spacing": {
+        "paddingTop": "0px",
+        "paddingRight": "0px",
+        "paddingBottom": "0px",
+        "paddingLeft": "0px",
+        "marginTop": "0px",
+        "marginRight": "0px",
+        "marginBottom": "0px",
+        "marginLeft": "0px",
+        "rowGap": "8px",
+        "columnGap": "8px"
+      }
+    },
+    {
+      "tag": "INPUT",
+      "id": "term-1",
+      "class": "",
+      "spacing": {
+        "paddingTop": "0px",
+        "paddingRight": "0px",
+        "paddingBottom": "0px",
+        "paddingLeft": "0px",
+        "marginTop": "2px",
+        "marginRight": "0px",
+        "marginBottom": "0px",
+        "marginLeft": "0px",
+        "rowGap": "normal",
+        "columnGap": "normal"
+      }
+    },
+    {
+      "tag": "SPAN",
+      "id": "",
+      "class": "term-copy",
+      "spacing": {
+        "paddingTop": "0px",
+        "paddingRight": "0px",
+        "paddingBottom": "0px",
+        "paddingLeft": "0px",
+        "marginTop": "0px",
+        "marginRight": "0px",
+        "marginBottom": "0px",
+        "marginLeft": "0px",
+        "rowGap": "normal",
+        "columnGap": "normal"
+      }
+    },
+    {
+      "tag": "SPAN",
+      "id": "",
+      "class": "term-chevron",
+      "spacing": {
+        "paddingTop": "0px",
+        "paddingRight": "0px",
+        "paddingBottom": "0px",
+        "paddingLeft": "0px",
+        "marginTop": "0px",
+        "marginRight": "0px",
+        "marginBottom": "0px",
+        "marginLeft": "0px",
+        "rowGap": "normal",
+        "columnGap": "normal"
+      }
+    },
+    {
+      "tag": "IMG",
+      "id": "",
+      "class": "",
+      "spacing": {
+        "paddingTop": "0px",
+        "paddingRight": "0px",
+        "paddingBottom": "0px",
+        "paddingLeft": "0px",
+        "marginTop": "0px",
+        "marginRight": "0px",
+        "marginBottom": "0px",
+        "marginLeft": "0px",
+        "rowGap": "normal",
+        "columnGap": "normal"
+      }
+    },
+    {
+      "tag": "DIV",
+      "id": "",
+      "class": "term-row",
+      "spacing": {
+        "paddingTop": "0px",
+        "paddingRight": "0px",
+        "paddingBottom": "0px",
+        "paddingLeft": "0px",
+        "marginTop": "0px",
+        "marginRight": "0px",
+        "marginBottom": "0px",
+        "marginLeft": "0px",
+        "rowGap": "normal",
+        "columnGap": "normal"
+      }
+    },
+    {
+      "tag": "LABEL",
+      "id": "",
+      "class": "term-label",
+      "spacing": {
+        "paddingTop": "0px",
+        "paddingRight": "0px",
+        "paddingBottom": "0px",
+        "paddingLeft": "0px",
+        "marginTop": "0px",
+        "marginRight": "0px",
+        "marginBottom": "0px",
+        "marginLeft": "0px",
+        "rowGap": "8px",
+        "columnGap": "8px"
+      }
+    },
+    {
+      "tag": "INPUT",
+      "id": "term-2",
+      "class": "",
+      "spacing": {
+        "paddingTop": "0px",
+        "paddingRight": "0px",
+        "paddingBottom": "0px",
+        "paddingLeft": "0px",
+        "marginTop": "2px",
+        "marginRight": "0px",
+        "marginBottom": "0px",
+        "marginLeft": "0px",
+        "rowGap": "normal",
+        "columnGap": "normal"
+      }
+    },
+    {
+      "tag": "SPAN",
+      "id": "",
+      "class": "term-copy",
+      "spacing": {
+        "paddingTop": "0px",
+        "paddingRight": "0px",
+        "paddingBottom": "0px",
+        "paddingLeft": "0px",
+        "marginTop": "0px",
+        "marginRight": "0px",
+        "marginBottom": "0px",
+        "marginLeft": "0px",
+        "rowGap": "normal",
+        "columnGap": "normal"
+      }
+    },
+    {
+      "tag": "SPAN",
+      "id": "",
+      "class": "term-chevron",
+      "spacing": {
+        "paddingTop": "0px",
+        "paddingRight": "0px",
+        "paddingBottom": "0px",
+        "paddingLeft": "0px",
+        "marginTop": "0px",
+        "marginRight": "0px",
+        "marginBottom": "0px",
+        "marginLeft": "0px",
+        "rowGap": "normal",
+        "columnGap": "normal"
+      }
+    },
+    {
+      "tag": "IMG",
+      "id": "",
+      "class": "",
+      "spacing": {
+        "paddingTop": "0px",
+        "paddingRight": "0px",
+        "paddingBottom": "0px",
+        "paddingLeft": "0px",
+        "marginTop": "0px",
+        "marginRight": "0px",
+        "marginBottom": "0px",
+        "marginLeft": "0px",
+        "rowGap": "normal",
+        "columnGap": "normal"
+      }
+    }
+  ],
+  "findings": [
+    {
+      "selector": ".consent-all",
+      "property": "padding-inline",
+      "current": "var(--page-inset) =20px",
+      "proposed": "var(--space-4) =16px",
+      "reason": "Correct wrong token consumer to predeclared inner-control contract;both existing token definitions preserved"
+    },
+    {
+      "selector": "#agreement-frame",
+      "property": "padding",
+      "current": "20px var(--page-inset)",
+      "proposed": "unchanged",
+      "reason": "20px structural 8pt review note only;established mobile inset retained"
+    },
+    {
+      "selector": ".term-label input",
+      "property": "margin-top",
+      "current": "calc((1.5em - 20px)/2)",
+      "proposed": "formula unchanged;align inherited em to text owner",
+      "reason": "First-line alignment uses current wrong inherited16px instead of visible14px;dynamic fractions not rounded"
+    },
+    {
+      "selector": ".term-label",
+      "property": "row alignment",
+      "current": "start in44px target",
+      "proposed": "center grid content in target",
+      "reason": "Actual text block vs chevron11.5px mismatch;not spacing rounding"
+    }
+  ],
+  "preserved": [
+    "--page-inset20",
+    "--space-2 8",
+    "--space-3 12",
+    "--space-4 16",
+    "--radius8",
+    "--check-size20",
+    "min-height48/44",
+    "term-list padding-top8",
+    "term-label gap8",
+    "dynamic auto margins and fractional em offsets"
+  ],
+  "unknowns": [
+    "Native CSS,DPR,font,targets unknown;not inferred from image coordinates"
+  ],
+  "additionalDirectReview": {
+    "at": "2026-10-16T07:09:22.968Z",
+    "finding": "Native E6 and E7 checkbox left edges align;baseline E7 starts at20px while E6 has an extra20px inner inset. After E6 correction,shared E7 requires matching16px inner token.",
+    "proposal": {
+      "selector": ".term-list",
+      "property": "padding-inline",
+      "current": "0px",
+      "proposed": "var(--space-4)=16px",
+      "origin": "Reference relationship;chosen CSS implementation,not measured native CSS"
+    },
+    "preserved": "Existing token definitions,term-list8px top and declared typography/targets;no negative offsets or transforms"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "reference": {
+    "status": "inspected",
+    "screenId": "cm7ec3e36005kl70cvvg601te",
+    "imageSha256": "ed9fe3e07e71ae6ec5d23862f3acb8c95a8422916fb30741deb253d6aeb67638",
+    "scope": "Host-verified E6/E7 visible surface contract. Qwen perception/OCR still failed; this is assisted component styling, not autonomous decomposition or full-product reproduction."
+  },
+  "viewport": {
+    "mode": "mobile-only",
+    "maxWidth": 390
+  },
+  "shared": "Mobile-only agreement-region sample at every width. E6whole-agreement owns only its light-gray rounded label surface. E7three individual rows remain on white. No header,decorative rules,extra copy,desktop columns or completion claims. Native CSS/DPR/font unknown; supplied font and CSS values are chosen implementation,not recovered native values. This is one CSS-only element;read-only neighbors and generic native checkbox behavior are host supplied. Terms detail navigation and aggregate logic are outside this static style sample and remain unimplemented. Related whole-agreement and individual agreement checkboxes share one left edge;individual rows use the same16px inner token as the E6 control. Host correction from direct reference review,not autonomous model discovery.",
+  "sharedCss": ":root{--canvas:#ffffff;--quiet-surface:#f5f5f5;--text:#333333;--selection:#1677e7;--focus:#0b57d0;--page-inset:20px;--space-2:8px;--space-3:12px;--space-4:16px;--radius:8px;--control-min:48px;--check-size:20px;--type-all:1rem}*{box-sizing:border-box}html{font-size:16px}body{margin:0;background:var(--canvas);color:var(--text);font-family:\"Noto Sans KR\",sans-serif;font-weight:500;line-height:1.5}#agreement-frame{width:100%;max-width:390px;margin:0 auto;padding:20px var(--page-inset);background:var(--canvas)}input{accent-color:var(--selection)}.term-list{padding-top:8px;padding-inline:var(--space-4);background:var(--canvas)}.term-row{display:grid;grid-template-columns:minmax(0,1fr) 44px;align-items:center;min-height:44px}.term-label{display:grid;grid-template-columns:20px minmax(0,1fr);gap:8px;min-width:0;min-height:44px;font-size:.875rem;line-height:1.5;align-items:start;align-content:center}.term-label input{margin:0;margin-top:calc((1.5em - 20px)/2);width:20px;height:20px;font:inherit}.term-copy{font-size:.875rem;font-weight:500;line-height:1.5;overflow-wrap:anywhere}.term-chevron{display:flex;align-items:center;justify-content:center;min-width:44px;min-height:44px}.term-chevron img{width:20px;height:20px}.term-label:focus-within{outline:2px solid var(--focus);outline-offset:-2px}@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto}}",
+  "assembly": "<main id=\"agreement-frame\">{{whole-agreement}}<div id=\"individual-terms\" class=\"term-list\"><div class=\"term-row\"><label class=\"term-label\" for=\"term-0\"><input id=\"term-0\" type=\"checkbox\" checked><span class=\"term-copy\">렌터카 이용 및 취소/환불규정 동의 (필수)</span></label><span class=\"term-chevron\" aria-hidden=\"true\"><img src=\"assets/icons/ChevronRight-muted.svg\" alt=\"\"></span></div><div class=\"term-row\"><label class=\"term-label\" for=\"term-1\"><input id=\"term-1\" type=\"checkbox\" checked><span class=\"term-copy\">개인정보 수집 및 이용 동의 (필수)</span></label><span class=\"term-chevron\" aria-hidden=\"true\"><img src=\"assets/icons/ChevronRight-muted.svg\" alt=\"\"></span></div><div class=\"term-row\"><label class=\"term-label\" for=\"term-2\"><input id=\"term-2\" type=\"checkbox\" checked><span class=\"term-copy\">개인정보 제3자 제공 동의 (필수)</span></label><span class=\"term-chevron\" aria-hidden=\"true\"><img src=\"assets/icons/ChevronRight-muted.svg\" alt=\"\"></span></div></div></main>",
+  "elements": [
+    {
+      "id": "whole-agreement",
+      "html": "<label data-ui-unit=\"whole-agreement\" class=\"consent-all\" for=\"all-consent\"><input class=\"all-check\" id=\"all-consent\" type=\"checkbox\" checked><span class=\"all-label\">전체 동의</span></label>",
+      "prompt": "Style only the immutable label root .consent-all and its two descendants .all-check and .all-label. Use display:flex;center the native checkbox and label vertically,8px gap,12px block and16px inline padding,min-height48px,natural growth,width100%,radius8px,background quiet-surface245 and text333. No border/shadow/pseudo-elements. All-copy role16px/700,line-height1.5;use shared tokens/rem so real text enlargement works. Native checkbox stays appearance:auto with20px box,margin0,shared blue accent;its label root is the48px hit area. Use visible inset keyboard focus through :focus-within. Do not style the main,term-list,term-row or read-only term checkboxes. Do not give E7 a gray background. No fixed height,nowrap,text hiding,added assets,comments or media desktop variants. This contract is host-grounded from actual image and measured pixels,not a claim that the failed perception output was accepted.",
+      "assets": [],
+      "sample": "<main id=\"agreement-frame\">{{whole-agreement}}<div id=\"individual-terms\" class=\"term-list\"><div class=\"term-row\"><label class=\"term-label\" for=\"term-0\"><input id=\"term-0\" type=\"checkbox\" checked><span class=\"term-copy\">렌터카 이용 및 취소/환불규정 동의 (필수)</span></label><span class=\"term-chevron\" aria-hidden=\"true\"><img src=\"assets/icons/ChevronRight-muted.svg\" alt=\"\"></span></div><div class=\"term-row\"><label class=\"term-label\" for=\"term-1\"><input id=\"term-1\" type=\"checkbox\" checked><span class=\"term-copy\">개인정보 수집 및 이용 동의 (필수)</span></label><span class=\"term-chevron\" aria-hidden=\"true\"><img src=\"assets/icons/ChevronRight-muted.svg\" alt=\"\"></span></div><div class=\"term-row\"><label class=\"term-label\" for=\"term-2\"><input id=\"term-2\" type=\"checkbox\" checked><span class=\"term-copy\">개인정보 제3자 제공 동의 (필수)</span></label><span class=\"term-chevron\" aria-hidden=\"true\"><img src=\"assets/icons/ChevronRight-muted.svg\" alt=\"\"></span></div></div></main>",
+      "dataSources": [
+        {
+          "id": "native-pixels",
+          "file": "design/raster-evidence.json",
+          "pointer": ""
+        }
+      ]
+    }
+  ]
+}

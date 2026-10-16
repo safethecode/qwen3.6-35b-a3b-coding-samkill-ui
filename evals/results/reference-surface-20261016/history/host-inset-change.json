@@ -1,0 +1,9 @@
+{
+  "at": "2026-10-16T07:10:49.748Z",
+  "owner": "Host",
+  "oldRule": ".term-list{padding-top:8px;background:var(--canvas)}",
+  "newRule": ".term-list{padding-top:8px;padding-inline:var(--space-4);background:var(--canvas)}",
+  "status": "APPLIED_REVIEW_PENDING",
+  "evidence": "spacing-before-v2.json,neighbor-alignment-before/report.json,native image6 direct inspection",
+  "scope": "Only read-only neighbor surface inset;existing16px token and all size/font/spacing definitions preserved. New contract checks are prospective for this host correction,not original generation evidence."
+}

@@ -1,0 +1,36 @@
+@font-face{font-family:"Noto Sans KR";src:url("assets/fonts/NotoSansKR.ttf") format("truetype");font-weight:100 900;font-style:normal;font-display:swap;}
+:root{--canvas:#ffffff;--quiet-surface:#f5f5f5;--text:#333333;--selection:#1677e7;--focus:#0b57d0;--page-inset:20px;--space-2:8px;--space-3:12px;--space-4:16px;--radius:8px;--control-min:48px;--check-size:20px;--type-all:1rem}*{box-sizing:border-box}html{font-size:16px}body{margin:0;background:var(--canvas);color:var(--text);font-family:"Noto Sans KR",sans-serif;font-weight:500;line-height:1.5}#agreement-frame{width:100%;max-width:390px;margin:0 auto;padding:20px var(--page-inset);background:var(--canvas)}input{accent-color:var(--selection)}.term-list{padding-top:8px;background:var(--canvas)}.term-row{display:grid;grid-template-columns:minmax(0,1fr) 44px;align-items:center;min-height:44px}.term-label{display:grid;grid-template-columns:20px minmax(0,1fr);gap:8px;min-width:0;min-height:44px;align-items:start}.term-label input{margin:0;margin-top:calc((1.5em - 20px)/2);width:20px;height:20px;font:inherit}.term-copy{font-size:.875rem;font-weight:500;line-height:1.5;overflow-wrap:anywhere}.term-chevron{display:flex;align-items:center;justify-content:center;min-width:44px;min-height:44px}.term-chevron img{width:20px;height:20px}.term-label:focus-within{outline:2px solid var(--focus);outline-offset:-2px}@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto}}
+[data-ui-unit="whole-agreement"].consent-all {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding-block: var(--space-3);
+  padding-inline: var(--page-inset);
+  min-height: 48px;
+  width: 100%;
+  border-radius: var(--radius);
+  background-color: var(--quiet-surface);
+  color: var(--text);
+  box-sizing: border-box;
+}
+
+[data-ui-unit="whole-agreement"] .all-check {
+  appearance: auto;
+  width: var(--check-size);
+  height: var(--check-size);
+  margin: 0;
+  accent-color: var(--selection);
+  flex-shrink: 0;
+}
+
+[data-ui-unit="whole-agreement"] .all-label {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5;
+  min-width: 0;
+}
+
+[data-ui-unit="whole-agreement"].consent-all:focus-within {
+  outline: 2px solid var(--focus);
+  outline-offset: -2px;
+}

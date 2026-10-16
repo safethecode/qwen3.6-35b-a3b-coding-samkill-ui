@@ -1,5 +1,9 @@
 # Quality gate verification
 
+## Native surfaces and actual agreement styling — 2026-10-16
+
+The [source-bound surface study](results/reference-surface-20261016/README.md) retains a failed local-image handoff: prose separates the surfaces, but duplicated region IDs and swapped pixel citations prevent acceptance. Actual Qwen then styles a host-verified immutable agreement element and repairs its wrong padding token. Host neighbor corrections restore shared checkbox insets and text/icon alignment. The portable12-cell browser replay passes its declared region checks; the213-test shared suite and independent retry-code review pass. Full checkout behavior, native OCR/decomposition,75-rule product approval and repeated reference parity remain unfinished. Before/after images, failures, exact requests and host assistance are linked in that study.
+
 ## Actual client delivery — 2026-10-16
 
 The [native Qwen client study](results/client-native-vision-20261016/README.md) corrects a current execution mismatch: OpenCode defaulted to the older30B alias while direct experiments used35B. The loaded defaults now select the measured35.5B Q4_K_M weights with32K backend context and bounded ten-minute client deadlines. The image bridge preserves native attachments for the selected image-capable model. Actual OpenCode image/read/write continuation passes in an isolated fixture and after an explicitly assisted path repair in the installed session. A misrouted project-file read and false completion marker remain failed evidence. No application UI was generated in this phase; reference parity and the complete product gate remain INCOMPLETE.
