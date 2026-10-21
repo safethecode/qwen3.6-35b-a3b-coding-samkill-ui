@@ -1,0 +1,44 @@
+{
+  "scope": "Upstream research/decomposition order synchronization; no product or model-generation certification",
+  "checks": {
+    "skillFormat": "PASS",
+    "changedMarkdownLocalTargets": "PASS",
+    "localHeadingAnchors": {
+      "checked": 4,
+      "result": "PASS"
+    },
+    "sourceAndAdaptedHashes": {
+      "files": 3,
+      "result": "PASS"
+    },
+    "diffWhitespace": "PASS",
+    "guideDelivery": "PASS in full Node suite",
+    "pythonGateTests": {
+      "command": "python3 -m unittest discover -s test",
+      "passed": 2,
+      "exitCode": 0
+    },
+    "nodeInitial": {
+      "command": "npm test",
+      "passed": 212,
+      "failed": 1,
+      "exitCode": 1,
+      "failure": "Installed contract link test compares canonical realpath with unresolved temporary-directory spelling; macOS symlink alias mismatch"
+    },
+    "nodeCanonicalTemporaryPath": {
+      "command": "TMPDIR=/private/tmp npm test",
+      "passed": 213,
+      "failed": 0,
+      "skipped": 0,
+      "exitCode": 0,
+      "testCodeChanged": false
+    }
+  },
+  "notExecuted": [
+    "Ollama inference",
+    "UIbowl research",
+    "New product rendering and visual comparison",
+    "Autonomous design-quality evaluation",
+    "Refresh of pre-existing external project installations"
+  ]
+}

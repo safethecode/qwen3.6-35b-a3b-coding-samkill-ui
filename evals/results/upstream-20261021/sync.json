@@ -1,0 +1,37 @@
+{
+  "source": "https://github.com/safethecode/samkill-ui",
+  "previousCommit": "167fc8d5982e361d86f598c80540d4eff460394d",
+  "commit": "ad3f8110df2522d72150831e99429744861ce8a5",
+  "retrievedAtUtc": "2026-10-21T09:32:55.222601+00:00",
+  "sourceAvailability": "Local source commit; not pushed in this task",
+  "files": [
+    {
+      "source": "skills/samkill-ui/SKILL.md",
+      "target": "skills/qwen-samkill-ui/references/upstream/samkill-ui/guide.md",
+      "sourceSha256": "2fcf933c3da2c6bf28628bd2a59a79166b860c7695212a7e6c9a12be64269b38",
+      "adaptedSha256": "daaca3b868e50251edd221175e34bfe0b22ca6c0cf34ebdb25580a308db03cf2",
+      "transformation": "Entry files and links renamed SKILL.md to guide.md"
+    },
+    {
+      "source": "skills/reference-to-ui/SKILL.md",
+      "target": "skills/qwen-samkill-ui/references/upstream/reference-to-ui/guide.md",
+      "sourceSha256": "fa8a5811235bf89acebe18070b097de7f40ef780a545d5b8cc38c9b6d39d1276",
+      "adaptedSha256": "d84cf2e46406671d10bf9316d406db11a3e506c72e78e6f54d9ec71137be1040",
+      "transformation": "Entry files and links renamed SKILL.md to guide.md"
+    },
+    {
+      "source": "skills/samkill-ui/agents/openai.yaml",
+      "target": "skills/qwen-samkill-ui/references/upstream/samkill-ui/agents/openai.yaml",
+      "sourceSha256": "8f34313b365bf8ed461b80be3670a3efd58e13c193b53a88897b04a28a7d31c3",
+      "adaptedSha256": "8f34313b365bf8ed461b80be3670a3efd58e13c193b53a88897b04a28a7d31c3",
+      "transformation": "Entry files and links renamed SKILL.md to guide.md"
+    }
+  ],
+  "preserved": [
+    "Local execution skill and operating rules",
+    "Bounded runner and source-bound guide delivery",
+    "Python sidecar-lock gate adaptation",
+    "Explicit project scope and user design decisions",
+    "Historical evaluation evidence"
+  ]
+}

@@ -140,3 +140,5 @@ Review the screenshots separately for hierarchy, reference fidelity, content den
 - `test`: installer, patch safety, process and evaluation regression checks
 
 Upstream provenance and adaptation details are in [UPSTREAM.md](UPSTREAM.md). The Python design gate has Windows-compatible ledger locking. Run `npm test` for Node regression tests and `python -m unittest discover -s test` for gate tests. The Node/Playwright fixture evaluator works on Windows directly.
+
+Reference-driven work follows `uibowl-research → reference-decompose → reference-to-ui → reference-review`. Validate supplied research and decomposition before reusing them. The bounded generation runner receives a prepared handoff; its successful execution does not certify that research occurred. See the [2026-10-21 synchronization record](docs/upstream-sync-20261021.md) for the source revision, local adaptations and checks.
