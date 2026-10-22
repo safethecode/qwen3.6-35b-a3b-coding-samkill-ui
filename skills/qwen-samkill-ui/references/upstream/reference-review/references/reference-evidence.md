@@ -1,6 +1,6 @@
 # 분해 인계와 원본 비교의 실행 검사
 
-레퍼런스 기반 UI에서 RUI-16/17이 적용되면 아래 자료를 실제 게이트 입력에 연결한다. 기존 E/O/Q 문서에 필요한 값을 기록하고 JSON은 그 핵심 측정 항목을 참조하는 작은 실행 입력으로 유지한다. 모든 글자·효과를 수치화하거나 항목 수를 채우는 절차가 아니다.
+레퍼런스 기반 UI에서 RUI-16/17이 적용되면 아래 자료를 실제 게이트 입력에 연결한다. [전체 분해 JSON과 raw](../../reference-decompose/references/decomposition-json.md)를 관찰 원본으로 유지하고 수치 인계는 그 관찰ID를 참조한다. 모든 표현을 숫자나 고정 분류로 억지 변환하지 않는다. 분해/해석/core_review는 schema_version1, 수치 handoff/comparison은2다. catalog/contract/report의 버전1과 구별한다. 예전 수치 전용v1 기록은 보존하며 새 검사에서는 전체 인계 미충족으로 UNVERIFIED다.
 
 ## 구현 전에
 
@@ -12,9 +12,12 @@
 
 ```json
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "decomposition": {"path": "design/reference-decomposition.json", "sha256": "<실제 SHA-256>"},
+  "interpretation": {"path": "design/reference-interpretation.json", "sha256": "<실제 SHA-256>"},
   "anchors": [{
     "id": "Q3-column-width",
+    "observation_id": "O-column-width",
     "feature": "공개 폼의 좁은 본문 열",
     "source": {"path": "design/evidence/reference.png", "sha256": "<실제 SHA-256>"},
     "observed": {"value": 464, "unit": "CSS-px", "basis": "measured", "method": "라이브 본문 DOM getBoundingClientRect().width"},
@@ -28,6 +31,7 @@
 - 단위는 ratio/image-px/CSS-px/pt 중 실제 근거에 맞춘다. 관찰과 구현 기대는 같은 좌표계로 비교해야 한다. 환산 근거가 없으면 양쪽의 동일한 비율을 관찰한다. 사진 잉크 크기를 CSS font-size로 이름만 바꾸지 않는다.
 - `expected.tolerance`는 비교 전에 정하는 해당 항목의 허용 차이다. 임계값을 사후에 넓혀 결과를 통과시키지 않는다. 관찰과 기대의 차이가 허용 차이를 넘으면 `adaptation: {"requirement": "실제 요구의 출처·해당 범위", "reason": "바꿀 관계와 이유"}`가 필요하다. 이유 기록만으로 바뀐 결과의 품질이 승인되지는 않는다.
 - `source`는 실제 원본 또는 측정 근거 파일이다. source의 경로·해시와 method가 실제 관찰을 뒷받침하는지는 직접 판독한다. 관찰 후에 만든 결과를 원본 근거로 바꾸지 않는다.
+- decomposition/interpretation은 원본 파일과 받은 쪽의 해석 파일을 묶는다. 각 anchor의 observation_id는 분해 속성ID여야 하며 관찰값·단위·상태와 원본 artifact가 일치해야 한다. 전체 분해와 따로 다른 수치를 적어 통과시키지 않는다. [합성 예제 handoff](../../reference-decompose/references/json-example/handoff.json)는 이 연결을 실제 실행할 수 있다.
 
 계약의 `reference_handoff`에 위 JSON의 `{path, sha256}`을 넣고 구현 전에 실행한다. targets가 아직 없어도 이 단계는 실행할 수 있다.
 
@@ -35,7 +39,7 @@
 python3 <reference-review>/scripts/design_gate.py prepare --root . --contract design/gate-contract.json
 ```
 
-READY는 **수치 인계의 자료·형식 준비**다. 이미지 판독이나 구현 품질 PASS가 아니다. UNVERIFIED면 부족한 관찰과 단위를 보완한 뒤 해당 구현으로 넘긴다. 읽기 전용/명세 전용은 범위 안에서 분석·인계 상태만 전달한다. 검색만·문구만·기존 계약의 국소 수정에 새 전체 분석을 강제하지 않는다.
+READY는 **분해·해석·수치 인계의 자료 준비**다. 이해·이미지 판독·구현 품질 PASS가 아니다. UNVERIFIED면 부족한 관찰/해석·단위를 보완한 뒤 해당 구현으로 넘긴다. 읽기 전용/명세 전용은 범위 안에서 분석·인계 상태만 전달한다. 검색만·문구만·기존 계약의 국소 수정에 새 전체 분석을 강제하지 않는다.
 
 ## 구현 후
 
@@ -43,9 +47,11 @@ READY는 **수치 인계의 자료·형식 준비**다. 이미지 판독이나 �
 
 ```json
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "handoff_sha256": "<사용한 인계 JSON의 실제 SHA-256>",
   "target_sha256": "<fingerprint 명령의 현재 target_sha256>",
+  "core_review": {"path": "design/core-review.json", "sha256": "<실제 SHA-256>"},
+  "consumption": [{"ref": "O-column-width", "status": "applied", "target": ".public-form", "interpretation": "현재 렌더의 열 폭을 원본 조건과 비교함"}],
   "results": [{
     "id": "Q3-column-width",
     "capture": {"path": "design/evidence/current.png", "sha256": "<실제 SHA-256>"},
@@ -56,6 +62,10 @@ READY는 **수치 인계의 자료·형식 준비**다. 이미지 판독이나 �
 ```
 
 각 인계 ID를 빠짐없이 비교하고 실제 렌더의 값·단위·측정 방법과 캡처를 연결한다. 원본과 결과는 같은 표시 조건에서 직접 읽고 큰 비중·표면·사진/그림·타이포그래피까지 대조한다. 숫자가 같아도 핵심 시각 특징을 지웠으면 `visual_review.status`는 regressed다. 미실행은 unverified이며, retained/adapted-and-verified에는 실제 판독 이유가 있어야 한다. 구현을 자신이 작성했다는 사실이나 변경 이유를 시각 증거로 쓰지 않는다.
+
+위 consumption은 한 항목만 보인 예다. 실제로는 interpretation의 모든 ref에 status(`applied/unsupported/unverified`)·target·interpretation을 기록하고 핵심 required는 applied여야 한다. 원문과 확장을 빠뜨리거나 핵심 미해결을 남기면 UNVERIFIED다. 적용 기록은 코드/렌더의 실제 근거와 함께 사람이 판독한다.
+
+`core-review.json`은 schema_version1, decomposition_sha256, interpretation_sha256, 첫 핵심 화면의 `source_snapshot: {path,sha256}`과 `capture: {path,sha256}`, status(`retained/adapted-and-verified/regressed/unverified`)·reason을 갖는다. source_snapshot은 그때 사용한 소스 묶음/파일의 보존본이며 현재 소스가 바뀌어도 덮어쓰지 않는다. 입력/증거가 다른 비교는 재사용할 수 없다. 첫 핵심 화면이 regressed면 FAIL, 비교가 없거나 unverified면 UNVERIFIED다. 실제 비교 후 교정·재검증한 버전을 연결하고 이전 실패를 보존한다. 파일의 존재·해시로 작성 시점이나 실제 판독의 진실성을 자동 증명하지 않는다.
 
 일반 check에서 RUI-16/17이 적용되면 이 자료가 빠진 pass도 UNVERIFIED다. 수치가 미리 정한 허용 차이를 넘으면 보고서에 pass라고 적었더라도 해당 규칙을 FAIL로 판정한다. 원본·인계·캡처·구현 해시가 바뀌면 이전 비교를 재사용할 수 없다. 이미 확인한 실패는 미확인과 따로 보존한다.
 

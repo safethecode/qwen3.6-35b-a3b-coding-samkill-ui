@@ -39,7 +39,7 @@ UI 구현의 적용 확인은 아래 산출물과 연결한다. 세부 검사·�
 | 시점 | 그때까지 필요한 적용 결과 |
 |---|---|
 | 분해 전 | uibowl-research로 실제 이미지·출처 확보 또는 기존 자료의 적합성 확인. 사용자 과제와 대상 DESIGN.md 확인. |
-| 설계·각색 전 | reference-decompose의 요소·관계·조립 계약과 핵심 수치·단위·근거를 확인. [수치 인계 검사](../reference-review/references/reference-evidence.md)의 prepare READY 이후 reference-to-ui로 넘긴다. 기존 분석도 현재 원본과의 연결을 확인한다. |
+| 설계·각색 전 | reference-decompose의 [분해 JSON과 raw](../reference-decompose/references/decomposition-json.md), 좌표계·HEX·관계·확장과 구현 담당 해석을 확인. [수치 인계 v2](../reference-review/references/reference-evidence.md)의 prepare READY 이후 reference-to-ui로 넘긴다. 기존 분석도 현재 원본과의 연결을 확인한다. |
 | 구현 전 | reference-to-ui의 배치·결합·구성·토큰·코드 기준을 실제 구현 계약에 연결. 작성할 한국어 문구와 가입/동의/복구 흐름이 있으면 ux-copy와 onboarding-flow의 계약. |
 | 핵심 화면 확장 전 | reference-review의 기준으로 원본과 실제 렌더를 비교하고 핵심 퇴보를 수정·재검증. 이미지·토큰 파일·분석 문서의 존재만으로 이 단계 완료를 표시하지 않는다. |
 | 최종 전달 전 | 실제 사용처·문구·관련 상태/전이·시각/행동·디자인 게이트 결과와 모든 해당 스킬의 적용 근거 확인. 미실행 검증과 도구 제한의 영향 범위를 유지한다. |

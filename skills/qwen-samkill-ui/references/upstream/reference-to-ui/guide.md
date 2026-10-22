@@ -13,6 +13,8 @@ description: Use when building, redesigning, or tokenizing UI from references, s
 
 분해 인계의 핵심 치수·비율·단위·관찰 근거와 [prepare 결과](../reference-review/references/reference-evidence.md)를 확인한다. 수치 없이 ‘좁은 열/넓은 여백’만 있거나 관찰이 chosen으로 대체됐다면 해당 배치 구현 전에 보완한다. 사용자 제약 때문에 바꾸는 역할과 여전히 보존해야 할 원본의 특징을 구별하고, 내부 표현 전체를 기본 스타일로 초기화하지 않는다.
 
+[분해 JSON과 raw](../reference-decompose/references/decomposition-json.md)를 실제 읽고 구현 담당의 interpretation을 먼저 작성한다. 각 속성·관계·원문·확장의 적용 계획/미지원/미확인을 대상과 연결하며 핵심 미해결을 남긴 채 구현하지 않는다. 좌표를 absolute 명령으로 복사하지 않고 흐름·부모·정렬을 함께 해석한다. 색은 HEX·alpha·역할·근거를 확인한다. 첫 핵심 화면의 소스/캡처와 비교 판정을 보존한 뒤 확장하고, 최종 consumption으로 실제 처리 결과를 대조한다.
+
 ## 필요한 입력
 
 사용자 과제, 대상 화면, 브랜드/기존 디자인 시스템, 실제 확인한 레퍼런스 또는 출처가 표시된 사용자 관찰 기록. 기존 프로젝트에서는 관련 화면과 토큰을 확인한다. 새 프레임워크나 컴포넌트 라이브러리를 강제하지 않는다. 명세만 요청하면 계약과 검증 계획을 전달하고 종료한다. 코드·실제 렌더 실행을 요구하지 않으며 상태는 `spec-only`다.

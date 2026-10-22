@@ -1,0 +1,128 @@
+{
+  "schema_version": 1,
+  "document_id": "synthetic-form",
+  "revision": "1",
+  "sources": [
+    {
+      "id": "R1",
+      "kind": "image",
+      "artifact": {
+        "path": "reference.svg",
+        "sha256": "54090574d5651633f5dc62af9ae351cf381676afe42b011aa5c206559752f25d"
+      }
+    }
+  ],
+  "spaces": [
+    {
+      "id": "S1",
+      "source_id": "R1",
+      "unit": "image-px",
+      "width": 800,
+      "height": 600,
+      "origin": "top-left",
+      "dpr": null
+    }
+  ],
+  "raw": [
+    {
+      "id": "RAW1",
+      "artifact": {
+        "path": "raw-analysis.md",
+        "sha256": "b732b425e684b51303152f6c07f3d26103bab171fd97976ca7823478fed943e3"
+      }
+    }
+  ],
+  "elements": [
+    {
+      "id": "E1",
+      "parent_id": null,
+      "role": "form-panel",
+      "source_ids": [
+        "R1"
+      ],
+      "raw_refs": [
+        "RAW1"
+      ],
+      "properties": {
+        "width": {
+          "id": "O1",
+          "kind": "length",
+          "status": "measured",
+          "value": 464,
+          "unit": "image-px",
+          "space_id": "S1",
+          "source_ids": [
+            "R1"
+          ],
+          "raw_refs": [
+            "RAW1"
+          ],
+          "method": "Synthetic SVG rectangle width"
+        },
+        "background": {
+          "id": "O2",
+          "kind": "color",
+          "status": "measured",
+          "value": {
+            "hex": "#FFFFFF",
+            "alpha": 1,
+            "color_space": "srgb"
+          },
+          "source_ids": [
+            "R1"
+          ],
+          "raw_refs": [
+            "RAW1"
+          ],
+          "method": "Synthetic SVG fill attribute"
+        },
+        "flow": {
+          "id": "O3",
+          "kind": "layout",
+          "status": "unknown",
+          "value": null,
+          "unknown_reason": "Static rectangle has no original CSS flow",
+          "source_ids": [
+            "R1"
+          ],
+          "raw_refs": [
+            "RAW1"
+          ]
+        },
+        "bounds": {
+          "id": "O4",
+          "kind": "bounds",
+          "status": "measured",
+          "value": {
+            "x": 168,
+            "y": 80,
+            "width": 464,
+            "height": 400
+          },
+          "unit": "image-px",
+          "space_id": "S1",
+          "source_ids": [
+            "R1"
+          ],
+          "raw_refs": [
+            "RAW1"
+          ],
+          "method": "Read rectangle x/y/width/height in the synthetic SVG"
+        }
+      },
+      "extensions": {
+        "product:surface": {
+          "description": "Synthetic optional extension"
+        }
+      }
+    }
+  ],
+  "relations": [],
+  "adaptations": [],
+  "required": [
+    "E1",
+    "O1",
+    "O2"
+  ],
+  "extensions": {}
+}

@@ -1,0 +1,98 @@
+{
+  "source": "https://github.com/safethecode/samkill-ui",
+  "sourceBaseCommit": "433397052b332f434e7fac390b240ad58f114892",
+  "sourceState": "Source implementation committed; current downstream changes authorized for commit/push",
+  "files": [
+    {
+      "source": "skills/samkill-ui/SKILL.md",
+      "target": "skills/qwen-samkill-ui/references/upstream/samkill-ui/guide.md",
+      "sourceSha256": "861f227dc2c27318261bbe63ecdbdaff0423950834e91d4f02b8e44c4e1f6ece",
+      "adaptedSha256": "3cd38794a43df8bde9d78e26d5d25fc47ad8e507ebe281957772058fa3b13760"
+    },
+    {
+      "source": "skills/reference-decompose/SKILL.md",
+      "target": "skills/qwen-samkill-ui/references/upstream/reference-decompose/guide.md",
+      "sourceSha256": "c7f1fc77de49559ba9e5fc5b648e089dd0b50428ef6cd381673d8f57ee7665a4",
+      "adaptedSha256": "c7f1fc77de49559ba9e5fc5b648e089dd0b50428ef6cd381673d8f57ee7665a4"
+    },
+    {
+      "source": "skills/reference-decompose/references/element-contract.md",
+      "target": "skills/qwen-samkill-ui/references/upstream/reference-decompose/references/element-contract.md",
+      "sourceSha256": "c0222854f4ff86911b5b4910b47a536072a10da7171f2a51a7942bb1947788c1",
+      "adaptedSha256": "c0222854f4ff86911b5b4910b47a536072a10da7171f2a51a7942bb1947788c1"
+    },
+    {
+      "source": "skills/reference-decompose/references/decomposition-json.md",
+      "target": "skills/qwen-samkill-ui/references/upstream/reference-decompose/references/decomposition-json.md",
+      "sourceSha256": "04e923fa8fad257779cdc3a7ebf34756b38b278b153d448470944564381278df",
+      "adaptedSha256": "04e923fa8fad257779cdc3a7ebf34756b38b278b153d448470944564381278df"
+    },
+    {
+      "source": "skills/reference-to-ui/SKILL.md",
+      "target": "skills/qwen-samkill-ui/references/upstream/reference-to-ui/guide.md",
+      "sourceSha256": "e48fb63d85705815e898e50309bd92700aea6e5b45c2809d7c5e15e5f5169a01",
+      "adaptedSha256": "b766842da5ac256053974e80945d87c28947403c6235b7743a36c115b3ba6091"
+    },
+    {
+      "source": "skills/reference-review/SKILL.md",
+      "target": "skills/qwen-samkill-ui/references/upstream/reference-review/guide.md",
+      "sourceSha256": "736a2d22ed9a2d9378677104ec61b56f9fa0be805c7304109f73c8ef11cb0acf",
+      "adaptedSha256": "98ccbecea5d90115001ee45833a731f3520936d81d586be63364e6a4ec15690d"
+    },
+    {
+      "source": "skills/reference-review/references/design-gate.md",
+      "target": "skills/qwen-samkill-ui/references/upstream/reference-review/references/design-gate.md",
+      "sourceSha256": "8b501dc4e76b15ec50617f2e9ba8288720d40b0c528dd5cfd48e4a70b7927a1e",
+      "adaptedSha256": "8b501dc4e76b15ec50617f2e9ba8288720d40b0c528dd5cfd48e4a70b7927a1e"
+    },
+    {
+      "source": "skills/reference-review/references/reference-evidence.md",
+      "target": "skills/qwen-samkill-ui/references/upstream/reference-review/references/reference-evidence.md",
+      "sourceSha256": "14879390903d984bebf9c286536e1bd6fc004a8ffd9c75b6705af75fcb7cccca",
+      "adaptedSha256": "14879390903d984bebf9c286536e1bd6fc004a8ffd9c75b6705af75fcb7cccca"
+    },
+    {
+      "source": "skills/reference-review/scripts/reference_check.py",
+      "target": "skills/qwen-samkill-ui/references/upstream/reference-review/scripts/reference_check.py",
+      "sourceSha256": "e7e145d234d7b745ed01eb5a88475977a19d2190c9d4fbe5c5f77f0f5fb19e8b",
+      "adaptedSha256": "4fd002cdc5170225b45ff89c6f1071fe8cbb3e1320b5e31628f115cfed493497"
+    },
+    {
+      "source": "skills/reference-review/scripts/design_gate.py",
+      "target": "skills/qwen-samkill-ui/references/upstream/reference-review/scripts/design_gate.py",
+      "sourceSha256": "f42fb014bf9ebc5c153b6163af6c1767cd7910d1023511135223a173d755a69b",
+      "adaptedSha256": "c3bf8a4bbffb78e031ce267352ace7cc1261929f97b4816a00ae389e7c53674c"
+    },
+    {
+      "source": "skills/reference-decompose/references/json-example/decomposition.json",
+      "target": "skills/qwen-samkill-ui/references/upstream/reference-decompose/references/json-example/decomposition.json",
+      "sourceSha256": "8918ec31ee5f54c4dc8b794df8acf854d747376b66eafa096899f1f0151bf681",
+      "adaptedSha256": "8918ec31ee5f54c4dc8b794df8acf854d747376b66eafa096899f1f0151bf681"
+    },
+    {
+      "source": "skills/reference-decompose/references/json-example/handoff.json",
+      "target": "skills/qwen-samkill-ui/references/upstream/reference-decompose/references/json-example/handoff.json",
+      "sourceSha256": "56b1a3cfd9a52ff68e4b0e43fa2006e70c4e073d79258c010251780b671fc50d",
+      "adaptedSha256": "56b1a3cfd9a52ff68e4b0e43fa2006e70c4e073d79258c010251780b671fc50d"
+    },
+    {
+      "source": "skills/reference-decompose/references/json-example/interpretation.json",
+      "target": "skills/qwen-samkill-ui/references/upstream/reference-decompose/references/json-example/interpretation.json",
+      "sourceSha256": "c0a4b98d802f3c98f0c6efcaa2a203cbbd407591db2e3f35ecfba17f310519d1",
+      "adaptedSha256": "c0a4b98d802f3c98f0c6efcaa2a203cbbd407591db2e3f35ecfba17f310519d1"
+    },
+    {
+      "source": "skills/reference-decompose/references/json-example/raw-analysis.md",
+      "target": "skills/qwen-samkill-ui/references/upstream/reference-decompose/references/json-example/raw-analysis.md",
+      "sourceSha256": "b732b425e684b51303152f6c07f3d26103bab171fd97976ca7823478fed943e3",
+      "adaptedSha256": "b732b425e684b51303152f6c07f3d26103bab171fd97976ca7823478fed943e3"
+    },
+    {
+      "source": "skills/reference-decompose/references/json-example/reference.svg",
+      "target": "skills/qwen-samkill-ui/references/upstream/reference-decompose/references/json-example/reference.svg",
+      "sourceSha256": "54090574d5651633f5dc62af9ae351cf381676afe42b011aa5c206559752f25d",
+      "adaptedSha256": "54090574d5651633f5dc62af9ae351cf381676afe42b011aa5c206559752f25d"
+    }
+  ],
+  "sourceCommit": "5ed255f4c803c2270fb920045edd023fa7a0b0de"
+}

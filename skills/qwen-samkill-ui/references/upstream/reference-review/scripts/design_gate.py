@@ -243,7 +243,7 @@ def main():
         if args.command == "prepare":
             prepare_handoff(root, contract.get("reference_handoff"))
             print(json.dumps({"status": "READY", "handoff_sha256": contract["reference_handoff"]["sha256"],
-                              "scope": "Measurement handoff only; not implementation or visual approval"}))
+                              "scope": "Source/interpretation integrity only; not comprehension or visual approval"}))
             return 0
         current = fingerprints(root, args.catalog, args.contract, contract)
         if args.command == "fingerprint":

@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "decomposition_sha256": "8918ec31ee5f54c4dc8b794df8acf854d747376b66eafa096899f1f0151bf681",
+  "coverage": [
+    {
+      "ref": "E1",
+      "status": "planned",
+      "target": ".panel",
+      "interpretation": "Preserve the source rectangle and its white fill; choose CSS flow separately"
+    },
+    {
+      "ref": "O1",
+      "status": "planned",
+      "target": ".panel",
+      "interpretation": "Preserve the source rectangle and its white fill; choose CSS flow separately"
+    },
+    {
+      "ref": "O2",
+      "status": "planned",
+      "target": ".panel",
+      "interpretation": "Preserve the source rectangle and its white fill; choose CSS flow separately"
+    },
+    {
+      "ref": "O3",
+      "status": "unknown",
+      "target": ".panel",
+      "interpretation": "Preserve the source rectangle and its white fill; choose CSS flow separately"
+    },
+    {
+      "ref": "RAW1",
+      "status": "planned",
+      "target": ".panel",
+      "interpretation": "Preserve the source rectangle and its white fill; choose CSS flow separately"
+    },
+    {
+      "ref": "/elements/0/extensions/product:surface",
+      "status": "planned",
+      "target": ".panel",
+      "interpretation": "Preserve the source rectangle and its white fill; choose CSS flow separately"
+    },
+    {
+      "ref": "O4",
+      "status": "planned",
+      "target": ".panel",
+      "interpretation": "Use measured source box for comparison; choose responsive flow separately rather than absolute-copying coordinates"
+    }
+  ]
+}

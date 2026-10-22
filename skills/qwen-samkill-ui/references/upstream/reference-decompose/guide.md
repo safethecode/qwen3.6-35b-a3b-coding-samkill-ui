@@ -19,6 +19,8 @@ description: Use when a UI reference or screenshot has been obtained for design 
 
 [요소·프롬프트 계약](references/element-contract.md)을 사용한다. 원본을 직접 보고 R-ID와 영역을 고정한 뒤 화면 → 의미 있는 묶음 → 개별 요소/변형으로 분해한다. 이미지 접근이 안 되면 `not-inspected`로 남기며 태그나 상식으로 빈칸을 채우지 않는다.
 
+구현에 넘길 때는 [확장 가능한 분해 JSON](references/decomposition-json.md)에 좌표계·요소 속성·HEX/투명도·관계·상태·에셋과 전체 raw 분석을 연결한다. 관찰과 각색을 분리하고 규격 밖 정보도 확장/원문에 보존한다. 받은 구현 담당이 속성·원문·확장별 해석/미지원/미확인을 기록한 뒤 핵심 화면으로 이해를 검증한다. 기존 문장·표는 raw로 보존하며 검색만·명세만·국소 수정의 범위를 확대하지 않는다.
+
 각색·조합 작업은 [화면 스타일 계약](references/element-contract.md#각색-전-화면-스타일-계약)을 먼저 공유 입력에 넣는다. 원본 색 이름 대신 색·표면·그림·간격이 만드는 관계를 관찰하고, 커스텀 값은 그 관계와 연결한다.
 
 E-ID마다 역할, 부모/형제, 박스와 사방 여유, 정렬, 실제 내용과 줄바꿈, 글자/색/아이콘/경계, 관찰된 상태, 미확인, 조립 관계를 작성한다. 공통 속성은 공유 계약에 한 번 두고 변형에는 차이만 적는다. 상세 측정은 [컴포넌트 분석](../uibowl-research/references/component-anatomy.md)을 따른다.

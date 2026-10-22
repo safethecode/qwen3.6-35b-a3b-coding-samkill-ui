@@ -1,0 +1,34 @@
+{
+  "schema_version": 2,
+  "decomposition": {
+    "path": "decomposition.json",
+    "sha256": "8918ec31ee5f54c4dc8b794df8acf854d747376b66eafa096899f1f0151bf681"
+  },
+  "interpretation": {
+    "path": "interpretation.json",
+    "sha256": "c0a4b98d802f3c98f0c6efcaa2a203cbbd407591db2e3f35ecfba17f310519d1"
+  },
+  "anchors": [
+    {
+      "id": "Q-width",
+      "feature": "Synthetic panel width",
+      "observation_id": "O1",
+      "source": {
+        "path": "reference.svg",
+        "sha256": "54090574d5651633f5dc62af9ae351cf381676afe42b011aa5c206559752f25d"
+      },
+      "observed": {
+        "value": 464,
+        "unit": "image-px",
+        "basis": "measured",
+        "method": "Synthetic SVG width"
+      },
+      "expected": {
+        "value": 464,
+        "unit": "image-px",
+        "tolerance": 0
+      },
+      "target": "Rendered panel at matching image scale"
+    }
+  ]
+}
