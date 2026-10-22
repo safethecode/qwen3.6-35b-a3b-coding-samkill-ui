@@ -41,6 +41,8 @@ description: Use when reviewing implemented UI against references or a design co
 
 E-ID 상세 기록과 토큰 계약을 함께 대조한다. 사방 여백·버튼 배경과 글자/아이콘 조합·아이콘 선/채움/정렬을 확인하고, 토큰 정의 → 참조 → 사용처와 직접값 예외를 코드에서 검사한다. 토큰 파일 존재만으로 토큰화 완료를 판정하지 않는다.
 
+RUI-16/17은 [원본·수치·결과 연결](references/reference-evidence.md)을 실제 게이트에 넣어 검사한다. 원본의 측정값과 구현자가 고른 값을 비교하고, 같은 단위의 실제 결과가 허용 차이를 넘으면 pass 설명으로 덮지 않는다. 원본과 다른 비율·밀도·표현을 ‘읽기 폭 확보/의도적 차이’라고 적은 이유만으로 adapted-and-verified로 올리지 않는다. 수치가 맞아도 핵심 색 면적·사진·패널·타이포 위계가 사라졌으면 시각 퇴보다.
+
 간격 일관성 검토에는 [Spacing Audit](../reference-to-ui/references/spacing-audit.md)을 읽고 사방 padding·gap·그룹 거리·margin을 역할별로 검사한다. 토큰/의도된 예외와 구조의8단위 검토 의견을 하드 off-grid와 구별하고 모든 값을 프레임별로 보고한다. 수정 권한이 있을 때도 요약을 먼저 보여주며, 토큰 보존으로 이중 여백·잘림 등 기존 실패를 해제하지 않는다.
 
 중요 행동은 실제로 실행한다. 정지 화면으로 hover·focus·스크롤 고정·복구를 확인했다고 하지 않는다. 빌드·테스트 결과는 해당 검증에만 사용한다. 미실행 검사는 `not-verified`다.

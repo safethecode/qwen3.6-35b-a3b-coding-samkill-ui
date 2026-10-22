@@ -7,6 +7,9 @@ import os
 from pathlib import Path
 import sys
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from reference_check import compare_reference, prepare_handoff
+
 if os.name == "nt":
     import msvcrt
 else:
@@ -189,10 +192,21 @@ def judge(root, catalog, contract, report, current):
                 failures.append(key)
         except (GateInputError, OSError) as exc:
             errors.append(f"{key}: {exc}")
+    reference_rules = [key for key in ("RUI-16", "RUI-17")
+                       if key in planned and planned[key].get("applicable") is True]
+    reference_findings = []
+    if reference_rules:
+        try:
+            reference_findings = compare_reference(root, contract.get("reference_handoff"),
+                                                   report.get("reference_comparison"), current["target_sha256"])
+            if reference_findings:
+                failures.extend(key for key in reference_rules if key not in failures)
+        except (OSError, ValueError, TypeError) as exc:
+            errors.append(f"{'/'.join(reference_rules)}: {exc}")
     status = "UNVERIFIED" if errors else "FAIL" if failures else "PASS"
     return {"status": status, "errors": errors, "failures": failures,
             "catalog_version": catalog.get("version"), **current,
-            "results": report.get("results", [])}
+            "results": report.get("results", []), "reference_findings": reference_findings}
 
 
 def record_run(ledger, outcome, report_hash):
@@ -216,7 +230,7 @@ def record_run(ledger, outcome, report_hash):
 
 def main():
     parser = argparse.ArgumentParser(description="Validate evidence-backed design decisions, not image aesthetics.")
-    parser.add_argument("command", choices=["fingerprint", "check"])
+    parser.add_argument("command", choices=["prepare", "fingerprint", "check"])
     parser.add_argument("--root", type=Path, required=True)
     parser.add_argument("--catalog", type=Path, default=DEFAULT_CATALOG)
     parser.add_argument("--contract", type=Path, required=True)
@@ -226,6 +240,11 @@ def main():
     try:
         root = args.root.resolve(strict=True)
         contract = read_object(args.contract)
+        if args.command == "prepare":
+            prepare_handoff(root, contract.get("reference_handoff"))
+            print(json.dumps({"status": "READY", "handoff_sha256": contract["reference_handoff"]["sha256"],
+                              "scope": "Measurement handoff only; not implementation or visual approval"}))
+            return 0
         current = fingerprints(root, args.catalog, args.contract, contract)
         if args.command == "fingerprint":
             print(json.dumps(current))

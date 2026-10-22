@@ -1,0 +1,58 @@
+{
+  "source": "https://github.com/safethecode/samkill-ui",
+  "sourceBaseCommit": "cde9efbc116bd6a64bb27020ee27c2a9294b84d1",
+  "sourceState": "Source committed; downstream commit and push authorized on 2026-10-22",
+  "files": [
+    {
+      "source": "skills/samkill-ui/SKILL.md",
+      "target": "skills/qwen-samkill-ui/references/upstream/samkill-ui/guide.md",
+      "sourceSha256": "789bb63a14e698a617006b65f045bc9af4ad7620cc6efaa31f4e12380f97ef7b",
+      "adaptedSha256": "a3bd62919a71d0baf4addd3477848a3fd8c746b9fe26c9a94ec0747b1c350256"
+    },
+    {
+      "source": "skills/reference-decompose/SKILL.md",
+      "target": "skills/qwen-samkill-ui/references/upstream/reference-decompose/guide.md",
+      "sourceSha256": "3c1552adfa340f9ef67f42f2b2d335fa6fd57273f786adf72623766be9ddcb18",
+      "adaptedSha256": "3c1552adfa340f9ef67f42f2b2d335fa6fd57273f786adf72623766be9ddcb18"
+    },
+    {
+      "source": "skills/reference-to-ui/SKILL.md",
+      "target": "skills/qwen-samkill-ui/references/upstream/reference-to-ui/guide.md",
+      "sourceSha256": "bd49f32b354c12f7525aed11f2e4dd1146348d0a31692af72e2681a8b0b07879",
+      "adaptedSha256": "78fd697f9baef2f09f2589d6707c7e9430ce09b913c29abccb3f396b8c8e6ea8"
+    },
+    {
+      "source": "skills/reference-review/SKILL.md",
+      "target": "skills/qwen-samkill-ui/references/upstream/reference-review/guide.md",
+      "sourceSha256": "2677c04232c6f1df24246f11c4e6febb545b2031cf783e61aa2d7fff8843a557",
+      "adaptedSha256": "e610fb493f37bd75039c036b253978114243692e902f99834d13e1e5ff0f5431"
+    },
+    {
+      "source": "skills/reference-review/references/design-gate.md",
+      "target": "skills/qwen-samkill-ui/references/upstream/reference-review/references/design-gate.md",
+      "sourceSha256": "d717f09397b66fdbea88bf580e2c0bc02b58a252907521c6037d3f4b1ff6a906",
+      "adaptedSha256": "d717f09397b66fdbea88bf580e2c0bc02b58a252907521c6037d3f4b1ff6a906"
+    },
+    {
+      "source": "skills/reference-review/references/reference-evidence.md",
+      "target": "skills/qwen-samkill-ui/references/upstream/reference-review/references/reference-evidence.md",
+      "sourceSha256": "39deb7fd15ef55ee8efe60251508d5239119ef2cbaef4f070785088665f60077",
+      "adaptedSha256": "39deb7fd15ef55ee8efe60251508d5239119ef2cbaef4f070785088665f60077"
+    },
+    {
+      "source": "skills/reference-review/scripts/design_gate.py",
+      "target": "skills/qwen-samkill-ui/references/upstream/reference-review/scripts/design_gate.py",
+      "sourceSha256": "2efc8c8b2a62c9651b2515ffde790470f9b9b04c6fe9b1a900ba690f6d54ea6d",
+      "adaptedSha256": "a6176baf4ac7e5874fc01d6b92f0594216a8c42729150c90dacb708ee545db8d",
+      "preservedAdaptation": "Qwen sidecar ledger lock and Windows support"
+    },
+    {
+      "source": "skills/reference-review/scripts/reference_check.py",
+      "target": "skills/qwen-samkill-ui/references/upstream/reference-review/scripts/reference_check.py",
+      "sourceSha256": "c3aafa9e5c932efbaabc18091d6486d443701601c35c36855922ccc35030c881",
+      "adaptedSha256": "edcfb81dbaf7c10f8e6e9780cf8b470e52a6784261f5635dc780c0e103307b3e",
+      "preservedAdaptation": "Module docstring removed for local source style"
+    }
+  ],
+  "sourceCommit": "3b7ed67a994572b226601157a0114e78f924840d"
+}

@@ -27,6 +27,8 @@ catalog/contract/report의 `schema_version`은 1이다. 계약은 `catalog_versi
 
 결과 필드: `id`, `status`(`pass/fail/unknown/exception/not-applicable`), `reason`, `evidence`. 예외 결과에는 선언된 `exception_id`를 쓴다. evidence 항목은 `kind`, `path`(--root 상대 경로), `sha256`이다. `not-applicable`은 계약에서 적용 대상이 아닌 규칙에만 허용한다.
 
+RUI-16/17이 적용되면 [원본 비교의 실행 검사](reference-evidence.md)에 따라 계약의 `reference_handoff`와 보고서의 `reference_comparison`을 `{path, sha256}`으로 연결한다. 구현 전 prepare는 원본 수치·단위·근거와 변경 요구를 검사하며, 구현 후 check는 현재 소스에 묶인 비교·허용 차이·전체 시각 판독을 요구한다. 기존 파일의 pass 문자열이나 이미지 경로만으로 이 두 규칙을 통과시키지 않는다. 과거 기록은 보존하지만 새 검사에서 비교 자료가 부족하면 UNVERIFIED다.
+
 ## 실제 판독 순서
 
 설계·구현자는 원본과 출력물을 비교해 **실제로 확인한** 판정을 쓴다. 코드 패턴은 코드와 lint, 외형은 실제 스크린샷, 행동은 실행 기록으로 확인한다. 같은 스타일도 적용 범위와 선언된 예외를 함께 본다. 해결하지 못한 문제는 fail, 확인할 근거가 없으면 unknown이다.
