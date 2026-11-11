@@ -1,6 +1,6 @@
 ---
 name: reference-decompose
-description: Use when a UI reference or screenshot has been obtained for design or implementation, when translating visual elements into implementation prompts, or when user feedback identifies a mismatch between a reference and its reconstruction.
+description: "UI 레퍼런스를 요소·좌표·HEX·관계로 분해해 확장 JSON과 전체 원문으로 전달한다. 설계·구현용 레퍼런스 분석, 구현 프롬프트 작성, 원본과 재현 결과의 불일치 교정에 사용한다."
 ---
 
 # 레퍼런스를 구현 언어로 분해하기

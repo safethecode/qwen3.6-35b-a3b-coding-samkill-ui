@@ -1,6 +1,6 @@
 ---
 name: onboarding-flow
-description: Use when designing or reviewing reference-based onboarding, signup, first-run setup, consent steps, or their failure, back-navigation, and re-entry paths.
+description: "레퍼런스를 바탕으로 온보딩·가입·첫 사용·동의 절차와 실패·뒤로 가기·재진입 흐름을 설계하거나 검토할 때 사용한다."
 ---
 
 # 레퍼런스 기반 온보딩 플로우

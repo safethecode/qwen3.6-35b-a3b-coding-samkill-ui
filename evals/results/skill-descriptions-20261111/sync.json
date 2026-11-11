@@ -1,0 +1,84 @@
+{
+  "files": [
+    {
+      "source": "skills/samkill-ui/SKILL.md",
+      "target": "skills/qwen-samkill-ui/references/upstream/samkill-ui/guide.md",
+      "source_sha256": "e5957c5f364039126d86a821d161e2bba0a78a7244fd64a84001a1f179e33c3d",
+      "adapted_sha256": "196c606c829cec338e12b63ab59fbcbc374c327874fa2754321595f24ee47fd2",
+      "body_sha256_before": "49146b9dc306f261491ad38c923e65617ae3a3a217fc83778f95ae8b02d0c967",
+      "body_sha256_after": "49146b9dc306f261491ad38c923e65617ae3a3a217fc83778f95ae8b02d0c967"
+    },
+    {
+      "source": "skills/uibowl-research/SKILL.md",
+      "target": "skills/qwen-samkill-ui/references/upstream/uibowl-research/guide.md",
+      "source_sha256": "cba21bb9de17f9437c729a2454de62468bfe6128694b88ce7f15729d770b9c18",
+      "adapted_sha256": "d6a40114e65ddc22e53193ff6ed9999c8f203c9110b8417387ea60944ba45a1e",
+      "body_sha256_before": "00aa2f4e472da167f7a09f00cd20e494ff83591398bd9bd8b66c157810d5b73d",
+      "body_sha256_after": "00aa2f4e472da167f7a09f00cd20e494ff83591398bd9bd8b66c157810d5b73d"
+    },
+    {
+      "source": "skills/reference-decompose/SKILL.md",
+      "target": "skills/qwen-samkill-ui/references/upstream/reference-decompose/guide.md",
+      "source_sha256": "4b62d66b795921ca39139331b7f05df434c78901db070b3eb8643926dd3aa328",
+      "adapted_sha256": "4b62d66b795921ca39139331b7f05df434c78901db070b3eb8643926dd3aa328",
+      "body_sha256_before": "7c63fe5b93ddadcf387e72515793336be258eb3d21e49b091fae3e7b8e63415b",
+      "body_sha256_after": "7c63fe5b93ddadcf387e72515793336be258eb3d21e49b091fae3e7b8e63415b"
+    },
+    {
+      "source": "skills/reference-to-ui/SKILL.md",
+      "target": "skills/qwen-samkill-ui/references/upstream/reference-to-ui/guide.md",
+      "source_sha256": "92aaaf86e1bb5d2cffaa37e70ad5b4ac8274b9b1bd8e1cd406e3682da82d7801",
+      "adapted_sha256": "0c6357670e33e835fa769c6c67c778446895c613e348aa3672c2610932be1802",
+      "body_sha256_before": "8e2acd3f9bc143ab3eb656c7acd867f1ef561daf1f12175625d3ed589b206eff",
+      "body_sha256_after": "8e2acd3f9bc143ab3eb656c7acd867f1ef561daf1f12175625d3ed589b206eff"
+    },
+    {
+      "source": "skills/reference-review/SKILL.md",
+      "target": "skills/qwen-samkill-ui/references/upstream/reference-review/guide.md",
+      "source_sha256": "02d49963f6597fa71db626926490a39add32f3ef28a0f8e06d39c3eac76f111f",
+      "adapted_sha256": "e785810b703382be94477516be24bab31e9e104e94ac1b3e7c8e5f99916fa9dd",
+      "body_sha256_before": "05ad88256b5c409fae7b56f39287b5c85beb27aa5217e1b82480a1e736937800",
+      "body_sha256_after": "05ad88256b5c409fae7b56f39287b5c85beb27aa5217e1b82480a1e736937800"
+    },
+    {
+      "source": "skills/design-md/SKILL.md",
+      "target": "skills/qwen-samkill-ui/references/upstream/design-md/guide.md",
+      "source_sha256": "b22decc4d5f96117da54cd610e88449d799bd2ce3692a4f6ff697f93a601ba19",
+      "adapted_sha256": "b22decc4d5f96117da54cd610e88449d799bd2ce3692a4f6ff697f93a601ba19",
+      "body_sha256_before": "9e93153240a4d1a075413c99a1a11671300093c9e125878798945bae60b3954f",
+      "body_sha256_after": "9e93153240a4d1a075413c99a1a11671300093c9e125878798945bae60b3954f"
+    },
+    {
+      "source": "skills/ux-copy/SKILL.md",
+      "target": "skills/qwen-samkill-ui/references/upstream/ux-copy/guide.md",
+      "source_sha256": "487f6c33a235883b3dec125eefff68fec0b709bbf2426da8857d8a2ebaa83a30",
+      "adapted_sha256": "487f6c33a235883b3dec125eefff68fec0b709bbf2426da8857d8a2ebaa83a30",
+      "body_sha256_before": "544ab5c8efb3ad7c651ada0efe184e4ad8b659c6eb7b0646bb60306f9535ffaa",
+      "body_sha256_after": "544ab5c8efb3ad7c651ada0efe184e4ad8b659c6eb7b0646bb60306f9535ffaa"
+    },
+    {
+      "source": "skills/onboarding-flow/SKILL.md",
+      "target": "skills/qwen-samkill-ui/references/upstream/onboarding-flow/guide.md",
+      "source_sha256": "ef446f1ac9a7fd525e0d62724b079974db695960bd8e9387294ec7d8693cc931",
+      "adapted_sha256": "ef446f1ac9a7fd525e0d62724b079974db695960bd8e9387294ec7d8693cc931",
+      "body_sha256_before": "fdf9a9f8acecf96833c0f797e52b5d68ca7bd555f96c9b504e8391477437989e",
+      "body_sha256_after": "fdf9a9f8acecf96833c0f797e52b5d68ca7bd555f96c9b504e8391477437989e"
+    },
+    {
+      "source": "skills/reference-decompose/agents/openai.yaml",
+      "target": "skills/qwen-samkill-ui/references/upstream/reference-decompose/agents/openai.yaml",
+      "source_sha256": "6306f13cd93d79281cacaf0bd47c9ca7ce10c2d7f308715d4995ea79139c27a3",
+      "adapted_sha256": "6306f13cd93d79281cacaf0bd47c9ca7ce10c2d7f308715d4995ea79139c27a3"
+    }
+  ],
+  "scope": "Descriptions and missing UI metadata only; guide filenames and all existing bodies preserved",
+  "source_commit": "54879dcc869eacccb22a68b79d397e6c32f88c99",
+  "source_repository": "samkill-ui",
+  "date": "2026-11-11",
+  "validation": {
+    "frontmatter": "8descriptions equal translated source; body hashes unchanged",
+    "ui_metadata": "reference-decompose exact source bytes",
+    "scope": "No loader, runner, local-model contract or quality gate changes",
+    "live_picker_and_inference": "not verified"
+  }
+}

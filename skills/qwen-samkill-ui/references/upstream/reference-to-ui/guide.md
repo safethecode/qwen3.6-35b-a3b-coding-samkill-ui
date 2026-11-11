@@ -1,6 +1,6 @@
 ---
 name: reference-to-ui
-description: Use when building, redesigning, or tokenizing UI from references, screenshots, or a UIbowl brief, or when requested UI must avoid generic AI-looking layouts and decoration.
+description: "레퍼런스·스크린샷·UIbowl 브리프를 바탕으로 UI를 제작·리디자인하거나 디자인 토큰을 정리할 때 사용한다. 전형적인 AI풍 레이아웃과 장식을 피해야 하는 UI 작업에도 적용한다."
 ---
 
 # 레퍼런스 기반 UI 구현

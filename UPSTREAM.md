@@ -34,3 +34,8 @@ The user subsequently authorized committing and pushing the measurement update. 
 The user authorized the complete JSON/raw/interpretation and first-core-screen workflow update and its commit/push. Only the changed files in [the source/adapted manifest](evals/results/decomposition-json-20261023/sync.json) are refreshed; unchanged snapshots retain their prior provenance. [The update record](docs/upstream-sync-20261023.md) distinguishes structural checks, actual host input delivery and visual/comprehension limits. The exact source commit is pinned after source validation. Sidecar/Windows locks and75catalog rules remain unchanged.
 
 The2026-10-23 changed-file source revision is now `5ed255f4c803c2270fb920045edd023fa7a0b0de`; its15source/adapted hashes are verified against the committed source.
+
+
+## Korean skill descriptions (2026-11-11)
+
+Source `54879dcc869eacccb22a68b79d397e6c32f88c99` updates discovery descriptions and adds the missing decomposition UI metadata. Eight adapted headers are Korean; all existing guide bodies and runtime contracts remain unchanged. [Scope and checks](docs/upstream-sync-20261111.md); [source/adapted hashes](evals/results/skill-descriptions-20261111/sync.json). Historical snapshot pins remain historical evidence.

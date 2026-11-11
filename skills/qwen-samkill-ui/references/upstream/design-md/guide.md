@@ -1,6 +1,6 @@
 ---
 name: design-md
-description: Analyze existing UI, design tokens, references, and product requirements to create or update a repository-root DESIGN.md; use when establishing persistent design context or reconciling design documentation with implementation, not for implementing UI itself.
+description: "기존 UI·디자인 토큰·레퍼런스·제품 요구를 분석해 저장소 루트의 DESIGN.md를 작성·갱신한다. 지속적인 디자인 맥락을 정리하거나 문서와 구현의 차이를 맞추는 작업에 사용하며, UI 자체의 구현은 별도다."
 ---
 
 # 분석해서 DESIGN.md 만들기

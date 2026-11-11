@@ -1,6 +1,6 @@
 ---
 name: reference-review
-description: Use when reviewing implemented UI against references or a design contract, auditing design-token usage and component detail, checking generic AI-looking design drift, or assessing claimed visual completion after a build passes.
+description: "구현된 UI를 레퍼런스·디자인 계약과 비교하고 토큰 사용·컴포넌트 디테일·전형적인 AI풍 디자인을 검토할 때 사용한다. 빌드 통과 후 실제 시각적 완성도를 판단할 때도 적용한다."
 ---
 
 # 레퍼런스 기반 UI 리뷰

@@ -1,6 +1,6 @@
 ---
 name: ux-copy
-description: Use when writing or reviewing UI labels, onboarding copy, empty states, errors, or Korean product microcopy, including 번역투 제거 and 토스 라이팅 원칙 적용; not for general article rewriting.
+description: "UI 라벨, 온보딩, 빈 화면, 오류 안내 등 한국어 제품 문구를 작성·검토할 때 사용한다. 번역투를 줄이고 토스의 글쓰기 원칙을 적용하며, 일반 글의 윤문은 별도다."
 ---
 
 # 제품 UX 문구

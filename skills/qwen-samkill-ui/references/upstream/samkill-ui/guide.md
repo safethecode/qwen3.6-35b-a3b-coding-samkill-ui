@@ -1,6 +1,6 @@
 ---
 name: samkill-ui
-description: Use when the user invokes samkill-ui or wants the samkill UI workflow for reference research, interface design, implementation, Korean product copy, onboarding, or review without selecting individual skills.
+description: "samkill-ui를 직접 호출하거나 개별 스킬을 고르지 않고 레퍼런스 조사, UI 설계·구현, 한국어 제품 문구, 온보딩, 검수를 진행할 때 사용한다."
 ---
 
 # Samkill UI

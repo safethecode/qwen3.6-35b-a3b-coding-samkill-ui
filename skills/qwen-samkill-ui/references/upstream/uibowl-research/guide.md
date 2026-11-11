@@ -1,6 +1,6 @@
 ---
 name: uibowl-research
-description: Use when UIbowl references, screen patterns, components, screen copy, or app comparisons are requested, including multi-feature research, accumulated references, detailed padding, color pairings, typography, and icon analysis, or when research lacks visual evidence.
+description: "UIbowl 레퍼런스, 화면 패턴·컴포넌트·문구, 앱 비교를 조사할 때 사용한다. 복합 기능 조사와 자료 누적, 상세 여백·배색·타이포그래피·아이콘 분석, 이미지 근거가 부족한 조사에도 적용한다."
 ---
 
 # UIbowl 레퍼런스 리서치
