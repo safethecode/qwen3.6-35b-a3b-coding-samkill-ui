@@ -5,18 +5,18 @@ import { componentScope } from './component-scope.mjs';
 const upstream = new URL('../skills/qwen-samkill-ui/references/upstream/', import.meta.url);
 const sharedGenerationGuides = ['../decomposed-layout.md'];
 const routes = {
-  shell: ['reference-to-ui/references/application-format.md', 'reference-to-ui/references/icon-controls.md'],
-  state: ['onboarding-flow/references/flow-contract.md'],
-  behavior: ['reference-review/references/state-stress.md'],
-  forms: ['onboarding-flow/references/flow-contract.md', 'reference-review/references/state-stress.md'],
-  layout: ['reference-to-ui/references/typography.md', 'reference-to-ui/references/design-guardrails.md', 'reference-to-ui/references/spacing-audit.md'],
-  responsive: ['reference-to-ui/references/mobile.md', 'reference-to-ui/references/icon-controls.md']
+  shell: ['samkill-reference-to-ui/references/application-format.md', 'samkill-reference-to-ui/references/icon-controls.md'],
+  state: ['samkill-onboarding-flow/references/flow-contract.md'],
+  behavior: ['samkill-reference-review/references/state-stress.md'],
+  forms: ['samkill-onboarding-flow/references/flow-contract.md', 'samkill-reference-review/references/state-stress.md'],
+  layout: ['samkill-reference-to-ui/references/typography.md', 'samkill-reference-to-ui/references/design-guardrails.md', 'samkill-reference-to-ui/references/spacing-audit.md'],
+  responsive: ['samkill-reference-to-ui/references/mobile.md', 'samkill-reference-to-ui/references/icon-controls.md']
 };
 const digest = value => createHash('sha256').update(value).digest('hex');
 
 export async function componentSkillContext(element) {
-  const paths = [...sharedGenerationGuides, ...routes.layout, 'reference-to-ui/references/mobile.md'];
-  if (element.assets.some(asset => /\.svg$/i.test(asset))) paths.push('reference-to-ui/references/icon-controls.md');
+  const paths = [...sharedGenerationGuides, ...routes.layout, 'samkill-reference-to-ui/references/mobile.md'];
+  if (element.assets.some(asset => /\.svg$/i.test(asset))) paths.push('samkill-reference-to-ui/references/icon-controls.md');
   const sources = await Promise.all(paths.map(async path => ({ path, text: await readFile(new URL(path, upstream), 'utf8') })));
   return { text: `${sources.map(source => `GENERATION GUIDE ${source.path}\n${source.text}`).join('\n\n')}\n\nOWNED SELECTOR CONTEXT\n${JSON.stringify(componentScope(element))}`, sources: sources.map(({ path, text }) => ({ path, sha256: digest(text) })) };
 }
@@ -37,6 +37,6 @@ export async function skillInventory() {
     }
   };
   await visit('');
-  const catalog = JSON.parse(await readFile(new URL('reference-review/references/failure-catalog.json', upstream), 'utf8'));
+  const catalog = JSON.parse(await readFile(new URL('samkill-reference-review/references/failure-catalog.json', upstream), 'utf8'));
   return { sources: sources.sort((a, b) => a.path.localeCompare(b.path)), catalogVersion: catalog.version, rules: catalog.rules.filter(rule => rule.status === 'active'), routes, sharedGenerationGuides, limitation: 'Stage routing supports generation, not full compliance. Every active rule and relevant guide still requires scoped evidence in the mandatory catalog review.' };
 }

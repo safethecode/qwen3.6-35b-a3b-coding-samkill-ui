@@ -39,3 +39,8 @@ The2026-10-23 changed-file source revision is now `5ed255f4c803c2270fb920045edd0
 ## Korean skill descriptions (2026-11-11)
 
 Source `54879dcc869eacccb22a68b79d397e6c32f88c99` updates discovery descriptions and adds the missing decomposition UI metadata. Eight adapted headers are Korean; all existing guide bodies and runtime contracts remain unchanged. [Scope and checks](docs/upstream-sync-20261111.md); [source/adapted hashes](evals/results/skill-descriptions-20261111/sync.json). Historical snapshot pins remain historical evidence.
+
+
+## Samkill invocation namespace (2026-11-11)
+
+Source `db236d3ffc14c99165616170b5f179a42f1307bb` aligns seven names and all active callers with the Samkill namespace while keeping Korean descriptions. [Scope and validation](docs/upstream-namespace-20261111.md); [current source/adapted hashes](evals/results/skill-namespace-20261111/sync.json). Prior manifests remain historical records. Runtime loaders use the moved guide/catalog paths; existing helper adaptations and product contracts remain unchanged.

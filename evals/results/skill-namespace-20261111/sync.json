@@ -1,0 +1,415 @@
+{
+  "source_revision": "db236d3ffc14c99165616170b5f179a42f1307bb",
+  "scope": "Invocation namespace and display metadata; no helper behavior refresh",
+  "files": [
+    {
+      "source": "skills/samkill-design-md/agents/openai.yaml",
+      "target": "skills/qwen-samkill-ui/references/upstream/samkill-design-md/agents/openai.yaml",
+      "source_sha256": "d339578680da3168a4bc5d728f1f776fd87997b6d708aee5e9eeaedc5ac00119",
+      "adapted_sha256": "d339578680da3168a4bc5d728f1f776fd87997b6d708aee5e9eeaedc5ac00119",
+      "adaptation": "exact source bytes"
+    },
+    {
+      "source": "skills/samkill-design-md/SKILL.md",
+      "target": "skills/qwen-samkill-ui/references/upstream/samkill-design-md/guide.md",
+      "source_sha256": "a868bb80ef55585763f25d0ddb5c624a1ea9257e1c0264ffa9bc8177c5bbf352",
+      "adapted_sha256": "a868bb80ef55585763f25d0ddb5c624a1ea9257e1c0264ffa9bc8177c5bbf352",
+      "adaptation": "exact source bytes"
+    },
+    {
+      "source": "skills/samkill-design-md/references/document-contract.md",
+      "target": "skills/qwen-samkill-ui/references/upstream/samkill-design-md/references/document-contract.md",
+      "source_sha256": "f112d473519c5ff8efc0b190aa89930bc137162fbe07a32f9b7cad390a64c828",
+      "adapted_sha256": "f112d473519c5ff8efc0b190aa89930bc137162fbe07a32f9b7cad390a64c828",
+      "adaptation": "exact source bytes"
+    },
+    {
+      "source": "skills/samkill-onboarding-flow/agents/openai.yaml",
+      "target": "skills/qwen-samkill-ui/references/upstream/samkill-onboarding-flow/agents/openai.yaml",
+      "source_sha256": "7fdc3efacc775a8d3512cc6962b1a74a5d6503a78919e4cce8b67cd5bc36288a",
+      "adapted_sha256": "7fdc3efacc775a8d3512cc6962b1a74a5d6503a78919e4cce8b67cd5bc36288a",
+      "adaptation": "exact source bytes"
+    },
+    {
+      "source": "skills/samkill-onboarding-flow/SKILL.md",
+      "target": "skills/qwen-samkill-ui/references/upstream/samkill-onboarding-flow/guide.md",
+      "source_sha256": "e7ca5fe10e39854d4c512a8774a0a9ec605470779236da76c4a5a8f63cfb1984",
+      "adapted_sha256": "e7ca5fe10e39854d4c512a8774a0a9ec605470779236da76c4a5a8f63cfb1984",
+      "adaptation": "exact source bytes"
+    },
+    {
+      "source": "skills/samkill-onboarding-flow/references/flow-contract.md",
+      "target": "skills/qwen-samkill-ui/references/upstream/samkill-onboarding-flow/references/flow-contract.md",
+      "source_sha256": "01c0415d7e398721875fc63e31123528ec10a8b63f703416fcb55cbdab645781",
+      "adapted_sha256": "01c0415d7e398721875fc63e31123528ec10a8b63f703416fcb55cbdab645781",
+      "adaptation": "exact source bytes"
+    },
+    {
+      "source": "skills/samkill-reference-decompose/agents/openai.yaml",
+      "target": "skills/qwen-samkill-ui/references/upstream/samkill-reference-decompose/agents/openai.yaml",
+      "source_sha256": "2935844694a429227675913dc679d56cad499dceccec102fcd00f6dc4ffa04de",
+      "adapted_sha256": "2935844694a429227675913dc679d56cad499dceccec102fcd00f6dc4ffa04de",
+      "adaptation": "exact source bytes"
+    },
+    {
+      "source": "skills/samkill-reference-decompose/SKILL.md",
+      "target": "skills/qwen-samkill-ui/references/upstream/samkill-reference-decompose/guide.md",
+      "source_sha256": "4fe1f8566b6b3dd7552245adecf7839b3b8505d66308d29a2983f997d61f5d85",
+      "adapted_sha256": "4fe1f8566b6b3dd7552245adecf7839b3b8505d66308d29a2983f997d61f5d85",
+      "adaptation": "exact source bytes"
+    },
+    {
+      "source": "skills/samkill-reference-decompose/references/decomposition-json.md",
+      "target": "skills/qwen-samkill-ui/references/upstream/samkill-reference-decompose/references/decomposition-json.md",
+      "source_sha256": "b79cfd37cd2209228ff27fc71ef5932766d33e1f249cca14006fda4881cd8247",
+      "adapted_sha256": "b79cfd37cd2209228ff27fc71ef5932766d33e1f249cca14006fda4881cd8247",
+      "adaptation": "exact source bytes"
+    },
+    {
+      "source": "skills/samkill-reference-decompose/references/element-contract.md",
+      "target": "skills/qwen-samkill-ui/references/upstream/samkill-reference-decompose/references/element-contract.md",
+      "source_sha256": "d9def52a71584717b993f30726c5ac1529fca878dc71620d7642ea48c57d11aa",
+      "adapted_sha256": "d9def52a71584717b993f30726c5ac1529fca878dc71620d7642ea48c57d11aa",
+      "adaptation": "exact source bytes"
+    },
+    {
+      "source": "skills/samkill-reference-decompose/references/json-example/decomposition.json",
+      "target": "skills/qwen-samkill-ui/references/upstream/samkill-reference-decompose/references/json-example/decomposition.json",
+      "source_sha256": "8918ec31ee5f54c4dc8b794df8acf854d747376b66eafa096899f1f0151bf681",
+      "adapted_sha256": "8918ec31ee5f54c4dc8b794df8acf854d747376b66eafa096899f1f0151bf681",
+      "adaptation": "exact source bytes"
+    },
+    {
+      "source": "skills/samkill-reference-decompose/references/json-example/handoff.json",
+      "target": "skills/qwen-samkill-ui/references/upstream/samkill-reference-decompose/references/json-example/handoff.json",
+      "source_sha256": "56b1a3cfd9a52ff68e4b0e43fa2006e70c4e073d79258c010251780b671fc50d",
+      "adapted_sha256": "56b1a3cfd9a52ff68e4b0e43fa2006e70c4e073d79258c010251780b671fc50d",
+      "adaptation": "exact source bytes"
+    },
+    {
+      "source": "skills/samkill-reference-decompose/references/json-example/interpretation.json",
+      "target": "skills/qwen-samkill-ui/references/upstream/samkill-reference-decompose/references/json-example/interpretation.json",
+      "source_sha256": "c0a4b98d802f3c98f0c6efcaa2a203cbbd407591db2e3f35ecfba17f310519d1",
+      "adapted_sha256": "c0a4b98d802f3c98f0c6efcaa2a203cbbd407591db2e3f35ecfba17f310519d1",
+      "adaptation": "exact source bytes"
+    },
+    {
+      "source": "skills/samkill-reference-decompose/references/json-example/raw-analysis.md",
+      "target": "skills/qwen-samkill-ui/references/upstream/samkill-reference-decompose/references/json-example/raw-analysis.md",
+      "source_sha256": "b732b425e684b51303152f6c07f3d26103bab171fd97976ca7823478fed943e3",
+      "adapted_sha256": "b732b425e684b51303152f6c07f3d26103bab171fd97976ca7823478fed943e3",
+      "adaptation": "exact source bytes"
+    },
+    {
+      "source": "skills/samkill-reference-decompose/references/json-example/reference.svg",
+      "target": "skills/qwen-samkill-ui/references/upstream/samkill-reference-decompose/references/json-example/reference.svg",
+      "source_sha256": "54090574d5651633f5dc62af9ae351cf381676afe42b011aa5c206559752f25d",
+      "adapted_sha256": "54090574d5651633f5dc62af9ae351cf381676afe42b011aa5c206559752f25d",
+      "adaptation": "exact source bytes"
+    },
+    {
+      "source": "skills/samkill-reference-review/agents/openai.yaml",
+      "target": "skills/qwen-samkill-ui/references/upstream/samkill-reference-review/agents/openai.yaml",
+      "source_sha256": "e62586b3ffc260a20b8685dcc9ff93f7aa46eb02635a8da291c98855aaf3918d",
+      "adapted_sha256": "e62586b3ffc260a20b8685dcc9ff93f7aa46eb02635a8da291c98855aaf3918d",
+      "adaptation": "exact source bytes"
+    },
+    {
+      "source": "skills/samkill-reference-review/SKILL.md",
+      "target": "skills/qwen-samkill-ui/references/upstream/samkill-reference-review/guide.md",
+      "source_sha256": "7ee66a710f92ed73d1ef3dd1cb9f02bddb230f53c53997c4ed318991d3135ab4",
+      "adapted_sha256": "d1110141995912057a681f84f2ea08792afd6bf83059a9db844783c2921f7224",
+      "adaptation": "SKILL.md to guide.md"
+    },
+    {
+      "source": "skills/samkill-reference-review/references/change-review.md",
+      "target": "skills/qwen-samkill-ui/references/upstream/samkill-reference-review/references/change-review.md",
+      "source_sha256": "f233da0c1ab7deada444b697e0e10f755681481a2ad1995d80662dd0341ae15d",
+      "adapted_sha256": "f233da0c1ab7deada444b697e0e10f755681481a2ad1995d80662dd0341ae15d",
+      "adaptation": "exact source bytes"
+    },
+    {
+      "source": "skills/samkill-reference-review/references/design-gate.md",
+      "target": "skills/qwen-samkill-ui/references/upstream/samkill-reference-review/references/design-gate.md",
+      "source_sha256": "95ae95e1ca323e1f14ea7fcdf9f8391acb2c7e391f200584730d2925209e9684",
+      "adapted_sha256": "95ae95e1ca323e1f14ea7fcdf9f8391acb2c7e391f200584730d2925209e9684",
+      "adaptation": "exact source bytes"
+    },
+    {
+      "source": "skills/samkill-reference-review/references/deslop-triage.md",
+      "target": "skills/qwen-samkill-ui/references/upstream/samkill-reference-review/references/deslop-triage.md",
+      "source_sha256": "4c96126fe9fb6bbef4e00c4a8b9b2ff5d356898dd5f946f39adfadfaaf2289ef",
+      "adapted_sha256": "4c96126fe9fb6bbef4e00c4a8b9b2ff5d356898dd5f946f39adfadfaaf2289ef",
+      "adaptation": "exact source bytes"
+    },
+    {
+      "source": "skills/samkill-reference-review/references/failure-catalog.json",
+      "target": "skills/qwen-samkill-ui/references/upstream/samkill-reference-review/references/failure-catalog.json",
+      "source_sha256": "87c11b78536f7259e3bd838df9a14a495c0af13fdd69ba6d7c871408ff0a6216",
+      "adapted_sha256": "87c11b78536f7259e3bd838df9a14a495c0af13fdd69ba6d7c871408ff0a6216",
+      "adaptation": "exact source bytes"
+    },
+    {
+      "source": "skills/samkill-reference-review/references/feedback-regression.md",
+      "target": "skills/qwen-samkill-ui/references/upstream/samkill-reference-review/references/feedback-regression.md",
+      "source_sha256": "c851d109d5b066db885b30ba84813d577d7b14a261ad24fe496c96b98d84d46f",
+      "adapted_sha256": "c851d109d5b066db885b30ba84813d577d7b14a261ad24fe496c96b98d84d46f",
+      "adaptation": "exact source bytes"
+    },
+    {
+      "source": "skills/samkill-reference-review/references/reference-evidence.md",
+      "target": "skills/qwen-samkill-ui/references/upstream/samkill-reference-review/references/reference-evidence.md",
+      "source_sha256": "9b9f8ccddb58ae565a4422d2d9aede532003e70b09c4bf5c253eb6be95b52f1d",
+      "adapted_sha256": "9b9f8ccddb58ae565a4422d2d9aede532003e70b09c4bf5c253eb6be95b52f1d",
+      "adaptation": "exact source bytes"
+    },
+    {
+      "source": "skills/samkill-reference-review/references/review-criteria.md",
+      "target": "skills/qwen-samkill-ui/references/upstream/samkill-reference-review/references/review-criteria.md",
+      "source_sha256": "2a9f5823b1e5e940772111ccd372ea4f65c157dd2b78d8b41c75e47826b56b69",
+      "adapted_sha256": "2a9f5823b1e5e940772111ccd372ea4f65c157dd2b78d8b41c75e47826b56b69",
+      "adaptation": "exact source bytes"
+    },
+    {
+      "source": "skills/samkill-reference-review/references/state-stress.md",
+      "target": "skills/qwen-samkill-ui/references/upstream/samkill-reference-review/references/state-stress.md",
+      "source_sha256": "3cb10c3e737af1cf52b82ede9fe4d89220e20c220fe3fa96c9393cf9323aa7bc",
+      "adapted_sha256": "3cb10c3e737af1cf52b82ede9fe4d89220e20c220fe3fa96c9393cf9323aa7bc",
+      "adaptation": "exact source bytes"
+    },
+    {
+      "source": "skills/samkill-reference-review/scripts/design_gate.py",
+      "target": "skills/qwen-samkill-ui/references/upstream/samkill-reference-review/scripts/design_gate.py",
+      "source_sha256": "f42fb014bf9ebc5c153b6163af6c1767cd7910d1023511135223a173d755a69b",
+      "adapted_sha256": "c3bf8a4bbffb78e031ce267352ace7cc1261929f97b4816a00ae389e7c53674c",
+      "adaptation": "existing local Python lock adaptation; unchanged from pre-migration HEAD"
+    },
+    {
+      "source": "skills/samkill-reference-review/scripts/reference_check.py",
+      "target": "skills/qwen-samkill-ui/references/upstream/samkill-reference-review/scripts/reference_check.py",
+      "source_sha256": "e7e145d234d7b745ed01eb5a88475977a19d2190c9d4fbe5c5f77f0f5fb19e8b",
+      "adapted_sha256": "4fd002cdc5170225b45ff89c6f1071fe8cbb3e1320b5e31628f115cfed493497",
+      "adaptation": "existing local Python lock adaptation; unchanged from pre-migration HEAD"
+    },
+    {
+      "source": "skills/samkill-reference-to-ui/agents/openai.yaml",
+      "target": "skills/qwen-samkill-ui/references/upstream/samkill-reference-to-ui/agents/openai.yaml",
+      "source_sha256": "7564747ad401abd42467dfaa3855822c59b531bac59209c184432744b403d23f",
+      "adapted_sha256": "7564747ad401abd42467dfaa3855822c59b531bac59209c184432744b403d23f",
+      "adaptation": "exact source bytes"
+    },
+    {
+      "source": "skills/samkill-reference-to-ui/SKILL.md",
+      "target": "skills/qwen-samkill-ui/references/upstream/samkill-reference-to-ui/guide.md",
+      "source_sha256": "8ef0d84f8ff713fc88c2fd6bd600d7130be0c02c377a79ab92f11772a7715b75",
+      "adapted_sha256": "cafd3d918c77a2e8b7f88866d6e8399776c3e1e38bcb7ca90e32ebd541d93c7a",
+      "adaptation": "SKILL.md to guide.md"
+    },
+    {
+      "source": "skills/samkill-reference-to-ui/references/anti-slop-code.md",
+      "target": "skills/qwen-samkill-ui/references/upstream/samkill-reference-to-ui/references/anti-slop-code.md",
+      "source_sha256": "d42b804d3678f35ea4c3bf3f50d8fafb372fa4e189a4f537e10ea1768e739b34",
+      "adapted_sha256": "7bb1662ffcedc65705e344ff654c1f127538b8ab65009949939be1c615d37d15",
+      "adaptation": "SKILL.md to guide.md"
+    },
+    {
+      "source": "skills/samkill-reference-to-ui/references/application-format.md",
+      "target": "skills/qwen-samkill-ui/references/upstream/samkill-reference-to-ui/references/application-format.md",
+      "source_sha256": "91e9b758fb931bcc07d6aff9556e116ebdab665d4de33ee735191f00088289c7",
+      "adapted_sha256": "91e9b758fb931bcc07d6aff9556e116ebdab665d4de33ee735191f00088289c7",
+      "adaptation": "exact source bytes"
+    },
+    {
+      "source": "skills/samkill-reference-to-ui/references/dashboard.md",
+      "target": "skills/qwen-samkill-ui/references/upstream/samkill-reference-to-ui/references/dashboard.md",
+      "source_sha256": "d538eb259aa2b2a73d083deceafb83009cb72600d471a0d4261e9b3ea68729b2",
+      "adapted_sha256": "d538eb259aa2b2a73d083deceafb83009cb72600d471a0d4261e9b3ea68729b2",
+      "adaptation": "exact source bytes"
+    },
+    {
+      "source": "skills/samkill-reference-to-ui/references/design-guardrails.md",
+      "target": "skills/qwen-samkill-ui/references/upstream/samkill-reference-to-ui/references/design-guardrails.md",
+      "source_sha256": "de480db23a18898f55ac1337c46ff173f34ca82c665a22dbca3127078039fb26",
+      "adapted_sha256": "de480db23a18898f55ac1337c46ff173f34ca82c665a22dbca3127078039fb26",
+      "adaptation": "exact source bytes"
+    },
+    {
+      "source": "skills/samkill-reference-to-ui/references/design-tokens.md",
+      "target": "skills/qwen-samkill-ui/references/upstream/samkill-reference-to-ui/references/design-tokens.md",
+      "source_sha256": "7fd10c97b710938d659cf9b475c87682a56368f134c7b8482878ff112663ecb8",
+      "adapted_sha256": "7fd10c97b710938d659cf9b475c87682a56368f134c7b8482878ff112663ecb8",
+      "adaptation": "exact source bytes"
+    },
+    {
+      "source": "skills/samkill-reference-to-ui/references/icon-controls.md",
+      "target": "skills/qwen-samkill-ui/references/upstream/samkill-reference-to-ui/references/icon-controls.md",
+      "source_sha256": "fc25f541918bf9673b2b4f9226872b0937ae21b1aafb35f1b663746802080598",
+      "adapted_sha256": "fc25f541918bf9673b2b4f9226872b0937ae21b1aafb35f1b663746802080598",
+      "adaptation": "exact source bytes"
+    },
+    {
+      "source": "skills/samkill-reference-to-ui/references/mobile.md",
+      "target": "skills/qwen-samkill-ui/references/upstream/samkill-reference-to-ui/references/mobile.md",
+      "source_sha256": "d61b1a19f88549cbb5f22ae47b70f319b1d8ad573afc3299b4b7c7a864e5fa77",
+      "adapted_sha256": "d61b1a19f88549cbb5f22ae47b70f319b1d8ad573afc3299b4b7c7a864e5fa77",
+      "adaptation": "exact source bytes"
+    },
+    {
+      "source": "skills/samkill-reference-to-ui/references/primary-color.md",
+      "target": "skills/qwen-samkill-ui/references/upstream/samkill-reference-to-ui/references/primary-color.md",
+      "source_sha256": "7754a8f5796f72415161570643dd2fcea0cbf8e0e995598ad2d3155b24d4c57f",
+      "adapted_sha256": "7754a8f5796f72415161570643dd2fcea0cbf8e0e995598ad2d3155b24d4c57f",
+      "adaptation": "exact source bytes"
+    },
+    {
+      "source": "skills/samkill-reference-to-ui/references/product-reasoning.md",
+      "target": "skills/qwen-samkill-ui/references/upstream/samkill-reference-to-ui/references/product-reasoning.md",
+      "source_sha256": "4a9ab70f0ab86bffc1bfd9a811f95fc935aa92b9fbff54eafbe42d16c0037330",
+      "adapted_sha256": "4a9ab70f0ab86bffc1bfd9a811f95fc935aa92b9fbff54eafbe42d16c0037330",
+      "adaptation": "exact source bytes"
+    },
+    {
+      "source": "skills/samkill-reference-to-ui/references/reference-synthesis.md",
+      "target": "skills/qwen-samkill-ui/references/upstream/samkill-reference-to-ui/references/reference-synthesis.md",
+      "source_sha256": "2372c5230870858716f64626e33d74f393d420154efe39f01b1788ad368b4193",
+      "adapted_sha256": "2372c5230870858716f64626e33d74f393d420154efe39f01b1788ad368b4193",
+      "adaptation": "exact source bytes"
+    },
+    {
+      "source": "skills/samkill-reference-to-ui/references/spacing-audit.md",
+      "target": "skills/qwen-samkill-ui/references/upstream/samkill-reference-to-ui/references/spacing-audit.md",
+      "source_sha256": "30565c3fbc3e06cdb2e53aab78955b28142774a44c7e24eb34b661ef85135539",
+      "adapted_sha256": "8599e37c10953cadb55781f90c21e3110b0b163762dcbeae54f33ad5fd3f2bb1",
+      "adaptation": "Two source evaluation links point to pinned upstream commit; evaluation files are not copied into this guide-only snapshot"
+    },
+    {
+      "source": "skills/samkill-reference-to-ui/references/typography.md",
+      "target": "skills/qwen-samkill-ui/references/upstream/samkill-reference-to-ui/references/typography.md",
+      "source_sha256": "65128737309d2fa8967c4ac92c46e222056dc24e56ce308ab70576c1a3000065",
+      "adapted_sha256": "65128737309d2fa8967c4ac92c46e222056dc24e56ce308ab70576c1a3000065",
+      "adaptation": "exact source bytes"
+    },
+    {
+      "source": "skills/samkill-reference-to-ui/references/ui-composition.md",
+      "target": "skills/qwen-samkill-ui/references/upstream/samkill-reference-to-ui/references/ui-composition.md",
+      "source_sha256": "0e4d406452b309ce850e818576244994172f86bb87dabd83fde3c1f7e0ecf175",
+      "adapted_sha256": "0e4d406452b309ce850e818576244994172f86bb87dabd83fde3c1f7e0ecf175",
+      "adaptation": "exact source bytes"
+    },
+    {
+      "source": "skills/samkill-ui/agents/openai.yaml",
+      "target": "skills/qwen-samkill-ui/references/upstream/samkill-ui/agents/openai.yaml",
+      "source_sha256": "3cdb4d9fcdd98659a30e8d947e9eb0e964b172c52b5c573b0b6e86f2691196fe",
+      "adapted_sha256": "3cdb4d9fcdd98659a30e8d947e9eb0e964b172c52b5c573b0b6e86f2691196fe",
+      "adaptation": "exact source bytes"
+    },
+    {
+      "source": "skills/samkill-ui/SKILL.md",
+      "target": "skills/qwen-samkill-ui/references/upstream/samkill-ui/guide.md",
+      "source_sha256": "4eb74c7894f5245ca27a26c39ec6d8ff48e1c8728150ec22b2d37dd755c07df5",
+      "adapted_sha256": "a20208a1131bc83f1863589bee8b3498c0fb6797143bac119a20017bee73095b",
+      "adaptation": "SKILL.md to guide.md"
+    },
+    {
+      "source": "skills/samkill-uibowl-research/agents/openai.yaml",
+      "target": "skills/qwen-samkill-ui/references/upstream/samkill-uibowl-research/agents/openai.yaml",
+      "source_sha256": "e350b8495c136889e2c88f54fd2355f1825456133ccc2d34d9e82eadcbb9324a",
+      "adapted_sha256": "e350b8495c136889e2c88f54fd2355f1825456133ccc2d34d9e82eadcbb9324a",
+      "adaptation": "exact source bytes"
+    },
+    {
+      "source": "skills/samkill-uibowl-research/SKILL.md",
+      "target": "skills/qwen-samkill-ui/references/upstream/samkill-uibowl-research/guide.md",
+      "source_sha256": "95b0e936378c870bb9ca94ab4c9c5b268a17f5bf20053b6d5edfb3f2dea164bc",
+      "adapted_sha256": "146149d972128c91bf5ac807b1f02859fbb21303660c7716e9f7a5cc38b1f81d",
+      "adaptation": "SKILL.md to guide.md"
+    },
+    {
+      "source": "skills/samkill-uibowl-research/references/component-anatomy.md",
+      "target": "skills/qwen-samkill-ui/references/upstream/samkill-uibowl-research/references/component-anatomy.md",
+      "source_sha256": "9fcc2d6330d4111597bdcf20f7049680da9ac2ef1c161fe6c40979ad502aa916",
+      "adapted_sha256": "9fcc2d6330d4111597bdcf20f7049680da9ac2ef1c161fe6c40979ad502aa916",
+      "adaptation": "exact source bytes"
+    },
+    {
+      "source": "skills/samkill-uibowl-research/references/observation-format.md",
+      "target": "skills/qwen-samkill-ui/references/upstream/samkill-uibowl-research/references/observation-format.md",
+      "source_sha256": "9e7b5f1669990e84458ad420f24ac13d7531f837b7425703e71d2dc3db2c56bb",
+      "adapted_sha256": "9e7b5f1669990e84458ad420f24ac13d7531f837b7425703e71d2dc3db2c56bb",
+      "adaptation": "exact source bytes"
+    },
+    {
+      "source": "skills/samkill-uibowl-research/references/research-plan.md",
+      "target": "skills/qwen-samkill-ui/references/upstream/samkill-uibowl-research/references/research-plan.md",
+      "source_sha256": "7bec9c4b13ad32f5ca9b991de180d15f468d7aa022f7b162f300bf9b699640f6",
+      "adapted_sha256": "7bec9c4b13ad32f5ca9b991de180d15f468d7aa022f7b162f300bf9b699640f6",
+      "adaptation": "exact source bytes"
+    },
+    {
+      "source": "skills/samkill-uibowl-research/references/search-examples.md",
+      "target": "skills/qwen-samkill-ui/references/upstream/samkill-uibowl-research/references/search-examples.md",
+      "source_sha256": "9ced77272693677597ad1ef013de235a068fa819b216608eb0642262a371d30f",
+      "adapted_sha256": "9ced77272693677597ad1ef013de235a068fa819b216608eb0642262a371d30f",
+      "adaptation": "exact source bytes"
+    },
+    {
+      "source": "skills/samkill-ux-copy/agents/openai.yaml",
+      "target": "skills/qwen-samkill-ui/references/upstream/samkill-ux-copy/agents/openai.yaml",
+      "source_sha256": "b51683520c2edae31f7127d7ce672d26e00e7ae09ddfb90425bc9329acc2f0d4",
+      "adapted_sha256": "b51683520c2edae31f7127d7ce672d26e00e7ae09ddfb90425bc9329acc2f0d4",
+      "adaptation": "exact source bytes"
+    },
+    {
+      "source": "skills/samkill-ux-copy/SKILL.md",
+      "target": "skills/qwen-samkill-ui/references/upstream/samkill-ux-copy/guide.md",
+      "source_sha256": "2398489d959061fa143b0d21bcdf5cafa51b1a17f36869275f289e384083e8bf",
+      "adapted_sha256": "2398489d959061fa143b0d21bcdf5cafa51b1a17f36869275f289e384083e8bf",
+      "adaptation": "exact source bytes"
+    },
+    {
+      "source": "skills/samkill-ux-copy/references/copy-contract.md",
+      "target": "skills/qwen-samkill-ui/references/upstream/samkill-ux-copy/references/copy-contract.md",
+      "source_sha256": "995973e08929ec45a8a60e98571735bb68fc05346ac492cd4308fd0356240be3",
+      "adapted_sha256": "995973e08929ec45a8a60e98571735bb68fc05346ac492cd4308fd0356240be3",
+      "adaptation": "exact source bytes"
+    },
+    {
+      "source": "skills/samkill-ux-copy/references/korean-writing.md",
+      "target": "skills/qwen-samkill-ui/references/upstream/samkill-ux-copy/references/korean-writing.md",
+      "source_sha256": "6486af2a233ddead7c277060597ac13a1a3692e126e20b7411613e88c2b81c15",
+      "adapted_sha256": "6486af2a233ddead7c277060597ac13a1a3692e126e20b7411613e88c2b81c15",
+      "adaptation": "exact source bytes"
+    }
+  ],
+  "runtime": "Four scripts and two JS tests only substitute namespace IDs; Python import follows moved helper",
+  "regressions": {
+    "node": 213,
+    "python": 2,
+    "status": "PASS"
+  },
+  "code_checks": {
+    "checks": {
+      "lint": {
+        "baseline_exit": 1,
+        "current_exit": 1,
+        "baseline_diagnostics": 3,
+        "current_diagnostics": 3,
+        "same_diagnostics": true
+      },
+      "checkJs": {
+        "baseline_exit": 2,
+        "current_exit": 2,
+        "baseline_diagnostics": 14,
+        "current_diagnostics": 14,
+        "same_diagnostics": true
+      }
+    },
+    "modified_js_are_exact_namespace_substitutions": true,
+    "limitation": "Lint and type checks remain FAIL in baseline and current; not reported as PASS."
+  },
+  "historical_manifests": "Retained at their old pins; do not rewrite historical hashes",
+  "post_audit_link_repair": {
+    "preexisting_broken_local_evidence_links": 2,
+    "resolution": "Pinned to exact source revision; both git objects verified locally"
+  }
+}

@@ -22,7 +22,7 @@ Run `node scripts/generate-components.mjs TARGET EVIDENCE`, with evidence outsid
 
 Outputs include `index.html`, `styles.css`, a static `app.js` and `sample-ID.html` per element. The report explicitly records shared CSS, font loading, selector scoping and assembly as host assistance. Rejected code and its validation error are supplied together on the bounded retry. No automatic typography normalization is applied to model CSS in this route. Browser checks and direct source/render comparison are still required. Scoped CSS is not proof of geometry, responsive behavior, complete visible labels or correct asset states.
 
-Reuse the upstream reference-decompose E/O records and corrected prompts. Keep observed values distinct from chosen CSS values and product adaptations. Compare the actual element and whole-page renders at the same available width, then verify all relevant original guide/catalog requirements. Do not replace the reference-quality requirement with a component pass count.
+Reuse the upstream samkill-reference-decompose E/O records and corrected prompts. Keep observed values distinct from chosen CSS values and product adaptations. Compare the actual element and whole-page renders at the same available width, then verify all relevant original guide/catalog requirements. Do not replace the reference-quality requirement with a component pass count.
 
 ## Repair one existing element
 

@@ -11,11 +11,11 @@ Deliver working files, not a description of files. Follow the user's requirement
 
 The upstream snapshot is pinned in UPSTREAM.md. Before each phase, record the applicable guide, why it is needed, its actual read path, evidence and status (`planned/read/applied/verified/unavailable/not-applicable`) in the existing work record. Reading the entry skill or listing a filename does not load its linked guides or prove application. Keep frozen reproduction inputs separate from contracts extracted after implementation; distinguish exact reproduction, a new product, unused-reference transfer and regression evidence.
 
-For reference-driven UI, apply the guides in order: `uibowl-research → reference-decompose → reference-to-ui → reference-review`. Inspect images and sources during research, freeze their element/relationship handoff during decomposition, then prepare the implementation contract and generate. Read each guide when its phase begins. Check supplied images and existing decomposition for relevance at their respective phases; reuse sufficient inputs without redundant searches. Do not begin with the implementation guide or write a layout and attach research afterward. Search-only work stops after research; copy-only and bounded repairs within an existing valid contract do not require fresh research. An unavailable image or research tool remains unavailable, not a completed phase.
+For reference-driven UI, apply the guides in order: `samkill-uibowl-research → samkill-reference-decompose → samkill-reference-to-ui → samkill-reference-review`. Inspect images and sources during research, freeze their element/relationship handoff during decomposition, then prepare the implementation contract and generate. Read each guide when its phase begins. Check supplied images and existing decomposition for relevance at their respective phases; reuse sufficient inputs without redundant searches. Do not begin with the implementation guide or write a layout and attach research afterward. Search-only work stops after research; copy-only and bounded repairs within an existing valid contract do not require fresh research. An unavailable image or research tool remains unavailable, not a completed phase.
 
-Before reference-based implementation, apply [the measurement handoff check](references/upstream/reference-review/references/reference-evidence.md) and run the bundled gate's `prepare` command. Use source measurements or estimates with units and methods, not only “narrow column” or arbitrary chosen values. Pass that handoff to the local model. For completion, bind `reference_handoff` and `reference_comparison` to the actual catalog inputs. The bundled checker now rejects missing comparisons and detects numeric drift even when a report says pass. Matching numbers still need an actual whole-screen visual finding.
+Before reference-based implementation, apply [the measurement handoff check](references/upstream/samkill-reference-review/references/reference-evidence.md) and run the bundled gate's `prepare` command. Use source measurements or estimates with units and methods, not only “narrow column” or arbitrary chosen values. Pass that handoff to the local model. For completion, bind `reference_handoff` and `reference_comparison` to the actual catalog inputs. The bundled checker now rejects missing comparisons and detects numeric drift even when a report says pass. Matching numbers still need an actual whole-screen visual finding.
 
-Use the [extensible decomposition JSON](references/upstream/reference-decompose/references/decomposition-json.md), complete raw analysis and receiver interpretation. Before inference run the bundled `reference_check.py export` with the v2 handoff. Put its actual payload in the host-prepared REFERENCE.md/service context or component-plan shared context so the existing runner delivers JSON, raw contents and extensions as input, not just a filename. Preserve input hashes; split oversized inputs by owned element and read-only relations without silently truncating raw. HEX/alpha roles, coordinate systems, unsupported extensions and unknowns remain explicit. Save the first core-screen source/capture comparison and final consumption; JSON validity cannot certify comprehension.
+Use the [extensible decomposition JSON](references/upstream/samkill-reference-decompose/references/decomposition-json.md), complete raw analysis and receiver interpretation. Before inference run the bundled `reference_check.py export` with the v2 handoff. Put its actual payload in the host-prepared REFERENCE.md/service context or component-plan shared context so the existing runner delivers JSON, raw contents and extensions as input, not just a filename. Preserve input hashes; split oversized inputs by owned element and read-only relations without silently truncating raw. HEX/alpha roles, coordinate systems, unsupported extensions and unknowns remain explicit. Save the first core-screen source/capture comparison and final consumption; JSON validity cannot certify comprehension.
 
 For spacing work, read the upstream spacing-audit guide. Report all declared-scope spacing before changes, preserve established token bindings with their definitions/origin, and distinguish structural 8-step review notes from hard off-grid values. The source auditor in scripts/spacing-audit.mjs records CSS declarations and unresolved roles; it does not replace rendered distances or approve appearance. The model receives the spacing guide for styling stages. New default backgrounds follow upstream white guidance; explicit user background requests and mobile-only scope remain controlling requirements.
 
@@ -31,11 +31,11 @@ When QUALITY.json exists, read `.opencode/quality-runner.json` and execute its r
 
 ## Non-negotiable UI rules
 
-The short rules below do not replace the upstream guides. For implementation completion, assess every active ID in `references/upstream/reference-review/references/failure-catalog.json`, preserve each original check kind, and record scope, applicability, exceptions and actual evidence. Also record coverage of all eight linked guides; research or onboarding may be inapplicable only for a concrete project reason. A six-category visual score is not this review. Use the bundled design gate as described in `references/upstream/reference-review/references/design-gate.md`. Missing evidence stays unknown.
+The short rules below do not replace the upstream guides. For implementation completion, assess every active ID in `references/upstream/samkill-reference-review/references/failure-catalog.json`, preserve each original check kind, and record scope, applicability, exceptions and actual evidence. Also record coverage of all eight linked guides; research or onboarding may be inapplicable only for a concrete project reason. A six-category visual score is not this review. Use the bundled design gate as described in `references/upstream/samkill-reference-review/references/design-gate.md`. Missing evidence stays unknown.
 
 The repository runner creates `design/review-plan.json` as an inventory, not proof. `node scripts/catalog.mjs TARGET init` creates unknown review drafts. Complete `design/gate-contract.json` and `design/gate-report.json` from actual inspections, including the `PROJECT-GUIDE-*` entries. The quality command requires the catalog gate too. Do not stamp every rule pass or declare a whole guide inapplicable to finish sooner.
 
-Recovery paths make the onboarding-flow guide applicable even when signup and tutorials are absent. Record the relevant state transitions, preservation and re-entry checks; limit inapplicability to the branches genuinely outside this product.
+Recovery paths make the samkill-onboarding-flow guide applicable even when signup and tutorials are absent. Record the relevant state transitions, preservation and re-entry checks; limit inapplicability to the branches genuinely outside this product.
 
 - Use semantic controls and persistent visible labels. Placeholder text is not a label.
 - Default text is at least 14px and font weight at least 500; use the project's stricter rules. Set form controls to inherit typography.
@@ -59,16 +59,16 @@ These guides are reference documents, not additional installed skill names. Foll
 
 | Need | Guide |
 | --- | --- |
-| Reference selection | [UIBowl research](references/upstream/uibowl-research/guide.md) |
-| Reference observations | [Decomposition](references/upstream/reference-decompose/guide.md) |
+| Reference selection | [UIBowl research](references/upstream/samkill-uibowl-research/guide.md) |
+| Reference observations | [Decomposition](references/upstream/samkill-reference-decompose/guide.md) |
 | Local element generation and layout gates | [Decomposed layout](references/decomposed-layout.md) |
-| Design contract | [Design specification](references/upstream/design-md/guide.md) |
-| Implementation | [Reference to UI](references/upstream/reference-to-ui/guide.md) |
+| Design contract | [Design specification](references/upstream/samkill-design-md/guide.md) |
+| Implementation | [Reference to UI](references/upstream/samkill-reference-to-ui/guide.md) |
 | New service scope and bounded work | [Service-specific contracts](references/service-contracts.md) |
 | Document collection previews | [Document collection hierarchy](references/document-collections.md) |
-| Final comparison | [Review](references/upstream/reference-review/guide.md) |
-| Interface copy | [UX copy](references/upstream/ux-copy/guide.md) |
-| Onboarding | [Onboarding](references/upstream/onboarding-flow/guide.md) |
+| Final comparison | [Review](references/upstream/samkill-reference-review/guide.md) |
+| Interface copy | [UX copy](references/upstream/samkill-ux-copy/guide.md) |
+| Onboarding | [Onboarding](references/upstream/samkill-onboarding-flow/guide.md) |
 
 ## Completion record
 

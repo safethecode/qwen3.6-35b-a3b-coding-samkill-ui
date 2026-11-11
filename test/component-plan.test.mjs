@@ -65,8 +65,8 @@ test('component generation resumes fixed element outputs and rejects changed dec
   const fetcher = async (_url, options) => {
     const request = JSON.parse(options.body);
     const input = request.messages[1].content;
-    assert.match(input, /GENERATION GUIDE reference-to-ui\/references\/typography.md/);
-    assert.match(input, /GENERATION GUIDE reference-to-ui\/references\/mobile.md/);
+    assert.match(input, /GENERATION GUIDE samkill-reference-to-ui\/references\/typography.md/);
+    assert.match(input, /GENERATION GUIDE samkill-reference-to-ui\/references\/mobile.md/);
     assert.match(input, /DECLARED CROSS-COMPONENT RELATIONS/);
     assert.match(input, /screen-purpose/);
     const id = /ONE ELEMENT (E\d)/.exec(input)[1];

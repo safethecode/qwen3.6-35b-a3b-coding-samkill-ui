@@ -4,13 +4,13 @@ import { skillInventory } from './skill-context.mjs';
 
 export const guideChecks = {
   'samkill-ui': ['spec', 'code', 'visual', 'interaction'],
-  'uibowl-research': ['spec', 'visual'],
-  'reference-decompose': ['spec', 'visual'],
-  'design-md': ['spec'],
-  'reference-to-ui': ['spec', 'code', 'visual', 'interaction'],
-  'reference-review': ['spec', 'code', 'visual', 'interaction'],
-  'ux-copy': ['spec', 'visual', 'interaction'],
-  'onboarding-flow': ['spec', 'interaction']
+  'samkill-uibowl-research': ['spec', 'visual'],
+  'samkill-reference-decompose': ['spec', 'visual'],
+  'samkill-design-md': ['spec'],
+  'samkill-reference-to-ui': ['spec', 'code', 'visual', 'interaction'],
+  'samkill-reference-review': ['spec', 'code', 'visual', 'interaction'],
+  'samkill-ux-copy': ['spec', 'visual', 'interaction'],
+  'samkill-onboarding-flow': ['spec', 'interaction']
 };
 
 export async function prepareCatalogPlan(target) {

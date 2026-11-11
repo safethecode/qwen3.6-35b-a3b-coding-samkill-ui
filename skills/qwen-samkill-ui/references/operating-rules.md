@@ -11,7 +11,7 @@ These rules consolidate failures observed in this repository. They apply to both
 
 ## Decompose before generation
 
-- Read upstream reference-decompose and its element contract. Start with screen purpose, entry/return routes, canvas, semantic groups and state hierarchy. Then split bounded elements with parent/sibling ownership, spacing, typography, assets and verification.
+- Read upstream samkill-reference-decompose and its element contract. Start with screen purpose, entry/return routes, canvas, semantic groups and state hierarchy. Then split bounded elements with parent/sibling ownership, spacing, typography, assets and verification.
 - Detail screens need a real accessible return route, including direct entry. Test navigation rather than checking for an arrow alone.
 - Preserve the reference's section grouping. For gray-canvas/white-section references, use surface and space rather than hr elements or thin border dividers. This is not a universal mandate to cardify every UI.
 - Keep price, favorite and primary action semantically distinct. Bound supporting controls with a quiet surface where observed or requested. Limit crowded rows through declared relationships.

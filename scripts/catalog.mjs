@@ -23,7 +23,7 @@ if (command === 'init') {
   await writeFile(reportPath, JSON.stringify({ schema_version: 1, results: entries.map(rule => ({ id: rule.id, status: 'unknown', reason: 'No scoped inspection has been recorded', evidence: [] })) }, null, 2), { flag: 'wx' });
   console.log('Created 75-rule and eight-guide review drafts. All findings remain unknown; scope and evidence must be reviewed before completion.');
 } else if (command === 'fingerprint') {
-  const script = fileURLToPath(new URL('../skills/qwen-samkill-ui/references/upstream/reference-review/scripts/design_gate.py', import.meta.url));
+  const script = fileURLToPath(new URL('../skills/qwen-samkill-ui/references/upstream/samkill-reference-review/scripts/design_gate.py', import.meta.url));
   const result = await promisify(execFile)(process.env.QWEN_PYTHON || 'python', [script, 'fingerprint', '--root', target, '--contract', contractPath], { windowsHide: true, timeout: 30000 });
   console.log(result.stdout);
 } else {

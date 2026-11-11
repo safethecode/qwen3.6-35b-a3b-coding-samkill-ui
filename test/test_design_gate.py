@@ -4,7 +4,7 @@ from pathlib import Path
 import tempfile
 import unittest
 
-module_path = Path(__file__).resolve().parents[1] / "skills/qwen-samkill-ui/references/upstream/reference-review/scripts/design_gate.py"
+module_path = Path(__file__).resolve().parents[1] / "skills/qwen-samkill-ui/references/upstream/samkill-reference-review/scripts/design_gate.py"
 spec = importlib.util.spec_from_file_location("design_gate", module_path)
 gate = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(gate)

@@ -20,10 +20,10 @@ export async function checkCatalogGate(target, options = {}) {
     for (const [guide, checks] of Object.entries(guideChecks)) {
       const rule = contract.rules?.find(rule => rule.id === `PROJECT-GUIDE-${guide}`);
       if (!rule || !checks.every(check => rule.checks?.includes(check))) throw new Error(`Missing guide coverage or original check kinds: ${guide}`);
-      if (['samkill-ui', 'reference-to-ui', 'reference-review'].includes(guide) && rule.applicable !== true) throw new Error(`UI implementation completion cannot exclude its core guide: ${guide}`);
+      if (['samkill-ui', 'samkill-reference-to-ui', 'samkill-reference-review'].includes(guide) && rule.applicable !== true) throw new Error(`UI implementation completion cannot exclude its core guide: ${guide}`);
     }
   } catch (error) { return { status: 'UNVERIFIED', errors: [error.message] }; }
-  const script = fileURLToPath(new URL('../skills/qwen-samkill-ui/references/upstream/reference-review/scripts/design_gate.py', import.meta.url));
+  const script = fileURLToPath(new URL('../skills/qwen-samkill-ui/references/upstream/samkill-reference-review/scripts/design_gate.py', import.meta.url));
   const args = [script, 'check', '--root', target, '--contract', resolve(target, 'design/gate-contract.json'), '--report', resolve(target, 'design/gate-report.json'), '--ledger', resolve(target, 'design/failure-events.jsonl')];
   let stdout;
   let code = 0;

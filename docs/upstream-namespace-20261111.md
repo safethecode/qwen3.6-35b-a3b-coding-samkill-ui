@@ -1,0 +1,9 @@
+# Samkill invocation namespace — 2026-11-11
+
+Source: samkill-ui `db236d3ffc14c99165616170b5f179a42f1307bb`. The user requested English Samkill display titles, Korean descriptions and samkill-prefixed invocation IDs, including callers in other skills. Renamed seven adapted directories, headers, prompts and active sibling references. Kept eight `guide.md` entries as reference guides; the callable qwen-samkill-ui entry and implicit policy remain unchanged.
+
+Updated the actual stage/component loader and catalog paths, local instructions and tests. All six stage contexts and the component context load; inventory reports eight guides and75rules. The two local Python lock adaptations and helper bytes are unchanged. [All54source/adapted hashes](../evals/results/skill-namespace-20261111/sync.json) distinguish guide filename adaptation from existing helper differences. Historical manifests retain their prior source commits and hashes.
+
+Validation:213Node tests,2Python tests and syntax checks for six modified JS files pass. Lint remains FAIL with3diagnostics; CheckJS remains FAIL with14diagnostics in unchanged transitive modules. Both produce exactly the pre-migration diagnostics, and the six modified JS files equal exact namespace substitutions from that baseline. Independent inspection found no open active namespace findings after corrections. No new inference, live picker refresh or product quality approval is claimed. Unrelated DS_Store files are excluded.
+
+The full staged-link check also found two pre-existing source-relative evaluation links in spacing-audit.md. They now point to the exact upstream source commit because this guide-only snapshot does not contain those evaluation files. Both source Git objects exist; this additional documentation adaptation is recorded in the manifest.
